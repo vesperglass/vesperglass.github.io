@@ -50,7 +50,7 @@
   const effectsContext = effectsCanvas.getContext("2d", { alpha: true });
   const nearLayer = document.createElement("div");
   nearLayer.className = "atlas-space-layer atlas-space-layer--near";
-  spaceScene.append(deepLayer, fogLayer, orbitLayer, effectsCanvas, nearLayer);
+  spaceScene.append(deepLayer, fogLayer, effectsCanvas, orbitLayer, nearLayer);
   container.appendChild(spaceScene);
 
   L.imageOverlay("/assets/atlas-platform-transparent.webp", bounds, {
@@ -135,7 +135,7 @@
     effectsCanvas.style.width = `${sceneWidth}px`;
     effectsCanvas.style.height = `${sceneHeight}px`;
     effectsContext.setTransform(pixelRatio, 0, 0, pixelRatio, 0, 0);
-    const count = Math.min(60, Math.max(22, Math.round(sceneWidth * sceneHeight / 22000)));
+    const count = Math.min(88, Math.max(48, Math.round(sceneWidth * sceneHeight / 12000)));
     effectStars = Array.from({ length: count }, () => ({
       x: Math.random() * sceneWidth,
       y: Math.random() * sceneHeight,
@@ -230,7 +230,7 @@
     const zoomDelta = map.getZoom() - baseZoom;
     fogLayer.style.transform = `translate3d(${panX * 0.055}px, ${panY * 0.055}px, 0) scale(${Math.max(0.96, 1 + zoomDelta * 0.035)})`;
     nearLayer.style.transform = `translate3d(${panX * 0.22}px, ${panY * 0.22}px, 0) scale(${Math.max(0.9, 1 + zoomDelta * 0.05)})`;
-    effectsCanvas.style.transform = `translate3d(${panX * 0.07}px, ${panY * 0.07}px, 0) scale(${Math.max(0.96, 1 + zoomDelta * 0.012)})`;
+    effectsCanvas.style.transform = `translate3d(${panX * 0.055}px, ${panY * 0.055}px, 0) scale(${Math.max(0.96, 1 + zoomDelta * 0.035)})`;
     positionOrbit();
   };
 
