@@ -16,7 +16,7 @@ That distinction matters. A star pattern can be a useful map without being the o
 
 Rigel is one of the bright stars in Orion. In the Māori context documented by **Te Ara**, Rigel is called **Puanga**. The encyclopedia records that a number of iwi and hapū in Taiuru—including Taranaki, Whanganui, and Rangitīkei—use Puanga as a marker for the new year. It also describes Puanganui-o-te-rangi, a seasonal grouping that connects Puanga with Puanga Hori (Procyon) and Whakaahu (Gemini).
 
-This is a specific account tied to particular communities and practices. It should not be generalized into a single Māori sky tradition: the same star has different names and roles in different iwi, and Te Ara notes that some northern iwi know Rigel as Puangarua. The sky here is not merely a picture to recognize. It participates in a calendar and a cycle of ceremonies.
+This is a specific account tied to particular communities and practices. It should not be generalized into a single Māori sky tradition: Te Ara notes that some northern iwi know Rigel as Puangarua, a different name for the same star. The sky here is not merely a picture to recognize. It participates in a calendar and a cycle of ceremonies.
 
 ## Pattern, object, relationship
 
