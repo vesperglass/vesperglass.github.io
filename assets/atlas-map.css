@@ -38,7 +38,7 @@
 .wayfinding-note{grid-column:1;display:flex;gap:8px;margin:0;padding:10px 7px 0;border-top:1px solid var(--line);color:var(--soft);font:italic 12px/1.55 var(--serif)}
 .wayfinding-note span{color:var(--gold)}
 #vesperglass-atlas.leaflet-container{background-color:var(--map-ocean);outline:none}
-#vesperglass-atlas.leaflet-container::before{position:absolute;z-index:0;top:50%;left:-205%;width:360%;aspect-ratio:1;translate:0 -50%;background-image:linear-gradient(var(--map-backdrop-wash),var(--map-backdrop-wash)),url("/assets/atlas-starfield-sharp-6144.jpg");background-position:center;background-size:cover;content:"";pointer-events:none;transform-origin:50% 50%;animation:atlas-space-rotation 480s linear infinite}
+#vesperglass-atlas.leaflet-container::before{position:absolute;z-index:0;top:50%;left:-205%;width:360%;aspect-ratio:1;translate:0 -50%;background-image:linear-gradient(var(--map-backdrop-wash),var(--map-backdrop-wash)),url("/assets/atlas-starfield-superres-6144.jpg");background-position:center;background-size:cover;content:"";pointer-events:none;transform-origin:50% 50%;animation:atlas-space-rotation 480s linear infinite}
 @keyframes atlas-space-rotation{to{transform:rotate(360deg)}}
 @media(prefers-reduced-motion:reduce){#vesperglass-atlas.leaflet-container::before{animation:none}}
 #vesperglass-atlas .leaflet-control-zoom{overflow:hidden;border:1px solid var(--map-pin-line);border-radius:7px;box-shadow:0 3px 12px #17231c18}
