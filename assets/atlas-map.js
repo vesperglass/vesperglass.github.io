@@ -42,9 +42,13 @@
     }
   }
   orbitLayer.appendChild(nebulaLayer);
+  const effectsCanvas = document.createElement("canvas");
+  effectsCanvas.className = "atlas-space-effects";
+  effectsCanvas.setAttribute("aria-hidden", "true");
+  const effectsContext = effectsCanvas.getContext("2d", { alpha: true });
   const nearLayer = document.createElement("div");
   nearLayer.className = "atlas-space-layer atlas-space-layer--near";
-  spaceScene.append(deepLayer, orbitLayer, nearLayer);
+  spaceScene.append(deepLayer, orbitLayer, effectsCanvas, nearLayer);
   container.appendChild(spaceScene);
 
   L.imageOverlay("/assets/atlas-platform-transparent.webp", bounds, {
@@ -115,6 +119,101 @@
   let orbitRadius = 0;
   let orbitStartedAt = null;
   let orbitFrame = 0;
+  let effectsFrame = 0;
+  let lastEffectsFrameAt = 0;
+  let effectStars = [];
+  let activeComet = null;
+  let nextCometAt = 0;
+
+  const resizeEffects = () => {
+    if (!effectsContext || !sceneWidth || !sceneHeight) return;
+    const pixelRatio = Math.min(2, window.devicePixelRatio || 1);
+    effectsCanvas.width = Math.round(sceneWidth * pixelRatio);
+    effectsCanvas.height = Math.round(sceneHeight * pixelRatio);
+    effectsCanvas.style.width = `${sceneWidth}px`;
+    effectsCanvas.style.height = `${sceneHeight}px`;
+    effectsContext.setTransform(pixelRatio, 0, 0, pixelRatio, 0, 0);
+    const count = Math.min(60, Math.max(22, Math.round(sceneWidth * sceneHeight / 22000)));
+    effectStars = Array.from({ length: count }, () => ({
+      x: Math.random() * sceneWidth,
+      y: Math.random() * sceneHeight,
+      radius: 0.35 + Math.random() * 0.65,
+      base: 0.035 + Math.random() * 0.045,
+      pulse: 0.04 + Math.random() * 0.11,
+      speed: 0.35 + Math.random() * 0.65,
+      phase: Math.random() * Math.PI * 2,
+      color: Math.random() < 0.14 ? "224,198,154" : "194,218,255"
+    }));
+    drawSpaceEffects(performance.now());
+  };
+
+  const drawSpaceEffects = (now) => {
+    if (!effectsContext || !sceneWidth || !sceneHeight) return;
+    effectsContext.clearRect(0, 0, sceneWidth, sceneHeight);
+    effectStars.forEach((star) => {
+      const twinkle = motionPreference.matches ? 0.45 : (0.5 + Math.sin(now * 0.001 * star.speed + star.phase) * 0.5);
+      effectsContext.beginPath();
+      effectsContext.fillStyle = `rgba(${star.color},${star.base + star.pulse * twinkle})`;
+      effectsContext.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
+      effectsContext.fill();
+    });
+
+    if (activeComet && !motionPreference.matches) {
+      const progress = (now - activeComet.startedAt) / activeComet.duration;
+      if (progress >= 1) {
+        activeComet = null;
+      } else if (progress >= 0) {
+        const x = activeComet.x + activeComet.dx * progress;
+        const y = activeComet.y + activeComet.dy * progress;
+        const fadeIn = Math.min(1, progress / 0.12);
+        const burnOut = Math.max(0, 1 - Math.max(0, progress - 0.28) / 0.72);
+        const alpha = Math.min(fadeIn, burnOut) * 0.72;
+        const tail = 42;
+        const length = Math.hypot(activeComet.dx, activeComet.dy) || 1;
+        const tailX = x - activeComet.dx / length * tail;
+        const tailY = y - activeComet.dy / length * tail;
+        const trail = effectsContext.createLinearGradient(tailX, tailY, x, y);
+        trail.addColorStop(0, "rgba(190,218,255,0)");
+        trail.addColorStop(0.72, `rgba(190,218,255,${alpha * 0.38})`);
+        trail.addColorStop(1, `rgba(231,241,255,${alpha})`);
+        effectsContext.beginPath();
+        effectsContext.moveTo(tailX, tailY);
+        effectsContext.lineTo(x, y);
+        effectsContext.strokeStyle = trail;
+        effectsContext.lineWidth = 1.15;
+        effectsContext.stroke();
+        effectsContext.beginPath();
+        effectsContext.arc(x, y, 1.35, 0, Math.PI * 2);
+        effectsContext.fillStyle = `rgba(238,246,255,${alpha})`;
+        effectsContext.fill();
+      }
+    }
+  };
+
+  const animateSpaceEffects = (now) => {
+    if (motionPreference.matches) {
+      effectsFrame = 0;
+      return;
+    }
+    if (now - lastEffectsFrameAt < 33) {
+      effectsFrame = window.requestAnimationFrame(animateSpaceEffects);
+      return;
+    }
+    lastEffectsFrameAt = now;
+    if (!activeComet && now >= nextCometAt) {
+      activeComet = {
+        x: Math.random() * sceneWidth * 0.72,
+        y: Math.random() * sceneHeight * 0.64,
+        dx: (Math.random() < 0.5 ? -1 : 1) * (75 + Math.random() * 110),
+        dy: 55 + Math.random() * 95,
+        startedAt: now,
+        duration: 1200 + Math.random() * 800
+      };
+      nextCometAt = now + 15000 + Math.random() * 18000;
+    }
+    drawSpaceEffects(now);
+    effectsFrame = window.requestAnimationFrame(animateSpaceEffects);
+  };
 
   const positionOrbit = () => {
     const zoomScale = Math.max(0.92, 1 + (map.getZoom() - baseZoom) * 0.025);
@@ -129,6 +228,7 @@
     const zoomDelta = map.getZoom() - baseZoom;
     deepLayer.style.transform = `translate3d(${panX * 0.003}px, ${panY * 0.003}px, 0) scale(${Math.max(0.995, 1 + zoomDelta * 0.001)})`;
     nearLayer.style.transform = `translate3d(${panX * 0.22}px, ${panY * 0.22}px, 0) scale(${Math.max(0.9, 1 + zoomDelta * 0.05)})`;
+    effectsCanvas.style.transform = `translate3d(${panX * 0.07}px, ${panY * 0.07}px, 0) scale(${Math.max(0.96, 1 + zoomDelta * 0.012)})`;
     positionOrbit();
   };
 
@@ -136,6 +236,7 @@
     const rect = container.getBoundingClientRect();
     sceneWidth = rect.width;
     sceneHeight = rect.height;
+    resizeEffects();
     const diagonal = Math.hypot(sceneWidth, sceneHeight);
     const imageWidth = diagonal * 1.62;
     nebulaLayer.style.width = `${imageWidth}px`;
@@ -160,14 +261,20 @@
   const updateMotionPreference = () => {
     if (motionPreference.matches) {
       if (orbitFrame) window.cancelAnimationFrame(orbitFrame);
+      if (effectsFrame) window.cancelAnimationFrame(effectsFrame);
       orbitFrame = 0;
+      effectsFrame = 0;
       orbitStartedAt = null;
       orbitX = 0;
       orbitY = 0;
+      activeComet = null;
       positionOrbit();
+      drawSpaceEffects(0);
     } else if (!orbitFrame) {
       orbitStartedAt = null;
       orbitFrame = window.requestAnimationFrame(animateOrbit);
+      nextCometAt = performance.now() + 2500 + Math.random() * 4000;
+      effectsFrame = window.requestAnimationFrame(animateSpaceEffects);
     }
   };
 
