@@ -237,8 +237,9 @@
     sceneWidth = rect.width;
     sceneHeight = rect.height;
     resizeEffects();
-    const diagonal = Math.hypot(sceneWidth, sceneHeight);
-    const imageWidth = diagonal * 1.62;
+    // The nine source tiles are each 1024 × 1024. Keep their 3 × 3 canvas at
+    // native resolution so browser scaling does not soften the nebula texture.
+    const imageWidth = 3072;
     nebulaLayer.style.width = `${imageWidth}px`;
     nebulaLayer.style.height = `${imageWidth}px`;
     orbitRadius = Math.min(sceneWidth, sceneHeight) * 0.055;
