@@ -25,6 +25,8 @@
   spaceScene.setAttribute("aria-hidden", "true");
   const deepLayer = document.createElement("div");
   deepLayer.className = "atlas-space-layer atlas-space-layer--deep";
+  const fogLayer = document.createElement("div");
+  fogLayer.className = "atlas-space-fog";
   const orbitLayer = document.createElement("div");
   orbitLayer.className = "atlas-space-orbit";
   const nebulaLayer = document.createElement("div");
@@ -48,7 +50,7 @@
   const effectsContext = effectsCanvas.getContext("2d", { alpha: true });
   const nearLayer = document.createElement("div");
   nearLayer.className = "atlas-space-layer atlas-space-layer--near";
-  spaceScene.append(deepLayer, orbitLayer, effectsCanvas, nearLayer);
+  spaceScene.append(deepLayer, fogLayer, orbitLayer, effectsCanvas, nearLayer);
   container.appendChild(spaceScene);
 
   L.imageOverlay("/assets/atlas-platform-transparent.webp", bounds, {
@@ -226,7 +228,7 @@
     panX = originalCenter.x - sceneWidth / 2;
     panY = originalCenter.y - sceneHeight / 2;
     const zoomDelta = map.getZoom() - baseZoom;
-    deepLayer.style.transform = `translate3d(${panX * 0.003}px, ${panY * 0.003}px, 0) scale(${Math.max(0.995, 1 + zoomDelta * 0.001)})`;
+    fogLayer.style.transform = `translate3d(${panX * 0.055}px, ${panY * 0.055}px, 0) scale(${Math.max(0.96, 1 + zoomDelta * 0.035)})`;
     nearLayer.style.transform = `translate3d(${panX * 0.22}px, ${panY * 0.22}px, 0) scale(${Math.max(0.9, 1 + zoomDelta * 0.05)})`;
     effectsCanvas.style.transform = `translate3d(${panX * 0.07}px, ${panY * 0.07}px, 0) scale(${Math.max(0.96, 1 + zoomDelta * 0.012)})`;
     positionOrbit();
