@@ -19,7 +19,7 @@
 })();
 </script>
   <link rel="stylesheet" href="{{ '/assets/site.css' | relative_url }}?v=20261023-cartographer-2">
-  <script defer src="{{ '/assets/site.js' | relative_url }}?v=20261022-theme1"></script>
+  <script defer src="{{ '/assets/site.js' | relative_url }}?v=20261023-research"></script>
 </head>
 <body>
   <div class="observatory-sky" aria-hidden="true">
@@ -101,6 +101,7 @@
         <a href="{{ '/projects/' | relative_url }}"{% if page.url == '/projects/' %} class="active" aria-current="page"{% endif %}><span class="nav-icon">▦</span>Projects</a>
         <a href="{{ '/principles/' | relative_url }}"{% if page.url == '/principles/' %} class="active" aria-current="page"{% endif %}><span class="nav-icon">✳</span>How we work</a>
         <a href="{{ '/field-notes/' | relative_url }}"{% if page.url == '/field-notes/' %} class="active" aria-current="page"{% endif %}><span class="nav-icon">✎</span>Field notes</a>
+        <a href="{{ '/research/' | relative_url }}"{% if page.url contains '/research/' %} class="active" aria-current="page"{% endif %}><span class="nav-icon">✧</span>Research &amp; Essays</a>
       </nav>
       <div class="sidebar-bottom"><span class="status-dot"></span><span>Public notebook<br><small>Made of pages and curiosity</small></span></div>
     </aside>
