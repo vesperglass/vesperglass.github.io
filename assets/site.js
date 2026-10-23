@@ -40,4 +40,34 @@
     if (event.key === "/" && !typing) { event.preventDefault(); openSearch(); }
     if ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === "k") { event.preventDefault(); openSearch(); }
   });
-})();
+  const themeToggle = document.getElementById("theme-toggle");
+  if (themeToggle) {
+    const root = document.documentElement;
+    const icon = document.getElementById("theme-icon");
+    const label = document.getElementById("theme-label");
+    const colorMeta = document.getElementById("theme-color");
+    let hasSavedChoice = false;
+    try { hasSavedChoice = Boolean(localStorage.getItem("vesperglass-theme")); } catch (_) {}
+    const updateThemeControl = () => {
+      const dark = root.dataset.theme === "dark";
+      themeToggle.setAttribute("aria-pressed", String(dark));
+      themeToggle.setAttribute("aria-label", dark ? "Switch to light mode" : "Switch to dark mode");
+      icon.textContent = dark ? "☀" : "☾";
+      label.textContent = dark ? "Light" : "Dark";
+      if (colorMeta) colorMeta.content = dark ? "#111923" : "#f5f3ed";
+    };
+    const setTheme = (theme, save) => {
+      root.dataset.theme = theme;
+      if (save) {
+        hasSavedChoice = true;
+        try { localStorage.setItem("vesperglass-theme", theme); } catch (_) {}
+      }
+      updateThemeControl();
+    };
+    updateThemeControl();
+    themeToggle.addEventListener("click", () => setTheme(root.dataset.theme === "dark" ? "light" : "dark", true));
+    const preference = window.matchMedia("(prefers-color-scheme: dark)");
+    preference.addEventListener?.("change", event => {
+      if (!hasSavedChoice) setTheme(event.matches ? "dark" : "light", false);
+    });
+  }})();
