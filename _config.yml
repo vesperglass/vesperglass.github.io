@@ -1,0 +1,6 @@
+title: Vesperglass Field Guide
+description: A calm, searchable wiki for useful tools, experiments, and ideas.
+url: https://vesperglass.github.io
+baseurl: ""
+markdown: kramdown
+permalink: pretty
