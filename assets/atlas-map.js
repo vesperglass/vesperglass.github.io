@@ -218,8 +218,7 @@
   };
 
   const positionOrbit = () => {
-    const zoomScale = Math.max(0.92, 1 + (map.getZoom() - baseZoom) * 0.025);
-    orbitLayer.style.transform = `translate3d(calc(-50% + ${orbitX + panX * 0.12}px), calc(-50% + ${orbitY + panY * 0.12}px), 0) scale(${zoomScale})`;
+    orbitLayer.style.transform = `translate3d(calc(-50% + ${orbitX}px), calc(-50% + ${orbitY}px), 0)`;
   };
 
   const updateParallax = () => {
