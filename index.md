@@ -77,7 +77,7 @@ atlas_enabled: true
         <span>This floating workshop and its landmarks are imagined. No real-world geography.</span>
 
         <span>Interactive map by <a href="https://leafletjs.com/" rel="noopener">Leaflet</a> · <a href="{{ '/assets/leaflet/LICENSE.txt' | relative_url }}">MIT license</a></span>
-        <span>Star map: <a href="https://svs.gsfc.nasa.gov/4851/" rel="noopener">NASA/Goddard Space Flight Center Scientific Visualization Studio</a> · Gaia DR2: <a href="https://gea.esac.esa.int/archive/" rel="noopener">ESA/Gaia/DPAC</a> · converted from linear HDR and placed on a square canvas.</span>
+        <span>Background: Vesperglass star field; stars only.</span>
 
       </div>
 
