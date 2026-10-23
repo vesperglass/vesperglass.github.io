@@ -3,14 +3,34 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#192233">
+  <meta id="theme-color" name="theme-color" content="#f5f3ed">
   <meta name="description" content="{{ page.description | default: site.description | escape }}">
   <title>{{ page.title | escape }} · {{ site.title | escape }}</title>
   <link rel="canonical" href="{{ page.url | absolute_url }}">
+<script>
+(() => {
+  try {
+    const saved = localStorage.getItem("vesperglass-theme");
+    const followsDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    document.documentElement.dataset.theme = saved === "light" || saved === "dark" ? saved : (followsDark ? "dark" : "light");
+  } catch (_) {
+    document.documentElement.dataset.theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  }
+})();
+</script>
   <link rel="stylesheet" href="{{ '/assets/site.css' | relative_url }}">
   <script defer src="{{ '/assets/site.js' | relative_url }}"></script>
 </head>
 <body>
+  <div class="orbiting-visitor" aria-hidden="true">
+    <svg viewBox="0 0 80 36" focusable="false">
+      <path d="M29 17c2-8 7-12 12-12s10 4 12 12" class="visitor-dome"></path>
+      <path d="M8 21c5-7 18-11 33-11s28 4 33 11c-4 5-17 8-33 8S12 26 8 21Z" class="visitor-hull"></path>
+      <path d="M21 23h40" class="visitor-windowline"></path>
+      <circle cx="30" cy="25" r="1.3" class="visitor-light"></circle>
+      <circle cx="50" cy="25" r="1.3" class="visitor-light"></circle>
+    </svg>
+  </div>
   <a class="skip-link" href="#main">Skip to page content</a>
   <div class="site-shell">
     <aside class="sidebar" aria-label="Site navigation">
@@ -33,7 +53,10 @@
     <div class="main-column">
       <header class="topbar">
         <div class="crumb"><span>VESPERGLASS</span><span class="crumb-slash">/</span><span>{{ page.title | upcase | escape }}</span></div>
-        <button class="search-trigger" id="open-search" type="button" aria-haspopup="dialog"><span aria-hidden="true">⌕</span> Search <kbd>/</kbd></button>
+        <div class="top-actions">
+          <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false" aria-label="Switch to dark mode"><span id="theme-icon" aria-hidden="true">☾</span><span id="theme-label">Dark</span></button>
+          <button class="search-trigger" id="open-search" type="button" aria-haspopup="dialog"><span aria-hidden="true">⌕</span> Search <kbd>/</kbd></button>
+        </div>
       </header>
       <main id="main" class="content-wrap">
         <article class="article">
