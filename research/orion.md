@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Orion: A Figure in the Stars
+title: "Orion: A Figure in the Stars"
 kicker: SKY / STORY / SEASON
 description: A short study of one western constellation, the stars that compose it, and a specific Māori seasonal tradition centered on Rigel.
 permalink: /research/orion/
