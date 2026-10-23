@@ -25,11 +25,14 @@ atlas_enabled: true
     <div class="atlas-map-card">
       <div class="atlas-map-toolbar">
         <div><span class="atlas-map-overline">THE ELSEWHERE ATLAS</span><strong>Vesperglass and its neighboring ideas</strong></div>
-        <button class="atlas-reset" id="atlas-reset" type="button">Reset view <span aria-hidden="true">⟲</span></button>
+        <div class="atlas-map-actions">
+          <button class="atlas-reset" id="atlas-reset" type="button">Reset view <span aria-hidden="true">⟲</span></button>
+          <button class="atlas-fullscreen" id="atlas-fullscreen" type="button" aria-label="View map full screen" aria-pressed="false">Full screen <span aria-hidden="true">⛶</span></button>
+        </div>
       </div>
       <div class="atlas-map-frame">
         <div id="vesperglass-atlas" role="application" aria-label="Interactive fictional map of Vesperglass">
-          <p id="atlas-map-fallback">The atlas is loading. You can use the destination links beside the map in the meantime.</p>
+          <p id="atlas-map-fallback">The atlas is loading. You can use the destination links below the map in the meantime.</p>
         </div>
       </div>
       <div class="atlas-map-credit">

@@ -1,6 +1,8 @@
 (() => {
   const container = document.getElementById("vesperglass-atlas");
   const resetButton = document.getElementById("atlas-reset");
+  const fullscreenButton = document.getElementById("atlas-fullscreen");
+  const mapCard = container?.closest(".atlas-map-card");
   if (!container || !window.L) return;
 
   const bounds = L.latLngBounds([[0, 0], [1024, 1536]]);
@@ -74,6 +76,26 @@
   L.control.zoom({ position: "bottomright" }).addTo(map);
   map.fitBounds(bounds, { padding: [14, 14] });
   resetButton?.addEventListener("click", () => map.flyToBounds(bounds, { padding: [14, 14], duration: 0.55 }));
+  const updateFullscreenButton = () => {
+    const active = document.fullscreenElement === mapCard;
+    if (fullscreenButton) {
+      fullscreenButton.setAttribute("aria-pressed", String(active));
+      fullscreenButton.setAttribute("aria-label", active ? "Exit full screen" : "View map full screen");
+      fullscreenButton.innerHTML = active
+        ? 'Exit full screen <span aria-hidden="true">⛶</span>'
+        : 'Full screen <span aria-hidden="true">⛶</span>';
+    }
+    window.requestAnimationFrame(() => map.invalidateSize({ pan: false }));
+  };
+  fullscreenButton?.addEventListener("click", async () => {
+    try {
+      if (document.fullscreenElement === mapCard) await document.exitFullscreen();
+      else if (mapCard?.requestFullscreen) await mapCard.requestFullscreen();
+    } catch (_) {
+      // The browser may deny fullscreen; the embedded map remains usable.
+    }
+  });
+  document.addEventListener("fullscreenchange", updateFullscreenButton);
   container.querySelector("#atlas-map-fallback")?.remove();
   window.requestAnimationFrame(() => map.invalidateSize({ pan: false }));
 })();

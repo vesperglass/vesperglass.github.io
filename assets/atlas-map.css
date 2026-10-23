@@ -6,25 +6,26 @@
 .atlas-intro h2{margin:8px 0 7px;color:#263541;font:400 clamp(27px,3.5vw,38px)/1.16 var(--serif);letter-spacing:-.035em}
 :root[data-theme="dark"] .atlas-intro h2{color:#e3e9e6}
 .atlas-intro p{margin:0;color:var(--soft);font:16px/1.55 var(--serif)}
-.atlas-layout{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(225px,.78fr);gap:14px;align-items:stretch}
+.atlas-layout{display:grid;grid-template-columns:minmax(0,1fr);gap:14px;align-items:stretch}
 .atlas-map-card,.atlas-wayfinding{min-width:0;border:1px solid var(--line);border-radius:10px;background:var(--white);box-shadow:0 12px 35px #17231c0b}
 .atlas-map-card{overflow:hidden}
 .atlas-map-toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:13px 15px;border-bottom:1px solid var(--line)}
 .atlas-map-toolbar>div{display:grid;gap:3px}
 .atlas-map-toolbar strong{color:var(--ink);font:17px/1.2 var(--serif)}
-.atlas-reset{flex:0 0 auto;display:flex;align-items:center;gap:8px;padding:7px 10px;border:1px solid var(--line);border-radius:6px;color:var(--soft);background:var(--white);font-size:11px;cursor:pointer}
-.atlas-reset:hover,.atlas-reset:focus-visible{border-color:var(--sea);color:var(--sea-dark)}
-.atlas-reset:focus-visible,.atlas-destinations a:focus-visible{outline:2px solid var(--sea);outline-offset:2px}
-.atlas-reset span{font-size:16px;line-height:1}
+.atlas-map-actions{display:flex;flex:0 0 auto;gap:7px}
+.atlas-reset,.atlas-fullscreen{display:flex;align-items:center;gap:8px;padding:7px 10px;border:1px solid var(--line);border-radius:6px;color:var(--soft);background:var(--white);font-size:11px;cursor:pointer}
+.atlas-reset:hover,.atlas-reset:focus-visible,.atlas-fullscreen:hover,.atlas-fullscreen:focus-visible{border-color:var(--sea);color:var(--sea-dark)}
+.atlas-reset:focus-visible,.atlas-fullscreen:focus-visible,.atlas-destinations a:focus-visible{outline:2px solid var(--sea);outline-offset:2px}
+.atlas-reset span,.atlas-fullscreen span{font-size:16px;line-height:1}
 .atlas-map-frame{position:relative;padding:9px;background:var(--map-ocean)}
 #vesperglass-atlas{width:100%;height:auto;aspect-ratio:3/2;min-height:0;border:1px solid var(--map-border);border-radius:7px;overflow:hidden;background:var(--map-ocean);color:var(--map-ink);font-family:var(--sans)}
 #atlas-map-fallback{position:absolute;inset:0;display:grid;place-items:center;margin:0;padding:24px;text-align:center;color:var(--soft);font-size:12px}
 .atlas-map-credit{display:flex;justify-content:space-between;gap:8px;padding:8px 13px;color:var(--muted);font-size:9px;line-height:1.45}
 .atlas-map-credit a{color:var(--sea-dark);text-decoration-color:#a9c0b8;text-underline-offset:2px}
-.atlas-wayfinding{display:flex;flex-direction:column;padding:15px}
+.atlas-wayfinding{display:grid;grid-template-columns:minmax(170px,.55fr) minmax(0,1.45fr);gap:14px;align-items:center;padding:15px}
 .wayfinding-heading h3{margin:4px 0 3px;color:var(--ink);font:21px/1.2 var(--serif)}
 .wayfinding-heading p{margin:0 0 11px;color:var(--soft);font-size:11px}
-.atlas-destinations{display:grid;gap:5px}
+.atlas-destinations{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:5px}
 .atlas-destinations a{display:grid;grid-template-columns:27px minmax(0,1fr) 16px;gap:9px;align-items:center;padding:9px 7px;border:1px solid transparent;border-radius:7px;color:var(--ink);text-decoration:none;transition:background .16s,border-color .16s,transform .16s}
 .atlas-destinations a:hover{transform:translateX(2px);border-color:var(--line);background:var(--map-control-hover)}
 .destination-glyph{display:grid;width:25px;height:25px;place-items:center;border:1px solid var(--map-pin-line);border-radius:50%;color:var(--sea-dark);font-size:13px}
@@ -33,7 +34,7 @@
 .destination-copy strong{overflow:hidden;color:var(--ink);font:15px/1.25 var(--serif);text-overflow:ellipsis;white-space:nowrap}
 .destination-copy small{color:var(--soft);font-size:10px}
 .destination-arrow{color:var(--sea);font-size:12px}
-.wayfinding-note{display:flex;gap:8px;margin:auto 0 0;padding:13px 7px 0;border-top:1px solid var(--line);color:var(--soft);font:italic 12px/1.55 var(--serif)}
+.wayfinding-note{grid-column:1/-1;display:flex;gap:8px;margin:0;padding:10px 7px 0;border-top:1px solid var(--line);color:var(--soft);font:italic 12px/1.55 var(--serif)}
 .wayfinding-note span{color:var(--gold)}
 #vesperglass-atlas.leaflet-container{background:var(--map-ocean);outline:none}
 #vesperglass-atlas .leaflet-control-zoom{overflow:hidden;border:1px solid var(--map-pin-line);border-radius:7px;box-shadow:0 3px 12px #17231c18}
@@ -45,6 +46,10 @@
 #vesperglass-atlas .leaflet-popup-content{min-width:200px;margin:13px 15px}
 #vesperglass-atlas .leaflet-popup-close-button{color:var(--map-popup-soft)}
 #vesperglass-atlas .leaflet-popup-close-button:hover{color:var(--map-popup-ink)}
+.atlas-map-card:fullscreen{display:flex;width:100vw;height:100vh;flex-direction:column;border:0;border-radius:0;background:var(--white)}
+.atlas-map-card:fullscreen .atlas-map-frame{display:flex;flex:1;min-height:0;padding:10px}
+.atlas-map-card:fullscreen #vesperglass-atlas{height:100%;min-height:0;aspect-ratio:auto;flex:1}
+.atlas-map-card:fullscreen .atlas-map-credit{flex:0 0 auto}
 .atlas-popup-kicker{display:block;color:var(--sea-dark);font:700 8px/1.4 var(--sans);letter-spacing:.15em;text-transform:uppercase}
 :root[data-theme="dark"] .atlas-popup-kicker{color:#a8d3c9}
 .atlas-popup h3{margin:4px 0 5px;color:var(--map-popup-ink);font:20px/1.2 var(--serif)}
@@ -71,6 +76,8 @@
 .atlas-svg-note{fill:var(--map-ink);font-family:var(--serif);font-size:12px;font-style:italic;opacity:.7}
 .atlas-svg-tiny{fill:var(--map-ink);font-family:var(--sans);font-size:9px;font-weight:700;letter-spacing:1.6px;opacity:.55}
 .atlas-rosette{fill:none;stroke:var(--map-route);stroke-width:1.5;opacity:.75}
-@media(max-width:900px){.atlas-layout{grid-template-columns:1fr}.atlas-wayfinding{display:grid;grid-template-columns:minmax(150px,.7fr) minmax(0,1.3fr);gap:12px;align-items:start}.wayfinding-heading{grid-row:1/3}.wayfinding-note{grid-column:2;grid-row:2;margin:5px 0 0;padding-top:9px}}
-@media(max-width:600px){.atlas-section{margin:39px 0 28px}.atlas-intro{margin-bottom:16px}.atlas-intro h2{font-size:29px}.atlas-layout{gap:10px}.atlas-map-toolbar{align-items:flex-start;padding:11px}.atlas-map-toolbar strong{max-width:210px;font-size:15px}.atlas-reset{padding:6px 8px;font-size:10px}.atlas-map-frame{padding:5px}#vesperglass-atlas{height:auto;min-height:0;aspect-ratio:4/3}.atlas-map-credit{display:grid;padding:8px 10px}.atlas-wayfinding{grid-template-columns:1fr;padding:13px}.wayfinding-heading{grid-row:auto}.atlas-destinations{grid-template-columns:1fr 1fr;gap:3px}.atlas-destinations a{grid-template-columns:23px minmax(0,1fr) 12px;gap:6px;padding:8px 4px}.destination-glyph{width:22px;height:22px;font-size:11px}.destination-copy strong{font-size:13px}.destination-copy small{font-size:9px}.wayfinding-note{grid-column:auto;grid-row:auto}}
+@media(max-width:900px){.atlas-wayfinding{grid-template-columns:minmax(150px,.7fr) minmax(0,1.3fr);gap:12px;align-items:start}.atlas-destinations{grid-template-columns:repeat(2,minmax(0,1fr))}.wayfinding-heading{grid-row:1/3}.wayfinding-note{grid-column:2;grid-row:2;margin:5px 0 0;padding-top:9px}}
+@media(max-width:600px){.atlas-section{margin:39px 0 28px}.atlas-intro{margin-bottom:16px}.atlas-intro h2{font-size:29px}.atlas-layout{gap:10px}.atlas-map-toolbar{align-items:flex-start;padding:11px}.atlas-map-toolbar strong{max-width:210px;font-size:15px}.atlas-map-actions{gap:4px}.atlas-reset,.atlas-fullscreen{gap:5px;padding:6px 7px;font-size:9px}.atlas-map-frame{padding:5px}#vesperglass-atlas{height:auto;min-height:0;aspect-ratio:4/3}.atlas-map-credit{display:grid;padding:8px 10px}.atlas-wayfinding{grid-template-columns:1fr;padding:13px}.wayfinding-heading{grid-row:auto}.atlas-destinations{grid-template-columns:1fr 1fr;gap:3px}.atlas-destinations a{grid-template-columns:23px minmax(0,1fr) 12px;gap:6px;padding:8px 4px}.destination-glyph{width:22px;height:22px;font-size:11px}.destination-copy strong{font-size:13px}.destination-copy small{font-size:9px}.wayfinding-note{grid-column:auto;grid-row:auto}}
+@media(max-width:390px){.atlas-map-toolbar{display:grid}.atlas-map-actions{justify-content:flex-end}}
+@media(prefers-reduced-motion:reduce){.atlas-destinations a{transition:none}.atlas-destinations a:hover{transform:none}}
 @media(prefers-reduced-motion:reduce){.atlas-destinations a{transition:none}.atlas-destinations a:hover{transform:none}}
