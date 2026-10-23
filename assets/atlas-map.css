@@ -1,5 +1,5 @@
-:root{--map-ocean:#dce8e3;--map-ocean-deep:#c8d9d5;--map-island:#e9e2ca;--map-island-shadow:#b9b99d;--map-contour:#8b9b87;--map-ink:#344d4b;--map-star:#6f918b;--map-route:#ae775c;--map-grid:#8aa4a044;--map-pin:#fffdf7;--map-pin-line:#b9c5b6;--map-popup:#fffdf7;--map-popup-ink:#34443f;--map-popup-soft:#6e7770;--map-control:#fffdf7;--map-control-ink:#425a54;--map-control-hover:#edf2eb;--map-border:#d8ded5}
-:root[data-theme="dark"]{--map-ocean:#121e29;--map-ocean-deep:#172934;--map-island:#263b3b;--map-island-shadow:#182c32;--map-contour:#64847d;--map-ink:#d8e2d8;--map-star:#a5c4ba;--map-route:#dfad79;--map-grid:#a7c8bf2a;--map-pin:#1b2a32;--map-pin-line:#526e68;--map-popup:#1b2933;--map-popup-ink:#e3ece5;--map-popup-soft:#b3c2bc;--map-control:#1b2933;--map-control-ink:#d7e3dc;--map-control-hover:#2a3e43;--map-border:#34474a}
+:root{--map-ocean:#dce8e3;--map-ocean-deep:#c8d9d5;--map-island:#e9e2ca;--map-island-shadow:#b9b99d;--map-contour:#8b9b87;--map-ink:#344d4b;--map-star:#6f918b;--map-route:#ae775c;--map-grid:#8aa4a044;--map-pin:#fffdf7;--map-pin-line:#b9c5b6;--map-popup:#fffdf7;--map-popup-ink:#34443f;--map-popup-soft:#6e7770;--map-control:#fffdf7;--map-control-ink:#425a54;--map-control-hover:#edf2eb;--map-border:#d8ded5;--map-backdrop-wash:rgba(226,238,232,.28)}
+:root[data-theme="dark"]{--map-ocean:#121e29;--map-ocean-deep:#172934;--map-island:#263b3b;--map-island-shadow:#182c32;--map-contour:#64847d;--map-ink:#d8e2d8;--map-star:#a5c4ba;--map-route:#dfad79;--map-grid:#a7c8bf2a;--map-pin:#1b2a32;--map-pin-line:#526e68;--map-popup:#1b2933;--map-popup-ink:#e3ece5;--map-popup-soft:#b3c2bc;--map-control:#1b2933;--map-control-ink:#d7e3dc;--map-control-hover:#2a3e43;--map-border:#34474a;--map-backdrop-wash:rgba(7,15,28,.16)}
 .atlas-section{margin:48px 0 36px}
 .atlas-intro{max-width:690px;margin:0 auto 22px}
 .atlas-kicker,.atlas-map-overline{display:block;color:var(--sea);font-size:9px;font-weight:750;letter-spacing:.16em}
@@ -37,7 +37,7 @@
 .destination-arrow{color:var(--sea);font-size:12px}
 .wayfinding-note{grid-column:1;display:flex;gap:8px;margin:0;padding:10px 7px 0;border-top:1px solid var(--line);color:var(--soft);font:italic 12px/1.55 var(--serif)}
 .wayfinding-note span{color:var(--gold)}
-#vesperglass-atlas.leaflet-container{background:var(--map-ocean);outline:none}
+#vesperglass-atlas.leaflet-container{background-color:var(--map-ocean);background-image:linear-gradient(var(--map-backdrop-wash),var(--map-backdrop-wash)),url("/assets/atlas-starfield.webp");background-position:center;background-size:cover;outline:none}
 #vesperglass-atlas .leaflet-control-zoom{overflow:hidden;border:1px solid var(--map-pin-line);border-radius:7px;box-shadow:0 3px 12px #17231c18}
 #vesperglass-atlas .leaflet-control-zoom a{width:31px;height:31px;border-color:var(--map-pin-line);color:var(--map-control-ink);background:var(--map-control);font:20px/30px var(--sans)}
 #vesperglass-atlas .leaflet-control-zoom a:hover{color:var(--sea-dark);background:var(--map-control-hover)}

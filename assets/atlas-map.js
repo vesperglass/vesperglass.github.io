@@ -20,7 +20,7 @@
     keyboard: true
   });
 
-  L.imageOverlay("/assets/atlas-platform.webp", bounds, {
+  L.imageOverlay("/assets/atlas-platform-transparent.webp", bounds, {
     alt: "The Elsewhere Atlas of Vesperglass: a fictional glass-and-bronze workshop platform floating through a starry void, viewed from above at an angle.",
     interactive: false
   }).addTo(map);
@@ -28,9 +28,9 @@
   const places = [
     { id: "workshop", x: 775, y: 560, name: "Vesperglass Workshop", glyph: "⌂", route: "/", section: "Welcome", note: "A workshop set at the crossing of several unfinished paths." },
     { id: "threshold", x: 480, y: 330, name: "Threshold House", glyph: "◈", route: "/about/", section: "About Vesperglass", note: "A place to learn what this workshop is for and who is building here." },
-    { id: "foundry", x: 1190, y: 745, name: "Tideglass Foundry", glyph: "▦", route: "/projects/", section: "Projects", note: "A directory of repositories, experiments, and things to try." },
-    { id: "compass", x: 535, y: 590, name: "Compass Garden", glyph: "✳", route: "/principles/", section: "How we work", note: "A few steady habits for making useful things with care." },
-    { id: "logbook", x: 1015, y: 250, name: "Observatory Logbook", glyph: "✎", route: "/field-notes/", section: "Field notes", note: "Short guides, observations, and details worth keeping." },
+    { id: "foundry", x: 1310, y: 790, name: "Tideglass Foundry", glyph: "▦", route: "/projects/", section: "Projects", note: "A directory of repositories, experiments, and things to try." },
+    { id: "compass", x: 420, y: 745, name: "Compass Garden", glyph: "✳", route: "/principles/", section: "How we work", note: "A few steady habits for making useful things with care." },
+    { id: "logbook", x: 1100, y: 265, name: "Observatory Logbook", glyph: "✎", route: "/field-notes/", section: "Field notes", note: "Short guides, observations, and details worth keeping." },
     { id: "archive", x: 155, y: 360, name: "Star Archive", glyph: "✧", route: "/research/", section: "Research & Essays", note: "Source-led explorations of the sky, objects, history, and ideas." }
   ];
 
