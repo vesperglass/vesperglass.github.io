@@ -29,21 +29,21 @@
   fogLayer.className = "atlas-space-fog";
   const orbitLayer = document.createElement("div");
   orbitLayer.className = "atlas-space-orbit";
-  const nebulaLayer = document.createElement("div");
-  nebulaLayer.className = "atlas-space-nebula";
-  nebulaLayer.setAttribute("role", "presentation");
+  const starDriftLayer = document.createElement("div");
+  starDriftLayer.className = "atlas-space-star-drift";
+  starDriftLayer.setAttribute("role", "presentation");
   for (let row = 1; row <= 3; row += 1) {
     for (let column = 1; column <= 3; column += 1) {
       const tile = document.createElement("img");
-      tile.src = `/assets/atlas-orbit-field-v2-r${row}c${column}.png`;
+      tile.src = `/assets/atlas-orbit-stars-r${row}c${column}.svg`;
       tile.alt = "";
       tile.draggable = false;
       tile.decoding = "async";
       tile.className = "atlas-space-tile";
-      nebulaLayer.appendChild(tile);
+      starDriftLayer.appendChild(tile);
     }
   }
-  orbitLayer.appendChild(nebulaLayer);
+  orbitLayer.appendChild(starDriftLayer);
   const effectsCanvas = document.createElement("canvas");
   effectsCanvas.className = "atlas-space-effects";
   effectsCanvas.setAttribute("aria-hidden", "true");
@@ -264,11 +264,11 @@
     sceneWidth = rect.width;
     sceneHeight = rect.height;
     resizeEffects();
-    // The nine source tiles are each 1024 × 1024. Keep their 3 × 3 canvas at
-    // native resolution so browser scaling does not soften the nebula texture.
+    // The nine source tiles each cover a 1024 × 1024 viewBox. Keep their
+    // seamless 3 × 3 star field at native resolution.
     const imageWidth = 3072;
-    nebulaLayer.style.width = `${imageWidth}px`;
-    nebulaLayer.style.height = `${imageWidth}px`;
+    starDriftLayer.style.width = `${imageWidth}px`;
+    starDriftLayer.style.height = `${imageWidth}px`;
     orbitRadius = Math.min(sceneWidth, sceneHeight) * 0.055;
     updateParallax();
   };
