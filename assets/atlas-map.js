@@ -48,9 +48,7 @@
   effectsCanvas.className = "atlas-space-effects";
   effectsCanvas.setAttribute("aria-hidden", "true");
   const effectsContext = effectsCanvas.getContext("2d", { alpha: true });
-  const nearLayer = document.createElement("div");
-  nearLayer.className = "atlas-space-layer atlas-space-layer--near";
-  spaceScene.append(deepLayer, fogLayer, effectsCanvas, orbitLayer, nearLayer);
+  spaceScene.append(deepLayer, fogLayer, orbitLayer, effectsCanvas);
   container.appendChild(spaceScene);
 
   L.imageOverlay("/assets/atlas-platform-transparent.webp", bounds, {
@@ -124,6 +122,7 @@
   let effectsFrame = 0;
   let lastEffectsFrameAt = 0;
   let effectStars = [];
+  let effectClusters = [];
   let activeComet = null;
   let nextCometAt = 0;
 
@@ -135,23 +134,50 @@
     effectsCanvas.style.width = `${sceneWidth}px`;
     effectsCanvas.style.height = `${sceneHeight}px`;
     effectsContext.setTransform(pixelRatio, 0, 0, pixelRatio, 0, 0);
-    const count = Math.min(88, Math.max(48, Math.round(sceneWidth * sceneHeight / 12000)));
+    const count = Math.min(260, Math.max(150, Math.round(sceneWidth * sceneHeight / 3200)));
     effectStars = Array.from({ length: count }, () => ({
       x: Math.random() * sceneWidth,
       y: Math.random() * sceneHeight,
-      radius: 0.35 + Math.random() * 0.65,
-      base: 0.035 + Math.random() * 0.045,
-      pulse: 0.04 + Math.random() * 0.11,
+      radius: 0.35 + Math.random() * 0.85,
+      base: 0.045 + Math.random() * 0.075,
+      pulse: 0.06 + Math.random() * 0.16,
       speed: 0.35 + Math.random() * 0.65,
       phase: Math.random() * Math.PI * 2,
-      color: Math.random() < 0.14 ? "224,198,154" : "194,218,255"
+      color: ["194,218,255", "194,218,255", "194,218,255", "224,198,154", "133,211,218"][Math.floor(Math.random() * 5)]
     }));
+    effectClusters = Array.from({ length: 7 }, () => {
+      const x = Math.random() * sceneWidth;
+      const y = Math.random() * sceneHeight;
+      const radius = 22 + Math.random() * 42;
+      const color = Math.random() < 0.5 ? "111,184,230" : "173,142,220";
+      const stars = Array.from({ length: 14 + Math.floor(Math.random() * 16) }, () => {
+        const angle = Math.random() * Math.PI * 2;
+        const distance = Math.sqrt(Math.random()) * radius;
+        return { x: x + Math.cos(angle) * distance, y: y + Math.sin(angle) * distance, radius: 0.35 + Math.random() * 0.9, alpha: 0.1 + Math.random() * 0.35, phase: Math.random() * Math.PI * 2 };
+      });
+      return { x, y, radius, color, stars };
+    });
     drawSpaceEffects(performance.now());
   };
 
   const drawSpaceEffects = (now) => {
     if (!effectsContext || !sceneWidth || !sceneHeight) return;
     effectsContext.clearRect(0, 0, sceneWidth, sceneHeight);
+    effectClusters.forEach((cluster) => {
+      const haze = effectsContext.createRadialGradient(cluster.x, cluster.y, 0, cluster.x, cluster.y, cluster.radius);
+      haze.addColorStop(0, `rgba(${cluster.color},0.10)`);
+      haze.addColorStop(0.42, `rgba(${cluster.color},0.035)`);
+      haze.addColorStop(1, `rgba(${cluster.color},0)`);
+      effectsContext.fillStyle = haze;
+      effectsContext.fillRect(cluster.x - cluster.radius, cluster.y - cluster.radius, cluster.radius * 2, cluster.radius * 2);
+      cluster.stars.forEach((star) => {
+        const pulse = motionPreference.matches ? 0.65 : 0.55 + Math.sin(now * 0.0012 + star.phase) * 0.45;
+        effectsContext.beginPath();
+        effectsContext.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
+        effectsContext.fillStyle = `rgba(222,236,255,${star.alpha * pulse})`;
+        effectsContext.fill();
+      });
+    });
     effectStars.forEach((star) => {
       const twinkle = motionPreference.matches ? 0.45 : (0.5 + Math.sin(now * 0.001 * star.speed + star.phase) * 0.5);
       effectsContext.beginPath();
@@ -218,7 +244,8 @@
   };
 
   const positionOrbit = () => {
-    orbitLayer.style.transform = `translate3d(calc(-50% + ${orbitX}px), calc(-50% + ${orbitY}px), 0)`;
+    const zoomScale = Math.max(0.985, 1 + (map.getZoom() - baseZoom) * 0.012);
+    orbitLayer.style.transform = `translate3d(calc(-50% + ${orbitX + panX * 0.025}px), calc(-50% + ${orbitY + panY * 0.025}px), 0) scale(${zoomScale})`;
   };
 
   const updateParallax = () => {
@@ -227,9 +254,8 @@
     panX = originalCenter.x - sceneWidth / 2;
     panY = originalCenter.y - sceneHeight / 2;
     const zoomDelta = map.getZoom() - baseZoom;
-    fogLayer.style.transform = `translate3d(${panX * 0.055}px, ${panY * 0.055}px, 0) scale(${Math.max(0.96, 1 + zoomDelta * 0.035)})`;
-    nearLayer.style.transform = `translate3d(${panX * 0.22}px, ${panY * 0.22}px, 0) scale(${Math.max(0.9, 1 + zoomDelta * 0.05)})`;
-    effectsCanvas.style.transform = `translate3d(${panX * 0.055}px, ${panY * 0.055}px, 0) scale(${Math.max(0.96, 1 + zoomDelta * 0.035)})`;
+    fogLayer.style.transform = `translate3d(${panX * 0.02}px, ${panY * 0.02}px, 0) scale(${Math.max(0.99, 1 + zoomDelta * 0.01)})`;
+    effectsCanvas.style.transform = `translate3d(${panX * 0.075}px, ${panY * 0.075}px, 0) scale(${Math.max(0.97, 1 + zoomDelta * 0.025)})`;
     positionOrbit();
   };
 

@@ -85,19 +85,19 @@
 
 .atlas-space-layer--deep{z-index:0;inset:-12%;background-image:linear-gradient(rgba(3,8,18,.58),rgba(3,8,18,.42)),url("/assets/atlas-deep-star-map-2020-8k-square.jpg");background-position:center;background-size:cover;opacity:.72;transform:none;will-change:auto}
 
-.atlas-space-fog{position:absolute;z-index:1;inset:-28%;pointer-events:none;opacity:.42;mix-blend-mode:screen;filter:blur(42px) saturate(118%);background:radial-gradient(ellipse 32% 23% at 24% 34%,rgba(83,177,207,.34),transparent 74%),radial-gradient(ellipse 29% 34% at 71% 45%,rgba(95,91,196,.3),transparent 76%),radial-gradient(ellipse 25% 21% at 49% 78%,rgba(177,121,170,.22),transparent 76%);will-change:transform}
+.atlas-space-fog{position:absolute;z-index:1;inset:-28%;pointer-events:none;opacity:.56;mix-blend-mode:screen;filter:blur(34px) saturate(126%);background:radial-gradient(ellipse 32% 23% at 24% 34%,rgba(83,177,207,.32),transparent 74%),radial-gradient(ellipse 29% 34% at 71% 45%,rgba(95,91,196,.28),transparent 76%),radial-gradient(ellipse 25% 21% at 49% 78%,rgba(177,121,170,.2),transparent 76%),radial-gradient(ellipse 18% 14% at 13% 74%,rgba(45,139,174,.2),transparent 78%),radial-gradient(ellipse 21% 13% at 83% 21%,rgba(194,137,166,.16),transparent 80%),radial-gradient(ellipse 17% 19% at 59% 16%,rgba(74,140,186,.2),transparent 76%),radial-gradient(ellipse 20% 12% at 38% 56%,rgba(149,113,190,.13),transparent 78%);will-change:transform}
 
-.atlas-space-orbit{position:absolute;z-index:3;top:50%;left:50%;width:0;height:0;pointer-events:none;will-change:transform}
+.atlas-space-fog::before{position:absolute;inset:0;background:repeating-radial-gradient(ellipse at 31% 44%,transparent 0 52px,rgba(142,208,224,.045) 54px 55px,transparent 58px 92px),repeating-linear-gradient(128deg,transparent 0 82px,rgba(121,198,214,.026) 84px 85px,transparent 88px 154px);opacity:.72;content:""}
+
+.atlas-space-orbit{position:absolute;z-index:2;top:50%;left:50%;width:0;height:0;pointer-events:none;will-change:transform}
 
 .atlas-space-nebula{position:absolute;top:0;left:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:repeat(3,minmax(0,1fr));overflow:hidden;opacity:.8;transform:translate(-50%,-50%) rotate(0deg);transform-origin:center;animation:atlas-space-rotation 960s linear infinite;will-change:transform}
 
 .atlas-space-tile{display:block;width:100%;height:100%;min-width:0;min-height:0;aspect-ratio:1;object-fit:cover;user-select:none;-webkit-user-drag:none}
 
-.atlas-space-effects{position:absolute;z-index:2;inset:0;display:block;pointer-events:none;will-change:transform}
+.atlas-space-effects{position:absolute;z-index:3;inset:0;display:block;pointer-events:none;will-change:transform}
 
-.atlas-space-layer--near{z-index:4;inset:-18%;background-image:radial-gradient(1.2px 1.2px at 8% 19%,#e4f1ff 80%,transparent),radial-gradient(1px 1px at 21% 72%,#b8dfff 75%,transparent),radial-gradient(1.4px 1.4px at 37% 34%,#fff1d6 75%,transparent),radial-gradient(1px 1px at 52% 82%,#cfeaff 75%,transparent),radial-gradient(1.2px 1.2px at 68% 17%,#fff 75%,transparent),radial-gradient(1px 1px at 79% 56%,#d6e8ff 75%,transparent),radial-gradient(1.3px 1.3px at 94% 38%,#ffe7c2 75%,transparent);background-size:100% 100%;opacity:.42;will-change:transform}
-
-.atlas-space-scene::after{position:absolute;z-index:5;inset:0;background:transparent;content:"";pointer-events:none}
+.atlas-space-scene::after{position:absolute;z-index:4;inset:0;background:transparent;content:"";pointer-events:none}
 
 @keyframes atlas-space-rotation{to{transform:translate(-50%,-50%) rotate(360deg)}}
 
