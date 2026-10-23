@@ -78,7 +78,7 @@ body::after{background-image:radial-gradient(1px 1px at 12% 22%,var(--space-star
 :root[data-theme="dark"]{--atlas-copper:#d0a070;--atlas-brass:#e5c38e;--atlas-earth:#4b9ecb;--atlas-earth-light:#a5e3f2;--atlas-earth-shadow:#143858;--atlas-land:#89c0a2;--atlas-cloud:#e2f0ea;--atlas-grid:#6c8f94;--atlas-star:#f0cf9f;--atlas-night:#07131e}
 .orbiting-visitor{display:none}
 .observatory-sky{position:fixed;inset:0;z-index:0;overflow:hidden;pointer-events:none;opacity:.19}
-.observatory-art{position:absolute;top:3%;right:-13%;display:block;width:min(112vw,1370px);height:auto;overflow:visible;filter:saturate(.83)}
+.observatory-art{position:absolute;top:-14%;right:-25%;display:block;width:min(112vw,1370px);height:auto;overflow:visible;filter:saturate(.83)}
 .atlas-chart{opacity:.53}
 .atlas-structure{opacity:.66}
 .atlas-rotor{transform-box:fill-box;transform-origin:center;animation:atlas-revolution 210s linear infinite}
@@ -87,5 +87,5 @@ body::after{background-image:radial-gradient(1px 1px at 12% 22%,var(--space-star
 @keyframes lens-glimmer{from{opacity:.83}to{opacity:1}}
 :root[data-theme="dark"] .observatory-sky{opacity:.31}
 :root[data-theme="dark"] .observatory-art{filter:saturate(1.05)}
-@media(max-width:760px){.observatory-art{top:14%;right:-38%;width:155vw;opacity:.8}}
+@media(max-width:760px){.observatory-art{top:-12%;right:-45%;width:155vw;opacity:.8}}
 @media(prefers-reduced-motion:reduce){.atlas-rotor,.atlas-lens{animation:none!important}}
