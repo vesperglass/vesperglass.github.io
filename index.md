@@ -38,6 +38,7 @@ atlas_enabled: true
       <div class="atlas-map-credit">
         <span>This floating workshop and its landmarks are imagined. No real-world geography.</span>
         <span>Interactive map by <a href="https://leafletjs.com/" rel="noopener">Leaflet</a> · <a href="{{ '/assets/leaflet/LICENSE.txt' | relative_url }}">MIT license</a></span>
+        <span>Sky panorama: <a href="https://www.eso.org/public/images/eso0932a/" rel="noopener">ESO/S. Brunier</a> · <a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener">CC BY 4.0</a> · padded and rotated for this atlas.</span>
       </div>
     </div>
 
