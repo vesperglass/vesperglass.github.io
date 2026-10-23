@@ -20,6 +20,21 @@
     keyboard: true
   });
 
+  const spaceScene = document.createElement("div");
+  spaceScene.className = "atlas-space-scene";
+  spaceScene.setAttribute("aria-hidden", "true");
+  const deepLayer = document.createElement("div");
+  deepLayer.className = "atlas-space-layer atlas-space-layer--deep";
+  const orbitLayer = document.createElement("div");
+  orbitLayer.className = "atlas-space-orbit";
+  const nebulaLayer = document.createElement("div");
+  nebulaLayer.className = "atlas-space-nebula";
+  orbitLayer.appendChild(nebulaLayer);
+  const nearLayer = document.createElement("div");
+  nearLayer.className = "atlas-space-layer atlas-space-layer--near";
+  spaceScene.append(deepLayer, orbitLayer, nearLayer);
+  container.appendChild(spaceScene);
+
   L.imageOverlay("/assets/atlas-platform-transparent.webp", bounds, {
     alt: "The Elsewhere Atlas of Vesperglass: a fictional glass-and-bronze workshop platform floating through a starry void, viewed from above at an angle.",
     interactive: false
@@ -75,6 +90,81 @@
 
   L.control.zoom({ position: "bottomright" }).addTo(map);
   map.fitBounds(bounds, { padding: [14, 14] });
+
+  const motionPreference = window.matchMedia("(prefers-reduced-motion: reduce)");
+  let sceneWidth = 0;
+  let sceneHeight = 0;
+  let baseZoom = map.getZoom();
+  const baseCenter = map.getCenter();
+  let panX = 0;
+  let panY = 0;
+  let orbitX = 0;
+  let orbitY = 0;
+  let orbitRadius = 0;
+  let orbitStartedAt = null;
+  let orbitFrame = 0;
+
+  const positionOrbit = () => {
+    const zoomScale = Math.max(0.92, 1 + (map.getZoom() - baseZoom) * 0.025);
+    orbitLayer.style.transform = `translate3d(calc(-50% + ${orbitX + panX * 0.12}px), calc(-50% + ${orbitY + panY * 0.12}px), 0) scale(${zoomScale})`;
+  };
+
+  const updateParallax = () => {
+    if (!sceneWidth || !sceneHeight) return;
+    const originalCenter = map.latLngToContainerPoint(baseCenter);
+    panX = originalCenter.x - sceneWidth / 2;
+    panY = originalCenter.y - sceneHeight / 2;
+    const zoomDelta = map.getZoom() - baseZoom;
+    deepLayer.style.transform = `translate3d(${panX * 0.035}px, ${panY * 0.035}px, 0) scale(${Math.max(0.94, 1 + zoomDelta * 0.012)})`;
+    nearLayer.style.transform = `translate3d(${panX * 0.22}px, ${panY * 0.22}px, 0) scale(${Math.max(0.9, 1 + zoomDelta * 0.05)})`;
+    positionOrbit();
+  };
+
+  const updateSceneSize = () => {
+    const rect = container.getBoundingClientRect();
+    sceneWidth = rect.width;
+    sceneHeight = rect.height;
+    const diagonal = Math.hypot(sceneWidth, sceneHeight);
+    const imageWidth = diagonal * 1.34;
+    nebulaLayer.style.width = `${imageWidth}px`;
+    nebulaLayer.style.height = `${imageWidth * 2 / 3}px`;
+    orbitRadius = Math.min(sceneWidth, sceneHeight) * 0.055;
+    updateParallax();
+  };
+
+  const animateOrbit = (now) => {
+    if (motionPreference.matches) {
+      orbitFrame = 0;
+      return;
+    }
+    if (orbitStartedAt === null) orbitStartedAt = now;
+    const phase = ((now - orbitStartedAt) % 360000) / 360000 * Math.PI * 2;
+    orbitX = Math.cos(phase) * orbitRadius;
+    orbitY = Math.sin(phase) * orbitRadius;
+    positionOrbit();
+    orbitFrame = window.requestAnimationFrame(animateOrbit);
+  };
+
+  const updateMotionPreference = () => {
+    if (motionPreference.matches) {
+      if (orbitFrame) window.cancelAnimationFrame(orbitFrame);
+      orbitFrame = 0;
+      orbitStartedAt = null;
+      orbitX = 0;
+      orbitY = 0;
+      positionOrbit();
+    } else if (!orbitFrame) {
+      orbitStartedAt = null;
+      orbitFrame = window.requestAnimationFrame(animateOrbit);
+    }
+  };
+
+  map.on("move zoom", updateParallax);
+  if (window.ResizeObserver) new ResizeObserver(updateSceneSize).observe(container);
+  updateSceneSize();
+  updateMotionPreference();
+  motionPreference.addEventListener?.("change", updateMotionPreference);
+
   resetButton?.addEventListener("click", () => map.flyToBounds(bounds, { padding: [14, 14], duration: 0.55 }));
   const updateFullscreenButton = () => {
     const active = document.fullscreenElement === mapCard;

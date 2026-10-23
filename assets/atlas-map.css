@@ -77,10 +77,25 @@
 
 .wayfinding-note span{color:var(--gold)}
 
-#vesperglass-atlas.leaflet-container{background-color:var(--map-ocean);outline:none}
-#vesperglass-atlas.leaflet-container::before{position:absolute;z-index:0;top:50%;left:-205%;width:360%;aspect-ratio:1;translate:0 -50%;background-image:linear-gradient(var(--map-backdrop-wash),var(--map-backdrop-wash)),url("/assets/atlas-deep-star-map-2020-8k-square.jpg");background-position:center;background-size:cover;content:"";pointer-events:none;transform-origin:50% 50%;animation:atlas-space-rotation 960s linear infinite}
-@keyframes atlas-space-rotation{to{transform:rotate(360deg)}}
-@media(prefers-reduced-motion:reduce){#vesperglass-atlas.leaflet-container::before{animation:none}}
+#vesperglass-atlas.leaflet-container{position:relative;isolation:isolate;background-color:#050914;outline:none}
+
+.atlas-space-scene{position:absolute;z-index:0;inset:0;overflow:hidden;pointer-events:none;background:#050914}
+
+.atlas-space-layer{position:absolute;pointer-events:none;will-change:transform}
+
+.atlas-space-layer--deep{z-index:0;inset:-10%;background-image:linear-gradient(rgba(3,8,18,.5),rgba(3,8,18,.36)),url("/assets/atlas-deep-star-map-2020-8k-square.jpg");background-position:center;background-size:cover;opacity:.72}
+
+.atlas-space-orbit{position:absolute;z-index:1;top:50%;left:50%;width:0;height:0;pointer-events:none;will-change:transform}
+
+.atlas-space-nebula{position:absolute;top:0;left:0;background-image:url("/assets/atlas-starfield-superres-6144.jpg");background-position:center;background-size:100% 100%;background-repeat:no-repeat;opacity:.72;mix-blend-mode:screen;transform:translate(-50%,-50%) rotate(0deg);transform-origin:center;animation:atlas-space-rotation 960s linear infinite;will-change:transform}
+
+.atlas-space-layer--near{z-index:2;inset:-18%;background-image:radial-gradient(1.2px 1.2px at 8% 19%,#e4f1ff 80%,transparent),radial-gradient(1px 1px at 21% 72%,#b8dfff 75%,transparent),radial-gradient(1.4px 1.4px at 37% 34%,#fff1d6 75%,transparent),radial-gradient(1px 1px at 52% 82%,#cfeaff 75%,transparent),radial-gradient(1.2px 1.2px at 68% 17%,#fff 75%,transparent),radial-gradient(1px 1px at 79% 56%,#d6e8ff 75%,transparent),radial-gradient(1.3px 1.3px at 94% 38%,#ffe7c2 75%,transparent);background-size:100% 100%;opacity:.42;will-change:transform}
+
+.atlas-space-scene::after{position:absolute;z-index:3;inset:0;background:var(--map-backdrop-wash);content:"";pointer-events:none}
+
+@keyframes atlas-space-rotation{to{transform:translate(-50%,-50%) rotate(360deg)}}
+
+@media(prefers-reduced-motion:reduce){.atlas-space-nebula{animation:none}}
 
 #vesperglass-atlas .leaflet-control-zoom{overflow:hidden;border:1px solid var(--map-pin-line);border-radius:7px;box-shadow:0 3px 12px #17231c18}
 
