@@ -12,7 +12,8 @@
     maxZoom: 1.5,
     maxBounds: bounds.pad(0.12),
     maxBoundsViscosity: 0.72,
-    zoomSnap: 0.25,
+    zoomSnap: 0.1,
+    zoomDelta: 0.25,
     wheelPxPerZoomLevel: 90,
     keyboard: true
   });
@@ -42,9 +43,9 @@
     const position = [1024 - place.y, place.x];
     const icon = L.divIcon({
       className: "atlas-pin",
-      iconSize: [168, 34],
-      iconAnchor: [14, 17],
-      html: '<span class="atlas-pin__mark" aria-hidden="true">' + escapeHtml(place.glyph) + '</span><span class="atlas-pin__label">' + escapeHtml(place.name) + '</span>'
+      iconSize: [30, 30],
+      iconAnchor: [15, 15],
+      html: '<span class="atlas-pin__mark" aria-hidden="true">' + escapeHtml(place.glyph) + '</span>'
     });
     const marker = L.marker(position, {
       title: place.name + " — " + place.section,
