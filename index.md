@@ -4,6 +4,7 @@ title: Welcome
 kicker: A NOTE FROM ORION
 description: A field guide to useful tools, experiments, and ideas taking shape at Vesperglass.
 permalink: /
+atlas_enabled: true
 ---
 
 <div class="welcome-callout">
@@ -13,16 +14,56 @@ permalink: /
   <p class="callout-copy">This is Vesperglass’s public notebook: a home for projects, working ideas, and the small discoveries that make the next step easier.</p>
 </div>
 
-## Find your bearings
+<section class="atlas-section" aria-labelledby="atlas-heading">
+  <div class="atlas-intro">
+    <span class="atlas-kicker">A CHART WITHOUT LATITUDE OR HOUR</span>
+    <h2 id="atlas-heading">A workshop outside space and time</h2>
+    <p>Vesperglass sits somewhere between the first question and the thing it becomes. Follow the paths to find your way around.</p>
+  </div>
 
-The Field Guide brings together what Vesperglass is making, practical notes, and research that follows a question into its history and meaning.
+  <div class="atlas-layout">
+    <div class="atlas-map-card">
+      <div class="atlas-map-toolbar">
+        <div><span class="atlas-map-overline">THE ELSEWHERE ATLAS</span><strong>Vesperglass and its neighboring ideas</strong></div>
+        <button class="atlas-reset" id="atlas-reset" type="button">Reset view <span aria-hidden="true">⟲</span></button>
+      </div>
+      <div class="atlas-map-frame">
+        <div id="vesperglass-atlas" role="application" aria-label="Interactive fictional map of Vesperglass">
+          <p id="atlas-map-fallback">The atlas is loading. You can use the destination links beside the map in the meantime.</p>
+        </div>
+      </div>
+      <div class="atlas-map-credit">
+        <span>Every shore, route, and name here is imagined. No real-world map data.</span>
+        <span>Interactive map by <a href="https://leafletjs.com/" rel="noopener">Leaflet</a> · <a href="{{ '/assets/leaflet/LICENSE.txt' | relative_url }}">MIT license</a></span>
+      </div>
+    </div>
 
-<div class="page-grid">
-  <a class="page-card" href="{{ '/about/' | relative_url }}"><span class="card-index">01 / ORIENTATION</span><strong>About Vesperglass</strong><span>What this little workshop is for, and who is building here.</span><span class="card-arrow">Read page ↗</span></a>
-  <a class="page-card" href="{{ '/projects/' | relative_url }}"><span class="card-index">02 / THE WORK</span><strong>Projects</strong><span>A directory of repositories and things you can try.</span><span class="card-arrow">Explore projects ↗</span></a>
-  <a class="page-card" href="{{ '/principles/' | relative_url }}"><span class="card-index">03 / OUR COMPASS</span><strong>How we work</strong><span>A few principles for building with care and a sense of direction.</span><span class="card-arrow">See the principles ↗</span></a>
-  <a class="page-card" href="{{ '/field-notes/' | relative_url }}"><span class="card-index">04 / OBSERVATIONS</span><strong>Field notes</strong><span>Short guides, useful findings, and details worth keeping.</span><span class="card-arrow">Read the notes ↗</span></a>
-  <a class="page-card" href="{{ '/research/' | relative_url }}"><span class="card-index">05 / STUDIES</span><strong>Research &amp; Essays</strong><span>Source-led explorations of the sky, history, objects, and ideas.</span><span class="card-arrow">Follow a question ↗</span></a>
-</div>
+    <aside class="atlas-wayfinding" aria-labelledby="wayfinding-heading">
+      <div class="wayfinding-heading">
+        <span class="atlas-map-overline">CHOOSE A BEARING</span>
+        <h3 id="wayfinding-heading">Places to begin</h3>
+        <p>Each stop opens a page in the Field Guide.</p>
+      </div>
+      <nav class="atlas-destinations" aria-label="Explore the Field Guide">
+        <a href="{{ '/about/' | relative_url }}" data-atlas-destination="threshold">
+          <span class="destination-glyph">◈</span><span class="destination-copy"><strong>Threshold House</strong><small>About Vesperglass</small></span><span class="destination-arrow" aria-hidden="true">↗</span>
+        </a>
+        <a href="{{ '/projects/' | relative_url }}" data-atlas-destination="foundry">
+          <span class="destination-glyph">▦</span><span class="destination-copy"><strong>Tideglass Foundry</strong><small>Projects</small></span><span class="destination-arrow" aria-hidden="true">↗</span>
+        </a>
+        <a href="{{ '/principles/' | relative_url }}" data-atlas-destination="compass">
+          <span class="destination-glyph">✳</span><span class="destination-copy"><strong>Compass Garden</strong><small>How we work</small></span><span class="destination-arrow" aria-hidden="true">↗</span>
+        </a>
+        <a href="{{ '/field-notes/' | relative_url }}" data-atlas-destination="logbook">
+          <span class="destination-glyph">✎</span><span class="destination-copy"><strong>Observatory Logbook</strong><small>Field notes</small></span><span class="destination-arrow" aria-hidden="true">↗</span>
+        </a>
+        <a href="{{ '/research/' | relative_url }}" data-atlas-destination="archive">
+          <span class="destination-glyph">✧</span><span class="destination-copy"><strong>Star Archive</strong><small>Research &amp; Essays</small></span><span class="destination-arrow" aria-hidden="true">↗</span>
+        </a>
+      </nav>
+      <p class="wayfinding-note"><span aria-hidden="true">✦</span> The workshop is marked at the center of the map. Select a pin to see where its path leads.</p>
+    </aside>
+  </div>
+</section>
 
 <div class="quiet-note"><span class="note-mark">✳</span><p><strong>One useful idea at a time.</strong><br>Pages will grow alongside the projects. If something changes, the source and the reasoning should be easy to find.</p></div>
