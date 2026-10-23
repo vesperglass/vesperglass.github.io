@@ -33,7 +33,7 @@
   for (let row = 1; row <= 3; row += 1) {
     for (let column = 1; column <= 3; column += 1) {
       const tile = document.createElement("img");
-      tile.src = `/assets/atlas-orbit-field-r${row}c${column}.webp`;
+      tile.src = `/assets/atlas-orbit-field-v2-r${row}c${column}.png`;
       tile.alt = "";
       tile.draggable = false;
       tile.decoding = "async";
@@ -139,7 +139,7 @@
     const diagonal = Math.hypot(sceneWidth, sceneHeight);
     const imageWidth = diagonal * 1.62;
     nebulaLayer.style.width = `${imageWidth}px`;
-    nebulaLayer.style.height = `${imageWidth * 2 / 3}px`;
+    nebulaLayer.style.height = `${imageWidth}px`;
     orbitRadius = Math.min(sceneWidth, sceneHeight) * 0.055;
     updateParallax();
   };
