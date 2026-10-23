@@ -33,7 +33,7 @@ atlas_enabled: true
         </div>
       </div>
       <div class="atlas-map-credit">
-        <span>Every shore, route, and name here is imagined. No real-world map data.</span>
+        <span>This floating workshop and its landmarks are imagined. No real-world geography.</span>
         <span>Interactive map by <a href="https://leafletjs.com/" rel="noopener">Leaflet</a> · <a href="{{ '/assets/leaflet/LICENSE.txt' | relative_url }}">MIT license</a></span>
       </div>
     </div>
