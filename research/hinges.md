@@ -1,6 +1,6 @@
 ---
 layout: default
-title: The Hinge: A Quiet Axis
+title: "The Hinge: A Quiet Axis"
 kicker: OBJECT / MECHANISM / METAPHOR
 description: A look at the joint that lets a door turn, a few ancient hinges, and the language of pivots and turning points.
 permalink: /research/hinges/
