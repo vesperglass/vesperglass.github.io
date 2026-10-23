@@ -85,7 +85,10 @@
         ? 'Exit full screen <span aria-hidden="true">⛶</span>'
         : 'Full screen <span aria-hidden="true">⛶</span>';
     }
-    window.requestAnimationFrame(() => map.invalidateSize({ pan: false }));
+    window.requestAnimationFrame(() => {
+      map.invalidateSize({ pan: false });
+      map.fitBounds(bounds, { padding: [14, 14], animate: false });
+    });
   };
   fullscreenButton?.addEventListener("click", async () => {
     try {
