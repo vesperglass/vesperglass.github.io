@@ -29,6 +29,18 @@
   orbitLayer.className = "atlas-space-orbit";
   const nebulaLayer = document.createElement("div");
   nebulaLayer.className = "atlas-space-nebula";
+  nebulaLayer.setAttribute("role", "presentation");
+  for (let row = 1; row <= 3; row += 1) {
+    for (let column = 1; column <= 3; column += 1) {
+      const tile = document.createElement("img");
+      tile.src = `/assets/atlas-orbit-field-r${row}c${column}.webp`;
+      tile.alt = "";
+      tile.draggable = false;
+      tile.decoding = "async";
+      tile.className = "atlas-space-tile";
+      nebulaLayer.appendChild(tile);
+    }
+  }
   orbitLayer.appendChild(nebulaLayer);
   const nearLayer = document.createElement("div");
   nearLayer.className = "atlas-space-layer atlas-space-layer--near";
@@ -115,7 +127,7 @@
     panX = originalCenter.x - sceneWidth / 2;
     panY = originalCenter.y - sceneHeight / 2;
     const zoomDelta = map.getZoom() - baseZoom;
-    deepLayer.style.transform = `translate3d(${panX * 0.035}px, ${panY * 0.035}px, 0) scale(${Math.max(0.94, 1 + zoomDelta * 0.012)})`;
+    deepLayer.style.transform = `translate3d(${panX * 0.003}px, ${panY * 0.003}px, 0) scale(${Math.max(0.995, 1 + zoomDelta * 0.001)})`;
     nearLayer.style.transform = `translate3d(${panX * 0.22}px, ${panY * 0.22}px, 0) scale(${Math.max(0.9, 1 + zoomDelta * 0.05)})`;
     positionOrbit();
   };
@@ -125,7 +137,7 @@
     sceneWidth = rect.width;
     sceneHeight = rect.height;
     const diagonal = Math.hypot(sceneWidth, sceneHeight);
-    const imageWidth = diagonal * 1.34;
+    const imageWidth = diagonal * 1.62;
     nebulaLayer.style.width = `${imageWidth}px`;
     nebulaLayer.style.height = `${imageWidth * 2 / 3}px`;
     orbitRadius = Math.min(sceneWidth, sceneHeight) * 0.055;
