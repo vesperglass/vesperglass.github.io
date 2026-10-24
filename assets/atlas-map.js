@@ -51,18 +51,18 @@
   spaceScene.append(deepLayer, fogLayer, orbitLayer, effectsCanvas);
   container.appendChild(spaceScene);
 
-  L.imageOverlay("/assets/atlas-platform-transparent.webp", bounds, {
-    alt: "The Elsewhere Atlas of Vesperglass: a fictional glass-and-bronze workshop platform floating through a starry void, viewed from above at an angle.",
+  L.imageOverlay("/assets/atlas-platform-base-v2.png", bounds, {
+    alt: "The Elsewhere Atlas of Vesperglass: six glass-and-bronze landing islands connected by bridges, floating through a starry void.",
     interactive: false
   }).addTo(map);
 
   const places = [
-    { id: "workshop", x: 775, y: 560, name: "Vesperglass Workshop", glyph: "⌂", route: "/", section: "Welcome", note: "A workshop set at the crossing of several unfinished paths." },
-    { id: "threshold", x: 480, y: 330, name: "Threshold House", glyph: "◈", route: "/about/", section: "About Vesperglass", note: "A place to learn what this workshop is for and who is building here." },
-    { id: "foundry", x: 1310, y: 790, name: "Tideglass Foundry", glyph: "▦", route: "/projects/", section: "Projects", note: "A directory of repositories, experiments, and things to try." },
-    { id: "compass", x: 420, y: 745, name: "Compass Garden", glyph: "✳", route: "/principles/", section: "How we work", note: "A few steady habits for making useful things with care." },
-    { id: "logbook", x: 1100, y: 265, name: "Observatory Logbook", glyph: "✎", route: "/field-notes/", section: "Field notes", note: "Short guides, observations, and details worth keeping." },
-    { id: "archive", x: 155, y: 360, name: "Star Archive", glyph: "✧", route: "/research/", section: "Research & Essays", note: "Source-led explorations of the sky, objects, history, and ideas." }
+    { id: "workshop", x: 808, y: 425, name: "Vesperglass Workshop", glyph: "⌂", route: "/", section: "Welcome", note: "A workshop set at the crossing of several unfinished paths." },
+    { id: "threshold", x: 480, y: 165, name: "Threshold House", glyph: "◈", route: "/about/", section: "About Vesperglass", note: "A place to learn what this workshop is for and who is building here." },
+    { id: "foundry", x: 1298, y: 758, name: "Tideglass Foundry", glyph: "▦", route: "/projects/", section: "Projects", note: "A directory of repositories, experiments, and things to try." },
+    { id: "compass", x: 414, y: 688, name: "Compass Garden", glyph: "✳", route: "/principles/", section: "How we work", note: "A few steady habits for making useful things with care." },
+    { id: "logbook", x: 1174, y: 205, name: "Observatory Logbook", glyph: "✎", route: "/field-notes/", section: "Field notes", note: "Short guides, observations, and details worth keeping." },
+    { id: "archive", x: 174, y: 326, name: "Star Archive", glyph: "✧", route: "/research/", section: "Research & Essays", note: "Source-led explorations of the sky, objects, history, and ideas." }
   ];
 
   const escapeHtml = (value) => {
@@ -105,6 +105,26 @@
   });
 
   const placeById = new Map(places.map((place) => [place.id, place]));
+  const landmarkArtwork = [
+    { id: "archive", file: "atlas-landmark-archive.png", width: 300, height: 274, alt: "Star Archive, a circular glass reading pavilion with a brass armillary and warm book galleries." },
+    { id: "threshold", file: "atlas-landmark-threshold.png", width: 260, height: 260, alt: "Threshold House, a welcoming glass-and-bronze residence with an arched doorway and conservatory wing." },
+    { id: "workshop", file: "atlas-landmark-workshop.png", width: 430, height: 430, alt: "Vesperglass Workshop, a broad glass-and-bronze maker's hall with visible benches, tools, and warm forge light." },
+    { id: "logbook", file: "atlas-landmark-observatory.png", width: 280, height: 280, alt: "Observatory Logbook, a tall glass tower with an open copper dome and brass telescope." },
+    { id: "compass", file: "atlas-landmark-garden.png", width: 400, height: 400, alt: "Compass Garden, a glass greenhouse surrounded by luminous flowers, trellises, and a compass mosaic." },
+    { id: "foundry", file: "atlas-landmark-foundry.png", width: 360, height: 360, alt: "Tideglass Foundry, a glass-and-bronze foundry with a copper chimney and glowing casting furnace." }
+  ];
+  landmarkArtwork.forEach((artwork) => {
+    const place = places.find((candidate) => candidate.id === artwork.id);
+    if (!place) return;
+    const south = 1024 - place.y - artwork.height / 2;
+    const north = 1024 - place.y + artwork.height / 2;
+    const west = place.x - artwork.width / 2;
+    const east = place.x + artwork.width / 2;
+    L.imageOverlay(`/assets/${artwork.file}`, [[south, west], [north, east]], {
+      alt: artwork.alt,
+      interactive: false
+    }).addTo(map);
+  });
   const courierRoutes = [
     { from: "foundry", to: "workshop", item: "⚙", label: "a fresh-forged component", tint: "bronze" },
     { from: "compass", to: "threshold", item: "✿", label: "garden clippings", tint: "green" },
