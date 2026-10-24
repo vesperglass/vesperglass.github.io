@@ -221,3 +221,8 @@
 .atlas-map-card:fullscreen .atlas-map-frame{position:absolute;inset:0;display:block;padding:0;background:#050914}
 .atlas-map-card:fullscreen #vesperglass-atlas{position:absolute;inset:0;width:100%;height:100%;min-height:0;aspect-ratio:auto;flex:none;border:0;border-radius:0}
 .atlas-map-card:fullscreen .atlas-map-credit{display:none}
+
+.atlas-island-art{will-change:translate;animation:atlas-landmark-float var(--atlas-float-duration,7s) ease-in-out var(--atlas-float-delay,0s) infinite}
+.atlas-pin-float{display:grid;width:30px;height:30px;place-items:center;will-change:translate;animation:atlas-landmark-float var(--atlas-float-duration,7s) ease-in-out var(--atlas-float-delay,0s) infinite}
+@keyframes atlas-landmark-float{0%,100%{translate:0 0}50%{translate:0 var(--atlas-float-distance,-4px)}}
+@media(prefers-reduced-motion:reduce){.atlas-island-art,.atlas-pin-float{animation:none;will-change:auto;translate:none}}
