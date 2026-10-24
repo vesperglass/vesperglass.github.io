@@ -104,6 +104,129 @@
     markers.set(place.id, marker);
   });
 
+  const placeById = new Map(places.map((place) => [place.id, place]));
+  const courierRoutes = [
+    { from: "foundry", to: "workshop", item: "⚙", label: "a fresh-forged component", tint: "bronze" },
+    { from: "compass", to: "threshold", item: "✿", label: "garden clippings", tint: "green" },
+    { from: "archive", to: "logbook", item: "▤", label: "a field book", tint: "blue" },
+    { from: "logbook", to: "archive", item: "✧", label: "an annotated star chart", tint: "blue" }
+  ];
+  const courierIcon = L.divIcon({
+    className: "atlas-courier",
+    iconSize: [48, 48],
+    iconAnchor: [24, 24],
+    html: '<span class="atlas-courier__glow" aria-hidden="true"></span>' +
+      '<span class="atlas-courier__antenna" aria-hidden="true"></span>' +
+      '<span class="atlas-courier__thruster" aria-hidden="true"></span>' +
+      '<span class="atlas-courier__body" aria-hidden="true"><i class="atlas-courier__eye"></i><i class="atlas-courier__eye"></i><b class="atlas-courier__cargo"></b></span>' +
+      '<span class="atlas-courier__spark atlas-courier__spark--one" aria-hidden="true"></span>' +
+      '<span class="atlas-courier__spark atlas-courier__spark--two" aria-hidden="true"></span>' +
+      '<span class="atlas-courier__spark atlas-courier__spark--three" aria-hidden="true"></span>' +
+      '<span class="atlas-courier__delivery" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>'
+  });
+  const courierMarker = L.marker([1024 - placeById.get("foundry").y, placeById.get("foundry").x], {
+    icon: courierIcon,
+    interactive: false,
+    keyboard: false,
+    zIndexOffset: 1200,
+    opacity: 0.98
+  }).addTo(map);
+  const courierRoutesInLatLng = courierRoutes.map((route) => ({
+    ...route,
+    start: [1024 - placeById.get(route.from).y, placeById.get(route.from).x],
+    end: [1024 - placeById.get(route.to).y, placeById.get(route.to).x]
+  }));
+  let courierRouteIndex = 0;
+  let courierFrame = 0;
+  let courierTimer = 0;
+  let courierActive = false;
+  const setCourierCargo = (route) => {
+    const element = courierMarker.getElement();
+    if (!element) return;
+    const cargo = element.querySelector(".atlas-courier__cargo");
+    if (cargo) {
+      cargo.textContent = route.item;
+      cargo.title = route.label;
+    }
+    element.dataset.cargo = route.tint;
+  };
+  const setCourierPosition = (latlng) => courierMarker.setLatLng(latlng);
+  const scheduleCourierRoute = () => {
+    if (motionPreference.matches || courierActive) return;
+    const route = courierRoutesInLatLng[courierRouteIndex % courierRoutesInLatLng.length];
+    courierRouteIndex = (courierRouteIndex + 1) % courierRoutesInLatLng.length;
+    const element = courierMarker.getElement();
+    if (element) {
+      element.classList.remove("is-delivering", "is-flying");
+      element.classList.add("is-flying");
+    }
+    setCourierCargo(route);
+    setCourierPosition(route.start);
+    courierActive = true;
+    const zoom = map.getZoom();
+    const start = map.project(route.start, zoom);
+    const end = map.project(route.end, zoom);
+    const dx = end.x - start.x;
+    const dy = end.y - start.y;
+    const distance = Math.hypot(dx, dy) || 1;
+    const arc = Math.min(88, Math.max(30, distance * 0.16));
+    const bendX = -dy / distance * arc;
+    const bendY = dx / distance * arc;
+    const controlOne = L.point(start.x + dx * 0.34 + bendX, start.y + dy * 0.34 + bendY);
+    const controlTwo = L.point(start.x + dx * 0.68 + bendX, start.y + dy * 0.68 + bendY);
+    const duration = 5700;
+    const startedAt = performance.now();
+    const fly = (now) => {
+      if (motionPreference.matches) {
+        courierActive = false;
+        courierFrame = 0;
+        return;
+      }
+      const raw = Math.min(1, (now - startedAt) / duration);
+      const t = raw < 0.5 ? 4 * raw * raw * raw : 1 - Math.pow(-2 * raw + 2, 3) / 2;
+      const oneMinus = 1 - t;
+      const point = L.point(
+        oneMinus ** 3 * start.x + 3 * oneMinus ** 2 * t * controlOne.x + 3 * oneMinus * t ** 2 * controlTwo.x + t ** 3 * end.x,
+        oneMinus ** 3 * start.y + 3 * oneMinus ** 2 * t * controlOne.y + 3 * oneMinus * t ** 2 * controlTwo.y + t ** 3 * end.y
+      );
+      setCourierPosition(map.unproject(point, zoom));
+      if (raw < 1) {
+        courierFrame = window.requestAnimationFrame(fly);
+        return;
+      }
+      setCourierPosition(route.end);
+      courierFrame = 0;
+      courierActive = false;
+      if (element) {
+        element.classList.remove("is-flying");
+        element.classList.add("is-delivering");
+      }
+      courierTimer = window.setTimeout(() => {
+        courierTimer = 0;
+        scheduleCourierRoute();
+      }, 1150);
+    };
+    courierFrame = window.requestAnimationFrame(fly);
+  };
+  const updateCourierMotion = () => {
+    if (motionPreference.matches) {
+      if (courierFrame) window.cancelAnimationFrame(courierFrame);
+      if (courierTimer) window.clearTimeout(courierTimer);
+      courierFrame = 0;
+      courierTimer = 0;
+      courierActive = false;
+      courierRouteIndex = 0;
+      setCourierPosition(courierRoutesInLatLng[0].start);
+      setCourierCargo(courierRoutesInLatLng[0]);
+      courierMarker.getElement()?.classList.remove("is-flying", "is-delivering");
+    } else if (!courierActive && !courierTimer) {
+      courierTimer = window.setTimeout(() => {
+        courierTimer = 0;
+        scheduleCourierRoute();
+      }, 1800);
+    }
+  };
+
   L.control.zoom({ position: "bottomright" }).addTo(map);
   map.fitBounds(bounds, { padding: [14, 14] });
 
@@ -287,6 +410,7 @@
   };
 
   const updateMotionPreference = () => {
+    updateCourierMotion();
     if (motionPreference.matches) {
       if (orbitFrame) window.cancelAnimationFrame(orbitFrame);
       if (effectsFrame) window.cancelAnimationFrame(effectsFrame);
