@@ -123,6 +123,7 @@
       '<span class="atlas-courier__sprite"></span>' +
       '<span class="atlas-courier__cargo"></span></span>'
   });
+  const motionPreference = window.matchMedia("(prefers-reduced-motion: reduce)");
   let courierZoom = map.getZoom();
   let courierWorldPosition = map.project(toLatLng("foundry"), courierZoom);
   const firstTarget = map.project(toLatLng("workshop"), courierZoom);
@@ -133,6 +134,7 @@
   let courierTimer = 0;
   let courierSmokeTimer = 0;
   let courierActive = false;
+  let courierZooming = false;
   let courierStarted = false;
   let courierPaused = false;
   let courierGoal = null;
@@ -191,9 +193,20 @@
     if (courierReferenceZoom === null) courierReferenceZoom = nextZoom;
     updateCourierArtworkScale(nextZoom);
   };
+  const pauseCourierForZoom = () => {
+    courierZooming = true;
+    if (courierFrame) window.cancelAnimationFrame(courierFrame);
+    courierFrame = 0;
+  };
+  const resumeCourierAfterZoom = () => {
+    rebaseCourierProjection();
+    courierZooming = false;
+    if (courierActive && courierGoal && !motionPreference.matches) runCourierFlight();
+  };
   map.on("zoom", () => updateCourierArtworkScale(map.getZoom()));
   map.on("zoomanim", (event) => updateCourierArtworkScale(event.zoom));
-  map.on("zoomend", rebaseCourierProjection);
+  map.on("zoomstart", pauseCourierForZoom);
+  map.on("zoomend", resumeCourierAfterZoom);
   const addCourierSmoke = (now) => {
     if (now - courierSmokeTimer < 180) return;
     courierSmokeTimer = now;
@@ -234,6 +247,10 @@
         courierSpeed = 0;
         courierFrame = 0;
         element?.classList.remove("is-flying");
+        return;
+      }
+      if (courierZooming) {
+        courierFrame = 0;
         return;
       }
       const dt = previousTime ? Math.min(0.045, (now - previousTime) / 1000) : 0.016;
@@ -330,7 +347,6 @@
   if (courierReferenceZoom === null) courierReferenceZoom = map.getZoom();
   updateCourierArtworkScale(map.getZoom());
 
-  const motionPreference = window.matchMedia("(prefers-reduced-motion: reduce)");
   let sceneWidth = 0;
   let sceneHeight = 0;
   let baseZoom = map.getZoom();
