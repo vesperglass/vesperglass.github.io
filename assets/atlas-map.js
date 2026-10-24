@@ -360,21 +360,10 @@
     const nextRoute = courierRoutes[nextRouteIndex];
     startCourierFlight(toLatLng(nextRoute.from), () => beginCourierDelivery(nextRouteIndex));
   };
-  setCourierCargo(courierDebugEnabled ? null : courierRoutes[0]);
+  setCourierCargo(courierRoutes[0]);
   setCourierFacing();
   updateCourierDebugReadout();
   const updateCourierMotion = () => {
-    if (courierDebugEnabled) {
-      if (courierFrame) window.cancelAnimationFrame(courierFrame);
-      if (courierTimer) window.clearTimeout(courierTimer);
-      courierFrame = 0;
-      courierTimer = 0;
-      courierActive = false;
-      courierPaused = true;
-      courierSpeed = 0;
-      courierMarker.getElement()?.classList.remove("is-flying");
-      return;
-    }
     if (motionPreference.matches) {
       if (courierFrame) window.cancelAnimationFrame(courierFrame);
       if (courierTimer) window.clearTimeout(courierTimer);
