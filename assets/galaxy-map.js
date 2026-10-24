@@ -1,0 +1,289 @@
+(() => {
+  const mapElement = document.getElementById("vesperglass-galaxy");
+  const seedInput = document.getElementById("galaxy-seed");
+  const generateButton = document.getElementById("galaxy-generate");
+  const newSeedButton = document.getElementById("galaxy-new-seed");
+  const backButton = document.getElementById("galaxy-back");
+  const mapStatus = document.getElementById("galaxy-map-status");
+  const inspector = document.getElementById("galaxy-inspector");
+  if (!mapElement || !window.L) return;
+
+  let seed = seedInput.value.trim() || "VESPERGLASS-01";
+  let mode = "galaxy";
+  let redrawTimer = 0;
+  const map = L.map(mapElement, {
+    crs: L.CRS.Simple,
+    zoomControl: false,
+    attributionControl: false,
+    minZoom: -2.2,
+    maxZoom: 5,
+    zoomSnap: 0.1,
+    zoomDelta: 0.25,
+    wheelPxPerZoomLevel: 100,
+    preferCanvas: true
+  });
+  L.control.zoom({ position: "bottomright" }).addTo(map);
+  map.setView([0, 0], 0);
+  const starLayer = L.layerGroup().addTo(map);
+  const systemLayer = L.layerGroup().addTo(map);
+  const cellSize = 190;
+  const spectral = [
+    { className: "o", label: "Blue giant", color: "#9bc8ff", temperature: [24000, 38000] },
+    { className: "a", label: "White star", color: "#d7e7ff", temperature: [8500, 12000] },
+    { className: "f", label: "Pale star", color: "#fff1d2", temperature: [6200, 7600] },
+    { className: "g", label: "Yellow star", color: "#ffd783", temperature: [5200, 6100] },
+    { className: "k", label: "Amber star", color: "#ffad72", temperature: [3700, 5000] },
+    { className: "m", label: "Red dwarf", color: "#f17979", temperature: [2400, 3600] }
+  ];
+  const planetTypes = [
+    { name: "Barren", color: "#c9a887" },
+    { name: "Terrestrial", color: "#85c7bc" },
+    { name: "Ocean", color: "#72bdf2" },
+    { name: "Ice", color: "#c6e9ff" },
+    { name: "Gas giant", color: "#dfaa75" },
+    { name: "Carbon", color: "#bd91d8" }
+  ];
+  const resources = ["Ice", "Iron", "Silicates", "Carbon", "Rare metals", "Volatiles"];
+  const syllablesA = ["Aster", "Bel", "Cael", "Dara", "Eri", "Fara", "Galen", "Hesper", "Iona", "Juno", "Keth", "Luma", "Mira", "Nara", "Orin", "Pela", "Quorin", "Rhea", "Sola", "Tavi", "Uma", "Vela", "Wren", "Xant", "Yara", "Zori"];
+  const syllablesB = ["reach", "mere", "vale", "haven", "spire", "fall", "cross", "wake", "rest", "well", "drift", "light", "field", "song", "shore", "glass", "gate", "home", "tide", "watch", "end", "pass", "ward", "rise"];
+  const hash = (value) => {
+    let result = 2166136261;
+    for (let i = 0; i < value.length; i += 1) {
+      result ^= value.charCodeAt(i);
+      result = Math.imul(result, 16777619);
+    }
+    return result >>> 0;
+  };
+  const randomFor = (key) => {
+    let state = hash(seed + "|" + key) || 0x6d2b79f5;
+    return () => {
+      state += 0x6d2b79f5;
+      let value = state;
+      value = Math.imul(value ^ (value >>> 15), value | 1);
+      value ^= value + Math.imul(value ^ (value >>> 7), value | 61);
+      return ((value ^ (value >>> 14)) >>> 0) / 4294967296;
+    };
+  };
+  const makeStar = (cellX, cellY) => {
+    const key = cellX + "," + cellY;
+    const random = randomFor("star:" + key);
+    if (random() > 0.82) return null;
+    const type = spectral[Math.floor(Math.pow(random(), 1.4) * spectral.length)];
+    const id = "VG-" + hash(seed + "|" + key).toString(36).toUpperCase();
+    const name = syllablesA[Math.floor(random() * syllablesA.length)] + syllablesB[Math.floor(random() * syllablesB.length)] + " " + (12 + Math.floor(random() * 88));
+    return {
+      id: id,
+      seedKey: key,
+      name: name,
+      x: (cellX + 0.5 + (random() - 0.5) * 0.72) * cellSize,
+      y: (cellY + 0.5 + (random() - 0.5) * 0.72) * cellSize,
+      type: type,
+      temperature: Math.round(type.temperature[0] + random() * (type.temperature[1] - type.temperature[0])),
+      mass: (0.25 + Math.pow(random(), 2.8) * 30).toFixed(2),
+      planets: 3 + Math.floor(random() * 6)
+    };
+  };
+  const createPlanets = (star) => Array.from({ length: star.planets }, (_, index) => {
+    const random = randomFor("planet:" + star.seedKey + ":" + index);
+    const type = planetTypes[Math.floor(random() * planetTypes.length)];
+    const orbit = 12 + index * 8;
+    const angle = random() * Math.PI * 2;
+    const name = star.name + " " + ["I", "II", "III", "IV", "V", "VI", "VII", "VIII"][index];
+    const resourceCount = 2 + Math.floor(random() * 2);
+    const available = resources.slice();
+    const deposits = [];
+    while (deposits.length < resourceCount && available.length) {
+      const position = Math.floor(random() * available.length);
+      deposits.push({ name: available.splice(position, 1)[0], richness: 25 + Math.floor(random() * 76) });
+    }
+    return {
+      id: star.id + "-P" + (index + 1),
+      name: name,
+      type: type,
+      x: star.x + Math.cos(angle) * orbit,
+      y: star.y + Math.sin(angle) * orbit,
+      orbit: orbit,
+      radius: +(0.35 + random() * 2.4).toFixed(2),
+      temperature: Math.round(-190 + random() * 530 - index * 13),
+      gravity: +(0.15 + random() * 2.1).toFixed(2),
+      deposits: deposits
+    };
+  });
+  const addFact = (list, label, value) => {
+    const row = document.createElement("div");
+    row.className = "galaxy-fact";
+    const term = document.createElement("dt");
+    term.textContent = label;
+    const detail = document.createElement("dd");
+    detail.textContent = value;
+    row.append(term, detail);
+    list.appendChild(row);
+  };
+  const createInspector = (eyebrowText, titleText, summaryText) => {
+    inspector.replaceChildren();
+    const eyebrow = document.createElement("p");
+    eyebrow.className = "galaxy-inspector__eyebrow";
+    eyebrow.textContent = eyebrowText;
+    const title = document.createElement("h2");
+    title.textContent = titleText;
+    const summary = document.createElement("p");
+    summary.className = "galaxy-inspector__lead";
+    summary.textContent = summaryText;
+    inspector.append(eyebrow, title, summary);
+    return inspector;
+  };
+  const showStar = (star) => {
+    const card = createInspector("STELLAR SYSTEM", star.name, star.type.label + " · " + star.planets + " generated planets");
+    const facts = document.createElement("dl");
+    facts.className = "galaxy-facts";
+    addFact(facts, "Catalog ID", star.id);
+    addFact(facts, "Surface temperature", star.temperature.toLocaleString() + " K");
+    addFact(facts, "Stellar mass", star.mass + " solar masses");
+    addFact(facts, "Galaxy seed", seed);
+    card.appendChild(facts);
+    const note = document.createElement("p");
+    note.className = "galaxy-inspector__note";
+    note.textContent = "Select a planetary dot to inspect its starting conditions and likely deposits.";
+    card.appendChild(note);
+  };
+  const showPlanet = (planet, star) => {
+    const card = createInspector("PLANETARY BODY · " + star.name, planet.name, planet.type.name + " world · orbit " + (planet.orbit / 10).toFixed(1));
+    const facts = document.createElement("dl");
+    facts.className = "galaxy-facts";
+    addFact(facts, "Catalog ID", planet.id);
+    addFact(facts, "Radius", planet.radius + " Earth radii");
+    addFact(facts, "Surface temperature", planet.temperature + " °C");
+    addFact(facts, "Gravity", planet.gravity + " g");
+    addFact(facts, "Galaxy seed", seed);
+    card.appendChild(facts);
+    const depositHeading = document.createElement("h3");
+    depositHeading.className = "galaxy-inspector__subhead";
+    depositHeading.textContent = "Likely deposits";
+    card.appendChild(depositHeading);
+    const deposits = document.createElement("ul");
+    deposits.className = "galaxy-deposits";
+    planet.deposits.forEach((deposit) => {
+      const item = document.createElement("li");
+      const label = document.createElement("span");
+      label.textContent = deposit.name;
+      const value = document.createElement("strong");
+      value.textContent = deposit.richness + "%";
+      item.append(label, value);
+      deposits.appendChild(item);
+    });
+    card.appendChild(deposits);
+  };
+  const clearInspector = () => {
+    const card = createInspector("EXPLORATION LOG", "Choose a star", "Every system is generated from the galaxy seed. Select a star to chart its planets and inspect their starting conditions.");
+    const seedLine = document.createElement("div");
+    seedLine.className = "galaxy-inspector__seed";
+    const label = document.createElement("span");
+    label.textContent = "GALAXY SEED";
+    const value = document.createElement("strong");
+    value.textContent = seed;
+    seedLine.append(label, value);
+    card.appendChild(seedLine);
+  };
+  const renderGalaxy = () => {
+    if (mode !== "galaxy") return;
+    starLayer.clearLayers();
+    systemLayer.clearLayers();
+    const bounds = map.getBounds();
+    const minX = Math.floor(bounds.getWest() / cellSize) - 1;
+    const maxX = Math.ceil(bounds.getEast() / cellSize) + 1;
+    const minY = Math.floor(bounds.getSouth() / cellSize) - 1;
+    const maxY = Math.ceil(bounds.getNorth() / cellSize) + 1;
+    let count = 0;
+    for (let cellY = minY; cellY <= maxY; cellY += 1) {
+      for (let cellX = minX; cellX <= maxX; cellX += 1) {
+        const star = makeStar(cellX, cellY);
+        if (!star) continue;
+        const marker = L.circleMarker([star.y, star.x], {
+          radius: 3.2 + Math.min(2.4, Math.log10(Number(star.mass) + 1) * 1.4),
+          color: star.type.color,
+          weight: 1,
+          opacity: 0.92,
+          fillColor: star.type.color,
+          fillOpacity: 0.88,
+          className: "galaxy-dot galaxy-dot--star galaxy-dot--" + star.type.className
+        }).addTo(starLayer);
+        marker.bindTooltip(star.name + " · " + star.type.label, { direction: "top", offset: [0, -7], opacity: 0.94 });
+        marker.on("click", () => openSystem(star));
+        count += 1;
+      }
+    }
+    mapStatus.textContent = count.toLocaleString() + " stars charted in view";
+    backButton.hidden = true;
+  };
+  const openSystem = (star) => {
+    mode = "system";
+    systemLayer.clearLayers();
+    starLayer.clearLayers();
+    const planets = createPlanets(star);
+    planets.forEach((planet) => {
+      const orbitPoints = Array.from({ length: 65 }, (_, pointIndex) => {
+        const angle = pointIndex / 64 * Math.PI * 2;
+        return [star.y + Math.sin(angle) * planet.orbit, star.x + Math.cos(angle) * planet.orbit];
+      });
+      L.polyline(orbitPoints, { color: "#a9cce5", weight: 1, opacity: 0.18, interactive: false, className: "galaxy-orbit" }).addTo(systemLayer);
+      const marker = L.circleMarker([planet.y, planet.x], {
+        radius: planet.type.name === "Gas giant" ? 6.5 : 4.6,
+        color: planet.type.color,
+        weight: 1.2,
+        opacity: 1,
+        fillColor: planet.type.color,
+        fillOpacity: 0.94,
+        className: "galaxy-dot galaxy-dot--planet"
+      }).addTo(systemLayer);
+      marker.bindTooltip(planet.name + " · " + planet.type.name, { direction: "top", offset: [0, -7], opacity: 0.94 });
+      marker.on("click", () => showPlanet(planet, star));
+    });
+    const starMarker = L.circleMarker([star.y, star.x], {
+      radius: 10,
+      color: star.type.color,
+      weight: 2,
+      opacity: 1,
+      fillColor: star.type.color,
+      fillOpacity: 0.98,
+      className: "galaxy-dot galaxy-dot--star galaxy-dot--system-star galaxy-dot--" + star.type.className
+    }).addTo(systemLayer);
+    starMarker.bindTooltip(star.name + " · " + star.type.label, { direction: "top", offset: [0, -12], opacity: 0.94 });
+    showStar(star);
+    backButton.hidden = false;
+    mapStatus.textContent = star.name + " · " + planets.length + " planets";
+    map.fitBounds([[star.y - 76, star.x - 76], [star.y + 76, star.x + 76]], { padding: [45, 45], maxZoom: 2.7 });
+  };
+  const returnToGalaxy = () => {
+    mode = "galaxy";
+    systemLayer.clearLayers();
+    selectedStar = null;
+    clearInspector();
+    map.setView([0, 0], 0);
+    renderGalaxy();
+  };
+  const scheduleGalaxyRender = () => {
+    if (mode !== "galaxy") return;
+    window.clearTimeout(redrawTimer);
+    redrawTimer = window.setTimeout(renderGalaxy, 80);
+  };
+  const applySeed = () => {
+    seed = seedInput.value.trim() || "VESPERGLASS-01";
+    seedInput.value = seed;
+    returnToGalaxy();
+  };
+  const makeNewSeed = () => {
+    const values = new Uint32Array(2);
+    if (window.crypto?.getRandomValues) window.crypto.getRandomValues(values);
+    else { values[0] = Date.now(); values[1] = Math.floor(Math.random() * 0xffffffff); }
+    seedInput.value = "VESPER-" + values[0].toString(36).toUpperCase() + values[1].toString(36).toUpperCase();
+    applySeed();
+  };
+  generateButton.addEventListener("click", applySeed);
+  seedInput.addEventListener("keydown", (event) => { if (event.key === "Enter") applySeed(); });
+  newSeedButton.addEventListener("click", makeNewSeed);
+  backButton.addEventListener("click", returnToGalaxy);
+  map.on("moveend zoomend", scheduleGalaxyRender);
+  clearInspector();
+  renderGalaxy();
+  window.requestAnimationFrame(() => map.invalidateSize({ pan: false }));
+})();
