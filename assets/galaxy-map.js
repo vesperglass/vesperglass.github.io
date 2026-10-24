@@ -269,13 +269,18 @@
     redrawTimer = window.setTimeout(renderGalaxy, 80);
   };
   const syncFullscreenButton = () => {
-    const active = document.fullscreenElement === mapShell || document.webkitFullscreenElement === mapShell;
+    const active = document.fullscreenElement === mapShell || document.webkitFullscreenElement === mapShell || mapShell.classList.contains("is-fullscreen");
     fullscreenButton.setAttribute("aria-pressed", String(active));
     fullscreenButton.setAttribute("aria-label", active ? "Exit galaxy map fullscreen" : "Open galaxy map fullscreen");
     fullscreenButton.textContent = active ? "⛶ Exit full screen" : "⛶ Fullscreen";
     window.requestAnimationFrame(() => map.invalidateSize({ pan: false }));
   };
   const toggleFullscreen = async () => {
+    if (mapShell.classList.contains("is-fullscreen")) {
+      mapShell.classList.remove("is-fullscreen");
+      syncFullscreenButton();
+      return;
+    }
     try {
       if (document.fullscreenElement || document.webkitFullscreenElement) {
         if (document.exitFullscreen) await document.exitFullscreen();
@@ -286,7 +291,8 @@
         mapShell.webkitRequestFullscreen?.();
       }
     } catch (_) {
-      mapStatus.textContent = "Fullscreen is unavailable in this browser";
+      mapShell.classList.add("is-fullscreen");
+      syncFullscreenButton();
     }
   };
   const applySeed = () => {
@@ -304,6 +310,12 @@
   fullscreenButton.addEventListener("click", toggleFullscreen);
   document.addEventListener("fullscreenchange", syncFullscreenButton);
   document.addEventListener("webkitfullscreenchange", syncFullscreenButton);
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && mapShell.classList.contains("is-fullscreen")) {
+      mapShell.classList.remove("is-fullscreen");
+      syncFullscreenButton();
+    }
+  });
   generateButton.addEventListener("click", applySeed);
   seedInput.addEventListener("keydown", (event) => { if (event.key === "Enter") applySeed(); });
   newSeedButton.addEventListener("click", makeNewSeed);
