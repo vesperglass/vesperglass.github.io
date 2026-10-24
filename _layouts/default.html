@@ -48,6 +48,14 @@
 
   {% endif %}
 
+  {% if page.galaxy_enabled %}
+
+  <link rel="stylesheet" href="{{ '/assets/leaflet/leaflet.css' | relative_url }}?v=1.9.4">
+
+  <link rel="stylesheet" href="{{ '/assets/galaxy-map.css' | relative_url }}?v=20261024-galaxy-prototype-1">
+
+  {% endif %}
+
   <script defer src="{{ '/assets/site.js' | relative_url }}?v=20261023-research"></script>
 
   {% if page.atlas_enabled %}
@@ -55,6 +63,14 @@
   <script defer src="{{ '/assets/leaflet/leaflet.js' | relative_url }}?v=1.9.4"></script>
 
   <script defer src="{{ '/assets/atlas-map.js' | relative_url }}?v=20261024-platform-float-3"></script>
+
+  {% endif %}
+
+  {% if page.galaxy_enabled %}
+
+  <script defer src="{{ '/assets/leaflet/leaflet.js' | relative_url }}?v=1.9.4"></script>
+
+  <script defer src="{{ '/assets/galaxy-map.js' | relative_url }}?v=20261024-galaxy-prototype-1"></script>
 
   {% endif %}
 
@@ -221,6 +237,8 @@
         <a href="{{ '/field-notes/' | relative_url }}"{% if page.url == '/field-notes/' %} class="active" aria-current="page"{% endif %}><span class="nav-icon">✎</span>Field notes</a>
 
         <a href="{{ '/research/' | relative_url }}"{% if page.url contains '/research/' %} class="active" aria-current="page"{% endif %}><span class="nav-icon">✧</span>Research &amp; Essays</a>
+
+        <a href="{{ '/galaxy/' | relative_url }}"{% if page.url == '/galaxy/' %} class="active" aria-current="page"{% endif %}><span class="nav-icon">✶</span>Galaxy</a>
 
       </nav>
 
