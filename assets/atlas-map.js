@@ -135,6 +135,7 @@
   let courierSmokeTimer = 0;
   let courierActive = false;
   let courierZooming = false;
+  let courierZoomResumeTimer = 0;
   let courierStarted = false;
   let courierPaused = false;
   let courierGoal = null;
@@ -195,13 +196,19 @@
   };
   const pauseCourierForZoom = () => {
     courierZooming = true;
+    if (courierZoomResumeTimer) window.clearTimeout(courierZoomResumeTimer);
+    courierZoomResumeTimer = 0;
     if (courierFrame) window.cancelAnimationFrame(courierFrame);
     courierFrame = 0;
   };
   const resumeCourierAfterZoom = () => {
     rebaseCourierProjection();
-    courierZooming = false;
-    if (courierActive && courierGoal && !motionPreference.matches) runCourierFlight();
+    if (courierZoomResumeTimer) window.clearTimeout(courierZoomResumeTimer);
+    courierZoomResumeTimer = window.setTimeout(() => {
+      courierZooming = false;
+      courierZoomResumeTimer = 0;
+      if (courierActive && courierGoal && !motionPreference.matches) runCourierFlight();
+    }, 250);
   };
   map.on("zoom", () => updateCourierArtworkScale(map.getZoom()));
   map.on("zoomanim", (event) => updateCourierArtworkScale(event.zoom));
