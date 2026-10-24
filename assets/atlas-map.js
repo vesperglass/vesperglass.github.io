@@ -57,12 +57,14 @@
   }).addTo(map);
 
   const places = [
-    { id: "workshop", x: 808, y: 425, name: "Vesperglass Workshop", glyph: "⌂", route: "/", section: "Welcome", note: "A workshop set at the crossing of several unfinished paths." },
-    { id: "threshold", x: 480, y: 165, name: "Threshold House", glyph: "◈", route: "/about/", section: "About Vesperglass", note: "A place to learn what this workshop is for and who is building here." },
-    { id: "foundry", x: 1298, y: 758, name: "Tideglass Foundry", glyph: "▦", route: "/projects/", section: "Projects", note: "A directory of repositories, experiments, and things to try." },
-    { id: "compass", x: 414, y: 688, name: "Compass Garden", glyph: "✳", route: "/principles/", section: "How we work", note: "A few steady habits for making useful things with care." },
-    { id: "logbook", x: 1174, y: 205, name: "Observatory Logbook", glyph: "✎", route: "/field-notes/", section: "Field notes", note: "Short guides, observations, and details worth keeping." },
-    { id: "archive", x: 174, y: 326, name: "Star Archive", glyph: "✧", route: "/research/", section: "Research & Essays", note: "Source-led explorations of the sky, objects, history, and ideas." }
+    // Coordinates are the centers of the six landing pads in atlas-platform-base-v2.png.
+    // Pins, landmark overlays, and courier destinations share these map-space anchors.
+    { id: "workshop", x: 839, y: 410, name: "Vesperglass Workshop", glyph: "⌂", route: "/", section: "Welcome", note: "A workshop set at the crossing of several unfinished paths." },
+    { id: "threshold", x: 487, y: 190, name: "Threshold House", glyph: "◈", route: "/about/", section: "About Vesperglass", note: "A place to learn what this workshop is for and who is building here." },
+    { id: "foundry", x: 1287, y: 717, name: "Tideglass Foundry", glyph: "▦", route: "/projects/", section: "Projects", note: "A directory of repositories, experiments, and things to try." },
+    { id: "compass", x: 414, y: 717, name: "Compass Garden", glyph: "✳", route: "/principles/", section: "How we work", note: "A few steady habits for making useful things with care." },
+    { id: "logbook", x: 1176, y: 190, name: "Observatory Logbook", glyph: "✎", route: "/field-notes/", section: "Field notes", note: "Short guides, observations, and details worth keeping." },
+    { id: "archive", x: 175, y: 300, name: "Star Archive", glyph: "✧", route: "/research/", section: "Research & Essays", note: "Source-led explorations of the sky, objects, history, and ideas." }
   ];
 
   const escapeHtml = (value) => {
