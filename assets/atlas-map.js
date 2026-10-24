@@ -117,8 +117,8 @@
   };
   const courierIcon = L.divIcon({
     className: "atlas-courier",
-    iconSize: [72, 96],
-    iconAnchor: [36, 83],
+    iconSize: [58, 78],
+    iconAnchor: [29, 67],
     html: '<span class="atlas-courier__sprite" aria-hidden="true"></span>' +
       '<span class="atlas-courier__cargo" aria-hidden="true"></span>'
   });
@@ -150,7 +150,7 @@
     if (!element) return;
     const direction = ((Math.round(courierHeading / (Math.PI / 4)) % 8) + 8) % 8;
     const sprite = element.querySelector(".atlas-courier__sprite");
-    if (sprite) sprite.style.backgroundPosition = `${-(direction % 4) * 72}px ${-Math.floor(direction / 4) * 96}px`;
+    if (sprite) sprite.style.backgroundPosition = `${-(direction % 4) * 58}px ${-Math.floor(direction / 4) * 77.333}px`;
   };
   const setCourierCargo = (route) => {
     const element = courierMarker.getElement();
@@ -169,7 +169,7 @@
     setCourierFacing();
   };
   const addCourierSmoke = (now) => {
-    if (now - courierSmokeTimer < 150) return;
+    if (now - courierSmokeTimer < 180) return;
     courierSmokeTimer = now;
     const spread = 3 + Math.random() * 5;
     const trailingDistance = 12 + Math.random() * 6;
@@ -177,7 +177,7 @@
       courierWorldPosition.x - Math.cos(courierHeading) * trailingDistance + (Math.random() - 0.5) * spread,
       courierWorldPosition.y - Math.sin(courierHeading) * trailingDistance + (Math.random() - 0.5) * spread
     );
-    const size = 9 + Math.random() * 6;
+    const size = 11 + Math.random() * 8;
     const puffIcon = L.divIcon({
       className: `atlas-courier-smoke atlas-courier-smoke--${smokeIconId++ % 3}`,
       iconSize: [size, size],
@@ -190,7 +190,7 @@
       keyboard: false,
       zIndexOffset: 1120 + Math.round(Math.random() * 20)
     }).addTo(map);
-    window.setTimeout(() => map.removeLayer(puff), 2600);
+    window.setTimeout(() => map.removeLayer(puff), 3450);
   };
   const courierTuning = { maxSpeed: 102, acceleration: 108, maxTurnRate: 0.92 };
   const clamp = (value, min, max) => Math.min(max, Math.max(min, value));
