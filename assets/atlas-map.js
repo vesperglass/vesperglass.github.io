@@ -124,7 +124,9 @@
       '<span class="atlas-courier__cargo"></span></span>'
   });
   const motionPreference = window.matchMedia("(prefers-reduced-motion: reduce)");
-  let courierZoom = map.getZoom();
+  // Keep route motion in one stable projection. The map chooses its initial
+  // zoom in fitBounds(), so this value is reset to that zoom afterward.
+  let courierZoom = 0;
   let courierWorldPosition = map.project(toLatLng("foundry"), courierZoom);
   const firstTarget = map.project(toLatLng("workshop"), courierZoom);
   let courierHeading = Math.atan2(firstTarget.y - courierWorldPosition.y, firstTarget.x - courierWorldPosition.x);
@@ -186,7 +188,6 @@
     const latLng = map.unproject(courierWorldPosition, courierZoom);
     const mapX = latLng.lng;
     const mapY = bounds.getNorth() - latLng.lat;
-    courierDebugMarker?.setLatLng(latLng);
     const icon = courierMarker.getElement();
     if (!icon) return;
     const iconRect = icon.getBoundingClientRect();
@@ -196,7 +197,11 @@
     const actualY = iconRect.top - mapRect.top + courierIcon.options.iconAnchor[1];
     const deltaX = actualX - expected.x;
     const deltaY = actualY - expected.y;
-    courierDebugPanel.textContent = `COURIER TRACE · image px ${mapX.toFixed(1)}, ${mapY.toFixed(1)} · map zoom ${map.getZoom().toFixed(2)} · marker-anchor Δ ${deltaX.toFixed(2)}, ${deltaY.toFixed(2)} px`;
+    const renderedLatLng = map.containerPointToLatLng([actualX, actualY]);
+    const renderedX = renderedLatLng.lng;
+    const renderedY = bounds.getNorth() - renderedLatLng.lat;
+    courierDebugMarker?.setLatLng(renderedLatLng);
+    courierDebugPanel.textContent = `COURIER TRACE · stored px ${mapX.toFixed(1)}, ${mapY.toFixed(1)} · rendered px ${renderedX.toFixed(1)}, ${renderedY.toFixed(1)} · zoom ${map.getZoom().toFixed(2)} · anchor Δ ${deltaX.toFixed(2)}, ${deltaY.toFixed(2)} px`;
   };
   const setCourierCargo = (route) => {
     const element = courierMarker.getElement();
@@ -223,16 +228,9 @@
   };
   const rebaseCourierProjection = () => {
     const nextZoom = map.getZoom();
-    if (Math.abs(nextZoom - courierZoom) > 1e-8) {
-      const position = map.unproject(courierWorldPosition, courierZoom);
-      const goal = courierGoal ? map.unproject(courierGoal, courierZoom) : null;
-      courierWorldPosition = map.project(position, nextZoom);
-      if (goal) courierGoal = map.project(goal, nextZoom);
-      courierZoom = nextZoom;
-      setCourierPosition();
-    }
     if (courierReferenceZoom === null) courierReferenceZoom = nextZoom;
     updateCourierArtworkScale(nextZoom);
+    updateCourierDebugReadout();
   };
   const pauseCourierForZoom = () => {
     courierZooming = true;
@@ -404,8 +402,17 @@
 
   L.control.zoom({ position: "bottomright" }).addTo(map);
   map.fitBounds(bounds, { padding: [14, 14] });
-  if (courierReferenceZoom === null) courierReferenceZoom = map.getZoom();
+  // fitBounds establishes the real initial view. Seed route coordinates only
+  // after that, then keep this projection zoom fixed for every later pan/zoom.
+  courierZoom = map.getZoom();
+  courierWorldPosition = map.project(toLatLng("foundry"), courierZoom);
+  const initialTarget = map.project(toLatLng("workshop"), courierZoom);
+  courierHeading = Math.atan2(initialTarget.y - courierWorldPosition.y, initialTarget.x - courierWorldPosition.x);
+  courierGoal = null;
+  courierReferenceZoom = courierZoom;
+  courierMarker.setLatLng(toLatLng("foundry"));
   updateCourierArtworkScale(map.getZoom());
+  setCourierPosition();
 
   let sceneWidth = 0;
   let sceneHeight = 0;
