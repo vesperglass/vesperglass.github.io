@@ -209,3 +209,7 @@
 
 @media(prefers-reduced-motion:reduce){.atlas-destinations a{transition:none}.atlas-destinations a:hover{transform:none}}
 
+
+
+.atlas-map-card:fullscreen .atlas-map-frame{padding:0}
+.atlas-map-card:fullscreen #vesperglass-atlas{border:0;border-radius:0}
