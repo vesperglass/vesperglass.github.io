@@ -4,6 +4,8 @@
   const generateButton = document.getElementById("galaxy-generate");
   const newSeedButton = document.getElementById("galaxy-new-seed");
   const backButton = document.getElementById("galaxy-back");
+  const fullscreenButton = document.getElementById("galaxy-fullscreen");
+  const mapShell = mapElement?.closest(".galaxy-map-shell");
   const mapStatus = document.getElementById("galaxy-map-status");
   const inspector = document.getElementById("galaxy-inspector");
   if (!mapElement || !window.L) return;
@@ -266,6 +268,27 @@
     window.clearTimeout(redrawTimer);
     redrawTimer = window.setTimeout(renderGalaxy, 80);
   };
+  const syncFullscreenButton = () => {
+    const active = document.fullscreenElement === mapShell || document.webkitFullscreenElement === mapShell;
+    fullscreenButton.setAttribute("aria-pressed", String(active));
+    fullscreenButton.setAttribute("aria-label", active ? "Exit galaxy map fullscreen" : "Open galaxy map fullscreen");
+    fullscreenButton.textContent = active ? "⛶ Exit full screen" : "⛶ Fullscreen";
+    window.requestAnimationFrame(() => map.invalidateSize({ pan: false }));
+  };
+  const toggleFullscreen = async () => {
+    try {
+      if (document.fullscreenElement || document.webkitFullscreenElement) {
+        if (document.exitFullscreen) await document.exitFullscreen();
+        else document.webkitExitFullscreen?.();
+      } else if (mapShell.requestFullscreen) {
+        await mapShell.requestFullscreen({ navigationUI: "hide" });
+      } else {
+        mapShell.webkitRequestFullscreen?.();
+      }
+    } catch (_) {
+      mapStatus.textContent = "Fullscreen is unavailable in this browser";
+    }
+  };
   const applySeed = () => {
     seed = seedInput.value.trim() || "VESPERGLASS-01";
     seedInput.value = seed;
@@ -278,6 +301,9 @@
     seedInput.value = "VESPER-" + values[0].toString(36).toUpperCase() + values[1].toString(36).toUpperCase();
     applySeed();
   };
+  fullscreenButton.addEventListener("click", toggleFullscreen);
+  document.addEventListener("fullscreenchange", syncFullscreenButton);
+  document.addEventListener("webkitfullscreenchange", syncFullscreenButton);
   generateButton.addEventListener("click", applySeed);
   seedInput.addEventListener("keydown", (event) => { if (event.key === "Enter") applySeed(); });
   newSeedButton.addEventListener("click", makeNewSeed);
