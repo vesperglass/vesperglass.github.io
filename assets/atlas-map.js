@@ -149,6 +149,28 @@
     zIndexOffset: 1200,
     opacity: 0.98
   }).addTo(map);
+  const courierDebugEnabled = new URLSearchParams(window.location.search).get("courier-debug") === "1";
+  let courierDebugMarker = null;
+  let courierDebugPanel = null;
+  if (courierDebugEnabled) {
+    const debugIcon = L.divIcon({
+      className: "atlas-courier-debug-marker",
+      iconSize: [24, 24],
+      iconAnchor: [12, 12],
+      html: '<span class="atlas-courier-debug-marker__crosshair" aria-hidden="true"></span>'
+    });
+    courierDebugMarker = L.marker(courierMarker.getLatLng(), {
+      icon: debugIcon,
+      interactive: false,
+      keyboard: false,
+      zIndexOffset: 1190
+    }).addTo(map);
+    courierDebugPanel = document.createElement("output");
+    courierDebugPanel.className = "atlas-courier-debug-readout";
+    courierDebugPanel.setAttribute("aria-live", "off");
+    courierDebugPanel.textContent = "Courier map-position trace";
+    container.appendChild(courierDebugPanel);
+  }
   // Sprite cells: E, SE, S, SW / W, NE, N, NW. Octants follow screen-space heading.
   const courierSpriteByOctant = [0, 1, 2, 3, 4, 5, 6, 7];
   const setCourierFacing = () => {
@@ -158,6 +180,23 @@
     const direction = courierSpriteByOctant[octant];
     const sprite = element.querySelector(".atlas-courier__sprite");
     if (sprite) sprite.style.backgroundPosition = `${-(direction % 4) * 14.5}px ${-Math.floor(direction / 4) * 19.333}px`;
+  };
+  const updateCourierDebugReadout = () => {
+    if (!courierDebugPanel) return;
+    const pointScale = map.options.crs.scale(courierZoom);
+    const mapX = courierWorldPosition.x / pointScale;
+    const mapY = bounds.getNorth() + courierWorldPosition.y / pointScale;
+    const latLng = map.unproject(courierWorldPosition, courierZoom);
+    courierDebugMarker?.setLatLng(latLng);
+    const icon = courierMarker.getElement();
+    if (!icon) return;
+    const iconRect = icon.getBoundingClientRect();
+    const mapRect = container.getBoundingClientRect();
+    const expected = map.latLngToContainerPoint(latLng);
+    const actualX = iconRect.left - mapRect.left + courierIcon.options.iconAnchor[0];
+    const actualY = iconRect.top - mapRect.top + courierIcon.options.iconAnchor[1];
+    const delta = Math.hypot(actualX - expected.x, actualY - expected.y);
+    courierDebugPanel.textContent = `COURIER POSITION TRACE · image px ${mapX.toFixed(1)}, ${mapY.toFixed(1)} · map zoom ${map.getZoom().toFixed(2)} · marker anchor Δ ${delta.toFixed(2)} px`;
   };
   const setCourierCargo = (route) => {
     const element = courierMarker.getElement();
@@ -174,6 +213,7 @@
   const setCourierPosition = () => {
     courierMarker.setLatLng(map.unproject(courierWorldPosition, courierZoom));
     setCourierFacing();
+    updateCourierDebugReadout();
   };
   let courierReferenceZoom = null;
   const updateCourierArtworkScale = (zoom = map.getZoom()) => {
@@ -212,6 +252,7 @@
   };
   map.on("zoom", () => updateCourierArtworkScale(map.getZoom()));
   map.on("zoomanim", (event) => updateCourierArtworkScale(event.zoom));
+  map.on("move zoom", updateCourierDebugReadout);
   map.on("zoomstart", pauseCourierForZoom);
   map.on("zoomend", resumeCourierAfterZoom);
   const addCourierSmoke = (now) => {
@@ -323,6 +364,7 @@
   };
   setCourierCargo(courierRoutes[0]);
   setCourierFacing();
+  updateCourierDebugReadout();
   const updateCourierMotion = () => {
     if (motionPreference.matches) {
       if (courierFrame) window.cancelAnimationFrame(courierFrame);
