@@ -154,12 +154,6 @@
 .atlas-courier-smoke span{display:block;width:100%;height:100%;border-radius:50%;background:radial-gradient(ellipse at 40% 38%,rgba(231,241,240,.56),rgba(170,193,200,.3) 38%,rgba(133,154,167,.05) 72%,transparent 76%);filter:blur(2px);animation:atlas-courier-smoke-fade 3.35s ease-out forwards}
 .atlas-courier-smoke--1 span{animation-delay:.03s}.atlas-courier-smoke--2 span{animation-delay:.07s}
 @keyframes atlas-courier-smoke-fade{0%{opacity:.56;transform:translate3d(0,0,0) scale(.58)}35%{opacity:.33}100%{opacity:0;transform:translate3d(-3px,-13px,0) scale(1.9)}}
-.leaflet-div-icon.atlas-courier-debug-marker{position:relative;width:24px!important;height:24px!important;border:0;background:transparent;pointer-events:none}
-.atlas-courier-debug-marker__crosshair{position:absolute;inset:3px;border:1.5px solid #ff596d;border-radius:50%;background:#ff33421c;box-shadow:0 0 0 1px #07111dcc,0 0 12px #ff405cbb}
-.atlas-courier-debug-marker__crosshair::before,.atlas-courier-debug-marker__crosshair::after{position:absolute;display:block;background:#fff0d2;box-shadow:0 0 3px #ff405c;content:""}
-.atlas-courier-debug-marker__crosshair::before{left:50%;top:-4px;width:1px;height:calc(100% + 8px);transform:translateX(-50%)}
-.atlas-courier-debug-marker__crosshair::after{left:-4px;top:50%;width:calc(100% + 8px);height:1px;transform:translateY(-50%)}
-.atlas-courier-debug-readout{position:absolute;z-index:1500;left:10px;top:10px;max-width:calc(100% - 20px);padding:7px 10px;border:1px solid #ff596d99;border-radius:7px;color:#ffe8d1;background:#10131ee8;box-shadow:0 2px 10px #0008;font:600 10px/1.4 ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:.025em;pointer-events:none}
 @media(prefers-reduced-motion:reduce){.atlas-courier-smoke span{animation:none;opacity:0}}
 .atlas-pin__mark{display:grid;width:30px;height:30px;place-items:center;border:1px solid var(--map-pin-line);border-radius:50%;color:var(--sea-dark);background:var(--map-pin);box-shadow:0 2px 8px #16231c2b;font-size:13px;transition:transform .15s,box-shadow .15s}
 
