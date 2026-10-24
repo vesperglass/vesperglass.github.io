@@ -133,6 +133,7 @@
       element.classList.add("atlas-island-art");
       element.style.setProperty("--atlas-float-duration", `${place.floatDuration}s`);
       element.style.setProperty("--atlas-float-delay", `${place.floatDelay}s`);
+      element.style.setProperty("--atlas-float-distance", "-4px");
     });
     overlay.addTo(map);
     overlay.getElement()?.classList.add("atlas-island-art");
@@ -140,11 +141,6 @@
     overlay.getElement()?.style.setProperty("--atlas-float-delay", `${place.floatDelay}s`);
     islandOverlays.push(overlay);
   });
-  const updateIslandFloatDistance = (zoom = map.getZoom()) => {
-    const distance = -4 / Math.pow(2, zoom);
-    islandOverlays.forEach((overlay) => overlay.getElement()?.style.setProperty("--atlas-float-distance", `${distance}px`));
-  };
-  map.on("zoom zoomanim", (event) => updateIslandFloatDistance(event.zoom ?? map.getZoom()));
   const courierRoutes = [
     { from: "foundry", to: "workshop", item: "⚙", label: "a fresh-forged component", tint: "bronze" },
     { from: "compass", to: "threshold", item: "✿", label: "garden clippings", tint: "green" },
@@ -429,7 +425,6 @@
 
   L.control.zoom({ position: "bottomright" }).addTo(map);
   map.fitBounds(bounds, { padding: [14, 14] });
-  updateIslandFloatDistance(map.getZoom());
   // fitBounds establishes the real initial view. Seed route coordinates only
   // after that, then keep this projection zoom fixed for every later pan/zoom.
   courierZoom = map.getZoom();
