@@ -277,12 +277,14 @@
     maxSpeed: 102,
     acceleration: 108,
     maxTurnRate: 0.92,
-    finalApproachRadius: 52,
-    finalApproachSpeed: 24,
+    finalApproachRadius: 22,
+    finalApproachSpeed: 38,
     arrivalRadius: 3.8,
     progressEpsilon: 1.5,
-    progressTimeout: 1800,
-    recoverySpeed: 3.2
+    // Allow a full turn before treating a route as stalled. The courier keeps
+    // its heading between legs, so a return trip can begin with a U-turn.
+    progressTimeout: 3800,
+    recoverySpeed: 34
   };
   const clamp = (value, min, max) => Math.min(max, Math.max(min, value));
   const runCourierFlight = () => {
@@ -323,6 +325,7 @@
       if (distance < bestDistance - courierTuning.progressEpsilon) {
         bestDistance = distance;
         lastProgressAt = now;
+        recoveryApproach = false;
       } else if (lastProgressAt && now - lastProgressAt >= courierTuning.progressTimeout) {
         recoveryApproach = true;
       }
