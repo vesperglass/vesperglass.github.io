@@ -183,10 +183,9 @@
   };
   const updateCourierDebugReadout = () => {
     if (!courierDebugPanel) return;
-    const pointScale = map.options.crs.scale(courierZoom);
-    const mapX = courierWorldPosition.x / pointScale;
-    const mapY = bounds.getNorth() + courierWorldPosition.y / pointScale;
     const latLng = map.unproject(courierWorldPosition, courierZoom);
+    const mapX = latLng.lng;
+    const mapY = bounds.getNorth() - latLng.lat;
     courierDebugMarker?.setLatLng(latLng);
     const icon = courierMarker.getElement();
     if (!icon) return;
@@ -195,8 +194,9 @@
     const expected = map.latLngToContainerPoint(latLng);
     const actualX = iconRect.left - mapRect.left + courierIcon.options.iconAnchor[0];
     const actualY = iconRect.top - mapRect.top + courierIcon.options.iconAnchor[1];
-    const delta = Math.hypot(actualX - expected.x, actualY - expected.y);
-    courierDebugPanel.textContent = `COURIER POSITION TRACE · image px ${mapX.toFixed(1)}, ${mapY.toFixed(1)} · map zoom ${map.getZoom().toFixed(2)} · marker anchor Δ ${delta.toFixed(2)} px`;
+    const deltaX = actualX - expected.x;
+    const deltaY = actualY - expected.y;
+    courierDebugPanel.textContent = `COURIER TRACE · image px ${mapX.toFixed(1)}, ${mapY.toFixed(1)} · map zoom ${map.getZoom().toFixed(2)} · marker-anchor Δ ${deltaX.toFixed(2)}, ${deltaY.toFixed(2)} px`;
   };
   const setCourierCargo = (route) => {
     const element = courierMarker.getElement();
