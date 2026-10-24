@@ -107,21 +107,26 @@
   });
 
   const placeById = new Map(places.map((place) => [place.id, place]));
+  // floorX/floorY are PNG-native pixels at each landmark's ground-plane center.
+  // That floor point, rather than the transparent image canvas center, sits on its pin.
   const landmarkArtwork = [
-    { id: "archive", file: "atlas-landmark-archive.png", width: 300, height: 274, alt: "Star Archive, a circular glass reading pavilion with a brass armillary and warm book galleries." },
-    { id: "threshold", file: "atlas-landmark-threshold.png", width: 260, height: 260, alt: "Threshold House, a welcoming glass-and-bronze residence with an arched doorway and conservatory wing." },
-    { id: "workshop", file: "atlas-landmark-workshop.png", width: 430, height: 430, alt: "Vesperglass Workshop, a broad glass-and-bronze maker's hall with visible benches, tools, and warm forge light." },
-    { id: "logbook", file: "atlas-landmark-observatory.png", width: 280, height: 280, alt: "Observatory Logbook, a tall glass tower with an open copper dome and brass telescope." },
-    { id: "compass", file: "atlas-landmark-garden.png", width: 400, height: 400, alt: "Compass Garden, a glass greenhouse surrounded by luminous flowers, trellises, and a compass mosaic." },
-    { id: "foundry", file: "atlas-landmark-foundry.png", width: 360, height: 360, alt: "Tideglass Foundry, a glass-and-bronze foundry with a copper chimney and glowing casting furnace." }
+    { id: "archive", file: "atlas-landmark-archive.png", width: 300, height: 274, sourceWidth: 1312, sourceHeight: 1199, floorX: 656, floorY: 930, alt: "Star Archive, a circular glass reading pavilion with a brass armillary and warm book galleries." },
+    { id: "threshold", file: "atlas-landmark-threshold.png", width: 260, height: 260, sourceWidth: 1254, sourceHeight: 1254, floorX: 627, floorY: 850, alt: "Threshold House, a welcoming glass-and-bronze residence with an arched doorway and conservatory wing." },
+    { id: "workshop", file: "atlas-landmark-workshop.png", width: 430, height: 430, sourceWidth: 1254, sourceHeight: 1254, floorX: 627, floorY: 930, alt: "Vesperglass Workshop, a broad glass-and-bronze maker's hall with visible benches, tools, and warm forge light." },
+    { id: "logbook", file: "atlas-landmark-observatory.png", width: 250, height: 220, sourceWidth: 1254, sourceHeight: 1254, floorX: 627, floorY: 1158, alt: "Observatory Logbook, a tall glass tower with an open copper dome and brass telescope." },
+    { id: "compass", file: "atlas-landmark-garden.png", width: 400, height: 400, sourceWidth: 1254, sourceHeight: 1254, floorX: 627, floorY: 850, alt: "Compass Garden, a glass greenhouse surrounded by luminous flowers, trellises, and a compass mosaic." },
+    { id: "foundry", file: "atlas-landmark-foundry.png", width: 360, height: 360, sourceWidth: 1254, sourceHeight: 1254, floorX: 627, floorY: 970, alt: "Tideglass Foundry, a glass-and-bronze foundry with a copper chimney and glowing casting furnace." }
   ];
   landmarkArtwork.forEach((artwork) => {
     const place = places.find((candidate) => candidate.id === artwork.id);
     if (!place) return;
-    const south = 1024 - place.y - artwork.height / 2;
-    const north = 1024 - place.y + artwork.height / 2;
-    const west = place.x - artwork.width / 2;
-    const east = place.x + artwork.width / 2;
+    const floorOffsetX = (artwork.floorX / artwork.sourceWidth) * artwork.width;
+    const floorOffsetY = (artwork.floorY / artwork.sourceHeight) * artwork.height;
+    const west = place.x - floorOffsetX;
+    const east = west + artwork.width;
+    const imageTop = place.y - floorOffsetY;
+    const north = 1024 - imageTop;
+    const south = 1024 - (imageTop + artwork.height);
     L.imageOverlay(`/assets/${artwork.file}`, [[south, west], [north, east]], {
       alt: artwork.alt,
       interactive: false
