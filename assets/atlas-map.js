@@ -117,8 +117,8 @@
   };
   const courierIcon = L.divIcon({
     className: "atlas-courier",
-    iconSize: [58, 78],
-    iconAnchor: [29, 67],
+    iconSize: [14.5, 19.333],
+    iconAnchor: [7.25, 16.75],
     html: '<span class="atlas-courier__sprite" aria-hidden="true"></span>' +
       '<span class="atlas-courier__cargo" aria-hidden="true"></span>'
   });
@@ -153,7 +153,7 @@
     const octant = ((Math.round(courierHeading / (Math.PI / 4)) % 8) + 8) % 8;
     const direction = courierSpriteByOctant[octant];
     const sprite = element.querySelector(".atlas-courier__sprite");
-    if (sprite) sprite.style.backgroundPosition = `${-(direction % 4) * 58}px ${-Math.floor(direction / 4) * 77.333}px`;
+    if (sprite) sprite.style.backgroundPosition = `${-(direction % 4) * 14.5}px ${-Math.floor(direction / 4) * 19.333}px`;
   };
   const setCourierCargo = (route) => {
     const element = courierMarker.getElement();
