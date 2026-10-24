@@ -126,7 +126,15 @@
     const overlay = L.imageOverlay(`/assets/${artwork.file}`, [[south, west], [north, east]], {
       alt: artwork.alt,
       interactive: false
-    }).addTo(map);
+    });
+    overlay.on("add", () => {
+      const element = overlay.getElement();
+      if (!element) return;
+      element.classList.add("atlas-island-art");
+      element.style.setProperty("--atlas-float-duration", `${place.floatDuration}s`);
+      element.style.setProperty("--atlas-float-delay", `${place.floatDelay}s`);
+    });
+    overlay.addTo(map);
     overlay.getElement()?.classList.add("atlas-island-art");
     overlay.getElement()?.style.setProperty("--atlas-float-duration", `${place.floatDuration}s`);
     overlay.getElement()?.style.setProperty("--atlas-float-delay", `${place.floatDelay}s`);
