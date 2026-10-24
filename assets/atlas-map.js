@@ -53,12 +53,12 @@
 
   const places = [
     // Pins, island floor anchors, and courier destinations share these map-space anchors.
-    { id: "workshop", x: 839, y: 410, name: "Vesperglass Workshop", glyph: "⌂", route: "/", section: "Welcome", note: "A workshop set at the crossing of several unfinished paths." },
-    { id: "threshold", x: 487, y: 190, name: "Threshold House", glyph: "◈", route: "/about/", section: "About Vesperglass", note: "A place to learn what this workshop is for and who is building here." },
-    { id: "foundry", x: 1287, y: 717, name: "Tideglass Foundry", glyph: "▦", route: "/projects/", section: "Projects", note: "A directory of repositories, experiments, and things to try." },
-    { id: "compass", x: 414, y: 717, name: "Compass Garden", glyph: "✳", route: "/principles/", section: "How we work", note: "A few steady habits for making useful things with care." },
-    { id: "logbook", x: 1176, y: 190, name: "Observatory Logbook", glyph: "✎", route: "/field-notes/", section: "Field notes", note: "Short guides, observations, and details worth keeping." },
-    { id: "archive", x: 175, y: 300, name: "Star Archive", glyph: "✧", route: "/research/", section: "Research & Essays", note: "Source-led explorations of the sky, objects, history, and ideas." }
+    { id: "workshop", floatDuration: 7.4, floatDelay: -0.8, x: 839, y: 410, name: "Vesperglass Workshop", glyph: "⌂", route: "/", section: "Welcome", note: "A workshop set at the crossing of several unfinished paths." },
+    { id: "threshold", floatDuration: 8.1, floatDelay: -4.3, x: 487, y: 190, name: "Threshold House", glyph: "◈", route: "/about/", section: "About Vesperglass", note: "A place to learn what this workshop is for and who is building here." },
+    { id: "foundry", floatDuration: 9, floatDelay: -6.1, x: 1287, y: 717, name: "Tideglass Foundry", glyph: "▦", route: "/projects/", section: "Projects", note: "A directory of repositories, experiments, and things to try." },
+    { id: "compass", floatDuration: 7.7, floatDelay: -2.8, x: 414, y: 717, name: "Compass Garden", glyph: "✳", route: "/principles/", section: "How we work", note: "A few steady habits for making useful things with care." },
+    { id: "logbook", floatDuration: 8.6, floatDelay: -5.5, x: 1176, y: 190, name: "Observatory Logbook", glyph: "✎", route: "/field-notes/", section: "Field notes", note: "Short guides, observations, and details worth keeping." },
+    { id: "archive", floatDuration: 6.9, floatDelay: -1.9, x: 175, y: 300, name: "Star Archive", glyph: "✧", route: "/research/", section: "Research & Essays", note: "Source-led explorations of the sky, objects, history, and ideas." }
   ];
 
   const escapeHtml = (value) => {
@@ -74,7 +74,7 @@
       className: "atlas-pin",
       iconSize: [30, 30],
       iconAnchor: [15, 15],
-      html: '<span class="atlas-pin__mark" aria-hidden="true">' + escapeHtml(place.glyph) + '</span>'
+      html: '<span class="atlas-pin-float" style="--atlas-float-duration:' + place.floatDuration + 's;--atlas-float-delay:' + place.floatDelay + 's;--atlas-float-distance:-4px"><span class="atlas-pin__mark" aria-hidden="true">' + escapeHtml(place.glyph) + '</span></span>'
     });
     const marker = L.marker(position, {
       title: place.name + " — " + place.section,
@@ -112,6 +112,7 @@
     { id: "compass", file: "atlas-island-garden.png", width: 390, height: 390, sourceWidth: 1254, sourceHeight: 1254, floorX: 627, floorY: 850, alt: "Compass Garden, a glass greenhouse and flowering compass garden on its own floating landing island." },
     { id: "foundry", file: "atlas-island-foundry.png", width: 370, height: 370, sourceWidth: 1254, sourceHeight: 1254, floorX: 627, floorY: 875, alt: "Tideglass Foundry, a glass-and-bronze foundry with a copper chimney and glowing furnace on its own floating landing island." }
   ];
+  const islandOverlays = [];
   landmarkArtwork.forEach((artwork) => {
     const place = places.find((candidate) => candidate.id === artwork.id);
     if (!place) return;
@@ -122,11 +123,20 @@
     const imageTop = place.y - floorOffsetY;
     const north = 1024 - imageTop;
     const south = 1024 - (imageTop + artwork.height);
-    L.imageOverlay(`/assets/${artwork.file}`, [[south, west], [north, east]], {
+    const overlay = L.imageOverlay(`/assets/${artwork.file}`, [[south, west], [north, east]], {
       alt: artwork.alt,
       interactive: false
     }).addTo(map);
+    overlay.getElement()?.classList.add("atlas-island-art");
+    overlay.getElement()?.style.setProperty("--atlas-float-duration", `${place.floatDuration}s`);
+    overlay.getElement()?.style.setProperty("--atlas-float-delay", `${place.floatDelay}s`);
+    islandOverlays.push(overlay);
   });
+  const updateIslandFloatDistance = (zoom = map.getZoom()) => {
+    const distance = -4 / Math.pow(2, zoom);
+    islandOverlays.forEach((overlay) => overlay.getElement()?.style.setProperty("--atlas-float-distance", `${distance}px`));
+  };
+  map.on("zoom zoomanim", (event) => updateIslandFloatDistance(event.zoom ?? map.getZoom()));
   const courierRoutes = [
     { from: "foundry", to: "workshop", item: "⚙", label: "a fresh-forged component", tint: "bronze" },
     { from: "compass", to: "threshold", item: "✿", label: "garden clippings", tint: "green" },
@@ -411,6 +421,7 @@
 
   L.control.zoom({ position: "bottomright" }).addTo(map);
   map.fitBounds(bounds, { padding: [14, 14] });
+  updateIslandFloatDistance(map.getZoom());
   // fitBounds establishes the real initial view. Seed route coordinates only
   // after that, then keep this projection zoom fixed for every later pan/zoom.
   courierZoom = map.getZoom();
