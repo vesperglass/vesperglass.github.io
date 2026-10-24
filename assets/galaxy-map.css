@@ -1,0 +1,57 @@
+.galaxy-explorer{margin:28px 0 8px;min-width:0}
+.galaxy-explorer__intro{display:flex;justify-content:space-between;align-items:end;gap:20px;margin:0 0 16px}
+.galaxy-explorer__intro h2{margin:5px 0;color:var(--ink);font:400 clamp(26px,3vw,34px)/1.15 var(--serif);letter-spacing:-.025em}
+.galaxy-explorer__intro p{max-width:670px;margin:0;color:var(--soft);font:14px/1.55 var(--serif)}
+.galaxy-explorer__eyebrow{display:block;color:var(--sea);font:750 9px/1.4 var(--sans);letter-spacing:.16em}
+.galaxy-workspace{display:grid;grid-template-columns:minmax(0,1fr) 290px;gap:12px;align-items:stretch}
+.galaxy-map-shell{position:relative;min-width:0;overflow:hidden;border:1px solid #293e4c;border-radius:12px;background:#050914;box-shadow:0 18px 46px #111c2b20}
+#vesperglass-galaxy{width:100%;height:min(68vh,720px);min-height:520px;overflow:hidden;background:#050914 url("/assets/atlas-deep-starfield.svg") center/cover;color:#d9e8f2;font-family:var(--sans);outline:none}
+#vesperglass-galaxy::after{position:absolute;z-index:350;inset:0;border:1px solid #9ab9d215;border-radius:inherit;content:"";pointer-events:none}
+.galaxy-map-toolbar{position:absolute;z-index:600;top:14px;left:14px;right:14px;display:flex;justify-content:space-between;align-items:start;gap:10px;pointer-events:none}
+.galaxy-map-toolbar>*{pointer-events:auto}
+.galaxy-seed-tools{display:flex;align-items:end;gap:6px;padding:8px;border:1px solid #9bb8cc35;border-radius:10px;background:#07101bd9;box-shadow:0 8px 26px #0006;backdrop-filter:blur(12px)}
+.galaxy-seed-field{display:grid;gap:4px;min-width:160px}
+.galaxy-seed-field label{color:#a6bdca;font:700 8px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase}
+.galaxy-seed-field input{width:190px;max-width:28vw;padding:7px 8px;border:1px solid #57718170;border-radius:6px;color:#e8f2f6;background:#101c29;font:11px ui-monospace,SFMono-Regular,Consolas,monospace}
+.galaxy-seed-field input:focus-visible{outline:2px solid #94c9d8;outline-offset:1px}
+.galaxy-tool-button{display:flex;align-items:center;justify-content:center;min-height:31px;padding:7px 9px;border:1px solid #59718480;border-radius:6px;color:#dce9ee;background:#132331;font:600 10px/1 var(--sans);cursor:pointer;white-space:nowrap}
+.galaxy-tool-button:hover,.galaxy-tool-button:focus-visible{border-color:#a5dce5;color:#fff;background:#1d3545}
+.galaxy-tool-button:focus-visible{outline:2px solid #94c9d8;outline-offset:2px}
+#galaxy-back{color:#f0d4a3;border-color:#bd986c75}
+.galaxy-map-status{align-self:start;margin:0;padding:9px 11px;border:1px solid #9bb8cc35;border-radius:9px;color:#d8e6ee;background:#07101bd9;box-shadow:0 8px 26px #0006;font:600 10px/1.2 var(--sans);backdrop-filter:blur(12px)}
+.galaxy-inspector{display:flex;flex-direction:column;min-width:0;padding:20px;border:1px solid var(--line);border-radius:12px;color:var(--ink);background:var(--white);box-shadow:0 12px 32px #17231c0b}
+.galaxy-inspector__eyebrow{margin:1px 0 8px;color:var(--sea-dark);font:750 8px/1.4 var(--sans);letter-spacing:.14em}
+.galaxy-inspector h2{margin:0 0 8px;color:var(--ink);font:400 25px/1.15 var(--serif);overflow-wrap:anywhere}
+.galaxy-inspector__lead{margin:0 0 16px;color:var(--soft);font:13px/1.5 var(--serif)}
+.galaxy-facts{display:grid;gap:0;margin:0;padding:0;border-top:1px solid var(--line)}
+.galaxy-fact{display:flex;justify-content:space-between;gap:10px;padding:9px 0;border-bottom:1px solid var(--line)}
+.galaxy-fact dt{color:var(--soft);font-size:10px}
+.galaxy-fact dd{margin:0;color:var(--ink);font-size:10px;font-weight:700;text-align:right}
+.galaxy-inspector__subhead{margin:19px 0 7px;color:var(--ink);font:700 10px/1.3 var(--sans);letter-spacing:.1em;text-transform:uppercase}
+.galaxy-inspector__note{margin:auto 0 0;padding-top:18px;color:var(--soft);font:italic 12px/1.5 var(--serif)}
+.galaxy-inspector__seed{display:grid;gap:5px;margin-top:auto;padding:12px;border:1px solid var(--line);border-radius:8px;background:var(--map-control-hover)}
+.galaxy-inspector__seed span{color:var(--soft);font:700 8px/1.2 var(--sans);letter-spacing:.12em}
+.galaxy-inspector__seed strong{color:var(--ink);font:11px ui-monospace,SFMono-Regular,Consolas,monospace;overflow-wrap:anywhere}
+.galaxy-deposits{display:grid;gap:5px;margin:0;padding:0;list-style:none}
+.galaxy-deposits li{display:flex;justify-content:space-between;gap:10px;padding:7px 9px;border:1px solid var(--line);border-radius:6px;color:var(--ink);font-size:10px;background:var(--map-control-hover)}
+.galaxy-deposits strong{color:var(--sea-dark)}
+.galaxy-legend{display:flex;align-items:center;flex-wrap:wrap;gap:8px 15px;padding:11px 3px 0;color:var(--soft);font-size:9px}
+.galaxy-legend__title{margin-right:3px;color:var(--muted);font:700 8px/1 var(--sans);letter-spacing:.13em}
+.galaxy-legend__item{display:inline-flex;align-items:center;gap:6px}
+.galaxy-legend__dot{width:7px;height:7px;border-radius:50%;box-shadow:0 0 8px currentColor;background:currentColor}
+.galaxy-legend__dot--blue{color:#9bc8ff}.galaxy-legend__dot--white{color:#d7e7ff}.galaxy-legend__dot--yellow{color:#ffd783}.galaxy-legend__dot--amber{color:#ffad72}.galaxy-legend__dot--red{color:#f17979}
+.galaxy-caption{margin:10px 2px 0;color:var(--muted);font-size:9px;line-height:1.5}
+.galaxy-dot{filter:drop-shadow(0 0 5px currentColor);animation:galaxy-star-glow 4.8s ease-in-out infinite alternate}
+.galaxy-dot--system-star{filter:drop-shadow(0 0 13px currentColor)}
+.galaxy-orbit{stroke-dasharray:2 7}
+#vesperglass-galaxy .leaflet-control-zoom{overflow:hidden;border:1px solid #89a7bb55;border-radius:7px;box-shadow:0 4px 16px #0007}
+#vesperglass-galaxy .leaflet-control-zoom a{width:31px;height:31px;border-color:#89a7bb40;color:#dce9ee;background:#10202d;font:20px/30px var(--sans)}
+#vesperglass-galaxy .leaflet-control-zoom a:hover{color:#fff;background:#203b4d}
+#vesperglass-galaxy .leaflet-tooltip{padding:5px 7px;border:1px solid #607e91;color:#e7f1f5;background:#0b1620eF;box-shadow:0 3px 12px #0008;font:10px var(--sans)}
+#vesperglass-galaxy .leaflet-tooltip-top:before{border-top-color:#607e91}
+@keyframes galaxy-star-glow{from{opacity:.82}to{opacity:1}}
+@media(prefers-reduced-motion:reduce){.galaxy-dot{animation:none}}
+@media(max-width:900px){.galaxy-workspace{grid-template-columns:minmax(0,1fr) 255px}.galaxy-inspector{padding:15px}#vesperglass-galaxy{height:60vh;min-height:460px}}
+@media(max-width:680px){.galaxy-explorer__intro{display:block}.galaxy-workspace{grid-template-columns:minmax(0,1fr)}.galaxy-inspector{min-height:260px}.galaxy-map-toolbar{top:8px;left:8px;right:8px;flex-wrap:wrap}.galaxy-seed-tools{flex-wrap:wrap;max-width:calc(100% - 82px)}.galaxy-seed-field{min-width:0;flex:1 1 100%}.galaxy-seed-field input{width:100%;max-width:none}.galaxy-map-status{margin-left:auto;font-size:9px}#vesperglass-galaxy{height:58vh;min-height:430px}}
+
+.galaxy-dot--o{filter:drop-shadow(0 0 7px #9bc8ff)}.galaxy-dot--a{filter:drop-shadow(0 0 7px #d7e7ff)}.galaxy-dot--f{filter:drop-shadow(0 0 7px #fff1d2)}.galaxy-dot--g{filter:drop-shadow(0 0 7px #ffd783)}.galaxy-dot--k{filter:drop-shadow(0 0 7px #ffad72)}.galaxy-dot--m{filter:drop-shadow(0 0 7px #f17979)}.galaxy-dot--planet{filter:drop-shadow(0 0 7px #a9d8e9)}
