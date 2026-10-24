@@ -119,10 +119,11 @@
     className: "atlas-courier",
     iconSize: [14.5, 19.333],
     iconAnchor: [7.25, 16.75],
-    html: '<span class="atlas-courier__sprite" aria-hidden="true"></span>' +
-      '<span class="atlas-courier__cargo" aria-hidden="true"></span>'
+    html: '<span class="atlas-courier__art" aria-hidden="true">' +
+      '<span class="atlas-courier__sprite"></span>' +
+      '<span class="atlas-courier__cargo"></span></span>'
   });
-  const courierZoom = map.getZoom();
+  let courierZoom = map.getZoom();
   let courierWorldPosition = map.project(toLatLng("foundry"), courierZoom);
   const firstTarget = map.project(toLatLng("workshop"), courierZoom);
   let courierHeading = Math.atan2(firstTarget.y - courierWorldPosition.y, firstTarget.x - courierWorldPosition.x);
@@ -171,6 +172,28 @@
     courierMarker.setLatLng(map.unproject(courierWorldPosition, courierZoom));
     setCourierFacing();
   };
+  let courierReferenceZoom = null;
+  const updateCourierArtworkScale = (zoom = map.getZoom()) => {
+    if (courierReferenceZoom === null) return;
+    const element = courierMarker.getElement();
+    if (element) element.style.setProperty("--courier-map-scale", String(Math.pow(2, zoom - courierReferenceZoom)));
+  };
+  const rebaseCourierProjection = () => {
+    const nextZoom = map.getZoom();
+    if (Math.abs(nextZoom - courierZoom) > 1e-8) {
+      const position = map.unproject(courierWorldPosition, courierZoom);
+      const goal = courierGoal ? map.unproject(courierGoal, courierZoom) : null;
+      courierWorldPosition = map.project(position, nextZoom);
+      if (goal) courierGoal = map.project(goal, nextZoom);
+      courierZoom = nextZoom;
+      setCourierPosition();
+    }
+    if (courierReferenceZoom === null) courierReferenceZoom = nextZoom;
+    updateCourierArtworkScale(nextZoom);
+  };
+  map.on("zoom", () => updateCourierArtworkScale(map.getZoom()));
+  map.on("zoomanim", (event) => updateCourierArtworkScale(event.zoom));
+  map.on("zoomend", rebaseCourierProjection);
   const addCourierSmoke = (now) => {
     if (now - courierSmokeTimer < 180) return;
     courierSmokeTimer = now;
@@ -304,6 +327,8 @@
 
   L.control.zoom({ position: "bottomright" }).addTo(map);
   map.fitBounds(bounds, { padding: [14, 14] });
+  if (courierReferenceZoom === null) courierReferenceZoom = map.getZoom();
+  updateCourierArtworkScale(map.getZoom());
 
   const motionPreference = window.matchMedia("(prefers-reduced-motion: reduce)");
   let sceneWidth = 0;
