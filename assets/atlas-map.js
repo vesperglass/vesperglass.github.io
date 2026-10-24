@@ -136,8 +136,6 @@
   let courierTimer = 0;
   let courierSmokeTimer = 0;
   let courierActive = false;
-  let courierZooming = false;
-  let courierZoomResumeTimer = 0;
   let courierStarted = false;
   let courierPaused = false;
   let courierGoal = null;
@@ -226,33 +224,9 @@
     const element = courierMarker.getElement();
     if (element) element.style.setProperty("--courier-map-scale", String(Math.pow(2, zoom - courierReferenceZoom)));
   };
-  const rebaseCourierProjection = () => {
-    const nextZoom = map.getZoom();
-    if (courierReferenceZoom === null) courierReferenceZoom = nextZoom;
-    updateCourierArtworkScale(nextZoom);
-    updateCourierDebugReadout();
-  };
-  const pauseCourierForZoom = () => {
-    courierZooming = true;
-    if (courierZoomResumeTimer) window.clearTimeout(courierZoomResumeTimer);
-    courierZoomResumeTimer = 0;
-    if (courierFrame) window.cancelAnimationFrame(courierFrame);
-    courierFrame = 0;
-  };
-  const resumeCourierAfterZoom = () => {
-    rebaseCourierProjection();
-    if (courierZoomResumeTimer) window.clearTimeout(courierZoomResumeTimer);
-    courierZoomResumeTimer = window.setTimeout(() => {
-      courierZooming = false;
-      courierZoomResumeTimer = 0;
-      if (courierActive && courierGoal && !motionPreference.matches) runCourierFlight();
-    }, 250);
-  };
   map.on("zoom", () => updateCourierArtworkScale(map.getZoom()));
   map.on("zoomanim", (event) => updateCourierArtworkScale(event.zoom));
   map.on("move zoom", updateCourierDebugReadout);
-  map.on("zoomstart", pauseCourierForZoom);
-  map.on("zoomend", resumeCourierAfterZoom);
   const addCourierSmoke = (now) => {
     if (now - courierSmokeTimer < 180) return;
     courierSmokeTimer = now;
@@ -293,10 +267,6 @@
         courierSpeed = 0;
         courierFrame = 0;
         element?.classList.remove("is-flying");
-        return;
-      }
-      if (courierZooming) {
-        courierFrame = 0;
         return;
       }
       const dt = previousTime ? Math.min(0.045, (now - previousTime) / 1000) : 0.016;
