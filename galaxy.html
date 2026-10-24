@@ -1,0 +1,48 @@
+---
+layout: default
+title: Galaxy
+kicker: HOME IS THE WORKSHOP
+description: A seed-shaped universe to chart, inspect, and one day make your own.
+permalink: /galaxy/
+galaxy_enabled: true
+---
+
+<section class="galaxy-explorer" aria-labelledby="galaxy-explorer-title">
+  <header class="galaxy-explorer__intro">
+    <div>
+      <span class="galaxy-explorer__eyebrow">PROCEDURAL STAR CHART</span>
+      <h2 id="galaxy-explorer-title">A universe from a seed</h2>
+      <p>Each star system is generated from its coordinates and the galaxy seed. Change the seed to discover a different sky; select a star, then its planets, to read their starting conditions.</p>
+    </div>
+  </header>
+
+  <div class="galaxy-workspace">
+    <div class="galaxy-map-shell">
+      <div class="galaxy-map-toolbar" aria-label="Galaxy map controls">
+        <div class="galaxy-seed-tools">
+          <div class="galaxy-seed-field">
+            <label for="galaxy-seed">Galaxy seed</label>
+            <input id="galaxy-seed" type="text" value="VESPERGLASS-01" maxlength="48" autocomplete="off" spellcheck="false">
+          </div>
+          <button class="galaxy-tool-button" id="galaxy-generate" type="button">Set seed</button>
+          <button class="galaxy-tool-button" id="galaxy-new-seed" type="button">New seed</button>
+        </div>
+        <button class="galaxy-tool-button" id="galaxy-back" type="button" hidden>← Galaxy</button>
+        <p class="galaxy-map-status" id="galaxy-map-status" role="status" aria-live="polite">Charting nearby stars…</p>
+      </div>
+      <div id="vesperglass-galaxy" role="application" aria-label="Procedural galaxy map. Pan and zoom, then select a glowing star to inspect its planetary system."></div>
+    </div>
+
+    <aside class="galaxy-inspector" id="galaxy-inspector" aria-live="polite" aria-label="Exploration log"></aside>
+  </div>
+
+  <div class="galaxy-legend" aria-label="Star color legend">
+    <span class="galaxy-legend__title">STAR TYPES</span>
+    <span class="galaxy-legend__item"><i class="galaxy-legend__dot galaxy-legend__dot--blue"></i>Blue giant</span>
+    <span class="galaxy-legend__item"><i class="galaxy-legend__dot galaxy-legend__dot--white"></i>White star</span>
+    <span class="galaxy-legend__item"><i class="galaxy-legend__dot galaxy-legend__dot--yellow"></i>Yellow star</span>
+    <span class="galaxy-legend__item"><i class="galaxy-legend__dot galaxy-legend__dot--amber"></i>Amber star</span>
+    <span class="galaxy-legend__item"><i class="galaxy-legend__dot galaxy-legend__dot--red"></i>Red dwarf</span>
+  </div>
+  <p class="galaxy-caption">This first chart is generated in your browser. The same seed and coordinates always produce the same system. Exploration changes are not saved yet.</p>
+</section>
