@@ -251,7 +251,17 @@
     }).addTo(map);
     window.setTimeout(() => map.removeLayer(puff), 3450);
   };
-  const courierTuning = { maxSpeed: 102, acceleration: 108, maxTurnRate: 0.92 };
+  const courierTuning = {
+    maxSpeed: 102,
+    acceleration: 108,
+    maxTurnRate: 0.92,
+    finalApproachRadius: 52,
+    finalApproachSpeed: 24,
+    arrivalRadius: 3.8,
+    progressEpsilon: 1.5,
+    progressTimeout: 1800,
+    recoverySpeed: 3.2
+  };
   const clamp = (value, min, max) => Math.min(max, Math.max(min, value));
   const runCourierFlight = () => {
     if (!courierGoal || motionPreference.matches) return;
@@ -260,6 +270,9 @@
     const element = courierMarker.getElement();
     element?.classList.add("is-flying");
     let previousTime = 0;
+    let bestDistance = Infinity;
+    let lastProgressAt = 0;
+    let recoveryApproach = false;
     const animate = (now) => {
       if (motionPreference.matches) {
         courierActive = false;
@@ -274,7 +287,7 @@
       const dx = courierGoal.x - courierWorldPosition.x;
       const dy = courierGoal.y - courierWorldPosition.y;
       const distance = Math.hypot(dx, dy);
-      if (distance < 2.2 && courierSpeed < 9) {
+      if (distance <= courierTuning.arrivalRadius) {
         courierActive = false;
         courierFrame = 0;
         element?.classList.remove("is-flying");
@@ -285,12 +298,24 @@
         arrived?.();
         return;
       }
+      if (distance < bestDistance - courierTuning.progressEpsilon) {
+        bestDistance = distance;
+        lastProgressAt = now;
+      } else if (lastProgressAt && now - lastProgressAt >= courierTuning.progressTimeout) {
+        recoveryApproach = true;
+      }
       const desiredHeading = Math.atan2(dy, dx);
       const difference = Math.atan2(Math.sin(desiredHeading - courierHeading), Math.cos(desiredHeading - courierHeading));
       courierHeading += clamp(difference, -courierTuning.maxTurnRate * dt, courierTuning.maxTurnRate * dt);
-      const stoppingSpeed = Math.sqrt(Math.max(0, 2 * courierTuning.acceleration * distance));
+      let speedLimit = courierTuning.maxSpeed;
+      if (distance < courierTuning.finalApproachRadius) {
+        speedLimit = Math.min(speedLimit, courierTuning.finalApproachSpeed);
+      }
+      if (recoveryApproach) speedLimit = Math.min(speedLimit, courierTuning.recoverySpeed);
+      const stoppingDistance = Math.max(0, distance - courierTuning.arrivalRadius);
+      const stoppingSpeed = Math.sqrt(2 * courierTuning.acceleration * stoppingDistance);
       const turnPenalty = Math.max(0.4, 1 - Math.abs(difference) * 0.32);
-      const desiredSpeed = Math.min(courierTuning.maxSpeed * turnPenalty, stoppingSpeed);
+      const desiredSpeed = Math.min(speedLimit * turnPenalty, stoppingSpeed);
       courierSpeed += clamp(desiredSpeed - courierSpeed, -courierTuning.acceleration * dt, courierTuning.acceleration * dt);
       const travel = Math.min(distance, courierSpeed * dt);
       courierWorldPosition = L.point(
