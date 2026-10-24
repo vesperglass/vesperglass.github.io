@@ -51,12 +51,6 @@
   spaceScene.append(deepLayer, fogLayer, orbitLayer, effectsCanvas);
   container.appendChild(spaceScene);
 
-  // Bridges live in their own pane beneath the destination islands, so each
-  // route can be art-directed and replaced independently.
-  const bridgePane = map.createPane("atlasBridgePane");
-  bridgePane.style.zIndex = "390";
-  bridgePane.style.pointerEvents = "none";
-
   const places = [
     // Pins, island floor anchors, and courier destinations share these map-space anchors.
     { id: "workshop", x: 839, y: 410, name: "Vesperglass Workshop", glyph: "⌂", route: "/", section: "Welcome", note: "A workshop set at the crossing of several unfinished paths." },
@@ -133,60 +127,6 @@
       interactive: false
     }).addTo(map);
   });
-  const bridgeArtwork = [
-    { from: "archive", to: "threshold", file: "atlas-path-archive-threshold.png", alt: "Glass-and-bronze bridge between Star Archive and Threshold House." },
-    { from: "threshold", to: "workshop", file: "atlas-path-threshold-workshop.png", alt: "Glass-and-bronze bridge between Threshold House and Vesperglass Workshop." },
-    { from: "workshop", to: "logbook", file: "atlas-path-workshop-observatory.png", alt: "Glass-and-bronze bridge between Vesperglass Workshop and Observatory Logbook." },
-    { from: "workshop", to: "compass", file: "atlas-path-workshop-garden.png", alt: "Glass-and-bronze bridge between Vesperglass Workshop and Compass Garden." },
-    { from: "workshop", to: "foundry", file: "atlas-path-workshop-foundry.png", alt: "Glass-and-bronze bridge between Vesperglass Workshop and Tideglass Foundry." }
-  ];
-  bridgeArtwork.forEach((bridge) => {
-    const image = document.createElement("img");
-    image.className = "atlas-bridge-artwork";
-    image.src = `/assets/${bridge.file}`;
-    image.alt = bridge.alt;
-    image.draggable = false;
-    image.decoding = "async";
-    image.style.position = "absolute";
-    image.style.maxWidth = "none";
-    image.style.pointerEvents = "none";
-    image.style.transformOrigin = "center center";
-    bridgePane.appendChild(image);
-    bridge.element = image;
-  });
-  const updateBridgeArtwork = () => {
-    bridgeArtwork.forEach((bridge) => {
-      const from = placeById.get(bridge.from);
-      const to = placeById.get(bridge.to);
-      if (!from || !to || !bridge.element) return;
-      const start = map.latLngToLayerPoint([1024 - from.y, from.x]);
-      const end = map.latLngToLayerPoint([1024 - to.y, to.x]);
-      const dx = end.x - start.x;
-      const dy = end.y - start.y;
-      const length = Math.hypot(dx, dy);
-      const heightPoint = map.latLngToLayerPoint([1024 - from.y, from.x + 84]);
-      const imageHeight = Math.abs(heightPoint.x - start.x);
-      const centerX = (start.x + end.x) / 2;
-      const centerY = (start.y + end.y) / 2;
-      bridge.element.style.width = `${length}px`;
-      // The source bridge occupies roughly one third of its wide canvas height.
-      // An 84-map-unit image height keeps its visible deck near 28 map units wide.
-      bridge.element.style.height = `${imageHeight}px`;
-      bridge.element.style.left = `${centerX - length / 2}px`;
-      bridge.element.style.top = `${centerY - imageHeight / 2}px`;
-      bridge.element.style.transform = `rotate(${Math.atan2(dy, dx)}rad)`;
-    });
-  };
-  let bridgeUpdateFrame = 0;
-  const scheduleBridgeUpdate = () => {
-    if (bridgeUpdateFrame) return;
-    bridgeUpdateFrame = window.requestAnimationFrame(() => {
-      bridgeUpdateFrame = 0;
-      updateBridgeArtwork();
-    });
-  };
-  map.on("move zoom resize", scheduleBridgeUpdate);
-  scheduleBridgeUpdate();
   const courierRoutes = [
     { from: "foundry", to: "workshop", item: "⚙", label: "a fresh-forged component", tint: "bronze" },
     { from: "compass", to: "threshold", item: "✿", label: "garden clippings", tint: "green" },
