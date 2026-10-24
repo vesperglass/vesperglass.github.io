@@ -55,3 +55,19 @@
 @media(max-width:680px){.galaxy-explorer__intro{display:block}.galaxy-workspace{grid-template-columns:minmax(0,1fr)}.galaxy-inspector{min-height:260px}.galaxy-map-toolbar{top:8px;left:8px;right:8px;flex-wrap:wrap}.galaxy-seed-tools{flex-wrap:wrap;max-width:calc(100% - 82px)}.galaxy-seed-field{min-width:0;flex:1 1 100%}.galaxy-seed-field input{width:100%;max-width:none}.galaxy-map-status{margin-left:auto;font-size:9px}#vesperglass-galaxy{height:58vh;min-height:430px}}
 
 .galaxy-dot--o{filter:drop-shadow(0 0 7px #9bc8ff)}.galaxy-dot--a{filter:drop-shadow(0 0 7px #d7e7ff)}.galaxy-dot--f{filter:drop-shadow(0 0 7px #fff1d2)}.galaxy-dot--g{filter:drop-shadow(0 0 7px #ffd783)}.galaxy-dot--k{filter:drop-shadow(0 0 7px #ffad72)}.galaxy-dot--m{filter:drop-shadow(0 0 7px #f17979)}.galaxy-dot--planet{filter:drop-shadow(0 0 7px #a9d8e9)}
+
+
+/* Galaxy layout and fullscreen viewer */
+.article:has(.galaxy-explorer){width:100%;max-width:none}
+.article:has(.galaxy-explorer) .article-body{width:100%}
+.galaxy-explorer{width:100%}
+#galaxy-back[hidden]{display:none}
+.galaxy-fullscreen-button{display:flex;align-items:center;justify-content:center;min-height:31px;padding:7px 10px;border:1px solid #89a7bb66;border-radius:6px;color:#e3edf2;background:#10202de8;font:600 10px/1 var(--sans);cursor:pointer;white-space:nowrap;box-shadow:0 4px 16px #0005;backdrop-filter:blur(12px)}
+.galaxy-fullscreen-button:hover,.galaxy-fullscreen-button:focus-visible{border-color:#a5dce5;color:#fff;background:#203b4d}
+.galaxy-fullscreen-button:focus-visible{outline:2px solid #94c9d8;outline-offset:2px}
+.galaxy-map-shell:fullscreen,.galaxy-map-shell:-webkit-full-screen{position:fixed;inset:0;z-index:9999;width:100vw;height:100vh;height:100dvh;margin:0;border:0;border-radius:0;background:#050914;box-shadow:none}
+.galaxy-map-shell:fullscreen #vesperglass-galaxy,.galaxy-map-shell:-webkit-full-screen #vesperglass-galaxy{height:100vh;height:100dvh;min-height:0;width:100%;border:0;border-radius:0}
+.galaxy-map-shell:fullscreen #vesperglass-galaxy::after,.galaxy-map-shell:-webkit-full-screen #vesperglass-galaxy::after{display:none}
+.galaxy-map-shell:fullscreen .galaxy-map-toolbar,.galaxy-map-shell:-webkit-full-screen .galaxy-map-toolbar{top:16px;left:16px;right:16px}
+.galaxy-map-shell:fullscreen .leaflet-bottom,.galaxy-map-shell:-webkit-full-screen .leaflet-bottom{bottom:12px}
+@media(max-width:680px){.article:has(.galaxy-explorer){padding-inline:clamp(14px,4vw,22px)}.galaxy-map-shell:fullscreen .galaxy-map-toolbar,.galaxy-map-shell:-webkit-full-screen .galaxy-map-toolbar{top:8px;left:8px;right:8px}}
