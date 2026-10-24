@@ -51,14 +51,14 @@
   spaceScene.append(deepLayer, fogLayer, orbitLayer, effectsCanvas);
   container.appendChild(spaceScene);
 
-  L.imageOverlay("/assets/atlas-platform-base-v2.png", bounds, {
-    alt: "The Elsewhere Atlas of Vesperglass: six glass-and-bronze landing islands connected by bridges, floating through a starry void.",
-    interactive: false
-  }).addTo(map);
+  // Bridges live in their own pane beneath the destination islands, so each
+  // route can be art-directed and replaced independently.
+  const bridgePane = map.createPane("atlasBridgePane");
+  bridgePane.style.zIndex = "390";
+  bridgePane.style.pointerEvents = "none";
 
   const places = [
-    // Coordinates are the centers of the six landing pads in atlas-platform-base-v2.png.
-    // Pins, landmark overlays, and courier destinations share these map-space anchors.
+    // Pins, island floor anchors, and courier destinations share these map-space anchors.
     { id: "workshop", x: 839, y: 410, name: "Vesperglass Workshop", glyph: "⌂", route: "/", section: "Welcome", note: "A workshop set at the crossing of several unfinished paths." },
     { id: "threshold", x: 487, y: 190, name: "Threshold House", glyph: "◈", route: "/about/", section: "About Vesperglass", note: "A place to learn what this workshop is for and who is building here." },
     { id: "foundry", x: 1287, y: 717, name: "Tideglass Foundry", glyph: "▦", route: "/projects/", section: "Projects", note: "A directory of repositories, experiments, and things to try." },
@@ -107,15 +107,16 @@
   });
 
   const placeById = new Map(places.map((place) => [place.id, place]));
-  // floorX/floorY are PNG-native pixels at each landmark's ground-plane center.
-  // That floor point, rather than the transparent image canvas center, sits on its pin.
+  // floorX/floorY are PNG-native pixels at each island's open landing floor.
+  // The image is anchored there, keeping every pin on the usable floor rather
+  // than at the center of the taller building or transparent image canvas.
   const landmarkArtwork = [
-    { id: "archive", file: "atlas-landmark-archive.png", width: 300, height: 274, sourceWidth: 1312, sourceHeight: 1199, floorX: 656, floorY: 930, alt: "Star Archive, a circular glass reading pavilion with a brass armillary and warm book galleries." },
-    { id: "threshold", file: "atlas-landmark-threshold.png", width: 260, height: 260, sourceWidth: 1254, sourceHeight: 1254, floorX: 627, floorY: 850, alt: "Threshold House, a welcoming glass-and-bronze residence with an arched doorway and conservatory wing." },
-    { id: "workshop", file: "atlas-landmark-workshop.png", width: 430, height: 430, sourceWidth: 1254, sourceHeight: 1254, floorX: 627, floorY: 930, alt: "Vesperglass Workshop, a broad glass-and-bronze maker's hall with visible benches, tools, and warm forge light." },
-    { id: "logbook", file: "atlas-landmark-observatory.png", width: 250, height: 220, sourceWidth: 1254, sourceHeight: 1254, floorX: 627, floorY: 1158, alt: "Observatory Logbook, a tall glass tower with an open copper dome and brass telescope." },
-    { id: "compass", file: "atlas-landmark-garden.png", width: 400, height: 400, sourceWidth: 1254, sourceHeight: 1254, floorX: 627, floorY: 850, alt: "Compass Garden, a glass greenhouse surrounded by luminous flowers, trellises, and a compass mosaic." },
-    { id: "foundry", file: "atlas-landmark-foundry.png", width: 360, height: 360, sourceWidth: 1254, sourceHeight: 1254, floorX: 627, floorY: 970, alt: "Tideglass Foundry, a glass-and-bronze foundry with a copper chimney and glowing casting furnace." }
+    { id: "archive", file: "atlas-island-archive.png", width: 330, height: 330, sourceWidth: 1254, sourceHeight: 1254, floorX: 627, floorY: 850, alt: "Star Archive, a glass reading pavilion and armillary on its own crisp floating glass-and-bronze landing island." },
+    { id: "threshold", file: "atlas-island-threshold.png", width: 300, height: 300, sourceWidth: 1254, sourceHeight: 1254, floorX: 627, floorY: 850, alt: "Threshold House, a welcoming glass-and-bronze home on its own floating landing island." },
+    { id: "workshop", file: "atlas-island-workshop.png", width: 430, height: 430, sourceWidth: 1254, sourceHeight: 1254, floorX: 627, floorY: 875, alt: "Vesperglass Workshop, a glass-and-bronze maker's hall on its own detailed floating landing island." },
+    { id: "logbook", file: "atlas-island-observatory.png", width: 270, height: 270, sourceWidth: 1254, sourceHeight: 1254, floorX: 627, floorY: 900, alt: "Observatory Logbook, a glass tower with a copper dome and telescope on its own floating landing island." },
+    { id: "compass", file: "atlas-island-garden.png", width: 390, height: 390, sourceWidth: 1254, sourceHeight: 1254, floorX: 627, floorY: 850, alt: "Compass Garden, a glass greenhouse and flowering compass garden on its own floating landing island." },
+    { id: "foundry", file: "atlas-island-foundry.png", width: 370, height: 370, sourceWidth: 1254, sourceHeight: 1254, floorX: 627, floorY: 875, alt: "Tideglass Foundry, a glass-and-bronze foundry with a copper chimney and glowing furnace on its own floating landing island." }
   ];
   landmarkArtwork.forEach((artwork) => {
     const place = places.find((candidate) => candidate.id === artwork.id);
@@ -132,6 +133,60 @@
       interactive: false
     }).addTo(map);
   });
+  const bridgeArtwork = [
+    { from: "archive", to: "threshold", file: "atlas-path-archive-threshold.png", alt: "Glass-and-bronze bridge between Star Archive and Threshold House." },
+    { from: "threshold", to: "workshop", file: "atlas-path-threshold-workshop.png", alt: "Glass-and-bronze bridge between Threshold House and Vesperglass Workshop." },
+    { from: "workshop", to: "logbook", file: "atlas-path-workshop-observatory.png", alt: "Glass-and-bronze bridge between Vesperglass Workshop and Observatory Logbook." },
+    { from: "workshop", to: "compass", file: "atlas-path-workshop-garden.png", alt: "Glass-and-bronze bridge between Vesperglass Workshop and Compass Garden." },
+    { from: "workshop", to: "foundry", file: "atlas-path-workshop-foundry.png", alt: "Glass-and-bronze bridge between Vesperglass Workshop and Tideglass Foundry." }
+  ];
+  bridgeArtwork.forEach((bridge) => {
+    const image = document.createElement("img");
+    image.className = "atlas-bridge-artwork";
+    image.src = `/assets/${bridge.file}`;
+    image.alt = bridge.alt;
+    image.draggable = false;
+    image.decoding = "async";
+    image.style.position = "absolute";
+    image.style.maxWidth = "none";
+    image.style.pointerEvents = "none";
+    image.style.transformOrigin = "center center";
+    bridgePane.appendChild(image);
+    bridge.element = image;
+  });
+  const updateBridgeArtwork = () => {
+    bridgeArtwork.forEach((bridge) => {
+      const from = placeById.get(bridge.from);
+      const to = placeById.get(bridge.to);
+      if (!from || !to || !bridge.element) return;
+      const start = map.latLngToLayerPoint([1024 - from.y, from.x]);
+      const end = map.latLngToLayerPoint([1024 - to.y, to.x]);
+      const dx = end.x - start.x;
+      const dy = end.y - start.y;
+      const length = Math.hypot(dx, dy);
+      const heightPoint = map.latLngToLayerPoint([1024 - from.y, from.x + 84]);
+      const imageHeight = Math.abs(heightPoint.x - start.x);
+      const centerX = (start.x + end.x) / 2;
+      const centerY = (start.y + end.y) / 2;
+      bridge.element.style.width = `${length}px`;
+      // The source bridge occupies roughly one third of its wide canvas height.
+      // An 84-map-unit image height keeps its visible deck near 28 map units wide.
+      bridge.element.style.height = `${imageHeight}px`;
+      bridge.element.style.left = `${centerX - length / 2}px`;
+      bridge.element.style.top = `${centerY - imageHeight / 2}px`;
+      bridge.element.style.transform = `rotate(${Math.atan2(dy, dx)}rad)`;
+    });
+  };
+  let bridgeUpdateFrame = 0;
+  const scheduleBridgeUpdate = () => {
+    if (bridgeUpdateFrame) return;
+    bridgeUpdateFrame = window.requestAnimationFrame(() => {
+      bridgeUpdateFrame = 0;
+      updateBridgeArtwork();
+    });
+  };
+  map.on("move zoom resize", scheduleBridgeUpdate);
+  scheduleBridgeUpdate();
   const courierRoutes = [
     { from: "foundry", to: "workshop", item: "⚙", label: "a fresh-forged component", tint: "bronze" },
     { from: "compass", to: "threshold", item: "✿", label: "garden clippings", tint: "green" },
