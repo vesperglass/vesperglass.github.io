@@ -145,10 +145,13 @@
     zIndexOffset: 1200,
     opacity: 0.98
   }).addTo(map);
+  // Sprite cells: E, SE, S, SW / W, NE, N, NW. Octants follow screen-space heading.
+  const courierSpriteByOctant = [0, 1, 2, 3, 4, 5, 6, 7];
   const setCourierFacing = () => {
     const element = courierMarker.getElement();
     if (!element) return;
-    const direction = ((Math.round(courierHeading / (Math.PI / 4)) % 8) + 8) % 8;
+    const octant = ((Math.round(courierHeading / (Math.PI / 4)) % 8) + 8) % 8;
+    const direction = courierSpriteByOctant[octant];
     const sprite = element.querySelector(".atlas-courier__sprite");
     if (sprite) sprite.style.backgroundPosition = `${-(direction % 4) * 58}px ${-Math.floor(direction / 4) * 77.333}px`;
   };
