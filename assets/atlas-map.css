@@ -143,48 +143,17 @@
 
 .leaflet-div-icon.atlas-pin{display:grid;width:30px!important;height:30px!important;place-items:center;border:0;background:transparent}
 
-.leaflet-div-icon.atlas-courier{position:relative;display:grid;width:48px!important;height:48px!important;place-items:center;border:0;background:transparent;pointer-events:none}
-
-.atlas-courier__glow{position:absolute;inset:5px;border-radius:50%;background:radial-gradient(circle,rgba(122,208,222,.24),rgba(122,208,222,0) 70%);filter:blur(3px)}
-
-.atlas-courier__antenna{position:absolute;z-index:3;top:3px;left:23px;width:2px;height:8px;border-radius:2px;background:#c8aa73;transform-origin:bottom;animation:atlas-courier-signal 2.4s ease-in-out infinite}
-
-.atlas-courier__antenna::after{position:absolute;top:-3px;left:-2px;width:6px;height:6px;border:1px solid #e6d5a3;border-radius:50%;background:#8fe7e0;box-shadow:0 0 7px #7ce5dd;content:""}
-
-.atlas-courier__body{position:relative;z-index:2;display:flex;width:25px;height:22px;align-items:center;justify-content:center;gap:3px;border:1px solid #e7d6ad;border-radius:8px 8px 7px 7px;background:linear-gradient(145deg,#d9c79c 0%,#9e8057 60%,#5a4c3d 100%);box-shadow:inset 0 1px 2px #fff8d2,0 2px 5px #02081699;color:#d8faff;animation:atlas-courier-bob 1.8s ease-in-out infinite}
-
-.atlas-courier__body::before{position:absolute;right:3px;bottom:-4px;left:3px;height:4px;border:1px solid #9bbac0;border-radius:0 0 5px 5px;background:linear-gradient(90deg,#345360,#91d0d4,#345360);content:""}
-
-.atlas-courier__eye{width:4px;height:5px;border-radius:50%;background:#b7f3f4;box-shadow:0 0 4px #91e6ed}
-
-.atlas-courier__cargo{position:absolute;top:-8px;right:-11px;display:grid;min-width:13px;height:13px;place-items:center;border:1px solid #d9e5dc;border-radius:50%;color:#22343a;background:#fff7dd;box-shadow:0 1px 4px #020816aa;font:700 8px/1 var(--sans);font-style:normal}
-
-.atlas-courier[data-cargo="bronze"] .atlas-courier__cargo{color:#684427;background:#f3d3a1}
+.leaflet-div-icon.atlas-courier{position:relative;width:72px!important;height:96px!important;border:0;background:transparent;pointer-events:none}
+.atlas-courier__sprite{position:absolute;inset:0;background-image:url("/assets/atlas-courier-sprites.png");background-repeat:no-repeat;background-size:288px 192px;filter:drop-shadow(0 2px 3px #0208169c)}
+.atlas-courier__cargo{position:absolute;top:18px;right:5px;display:grid;min-width:15px;height:15px;place-items:center;border:1px solid #efe1ba;border-radius:50%;color:#654722;background:#f1d6a7;box-shadow:0 1px 5px #020816a8;font:700 8px/1 var(--sans)}
+.atlas-courier__cargo[hidden]{display:none}
 .atlas-courier[data-cargo="green"] .atlas-courier__cargo{color:#315742;background:#d5edc9}
 .atlas-courier[data-cargo="blue"] .atlas-courier__cargo{color:#344b72;background:#d5e5ff}
-
-.atlas-courier__thruster{position:absolute;z-index:1;bottom:7px;left:21px;width:6px;height:9px;border-radius:50% 50% 60% 60%;background:linear-gradient(#94f1e8,#67acd9 48%,transparent);filter:drop-shadow(0 0 3px #83e8e6);opacity:.62;transform:scaleY(.72);transform-origin:top;animation:atlas-courier-thrust .2s ease-in-out infinite alternate}
-
-.atlas-courier__spark{position:absolute;z-index:0;top:29px;left:23px;width:3px;height:3px;border-radius:50%;background:#b9f5ec;box-shadow:0 0 5px #a8f7f1;opacity:0}
-.atlas-courier.is-flying .atlas-courier__spark{animation:atlas-courier-spark .8s ease-out infinite}
-.atlas-courier.is-flying .atlas-courier__spark--two{animation-delay:.24s}
-.atlas-courier.is-flying .atlas-courier__spark--three{animation-delay:.48s}
-
-.atlas-courier__delivery{position:absolute;z-index:4;top:50%;left:50%;width:1px;height:1px;opacity:0;pointer-events:none}
-.atlas-courier.is-delivering .atlas-courier__delivery{opacity:1}
-.atlas-courier__delivery i{position:absolute;top:0;left:0;width:4px;height:4px;border-radius:50%;background:#f5d89b;box-shadow:0 0 5px #aeeaf0;opacity:0}
-.atlas-courier__delivery i:nth-child(1){--angle:0deg}
-.atlas-courier.is-delivering .atlas-courier__delivery i{animation:atlas-courier-burst .72s ease-out both}
-.atlas-courier__delivery i:nth-child(2){--angle:45deg;animation-delay:.025s}.atlas-courier__delivery i:nth-child(3){--angle:90deg;animation-delay:.05s}.atlas-courier__delivery i:nth-child(4){--angle:135deg;animation-delay:.075s}.atlas-courier__delivery i:nth-child(5){--angle:180deg;animation-delay:.1s}.atlas-courier__delivery i:nth-child(6){--angle:225deg;animation-delay:.125s}.atlas-courier__delivery i:nth-child(7){--angle:270deg;animation-delay:.15s}.atlas-courier__delivery i:nth-child(8){--angle:315deg;animation-delay:.175s}
-
-@keyframes atlas-courier-bob{50%{transform:translateY(-2px) rotate(-3deg)}}
-@keyframes atlas-courier-signal{50%{transform:rotate(12deg)}}
-@keyframes atlas-courier-thrust{to{opacity:1;transform:scaleY(1.15)}}
-@keyframes atlas-courier-spark{0%{opacity:.8;transform:translate(0,0) scale(1)}100%{opacity:0;transform:translate(-5px,12px) scale(.25)}}
-@keyframes atlas-courier-burst{0%{opacity:0;transform:rotate(var(--angle,0deg)) translateX(2px) scale(.55)}25%{opacity:1}100%{opacity:0;transform:rotate(var(--angle,0deg)) translateX(23px) scale(.2)}}
-
-@media(prefers-reduced-motion:reduce){.atlas-courier__antenna,.atlas-courier__body,.atlas-courier__thruster,.atlas-courier.is-flying .atlas-courier__spark,.atlas-courier.is-delivering .atlas-courier__delivery i{animation:none!important}.atlas-courier__thruster{opacity:.4}}
-
+.leaflet-div-icon.atlas-courier-smoke{border:0;background:transparent;pointer-events:none}
+.atlas-courier-smoke span{display:block;width:100%;height:100%;border-radius:50%;background:radial-gradient(ellipse at 40% 38%,rgba(225,235,233,.42),rgba(163,184,192,.25) 38%,rgba(133,154,167,.04) 72%,transparent 76%);filter:blur(2px);animation:atlas-courier-smoke-fade 2.55s ease-out forwards}
+.atlas-courier-smoke--1 span{animation-delay:.03s}.atlas-courier-smoke--2 span{animation-delay:.07s}
+@keyframes atlas-courier-smoke-fade{0%{opacity:.48;transform:translate3d(0,0,0) scale(.62)}35%{opacity:.27}100%{opacity:0;transform:translate3d(-2px,-11px,0) scale(1.85)}}
+@media(prefers-reduced-motion:reduce){.atlas-courier-smoke span{animation:none;opacity:0}}
 .atlas-pin__mark{display:grid;width:30px;height:30px;place-items:center;border:1px solid var(--map-pin-line);border-radius:50%;color:var(--sea-dark);background:var(--map-pin);box-shadow:0 2px 8px #16231c2b;font-size:13px;transition:transform .15s,box-shadow .15s}
 
 :root[data-theme="dark"] .atlas-pin__mark{color:#b7dfd2}

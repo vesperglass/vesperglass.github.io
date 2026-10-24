@@ -111,118 +111,190 @@
     { from: "archive", to: "logbook", item: "▤", label: "a field book", tint: "blue" },
     { from: "logbook", to: "archive", item: "✧", label: "an annotated star chart", tint: "blue" }
   ];
+  const toLatLng = (placeId) => {
+    const place = placeById.get(placeId);
+    return [1024 - place.y, place.x];
+  };
   const courierIcon = L.divIcon({
     className: "atlas-courier",
-    iconSize: [48, 48],
-    iconAnchor: [24, 24],
-    html: '<span class="atlas-courier__glow" aria-hidden="true"></span>' +
-      '<span class="atlas-courier__antenna" aria-hidden="true"></span>' +
-      '<span class="atlas-courier__thruster" aria-hidden="true"></span>' +
-      '<span class="atlas-courier__body" aria-hidden="true"><i class="atlas-courier__eye"></i><i class="atlas-courier__eye"></i><b class="atlas-courier__cargo"></b></span>' +
-      '<span class="atlas-courier__spark atlas-courier__spark--one" aria-hidden="true"></span>' +
-      '<span class="atlas-courier__spark atlas-courier__spark--two" aria-hidden="true"></span>' +
-      '<span class="atlas-courier__spark atlas-courier__spark--three" aria-hidden="true"></span>' +
-      '<span class="atlas-courier__delivery" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>'
+    iconSize: [72, 96],
+    iconAnchor: [36, 83],
+    html: '<span class="atlas-courier__sprite" aria-hidden="true"></span>' +
+      '<span class="atlas-courier__cargo" aria-hidden="true"></span>'
   });
-  const courierMarker = L.marker([1024 - placeById.get("foundry").y, placeById.get("foundry").x], {
+  const courierZoom = map.getZoom();
+  let courierWorldPosition = map.project(toLatLng("foundry"), courierZoom);
+  const firstTarget = map.project(toLatLng("workshop"), courierZoom);
+  let courierHeading = Math.atan2(firstTarget.y - courierWorldPosition.y, firstTarget.x - courierWorldPosition.x);
+  let courierSpeed = 0;
+  let courierRouteIndex = 0;
+  let courierFrame = 0;
+  let courierTimer = 0;
+  let courierSmokeTimer = 0;
+  let courierActive = false;
+  let courierStarted = false;
+  let courierPaused = false;
+  let courierGoal = null;
+  let courierArrival = null;
+  let courierPhase = "delivery";
+  let smokeIconId = 0;
+  const courierMarker = L.marker(toLatLng("foundry"), {
     icon: courierIcon,
     interactive: false,
     keyboard: false,
     zIndexOffset: 1200,
     opacity: 0.98
   }).addTo(map);
-  const courierRoutesInLatLng = courierRoutes.map((route) => ({
-    ...route,
-    start: [1024 - placeById.get(route.from).y, placeById.get(route.from).x],
-    end: [1024 - placeById.get(route.to).y, placeById.get(route.to).x]
-  }));
-  let courierRouteIndex = 0;
-  let courierFrame = 0;
-  let courierTimer = 0;
-  let courierActive = false;
+  const setCourierFacing = () => {
+    const element = courierMarker.getElement();
+    if (!element) return;
+    const direction = ((Math.round(courierHeading / (Math.PI / 4)) % 8) + 8) % 8;
+    const sprite = element.querySelector(".atlas-courier__sprite");
+    if (sprite) sprite.style.backgroundPosition = `${-(direction % 4) * 72}px ${-Math.floor(direction / 4) * 96}px`;
+  };
   const setCourierCargo = (route) => {
     const element = courierMarker.getElement();
     if (!element) return;
     const cargo = element.querySelector(".atlas-courier__cargo");
     if (cargo) {
-      cargo.textContent = route.item;
-      cargo.title = route.label;
+      cargo.textContent = route?.item || "";
+      cargo.title = route?.label || "";
+      cargo.hidden = !route;
     }
-    element.dataset.cargo = route.tint;
+    if (route) element.dataset.cargo = route.tint;
+    else delete element.dataset.cargo;
   };
-  const setCourierPosition = (latlng) => courierMarker.setLatLng(latlng);
-  const scheduleCourierRoute = () => {
-    if (motionPreference.matches || courierActive) return;
-    const route = courierRoutesInLatLng[courierRouteIndex % courierRoutesInLatLng.length];
-    courierRouteIndex = (courierRouteIndex + 1) % courierRoutesInLatLng.length;
-    const element = courierMarker.getElement();
-    if (element) {
-      element.classList.remove("is-delivering", "is-flying");
-      element.classList.add("is-flying");
-    }
-    setCourierCargo(route);
-    setCourierPosition(route.start);
+  const setCourierPosition = () => {
+    courierMarker.setLatLng(map.unproject(courierWorldPosition, courierZoom));
+    setCourierFacing();
+  };
+  const addCourierSmoke = (now) => {
+    if (now - courierSmokeTimer < 150) return;
+    courierSmokeTimer = now;
+    const spread = 3 + Math.random() * 5;
+    const trailingDistance = 12 + Math.random() * 6;
+    const smokePoint = L.point(
+      courierWorldPosition.x - Math.cos(courierHeading) * trailingDistance + (Math.random() - 0.5) * spread,
+      courierWorldPosition.y - Math.sin(courierHeading) * trailingDistance + (Math.random() - 0.5) * spread
+    );
+    const size = 9 + Math.random() * 6;
+    const puffIcon = L.divIcon({
+      className: `atlas-courier-smoke atlas-courier-smoke--${smokeIconId++ % 3}`,
+      iconSize: [size, size],
+      iconAnchor: [size / 2, size / 2],
+      html: '<span aria-hidden="true"></span>'
+    });
+    const puff = L.marker(map.unproject(smokePoint, courierZoom), {
+      icon: puffIcon,
+      interactive: false,
+      keyboard: false,
+      zIndexOffset: 1120 + Math.round(Math.random() * 20)
+    }).addTo(map);
+    window.setTimeout(() => map.removeLayer(puff), 2600);
+  };
+  const courierTuning = { maxSpeed: 102, acceleration: 108, maxTurnRate: 0.92 };
+  const clamp = (value, min, max) => Math.min(max, Math.max(min, value));
+  const runCourierFlight = () => {
+    if (!courierGoal || motionPreference.matches) return;
     courierActive = true;
-    const zoom = map.getZoom();
-    const start = map.project(route.start, zoom);
-    const end = map.project(route.end, zoom);
-    const dx = end.x - start.x;
-    const dy = end.y - start.y;
-    const distance = Math.hypot(dx, dy) || 1;
-    const arc = Math.min(88, Math.max(30, distance * 0.16));
-    const bendX = -dy / distance * arc;
-    const bendY = dx / distance * arc;
-    const controlOne = L.point(start.x + dx * 0.34 + bendX, start.y + dy * 0.34 + bendY);
-    const controlTwo = L.point(start.x + dx * 0.68 + bendX, start.y + dy * 0.68 + bendY);
-    const duration = 5700;
-    const startedAt = performance.now();
-    const fly = (now) => {
+    courierPaused = false;
+    const element = courierMarker.getElement();
+    element?.classList.add("is-flying");
+    let previousTime = 0;
+    const animate = (now) => {
       if (motionPreference.matches) {
         courierActive = false;
+        courierPaused = true;
+        courierSpeed = 0;
         courierFrame = 0;
+        element?.classList.remove("is-flying");
         return;
       }
-      const raw = Math.min(1, (now - startedAt) / duration);
-      const t = raw < 0.5 ? 4 * raw * raw * raw : 1 - Math.pow(-2 * raw + 2, 3) / 2;
-      const oneMinus = 1 - t;
-      const point = L.point(
-        oneMinus ** 3 * start.x + 3 * oneMinus ** 2 * t * controlOne.x + 3 * oneMinus * t ** 2 * controlTwo.x + t ** 3 * end.x,
-        oneMinus ** 3 * start.y + 3 * oneMinus ** 2 * t * controlOne.y + 3 * oneMinus * t ** 2 * controlTwo.y + t ** 3 * end.y
+      const dt = previousTime ? Math.min(0.045, (now - previousTime) / 1000) : 0.016;
+      previousTime = now;
+      const dx = courierGoal.x - courierWorldPosition.x;
+      const dy = courierGoal.y - courierWorldPosition.y;
+      const distance = Math.hypot(dx, dy);
+      if (distance < 2.2 && courierSpeed < 9) {
+        courierActive = false;
+        courierFrame = 0;
+        element?.classList.remove("is-flying");
+        const arrived = courierArrival;
+        courierGoal = null;
+        courierArrival = null;
+        courierSpeed = 0;
+        arrived?.();
+        return;
+      }
+      const desiredHeading = Math.atan2(dy, dx);
+      const difference = Math.atan2(Math.sin(desiredHeading - courierHeading), Math.cos(desiredHeading - courierHeading));
+      courierHeading += clamp(difference, -courierTuning.maxTurnRate * dt, courierTuning.maxTurnRate * dt);
+      const stoppingSpeed = Math.sqrt(Math.max(0, 2 * courierTuning.acceleration * distance));
+      const turnPenalty = Math.max(0.4, 1 - Math.abs(difference) * 0.32);
+      const desiredSpeed = Math.min(courierTuning.maxSpeed * turnPenalty, stoppingSpeed);
+      courierSpeed += clamp(desiredSpeed - courierSpeed, -courierTuning.acceleration * dt, courierTuning.acceleration * dt);
+      const travel = Math.min(distance, courierSpeed * dt);
+      courierWorldPosition = L.point(
+        courierWorldPosition.x + Math.cos(courierHeading) * travel,
+        courierWorldPosition.y + Math.sin(courierHeading) * travel
       );
-      setCourierPosition(map.unproject(point, zoom));
-      if (raw < 1) {
-        courierFrame = window.requestAnimationFrame(fly);
-        return;
-      }
-      setCourierPosition(route.end);
-      courierFrame = 0;
-      courierActive = false;
-      if (element) {
-        element.classList.remove("is-flying");
-        element.classList.add("is-delivering");
-      }
+      setCourierPosition();
+      addCourierSmoke(now);
+      courierFrame = window.requestAnimationFrame(animate);
+    };
+    courierFrame = window.requestAnimationFrame(animate);
+  };
+  const startCourierFlight = (targetLatLng, onArrival) => {
+    courierGoal = map.project(targetLatLng, courierZoom);
+    courierArrival = onArrival;
+    runCourierFlight();
+  };
+  const beginCourierDelivery = (routeIndex) => {
+    if (motionPreference.matches) return;
+    courierStarted = true;
+    courierPhase = "delivery";
+    courierRouteIndex = routeIndex;
+    const route = courierRoutes[routeIndex];
+    setCourierCargo(route);
+    startCourierFlight(toLatLng(route.to), () => {
+      courierPhase = "transfer";
       courierTimer = window.setTimeout(() => {
         courierTimer = 0;
-        scheduleCourierRoute();
-      }, 1150);
-    };
-    courierFrame = window.requestAnimationFrame(fly);
+        beginCourierTransfer((routeIndex + 1) % courierRoutes.length);
+      }, 1100);
+    });
   };
+  const beginCourierTransfer = (nextRouteIndex) => {
+    if (motionPreference.matches) return;
+    courierPhase = "transfer";
+    setCourierCargo(null);
+    const nextRoute = courierRoutes[nextRouteIndex];
+    startCourierFlight(toLatLng(nextRoute.from), () => beginCourierDelivery(nextRouteIndex));
+  };
+  setCourierCargo(courierRoutes[0]);
+  setCourierFacing();
   const updateCourierMotion = () => {
     if (motionPreference.matches) {
       if (courierFrame) window.cancelAnimationFrame(courierFrame);
       if (courierTimer) window.clearTimeout(courierTimer);
       courierFrame = 0;
       courierTimer = 0;
+      courierPaused = Boolean(courierGoal || courierStarted);
       courierActive = false;
-      courierRouteIndex = 0;
-      setCourierPosition(courierRoutesInLatLng[0].start);
-      setCourierCargo(courierRoutesInLatLng[0]);
-      courierMarker.getElement()?.classList.remove("is-flying", "is-delivering");
-    } else if (!courierActive && !courierTimer) {
+      courierSpeed = 0;
+      courierMarker.getElement()?.classList.remove("is-flying");
+    } else if (courierPaused && courierGoal) {
+      runCourierFlight();
+    } else if (courierPaused && courierPhase === "transfer") {
+      courierPaused = false;
+      beginCourierTransfer((courierRouteIndex + 1) % courierRoutes.length);
+    } else if (courierStarted && courierPhase === "delivery") {
+      courierPaused = false;
+      beginCourierDelivery(courierRouteIndex);
+    } else if (!courierStarted) {
       courierTimer = window.setTimeout(() => {
         courierTimer = 0;
-        scheduleCourierRoute();
+        beginCourierDelivery(0);
       }, 1800);
     }
   };
