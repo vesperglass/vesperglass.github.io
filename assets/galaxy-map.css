@@ -157,6 +157,12 @@ body:has(.galaxy-map-shell.is-fullscreen){overflow:hidden}
 @media(max-width:760px){.galaxy-map-status{right:8px;bottom:calc(42vh + 20px);max-width:calc(100% - 16px)}}
 @media(max-width:680px){.galaxy-map-status{bottom:calc(38vh + 20px)}.galaxy-inspector{left:8px;bottom:8px;width:min(290px,calc(100% - 16px));max-height:38vh;padding:12px}.galaxy-inspector h2{font-size:21px}.galaxy-inspector__lead{margin-bottom:9px}.galaxy-fact{padding:6px 0}.galaxy-inspector__subhead{margin-top:10px}.galaxy-inspector__note{margin-top:7px;padding-top:7px;font-size:10px}}
 
+@media(max-width:680px){
+  .galaxy-inspector{max-height:min(30vh,260px)}
+  .galaxy-map-status{top:145px;bottom:auto}
+  .site-shell:has(.galaxy-explorer) .galaxy-map-toolbar{z-index:700}
+}
+
 
 /* Homeward gate: a fixed portal at the galaxy origin. */
 .galaxy-portal-marker,.galaxy-portal-marker:hover{border:0;background:transparent;overflow:visible}
