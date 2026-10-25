@@ -58,7 +58,8 @@
     { id: "foundry", floatDuration: 9, floatDelay: -6.1, x: 1287, y: 717, name: "Tideglass Foundry", glyph: "▦", route: "/projects/", section: "Projects", note: "A directory of repositories, experiments, and things to try." },
     { id: "compass", floatDuration: 7.7, floatDelay: -2.8, x: 414, y: 717, name: "Compass Garden", glyph: "✳", route: "/principles/", section: "How we work", note: "A few steady habits for making useful things with care." },
     { id: "logbook", floatDuration: 8.6, floatDelay: -5.5, x: 1176, y: 190, name: "Observatory Logbook", glyph: "✎", route: "/field-notes/", section: "Field notes", note: "Short guides, observations, and details worth keeping." },
-    { id: "archive", floatDuration: 6.9, floatDelay: -1.9, x: 175, y: 300, name: "Star Archive", glyph: "✧", route: "/research/", section: "Research & Essays", note: "Source-led explorations of the sky, objects, history, and ideas." }
+    { id: "archive", floatDuration: 6.9, floatDelay: -1.9, x: 175, y: 300, name: "Star Archive", glyph: "✧", route: "/research/", section: "Research & Essays", note: "Source-led explorations of the sky, objects, history, and ideas." },
+    { id: "portal", floatDuration: 8.9, floatDelay: -3.7, x: 800, y: 880, name: "The Vesperglass Gate", glyph: "◎", route: "/galaxy/", section: "Galaxy map", note: "Step through to the procedural galaxy and explore distant stars." }
   ];
 
   const escapeHtml = (value) => {
@@ -110,7 +111,8 @@
     { id: "workshop", file: "atlas-island-workshop.png", width: 430, height: 430, sourceWidth: 1254, sourceHeight: 1254, floorX: 627, floorY: 875, alt: "Vesperglass Workshop, a glass-and-bronze maker's hall on its own detailed floating landing island." },
     { id: "logbook", file: "atlas-island-observatory.png", width: 270, height: 270, sourceWidth: 1254, sourceHeight: 1254, floorX: 627, floorY: 900, alt: "Observatory Logbook, a glass tower with a copper dome and telescope on its own floating landing island." },
     { id: "compass", file: "atlas-island-garden.png", width: 390, height: 390, sourceWidth: 1254, sourceHeight: 1254, floorX: 627, floorY: 850, alt: "Compass Garden, a glass greenhouse and flowering compass garden on its own floating landing island." },
-    { id: "foundry", file: "atlas-island-foundry.png", width: 370, height: 370, sourceWidth: 1254, sourceHeight: 1254, floorX: 627, floorY: 875, alt: "Tideglass Foundry, a glass-and-bronze foundry with a copper chimney and glowing furnace on its own floating landing island." }
+    { id: "foundry", file: "atlas-island-foundry.png", width: 370, height: 370, sourceWidth: 1254, sourceHeight: 1254, floorX: 627, floorY: 875, alt: "Tideglass Foundry, a glass-and-bronze foundry with a copper chimney and glowing furnace on its own floating landing island." },
+    { id: "portal", file: "atlas-island-portal.svg", width: 315, height: 315, sourceWidth: 1254, sourceHeight: 1254, floorX: 627, floorY: 850, alt: "The Vesperglass Gate, a glowing cyan portal arch on a detached glass-and-bronze floating island." }
   ];
   const islandOverlays = [];
   landmarkArtwork.forEach((artwork) => {
