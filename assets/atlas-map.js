@@ -213,38 +213,36 @@
   // far end before free-flight steering resumes.
   const trainDockRailStartPoint = stationPixelToTrainPoint(-60, 600);
   const trainDockRailEndPoint = stationPixelToTrainPoint(900, 1220);
+  const sampleTrainBezier = (start, control1, control2, end, count = 25) => Array.from({ length: count }, (_, index) => {
+    const t = index / (count - 1);
+    const inverse = 1 - t;
+    return {
+      x: inverse * inverse * inverse * start.x + 3 * inverse * inverse * t * control1.x + 3 * inverse * t * t * control2.x + t * t * t * end.x,
+      y: inverse * inverse * inverse * start.y + 3 * inverse * inverse * t * control1.y + 3 * inverse * t * t * control2.y + t * t * t * end.y
+    };
+  });
   // Approach directly from the portal with a broad cubic turn that gradually
   // aligns to the dock rail tangent. This avoids circling the station first.
-  const trainArrivalApproachPoints = (() => {
-    const start = trainEntryPoint;
-    const end = trainDockRailStartPoint;
-    const control1 = { x: start.x + 320, y: start.y };
-    const control2 = { x: end.x - 160, y: end.y - 104 };
-    return Array.from({ length: 25 }, (_, index) => {
-      const t = index / 24;
-      const inverse = 1 - t;
-      return {
-        x: inverse * inverse * inverse * start.x + 3 * inverse * inverse * t * control1.x + 3 * inverse * t * t * control2.x + t * t * t * end.x,
-        y: inverse * inverse * inverse * start.y + 3 * inverse * inverse * t * control1.y + 3 * inverse * t * t * control2.y + t * t * t * end.y
-      };
-    });
-  })();
-  const trainDepartureApproachPoints = [
+  const trainArrivalApproachPoints = sampleTrainBezier(
+    trainEntryPoint,
+    { x: trainEntryPoint.x + 320, y: trainEntryPoint.y },
+    { x: trainDockRailStartPoint.x - 160, y: trainDockRailStartPoint.y - 104 },
+    trainDockRailStartPoint
+  );
+  // Leave the rail in the arrival direction, then make one broad U-turn back
+  // toward the portal. The exit tangent matches the straight portal approach.
+  const dockHeadingX = trainDockRailEndPoint.x - trainDockPoint.x;
+  const dockHeadingY = trainDockRailEndPoint.y - trainDockPoint.y;
+  const dockHeadingLength = Math.hypot(dockHeadingX, dockHeadingY) || 1;
+  const portalHeadingX = trainEntryPoint.x - trainRunUpPoint.x;
+  const portalHeadingY = trainEntryPoint.y - trainRunUpPoint.y;
+  const portalHeadingLength = Math.hypot(portalHeadingX, portalHeadingY) || 1;
+  const trainDepartureApproachPoints = sampleTrainBezier(
     trainDockRailEndPoint,
-    { x: trainDockRailEndPoint.x + 100, y: trainDockRailEndPoint.y + 65 },
-    { x: trainDockRailEndPoint.x + 190, y: trainDockRailEndPoint.y + 90 },
-    { x: trainDockRailEndPoint.x + 275, y: trainDockRailEndPoint.y + 65 },
-    { x: trainDockRailEndPoint.x + 330, y: trainDockRailEndPoint.y + 5 },
-    { x: trainDockRailEndPoint.x + 330, y: trainDockRailEndPoint.y - 75 },
-    { x: trainDockRailEndPoint.x + 270, y: trainDockRailEndPoint.y - 130 },
-    { x: trainDockRailEndPoint.x + 160, y: trainDockRailEndPoint.y - 140 },
-    { x: trainDockRailEndPoint.x + 20, y: trainDockRailEndPoint.y - 95 },
-    { x: 1320, y: 970 },
-    { x: 1200, y: 970 },
-    { x: 850, y: 960 },
-    { x: 620, y: 973 },
+    { x: trainDockRailEndPoint.x + (dockHeadingX / dockHeadingLength) * 400, y: trainDockRailEndPoint.y + (dockHeadingY / dockHeadingLength) * 400 },
+    { x: trainRunUpPoint.x - (portalHeadingX / portalHeadingLength) * 240, y: trainRunUpPoint.y - (portalHeadingY / portalHeadingLength) * 240 },
     trainRunUpPoint
-  ];
+  );
   const trainPortalTargetSpeed = 180;
   const trainAcceleration = 36;
   const trainBrakeAcceleration = 54;
