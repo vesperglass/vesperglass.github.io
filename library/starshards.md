@@ -34,6 +34,16 @@ The oldest Foundry account describes a starshard as “a piece of night remember
   <div><span class="sign-number">03</span><strong>Fracture face</strong><p>The outer facets are scored and sorted. Clean fractures make a steadier, finer dust.</p></div>
 </div>
 
+### Cabinet records · interpretive specimens
+
+The following cabinet cards are proposed examples for the Encyclopedia. Their names and traits extend the established description of starshards; they are interpretive lore, not a documented scientific classification.
+
+<dl class="folio-glossary">
+  <div><dt>Blue seam</dt><dd>A compact shard with one clear inner line. A useful teaching specimen for showing how a bright seam can hint at the star beneath which a crystal formed.</dd></div>
+  <div><dt>Split heart</dt><dd>A larger fragment whose memory planes divide around a central fracture. Foundry hands might sort it for careful grinding rather than treat the split as a defect.</dd></div>
+  <div><dt>Quiet glass</dt><dd>A dark, low-glimmer shard whose light appears only when turned. Its cabinet note would record the angle and conditions of observation before assigning any meaning to its color.</dd></div>
+</dl>
+
 ## How a shard becomes stardust
 
 Raw starshards travel first to the **Tideglass Foundry** at Vesperglass. There, the shards are cleaned of their host stone, ground between mirrored plates, and sifted until only a fine, even powder remains. The last step is called *tempering*: the dust is exposed to the Gate's low, singing resonance until its scattered glints settle into one quiet color.

@@ -28,6 +28,19 @@ Vesperglass Train Dock is a platform separate from the Vesperglass Gate. It give
 
 The plates show a straight open edge and an alongside berth, with no tracks. The route diagram is a conceptual explanation of the visual docking behavior, not a claim that the rendered platform contains rails. The looping train animation is a presentation feature; persistent train operations are not yet part of the simulation.
 
+## Vessel dossier · the Gate train
+
+This compact dossier gathers details already described in the Encyclopedia and the atlas. It is a reference summary, not a measured engineering plan.
+
+<dl class="folio-glossary">
+  <div><dt>Passage</dt><dd>In the setting's lore, the train crosses between worlds through <a href="{{ '/library/vesperglass-gate/' | relative_url }}">the Vesperglass Gate</a>.</dd></div>
+  <div><dt>Frame and heart</dt><dd>The lore describes a brass frame around a dark-glass heart. The sealed <a href="{{ '/library/starshards/' | relative_url }}">starwell</a> carries stardust, which gathers into the pulse for a crossing.</dd></div>
+  <div><dt>Shown at the dock</dt><dd>The atlas animation brings the locomotive alongside the platform using a hidden guide path, then sends it back into free flight. This is presentation behavior, not a persistent train-operation system.</dd></div>
+  <div><dt>Not specified</dt><dd>No canonical dimensions, cabin plan, control layout, maintenance procedure, or engineering cross-section is established by these pages.</dd></div>
+</dl>
+
+The visible brass-and-glass design and the described fuel relationship belong to the setting's reference material. Details beyond those descriptions remain open for later, explicitly interpretive studies.
+
 <aside class="field-note"><span class="field-note-mark" aria-hidden="true">✳</span><p><strong>What is recorded</strong><br>The train dock and portal are separate atlas platforms. The train parks alongside the station and follows a hidden guide path during docking and departure.</p></aside>
 
 ## At a glance

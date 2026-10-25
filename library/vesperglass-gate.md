@@ -28,6 +28,18 @@ The Vesperglass Gate stands on its own platform, separate from the Train Dock. I
 
 The ring’s layered structure is an artistic interpretation, as is the idea that its glass segments help hold or tune the opening. The current viewer presents the Gate as a portal between views; it does not simulate the fuel cycle or a persistent expedition system.
 
+## Crossing record · an interpretive sequence
+
+This sequence arranges details already described in the Encyclopedia into a reference record. It is an interpretive summary, not a dated journey log; no destination, duration, schedule, or passenger list is established here.
+
+<dl class="folio-glossary">
+  <div><dt>Departure · Train Dock</dt><dd>The atlas animation shows the locomotive leave its alongside berth and move into free flight. It does not define a scheduled route or a persistent departure event.</dd></div>
+  <div><dt>Passage · Gate bloom</dt><dd>In the lore, the Gate gathers into a bright bloom around the train, briefly hiding it as the road takes shape.</dd></div>
+  <div><dt>Arrival · far side</dt><dd>The account describes the bloom opening outward again as the locomotive emerges, already carrying the light of its return journey. The destination and elapsed time remain unspecified.</dd></div>
+</dl>
+
+The atlas animation is a visual loop, while the crossing sequence belongs to the setting's lore and its interpretive presentation here. The current viewer does not run trips, track cargo, or persist arrivals.
+
 <aside class="field-note"><span class="field-note-mark" aria-hidden="true">✳</span><p><strong>What is recorded</strong><br>The Gate links Vesperglass to the Galaxy view and is the train’s passage in the lore. The illustrated mechanical construction is speculative.</p></aside>
 
 ## At a glance
