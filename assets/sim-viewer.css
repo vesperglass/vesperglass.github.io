@@ -35,9 +35,7 @@
 .sim-scene--galaxy #vesperglass-galaxy{width:100%;height:100%;min-height:0;border:0;border-radius:0}
 .sim-scene--galaxy #vesperglass-galaxy::after{display:none}
 .sim-scene--galaxy .galaxy-map-toolbar{top:76px;left:auto;right:14px;max-width:min(590px,calc(100% - 28px));justify-content:flex-end;flex-wrap:wrap}
-.sim-scene--galaxy .galaxy-seed-tools{flex-wrap:wrap;justify-content:flex-end;max-width:100%}
-.sim-scene--galaxy .galaxy-seed-field{min-width:130px}
-.sim-scene--galaxy .galaxy-seed-field input{width:175px}
+.sim-scene--galaxy .galaxy-seed-tools{display:none}
 .sim-scene--galaxy .galaxy-map-status{position:absolute;right:14px;bottom:14px;z-index:650;max-width:min(380px,calc(100% - 28px))}
 .sim-scene--galaxy .galaxy-inspector{left:14px;bottom:14px;max-height:min(47vh,390px);border-color:#a7c5cf42;color:#e3edf0;background:rgba(6,16,27,.88);box-shadow:0 12px 38px #0008}
 .sim-scene--galaxy .galaxy-inspector__mode{border-color:#9bb8cc40;color:#a9c6c7}
@@ -59,9 +57,6 @@
   .sim-switcher__library{gap:4px;padding-left:6px;font-size:8px}
   .sim-scene--atlas .atlas-map-toolbar{top:auto;right:10px;bottom:10px}
   .sim-scene--galaxy .galaxy-map-toolbar{top:68px;right:10px;max-width:calc(100% - 20px)}
-  .sim-scene--galaxy .galaxy-seed-tools{max-width:100%;padding:6px}
-  .sim-scene--galaxy .galaxy-seed-field{min-width:120px;flex:1 1 100%}
-  .sim-scene--galaxy .galaxy-seed-field input{width:100%;max-width:none}
   .sim-scene--galaxy .galaxy-map-status{right:10px;bottom:10px;max-width:calc(100% - 20px);font-size:9px}
   .sim-scene--galaxy .galaxy-inspector{left:10px;bottom:10px;width:min(285px,calc(100% - 20px));max-height:36vh;padding:11px}
 }
