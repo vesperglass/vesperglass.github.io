@@ -87,3 +87,20 @@ body:has(.galaxy-map-shell.is-fullscreen){overflow:hidden}
 .galaxy-map-shell{width:100%}
 .galaxy-inspector{position:absolute;z-index:650;left:14px;bottom:14px;width:min(290px,calc(100% - 28px));max-height:min(42vh,360px);overflow:auto;padding:15px;border-color:#b8c8ceaa;background:color-mix(in srgb,var(--white) 94%,transparent);backdrop-filter:blur(14px);box-shadow:0 14px 36px #0006}
 @media(max-width:680px){.galaxy-inspector{left:8px;bottom:8px;width:min(290px,calc(100% - 16px));max-height:34vh;padding:12px}.galaxy-inspector h2{font-size:21px}.galaxy-inspector__lead{margin-bottom:9px}.galaxy-fact{padding:6px 0}.galaxy-inspector__subhead{margin-top:12px}}
+
+
+/* Homeward gate: a fixed portal at the galaxy origin. */
+.galaxy-portal-marker,.galaxy-portal-marker:hover{border:0;background:transparent;overflow:visible}
+.galaxy-portal-icon{display:grid;width:96px;height:61px;place-items:center;filter:drop-shadow(0 0 12px #56e0cf99);animation:galaxy-portal-drift 3.6s ease-in-out infinite}
+.galaxy-portal-icon svg{width:58px;height:58px;overflow:visible}
+.galaxy-portal-aura{fill:#36d8c11a;stroke:#9af3df88;stroke-width:1.2;stroke-dasharray:2 4;transform-origin:32px 32px;animation:galaxy-portal-aura 4.2s ease-in-out infinite}
+.galaxy-portal-ring{fill:#07101b;stroke:#f0cf8d;stroke-width:2.4}
+.galaxy-portal-core{fill:#145260;stroke:#77ead7;stroke-width:1.5}
+.galaxy-portal-v{fill:none;stroke:#fff0bd;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}
+.galaxy-portal-star{fill:#fff4cd;filter:drop-shadow(0 0 3px #fff4cd)}
+.galaxy-portal-label{display:block;width:max-content;margin:-1px auto 0;padding:3px 6px;border:1px solid #83e9d76b;border-radius:99px;color:#d8fff3;background:#07101beF;box-shadow:0 3px 12px #0007;font:750 7px/1 var(--sans);letter-spacing:.14em;text-shadow:0 0 8px #62e7d3;white-space:nowrap}
+.leaflet-marker-icon.galaxy-portal-marker:focus-visible{outline:2px solid #b1f6e6;outline-offset:3px;border-radius:50%}
+.leaflet-marker-icon.galaxy-portal-marker:hover .galaxy-portal-icon{filter:drop-shadow(0 0 18px #56e0cfcc);animation-duration:1.8s}
+@keyframes galaxy-portal-drift{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
+@keyframes galaxy-portal-aura{0%,100%{opacity:.55;transform:scale(.94)}50%{opacity:1;transform:scale(1.04)}}
+@media(prefers-reduced-motion:reduce){.galaxy-portal-icon,.galaxy-portal-aura{animation:none}}
