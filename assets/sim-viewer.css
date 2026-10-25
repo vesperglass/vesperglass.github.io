@@ -20,6 +20,10 @@
 .sim-switcher__views button[aria-current="page"]{border-color:#89d8c9a8;color:#effff8;background:#1b484a}
 .sim-switcher__views button:focus-visible{outline:2px solid #9ed9d0;outline-offset:2px}
 .sim-switcher__views button span{font-size:14px}
+.sim-switcher__library{display:flex;align-items:center;gap:7px;margin:9px 3px 0;color:#a9c0bf;font:600 9px/1.2 var(--sans);text-decoration:none;transition:color .16s}
+.sim-switcher__library:hover,.sim-switcher__library:focus-visible{color:#f4e5c9}
+.sim-switcher__library span:last-child{margin-left:auto;color:#879e9d}
+.sim-switcher__library:focus-visible{outline:2px solid #9ed9d0;outline-offset:3px;border-radius:2px}
 .sim-switcher__hint{margin:9px 2px 1px;color:#91a9b1;font:700 7px/1.2 var(--sans);letter-spacing:.15em}
 .sim-scene--atlas .atlas-map-card{position:absolute;inset:0;overflow:hidden;border:0;border-radius:0;background:#050914;box-shadow:none}
 .sim-scene--atlas .atlas-map-toolbar{position:absolute;z-index:1400;top:14px;right:14px;display:flex;padding:0;border:0;pointer-events:none}

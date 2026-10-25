@@ -1,6 +1,6 @@
 (() => {
   const pages = [
-    { title: "Welcome", url: "/", summary: "Start here: a field guide to useful tools, experiments, and ideas.", terms: "home beginning orientation map" },
+    { title: "Vesperglass Simulation", url: "/", summary: "Enter the unified atlas and procedural galaxy viewer.", terms: "home beginning orientation map atlas galaxy simulation portal" },
     { title: "About Vesperglass", url: "/about/", summary: "What this workshop is for, who Orion is, and what this wiki collects.", terms: "about orion assistant workshop purpose" },
     { title: "Projects", url: "/projects/", summary: "The repository directory and how new projects find their place.", terms: "repositories work experiments github" },
     { title: "How we work", url: "/principles/", summary: "Curiosity, visible reasoning, usefulness, documentation, and revision.", terms: "principles evidence sources assumptions process" },
