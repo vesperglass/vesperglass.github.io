@@ -59,7 +59,8 @@
     { id: "compass", floatDuration: 7.7, floatDelay: -2.8, x: 414, y: 717, name: "Compass Garden", glyph: "✳", route: "/principles/", section: "How we work", note: "A few steady habits for making useful things with care." },
     { id: "logbook", floatDuration: 8.6, floatDelay: -5.5, x: 1176, y: 190, name: "Observatory Logbook", glyph: "✎", route: "/field-notes/", section: "Field notes", note: "Short guides, observations, and details worth keeping." },
     { id: "archive", floatDuration: 6.9, floatDelay: -1.9, x: 175, y: 300, name: "Star Archive", glyph: "✧", route: "/research/", section: "Research & Essays", note: "Source-led explorations of the sky, objects, history, and ideas." },
-    { id: "portal", floatDuration: 8.9, floatDelay: -3.7, x: 800, y: 880, name: "The Vesperglass Gate", glyph: "◎", route: "/galaxy/", section: "Galaxy map", note: "Step through to the procedural galaxy and explore distant stars." }
+    { id: "portal", floatDuration: 8.9, floatDelay: -3.7, x: 800, y: 880, name: "The Vesperglass Gate", glyph: "◎", route: "/galaxy/", section: "Galaxy map", note: "The portal train departs for distant stars. Follow the glowing rail to the station." },
+    { id: "station", floatDuration: 8.9, floatDelay: -3.7, x: 860, y: 860, name: "Vesperglass Train Station", glyph: "▤", route: "/galaxy/", section: "Galaxy map", note: "The portal locomotive parks here before the next journey through the galaxy." }
   ];
 
   const escapeHtml = (value) => {
@@ -112,7 +113,7 @@
     { id: "logbook", file: "atlas-island-observatory.png", width: 270, height: 270, sourceWidth: 1254, sourceHeight: 1254, floorX: 627, floorY: 900, alt: "Observatory Logbook, a glass tower with a copper dome and telescope on its own floating landing island." },
     { id: "compass", file: "atlas-island-garden.png", width: 390, height: 390, sourceWidth: 1254, sourceHeight: 1254, floorX: 627, floorY: 850, alt: "Compass Garden, a glass greenhouse and flowering compass garden on its own floating landing island." },
     { id: "foundry", file: "atlas-island-foundry.png", width: 370, height: 370, sourceWidth: 1254, sourceHeight: 1254, floorX: 627, floorY: 875, alt: "Tideglass Foundry, a glass-and-bronze foundry with a copper chimney and glowing furnace on its own floating landing island." },
-    { id: "portal", file: "atlas-island-portal.svg", width: 315, height: 315, sourceWidth: 1254, sourceHeight: 1254, floorX: 627, floorY: 850, alt: "The Vesperglass Gate, a glowing cyan portal arch on a detached glass-and-bronze floating island." }
+    { id: "portal", file: "atlas-island-portal.svg", width: 315, height: 315, sourceWidth: 1254, sourceHeight: 1254, floorX: 627, floorY: 850, alt: "The Vesperglass Gate and its small glass-and-bronze train station share a floating island, linked by a glowing rail spur." }
   ];
   const islandOverlays = [];
   landmarkArtwork.forEach((artwork) => {
@@ -187,6 +188,100 @@
     zIndexOffset: 1200,
     opacity: 0.98
   }).addTo(map);
+  const trainEntryPoint = { x: 800, y: 826 };
+  const trainDockPoint = { x: 815, y: 895 };
+  const trainPointToLatLng = (point) => [1024 - point.y, point.x];
+  const trainIcon = L.divIcon({
+    className: "atlas-train",
+    iconSize: [26, 26],
+    iconAnchor: [13, 21],
+    html: '<span class="atlas-train__art" aria-hidden="true" style="--atlas-float-duration:8.9s;--atlas-float-delay:-3.7s;--atlas-float-distance:-4px"><span class="atlas-train__sprite"></span></span>'
+  });
+  let trainZoom = 0;
+  let trainWorldPosition = map.project(trainPointToLatLng(trainEntryPoint), trainZoom);
+  let trainHeading = 0;
+  let trainReferenceZoom = null;
+  let trainFrame = 0;
+  let trainTimer = 0;
+  let trainArrivalStarted = false;
+  const trainMarker = L.marker(trainPointToLatLng(trainEntryPoint), {
+    icon: trainIcon,
+    interactive: false,
+    keyboard: false,
+    zIndexOffset: 80,
+    opacity: 0.98
+  }).addTo(map);
+  const trainDirectionByOctant = [0, 1, 2, 3, 4, 7, 6, 5];
+  const setTrainFacing = () => {
+    const element = trainMarker.getElement();
+    if (!element) return;
+    const octant = ((Math.round(trainHeading / (Math.PI / 4)) % 8) + 8) % 8;
+    const direction = trainDirectionByOctant[octant];
+    const sprite = element.querySelector(".atlas-train__sprite");
+    if (sprite) sprite.style.backgroundPosition = (-(direction % 4) * 26) + "px " + (-Math.floor(direction / 4) * 26) + "px";
+  };
+  const setTrainPosition = () => {
+    trainMarker.setLatLng(map.unproject(trainWorldPosition, trainZoom));
+    setTrainFacing();
+  };
+  const updateTrainArtworkScale = (zoom = map.getZoom()) => {
+    if (trainReferenceZoom === null) return;
+    const element = trainMarker.getElement();
+    if (element) element.style.setProperty("--train-map-scale", String(Math.pow(2, zoom - trainReferenceZoom)));
+  };
+  map.on("zoom", () => updateTrainArtworkScale(map.getZoom()));
+  map.on("zoomanim", (event) => updateTrainArtworkScale(event.zoom));
+  const startTrainArrival = () => {
+    trainTimer = 0;
+    if (motionPreference.matches || trainArrivalStarted) return;
+    trainArrivalStarted = true;
+    const start = map.project(trainPointToLatLng(trainEntryPoint), trainZoom);
+    const end = map.project(trainPointToLatLng(trainDockPoint), trainZoom);
+    const dx = end.x - start.x;
+    const dy = end.y - start.y;
+    trainHeading = Math.atan2(dy, dx);
+    setTrainFacing();
+    const element = trainMarker.getElement();
+    element?.classList.add("is-moving");
+    const startedAt = performance.now();
+    const duration = 5200;
+    const animate = (now) => {
+      if (motionPreference.matches) {
+        trainFrame = 0;
+        element?.classList.remove("is-moving");
+        trainWorldPosition = map.project(trainPointToLatLng(trainDockPoint), trainZoom);
+        setTrainPosition();
+        return;
+      }
+      const progress = Math.min(1, (now - startedAt) / duration);
+      const eased = progress < 0.5 ? 4 * progress * progress * progress : 1 - Math.pow(-2 * progress + 2, 3) / 2;
+      trainWorldPosition = L.point(start.x + dx * eased, start.y + dy * eased);
+      setTrainPosition();
+      if (progress < 1) {
+        trainFrame = window.requestAnimationFrame(animate);
+      } else {
+        trainFrame = 0;
+        trainWorldPosition = end;
+        setTrainPosition();
+        element?.classList.remove("is-moving");
+      }
+    };
+    trainFrame = window.requestAnimationFrame(animate);
+  };
+  const updateTrainMotion = () => {
+    if (motionPreference.matches) {
+      if (trainFrame) window.cancelAnimationFrame(trainFrame);
+      if (trainTimer) window.clearTimeout(trainTimer);
+      trainFrame = 0;
+      trainTimer = 0;
+      trainArrivalStarted = true;
+      trainMarker.getElement()?.classList.remove("is-moving");
+      trainWorldPosition = map.project(trainPointToLatLng(trainDockPoint), trainZoom);
+      setTrainPosition();
+    } else if (!trainArrivalStarted && !trainTimer) {
+      trainTimer = window.setTimeout(startTrainArrival, 1400);
+    }
+  };
   const courierDebugEnabled = new URLSearchParams(window.location.search).get("courier-debug") === "1";
   let courierDebugMarker = null;
   let courierDebugPanel = null;
@@ -430,6 +525,14 @@
   // fitBounds establishes the real initial view. Seed route coordinates only
   // after that, then keep this projection zoom fixed for every later pan/zoom.
   courierZoom = map.getZoom();
+  trainZoom = courierZoom;
+  trainReferenceZoom = trainZoom;
+  trainWorldPosition = map.project(trainPointToLatLng(trainEntryPoint), trainZoom);
+  const trainDestination = map.project(trainPointToLatLng(trainDockPoint), trainZoom);
+  trainHeading = Math.atan2(trainDestination.y - trainWorldPosition.y, trainDestination.x - trainWorldPosition.x);
+  trainMarker.setLatLng(trainPointToLatLng(trainEntryPoint));
+  setTrainPosition();
+  updateTrainArtworkScale(map.getZoom());
   courierWorldPosition = map.project(toLatLng("foundry"), courierZoom);
   const initialTarget = map.project(toLatLng("workshop"), courierZoom);
   courierHeading = Math.atan2(initialTarget.y - courierWorldPosition.y, initialTarget.x - courierWorldPosition.x);
@@ -619,6 +722,7 @@
 
   const updateMotionPreference = () => {
     updateCourierMotion();
+    updateTrainMotion();
     if (motionPreference.matches) {
       if (orbitFrame) window.cancelAnimationFrame(orbitFrame);
       if (effectsFrame) window.cancelAnimationFrame(effectsFrame);
