@@ -347,7 +347,7 @@
     appendRecentViews(card);
   };
   const clearInspector = () => {
-    const card = createInspector("GALAXY SURVEY", "Choose a star", "Every system is generated from the galaxy seed. Select a star to chart its planets and inspect their starting conditions.");
+    const card = createInspector("GALAXY SURVEY", "Choose a star", "Drag to pan, scroll or pinch to zoom, then select a star to inspect its planets. Use Center to return to Vesperglass. Systems are generated from the galaxy seed.");
     const seedLine = document.createElement("div");
     seedLine.className = "galaxy-inspector__seed";
     const label = document.createElement("span");
