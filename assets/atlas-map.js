@@ -114,7 +114,7 @@
     { id: "compass", file: "atlas-island-garden.png", width: 390, height: 390, sourceWidth: 1254, sourceHeight: 1254, floorX: 627, floorY: 850, alt: "Compass Garden, a glass greenhouse and flowering compass garden on its own floating landing island." },
     { id: "foundry", file: "atlas-island-foundry.png", width: 370, height: 370, sourceWidth: 1254, sourceHeight: 1254, floorX: 627, floorY: 875, alt: "Tideglass Foundry, a glass-and-bronze foundry with a copper chimney and glowing furnace on its own floating landing island." },
     { id: "portal", file: "atlas-island-gate.png", width: 360, height: 360, sourceWidth: 1254, sourceHeight: 1254, floorX: 627, floorY: 700, alt: "A luminous blue portal rises above its own glass-and-bronze floating island." },
-    { id: "station", file: "atlas-island-train-dock-cut-edge.png", width: 400, height: 400, sourceWidth: 1254, sourceHeight: 1254, floorX: 627, floorY: 600, alt: "A floating glass-and-bronze rail dock with a straight cutaway berth beside a sheer drop." }
+    { id: "station", file: "atlas-island-space-dock.png", width: 400, height: 400, sourceWidth: 1254, sourceHeight: 1254, floorX: 627, floorY: 600, alt: "A floating glass-and-bronze space dock with an open landing edge beside a sheer drop." }
   ];
   const islandOverlays = new Map();
   landmarkArtwork.forEach((artwork) => {
