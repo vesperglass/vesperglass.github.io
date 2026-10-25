@@ -231,13 +231,13 @@
 
 
 /* A portal locomotive follows the station's float cycle while parked and uses an eight-view isometric sprite sheet in flight. */
-.leaflet-div-icon.atlas-train{position:relative;width:56px!important;height:56px!important;border:0;background:transparent;pointer-events:none}
+.leaflet-div-icon.atlas-train{position:relative;width:72px!important;height:72px!important;border:0;background:transparent;pointer-events:none}
 .atlas-train__art{position:absolute;inset:0;transform:scale(var(--train-map-scale,1));transform-origin:50% 82%;animation:atlas-landmark-float var(--atlas-float-duration,7.8s) ease-in-out var(--atlas-float-delay,-4.6s) infinite;transition:transform .14s linear}
 .atlas-train.is-moving .atlas-train__art{animation:none;translate:0 0}
-.atlas-train__sprite{position:absolute;inset:0;background-image:url("/assets/atlas-train-sprites-v2.png");background-repeat:no-repeat;background-size:224px 112px;filter:drop-shadow(0 1px 1.25px #020816b5)}
+.atlas-train__sprite{position:absolute;inset:0;background-image:url("/assets/atlas-train-sprites-v2.png");background-repeat:no-repeat;background-size:288px 144px;filter:drop-shadow(0 1px 1.25px #020816b5)}
 .atlas-train.is-moving .atlas-train__sprite{animation:atlas-train-chug .46s ease-in-out infinite}
 @keyframes atlas-train-chug{0%,100%{filter:drop-shadow(0 1px 1.25px #020816b5)}50%{filter:drop-shadow(0 1.5px 2px #020816d9)}}
-.leaflet-div-icon.atlas-portal-burst-marker{position:relative;width:280px!important;height:280px!important;border:0;background:transparent;pointer-events:none}
+.leaflet-div-icon.atlas-portal-burst-marker{position:relative;width:360px!important;height:360px!important;border:0;background:transparent;pointer-events:none}
 .atlas-portal-burst-art{position:absolute;inset:0;display:block;animation:atlas-landmark-float var(--atlas-float-duration,9.2s) ease-in-out var(--atlas-float-delay,-1.4s) infinite}
 .atlas-portal-burst{--portal-burst-color:87,225,255;position:absolute;inset:0;display:block;opacity:0;transform:scale(.1);transform-origin:50% 50%;pointer-events:none}
 .atlas-portal-burst.is-departure{--portal-burst-color:255,205,132}

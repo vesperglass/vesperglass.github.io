@@ -5,7 +5,7 @@
   const mapCard = container?.closest(".atlas-map-card");
   if (!container || !window.L) return;
 
-  const bounds = L.latLngBounds([[-96, -40], [1024, 1600]]);
+  const bounds = L.latLngBounds([[-112, -40], [1024, 1600]]);
   const map = L.map(container, {
     crs: L.CRS.Simple,
     zoomControl: false,
@@ -113,8 +113,8 @@
     { id: "logbook", file: "atlas-island-observatory.png", width: 270, height: 270, sourceWidth: 1254, sourceHeight: 1254, floorX: 627, floorY: 900, alt: "Observatory Logbook, a glass tower with a copper dome and telescope on its own floating landing island." },
     { id: "compass", file: "atlas-island-garden.png", width: 390, height: 390, sourceWidth: 1254, sourceHeight: 1254, floorX: 627, floorY: 850, alt: "Compass Garden, a glass greenhouse and flowering compass garden on its own floating landing island." },
     { id: "foundry", file: "atlas-island-foundry.png", width: 370, height: 370, sourceWidth: 1254, sourceHeight: 1254, floorX: 627, floorY: 875, alt: "Tideglass Foundry, a glass-and-bronze foundry with a copper chimney and glowing furnace on its own floating landing island." },
-    { id: "portal", file: "atlas-island-gate.png", width: 280, height: 280, sourceWidth: 1254, sourceHeight: 1254, floorX: 627, floorY: 700, alt: "A luminous blue portal rises above its own glass-and-bronze floating island." },
-    { id: "station", file: "atlas-island-station.png", width: 280, height: 280, sourceWidth: 1254, sourceHeight: 1254, floorX: 627, floorY: 800, alt: "A separate glass-and-bronze floating train station with a covered platform and a single rail berth." }
+    { id: "portal", file: "atlas-island-gate.png", width: 360, height: 360, sourceWidth: 1254, sourceHeight: 1254, floorX: 627, floorY: 700, alt: "A luminous blue portal rises above its own glass-and-bronze floating island." },
+    { id: "station", file: "atlas-island-station.png", width: 360, height: 360, sourceWidth: 1254, sourceHeight: 1254, floorX: 627, floorY: 800, alt: "A separate glass-and-bronze floating train station with a covered platform and a single rail berth." }
   ];
   const islandOverlays = new Map();
   landmarkArtwork.forEach((artwork) => {
@@ -222,8 +222,8 @@
   const trainPointToLatLng = (point) => [1024 - point.y, point.x];
   const trainIcon = L.divIcon({
     className: "atlas-train",
-    iconSize: [56, 56],
-    iconAnchor: [28, 46],
+    iconSize: [72, 72],
+    iconAnchor: [36, 60],
     html: '<span class="atlas-train__art" aria-hidden="true" style="--atlas-float-duration:7.8s;--atlas-float-delay:-4.6s;--atlas-float-distance:-4px"><span class="atlas-train__sprite"></span></span>'
   });
   let trainZoom = 0;
@@ -256,7 +256,7 @@
     zIndexOffset: 1500
   }).addTo(map);
   const trainDirectionByOctant = [0, 1, 2, 3, 4, 7, 6, 5];
-  const trainSpriteCellSize = 56;
+  const trainSpriteCellSize = 72;
   const setTrainFacing = () => {
     const element = trainMarker.getElement();
     if (!element) return;
