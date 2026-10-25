@@ -1,14 +1,14 @@
-# Vesperglass Field Guide
+# Vesperglass Universe
 
-A public, searchable wiki for the Vesperglass organization, published at [vesperglass.github.io](https://vesperglass.github.io).
+A public, searchable fantasy-universe site published at [vesperglass.github.io](https://vesperglass.github.io).
 
 ## Structure
 
-- Markdown files hold the pages.
-- `_layouts/default.html` provides the shared wiki layout.
+- Markdown files hold the Universe Guide and encyclopedia entries.
+- `_layouts/default.html` provides the shared universe layout and navigation.
 - `assets/site.css` contains the visual system.
 - `assets/site.js` provides client-side page search.
-- `index.md` and `/sim/` share `_includes/sim-viewer.html` as the full-screen Explore surface.
-- `universe.md` is the universe hub; `library.md` and `library/` hold encyclopedia entries.
+- `index.md` is the shared Vesperglass/Galaxy viewer, with `/sim/` as an alternate entry.
+- `universe.md` is the lore and exploration hub; `library.md` and `library/` hold illustrated encyclopedia entries.
 
 The site is published from the `main` branch using GitHub Pages and Jekyll. No external runtime services or analytics are used.

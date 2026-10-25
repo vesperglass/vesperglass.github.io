@@ -1,13 +1,7 @@
 (() => {
   const pages = [
-    { title: "Vesperglass Simulation", url: "/", summary: "Enter the unified atlas and procedural galaxy viewer.", terms: "home beginning orientation map atlas galaxy simulation portal" },
-    { title: "About Vesperglass", url: "/about/", summary: "What this workshop is for, who Orion is, and what this wiki collects.", terms: "about orion assistant workshop purpose" },
-    { title: "Projects", url: "/projects/", summary: "The repository directory and how new projects find their place.", terms: "repositories work experiments github" },
-    { title: "How we work", url: "/principles/", summary: "Curiosity, visible reasoning, usefulness, documentation, and revision.", terms: "principles evidence sources assumptions process" },
-    { title: "Field notes", url: "/field-notes/", summary: "A simple guide to useful, sourced notes and discoveries.", terms: "notes findings sources date research" },
-    { title: "Research & Essays", url: "/research/", summary: "Source-led explorations that follow a question into history and meaning.", terms: "research essays studies culture history objects sky" },
-    { title: "Orion: A Figure in the Stars", url: "/research/orion/", summary: "The western constellation, its stars, and a specific Māori seasonal tradition centered on Rigel/Puanga.", terms: "orion constellation astronomy hunter stars rigel puanga maori Māori iwi season" },
-    { title: "The Hinge: A Quiet Axis", url: "/research/hinges/", summary: "Hinge mechanics, ancient examples, Latin cardo, and the hinge as a metaphor.", terms: "hinge mechanism pivot joint ancient history cardo metaphor poetry door louvre egypt roman" },
+    { title: "Vesperglass Atlas", url: "/", summary: "Explore the floating home, its landmarks, the Vesperglass Gate, and the train dock.", terms: "home atlas map workshop threshold house tideglass foundry garden observatory archive portal train dock" },
+    { title: "Galaxy Explorer", url: "/sim/#galaxy", summary: "Chart a repeatable procedural galaxy and inspect stars and their planetary systems.", terms: "galaxy stars planets systems exploration survey worlds map" },
     { title: "Universe Guide", url: "/universe/", summary: "A guide to known space, materials, vessels, and the planned expedition cycle.", terms: "universe guide lore atlas galaxy worlds systems starshards stardust train expeditions" },
     { title: "Universe Encyclopedia", url: "/library/", summary: "An illustrated reference to the places, materials, and journeys of Vesperglass.", terms: "library encyclopedia lore atlas universe fiction reference book" },
     { title: "Starshards & the Gate Train", url: "/library/starshards/", summary: "How starshards become stardust, and how the Gate train carries it between worlds.", terms: "starshard stardust fuel train portal gate tideglass foundry galaxy resource" }
@@ -26,7 +20,7 @@
     if (!q || !matches.length) {
       const hint = document.createElement("p");
       hint.className = "search-hint";
-      hint.textContent = q ? "No page found yet. Try a broader word." : "Try a topic such as projects, sources, or field notes.";
+      hint.textContent = q ? "No page found yet. Try a broader word." : "Try a place, material, vessel, or world.";
       results.append(hint);
       return;
     }
