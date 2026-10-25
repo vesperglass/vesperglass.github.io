@@ -213,25 +213,22 @@
   // far end before free-flight steering resumes.
   const trainDockRailStartPoint = stationPixelToTrainPoint(-60, 600);
   const trainDockRailEndPoint = stationPixelToTrainPoint(900, 1220);
-  const trainArrivalApproachPoints = [
-    trainEntryPoint,
-    trainRunUpPoint,
-    { x: 620, y: 940 },
-    { x: 800, y: 950 },
-    { x: 1080, y: 960 },
-    { x: 1200, y: 970 },
-    { x: 1290, y: 930 },
-    { x: 1380, y: 920 },
-    { x: 1450, y: 960 },
-    { x: 1480, y: 1035 },
-    { x: 1450, y: 1110 },
-    { x: 1380, y: 1155 },
-    { x: 1280, y: 1140 },
-    { x: 1190, y: 1080 },
-    { x: 1120, y: 1000 },
-    { x: trainDockRailStartPoint.x - 100, y: trainDockRailStartPoint.y - 65 },
-    trainDockRailStartPoint
-  ];
+  // Approach directly from the portal with a broad cubic turn that gradually
+  // aligns to the dock rail tangent. This avoids circling the station first.
+  const trainArrivalApproachPoints = (() => {
+    const start = trainEntryPoint;
+    const end = trainDockRailStartPoint;
+    const control1 = { x: start.x + 320, y: start.y };
+    const control2 = { x: end.x - 160, y: end.y - 104 };
+    return Array.from({ length: 25 }, (_, index) => {
+      const t = index / 24;
+      const inverse = 1 - t;
+      return {
+        x: inverse * inverse * inverse * start.x + 3 * inverse * inverse * t * control1.x + 3 * inverse * t * t * control2.x + t * t * t * end.x,
+        y: inverse * inverse * inverse * start.y + 3 * inverse * inverse * t * control1.y + 3 * inverse * t * t * control2.y + t * t * t * end.y
+      };
+    });
+  })();
   const trainDepartureApproachPoints = [
     trainDockRailEndPoint,
     { x: trainDockRailEndPoint.x + 100, y: trainDockRailEndPoint.y + 65 },
