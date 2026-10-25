@@ -15,6 +15,7 @@
 .galaxy-seed-field input{width:190px;max-width:28vw;padding:7px 8px;border:1px solid #57718170;border-radius:6px;color:#e8f2f6;background:#101c29;font:11px ui-monospace,SFMono-Regular,Consolas,monospace}
 .galaxy-seed-field input:focus-visible{outline:2px solid #94c9d8;outline-offset:1px}
 .galaxy-tool-button{display:flex;align-items:center;justify-content:center;min-height:31px;padding:7px 9px;border:1px solid #59718480;border-radius:6px;color:#dce9ee;background:#132331;font:600 10px/1 var(--sans);cursor:pointer;white-space:nowrap}
+.galaxy-center-button{gap:5px}
 .galaxy-tool-button:hover,.galaxy-tool-button:focus-visible{border-color:#a5dce5;color:#fff;background:#1d3545}
 .galaxy-tool-button:focus-visible{outline:2px solid #94c9d8;outline-offset:2px}
 #galaxy-back{color:#f0d4a3;border-color:#bd986c75}

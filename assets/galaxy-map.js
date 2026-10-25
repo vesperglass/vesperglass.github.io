@@ -3,6 +3,7 @@
   const seedInput = document.getElementById("galaxy-seed");
   const generateButton = document.getElementById("galaxy-generate");
   const newSeedButton = document.getElementById("galaxy-new-seed");
+  const centerButton = document.getElementById("galaxy-center");
   const backButton = document.getElementById("galaxy-back");
   const fullscreenButton = document.getElementById("galaxy-fullscreen");
   const mapShell = mapElement?.closest(".galaxy-map-shell");
@@ -334,6 +335,11 @@
     map.setView([0, 0], 0);
     renderGalaxy();
   };
+  const centerOnVesperglass = () => {
+    if (mode !== "galaxy") returnToGalaxy();
+    else map.panTo([0, 0], { animate: true, duration: 0.45 });
+    if (!layerVisibility.portal) setLayerVisibility("portal", true);
+  };
   const scheduleGalaxyRender = () => {
     if (mode !== "galaxy") return;
     window.clearTimeout(redrawTimer);
@@ -388,6 +394,7 @@
     }
   });
   generateButton.addEventListener("click", applySeed);
+  centerButton.addEventListener("click", centerOnVesperglass);
   seedInput.addEventListener("keydown", (event) => { if (event.key === "Enter") applySeed(); });
   newSeedButton.addEventListener("click", makeNewSeed);
   backButton.addEventListener("click", returnToGalaxy);
