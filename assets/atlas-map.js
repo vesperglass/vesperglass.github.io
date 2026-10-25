@@ -59,8 +59,8 @@
     { id: "compass", floatDuration: 7.7, floatDelay: -2.8, x: 414, y: 717, name: "Compass Garden", glyph: "✳", route: "/principles/", section: "How we work", note: "A few steady habits for making useful things with care." },
     { id: "logbook", floatDuration: 8.6, floatDelay: -5.5, x: 1176, y: 190, name: "Observatory Logbook", glyph: "✎", route: "/field-notes/", section: "Field notes", note: "Short guides, observations, and details worth keeping." },
     { id: "archive", floatDuration: 6.9, floatDelay: -1.9, x: 175, y: 300, name: "Star Archive", glyph: "✧", route: "/research/", section: "Research & Essays", note: "Source-led explorations of the sky, objects, history, and ideas." },
-    { id: "portal", floatDuration: 9.2, floatDelay: -1.4, x: 110, y: 970, name: "The Vesperglass Gate", glyph: "◎", route: "/galaxy/", section: "Galaxy map", note: "A glowing gate carries the train out to distant stars." },
-    { id: "station", floatDuration: 7.8, floatDelay: -4.6, x: 1390, y: 925, name: "Vesperglass Train Dock", glyph: "▤", route: "/galaxy/", section: "Galaxy map", note: "The train pauses alongside the dock between trips through the galaxy." }
+    { id: "portal", floatDuration: 9.2, floatDelay: -1.4, x: 110, y: 970, name: "The Vesperglass Gate", glyph: "◎", route: "/sim/#galaxy", section: "Galaxy map", note: "A glowing gate carries the train out to distant stars." },
+    { id: "station", floatDuration: 7.8, floatDelay: -4.6, x: 1390, y: 925, name: "Vesperglass Train Dock", glyph: "▤", route: "/sim/#galaxy", section: "Galaxy map", note: "The train pauses alongside the dock between trips through the galaxy." }
   ];
 
   const escapeHtml = (value) => {
@@ -1045,5 +1045,8 @@
   });
   document.addEventListener("fullscreenchange", updateFullscreenButton);
   container.querySelector("#atlas-map-fallback")?.remove();
+  window.VesperglassAtlasMap = {
+    invalidate: () => window.requestAnimationFrame(() => map.invalidateSize({ pan: false }))
+  };
   window.requestAnimationFrame(() => map.invalidateSize({ pan: false }));
 })();

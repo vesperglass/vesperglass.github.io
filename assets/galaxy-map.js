@@ -222,7 +222,7 @@
     });
     const portal = L.marker([0, 0], { icon: portalIcon, keyboard: true, title: "Portal to Vesperglass home", alt: "Portal to Vesperglass home", riseOnHover: true, zIndexOffset: 1500 }).addTo(starLayer);
     portal.bindTooltip("Portal to Vesperglass", { direction: "top", offset: [0, -34], opacity: 0.96 });
-    portal.on("click", () => { window.location.href = "/"; });
+    portal.on("click", () => { window.location.href = "/sim/#vesperglass"; });
     mapStatus.textContent = count.toLocaleString() + " stars charted in view · Vesperglass portal marked";
     backButton.hidden = true;
   };
@@ -332,5 +332,11 @@
   map.on("moveend zoomend", scheduleGalaxyRender);
   clearInspector();
   renderGalaxy();
+  window.VesperglassGalaxyMap = {
+    invalidate: () => window.requestAnimationFrame(() => {
+      map.invalidateSize({ pan: false });
+      scheduleGalaxyRender();
+    })
+  };
   window.requestAnimationFrame(() => map.invalidateSize({ pan: false }));
 })();

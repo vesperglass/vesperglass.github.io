@@ -44,7 +44,7 @@
 
   <link rel="stylesheet" href="{{ '/assets/leaflet/leaflet.css' | relative_url }}?v=1.9.4">
 
-  <link rel="stylesheet" href="{{ '/assets/atlas-map.css' | relative_url }}?v=20261025-space-dock-no-track-3">
+  <link rel="stylesheet" href="{{ '/assets/atlas-map.css' | relative_url }}?v=20261025-unified-viewer-1">
 
   {% endif %}
 
@@ -52,8 +52,15 @@
 
   <link rel="stylesheet" href="{{ '/assets/leaflet/leaflet.css' | relative_url }}?v=1.9.4">
 
-  <link rel="stylesheet" href="{{ '/assets/galaxy-map.css' | relative_url }}?v=20261025-galaxy-portal-1">
+  <link rel="stylesheet" href="{{ '/assets/galaxy-map.css' | relative_url }}?v=20261025-unified-viewer-1">
 
+  {% endif %}
+
+  {% if page.sim_enabled %}
+  <link rel="stylesheet" href="{{ '/assets/leaflet/leaflet.css' | relative_url }}?v=1.9.4">
+  <link rel="stylesheet" href="{{ '/assets/atlas-map.css' | relative_url }}?v=20261025-unified-viewer-1">
+  <link rel="stylesheet" href="{{ '/assets/galaxy-map.css' | relative_url }}?v=20261025-unified-viewer-1">
+  <link rel="stylesheet" href="{{ '/assets/sim-viewer.css' | relative_url }}?v=20261025-viewer-1">
   {% endif %}
 
   <script defer src="{{ '/assets/site.js' | relative_url }}?v=20261023-research"></script>
@@ -62,7 +69,7 @@
 
   <script defer src="{{ '/assets/leaflet/leaflet.js' | relative_url }}?v=1.9.4"></script>
 
-  <script defer src="{{ '/assets/atlas-map.js' | relative_url }}?v=20261025-space-dock-no-track-3"></script>
+  <script defer src="{{ '/assets/atlas-map.js' | relative_url }}?v=20261025-unified-viewer-1"></script>
 
   {% endif %}
 
@@ -70,13 +77,20 @@
 
   <script defer src="{{ '/assets/leaflet/leaflet.js' | relative_url }}?v=1.9.4"></script>
 
-  <script defer src="{{ '/assets/galaxy-map.js' | relative_url }}?v=20261025-galaxy-portal-1"></script>
+  <script defer src="{{ '/assets/galaxy-map.js' | relative_url }}?v=20261025-unified-viewer-1"></script>
 
+  {% endif %}
+
+  {% if page.sim_enabled %}
+  <script defer src="{{ '/assets/leaflet/leaflet.js' | relative_url }}?v=1.9.4"></script>
+  <script defer src="{{ '/assets/atlas-map.js' | relative_url }}?v=20261025-unified-viewer-1"></script>
+  <script defer src="{{ '/assets/galaxy-map.js' | relative_url }}?v=20261025-unified-viewer-1"></script>
+  <script defer src="{{ '/assets/sim-viewer.js' | relative_url }}?v=20261025-viewer-1"></script>
   {% endif %}
 
 </head>
 
-<body>
+<body{% if page.sim_enabled %} class="sim-page"{% endif %}>
 
   <div class="observatory-sky" aria-hidden="true">
 
@@ -238,7 +252,7 @@
 
         <a href="{{ '/research/' | relative_url }}"{% if page.url contains '/research/' %} class="active" aria-current="page"{% endif %}><span class="nav-icon">✧</span>Research &amp; Essays</a>
 
-        <a href="{{ '/galaxy/' | relative_url }}"{% if page.url == '/galaxy/' %} class="active" aria-current="page"{% endif %}><span class="nav-icon">✶</span>Galaxy</a>
+        <a href="{{ '/sim/' | relative_url }}"{% if page.url == '/sim/' or page.url == '/galaxy/' %} class="active" aria-current="page"{% endif %}><span class="nav-icon">✶</span>Sim Viewer</a>
 
       </nav>
 
