@@ -321,7 +321,7 @@
   };
   const updateTrainArtworkScale = (zoom = map.getZoom()) => {
     const element = trainMarker.getElement();
-    if (element) element.style.setProperty("--train-map-scale", String(1.65 * Math.pow(2, zoom - trainArtworkReferenceZoom)));
+    if (element) element.style.setProperty("--train-map-scale", String(1.25 * Math.pow(2, zoom - trainArtworkReferenceZoom)));
   };
   map.on("zoom", () => updateTrainArtworkScale(map.getZoom()));
   map.on("zoomanim", (event) => updateTrainArtworkScale(event.zoom));
