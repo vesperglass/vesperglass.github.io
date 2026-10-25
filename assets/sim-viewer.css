@@ -68,7 +68,7 @@
   .sim-scene--atlas .atlas-map-toolbar{top:auto;right:52px;bottom:10px}
   .sim-scene--galaxy .galaxy-map-toolbar{top:68px;right:10px;max-width:calc(100% - 20px)}
   .sim-scene--galaxy .galaxy-map-status{top:auto;right:10px;bottom:calc(36vh + 20px);max-width:calc(100% - 20px);font-size:9px}
-  .sim-scene--galaxy .galaxy-inspector{left:10px;bottom:10px;width:min(285px,calc(100% - 20px));max-height:36vh;padding:11px}
+  .sim-scene--galaxy .galaxy-inspector{left:10px;bottom:10px;width:min(285px,calc(100% - 20px));min-height:0;max-height:36vh;padding:11px}
 }
 @media(max-width:360px){
   .sim-page .topbar{top:60px}
