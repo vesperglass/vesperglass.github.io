@@ -56,6 +56,8 @@ atlas_enabled: true
 
           <button class="atlas-reset" id="atlas-reset" type="button">Reset view <span aria-hidden="true">⟲</span></button>
 
+          <button class="atlas-sound" id="atlas-sound" type="button" aria-label="Turn portal sound on" aria-pressed="false">Sound off <span aria-hidden="true">♪</span></button>
+
           <button class="atlas-fullscreen" id="atlas-fullscreen" type="button" aria-label="View map full screen" aria-pressed="false">Full screen <span aria-hidden="true">⛶</span></button>
 
         </div>

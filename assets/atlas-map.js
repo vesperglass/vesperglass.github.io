@@ -59,8 +59,8 @@
     { id: "compass", floatDuration: 7.7, floatDelay: -2.8, x: 414, y: 717, name: "Compass Garden", glyph: "✳", route: "/principles/", section: "How we work", note: "A few steady habits for making useful things with care." },
     { id: "logbook", floatDuration: 8.6, floatDelay: -5.5, x: 1176, y: 190, name: "Observatory Logbook", glyph: "✎", route: "/field-notes/", section: "Field notes", note: "Short guides, observations, and details worth keeping." },
     { id: "archive", floatDuration: 6.9, floatDelay: -1.9, x: 175, y: 300, name: "Star Archive", glyph: "✧", route: "/research/", section: "Research & Essays", note: "Source-led explorations of the sky, objects, history, and ideas." },
-    { id: "portal", floatDuration: 8.9, floatDelay: -3.7, x: 800, y: 880, name: "The Vesperglass Gate", glyph: "◎", route: "/galaxy/", section: "Galaxy map", note: "The portal train departs for distant stars. Follow the glowing rail to the station." },
-    { id: "station", floatDuration: 8.9, floatDelay: -3.7, x: 860, y: 860, name: "Vesperglass Train Station", glyph: "▤", route: "/galaxy/", section: "Galaxy map", note: "The portal locomotive parks here before the next journey through the galaxy." }
+    { id: "portal", floatDuration: 9.2, floatDelay: -1.4, x: 720, y: 900, name: "The Vesperglass Gate", glyph: "◎", route: "/galaxy/", section: "Galaxy map", note: "A glowing gate carries the train out to distant stars." },
+    { id: "station", floatDuration: 7.8, floatDelay: -4.6, x: 990, y: 900, name: "Vesperglass Train Station", glyph: "▤", route: "/galaxy/", section: "Galaxy map", note: "The train pauses here between trips through the galaxy." }
   ];
 
   const escapeHtml = (value) => {
@@ -113,9 +113,10 @@
     { id: "logbook", file: "atlas-island-observatory.png", width: 270, height: 270, sourceWidth: 1254, sourceHeight: 1254, floorX: 627, floorY: 900, alt: "Observatory Logbook, a glass tower with a copper dome and telescope on its own floating landing island." },
     { id: "compass", file: "atlas-island-garden.png", width: 390, height: 390, sourceWidth: 1254, sourceHeight: 1254, floorX: 627, floorY: 850, alt: "Compass Garden, a glass greenhouse and flowering compass garden on its own floating landing island." },
     { id: "foundry", file: "atlas-island-foundry.png", width: 370, height: 370, sourceWidth: 1254, sourceHeight: 1254, floorX: 627, floorY: 875, alt: "Tideglass Foundry, a glass-and-bronze foundry with a copper chimney and glowing furnace on its own floating landing island." },
-    { id: "portal", file: "atlas-island-portal.svg", width: 315, height: 315, sourceWidth: 1254, sourceHeight: 1254, floorX: 627, floorY: 850, alt: "The Vesperglass Gate and its small glass-and-bronze train station share a floating island, linked by a glowing rail spur." }
+    { id: "portal", file: "atlas-island-gate.png", width: 230, height: 230, sourceWidth: 1254, sourceHeight: 1254, floorX: 627, floorY: 700, alt: "A luminous blue portal rises above its own floating glass-and-bronze island." },
+    { id: "station", file: "atlas-island-station.png", width: 230, height: 230, sourceWidth: 1254, sourceHeight: 1254, floorX: 627, floorY: 800, alt: "A separate floating glass-and-bronze train station with a covered platform and a single rail berth." }
   ];
-  const islandOverlays = [];
+  const islandOverlays = new Map();
   landmarkArtwork.forEach((artwork) => {
     const place = places.find((candidate) => candidate.id === artwork.id);
     if (!place) return;
@@ -133,7 +134,7 @@
     overlay.on("add", () => {
       const element = overlay.getElement();
       if (!element) return;
-      element.classList.add("atlas-island-art");
+      element.classList.add("atlas-island-art", `atlas-island-art--${artwork.id}`);
       element.style.setProperty("--atlas-float-duration", `${place.floatDuration}s`);
       element.style.setProperty("--atlas-float-delay", `${place.floatDelay}s`);
       element.style.setProperty("--atlas-float-distance", "-4px");
@@ -142,7 +143,7 @@
     overlay.getElement()?.classList.add("atlas-island-art");
     overlay.getElement()?.style.setProperty("--atlas-float-duration", `${place.floatDuration}s`);
     overlay.getElement()?.style.setProperty("--atlas-float-delay", `${place.floatDelay}s`);
-    islandOverlays.push(overlay);
+    islandOverlays.set(artwork.id, overlay);
   });
   const courierRoutes = [
     { from: "foundry", to: "workshop", item: "⚙", label: "a fresh-forged component", tint: "bronze" },
@@ -188,14 +189,28 @@
     zIndexOffset: 1200,
     opacity: 0.98
   }).addTo(map);
-  const trainEntryPoint = { x: 800, y: 826 };
-  const trainDockPoint = { x: 815, y: 895 };
+  const trainEntryPoint = { x: 720, y: 870 };
+  const trainDockPoint = { x: 1018, y: 912 };
+  const trainRoutePoints = [
+    trainEntryPoint,
+    { x: 610, y: 900 },
+    { x: 600, y: 875 },
+    { x: 820, y: 858 },
+    { x: 1080, y: 860 },
+    { x: 1488, y: 860 },
+    { x: 1510, y: 470 },
+    { x: 1510, y: 250 },
+    { x: 1510, y: 470 },
+    { x: 1488, y: 860 },
+    { x: 1250, y: 910 },
+    trainDockPoint
+  ];
   const trainPointToLatLng = (point) => [1024 - point.y, point.x];
   const trainIcon = L.divIcon({
     className: "atlas-train",
-    iconSize: [26, 26],
-    iconAnchor: [13, 21],
-    html: '<span class="atlas-train__art" aria-hidden="true" style="--atlas-float-duration:8.9s;--atlas-float-delay:-3.7s;--atlas-float-distance:-4px"><span class="atlas-train__sprite"></span></span>'
+    iconSize: [42, 42],
+    iconAnchor: [21, 34],
+    html: '<span class="atlas-train__art" aria-hidden="true" style="--atlas-float-duration:7.8s;--atlas-float-delay:-4.6s;--atlas-float-distance:-4px"><span class="atlas-train__sprite"></span></span>'
   });
   let trainZoom = 0;
   let trainWorldPosition = map.project(trainPointToLatLng(trainEntryPoint), trainZoom);
@@ -203,13 +218,13 @@
   let trainReferenceZoom = null;
   let trainFrame = 0;
   let trainTimer = 0;
-  let trainArrivalStarted = false;
+  let trainPhase = "inside";
   const trainMarker = L.marker(trainPointToLatLng(trainEntryPoint), {
     icon: trainIcon,
     interactive: false,
     keyboard: false,
     zIndexOffset: 80,
-    opacity: 0.98
+    opacity: 0
   }).addTo(map);
   const trainDirectionByOctant = [0, 1, 2, 3, 4, 7, 6, 5];
   const setTrainFacing = () => {
@@ -218,7 +233,7 @@
     const octant = ((Math.round(trainHeading / (Math.PI / 4)) % 8) + 8) % 8;
     const direction = trainDirectionByOctant[octant];
     const sprite = element.querySelector(".atlas-train__sprite");
-    if (sprite) sprite.style.backgroundPosition = (-(direction % 4) * 26) + "px " + (-Math.floor(direction / 4) * 26) + "px";
+    if (sprite) sprite.style.backgroundPosition = (-(direction % 4) * 42) + "px " + (-Math.floor(direction / 4) * 42) + "px";
   };
   const setTrainPosition = () => {
     trainMarker.setLatLng(map.unproject(trainWorldPosition, trainZoom));
@@ -231,55 +246,194 @@
   };
   map.on("zoom", () => updateTrainArtworkScale(map.getZoom()));
   map.on("zoomanim", (event) => updateTrainArtworkScale(event.zoom));
-  const startTrainArrival = () => {
-    trainTimer = 0;
-    if (motionPreference.matches || trainArrivalStarted) return;
-    trainArrivalStarted = true;
-    const start = map.project(trainPointToLatLng(trainEntryPoint), trainZoom);
-    const end = map.project(trainPointToLatLng(trainDockPoint), trainZoom);
-    const dx = end.x - start.x;
-    const dy = end.y - start.y;
-    trainHeading = Math.atan2(dy, dx);
-    setTrainFacing();
+  const soundButton = document.getElementById("atlas-sound");
+  let portalSoundEnabled = false;
+  let portalAudioContext = null;
+  const playPortalSound = (direction) => {
+    if (!portalSoundEnabled) return;
+    const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+    if (!AudioContextClass) return;
+    portalAudioContext ||= new AudioContextClass();
+    if (portalAudioContext.state === "suspended") portalAudioContext.resume();
+    const context = portalAudioContext;
+    const now = context.currentTime;
+    const frequencies = direction === "arrival" ? [330, 495, 740] : [740, 495, 330];
+    frequencies.forEach((frequency, index) => {
+      const oscillator = context.createOscillator();
+      const gain = context.createGain();
+      const startAt = now + index * 0.11;
+      oscillator.type = "triangle";
+      oscillator.frequency.setValueAtTime(frequency, startAt);
+      oscillator.frequency.exponentialRampToValueAtTime(frequency * (direction === "arrival" ? 1.35 : 0.72), startAt + 0.48);
+      gain.gain.setValueAtTime(0.0001, startAt);
+      gain.gain.exponentialRampToValueAtTime(0.055, startAt + 0.045);
+      gain.gain.exponentialRampToValueAtTime(0.0001, startAt + 0.56);
+      oscillator.connect(gain).connect(context.destination);
+      oscillator.start(startAt);
+      oscillator.stop(startAt + 0.58);
+    });
+    const noiseBuffer = context.createBuffer(1, Math.floor(context.sampleRate * 0.68), context.sampleRate);
+    const noiseData = noiseBuffer.getChannelData(0);
+    for (let index = 0; index < noiseData.length; index += 1) noiseData[index] = (Math.random() * 2 - 1) * (1 - index / noiseData.length);
+    const noise = context.createBufferSource();
+    const filter = context.createBiquadFilter();
+    const noiseGain = context.createGain();
+    noise.buffer = noiseBuffer;
+    filter.type = "lowpass";
+    filter.frequency.setValueAtTime(direction === "arrival" ? 380 : 1500, now);
+    filter.frequency.exponentialRampToValueAtTime(direction === "arrival" ? 1700 : 260, now + 0.62);
+    noiseGain.gain.setValueAtTime(0.0001, now);
+    noiseGain.gain.exponentialRampToValueAtTime(0.022, now + 0.08);
+    noiseGain.gain.exponentialRampToValueAtTime(0.0001, now + 0.66);
+    noise.connect(filter).connect(noiseGain).connect(context.destination);
+    noise.start(now);
+    noise.stop(now + 0.68);
+  };
+  const updateSoundButton = () => {
+    if (!soundButton) return;
+    soundButton.setAttribute("aria-pressed", String(portalSoundEnabled));
+    soundButton.setAttribute("aria-label", portalSoundEnabled ? "Turn portal sound off" : "Turn portal sound on");
+    soundButton.innerHTML = (portalSoundEnabled ? "Sound on" : "Sound off") + ' <span aria-hidden="true">♪</span>';
+  };
+  soundButton?.addEventListener("click", () => {
+    portalSoundEnabled = !portalSoundEnabled;
+    if (portalSoundEnabled) {
+      const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+      if (AudioContextClass) {
+        portalAudioContext ||= new AudioContextClass();
+        portalAudioContext.resume();
+      }
+    }
+    updateSoundButton();
+  });
+  const pulsePortal = (duration = 1500) => {
+    const portal = islandOverlays.get("portal")?.getElement();
+    if (!portal) return;
+    portal.classList.add("is-active");
+    window.setTimeout(() => portal.classList.remove("is-active"), duration);
+  };
+  const projectTrainPath = (points) => {
+    const projected = points.map((point) => map.project(trainPointToLatLng(point), trainZoom));
+    const samples = [];
+    for (let index = 0; index < projected.length - 1; index += 1) {
+      const p0 = projected[Math.max(0, index - 1)];
+      const p1 = projected[index];
+      const p2 = projected[index + 1];
+      const p3 = projected[Math.min(projected.length - 1, index + 2)];
+      for (let step = 0; step < 18; step += 1) {
+        const t = step / 18;
+        const t2 = t * t;
+        const t3 = t2 * t;
+        const sample = L.point(
+          0.5 * ((2 * p1.x) + (-p0.x + p2.x) * t + (2 * p0.x - 5 * p1.x + 4 * p2.x - p3.x) * t2 + (-p0.x + 3 * p1.x - 3 * p2.x + p3.x) * t3),
+          0.5 * ((2 * p1.y) + (-p0.y + p2.y) * t + (2 * p0.y - 5 * p1.y + 4 * p2.y - p3.y) * t2 + (-p0.y + 3 * p1.y - 3 * p2.y + p3.y) * t3)
+        );
+        if (!samples.length || sample.distanceTo(samples[samples.length - 1].point) > 0.01) {
+          samples.push({ point: sample, distance: 0 });
+        }
+      }
+    }
+    samples.push({ point: projected[projected.length - 1], distance: 0 });
+    let length = 0;
+    samples.forEach((sample, index) => {
+      if (index) length += sample.point.distanceTo(samples[index - 1].point);
+      sample.distance = length;
+    });
+    return { samples, length };
+  };
+  let trainArrivalPath = null;
+  let trainDeparturePath = null;
+  const pointOnTrainPath = (path, distance) => {
+    let index = 1;
+    while (index < path.samples.length - 1 && path.samples[index].distance < distance) index += 1;
+    const previous = path.samples[index - 1];
+    const next = path.samples[index];
+    const segmentLength = next.distance - previous.distance || 1;
+    const progress = Math.max(0, Math.min(1, (distance - previous.distance) / segmentLength));
+    return L.point(previous.point.x + (next.point.x - previous.point.x) * progress, previous.point.y + (next.point.y - previous.point.y) * progress);
+  };
+  const scheduleTrain = (phase, delay, callback) => {
+    trainPhase = phase;
+    trainTimer = window.setTimeout(() => {
+      trainTimer = 0;
+      callback();
+    }, delay);
+  };
+  const finishTrainAtStation = () => {
+    trainPhase = "parked";
+    trainMarker.getElement()?.classList.remove("is-moving");
+    trainWorldPosition = map.project(trainPointToLatLng(trainDockPoint), trainZoom);
+    setTrainPosition();
+    scheduleTrain("parked", 22000, startTrainDeparture);
+  };
+  const finishTrainAtPortal = () => {
+    trainMarker.getElement()?.classList.remove("is-moving");
+    pulsePortal(1700);
+    playPortalSound("departure");
+    trainMarker.setOpacity(0);
+    trainWorldPosition = map.project(trainPointToLatLng(trainEntryPoint), trainZoom);
+    setTrainPosition();
+    scheduleTrain("inside", 18000, startTrainArrival);
+  };
+  const animateTrainAlong = (path, onComplete) => {
+    if (motionPreference.matches) return;
     const element = trainMarker.getElement();
     element?.classList.add("is-moving");
+    trainMarker.setOpacity(1);
     const startedAt = performance.now();
-    const duration = 5200;
+    const duration = 14500;
     const animate = (now) => {
       if (motionPreference.matches) {
         trainFrame = 0;
-        element?.classList.remove("is-moving");
-        trainWorldPosition = map.project(trainPointToLatLng(trainDockPoint), trainZoom);
-        setTrainPosition();
+        finishTrainAtStation();
         return;
       }
       const progress = Math.min(1, (now - startedAt) / duration);
       const eased = progress < 0.5 ? 4 * progress * progress * progress : 1 - Math.pow(-2 * progress + 2, 3) / 2;
-      trainWorldPosition = L.point(start.x + dx * eased, start.y + dy * eased);
+      const nextPosition = pointOnTrainPath(path, path.length * eased);
+      const aheadPosition = pointOnTrainPath(path, Math.min(path.length, path.length * eased + 1.5));
+      trainHeading = Math.atan2(aheadPosition.y - nextPosition.y, aheadPosition.x - nextPosition.x);
+      trainWorldPosition = nextPosition;
       setTrainPosition();
       if (progress < 1) {
         trainFrame = window.requestAnimationFrame(animate);
       } else {
         trainFrame = 0;
-        trainWorldPosition = end;
-        setTrainPosition();
-        element?.classList.remove("is-moving");
+        onComplete();
       }
     };
     trainFrame = window.requestAnimationFrame(animate);
   };
+  function startTrainArrival() {
+    if (motionPreference.matches) return;
+    trainPhase = "arriving";
+    pulsePortal(1900);
+    playPortalSound("arrival");
+    trainMarker.setOpacity(1);
+    trainWorldPosition = map.project(trainPointToLatLng(trainEntryPoint), trainZoom);
+    setTrainPosition();
+    animateTrainAlong(trainArrivalPath, finishTrainAtStation);
+  }
+  function startTrainDeparture() {
+    if (motionPreference.matches) return;
+    trainPhase = "departing";
+    animateTrainAlong(trainDeparturePath, finishTrainAtPortal);
+  }
   const updateTrainMotion = () => {
     if (motionPreference.matches) {
       if (trainFrame) window.cancelAnimationFrame(trainFrame);
       if (trainTimer) window.clearTimeout(trainTimer);
       trainFrame = 0;
       trainTimer = 0;
-      trainArrivalStarted = true;
+      trainPhase = "reduced";
       trainMarker.getElement()?.classList.remove("is-moving");
+      trainMarker.setOpacity(1);
       trainWorldPosition = map.project(trainPointToLatLng(trainDockPoint), trainZoom);
       setTrainPosition();
-    } else if (!trainArrivalStarted && !trainTimer) {
-      trainTimer = window.setTimeout(startTrainArrival, 1400);
+    } else if (trainPhase === "reduced") {
+      scheduleTrain("parked", 22000, startTrainDeparture);
+    } else if (trainPhase === "inside" && !trainTimer) {
+      scheduleTrain("inside", 8500, startTrainArrival);
     }
   };
   const courierDebugEnabled = new URLSearchParams(window.location.search).get("courier-debug") === "1";
@@ -527,6 +681,8 @@
   courierZoom = map.getZoom();
   trainZoom = courierZoom;
   trainReferenceZoom = trainZoom;
+  trainArrivalPath = projectTrainPath(trainRoutePoints);
+  trainDeparturePath = projectTrainPath([...trainRoutePoints].reverse());
   trainWorldPosition = map.project(trainPointToLatLng(trainEntryPoint), trainZoom);
   const trainDestination = map.project(trainPointToLatLng(trainDockPoint), trainZoom);
   trainHeading = Math.atan2(trainDestination.y - trainWorldPosition.y, trainDestination.x - trainWorldPosition.x);

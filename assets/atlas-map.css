@@ -30,13 +30,13 @@
 
 .atlas-map-actions{display:flex;flex:0 0 auto;gap:7px}
 
-.atlas-reset,.atlas-fullscreen{display:flex;align-items:center;gap:8px;padding:7px 10px;border:1px solid var(--line);border-radius:6px;color:var(--soft);background:var(--white);font-size:11px;cursor:pointer}
+.atlas-reset,.atlas-fullscreen,.atlas-sound{display:flex;align-items:center;gap:8px;padding:7px 10px;border:1px solid var(--line);border-radius:6px;color:var(--soft);background:var(--white);font-size:11px;cursor:pointer}
 
-.atlas-reset:hover,.atlas-reset:focus-visible,.atlas-fullscreen:hover,.atlas-fullscreen:focus-visible{border-color:var(--sea);color:var(--sea-dark)}
+.atlas-reset:hover,.atlas-reset:focus-visible,.atlas-fullscreen:hover,.atlas-fullscreen:focus-visible,.atlas-sound:hover,.atlas-sound:focus-visible,.atlas-sound[aria-pressed="true"]{border-color:var(--sea);color:var(--sea-dark)}
 
-.atlas-reset:focus-visible,.atlas-fullscreen:focus-visible,.atlas-destinations a:focus-visible{outline:2px solid var(--sea);outline-offset:2px}
+.atlas-reset:focus-visible,.atlas-fullscreen:focus-visible,.atlas-sound:focus-visible,.atlas-destinations a:focus-visible{outline:2px solid var(--sea);outline-offset:2px}
 
-.atlas-reset span,.atlas-fullscreen span{font-size:16px;line-height:1}
+.atlas-reset span,.atlas-fullscreen span,.atlas-sound span{font-size:16px;line-height:1}
 
 .atlas-map-frame{position:relative;padding:9px;background:var(--map-ocean)}
 
@@ -201,7 +201,7 @@
 
 @media(max-width:900px){.atlas-wayfinding{gap:12px;align-items:start}.atlas-destinations{grid-template-columns:repeat(2,minmax(0,1fr))}.wayfinding-heading{grid-row:auto}.wayfinding-note{grid-column:1;grid-row:auto;margin:5px 0 0;padding-top:9px}}
 
-@media(max-width:600px){.atlas-section{margin:39px 0 28px}.atlas-intro{margin-bottom:16px}.atlas-intro h2{font-size:29px}.atlas-layout{gap:10px}.atlas-map-toolbar{align-items:flex-start;padding:11px}.atlas-map-toolbar strong{max-width:210px;font-size:15px}.atlas-map-actions{gap:4px}.atlas-reset,.atlas-fullscreen{gap:5px;padding:6px 7px;font-size:9px}.atlas-map-frame{padding:5px}#vesperglass-atlas{height:auto;min-height:0;aspect-ratio:4/3}.atlas-map-credit{display:grid;padding:8px 10px}.atlas-wayfinding{grid-template-columns:1fr;padding:13px}.wayfinding-heading{grid-row:auto}.atlas-destinations{grid-template-columns:1fr 1fr;gap:3px}.atlas-destinations a{grid-template-columns:23px minmax(0,1fr) 12px;gap:6px;padding:8px 4px}.destination-glyph{width:22px;height:22px;font-size:11px}.destination-copy strong{font-size:13px}.destination-copy small{font-size:9px}.wayfinding-note{grid-column:auto;grid-row:auto}}
+@media(max-width:600px){.atlas-section{margin:39px 0 28px}.atlas-intro{margin-bottom:16px}.atlas-intro h2{font-size:29px}.atlas-layout{gap:10px}.atlas-map-toolbar{align-items:flex-start;padding:11px}.atlas-map-toolbar strong{max-width:210px;font-size:15px}.atlas-map-actions{gap:4px;flex-wrap:wrap;justify-content:flex-end}.atlas-reset,.atlas-fullscreen,.atlas-sound{gap:5px;padding:6px 7px;font-size:9px}.atlas-map-frame{padding:5px}#vesperglass-atlas{height:auto;min-height:0;aspect-ratio:4/3}.atlas-map-credit{display:grid;padding:8px 10px}.atlas-wayfinding{grid-template-columns:1fr;padding:13px}.wayfinding-heading{grid-row:auto}.atlas-destinations{grid-template-columns:1fr 1fr;gap:3px}.atlas-destinations a{grid-template-columns:23px minmax(0,1fr) 12px;gap:6px;padding:8px 4px}.destination-glyph{width:22px;height:22px;font-size:11px}.destination-copy strong{font-size:13px}.destination-copy small{font-size:9px}.wayfinding-note{grid-column:auto;grid-row:auto}}
 
 @media(max-width:390px){.atlas-map-toolbar{display:grid}.atlas-map-actions{justify-content:flex-end}}
 
@@ -223,15 +223,19 @@
 .atlas-map-card:fullscreen .atlas-map-credit{display:none}
 
 .atlas-island-art{will-change:translate;animation:atlas-landmark-float var(--atlas-float-duration,7s) ease-in-out var(--atlas-float-delay,0s) infinite}
+.atlas-island-art--portal{filter:drop-shadow(0 0 0 rgba(53,222,255,0));transition:filter .28s ease}
+.atlas-island-art--portal.is-active{filter:drop-shadow(0 0 14px rgba(53,222,255,.9)) brightness(1.12)}
 .atlas-pin-float{display:grid;width:30px;height:30px;place-items:center;will-change:translate;animation:atlas-landmark-float var(--atlas-float-duration,7s) ease-in-out var(--atlas-float-delay,0s) infinite}
 @keyframes atlas-landmark-float{0%,100%{translate:0 0}50%{translate:0 var(--atlas-float-distance,-4px)}}
 @media(prefers-reduced-motion:reduce){.atlas-island-art,.atlas-pin-float{animation:none;will-change:auto;translate:none}}
 
 
-/* A portal locomotive shares the gate island's map-space drift. Its sprite sheet follows the courier's eight-view isometric style. */
-.leaflet-div-icon.atlas-train{position:relative;width:26px!important;height:26px!important;border:0;background:transparent;pointer-events:none}
-.atlas-train__art{position:absolute;inset:0;transform:scale(var(--train-map-scale,1));transform-origin:50% 82%;animation:atlas-landmark-float var(--atlas-float-duration,8.9s) ease-in-out var(--atlas-float-delay,-3.7s) infinite;transition:transform .14s linear}
-.atlas-train__sprite{position:absolute;inset:0;background-image:url("/assets/atlas-train-sprites.svg");background-repeat:no-repeat;background-size:104px 52px;filter:drop-shadow(0 1px 1.25px #020816b5)}
+/* A portal locomotive follows the station's float cycle while parked and uses an eight-view isometric sprite sheet in flight. */
+.leaflet-div-icon.atlas-train{position:relative;width:42px!important;height:42px!important;border:0;background:transparent;pointer-events:none}
+.atlas-train__art{position:absolute;inset:0;transform:scale(var(--train-map-scale,1));transform-origin:50% 82%;animation:atlas-landmark-float var(--atlas-float-duration,7.8s) ease-in-out var(--atlas-float-delay,-4.6s) infinite;transition:transform .14s linear}
+.atlas-train.is-moving .atlas-train__art{animation:none;translate:0 0}
+.atlas-train__sprite{position:absolute;inset:0;background-image:url("/assets/atlas-train-sprites-v2.png");background-repeat:no-repeat;background-size:168px 84px;filter:drop-shadow(0 1px 1.25px #020816b5)}
 .atlas-train.is-moving .atlas-train__sprite{animation:atlas-train-chug .46s ease-in-out infinite}
 @keyframes atlas-train-chug{0%,100%{filter:drop-shadow(0 1px 1.25px #020816b5)}50%{filter:drop-shadow(0 1.5px 2px #020816d9)}}
 @media(prefers-reduced-motion:reduce){.atlas-train__art{animation:none;will-change:auto;translate:none}.atlas-train.is-moving .atlas-train__sprite{animation:none}}
+@media(prefers-reduced-motion:reduce){.atlas-island-art--portal{transition:none}}
