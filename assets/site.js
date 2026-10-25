@@ -4,7 +4,15 @@
     { title: "Galaxy Explorer", url: "/sim/#galaxy", summary: "Chart a repeatable procedural galaxy and inspect stars and their planetary systems.", terms: "galaxy stars planets systems exploration survey worlds map" },
     { title: "Universe Guide", url: "/universe/", summary: "A guide to known space, materials, vessels, and the planned expedition cycle.", terms: "universe guide lore atlas galaxy worlds systems starshards stardust train expeditions" },
     { title: "Universe Encyclopedia", url: "/library/", summary: "An illustrated reference to the places, materials, and journeys of Vesperglass.", terms: "library encyclopedia lore atlas universe fiction reference book" },
-    { title: "Starshards & the Gate Train", url: "/library/starshards/", summary: "How starshards become stardust, and how the Gate train carries it between worlds.", terms: "starshard stardust fuel train portal gate tideglass foundry galaxy resource" }
+    { title: "Starshards & the Gate Train", url: "/library/starshards/", summary: "How starshards become stardust, and how the Gate train carries it between worlds.", terms: "starshard stardust fuel train portal gate tideglass foundry galaxy resource" },
+    { title: "Vesperglass Workshop", url: "/library/workshop/", summary: "The central home platform and a place to prepare for the wider universe.", terms: "workshop home making gathering table tools" },
+    { title: "Threshold House", url: "/library/threshold-house/", summary: "A named atlas place imagined around arrival and passage.", terms: "threshold house arrival passage shelter" },
+    { title: "Tideglass Foundry", url: "/library/tideglass-foundry/", summary: "The lore of refining starshards into stardust, with imagined tools.", terms: "tideglass foundry starshards stardust refining craft mill" },
+    { title: "Compass Garden", url: "/library/compass-garden/", summary: "A conservatory and a proposed planting plan for the garden platform.", terms: "compass garden conservatory plants glasshouse planting" },
+    { title: "Observatory Logbook", url: "/library/observatory/", summary: "Instruments and a room imagined around observing and recording the sky.", terms: "observatory logbook instruments orrery telescope charts" },
+    { title: "Star Archive", url: "/library/star-archive/", summary: "A reference room for the knowledge of the sky, with an interpretive cutaway.", terms: "star archive books maps memory library" },
+    { title: "The Vesperglass Gate", url: "/library/vesperglass-gate/", summary: "The detached portal platform and its passage into the Galaxy.", terms: "vesperglass gate portal transit galaxy ring" },
+    { title: "Vesperglass Train Dock", url: "/library/train-dock/", summary: "A clear landing apron and alongside berth for the Gate train.", terms: "train dock berth station locomotive platform train" }
   ];
   const dialog = document.getElementById("search-dialog");
   const openButton = document.getElementById("open-search");

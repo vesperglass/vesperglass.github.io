@@ -53,14 +53,14 @@
 
   const places = [
     // Pins, island floor anchors, and courier destinations share these map-space anchors.
-    { id: "workshop", floatDuration: 7.4, floatDelay: -0.8, x: 839, y: 410, name: "Vesperglass Workshop", glyph: "⌂", route: "/universe/", section: "Universe Guide", note: "The home among the stars, where the Gate route begins." },
-    { id: "threshold", floatDuration: 8.1, floatDelay: -4.3, x: 487, y: 190, name: "Threshold House", glyph: "◈", route: "/universe/#universe-cover-heading", section: "Home of the Keepers", note: "A quiet landing place for travelers returning from the charted sky." },
-    { id: "foundry", floatDuration: 9, floatDelay: -6.1, x: 1287, y: 717, name: "Tideglass Foundry", glyph: "▦", route: "/library/starshards/#how-a-shard-becomes-stardust", section: "Starshards & Stardust", note: "Starshards are cleaned, ground, and tempered here for the train's starwell." },
-    { id: "compass", floatDuration: 7.7, floatDelay: -2.8, x: 414, y: 717, name: "Compass Garden", glyph: "✳", route: "/universe/#the-first-proposed-expedition-loop", section: "Expedition Chart", note: "A quiet place to plan routes toward the distant bodies on the star charts." },
-    { id: "logbook", floatDuration: 8.6, floatDelay: -5.5, x: 1176, y: 190, name: "Observatory Logbook", glyph: "✎", route: "/sim/#galaxy", section: "Galaxy Survey", note: "Chart distant stars and inspect the worlds that circle them." },
-    { id: "archive", floatDuration: 6.9, floatDelay: -1.9, x: 175, y: 300, name: "Star Archive", glyph: "✧", route: "/library/", section: "Universe Encyclopedia", note: "Collected accounts of the places, materials, vessels, and journeys beyond the Gate." },
-    { id: "portal", floatDuration: 9.2, floatDelay: -1.4, x: 110, y: 970, name: "The Vesperglass Gate", glyph: "◎", route: "/sim/#galaxy", section: "Galaxy map", note: "A glowing gate carries the train out to distant stars." },
-    { id: "station", floatDuration: 7.8, floatDelay: -4.6, x: 1390, y: 985, name: "Vesperglass Train Dock", glyph: "▤", route: "/library/starshards/#a-furnace-that-does-not-burn", section: "The Gate Train", note: "The train rests beside the dock between journeys through the Gate." }
+    { id: "workshop", floatDuration: 7.4, floatDelay: -0.8, x: 839, y: 410, name: "Vesperglass Workshop", glyph: "⌂", route: "/universe/", folio: "/library/workshop/", section: "Universe Guide", note: "The central home platform, a place to return to before setting out again." },
+    { id: "threshold", floatDuration: 8.1, floatDelay: -4.3, x: 487, y: 190, name: "Threshold House", glyph: "◈", route: "/universe/#universe-cover-heading", folio: "/library/threshold-house/", section: "Universe Guide", note: "A named atlas place whose exact role remains open to interpretation." },
+    { id: "foundry", floatDuration: 9, floatDelay: -6.1, x: 1287, y: 717, name: "Tideglass Foundry", glyph: "▦", route: "/library/starshards/#how-a-shard-becomes-stardust", folio: "/library/tideglass-foundry/", section: "Starshards & Stardust", note: "Starshards are refined here into stardust for the train in the setting's lore." },
+    { id: "compass", floatDuration: 7.7, floatDelay: -2.8, x: 414, y: 717, name: "Compass Garden", glyph: "✳", route: "/universe/#the-first-proposed-expedition-loop", folio: "/library/compass-garden/", section: "Universe Guide", note: "A named garden platform; its planting and keepers have not yet been described." },
+    { id: "logbook", floatDuration: 8.6, floatDelay: -5.5, x: 1176, y: 190, name: "Observatory Logbook", glyph: "✎", route: "/sim/#galaxy", folio: "/library/observatory/", section: "Galaxy Survey", note: "A named observatory destination looking out toward the generated Galaxy." },
+    { id: "archive", floatDuration: 6.9, floatDelay: -1.9, x: 175, y: 300, name: "Star Archive", glyph: "✧", route: "/library/", folio: "/library/star-archive/", section: "Universe Encyclopedia", note: "A named destination; its collection and catalog remain to be described." },
+    { id: "portal", floatDuration: 9.2, floatDelay: -1.4, x: 110, y: 970, name: "The Vesperglass Gate", glyph: "◎", route: "/sim/#galaxy", folio: "/library/vesperglass-gate/", section: "Galaxy map", note: "The train's portal between Vesperglass and distant worlds in the lore." },
+    { id: "station", floatDuration: 7.8, floatDelay: -4.6, x: 1390, y: 985, name: "Vesperglass Train Dock", glyph: "▤", route: "/library/starshards/#a-furnace-that-does-not-burn", folio: "/library/train-dock/", section: "The Gate Train", note: "A separate platform where the locomotive rests alongside the dock edge." }
   ];
 
   const escapeHtml = (value) => {
@@ -98,6 +98,13 @@
     link.href = place.route;
     link.textContent = "Open " + place.section + " →";
     popup.append(kicker, heading, summary, link);
+    if (place.folio) {
+      const folioLink = document.createElement("a");
+      folioLink.href = place.folio;
+      folioLink.className = "atlas-popup-folio";
+      folioLink.textContent = "Read the encyclopedia entry →";
+      popup.append(folioLink);
+    }
     marker.bindPopup(popup, { closeButton: true, autoPan: true, maxWidth: 260, minWidth: 210 });
     markers.set(place.id, marker);
   });
