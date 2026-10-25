@@ -139,6 +139,12 @@
   .galaxy-tool-button,.galaxy-fullscreen-button{padding-inline:5px;font-size:9px}
   .galaxy-map-status{top:138px;bottom:auto}
 }
+@media(max-width:420px){
+  .galaxy-map-toolbar{gap:6px}
+  .galaxy-seed-tools{width:100%;max-width:100%}
+  .galaxy-seed-field input{min-width:0}
+  .galaxy-tool-button,.galaxy-fullscreen-button{padding-inline:5px;font-size:9px}
+}
 @media(max-width:680px){.galaxy-inspector{max-height:min(30vh,260px)}}
 
 /* In-page fullscreen fallback for browser contexts without native fullscreen access */
