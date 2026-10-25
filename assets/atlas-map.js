@@ -249,6 +249,8 @@
     trainRunUpPoint
   ];
   const trainPortalTargetSpeed = 180;
+  const trainAcceleration = 36;
+  const trainBrakeAcceleration = 54;
   const trainPointToLatLng = (point) => [1024 - point.y, point.x];
   const trainIcon = L.divIcon({
     className: "atlas-train",
@@ -413,9 +415,21 @@
     });
     return { samples, length };
   };
+  const joinTrainPaths = (...paths) => {
+    const samples = [];
+    paths.forEach((path) => path.samples.forEach((sample) => {
+      if (!samples.length || sample.point.distanceTo(samples[samples.length - 1].point) > 0.01) {
+        samples.push({ point: sample.point, distance: 0 });
+      }
+    }));
+    let length = 0;
+    samples.forEach((sample, index) => {
+      if (index) length += sample.point.distanceTo(samples[index - 1].point);
+      sample.distance = length;
+    });
+    return { samples, length };
+  };
   let trainArrivalPath = null;
-  let trainArrivalRailPath = null;
-  let trainDepartureRailPath = null;
   let trainDeparturePath = null;
   let trainPortalPath = null;
   const pointOnTrainPath = (path, distance) => {
@@ -477,16 +491,13 @@
     setTrainPosition();
     scheduleTrain("inside", 18000, startTrainArrival);
   };
-  const animateTrainAlong = (path, onComplete, { profile = "smooth", targetSpeed = 0 } = {}) => {
+  const animateTrainAlong = (path, onComplete, { profile = "smooth", targetSpeed = 0, brakeDistance = path.length } = {}) => {
     if (motionPreference.matches) return;
     const element = trainMarker.getElement();
     element?.classList.add("is-moving");
     trainMarker.setOpacity(1);
     let previousFrameAt = performance.now();
     let travelled = 0;
-    let elapsed = 0;
-    const startSpeed = profile === "accelerate" ? trainCurrentSpeed : targetSpeed;
-    const acceleration = path.length ? Math.max(0, (targetSpeed * targetSpeed - startSpeed * startSpeed) / (2 * path.length)) : 0;
     const animate = (now) => {
       if (motionPreference.matches) {
         trainFrame = 0;
@@ -495,16 +506,21 @@
       }
       const turnDt = Math.min(0.045, Math.max(0, (now - previousFrameAt) / 1000));
       previousFrameAt = now;
-      elapsed += turnDt;
-      let requestedSpeed;
-      if (profile === "accelerate") {
-        requestedSpeed = Math.min(targetSpeed, startSpeed + acceleration * elapsed);
-      } else if (profile === "decelerate") {
-        requestedSpeed = targetSpeed * Math.sqrt(Math.max(0, 1 - travelled / path.length));
-      } else {
-        requestedSpeed = targetSpeed;
+      const remaining = path.length - travelled;
+      const requestedSpeed = profile === "decelerate" && remaining < brakeDistance
+        ? targetSpeed * Math.sqrt(Math.max(0, remaining / Math.max(1, brakeDistance)))
+        : targetSpeed;
+      // Look ahead by the distance needed to brake, so speed eases down before
+      // a bend instead of oscillating between the curve cap and cruise speed.
+      const lookAhead = Math.max(36, (trainCurrentSpeed * trainCurrentSpeed) / (2 * trainBrakeAcceleration));
+      let upcomingCurvature = trainCurvatureAt(path, travelled);
+      for (let look = 24; look <= lookAhead; look += 24) {
+        upcomingCurvature = Math.max(upcomingCurvature, trainCurvatureAt(path, Math.min(path.length, travelled + look)));
       }
-      trainCurrentSpeed = trainSpeedAllowedByTurn(requestedSpeed, trainCurvatureAt(path, travelled));
+      const speedLimit = trainSpeedAllowedByTurn(requestedSpeed, upcomingCurvature);
+      const speedChange = (speedLimit - trainCurrentSpeed) * turnDt;
+      const speedStep = speedChange < 0 ? trainBrakeAcceleration * turnDt : trainAcceleration * turnDt;
+      trainCurrentSpeed += Math.sign(speedChange) * Math.min(Math.abs(speedChange), speedStep);
       travelled = Math.min(path.length, travelled + trainCurrentSpeed * turnDt);
       // Position and sprite facing share the route tangent. Turn limits slow
       // movement around curves, so the locomotive never visually lags behind.
@@ -515,16 +531,11 @@
         trainFrame = window.requestAnimationFrame(animate);
       } else {
         trainFrame = 0;
-        trainCurrentSpeed = profile === "accelerate" ? targetSpeed : 0;
+        trainCurrentSpeed = profile === "decelerate" ? 0 : trainCurrentSpeed;
         onComplete();
       }
     };
     trainFrame = window.requestAnimationFrame(animate);
-  };
-  const accelerateTrainIntoPortal = () => {
-    if (motionPreference.matches) return;
-    trainPhase = "portal-run";
-    animateTrainAlong(trainPortalPath, finishTrainAtPortal, { profile: "accelerate", targetSpeed: trainPortalTargetSpeed });
   };
   function startTrainArrival() {
     if (motionPreference.matches) return;
@@ -538,17 +549,17 @@
     trainBurstTimer = window.setTimeout(() => {
       trainBurstTimer = 0;
       if (motionPreference.matches || trainPhase !== "arriving") return;
-      animateTrainAlong(trainArrivalPath, () => {
-        animateTrainAlong(trainArrivalRailPath, finishTrainAtStation, { profile: "decelerate", targetSpeed: trainPortalTargetSpeed });
-      }, { profile: "smooth", targetSpeed: trainPortalTargetSpeed });
+      animateTrainAlong(trainArrivalPath, finishTrainAtStation, {
+        profile: "decelerate",
+        targetSpeed: trainPortalTargetSpeed,
+        brakeDistance: trainArrivalBrakeDistance
+      });
     }, 260);
   }
   function startTrainDeparture() {
     if (motionPreference.matches) return;
     trainPhase = "departing";
-    animateTrainAlong(trainDepartureRailPath, () => {
-      animateTrainAlong(trainDeparturePath, accelerateTrainIntoPortal, { profile: "accelerate", targetSpeed: 125 });
-    }, { profile: "accelerate", targetSpeed: 125 });
+    animateTrainAlong(trainDeparturePath, finishTrainAtPortal, { profile: "accelerate", targetSpeed: trainPortalTargetSpeed });
   }
   const updateTrainMotion = () => {
     if (motionPreference.matches) {
@@ -815,11 +826,18 @@
   courierZoom = map.getZoom();
   trainZoom = courierZoom;
   trainReferenceZoom = trainZoom;
-  trainArrivalPath = projectTrainPath(trainArrivalApproachPoints);
-  trainArrivalRailPath = projectTrainPath([trainDockRailStartPoint, trainDockPoint]);
-  trainDepartureRailPath = projectTrainPath([trainDockPoint, trainDockRailEndPoint]);
-  trainDeparturePath = projectTrainPath(trainDepartureApproachPoints);
+  const trainArrivalApproachPath = projectTrainPath(trainArrivalApproachPoints);
+  const trainArrivalRailPath = projectTrainPath([trainDockRailStartPoint, trainDockPoint]);
+  const trainDepartureRailPath = projectTrainPath([trainDockPoint, trainDockRailEndPoint]);
+  const trainDepartureApproachPath = projectTrainPath(trainDepartureApproachPoints);
   trainPortalPath = projectTrainPath([trainRunUpPoint, trainEntryPoint]);
+  trainArrivalPath = joinTrainPaths(trainArrivalApproachPath, trainArrivalRailPath);
+  trainDeparturePath = joinTrainPaths(trainDepartureRailPath, trainDepartureApproachPath, trainPortalPath);
+  const trainDockRailStart = map.project(trainPointToLatLng(trainDockRailStartPoint), trainZoom);
+  const trainDockRailStartSample = trainArrivalPath.samples.reduce((closest, sample) =>
+    sample.point.distanceTo(trainDockRailStart) < closest.point.distanceTo(trainDockRailStart) ? sample : closest
+  );
+  const trainArrivalBrakeDistance = trainArrivalPath.length - trainDockRailStartSample.distance + 100;
   const routeMaxCurvature = [trainArrivalPath, trainDeparturePath, trainPortalPath].reduce((maximum, path) => {
     for (let distance = 0; distance <= path.length; distance += 4) {
       maximum = Math.max(maximum, trainCurvatureAt(path, distance));
