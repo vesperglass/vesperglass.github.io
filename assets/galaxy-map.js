@@ -15,6 +15,7 @@
   let mode = "galaxy";
   let redrawTimer = 0;
   let galaxyStarCount = 0;
+  let recentViews = [];
   const map = L.map(mapElement, {
     crs: L.CRS.Simple,
     zoomControl: false,
@@ -174,7 +175,52 @@
     inspector.append(heading, title, summary);
     return inspector;
   };
+  const rememberView = (entry) => {
+    recentViews = [entry, ...recentViews.filter((item) => item.id !== entry.id)].slice(0, 4);
+  };
+  const appendRecentViews = (card) => {
+    const section = document.createElement("section");
+    section.className = "galaxy-recent";
+    const heading = document.createElement("h3");
+    heading.className = "galaxy-inspector__subhead";
+    heading.textContent = "Recently viewed";
+    section.appendChild(heading);
+    if (!recentViews.length) {
+      const empty = document.createElement("p");
+      empty.className = "galaxy-recent__empty";
+      empty.textContent = "Bodies you inspect in this session will appear here.";
+      section.appendChild(empty);
+    } else {
+      const list = document.createElement("ul");
+      list.className = "galaxy-recent__list";
+      recentViews.forEach((entry) => {
+        const item = document.createElement("li");
+        const button = document.createElement("button");
+        button.type = "button";
+        button.className = "galaxy-recent__item";
+        button.setAttribute("aria-label", "View " + (entry.planet ? "planet " : "star system ") + entry.name);
+        const name = document.createElement("strong");
+        name.textContent = entry.name;
+        const kind = document.createElement("span");
+        kind.textContent = entry.planet ? "PLANET" : "STAR SYSTEM";
+        button.append(name, kind);
+        button.addEventListener("click", () => {
+          if (entry.planet) {
+            openSystem(entry.star);
+            showPlanet(entry.planet, entry.star);
+          } else {
+            openSystem(entry.star);
+          }
+        });
+        item.appendChild(button);
+        list.appendChild(item);
+      });
+      section.appendChild(list);
+    }
+    card.appendChild(section);
+  };
   const showStar = (star) => {
+    rememberView({ id: star.id, name: star.name, star: star, planet: null });
     const card = createInspector("STELLAR SYSTEM", star.name, star.type.label + " · " + star.planets + " planets in this system");
     const facts = document.createElement("dl");
     facts.className = "galaxy-facts galaxy-facts--metrics";
@@ -190,8 +236,10 @@
     note.className = "galaxy-inspector__note";
     note.textContent = "Select a planet to inspect its generated starting conditions and resource signals.";
     card.appendChild(note);
+    appendRecentViews(card);
   };
   const showPlanet = (planet, star) => {
+    rememberView({ id: planet.id, name: planet.name, star: star, planet: planet });
     const card = createInspector("PLANETARY BODY · " + star.name, planet.name, planet.type.name + " world · orbital radius " + (planet.orbit / 10).toFixed(1) + " model units");
     const facts = document.createElement("dl");
     facts.className = "galaxy-facts galaxy-facts--metrics";
@@ -223,9 +271,10 @@
     note.className = "galaxy-inspector__note";
     note.textContent = "Generated estimates only. Resource signals are not collected materials.";
     card.appendChild(note);
+    appendRecentViews(card);
   };
   const clearInspector = () => {
-    const card = createInspector("EXPLORATION LOG", "Choose a star", "Every system is generated from the galaxy seed. Select a star to chart its planets and inspect their starting conditions.");
+    const card = createInspector("GALAXY SURVEY", "Choose a star", "Every system is generated from the galaxy seed. Select a star to chart its planets and inspect their starting conditions.");
     const seedLine = document.createElement("div");
     seedLine.className = "galaxy-inspector__seed";
     const label = document.createElement("span");
@@ -236,8 +285,9 @@
     card.appendChild(seedLine);
     const note = document.createElement("p");
     note.className = "galaxy-inspector__note";
-    note.textContent = "Nothing is saved yet. Choose a star to begin a procedural survey.";
+    note.textContent = "Surveys are generated for this session and are not saved.";
     card.appendChild(note);
+    appendRecentViews(card);
   };
   const renderGalaxy = () => {
     if (mode !== "galaxy") return;
@@ -375,6 +425,7 @@
   const applySeed = () => {
     seed = seedInput.value.trim() || "VESPERGLASS-01";
     seedInput.value = seed;
+    recentViews = [];
     returnToGalaxy();
   };
   const makeNewSeed = () => {

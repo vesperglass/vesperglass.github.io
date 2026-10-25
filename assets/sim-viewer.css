@@ -49,6 +49,11 @@
 .sim-scene--galaxy .galaxy-inspector__seed span{color:#a9bdc4}
 .sim-scene--galaxy .galaxy-inspector__seed strong,.sim-scene--galaxy .galaxy-deposits li{color:#edf3ee}
 .sim-scene--galaxy .galaxy-inspector__subhead,.sim-scene--galaxy .galaxy-deposits strong{color:#9cddcf}
+.sim-scene--galaxy .galaxy-recent{border-color:#9bb8cc35}
+.sim-scene--galaxy .galaxy-recent__empty,.sim-scene--galaxy .galaxy-recent__item{color:#edf3ee}
+.sim-scene--galaxy .galaxy-recent__item{border-color:#9bb8cc38;background:#162630}
+.sim-scene--galaxy .galaxy-recent__item:hover,.sim-scene--galaxy .galaxy-recent__item:focus-visible{border-color:#9cddcf;background:#203b4d}
+.sim-scene--galaxy .galaxy-recent__item span{color:#b6c7c9}
 .sim-scene--galaxy .galaxy-fullscreen-button{display:none}
 @media(max-width:680px){
   .sim-page .topbar{top:10px;right:10px}
