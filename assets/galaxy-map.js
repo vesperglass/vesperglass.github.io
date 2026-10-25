@@ -10,12 +10,15 @@
   const mapStatus = document.getElementById("galaxy-map-status");
   const inspector = document.getElementById("galaxy-inspector");
   if (!mapElement || !window.L) return;
+  const isSharedViewer = Boolean(mapElement.closest(".sim-viewer"));
 
   let seed = seedInput.value.trim() || "VESPERGLASS-01";
   let mode = "galaxy";
   let redrawTimer = 0;
   let galaxyStarCount = 0;
   let recentViews = [];
+  let objectiveStep = 0;
+  let objectiveDismissed = false;
   const map = L.map(mapElement, {
     crs: L.CRS.Simple,
     zoomControl: false,
@@ -156,6 +159,73 @@
     row.append(term, detail);
     list.appendChild(row);
   };
+  const appendObjective = (card) => {
+    if (!isSharedViewer) return;
+    const panel = document.createElement("section");
+    panel.className = "galaxy-objective";
+    const render = () => {
+      panel.replaceChildren();
+      if (objectiveStep >= 2) {
+        const heading = document.createElement("span");
+        heading.className = "galaxy-objective__eyebrow";
+        heading.textContent = "SURVEY COMPLETE";
+        const message = document.createElement("p");
+        message.className = "galaxy-objective__text";
+        message.textContent = "You inspected a generated star system and one of its planets.";
+        const replay = document.createElement("button");
+        replay.type = "button";
+        replay.className = "galaxy-objective__replay";
+        replay.textContent = "Replay tip";
+        replay.addEventListener("click", () => {
+          objectiveStep = 0;
+          objectiveDismissed = false;
+          render();
+          panel.querySelector(".galaxy-objective__dismiss")?.focus();
+        });
+        panel.append(heading, message, replay);
+      } else if (objectiveDismissed) {
+        const replay = document.createElement("button");
+        replay.type = "button";
+        replay.className = "galaxy-objective__replay";
+        replay.textContent = "Replay tip";
+        replay.addEventListener("click", () => {
+          objectiveStep = 0;
+          objectiveDismissed = false;
+          render();
+          panel.querySelector(".galaxy-objective__dismiss")?.focus();
+        });
+        panel.appendChild(replay);
+      } else {
+        const heading = document.createElement("span");
+        heading.className = "galaxy-objective__eyebrow";
+        heading.textContent = objectiveStep === 0 ? "EXPLORATION TIP · 1 OF 2" : "EXPLORATION TIP · 2 OF 2";
+        const dismiss = document.createElement("button");
+        dismiss.type = "button";
+        dismiss.className = "galaxy-objective__dismiss";
+        dismiss.textContent = "Dismiss";
+        dismiss.setAttribute("aria-label", "Dismiss exploration tip");
+        dismiss.addEventListener("click", () => {
+          objectiveDismissed = true;
+          render();
+          panel.querySelector(".galaxy-objective__replay")?.focus();
+        });
+        const top = document.createElement("div");
+        top.className = "galaxy-objective__top";
+        top.append(heading, dismiss);
+        const title = document.createElement("strong");
+        title.className = "galaxy-objective__title";
+        title.textContent = objectiveStep === 0 ? "Inspect a star" : "Inspect a planet";
+        const message = document.createElement("p");
+        message.className = "galaxy-objective__text";
+        message.textContent = objectiveStep === 0
+          ? "Select a glowing star to reveal its planets."
+          : "Select a planet to view its generated conditions.";
+        panel.append(top, title, message);
+      }
+    };
+    render();
+    card.appendChild(panel);
+  };
   const createInspector = (eyebrowText, titleText, summaryText) => {
     inspector.replaceChildren();
     const heading = document.createElement("div");
@@ -173,6 +243,7 @@
     summary.textContent = summaryText;
     heading.append(eyebrow, mode);
     inspector.append(heading, title, summary);
+    appendObjective(inspector);
     return inspector;
   };
   const rememberView = (entry) => {
@@ -220,6 +291,7 @@
     card.appendChild(section);
   };
   const showStar = (star) => {
+    if (objectiveStep === 0) objectiveStep = 1;
     rememberView({ id: star.id, name: star.name, star: star, planet: null });
     const card = createInspector("STELLAR SYSTEM", star.name, star.type.label + " · " + star.planets + " planets in this system");
     const facts = document.createElement("dl");
@@ -239,6 +311,7 @@
     appendRecentViews(card);
   };
   const showPlanet = (planet, star) => {
+    objectiveStep = 2;
     rememberView({ id: planet.id, name: planet.name, star: star, planet: planet });
     const card = createInspector("PLANETARY BODY · " + star.name, planet.name, planet.type.name + " world · orbital radius " + (planet.orbit / 10).toFixed(1) + " model units");
     const facts = document.createElement("dl");
@@ -426,6 +499,8 @@
     seed = seedInput.value.trim() || "VESPERGLASS-01";
     seedInput.value = seed;
     recentViews = [];
+    objectiveStep = 0;
+    objectiveDismissed = false;
     returnToGalaxy();
   };
   const makeNewSeed = () => {
