@@ -60,7 +60,7 @@
     { id: "logbook", floatDuration: 8.6, floatDelay: -5.5, x: 1176, y: 190, name: "Observatory Logbook", glyph: "✎", route: "/field-notes/", section: "Field notes", note: "Short guides, observations, and details worth keeping." },
     { id: "archive", floatDuration: 6.9, floatDelay: -1.9, x: 175, y: 300, name: "Star Archive", glyph: "✧", route: "/research/", section: "Research & Essays", note: "Source-led explorations of the sky, objects, history, and ideas." },
     { id: "portal", floatDuration: 9.2, floatDelay: -1.4, x: 110, y: 970, name: "The Vesperglass Gate", glyph: "◎", route: "/galaxy/", section: "Galaxy map", note: "A glowing gate carries the train out to distant stars." },
-    { id: "station", floatDuration: 7.8, floatDelay: -4.6, x: 1430, y: 1000, name: "Vesperglass Train Station", glyph: "▤", route: "/galaxy/", section: "Galaxy map", note: "The train pauses here between trips through the galaxy." }
+    { id: "station", floatDuration: 7.8, floatDelay: -4.6, x: 1390, y: 925, name: "Vesperglass Train Dock", glyph: "▤", route: "/galaxy/", section: "Galaxy map", note: "The train pauses alongside the dock between trips through the galaxy." }
   ];
 
   const escapeHtml = (value) => {
@@ -114,7 +114,7 @@
     { id: "compass", file: "atlas-island-garden.png", width: 390, height: 390, sourceWidth: 1254, sourceHeight: 1254, floorX: 627, floorY: 850, alt: "Compass Garden, a glass greenhouse and flowering compass garden on its own floating landing island." },
     { id: "foundry", file: "atlas-island-foundry.png", width: 370, height: 370, sourceWidth: 1254, sourceHeight: 1254, floorX: 627, floorY: 875, alt: "Tideglass Foundry, a glass-and-bronze foundry with a copper chimney and glowing furnace on its own floating landing island." },
     { id: "portal", file: "atlas-island-gate.png", width: 360, height: 360, sourceWidth: 1254, sourceHeight: 1254, floorX: 627, floorY: 700, alt: "A luminous blue portal rises above its own glass-and-bronze floating island." },
-    { id: "station", file: "atlas-island-station.png", width: 360, height: 360, sourceWidth: 1254, sourceHeight: 1254, floorX: 627, floorY: 800, alt: "A separate glass-and-bronze floating train station with a covered platform and a single rail berth." }
+    { id: "station", file: "atlas-island-train-dock.png", width: 400, height: 400, sourceWidth: 1254, sourceHeight: 1254, floorX: 627, floorY: 600, alt: "A floating glass-and-bronze rail dock with an open berth beside a parallel boarding platform." }
   ];
   const islandOverlays = new Map();
   landmarkArtwork.forEach((artwork) => {
@@ -198,22 +198,29 @@
   const trainPortalPoint = { x: portalCenterPoint.x, y: portalCenterPoint.y + 25 };
   const trainRunUpPoint = { x: 410, y: 940 };
   const trainEntryPoint = trainPortalPoint;
-  const trainDockPoint = { x: 1430, y: 1000 };
+  const stationArtwork = landmarkArtwork.find((artwork) => artwork.id === "station");
+  const stationPlace = placeById.get("station");
+  const trainDockPoint = {
+    x: stationPlace.x + ((650 - stationArtwork.floorX) / stationArtwork.sourceWidth) * stationArtwork.width,
+    y: stationPlace.y + ((790 - stationArtwork.floorY) / stationArtwork.sourceHeight) * stationArtwork.height
+  };
   const trainArrivalRoutePoints = [
     trainEntryPoint,
     trainRunUpPoint,
     { x: 620, y: 940 },
     { x: 800, y: 950 },
     { x: 1080, y: 960 },
-    { x: 1290, y: 980 },
-    { x: 1460, y: 920 },
+    { x: 1200, y: 985 },
+    { x: 1280, y: 970 },
+    { x: 1340, y: 948 },
     trainDockPoint
   ];
   const trainDepartureRoutePoints = [
     trainDockPoint,
-    { x: 1400, y: 1040 },
-    { x: 1290, y: 1030 },
-    { x: 1100, y: 1000 },
+    { x: 1340, y: 948 },
+    { x: 1280, y: 970 },
+    { x: 1200, y: 985 },
+    { x: 1100, y: 980 },
     { x: 850, y: 960 },
     { x: 620, y: 940 },
     trainRunUpPoint
