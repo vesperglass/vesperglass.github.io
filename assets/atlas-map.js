@@ -200,43 +200,48 @@
   const trainEntryPoint = trainPortalPoint;
   const stationArtwork = landmarkArtwork.find((artwork) => artwork.id === "station");
   const stationPlace = placeById.get("station");
+  const stationPixelToTrainPoint = (x, y) => ({
+    x: stationPlace.x + ((x - stationArtwork.floorX) / stationArtwork.sourceWidth) * stationArtwork.width,
+    y: stationPlace.y + ((y - stationArtwork.floorY) / stationArtwork.sourceHeight) * stationArtwork.height
+  });
   const trainDockPoint = {
     // Berth outside the dock's long open edge instead of on its tiled deck.
-    x: stationPlace.x + ((650 - stationArtwork.floorX) / stationArtwork.sourceWidth) * stationArtwork.width,
-    y: stationPlace.y + ((1030 - stationArtwork.floorY) / stationArtwork.sourceHeight) * stationArtwork.height
+    ...stationPixelToTrainPoint(641, 1052)
   };
-  // The invisible dock lane is straight through the berth. The train arrives
-  // and departs on the same southeast heading before the route bends away.
-  const trainDockApproachPoint = { x: trainDockPoint.x - 54, y: trainDockPoint.y - 35 };
-  const trainDockExitPoint = { x: trainDockPoint.x + 54, y: trainDockPoint.y + 35 };
-  const trainArrivalRoutePoints = [
+  // The hidden rigid rail follows the dock's entire long open edge. The train
+  // enters at its northwest end, parks partway along it, then rolls on to the
+  // far end before free-flight steering resumes.
+  const trainDockRailStartPoint = stationPixelToTrainPoint(-60, 600);
+  const trainDockRailEndPoint = stationPixelToTrainPoint(900, 1220);
+  const trainArrivalApproachPoints = [
     trainEntryPoint,
     trainRunUpPoint,
     { x: 620, y: 940 },
     { x: 800, y: 950 },
     { x: 1080, y: 960 },
     { x: 1200, y: 970 },
-    { x: 1280, y: 950 },
-    { x: 1325, y: 974 },
-    trainDockApproachPoint,
-    trainDockPoint
+    { x: 1290, y: 930 },
+    { x: 1380, y: 920 },
+    { x: 1450, y: 960 },
+    { x: 1480, y: 1035 },
+    { x: 1450, y: 1110 },
+    { x: 1380, y: 1155 },
+    { x: 1280, y: 1140 },
+    { x: 1190, y: 1080 },
+    { x: 1120, y: 1000 },
+    { x: trainDockRailStartPoint.x - 100, y: trainDockRailStartPoint.y - 65 },
+    trainDockRailStartPoint
   ];
-  const trainDepartureRoutePoints = [
-    trainDockPoint,
-    trainDockExitPoint,
-    { x: trainDockPoint.x + 108, y: trainDockPoint.y + 70 },
-    { x: trainDockPoint.x + 162, y: trainDockPoint.y + 105 },
-    { x: trainDockPoint.x + 216, y: trainDockPoint.y + 140 },
-    { x: trainDockPoint.x + 270, y: trainDockPoint.y + 175 },
-    { x: trainDockPoint.x + 324.5, y: trainDockPoint.y + 191.1 },
-    { x: trainDockPoint.x + 374.5, y: trainDockPoint.y + 177.7 },
-    { x: trainDockPoint.x + 411.1, y: trainDockPoint.y + 141.1 },
-    { x: trainDockPoint.x + 424.5, y: trainDockPoint.y + 91.1 },
-    { x: trainDockPoint.x + 411.1, y: trainDockPoint.y + 41.1 },
-    { x: trainDockPoint.x + 374.5, y: trainDockPoint.y + 4.5 },
-    { x: trainDockPoint.x + 324.5, y: trainDockPoint.y - 8.9 },
-    { x: trainDockPoint.x + 150, y: trainDockPoint.y - 8 },
-    { x: trainDockPoint.x - 20, y: trainDockPoint.y - 78 },
+  const trainDepartureApproachPoints = [
+    trainDockRailEndPoint,
+    { x: trainDockRailEndPoint.x + 100, y: trainDockRailEndPoint.y + 65 },
+    { x: trainDockRailEndPoint.x + 190, y: trainDockRailEndPoint.y + 90 },
+    { x: trainDockRailEndPoint.x + 275, y: trainDockRailEndPoint.y + 65 },
+    { x: trainDockRailEndPoint.x + 330, y: trainDockRailEndPoint.y + 5 },
+    { x: trainDockRailEndPoint.x + 330, y: trainDockRailEndPoint.y - 75 },
+    { x: trainDockRailEndPoint.x + 270, y: trainDockRailEndPoint.y - 130 },
+    { x: trainDockRailEndPoint.x + 160, y: trainDockRailEndPoint.y - 140 },
+    { x: trainDockRailEndPoint.x + 20, y: trainDockRailEndPoint.y - 95 },
     { x: 1320, y: 970 },
     { x: 1200, y: 970 },
     { x: 850, y: 960 },
@@ -409,6 +414,8 @@
     return { samples, length };
   };
   let trainArrivalPath = null;
+  let trainArrivalRailPath = null;
+  let trainDepartureRailPath = null;
   let trainDeparturePath = null;
   let trainPortalPath = null;
   const pointOnTrainPath = (path, distance) => {
@@ -531,13 +538,17 @@
     trainBurstTimer = window.setTimeout(() => {
       trainBurstTimer = 0;
       if (motionPreference.matches || trainPhase !== "arriving") return;
-      animateTrainAlong(trainArrivalPath, finishTrainAtStation, { profile: "decelerate", targetSpeed: trainPortalTargetSpeed });
+      animateTrainAlong(trainArrivalPath, () => {
+        animateTrainAlong(trainArrivalRailPath, finishTrainAtStation, { profile: "decelerate", targetSpeed: trainPortalTargetSpeed });
+      }, { profile: "smooth", targetSpeed: trainPortalTargetSpeed });
     }, 260);
   }
   function startTrainDeparture() {
     if (motionPreference.matches) return;
     trainPhase = "departing";
-    animateTrainAlong(trainDeparturePath, accelerateTrainIntoPortal, { profile: "accelerate", targetSpeed: 125 });
+    animateTrainAlong(trainDepartureRailPath, () => {
+      animateTrainAlong(trainDeparturePath, accelerateTrainIntoPortal, { profile: "accelerate", targetSpeed: 125 });
+    }, { profile: "accelerate", targetSpeed: 125 });
   }
   const updateTrainMotion = () => {
     if (motionPreference.matches) {
@@ -804,8 +815,10 @@
   courierZoom = map.getZoom();
   trainZoom = courierZoom;
   trainReferenceZoom = trainZoom;
-  trainArrivalPath = projectTrainPath(trainArrivalRoutePoints);
-  trainDeparturePath = projectTrainPath(trainDepartureRoutePoints);
+  trainArrivalPath = projectTrainPath(trainArrivalApproachPoints);
+  trainArrivalRailPath = projectTrainPath([trainDockRailStartPoint, trainDockPoint]);
+  trainDepartureRailPath = projectTrainPath([trainDockPoint, trainDockRailEndPoint]);
+  trainDeparturePath = projectTrainPath(trainDepartureApproachPoints);
   trainPortalPath = projectTrainPath([trainRunUpPoint, trainEntryPoint]);
   const routeMaxCurvature = [trainArrivalPath, trainDeparturePath, trainPortalPath].reduce((maximum, path) => {
     for (let distance = 0; distance <= path.length; distance += 4) {
