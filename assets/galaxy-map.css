@@ -20,20 +20,27 @@
 #galaxy-back{color:#f0d4a3;border-color:#bd986c75}
 .galaxy-map-status{align-self:start;margin:0;padding:9px 11px;border:1px solid #9bb8cc35;border-radius:9px;color:#d8e6ee;background:#07101bd9;box-shadow:0 8px 26px #0006;font:600 10px/1.2 var(--sans);backdrop-filter:blur(12px)}
 .galaxy-inspector{display:flex;flex-direction:column;min-width:0;padding:20px;border:1px solid var(--line);border-radius:12px;color:var(--ink);background:var(--white);box-shadow:0 12px 32px #17231c0b}
-.galaxy-inspector__eyebrow{margin:1px 0 8px;color:var(--sea-dark);font:750 8px/1.4 var(--sans);letter-spacing:.14em}
-.galaxy-inspector h2{margin:0 0 8px;color:var(--ink);font:400 25px/1.15 var(--serif);overflow-wrap:anywhere}
-.galaxy-inspector__lead{margin:0 0 16px;color:var(--soft);font:13px/1.5 var(--serif)}
+.galaxy-inspector__heading{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:1px 0 7px}
+.galaxy-inspector__eyebrow{margin:0;color:var(--sea-dark);font:750 8px/1.4 var(--sans);letter-spacing:.14em}
+.galaxy-inspector__mode{flex:none;padding:4px 6px;border:1px solid var(--line);border-radius:99px;color:var(--muted);font:700 7px/1 var(--sans);letter-spacing:.1em}
+.galaxy-inspector h2{margin:0 0 5px;color:var(--ink);font:400 25px/1.15 var(--serif);overflow-wrap:anywhere}
+.galaxy-inspector__lead{margin:0 0 12px;color:var(--soft);font:13px/1.45 var(--serif)}
 .galaxy-facts{display:grid;gap:0;margin:0;padding:0;border-top:1px solid var(--line)}
 .galaxy-fact{display:flex;justify-content:space-between;gap:10px;padding:9px 0;border-bottom:1px solid var(--line)}
 .galaxy-fact dt{color:var(--soft);font-size:10px}
 .galaxy-fact dd{margin:0;color:var(--ink);font-size:10px;font-weight:700;text-align:right}
-.galaxy-inspector__subhead{margin:19px 0 7px;color:var(--ink);font:700 10px/1.3 var(--sans);letter-spacing:.1em;text-transform:uppercase}
-.galaxy-inspector__note{margin:auto 0 0;padding-top:18px;color:var(--soft);font:italic 12px/1.5 var(--serif)}
-.galaxy-inspector__seed{display:grid;gap:5px;margin-top:auto;padding:12px;border:1px solid var(--line);border-radius:8px;background:var(--map-control-hover)}
+.galaxy-facts--metrics{grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;border:0}
+.galaxy-facts--metrics .galaxy-fact{display:grid;align-content:start;gap:5px;min-width:0;padding:8px;border:1px solid var(--line);border-radius:7px;background:var(--map-control-hover,color-mix(in srgb,var(--white) 90%,var(--sea) 10%))}
+.galaxy-facts--metrics .galaxy-fact dt{font-size:8px;line-height:1.25}
+.galaxy-facts--metrics .galaxy-fact dd{font-size:11px;line-height:1.25;text-align:left;overflow-wrap:anywhere}
+.galaxy-inspector__identity{margin:9px 0 0;color:var(--muted);font:8px/1.45 ui-monospace,SFMono-Regular,Consolas,monospace;overflow-wrap:anywhere}
+.galaxy-inspector__subhead{margin:13px 0 7px;color:var(--ink);font:700 9px/1.3 var(--sans);letter-spacing:.1em;text-transform:uppercase}
+.galaxy-inspector__note{margin:10px 0 0;padding-top:9px;border-top:1px solid var(--line);color:var(--soft);font:italic 11px/1.45 var(--serif)}
+.galaxy-inspector__seed{display:grid;gap:5px;margin-top:auto;padding:12px;border:1px solid var(--line);border-radius:8px;background:var(--map-control-hover,color-mix(in srgb,var(--white) 90%,var(--sea) 10%))}
 .galaxy-inspector__seed span{color:var(--soft);font:700 8px/1.2 var(--sans);letter-spacing:.12em}
 .galaxy-inspector__seed strong{color:var(--ink);font:11px ui-monospace,SFMono-Regular,Consolas,monospace;overflow-wrap:anywhere}
 .galaxy-deposits{display:grid;gap:5px;margin:0;padding:0;list-style:none}
-.galaxy-deposits li{display:flex;justify-content:space-between;gap:10px;padding:7px 9px;border:1px solid var(--line);border-radius:6px;color:var(--ink);font-size:10px;background:var(--map-control-hover)}
+.galaxy-deposits li{display:flex;justify-content:space-between;gap:10px;padding:7px 9px;border:1px solid var(--line);border-radius:6px;color:var(--ink);font-size:10px;background:var(--map-control-hover,color-mix(in srgb,var(--white) 90%,var(--sea) 10%))}
 .galaxy-deposits strong{color:var(--sea-dark)}
 .galaxy-legend{display:flex;align-items:center;flex-wrap:wrap;gap:8px 15px;padding:11px 3px 0;color:var(--soft);font-size:9px}
 .galaxy-legend__title{margin-right:3px;color:var(--muted);font:700 8px/1 var(--sans);letter-spacing:.13em}
@@ -86,7 +93,7 @@ body:has(.galaxy-map-shell.is-fullscreen){overflow:hidden}
 .galaxy-workspace{display:block}
 .galaxy-map-shell{width:100%}
 .galaxy-inspector{position:absolute;z-index:650;left:14px;bottom:14px;width:min(290px,calc(100% - 28px));max-height:min(42vh,360px);overflow:auto;padding:15px;border-color:#b8c8ceaa;background:color-mix(in srgb,var(--white) 94%,transparent);backdrop-filter:blur(14px);box-shadow:0 14px 36px #0006}
-@media(max-width:680px){.galaxy-inspector{left:8px;bottom:8px;width:min(290px,calc(100% - 16px));max-height:34vh;padding:12px}.galaxy-inspector h2{font-size:21px}.galaxy-inspector__lead{margin-bottom:9px}.galaxy-fact{padding:6px 0}.galaxy-inspector__subhead{margin-top:12px}}
+@media(max-width:680px){.galaxy-inspector{left:8px;bottom:8px;width:min(290px,calc(100% - 16px));max-height:38vh;padding:12px}.galaxy-inspector h2{font-size:21px}.galaxy-inspector__lead{margin-bottom:9px}.galaxy-fact{padding:6px 0}.galaxy-inspector__subhead{margin-top:10px}.galaxy-inspector__note{margin-top:7px;padding-top:7px;font-size:10px}}
 
 
 /* Homeward gate: a fixed portal at the galaxy origin. */

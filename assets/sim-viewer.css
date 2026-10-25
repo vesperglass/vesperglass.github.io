@@ -11,20 +11,17 @@
 .sim-scene{position:absolute;inset:0;overflow:hidden;background:#050914}
 .sim-scene[hidden]{display:none!important}
 .sim-glass-panel{border:1px solid #a7c5cf42;border-radius:12px;color:#e3edf0;background:rgba(6,16,27,.83);box-shadow:0 12px 38px #0008;backdrop-filter:blur(16px)}
-.sim-switcher{position:absolute;z-index:1600;top:14px;left:14px;width:min(292px,calc(100% - 150px));padding:10px}
-.sim-switcher__brand{display:flex;align-items:center;gap:9px;color:#eaf1ed;text-decoration:none;font:750 9px/1 var(--sans);letter-spacing:.16em}
-.sim-switcher__brand>span{display:grid;width:25px;height:25px;place-items:center;border:1px solid #a6e3d17a;border-radius:50% 50% 50% 12px;color:#d8bd92;font:16px var(--serif);transform:rotate(-8deg)}
-.sim-switcher__views{display:grid;grid-template-columns:1fr 1fr;gap:5px;margin-top:9px}
-.sim-switcher__views button{display:flex;align-items:center;justify-content:center;gap:7px;min-height:33px;padding:6px 8px;border:1px solid #91aebd38;border-radius:7px;color:#c8d5dc;background:#12212dd9;font:600 10px/1 var(--sans);cursor:pointer;transition:border-color .16s,color .16s,background .16s}
+.sim-switcher{position:absolute;z-index:1600;top:14px;left:14px;display:flex;align-items:center;gap:5px;width:max-content;max-width:calc(100% - 150px);padding:5px;border-radius:10px}
+.sim-switcher__views{display:flex;gap:2px;margin:0;padding:2px;border:1px solid #91aebd26;border-radius:8px;background:#07101b70}
+.sim-switcher__views button{display:flex;align-items:center;justify-content:center;gap:5px;min-height:29px;padding:5px 8px;border:1px solid transparent;border-radius:6px;color:#c8d5dc;background:transparent;font:600 10px/1 var(--sans);cursor:pointer;transition:border-color .16s,color .16s,background .16s}
 .sim-switcher__views button:hover,.sim-switcher__views button:focus-visible{border-color:#9ed9d0;color:#fff}
 .sim-switcher__views button[aria-current="page"]{border-color:#89d8c9a8;color:#effff8;background:#1b484a}
 .sim-switcher__views button:focus-visible{outline:2px solid #9ed9d0;outline-offset:2px}
-.sim-switcher__views button span{font-size:14px}
-.sim-switcher__library{display:flex;align-items:center;gap:7px;margin:9px 3px 0;color:#a9c0bf;font:600 9px/1.2 var(--sans);text-decoration:none;transition:color .16s}
+.sim-switcher__views button span{font-size:12px}
+.sim-switcher__library{display:flex;align-items:center;gap:5px;min-height:27px;padding:0 5px 0 8px;border-left:1px solid #91aebd35;color:#a9c0bf;font:600 9px/1.2 var(--sans);text-decoration:none;white-space:nowrap;transition:color .16s}
 .sim-switcher__library:hover,.sim-switcher__library:focus-visible{color:#f4e5c9}
-.sim-switcher__library span:last-child{margin-left:auto;color:#879e9d}
+.sim-switcher__library span:last-child{display:none}
 .sim-switcher__library:focus-visible{outline:2px solid #9ed9d0;outline-offset:3px;border-radius:2px}
-.sim-switcher__hint{margin:9px 2px 1px;color:#91a9b1;font:700 7px/1.2 var(--sans);letter-spacing:.15em}
 .sim-scene--atlas .atlas-map-card{position:absolute;inset:0;overflow:hidden;border:0;border-radius:0;background:#050914;box-shadow:none}
 .sim-scene--atlas .atlas-map-toolbar{position:absolute;z-index:1400;top:14px;right:14px;display:flex;padding:0;border:0;pointer-events:none}
 .sim-scene--atlas .atlas-map-toolbar>div:first-child{display:none}
@@ -43,10 +40,13 @@
 .sim-scene--galaxy .galaxy-seed-field input{width:175px}
 .sim-scene--galaxy .galaxy-map-status{position:absolute;right:14px;bottom:14px;z-index:650;max-width:min(380px,calc(100% - 28px))}
 .sim-scene--galaxy .galaxy-inspector{left:14px;bottom:14px;max-height:min(47vh,390px);border-color:#a7c5cf42;color:#e3edf0;background:rgba(6,16,27,.88);box-shadow:0 12px 38px #0008}
+.sim-scene--galaxy .galaxy-inspector__mode{border-color:#9bb8cc40;color:#a9c6c7}
 .sim-scene--galaxy .galaxy-inspector h2{color:#f0eee4}
 .sim-scene--galaxy .galaxy-inspector__lead,.sim-scene--galaxy .galaxy-inspector__eyebrow,.sim-scene--galaxy .galaxy-fact dt,.sim-scene--galaxy .galaxy-inspector__note{color:#b6c7c9}
 .sim-scene--galaxy .galaxy-facts,.sim-scene--galaxy .galaxy-fact{border-color:#9bb8cc35}
+.sim-scene--galaxy .galaxy-facts--metrics .galaxy-fact{border-color:#9bb8cc35;background:#162630}
 .sim-scene--galaxy .galaxy-fact dd{color:#edf3ee}
+.sim-scene--galaxy .galaxy-inspector__identity{color:#9eb3bb}
 .sim-scene--galaxy .galaxy-inspector__seed,.sim-scene--galaxy .galaxy-deposits li{border-color:#9bb8cc38;background:#162630}
 .sim-scene--galaxy .galaxy-inspector__seed span{color:#a9bdc4}
 .sim-scene--galaxy .galaxy-inspector__seed strong,.sim-scene--galaxy .galaxy-deposits li{color:#edf3ee}
@@ -54,8 +54,9 @@
 .sim-scene--galaxy .galaxy-fullscreen-button{display:none}
 @media(max-width:680px){
   .sim-page .topbar{top:10px;right:10px}
-  .sim-switcher{top:10px;left:10px;width:min(265px,calc(100% - 132px));padding:8px}
-  .sim-switcher__hint{display:none}
+  .sim-switcher{top:10px;left:10px;max-width:calc(100% - 112px);gap:4px;padding:4px}
+  .sim-switcher__views button{gap:4px;min-height:27px;padding:5px 6px;font-size:9px}
+  .sim-switcher__library{gap:4px;padding-left:6px;font-size:8px}
   .sim-scene--atlas .atlas-map-toolbar{top:auto;right:10px;bottom:10px}
   .sim-scene--galaxy .galaxy-map-toolbar{top:68px;right:10px;max-width:calc(100% - 20px)}
   .sim-scene--galaxy .galaxy-seed-tools{max-width:100%;padding:6px}
