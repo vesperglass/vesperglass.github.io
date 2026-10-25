@@ -59,8 +59,8 @@
     { id: "compass", floatDuration: 7.7, floatDelay: -2.8, x: 414, y: 717, name: "Compass Garden", glyph: "✳", route: "/principles/", section: "How we work", note: "A few steady habits for making useful things with care." },
     { id: "logbook", floatDuration: 8.6, floatDelay: -5.5, x: 1176, y: 190, name: "Observatory Logbook", glyph: "✎", route: "/field-notes/", section: "Field notes", note: "Short guides, observations, and details worth keeping." },
     { id: "archive", floatDuration: 6.9, floatDelay: -1.9, x: 175, y: 300, name: "Star Archive", glyph: "✧", route: "/research/", section: "Research & Essays", note: "Source-led explorations of the sky, objects, history, and ideas." },
-    { id: "portal", floatDuration: 9.2, floatDelay: -1.4, x: 720, y: 900, name: "The Vesperglass Gate", glyph: "◎", route: "/galaxy/", section: "Galaxy map", note: "A glowing gate carries the train out to distant stars." },
-    { id: "station", floatDuration: 7.8, floatDelay: -4.6, x: 990, y: 900, name: "Vesperglass Train Station", glyph: "▤", route: "/galaxy/", section: "Galaxy map", note: "The train pauses here between trips through the galaxy." }
+    { id: "portal", floatDuration: 9.2, floatDelay: -1.4, x: 130, y: 945, name: "The Vesperglass Gate", glyph: "◎", route: "/galaxy/", section: "Galaxy map", note: "A glowing gate carries the train out to distant stars." },
+    { id: "station", floatDuration: 7.8, floatDelay: -4.6, x: 1410, y: 945, name: "Vesperglass Train Station", glyph: "▤", route: "/galaxy/", section: "Galaxy map", note: "The train pauses here between trips through the galaxy." }
   ];
 
   const escapeHtml = (value) => {
@@ -113,8 +113,8 @@
     { id: "logbook", file: "atlas-island-observatory.png", width: 270, height: 270, sourceWidth: 1254, sourceHeight: 1254, floorX: 627, floorY: 900, alt: "Observatory Logbook, a glass tower with a copper dome and telescope on its own floating landing island." },
     { id: "compass", file: "atlas-island-garden.png", width: 390, height: 390, sourceWidth: 1254, sourceHeight: 1254, floorX: 627, floorY: 850, alt: "Compass Garden, a glass greenhouse and flowering compass garden on its own floating landing island." },
     { id: "foundry", file: "atlas-island-foundry.png", width: 370, height: 370, sourceWidth: 1254, sourceHeight: 1254, floorX: 627, floorY: 875, alt: "Tideglass Foundry, a glass-and-bronze foundry with a copper chimney and glowing furnace on its own floating landing island." },
-    { id: "portal", file: "atlas-island-gate.png", width: 230, height: 230, sourceWidth: 1254, sourceHeight: 1254, floorX: 627, floorY: 700, alt: "A luminous blue portal rises above its own floating glass-and-bronze island." },
-    { id: "station", file: "atlas-island-station.png", width: 230, height: 230, sourceWidth: 1254, sourceHeight: 1254, floorX: 627, floorY: 800, alt: "A separate floating glass-and-bronze train station with a covered platform and a single rail berth." }
+    { id: "portal", file: "atlas-island-gate.png", width: 190, height: 190, sourceWidth: 1254, sourceHeight: 1254, floorX: 627, floorY: 700, alt: "A luminous blue portal rises above its own glass-and-bronze floating island." },
+    { id: "station", file: "atlas-island-station.png", width: 190, height: 190, sourceWidth: 1254, sourceHeight: 1254, floorX: 627, floorY: 800, alt: "A separate glass-and-bronze floating train station with a covered platform and a single rail berth." }
   ];
   const islandOverlays = new Map();
   landmarkArtwork.forEach((artwork) => {
@@ -189,21 +189,34 @@
     zIndexOffset: 1200,
     opacity: 0.98
   }).addTo(map);
-  const trainEntryPoint = { x: 720, y: 870 };
-  const trainDockPoint = { x: 1018, y: 912 };
+  const trainEntryPoint = { x: 130, y: 945 };
+  const trainDockPoint = { x: 1410, y: 945 };
   const trainRoutePoints = [
     trainEntryPoint,
-    { x: 610, y: 900 },
-    { x: 600, y: 875 },
-    { x: 820, y: 858 },
-    { x: 1080, y: 860 },
-    { x: 1488, y: 860 },
-    { x: 1510, y: 470 },
-    { x: 1510, y: 250 },
-    { x: 1510, y: 470 },
-    { x: 1488, y: 860 },
-    { x: 1250, y: 910 },
+    { x: 80, y: 920 },
+    { x: 65, y: 870 },
+    { x: 125, y: 840 },
+    { x: 280, y: 865 },
+    { x: 540, y: 880 },
+    { x: 800, y: 855 },
+    { x: 1080, y: 865 },
+    { x: 1320, y: 880 },
+    { x: 1460, y: 900 },
     trainDockPoint
+  ];
+  const trainDepartureRoutePoints = [
+    trainDockPoint,
+    { x: 1360, y: 990 },
+    { x: 1200, y: 1000 },
+    { x: 1000, y: 990 },
+    { x: 800, y: 950 },
+    { x: 600, y: 910 },
+    { x: 420, y: 880 },
+    { x: 260, y: 860 },
+    { x: 125, y: 840 },
+    { x: 65, y: 870 },
+    { x: 80, y: 920 },
+    trainEntryPoint
   ];
   const trainPointToLatLng = (point) => [1024 - point.y, point.x];
   const trainIcon = L.divIcon({
@@ -215,6 +228,7 @@
   let trainZoom = 0;
   let trainWorldPosition = map.project(trainPointToLatLng(trainEntryPoint), trainZoom);
   let trainHeading = 0;
+  const trainMaxTurnRate = 0.72;
   let trainReferenceZoom = null;
   let trainFrame = 0;
   let trainTimer = 0;
@@ -381,7 +395,8 @@
     element?.classList.add("is-moving");
     trainMarker.setOpacity(1);
     const startedAt = performance.now();
-    const duration = 14500;
+    let previousFrameAt = startedAt;
+    const duration = 19000;
     const animate = (now) => {
       if (motionPreference.matches) {
         trainFrame = 0;
@@ -392,7 +407,11 @@
       const eased = progress < 0.5 ? 4 * progress * progress * progress : 1 - Math.pow(-2 * progress + 2, 3) / 2;
       const nextPosition = pointOnTrainPath(path, path.length * eased);
       const aheadPosition = pointOnTrainPath(path, Math.min(path.length, path.length * eased + 1.5));
-      trainHeading = Math.atan2(aheadPosition.y - nextPosition.y, aheadPosition.x - nextPosition.x);
+      const desiredHeading = Math.atan2(aheadPosition.y - nextPosition.y, aheadPosition.x - nextPosition.x);
+      const headingDifference = Math.atan2(Math.sin(desiredHeading - trainHeading), Math.cos(desiredHeading - trainHeading));
+      const turnDt = Math.min(0.045, Math.max(0, (now - previousFrameAt) / 1000));
+      previousFrameAt = now;
+      trainHeading += clamp(headingDifference, -trainMaxTurnRate * turnDt, trainMaxTurnRate * turnDt);
       trainWorldPosition = nextPosition;
       setTrainPosition();
       if (progress < 1) {
@@ -409,6 +428,9 @@
     trainPhase = "arriving";
     pulsePortal(1900);
     playPortalSound("arrival");
+    const initialTrainPoint = pointOnTrainPath(trainArrivalPath, 0);
+    const firstTrackPoint = pointOnTrainPath(trainArrivalPath, Math.min(trainArrivalPath.length, 1.5));
+    trainHeading = Math.atan2(firstTrackPoint.y - initialTrainPoint.y, firstTrackPoint.x - initialTrainPoint.x);
     trainMarker.setOpacity(1);
     trainWorldPosition = map.project(trainPointToLatLng(trainEntryPoint), trainZoom);
     setTrainPosition();
@@ -682,7 +704,7 @@
   trainZoom = courierZoom;
   trainReferenceZoom = trainZoom;
   trainArrivalPath = projectTrainPath(trainRoutePoints);
-  trainDeparturePath = projectTrainPath([...trainRoutePoints].reverse());
+  trainDeparturePath = projectTrainPath(trainDepartureRoutePoints);
   trainWorldPosition = map.project(trainPointToLatLng(trainEntryPoint), trainZoom);
   const trainDestination = map.project(trainPointToLatLng(trainDockPoint), trainZoom);
   trainHeading = Math.atan2(trainDestination.y - trainWorldPosition.y, trainDestination.x - trainWorldPosition.x);
