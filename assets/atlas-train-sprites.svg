@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 128" width="256" height="128" role="img" aria-label="Eight isometric views of the Vesperglass portal locomotive">
+  <defs>
+    <linearGradient id="boiler" x1="0" x2="0.2" y1="0" y2="1"><stop stop-color="#f7d697"/><stop offset=".42" stop-color="#bc8050"/><stop offset="1" stop-color="#684b40"/></linearGradient>
+    <linearGradient id="cab" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#56d7db"/><stop offset=".48" stop-color="#214a59"/><stop offset="1" stop-color="#152a39"/></linearGradient>
+    <linearGradient id="brass" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#ffe9aa"/><stop offset=".5" stop-color="#c79255"/><stop offset="1" stop-color="#704b31"/></linearGradient>
+    <radialGradient id="lamp"><stop stop-color="#fff8d8"/><stop offset=".38" stop-color="#8df4ef"/><stop offset="1" stop-color="#3acbd6" stop-opacity="0"/></radialGradient>
+    <g id="engine">
+      <ellipse cx="32" cy="47" rx="24" ry="6" fill="#101b29" opacity=".62"/>
+      <path d="M9 32h40l8 7-5 4H12L6 39z" fill="#3f3738" stroke="#c79255" stroke-width="1.5"/>
+      <circle cx="19" cy="40" r="6.4" fill="#282b32" stroke="#d5a266" stroke-width="1.5"/><circle cx="19" cy="40" r="2.4" fill="#f3d18c"/>
+      <circle cx="42" cy="40" r="6.4" fill="#282b32" stroke="#d5a266" stroke-width="1.5"/><circle cx="42" cy="40" r="2.4" fill="#f3d18c"/>
+      <path d="M11 17 18 11h9v20H9V20z" fill="url(#cab)" stroke="#e1b46e" stroke-width="1.7"/>
+      <path d="M13 17h10v9H12z" fill="#a9e8e6" stroke="#f2d39a" stroke-width="1.1"/>
+      <path d="M16 10h12v3H16zM18 8h8v3h-8z" fill="url(#brass)"/>
+      <rect x="25" y="19" width="27" height="13" rx="6.5" fill="url(#boiler)" stroke="#f2ce87" stroke-width="1.4"/>
+      <path d="M30 20v11M34 20v11M43 20v11" stroke="#805437" stroke-width="1" opacity=".8"/>
+      <path d="M48 21 58 26l-8 7h-4z" fill="url(#brass)" stroke="#ffe5a2" stroke-width="1.2"/>
+      <circle cx="54" cy="26" r="6" fill="url(#lamp)"/><circle cx="54" cy="26" r="2.3" fill="#fff5c9"/>
+      <path d="M6 29h6v5H5zM49 33l8 4v3l-9-3z" fill="#d9a96a"/>
+      <path d="M27 15h11v2H27z" fill="#f3d191" opacity=".8"/>
+      <path d="M8 27 5 24l3-4 4 3" fill="none" stroke="#50d8de" stroke-width="1.5" opacity=".78"/>
+    </g>
+  </defs>
+  <!-- E, SE, S, SW / W, NE, N, NW, matching the courier sheet's directional layout. -->
+  <g transform="translate(0 0)"><use href="#engine" transform="rotate(0 32 32)"/></g>
+  <g transform="translate(64 0)"><use href="#engine" transform="rotate(45 32 32)"/></g>
+  <g transform="translate(128 0)"><use href="#engine" transform="rotate(90 32 32)"/></g>
+  <g transform="translate(192 0)"><use href="#engine" transform="rotate(135 32 32)"/></g>
+  <g transform="translate(0 64)"><use href="#engine" transform="rotate(180 32 32)"/></g>
+  <g transform="translate(64 64)"><use href="#engine" transform="rotate(-45 32 32)"/></g>
+  <g transform="translate(128 64)"><use href="#engine" transform="rotate(-90 32 32)"/></g>
+  <g transform="translate(192 64)"><use href="#engine" transform="rotate(-135 32 32)"/></g>
+</svg>
