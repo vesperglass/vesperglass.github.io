@@ -19,6 +19,7 @@
   let recentViews = [];
   let objectiveStep = 0;
   let objectiveDismissed = false;
+  let inspectorCollapsed = false;
   const map = L.map(mapElement, {
     crs: L.CRS.Simple,
     zoomControl: false,
@@ -227,6 +228,8 @@
     card.appendChild(panel);
   };
   const createInspector = (eyebrowText, titleText, summaryText) => {
+    inspectorCollapsed = false;
+    inspector.classList.remove("is-collapsed");
     inspector.replaceChildren();
     const heading = document.createElement("div");
     heading.className = "galaxy-inspector__heading";
@@ -241,7 +244,21 @@
     const summary = document.createElement("p");
     summary.className = "galaxy-inspector__lead";
     summary.textContent = summaryText;
-    heading.append(eyebrow, mode);
+    const collapseButton = document.createElement("button");
+    collapseButton.type = "button";
+    collapseButton.className = "galaxy-inspector__collapse";
+    collapseButton.setAttribute("aria-expanded", "true");
+    collapseButton.setAttribute("aria-label", "Collapse survey details");
+    collapseButton.textContent = "−";
+    collapseButton.addEventListener("click", () => {
+      inspectorCollapsed = !inspectorCollapsed;
+      inspector.classList.toggle("is-collapsed", inspectorCollapsed);
+      collapseButton.setAttribute("aria-expanded", String(!inspectorCollapsed));
+      collapseButton.setAttribute("aria-label", inspectorCollapsed ? "Expand survey details" : "Collapse survey details");
+      collapseButton.textContent = inspectorCollapsed ? "+" : "−";
+      if (inspectorCollapsed) inspector.scrollTop = 0;
+    });
+    heading.append(eyebrow, mode, collapseButton);
     inspector.append(heading, title, summary);
     appendObjective(inspector);
     return inspector;
