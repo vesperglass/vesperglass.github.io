@@ -127,6 +127,7 @@
   .site-shell:has(.galaxy-explorer) .crumb{min-width:0;gap:6px;letter-spacing:.06em;white-space:nowrap}
 }
 @media(max-width:360px){
+  .site-shell:has(.galaxy-explorer) .galaxy-map-shell .galaxy-inspector{width:min(290px,calc(100% - 60px))}
   .site-shell:has(.galaxy-explorer) .crumb>span:first-child,
   .site-shell:has(.galaxy-explorer) .crumb-slash{display:none}
   .site-shell:has(.galaxy-explorer) .content-wrap{padding-inline:14px}
