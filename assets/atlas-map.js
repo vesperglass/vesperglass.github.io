@@ -5,7 +5,7 @@
   const mapCard = container?.closest(".atlas-map-card");
   if (!container || !window.L) return;
 
-  const bounds = L.latLngBounds([[-280, -40], [1024, 1600]]);
+  const bounds = L.latLngBounds([[-370, -40], [1024, 1850]]);
   const map = L.map(container, {
     crs: L.CRS.Simple,
     zoomControl: false,
@@ -224,14 +224,23 @@
   const trainDepartureRoutePoints = [
     trainDockPoint,
     trainDockExitPoint,
-    { x: trainDockExitPoint.x + 62, y: trainDockExitPoint.y + 4 },
-    { x: 1515, y: 1160 },
-    { x: 1535, y: 1080 },
-    { x: 1450, y: 1000 },
+    { x: trainDockPoint.x + 108, y: trainDockPoint.y + 70 },
+    { x: trainDockPoint.x + 162, y: trainDockPoint.y + 105 },
+    { x: trainDockPoint.x + 216, y: trainDockPoint.y + 140 },
+    { x: trainDockPoint.x + 270, y: trainDockPoint.y + 175 },
+    { x: trainDockPoint.x + 324.5, y: trainDockPoint.y + 191.1 },
+    { x: trainDockPoint.x + 374.5, y: trainDockPoint.y + 177.7 },
+    { x: trainDockPoint.x + 411.1, y: trainDockPoint.y + 141.1 },
+    { x: trainDockPoint.x + 424.5, y: trainDockPoint.y + 91.1 },
+    { x: trainDockPoint.x + 411.1, y: trainDockPoint.y + 41.1 },
+    { x: trainDockPoint.x + 374.5, y: trainDockPoint.y + 4.5 },
+    { x: trainDockPoint.x + 324.5, y: trainDockPoint.y - 8.9 },
+    { x: trainDockPoint.x + 150, y: trainDockPoint.y - 8 },
+    { x: trainDockPoint.x - 20, y: trainDockPoint.y - 78 },
     { x: 1320, y: 970 },
     { x: 1200, y: 970 },
     { x: 850, y: 960 },
-    { x: 620, y: 940 },
+    { x: 620, y: 973 },
     trainRunUpPoint
   ];
   const trainPortalTargetSpeed = 180;
@@ -247,8 +256,7 @@
   let trainHeading = 0;
   let trainCurrentSpeed = 0;
   const trainMaxTurnRate = 0.72;
-  const trainMinTurnSpeed = 24;
-  const trainFullTurnSpeed = 92;
+  let trainMinTurnSpeed = 18;
   let trainReferenceZoom = null;
   let trainFrame = 0;
   let trainTimer = 0;
@@ -402,6 +410,7 @@
   };
   let trainArrivalPath = null;
   let trainDeparturePath = null;
+  let trainPortalPath = null;
   const pointOnTrainPath = (path, distance) => {
     let index = 1;
     while (index < path.samples.length - 1 && path.samples[index].distance < distance) index += 1;
@@ -410,6 +419,32 @@
     const segmentLength = next.distance - previous.distance || 1;
     const progress = Math.max(0, Math.min(1, (distance - previous.distance) / segmentLength));
     return L.point(previous.point.x + (next.point.x - previous.point.x) * progress, previous.point.y + (next.point.y - previous.point.y) * progress);
+  };
+  const trainHeadingAt = (path, distance) => {
+    const before = pointOnTrainPath(path, Math.max(0, distance - 6));
+    const after = pointOnTrainPath(path, Math.min(path.length, distance + 6));
+    return Math.atan2(after.y - before.y, after.x - before.x);
+  };
+  const trainCurvatureAt = (path, distance) => {
+    const beforeDistance = Math.max(0, distance - 6);
+    const afterDistance = Math.min(path.length, distance + 6);
+    const span = afterDistance - beforeDistance;
+    if (!span) return 0;
+    const beforeHeading = trainHeadingAt(path, beforeDistance);
+    const afterHeading = trainHeadingAt(path, afterDistance);
+    const difference = Math.atan2(Math.sin(afterHeading - beforeHeading), Math.cos(afterHeading - beforeHeading));
+    return Math.abs(difference) / span;
+  };
+  const trainSpeedAllowedByTurn = (speed, curvature) => {
+    if (!curvature) return speed;
+    let allowedSpeed = speed;
+    for (let iteration = 0; iteration < 8; iteration += 1) {
+      const steeringAuthority = clamp(allowedSpeed / trainMinTurnSpeed, 0, 1);
+      const nextAllowedSpeed = Math.min(speed, (trainMaxTurnRate * steeringAuthority) / curvature);
+      if (Math.abs(nextAllowedSpeed - allowedSpeed) < 0.01) break;
+      allowedSpeed = nextAllowedSpeed;
+    }
+    return allowedSpeed;
   };
   const scheduleTrain = (phase, delay, callback) => {
     trainPhase = phase;
@@ -440,45 +475,40 @@
     const element = trainMarker.getElement();
     element?.classList.add("is-moving");
     trainMarker.setOpacity(1);
-    const startedAt = performance.now();
-    let previousFrameAt = startedAt;
-    const duration = profile === "accelerate" || profile === "decelerate"
-      ? (2 * path.length / targetSpeed) * 1000
-      : 18000;
+    let previousFrameAt = performance.now();
+    let travelled = 0;
+    let elapsed = 0;
+    const startSpeed = profile === "accelerate" ? trainCurrentSpeed : targetSpeed;
+    const acceleration = path.length ? Math.max(0, (targetSpeed * targetSpeed - startSpeed * startSpeed) / (2 * path.length)) : 0;
     const animate = (now) => {
       if (motionPreference.matches) {
         trainFrame = 0;
         finishTrainAtStation();
         return;
       }
-      const progress = Math.min(1, (now - startedAt) / duration);
-      let distanceFraction;
-      if (profile === "accelerate") {
-        distanceFraction = progress * progress;
-        trainCurrentSpeed = targetSpeed * progress;
-      } else if (profile === "decelerate") {
-        distanceFraction = 2 * progress - progress * progress;
-        trainCurrentSpeed = targetSpeed * (1 - progress);
-      } else {
-        distanceFraction = progress < 0.5 ? 4 * progress * progress * progress : 1 - Math.pow(-2 * progress + 2, 3) / 2;
-        trainCurrentSpeed = (path.length * 6 * progress * (1 - progress)) / (duration / 1000);
-      }
-      const travelled = path.length * distanceFraction;
-      const nextPosition = pointOnTrainPath(path, travelled);
-      const aheadPosition = pointOnTrainPath(path, Math.min(path.length, travelled + 1.5));
-      const desiredHeading = Math.atan2(aheadPosition.y - nextPosition.y, aheadPosition.x - nextPosition.x);
-      const headingDifference = Math.atan2(Math.sin(desiredHeading - trainHeading), Math.cos(desiredHeading - trainHeading));
       const turnDt = Math.min(0.045, Math.max(0, (now - previousFrameAt) / 1000));
       previousFrameAt = now;
-      const steering = clamp((trainCurrentSpeed - trainMinTurnSpeed) / (trainFullTurnSpeed - trainMinTurnSpeed), 0, 1);
-      const turnRate = trainMaxTurnRate * steering;
-      trainHeading += clamp(headingDifference, -turnRate * turnDt, turnRate * turnDt);
-      trainWorldPosition = nextPosition;
+      elapsed += turnDt;
+      let requestedSpeed;
+      if (profile === "accelerate") {
+        requestedSpeed = Math.min(targetSpeed, startSpeed + acceleration * elapsed);
+      } else if (profile === "decelerate") {
+        requestedSpeed = targetSpeed * Math.sqrt(Math.max(0, 1 - travelled / path.length));
+      } else {
+        requestedSpeed = targetSpeed;
+      }
+      trainCurrentSpeed = trainSpeedAllowedByTurn(requestedSpeed, trainCurvatureAt(path, travelled));
+      travelled = Math.min(path.length, travelled + trainCurrentSpeed * turnDt);
+      // Position and sprite facing share the route tangent. Turn limits slow
+      // movement around curves, so the locomotive never visually lags behind.
+      trainWorldPosition = pointOnTrainPath(path, travelled);
+      trainHeading = trainHeadingAt(path, travelled);
       setTrainPosition();
-      if (progress < 1) {
+      if (travelled < path.length) {
         trainFrame = window.requestAnimationFrame(animate);
       } else {
         trainFrame = 0;
+        trainCurrentSpeed = profile === "accelerate" ? targetSpeed : 0;
         onComplete();
       }
     };
@@ -487,51 +517,13 @@
   const accelerateTrainIntoPortal = () => {
     if (motionPreference.matches) return;
     trainPhase = "portal-run";
-    const start = map.project(trainPointToLatLng(trainRunUpPoint), trainZoom);
-    const target = map.project(trainPointToLatLng(trainEntryPoint), trainZoom);
-    const dx = target.x - start.x;
-    const dy = target.y - start.y;
-    const distance = Math.hypot(dx, dy) || 1;
-    const startSpeed = Math.min(trainCurrentSpeed, trainPortalTargetSpeed - 1);
-    const acceleration = (trainPortalTargetSpeed * trainPortalTargetSpeed - startSpeed * startSpeed) / (2 * distance);
-    const startedAt = performance.now();
-    let previousFrameAt = startedAt;
-    trainMarker.getElement()?.classList.add("is-moving");
-    const animate = (now) => {
-      if (motionPreference.matches) {
-        trainFrame = 0;
-        finishTrainAtStation();
-        return;
-      }
-      const elapsed = Math.max(0, (now - startedAt) / 1000);
-      const travelled = Math.min(distance, startSpeed * elapsed + 0.5 * acceleration * elapsed * elapsed);
-      trainCurrentSpeed = Math.min(trainPortalTargetSpeed, startSpeed + acceleration * elapsed);
-      const desiredHeading = Math.atan2(dy, dx);
-      const headingDifference = Math.atan2(Math.sin(desiredHeading - trainHeading), Math.cos(desiredHeading - trainHeading));
-      const turnDt = Math.min(0.045, Math.max(0, (now - previousFrameAt) / 1000));
-      previousFrameAt = now;
-      const steering = clamp((trainCurrentSpeed - trainMinTurnSpeed) / (trainFullTurnSpeed - trainMinTurnSpeed), 0, 1);
-      const turnRate = trainMaxTurnRate * steering;
-      trainHeading += clamp(headingDifference, -turnRate * turnDt, turnRate * turnDt);
-      trainWorldPosition = L.point(start.x + (dx / distance) * travelled, start.y + (dy / distance) * travelled);
-      setTrainPosition();
-      if (travelled < distance) {
-        trainFrame = window.requestAnimationFrame(animate);
-      } else {
-        trainFrame = 0;
-        trainCurrentSpeed = trainPortalTargetSpeed;
-        finishTrainAtPortal();
-      }
-    };
-    trainFrame = window.requestAnimationFrame(animate);
+    animateTrainAlong(trainPortalPath, finishTrainAtPortal, { profile: "accelerate", targetSpeed: trainPortalTargetSpeed });
   };
   function startTrainArrival() {
     if (motionPreference.matches) return;
     trainPhase = "arriving";
     burstPortal("arrival");
-    const initialTrainPoint = pointOnTrainPath(trainArrivalPath, 0);
-    const firstTrackPoint = pointOnTrainPath(trainArrivalPath, Math.min(trainArrivalPath.length, 1.5));
-    trainHeading = Math.atan2(firstTrackPoint.y - initialTrainPoint.y, firstTrackPoint.x - initialTrainPoint.x);
+    trainHeading = trainHeadingAt(trainArrivalPath, 0);
     trainCurrentSpeed = trainPortalTargetSpeed;
     trainMarker.setOpacity(0);
     trainWorldPosition = map.project(trainPointToLatLng(trainEntryPoint), trainZoom);
@@ -814,6 +806,14 @@
   trainReferenceZoom = trainZoom;
   trainArrivalPath = projectTrainPath(trainArrivalRoutePoints);
   trainDeparturePath = projectTrainPath(trainDepartureRoutePoints);
+  trainPortalPath = projectTrainPath([trainRunUpPoint, trainEntryPoint]);
+  const routeMaxCurvature = [trainArrivalPath, trainDeparturePath, trainPortalPath].reduce((maximum, path) => {
+    for (let distance = 0; distance <= path.length; distance += 4) {
+      maximum = Math.max(maximum, trainCurvatureAt(path, distance));
+    }
+    return maximum;
+  }, 0);
+  if (routeMaxCurvature > 0) trainMinTurnSpeed = Math.min(trainMinTurnSpeed, trainMaxTurnRate / (routeMaxCurvature * 1.25));
   trainWorldPosition = map.project(trainPointToLatLng(trainEntryPoint), trainZoom);
   const trainDestination = map.project(trainPointToLatLng(trainDockPoint), trainZoom);
   trainHeading = Math.atan2(trainDestination.y - trainWorldPosition.y, trainDestination.x - trainWorldPosition.x);
