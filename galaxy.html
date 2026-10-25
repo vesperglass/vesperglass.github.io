@@ -28,6 +28,7 @@ galaxy_enabled: true
           <button class="galaxy-tool-button" id="galaxy-new-seed" type="button">New seed</button>
           <button class="galaxy-fullscreen-button" id="galaxy-fullscreen" type="button" aria-label="Open galaxy map fullscreen" aria-pressed="false">⛶ Fullscreen</button>
         </div>
+        {% include galaxy-map-key.html %}
         <button class="galaxy-tool-button" id="galaxy-back" type="button" hidden>← Galaxy</button>
         <p class="galaxy-map-status" id="galaxy-map-status" role="status" aria-live="polite">Charting nearby stars…</p>
       </div>
@@ -36,13 +37,5 @@ galaxy_enabled: true
     </div>
   </div>
 
-  <div class="galaxy-legend" aria-label="Star color legend">
-    <span class="galaxy-legend__title">STAR TYPES</span>
-    <span class="galaxy-legend__item"><i class="galaxy-legend__dot galaxy-legend__dot--blue"></i>Blue giant</span>
-    <span class="galaxy-legend__item"><i class="galaxy-legend__dot galaxy-legend__dot--white"></i>White star</span>
-    <span class="galaxy-legend__item"><i class="galaxy-legend__dot galaxy-legend__dot--yellow"></i>Yellow star</span>
-    <span class="galaxy-legend__item"><i class="galaxy-legend__dot galaxy-legend__dot--amber"></i>Amber star</span>
-    <span class="galaxy-legend__item"><i class="galaxy-legend__dot galaxy-legend__dot--red"></i>Red dwarf</span>
-  </div>
   <p class="galaxy-caption">This first chart is generated in your browser. The same seed and coordinates always produce the same system. Exploration changes are not saved yet.</p>
 </section>

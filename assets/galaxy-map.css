@@ -42,11 +42,29 @@
 .galaxy-deposits{display:grid;gap:5px;margin:0;padding:0;list-style:none}
 .galaxy-deposits li{display:flex;justify-content:space-between;gap:10px;padding:7px 9px;border:1px solid var(--line);border-radius:6px;color:var(--ink);font-size:10px;background:var(--map-control-hover,color-mix(in srgb,var(--white) 90%,var(--sea) 10%))}
 .galaxy-deposits strong{color:var(--sea-dark)}
-.galaxy-legend{display:flex;align-items:center;flex-wrap:wrap;gap:8px 15px;padding:11px 3px 0;color:var(--soft);font-size:9px}
-.galaxy-legend__title{margin-right:3px;color:var(--muted);font:700 8px/1 var(--sans);letter-spacing:.13em}
-.galaxy-legend__item{display:inline-flex;align-items:center;gap:6px}
-.galaxy-legend__dot{width:7px;height:7px;border-radius:50%;box-shadow:0 0 8px currentColor;background:currentColor}
-.galaxy-legend__dot--blue{color:#9bc8ff}.galaxy-legend__dot--white{color:#d7e7ff}.galaxy-legend__dot--yellow{color:#ffd783}.galaxy-legend__dot--amber{color:#ffad72}.galaxy-legend__dot--red{color:#f17979}
+.galaxy-map-key{position:relative;z-index:700;flex:none;color:#e3edf2;font:10px/1.3 var(--sans)}
+.galaxy-map-key summary{display:flex;align-items:center;gap:6px;min-height:31px;padding:0 10px;border:1px solid #59718480;border-radius:7px;color:#dce9ee;background:#132331;box-shadow:0 4px 16px #0005;cursor:pointer;list-style:none;white-space:nowrap}
+.galaxy-map-key summary::-webkit-details-marker{display:none}
+.galaxy-map-key summary:hover,.galaxy-map-key summary:focus-visible,.galaxy-map-key[open] summary{border-color:#a5dce5;color:#fff;background:#1d3545}
+.galaxy-map-key summary:focus-visible{outline:2px solid #94c9d8;outline-offset:2px}
+.galaxy-map-key__panel{position:absolute;top:calc(100% + 7px);right:0;display:grid;gap:10px;width:min(250px,calc(100vw - 24px));padding:12px;border:1px solid #9bb8cc55;border-radius:10px;color:#e3edf2;background:#07101bf2;box-shadow:0 12px 32px #0009;backdrop-filter:blur(14px)}
+.galaxy-map-key__filters{display:grid;gap:8px;margin:0;padding:0;border:0}
+.galaxy-map-key__filters legend,.galaxy-map-key__legend-title{margin-bottom:3px;color:#a9c0c9;font:700 8px/1.2 var(--sans);letter-spacing:.13em;text-transform:uppercase}
+.galaxy-map-key__filters label{display:flex;align-items:center;gap:8px;min-height:24px;color:#e3edf2;cursor:pointer}
+.galaxy-map-key__filters input{width:14px;height:14px;margin:0;accent-color:#8bdacb}
+.galaxy-map-key__filters input:focus-visible{outline:2px solid #94c9d8;outline-offset:2px}
+.galaxy-map-key__symbol{position:relative;display:inline-block;flex:none;width:12px;height:12px}
+.galaxy-map-key__symbol--star{border:1px solid #ffe2a8;border-radius:50%;background:#ffd783;box-shadow:0 0 7px #ffd783}
+.galaxy-map-key__symbol--planet{width:9px;height:9px;border:1px solid #d7f2ed;border-radius:50%;background:#85c7bc;box-shadow:0 0 6px #85c7bc}
+.galaxy-map-key__symbol--portal{border:2px solid #8fe9da;border-radius:50%;box-shadow:inset 0 0 0 2px #10202d,0 0 7px #56e0cf}
+.galaxy-map-key__legend{display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;padding-top:9px;border-top:1px solid #9bb8cc35;color:#c9d8dd;font-size:9px}
+.galaxy-map-key__legend-title{grid-column:1/-1;margin:0}
+.galaxy-map-key__legend>span:not(.galaxy-map-key__legend-title){display:flex;align-items:center;gap:6px;white-space:nowrap}
+.galaxy-map-key__dot{width:7px;height:7px;border-radius:50%;box-shadow:0 0 8px currentColor;background:currentColor}
+.galaxy-map-key__dot--o{color:#9bc8ff}.galaxy-map-key__dot--a{color:#d7e7ff}.galaxy-map-key__dot--f{color:#fff1d2}.galaxy-map-key__dot--g{color:#ffd783}.galaxy-map-key__dot--k{color:#ffad72}.galaxy-map-key__dot--m{color:#f17979}
+.galaxy-map-key__reset{justify-self:start;padding:5px 0;border:0;color:#9cddcf;background:transparent;font:700 9px/1 var(--sans);cursor:pointer}
+.galaxy-map-key__reset:hover,.galaxy-map-key__reset:focus-visible{color:#fff;text-decoration:underline}
+.galaxy-map-key__reset:focus-visible{outline:2px solid #94c9d8;outline-offset:3px}
 .galaxy-caption{margin:10px 2px 0;color:var(--muted);font-size:9px;line-height:1.5}
 .galaxy-dot{filter:drop-shadow(0 0 5px currentColor);animation:galaxy-star-glow 4.8s ease-in-out infinite alternate}
 .galaxy-dot--system-star{filter:drop-shadow(0 0 13px currentColor)}

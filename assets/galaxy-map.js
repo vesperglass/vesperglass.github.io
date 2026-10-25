@@ -13,6 +13,7 @@
   let seed = seedInput.value.trim() || "VESPERGLASS-01";
   let mode = "galaxy";
   let redrawTimer = 0;
+  let galaxyStarCount = 0;
   const map = L.map(mapElement, {
     crs: L.CRS.Simple,
     zoomControl: false,
@@ -27,7 +28,39 @@
   L.control.zoom({ position: "bottomright" }).addTo(map);
   map.setView([0, 0], 0);
   const starLayer = L.layerGroup().addTo(map);
-  const systemLayer = L.layerGroup().addTo(map);
+  const planetLayer = L.layerGroup().addTo(map);
+  const orbitLayer = L.layerGroup().addTo(map);
+  const portalLayer = L.layerGroup().addTo(map);
+  const filterInputs = Array.from(document.querySelectorAll("[data-galaxy-filter]"));
+  const filterReset = document.querySelector("[data-galaxy-filter-reset]");
+  const layerVisibility = {
+    stars: true,
+    planets: true,
+    portal: true
+  };
+  const syncLayerVisibility = () => {
+    const visibleLayers = [
+      [starLayer, layerVisibility.stars],
+      [planetLayer, layerVisibility.planets],
+      [orbitLayer, layerVisibility.planets],
+      [portalLayer, layerVisibility.portal]
+    ];
+    visibleLayers.forEach(([layer, visible]) => {
+      if (visible && !map.hasLayer(layer)) layer.addTo(map);
+      else if (!visible && map.hasLayer(layer)) map.removeLayer(layer);
+    });
+  };
+  const updateGalaxyStatus = () => {
+    if (mode !== "galaxy") return;
+    const starStatus = layerVisibility.stars ? galaxyStarCount.toLocaleString() + " stars charted in view" : "Stars hidden";
+    const portalStatus = layerVisibility.portal ? "Vesperglass portal marked" : "Vesperglass portal hidden";
+    mapStatus.textContent = starStatus + " · " + portalStatus;
+  };
+  const setLayerVisibility = (category, visible) => {
+    layerVisibility[category] = visible;
+    syncLayerVisibility();
+    updateGalaxyStatus();
+  };
   const cellSize = 190;
   const spectral = [
     { className: "o", label: "Blue giant", color: "#9bc8ff", temperature: [24000, 38000] },
@@ -208,7 +241,9 @@
   const renderGalaxy = () => {
     if (mode !== "galaxy") return;
     starLayer.clearLayers();
-    systemLayer.clearLayers();
+    planetLayer.clearLayers();
+    orbitLayer.clearLayers();
+    portalLayer.clearLayers();
     const bounds = map.getBounds();
     const minX = Math.floor(bounds.getWest() / cellSize) - 1;
     const maxX = Math.ceil(bounds.getEast() / cellSize) + 1;
@@ -239,23 +274,27 @@
       iconSize: [96, 78],
       iconAnchor: [48, 39]
     });
-    const portal = L.marker([0, 0], { icon: portalIcon, keyboard: true, title: "Portal to Vesperglass home", alt: "Portal to Vesperglass home", riseOnHover: true, zIndexOffset: 1500 }).addTo(starLayer);
+    const portal = L.marker([0, 0], { icon: portalIcon, keyboard: true, title: "Portal to Vesperglass home", alt: "Portal to Vesperglass home", riseOnHover: true, zIndexOffset: 1500 }).addTo(portalLayer);
     portal.bindTooltip("Portal to Vesperglass", { direction: "top", offset: [0, -34], opacity: 0.96 });
     portal.on("click", () => { window.location.href = "/sim/#vesperglass"; });
-    mapStatus.textContent = count.toLocaleString() + " stars charted in view · Vesperglass portal marked";
+    syncLayerVisibility();
+    galaxyStarCount = count;
+    updateGalaxyStatus();
     backButton.hidden = true;
   };
   const openSystem = (star) => {
     mode = "system";
-    systemLayer.clearLayers();
     starLayer.clearLayers();
+    planetLayer.clearLayers();
+    orbitLayer.clearLayers();
+    portalLayer.clearLayers();
     const planets = createPlanets(star);
     planets.forEach((planet) => {
       const orbitPoints = Array.from({ length: 65 }, (_, pointIndex) => {
         const angle = pointIndex / 64 * Math.PI * 2;
         return [star.y + Math.sin(angle) * planet.orbit, star.x + Math.cos(angle) * planet.orbit];
       });
-      L.polyline(orbitPoints, { color: "#a9cce5", weight: 1, opacity: 0.18, interactive: false, className: "galaxy-orbit" }).addTo(systemLayer);
+      L.polyline(orbitPoints, { color: "#a9cce5", weight: 1, opacity: 0.18, interactive: false, className: "galaxy-orbit" }).addTo(orbitLayer);
       const marker = L.circleMarker([planet.y, planet.x], {
         radius: planet.type.name === "Gas giant" ? 6.5 : 4.6,
         color: planet.type.color,
@@ -264,7 +303,7 @@
         fillColor: planet.type.color,
         fillOpacity: 0.94,
         className: "galaxy-dot galaxy-dot--planet"
-      }).addTo(systemLayer);
+      }).addTo(planetLayer);
       marker.bindTooltip(planet.name + " · " + planet.type.name, { direction: "top", offset: [0, -7], opacity: 0.94 });
       marker.on("click", () => showPlanet(planet, star));
     });
@@ -276,7 +315,8 @@
       fillColor: star.type.color,
       fillOpacity: 0.98,
       className: "galaxy-dot galaxy-dot--star galaxy-dot--system-star galaxy-dot--" + star.type.className
-    }).addTo(systemLayer);
+    }).addTo(starLayer);
+    syncLayerVisibility();
     starMarker.bindTooltip(star.name + " · " + star.type.label, { direction: "top", offset: [0, -12], opacity: 0.94 });
     showStar(star);
     backButton.hidden = false;
@@ -285,7 +325,10 @@
   };
   const returnToGalaxy = () => {
     mode = "galaxy";
-    systemLayer.clearLayers();
+    starLayer.clearLayers();
+    planetLayer.clearLayers();
+    orbitLayer.clearLayers();
+    portalLayer.clearLayers();
     selectedStar = null;
     clearInspector();
     map.setView([0, 0], 0);
@@ -348,6 +391,17 @@
   seedInput.addEventListener("keydown", (event) => { if (event.key === "Enter") applySeed(); });
   newSeedButton.addEventListener("click", makeNewSeed);
   backButton.addEventListener("click", returnToGalaxy);
+  filterInputs.forEach((input) => {
+    input.addEventListener("change", () => setLayerVisibility(input.dataset.galaxyFilter, input.checked));
+  });
+  filterReset?.addEventListener("click", () => {
+    filterInputs.forEach((input) => {
+      input.checked = true;
+      layerVisibility[input.dataset.galaxyFilter] = true;
+    });
+    syncLayerVisibility();
+    updateGalaxyStatus();
+  });
   map.on("moveend zoomend", scheduleGalaxyRender);
   clearInspector();
   renderGalaxy();
