@@ -114,7 +114,7 @@
     { id: "compass", file: "atlas-island-garden.png", width: 390, height: 390, sourceWidth: 1254, sourceHeight: 1254, floorX: 627, floorY: 850, alt: "Compass Garden, a glass greenhouse and flowering compass garden on its own floating landing island." },
     { id: "foundry", file: "atlas-island-foundry.png", width: 370, height: 370, sourceWidth: 1254, sourceHeight: 1254, floorX: 627, floorY: 875, alt: "Tideglass Foundry, a glass-and-bronze foundry with a copper chimney and glowing furnace on its own floating landing island." },
     { id: "portal", file: "atlas-island-gate.png", width: 360, height: 360, sourceWidth: 1254, sourceHeight: 1254, floorX: 627, floorY: 700, alt: "A luminous blue portal rises above its own glass-and-bronze floating island." },
-    { id: "station", file: "atlas-island-train-dock.png", width: 400, height: 400, sourceWidth: 1254, sourceHeight: 1254, floorX: 627, floorY: 600, alt: "A floating glass-and-bronze rail dock with an open berth beside a parallel boarding platform." }
+    { id: "station", file: "atlas-island-train-dock-cut-edge.png", width: 400, height: 400, sourceWidth: 1254, sourceHeight: 1254, floorX: 627, floorY: 600, alt: "A floating glass-and-bronze rail dock with a straight cutaway berth beside a sheer drop." }
   ];
   const islandOverlays = new Map();
   landmarkArtwork.forEach((artwork) => {
@@ -202,7 +202,7 @@
   const stationPlace = placeById.get("station");
   const trainDockPoint = {
     x: stationPlace.x + ((650 - stationArtwork.floorX) / stationArtwork.sourceWidth) * stationArtwork.width,
-    y: stationPlace.y + ((790 - stationArtwork.floorY) / stationArtwork.sourceHeight) * stationArtwork.height
+    y: stationPlace.y + ((760 - stationArtwork.floorY) / stationArtwork.sourceHeight) * stationArtwork.height
   };
   const trainArrivalRoutePoints = [
     trainEntryPoint,
@@ -210,16 +210,16 @@
     { x: 620, y: 940 },
     { x: 800, y: 950 },
     { x: 1080, y: 960 },
-    { x: 1200, y: 985 },
-    { x: 1280, y: 970 },
-    { x: 1340, y: 948 },
+    { x: 1200, y: 970 },
+    { x: 1280, y: 950 },
+    { x: 1340, y: 939 },
     trainDockPoint
   ];
   const trainDepartureRoutePoints = [
     trainDockPoint,
-    { x: 1340, y: 948 },
-    { x: 1280, y: 970 },
-    { x: 1200, y: 985 },
+    { x: 1340, y: 939 },
+    { x: 1280, y: 950 },
+    { x: 1200, y: 970 },
     { x: 1100, y: 980 },
     { x: 850, y: 960 },
     { x: 620, y: 940 },
