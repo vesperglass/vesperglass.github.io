@@ -23,7 +23,7 @@
 .sim-switcher__library span:last-child{display:none}
 .sim-switcher__library:focus-visible{outline:2px solid #9ed9d0;outline-offset:3px;border-radius:2px}
 .sim-scene--atlas .atlas-map-card{position:absolute;inset:0;overflow:hidden;border:0;border-radius:0;background:#050914;box-shadow:none}
-.sim-scene--atlas .atlas-map-toolbar{position:absolute;z-index:1400;top:14px;right:14px;display:flex;padding:0;border:0;pointer-events:none}
+.sim-scene--atlas .atlas-map-toolbar{position:absolute;z-index:1400;top:62px;right:14px;display:flex;padding:0;border:0;pointer-events:none}
 .sim-scene--atlas .atlas-map-toolbar>div:first-child{display:none}
 .sim-scene--atlas .atlas-map-toolbar>.atlas-map-actions{display:flex;pointer-events:auto}
 .sim-scene--atlas .atlas-map-frame{position:absolute;inset:0;display:block;padding:0;background:#050914}
@@ -55,10 +55,14 @@
   .sim-switcher{top:10px;left:10px;max-width:calc(100% - 112px);gap:4px;padding:4px}
   .sim-switcher__views button{gap:4px;min-height:27px;padding:5px 6px;font-size:9px}
   .sim-switcher__library{gap:4px;padding-left:6px;font-size:8px}
-  .sim-scene--atlas .atlas-map-toolbar{top:auto;right:10px;bottom:10px}
+  .sim-scene--atlas .atlas-map-toolbar{top:auto;right:52px;bottom:10px}
   .sim-scene--galaxy .galaxy-map-toolbar{top:68px;right:10px;max-width:calc(100% - 20px)}
   .sim-scene--galaxy .galaxy-map-status{right:10px;bottom:calc(36vh + 20px);max-width:calc(100% - 20px);font-size:9px}
   .sim-scene--galaxy .galaxy-inspector{left:10px;bottom:10px;width:min(285px,calc(100% - 20px));max-height:36vh;padding:11px}
+}
+@media(max-width:360px){
+  .sim-page .topbar{top:60px}
+  .sim-scene--galaxy .galaxy-map-toolbar{top:108px}
 }
 @media(min-width:681px) and (max-width:760px){.sim-scene--galaxy .galaxy-map-status{right:10px;bottom:calc(47vh + 20px);max-width:calc(100% - 20px)}}
 @media(prefers-reduced-motion:reduce){.sim-switcher__views button{transition:none}}
