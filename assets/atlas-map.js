@@ -213,6 +213,7 @@
   // far end before free-flight steering resumes.
   const trainDockRailStartPoint = stationPixelToTrainPoint(-60, 600);
   const trainDockRailEndPoint = stationPixelToTrainPoint(900, 1220);
+  const trainMinimumTurnRadius = 90;
   const sampleTrainBezier = (start, control1, control2, end, count = 25) => Array.from({ length: count }, (_, index) => {
     const t = index / (count - 1);
     const inverse = 1 - t;
@@ -237,12 +238,25 @@
   const portalHeadingX = trainEntryPoint.x - trainRunUpPoint.x;
   const portalHeadingY = trainEntryPoint.y - trainRunUpPoint.y;
   const portalHeadingLength = Math.hypot(portalHeadingX, portalHeadingY) || 1;
-  const trainDepartureApproachPoints = sampleTrainBezier(
+  const dockHeadingAngle = Math.atan2(dockHeadingY, dockHeadingX);
+  const departureArcRadius = trainMinimumTurnRadius + 10;
+  const trainDepartureBendPoint = {
+    x: trainDockRailEndPoint.x - departureArcRadius * Math.sin(dockHeadingAngle),
+    y: trainDockRailEndPoint.y + departureArcRadius * (Math.cos(dockHeadingAngle) + 1)
+  };
+  const trainDepartureFirstTurnPoints = sampleTrainBezier(
     trainDockRailEndPoint,
-    { x: trainDockRailEndPoint.x + (dockHeadingX / dockHeadingLength) * 400, y: trainDockRailEndPoint.y + (dockHeadingY / dockHeadingLength) * 400 },
-    { x: trainRunUpPoint.x - (portalHeadingX / portalHeadingLength) * 240, y: trainRunUpPoint.y - (portalHeadingY / portalHeadingLength) * 240 },
+    { x: trainDockRailEndPoint.x + (dockHeadingX / dockHeadingLength) * departureArcRadius, y: trainDockRailEndPoint.y + (dockHeadingY / dockHeadingLength) * departureArcRadius },
+    { x: trainDepartureBendPoint.x + departureArcRadius, y: trainDepartureBendPoint.y },
+    trainDepartureBendPoint
+  );
+  const trainDepartureFinalTurnPoints = sampleTrainBezier(
+    trainDepartureBendPoint,
+    { x: trainDepartureBendPoint.x - 220, y: trainDepartureBendPoint.y },
+    { x: trainRunUpPoint.x - (portalHeadingX / portalHeadingLength) * 220, y: trainRunUpPoint.y - (portalHeadingY / portalHeadingLength) * 220 },
     trainRunUpPoint
   );
+  const trainDepartureApproachPoints = trainDepartureFirstTurnPoints.slice(0, -1).concat(trainDepartureFinalTurnPoints);
   const trainPortalTargetSpeed = 180;
   const trainAcceleration = 36;
   const trainBrakeAcceleration = 54;
