@@ -1,1 +1,52 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1254" height="1254" viewBox="0 0 1254 1254" fill="none"><defs><linearGradient id="rock" x1="282" y1="770" x2="782" y2="1070" gradientUnits="userSpaceOnUse"><stop stop-color="#8293A4"/><stop offset=".34" stop-color="#394A5B"/><stop offset=".7" stop-color="#1D2D3C"/><stop offset="1" stop-color="#101A28"/></linearGradient><linearGradient id="bronze" x1="300" y1="705" x2="920" y2="930" gradientUnits="userSpaceOnUse"><stop stop-color="#E8D2A9"/><stop offset=".48" stop-color="#A87946"/><stop offset="1" stop-color="#66472F"/></linearGradient><linearGradient id="deck" x1="520" y1="690" x2="780" y2="930" gradientUnits="userSpaceOnUse"><stop stop-color="#B8CCCF"/><stop offset=".5" stop-color="#587784"/><stop offset="1" stop-color="#263F51"/></linearGradient><radialGradient id="portal" cx="0" cy="0" r="1" gradientTransform="matrix(0 177 -148 0 627 617)" gradientUnits="userSpaceOnUse"><stop stop-color="#D9FFFF" stop-opacity=".98"/><stop offset=".22" stop-color="#74E7F0" stop-opacity=".75"/><stop offset=".56" stop-color="#3B9ABF" stop-opacity=".38"/><stop offset="1" stop-color="#253967" stop-opacity=".08"/></radialGradient><radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="matrix(0 230 -256 0 627 647)" gradientUnits="userSpaceOnUse"><stop stop-color="#71DFF2" stop-opacity=".52"/><stop offset="1" stop-color="#64CBEA" stop-opacity="0"/></radialGradient><filter id="blur" x="241" y="380" width="772" height="516" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feGaussianBlur stdDeviation="36"/></filter><linearGradient id="waterfall" x1="500" y1="850" x2="535" y2="1082" gradientUnits="userSpaceOnUse"><stop stop-color="#50C8DF" stop-opacity=".58"/><stop offset="1" stop-color="#438BB6" stop-opacity="0"/></linearGradient></defs><ellipse cx="627" cy="838" rx="330" ry="138" fill="#43B9D5" fill-opacity=".12" filter="url(#blur)"/><path d="m272 775 354-134 355 134-354 161-355-161Z" fill="url(#bronze)"/><path d="m287 778 339-126 341 126-340 146-340-146Z" fill="url(#deck)" stroke="#E7D4AE" stroke-opacity=".78" stroke-width="9"/><path d="m348 779 278-103 278 103-278 120-278-120Z" fill="#1E3446" fill-opacity=".58" stroke="#A6D7DC" stroke-opacity=".62" stroke-width="4"/><path d="m304 788 322 139 323-139v28L627 981 304 816v-28Z" fill="#354A59" stroke="#BD9967" stroke-width="7"/><path d="m324 831 303 151-55 147-64-123-62 98-45-143-79 63 2-193Z" fill="url(#rock)"/><path d="m627 982 323-151-5 187-84 64-54-83-72 132-41-112-67 107V982Z" fill="url(#rock)"/><path d="m324 831 303 151m0 0 323-151" stroke="#D1AC78" stroke-opacity=".78" stroke-width="8"/><path d="m501 947 37 112 44-75 33 91 42-126M731 934l-35 104 55-20 34 81 54-107" stroke="#5FC9DD" stroke-opacity=".65" stroke-width="12"/><path d="m489 1081 33 155m43-142 15 160m143-165-14 166m62-204 7 177" stroke="url(#waterfall)" stroke-width="14" stroke-linecap="round"/><ellipse cx="627" cy="676" rx="238" ry="224" fill="url(#glow)"/><ellipse cx="627" cy="629" rx="121" ry="153" fill="url(#portal)"/><path d="M465 727V578c0-89 72-161 162-161s162 72 162 161v149" stroke="#523B2D" stroke-width="40" stroke-linecap="round"/><path d="M465 718V577c0-89 72-161 162-161s162 72 162 161v141" stroke="url(#bronze)" stroke-width="27" stroke-linecap="round"/><path d="M494 713V580c0-74 60-134 133-134s133 60 133 134v133" stroke="#82E7EE" stroke-width="8" stroke-linecap="round"/><path d="M509 706V583c0-65 53-118 118-118s118 53 118 118v123" stroke="#D2FFFF" stroke-opacity=".78" stroke-width="3"/><path d="M510 694c31-15 75-24 117-24s86 9 117 24v19H510v-19Z" fill="#95E7ED" fill-opacity=".24"/><path d="M465 700h-20m344 0h-20" stroke="#E5C998" stroke-width="12" stroke-linecap="round"/><circle cx="465" cy="577" r="15" fill="#A7F1F2" stroke="#E9D6B0" stroke-width="7"/><circle cx="789" cy="577" r="15" fill="#A7F1F2" stroke="#E9D6B0" stroke-width="7"/><path d="M627 405v-37m-17 19h34" stroke="#8BE8EF" stroke-width="7" stroke-linecap="round"/><path d="m378 781 25-10m468 11-26-11M627 921v24" stroke="#D7C29D" stroke-width="8" stroke-linecap="round"/><path d="m627 934 10 8-10 8-10-8 10-8Z" fill="#8FEAF0"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1254 1254" role="img" aria-labelledby="title desc">
+  <title id="title">Vesperglass Gate and portal train station</title>
+  <desc id="desc">A glowing cyan portal, a connected glass-and-bronze train station, and a short rail spur on one floating isometric island.</desc>
+  <defs>
+    <linearGradient id="rock" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#716d66"/><stop offset=".55" stop-color="#383a43"/><stop offset="1" stop-color="#222b38"/></linearGradient>
+    <linearGradient id="deck" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#dde9e4"/><stop offset=".32" stop-color="#aabbb4"/><stop offset="1" stop-color="#667d7d"/></linearGradient>
+    <linearGradient id="brass" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#f4d59a"/><stop offset=".42" stop-color="#c18a53"/><stop offset="1" stop-color="#694b35"/></linearGradient>
+    <linearGradient id="glass" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#83e6e1" stop-opacity=".88"/><stop offset=".5" stop-color="#367782" stop-opacity=".62"/><stop offset="1" stop-color="#182d41" stop-opacity=".92"/></linearGradient>
+    <radialGradient id="portal-glow" cx="50%" cy="45%" r="65%"><stop stop-color="#b6ffff" stop-opacity=".95"/><stop offset=".38" stop-color="#52dce2" stop-opacity=".68"/><stop offset=".78" stop-color="#2490a9" stop-opacity=".3"/><stop offset="1" stop-color="#17253c" stop-opacity=".95"/></radialGradient>
+    <radialGradient id="aura"><stop stop-color="#71eff1" stop-opacity=".42"/><stop offset="1" stop-color="#60dbe9" stop-opacity="0"/></radialGradient>
+    <filter id="soft-glow" x="-.5" y="-.5" width="2" height="2"><feGaussianBlur stdDeviation="12"/></filter>
+  </defs>
+  <ellipse cx="627" cy="1010" rx="470" ry="120" fill="#101b29" opacity=".35"/>
+  <path d="m153 775 474 201 474-201v53L627 1030 153 828z" fill="url(#rock)" stroke="#bd955f" stroke-width="11" stroke-linejoin="round"/>
+  <path d="m153 775 474 201 474-201L627 574z" fill="url(#deck)" stroke="url(#brass)" stroke-width="14" stroke-linejoin="round"/>
+  <path d="m189 775 438 184 438-184M232 775l395 166 395-166M286 775l341 144 341-144" fill="none" stroke="#e4d8b9" stroke-opacity=".23" stroke-width="4"/>
+  <path d="M628 601v352M228 776l797 0M370 684l512 216M881 684 374 896" fill="none" stroke="#5e8290" stroke-opacity=".22" stroke-width="3"/>
+  <g fill="#56d8dc" opacity=".9"><circle cx="210" cy="775" r="8"/><circle cx="1044" cy="775" r="8"/><circle cx="627" cy="960" r="8"/><circle cx="627" cy="590" r="7"/></g>
+  <path d="M463 772 627 697 791 772 627 841z" fill="#253447" stroke="#d6ad70" stroke-width="10"/>
+  <path d="M486 769 627 709 768 769 627 829z" fill="#111c2d" stroke="#64dce0" stroke-width="6"/>
+  <ellipse cx="627" cy="698" rx="181" ry="152" fill="url(#aura)" filter="url(#soft-glow)"/>
+  <path d="M470 724c-11-140 18-263 157-285 139 22 168 145 157 285" fill="none" stroke="#744f3b" stroke-width="38" stroke-linecap="round"/>
+  <path d="M470 724c-11-140 18-263 157-285 139 22 168 145 157 285" fill="none" stroke="url(#brass)" stroke-width="24" stroke-linecap="round"/>
+  <path d="M497 710c-7-115 19-218 130-239 111 21 137 124 130 239" fill="none" stroke="#77f1ed" stroke-width="8" stroke-linecap="round" opacity=".9"/>
+  <path d="M514 709c-5-100 17-191 113-210 96 19 118 110 113 210z" fill="url(#portal-glow)" stroke="#d5ffff" stroke-opacity=".82" stroke-width="3"/>
+  <path d="M542 710c-3-82 16-151 85-167 69 16 88 85 85 167" fill="none" stroke="#d2ffff" stroke-opacity=".55" stroke-width="3"/>
+  <path d="M559 702c1-70 19-124 68-137 49 13 67 67 68 137" fill="none" stroke="#52d9e0" stroke-opacity=".7" stroke-width="2"/>
+  <path d="M477 700h-25l-14 32h66M777 700h25l14 32h-66" fill="#9c7048" stroke="#f2d292" stroke-width="5" stroke-linejoin="round"/>
+  <g fill="#f9d88e" stroke="#754e35" stroke-width="3"><circle cx="470" cy="562" r="10"/><circle cx="784" cy="562" r="10"/><circle cx="627" cy="440" r="10"/></g>
+  <path d="M454 728h346v24H454zM482 752h290v17H482z" fill="url(#brass)" stroke="#f2d292" stroke-width="4"/>
+  <path d="m543 779 84-35 84 35-84 35z" fill="#303d4b" stroke="#d6b277" stroke-width="5"/>
+  <!-- Twin rails lead out of the gate to a quiet berth; a short branch serves the station canopy. -->
+  <path d="M617 638C633 704 656 795 679 904M637 632C653 698 676 789 699 898" fill="none" stroke="#50443f" stroke-width="12" stroke-linecap="round" opacity=".72"/>
+  <path d="M617 638C633 704 656 795 679 904M637 632C653 698 676 789 699 898" fill="none" stroke="url(#brass)" stroke-width="5" stroke-linecap="round"/>
+  <path d="m625 695 20-7m-7 56 20-7m-7 56 20-7m-7 56 20-7m-7 56 20-7" fill="none" stroke="#eed39a" stroke-width="8" stroke-linecap="round"/>
+  <path d="M659 791C714 762 771 739 824 746M668 809C723 780 780 757 833 764" fill="none" stroke="#4e443e" stroke-width="11" stroke-linecap="round" opacity=".7"/>
+  <path d="M659 791C714 762 771 739 824 746M668 809C723 780 780 757 833 764" fill="none" stroke="url(#brass)" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="m705 782 7 19m31-31 8 19m31-31 8 19" fill="none" stroke="#eed39a" stroke-width="6" stroke-linecap="round"/>
+  <!-- The small dock and station canopy sit on the eastern lobe of the same island. -->
+  <path d="m761 747 104-44 105 44-104 45z" fill="#273b49" stroke="#dbb979" stroke-width="8"/>
+  <path d="m783 743 82-35 82 35-82 36z" fill="#253a4a" stroke="#60dbe0" stroke-width="4"/>
+  <path d="m799 700 66-28 67 28v53l-67 29-66-29z" fill="url(#glass)" stroke="#d3aa70" stroke-width="6" stroke-linejoin="round"/>
+  <path d="m799 700 66-36 67 36-67 36z" fill="#b99a6a" stroke="#f5db9c" stroke-width="5" stroke-linejoin="round"/>
+  <path d="m813 700 52-27 52 27-52 27z" fill="#244959" stroke="#85dedb" stroke-width="3"/>
+  <path d="M819 713v34l46 21v-45M911 713v34l-46 21" fill="none" stroke="#e2ba79" stroke-width="4"/>
+  <path d="M844 741v-24q21-20 42 0v44l-21 10-21-10z" fill="#183247" stroke="#f0cb86" stroke-width="4"/>
+  <path d="M850 739v-17q15-14 30 0v34l-15 7-15-7z" fill="#5bdde0" opacity=".8"/>
+  <path d="M828 687V661h7v23m53-3v-26h7v30" fill="none" stroke="#d7ad71" stroke-width="5"/>
+  <path d="m821 655 10-8 10 8-10 8zM875 645l10-8 10 8-10 8z" fill="#79e9e6" stroke="#e2c182" stroke-width="2"/>
+  <path d="m832 771 34 14 34-14" fill="none" stroke="#f0d296" stroke-width="4"/>
+  <path d="M754 794 806 772m0 0 42-18" fill="none" stroke="#60dbe0" stroke-width="5" stroke-linecap="round" stroke-dasharray="2 10" opacity=".9"/>
+</svg>
