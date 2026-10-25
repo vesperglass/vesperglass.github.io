@@ -226,3 +226,12 @@
 .atlas-pin-float{display:grid;width:30px;height:30px;place-items:center;will-change:translate;animation:atlas-landmark-float var(--atlas-float-duration,7s) ease-in-out var(--atlas-float-delay,0s) infinite}
 @keyframes atlas-landmark-float{0%,100%{translate:0 0}50%{translate:0 var(--atlas-float-distance,-4px)}}
 @media(prefers-reduced-motion:reduce){.atlas-island-art,.atlas-pin-float{animation:none;will-change:auto;translate:none}}
+
+
+/* A portal locomotive shares the gate island's map-space drift. Its sprite sheet follows the courier's eight-view isometric style. */
+.leaflet-div-icon.atlas-train{position:relative;width:26px!important;height:26px!important;border:0;background:transparent;pointer-events:none}
+.atlas-train__art{position:absolute;inset:0;transform:scale(var(--train-map-scale,1));transform-origin:50% 82%;animation:atlas-landmark-float var(--atlas-float-duration,8.9s) ease-in-out var(--atlas-float-delay,-3.7s) infinite;transition:transform .14s linear}
+.atlas-train__sprite{position:absolute;inset:0;background-image:url("/assets/atlas-train-sprites.svg");background-repeat:no-repeat;background-size:104px 52px;filter:drop-shadow(0 1px 1.25px #020816b5)}
+.atlas-train.is-moving .atlas-train__sprite{animation:atlas-train-chug .46s ease-in-out infinite}
+@keyframes atlas-train-chug{0%,100%{filter:drop-shadow(0 1px 1.25px #020816b5)}50%{filter:drop-shadow(0 1.5px 2px #020816d9)}}
+@media(prefers-reduced-motion:reduce){.atlas-train__art{animation:none;will-change:auto;translate:none}.atlas-train.is-moving .atlas-train__sprite{animation:none}}
