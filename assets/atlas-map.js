@@ -257,7 +257,7 @@
   let trainWorldPosition = map.project(trainPointToLatLng(trainEntryPoint), trainZoom);
   let trainHeading = 0;
   let trainCurrentSpeed = 0;
-  const trainMaxTurnRate = 0.72;
+  const trainMaxTurnRate = 0.36;
   let trainMinTurnSpeed = 18;
   let trainReferenceZoom = null;
   let trainFrame = 0;
