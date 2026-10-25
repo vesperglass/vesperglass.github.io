@@ -214,7 +214,16 @@
         count += 1;
       }
     }
-    mapStatus.textContent = count.toLocaleString() + " stars charted in view";
+    const portalIcon = L.divIcon({
+      className: "galaxy-portal-marker",
+      html: '<span class="galaxy-portal-icon" aria-hidden="true"><svg viewBox="0 0 64 64" focusable="false"><circle class="galaxy-portal-aura" cx="32" cy="32" r="29"/><circle class="galaxy-portal-ring" cx="32" cy="32" r="22"/><circle class="galaxy-portal-core" cx="32" cy="32" r="16"/><path class="galaxy-portal-v" d="M25 23l7 18 7-18"/><circle class="galaxy-portal-star" cx="46" cy="17" r="2.5"/></svg></span><span class="galaxy-portal-label">VESPERGLASS</span>',
+      iconSize: [96, 78],
+      iconAnchor: [48, 39]
+    });
+    const portal = L.marker([0, 0], { icon: portalIcon, keyboard: true, title: "Portal to Vesperglass home", alt: "Portal to Vesperglass home", riseOnHover: true, zIndexOffset: 1500 }).addTo(starLayer);
+    portal.bindTooltip("Portal to Vesperglass", { direction: "top", offset: [0, -34], opacity: 0.96 });
+    portal.on("click", () => { window.location.href = "/"; });
+    mapStatus.textContent = count.toLocaleString() + " stars charted in view · Vesperglass portal marked";
     backButton.hidden = true;
   };
   const openSystem = (star) => {
