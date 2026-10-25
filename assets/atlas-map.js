@@ -201,9 +201,11 @@
   const stationArtwork = landmarkArtwork.find((artwork) => artwork.id === "station");
   const stationPlace = placeById.get("station");
   const trainDockPoint = {
+    // Berth outside the dock's long open edge instead of on its tiled deck.
     x: stationPlace.x + ((650 - stationArtwork.floorX) / stationArtwork.sourceWidth) * stationArtwork.width,
-    y: stationPlace.y + ((760 - stationArtwork.floorY) / stationArtwork.sourceHeight) * stationArtwork.height
+    y: stationPlace.y + ((900 - stationArtwork.floorY) / stationArtwork.sourceHeight) * stationArtwork.height
   };
+  const trainDockApproachPoint = { x: trainDockPoint.x - 54, y: trainDockPoint.y - 35 };
   const trainArrivalRoutePoints = [
     trainEntryPoint,
     trainRunUpPoint,
@@ -212,12 +214,14 @@
     { x: 1080, y: 960 },
     { x: 1200, y: 970 },
     { x: 1280, y: 950 },
-    { x: 1340, y: 939 },
+    { x: 1325, y: 974 },
+    trainDockApproachPoint,
     trainDockPoint
   ];
   const trainDepartureRoutePoints = [
     trainDockPoint,
-    { x: 1340, y: 939 },
+    trainDockApproachPoint,
+    { x: 1325, y: 974 },
     { x: 1280, y: 950 },
     { x: 1200, y: 970 },
     { x: 1100, y: 980 },
@@ -279,7 +283,7 @@
   const updateTrainArtworkScale = (zoom = map.getZoom()) => {
     if (trainReferenceZoom === null) return;
     const element = trainMarker.getElement();
-    if (element) element.style.setProperty("--train-map-scale", String(Math.pow(2, zoom - trainReferenceZoom)));
+    if (element) element.style.setProperty("--train-map-scale", String(1.65 * Math.pow(2, zoom - trainReferenceZoom)));
   };
   map.on("zoom", () => updateTrainArtworkScale(map.getZoom()));
   map.on("zoomanim", (event) => updateTrainArtworkScale(event.zoom));
