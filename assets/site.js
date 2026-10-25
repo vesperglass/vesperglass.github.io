@@ -8,7 +8,8 @@
     { title: "Research & Essays", url: "/research/", summary: "Source-led explorations that follow a question into history and meaning.", terms: "research essays studies culture history objects sky" },
     { title: "Orion: A Figure in the Stars", url: "/research/orion/", summary: "The western constellation, its stars, and a specific Māori seasonal tradition centered on Rigel/Puanga.", terms: "orion constellation astronomy hunter stars rigel puanga maori Māori iwi season" },
     { title: "The Hinge: A Quiet Axis", url: "/research/hinges/", summary: "Hinge mechanics, ancient examples, Latin cardo, and the hinge as a metaphor.", terms: "hinge mechanism pivot joint ancient history cardo metaphor poetry door louvre egypt roman" },
-    { title: "Universe Library", url: "/library/", summary: "An illustrated encyclopedia of Vesperglass, its places, materials, and journeys.", terms: "library encyclopedia lore atlas universe fiction reference book" },
+    { title: "Universe Guide", url: "/universe/", summary: "A guide to known space, materials, vessels, and the planned expedition cycle.", terms: "universe guide lore atlas galaxy worlds systems starshards stardust train expeditions" },
+    { title: "Universe Encyclopedia", url: "/library/", summary: "An illustrated reference to the places, materials, and journeys of Vesperglass.", terms: "library encyclopedia lore atlas universe fiction reference book" },
     { title: "Starshards & the Gate Train", url: "/library/starshards/", summary: "How starshards become stardust, and how the Gate train carries it between worlds.", terms: "starshard stardust fuel train portal gate tideglass foundry galaxy resource" }
   ];
   const dialog = document.getElementById("search-dialog");

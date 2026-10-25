@@ -234,31 +234,26 @@
 
       </a>
 
-      <p class="sidebar-intro">A small workshop for useful things and curious ideas.</p>
-
-      <div class="nav-label">THE NOTEBOOK</div>
+      <p class="sidebar-intro">A home base for exploring the worlds and stories of Vesperglass.</p>
 
       <nav class="side-nav">
+        <div class="nav-label">EXPLORE</div>
+        <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} class="active" aria-current="page"{% endif %}><span class="nav-icon">⌂</span>Vesperglass</a>
+        <a href="{{ '/sim/#galaxy' | relative_url }}"{% if page.url == '/sim/' or page.url == '/galaxy/' %} class="active" aria-current="page"{% endif %}><span class="nav-icon">✶</span>Galaxy map</a>
 
-        <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} class="active" aria-current="page"{% endif %}><span class="nav-icon">⌂</span>Welcome</a>
+        <div class="nav-label nav-label-spaced">UNIVERSE</div>
+        <a href="{{ '/universe/' | relative_url }}"{% if page.url == '/universe/' %} class="active" aria-current="page"{% endif %}><span class="nav-icon">✧</span>Universe Guide</a>
+        <a href="{{ '/library/' | relative_url }}"{% if page.url contains '/library/' %} class="active" aria-current="page"{% endif %}><span class="nav-icon">▤</span>Encyclopedia</a>
 
-        <a href="{{ '/about/' | relative_url }}"{% if page.url == '/about/' %} class="active" aria-current="page"{% endif %}><span class="nav-icon">◈</span>About</a>
-
+        <div class="nav-label nav-label-spaced">FIELD GUIDE</div>
+        <a href="{{ '/about/' | relative_url }}"{% if page.url == '/about/' %} class="active" aria-current="page"{% endif %}><span class="nav-icon">◈</span>About Vesperglass</a>
         <a href="{{ '/projects/' | relative_url }}"{% if page.url == '/projects/' %} class="active" aria-current="page"{% endif %}><span class="nav-icon">▦</span>Projects</a>
-
         <a href="{{ '/principles/' | relative_url }}"{% if page.url == '/principles/' %} class="active" aria-current="page"{% endif %}><span class="nav-icon">✳</span>How we work</a>
-
         <a href="{{ '/field-notes/' | relative_url }}"{% if page.url == '/field-notes/' %} class="active" aria-current="page"{% endif %}><span class="nav-icon">✎</span>Field notes</a>
-
-        <a href="{{ '/research/' | relative_url }}"{% if page.url contains '/research/' %} class="active" aria-current="page"{% endif %}><span class="nav-icon">✧</span>Research &amp; Essays</a>
-
-        <a href="{{ '/library/' | relative_url }}"{% if page.url contains '/library/' %} class="active" aria-current="page"{% endif %}><span class="nav-icon">▤</span>Universe Library</a>
-
-        <a href="{{ '/sim/' | relative_url }}"{% if page.url == '/sim/' or page.url == '/galaxy/' %} class="active" aria-current="page"{% endif %}><span class="nav-icon">✶</span>Sim Viewer</a>
-
+        <a href="{{ '/research/' | relative_url }}"{% if page.url contains '/research/' %} class="active" aria-current="page"{% endif %}><span class="nav-icon">⌕</span>Research &amp; Essays</a>
       </nav>
 
-      <div class="sidebar-bottom"><span class="status-dot"></span><span>Public notebook<br><small>Made of pages and curiosity</small></span></div>
+      <div class="sidebar-bottom"><span class="status-dot"></span><span>A universe in progress<br><small>Maps, lore, and field records</small></span></div>
 
     </aside>
 
@@ -282,7 +277,7 @@
 
       <main id="main" class="content-wrap">
 
-        <article class="article">
+        <article class="article{% if page.wide %} article--wide{% endif %}">
 
           <div class="eyebrow"><span class="eyebrow-line"></span>{{ page.kicker | default: 'THE FIELD GUIDE' | escape }}</div>
 
