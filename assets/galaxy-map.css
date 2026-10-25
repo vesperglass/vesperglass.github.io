@@ -106,6 +106,7 @@
 .galaxy-map-shell:fullscreen .galaxy-map-toolbar,.galaxy-map-shell:-webkit-full-screen .galaxy-map-toolbar{top:16px;left:16px;right:16px}
 .galaxy-map-shell:fullscreen .leaflet-bottom,.galaxy-map-shell:-webkit-full-screen .leaflet-bottom{bottom:12px}
 @media(max-width:680px){.article:has(.galaxy-explorer){padding-inline:clamp(14px,4vw,22px)}.galaxy-map-shell:fullscreen .galaxy-map-toolbar,.galaxy-map-shell:-webkit-full-screen .galaxy-map-toolbar{top:8px;left:8px;right:8px}}
+@media(max-width:360px){.galaxy-map-shell .galaxy-inspector{width:min(290px,calc(100% - 52px))}}
 
 /* In-page fullscreen fallback for browser contexts without native fullscreen access */
 .galaxy-map-shell.is-fullscreen{position:fixed;inset:0;z-index:9999;width:100vw;height:100vh;height:100dvh;margin:0;border:0;border-radius:0;background:#050914;box-shadow:none}

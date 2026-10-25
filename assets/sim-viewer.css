@@ -68,6 +68,7 @@
 @media(max-width:360px){
   .sim-page .topbar{top:60px}
   .sim-scene--galaxy .galaxy-map-toolbar{top:108px}
+  .sim-scene--galaxy .galaxy-inspector{width:min(290px,calc(100% - 52px))}
 }
 @media(min-width:681px) and (max-width:760px){.sim-scene--galaxy .galaxy-map-status{right:10px;bottom:calc(47vh + 20px);max-width:calc(100% - 20px)}}
 @media(prefers-reduced-motion:reduce){.sim-switcher__views button{transition:none}}
