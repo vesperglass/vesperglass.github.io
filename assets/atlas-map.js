@@ -280,7 +280,8 @@
   let trainCurrentSpeed = 0;
   const trainMaxTurnRate = 0.36;
   let trainMinTurnSpeed = 18;
-  let trainReferenceZoom = null;
+  // Keep the sprite tied to map zoom so it scales with platform artwork at every viewport size.
+  const trainArtworkReferenceZoom = -2;
   let trainFrame = 0;
   let trainTimer = 0;
   let trainBurstTimer = 0;
@@ -319,14 +320,11 @@
     setTrainFacing();
   };
   const updateTrainArtworkScale = (zoom = map.getZoom()) => {
-    if (trainReferenceZoom === null) return;
     const element = trainMarker.getElement();
-    const viewportScale = Math.max(0.55, Math.min(1, map.getSize().x / 1280));
-    if (element) element.style.setProperty("--train-map-scale", String(viewportScale * 1.65 * Math.pow(2, zoom - trainReferenceZoom)));
+    if (element) element.style.setProperty("--train-map-scale", String(1.65 * Math.pow(2, zoom - trainArtworkReferenceZoom)));
   };
   map.on("zoom", () => updateTrainArtworkScale(map.getZoom()));
   map.on("zoomanim", (event) => updateTrainArtworkScale(event.zoom));
-  map.on("resize", () => updateTrainArtworkScale(map.getZoom()));
   const soundButton = document.getElementById("atlas-sound");
   let portalSoundEnabled = false;
   let portalAudioContext = null;
@@ -843,7 +841,6 @@
   // after that, then keep this projection zoom fixed for every later pan/zoom.
   courierZoom = map.getZoom();
   trainZoom = courierZoom;
-  trainReferenceZoom = trainZoom;
   const trainArrivalApproachPath = projectTrainPath(trainArrivalApproachPoints);
   const trainArrivalRailPath = projectTrainPath([trainDockRailStartPoint, trainDockPoint]);
   const trainDepartureRailPath = projectTrainPath([trainDockPoint, trainDockRailEndPoint]);
