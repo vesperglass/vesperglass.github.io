@@ -116,6 +116,26 @@
 @media(max-width:680px){.article:has(.galaxy-explorer){padding-inline:clamp(14px,4vw,22px)}.galaxy-map-shell:fullscreen .galaxy-map-toolbar,.galaxy-map-shell:-webkit-full-screen .galaxy-map-toolbar{top:8px;left:8px;right:8px}}
 @media(max-width:360px){.galaxy-map-shell .galaxy-inspector{width:min(290px,calc(100% - 52px))}}
 
+/* Keep the standalone map page inside narrow viewports. The scrollable mobile
+   navigation has a wide intrinsic width, so let the single grid track shrink. */
+@media(max-width:760px){
+  .site-shell:has(.galaxy-explorer){grid-template-columns:minmax(0,1fr)}
+  .site-shell:has(.galaxy-explorer)>.sidebar,
+  .site-shell:has(.galaxy-explorer)>.main-column{min-width:0;width:100%}
+  .site-shell:has(.galaxy-explorer) .side-nav{min-width:0;max-width:100%}
+  .site-shell:has(.galaxy-explorer) .topbar{min-width:0;gap:8px;padding-inline:14px}
+  .site-shell:has(.galaxy-explorer) .crumb{min-width:0;gap:6px;letter-spacing:.06em;white-space:nowrap}
+}
+@media(max-width:360px){
+  .site-shell:has(.galaxy-explorer) .crumb>span:first-child,
+  .site-shell:has(.galaxy-explorer) .crumb-slash{display:none}
+  .site-shell:has(.galaxy-explorer) .content-wrap{padding-inline:14px}
+  .galaxy-map-toolbar{gap:6px}
+  .galaxy-seed-tools{max-width:calc(100% - 72px);gap:5px;padding:6px}
+  .galaxy-seed-field input{min-width:0}
+  .galaxy-map-key__panel{right:0}
+}
+
 /* In-page fullscreen fallback for browser contexts without native fullscreen access */
 .galaxy-map-shell.is-fullscreen{position:fixed;inset:0;z-index:9999;width:100vw;height:100vh;height:100dvh;margin:0;border:0;border-radius:0;background:#050914;box-shadow:none}
 .galaxy-map-shell.is-fullscreen #vesperglass-galaxy{height:100vh;height:100dvh;min-height:0;width:100%;border:0;border-radius:0}
