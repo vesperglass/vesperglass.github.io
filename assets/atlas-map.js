@@ -321,10 +321,12 @@
   const updateTrainArtworkScale = (zoom = map.getZoom()) => {
     if (trainReferenceZoom === null) return;
     const element = trainMarker.getElement();
-    if (element) element.style.setProperty("--train-map-scale", String(1.65 * Math.pow(2, zoom - trainReferenceZoom)));
+    const viewportScale = Math.max(0.55, Math.min(1, map.getSize().x / 1280));
+    if (element) element.style.setProperty("--train-map-scale", String(viewportScale * 1.65 * Math.pow(2, zoom - trainReferenceZoom)));
   };
   map.on("zoom", () => updateTrainArtworkScale(map.getZoom()));
   map.on("zoomanim", (event) => updateTrainArtworkScale(event.zoom));
+  map.on("resize", () => updateTrainArtworkScale(map.getZoom()));
   const soundButton = document.getElementById("atlas-sound");
   let portalSoundEnabled = false;
   let portalAudioContext = null;
