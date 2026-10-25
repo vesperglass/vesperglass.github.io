@@ -36,7 +36,7 @@
 .sim-scene--galaxy #vesperglass-galaxy::after{display:none}
 .sim-scene--galaxy .galaxy-map-toolbar{top:76px;left:auto;right:14px;max-width:min(590px,calc(100% - 28px));justify-content:flex-end;flex-wrap:wrap}
 .sim-scene--galaxy .galaxy-seed-tools{display:none}
-.sim-scene--galaxy .galaxy-map-status{position:absolute;right:14px;bottom:14px;z-index:650;max-width:min(380px,calc(100% - 28px))}
+.sim-scene--galaxy .galaxy-map-status{right:14px;bottom:94px;max-width:min(380px,calc(100% - 28px))}
 .sim-scene--galaxy .galaxy-inspector{left:14px;bottom:14px;max-height:min(47vh,390px);border-color:#a7c5cf42;color:#e3edf0;background:rgba(6,16,27,.88);box-shadow:0 12px 38px #0008}
 .sim-scene--galaxy .galaxy-inspector__mode{border-color:#9bb8cc40;color:#a9c6c7}
 .sim-scene--galaxy .galaxy-inspector h2{color:#f0eee4}
@@ -57,7 +57,8 @@
   .sim-switcher__library{gap:4px;padding-left:6px;font-size:8px}
   .sim-scene--atlas .atlas-map-toolbar{top:auto;right:10px;bottom:10px}
   .sim-scene--galaxy .galaxy-map-toolbar{top:68px;right:10px;max-width:calc(100% - 20px)}
-  .sim-scene--galaxy .galaxy-map-status{right:10px;bottom:10px;max-width:calc(100% - 20px);font-size:9px}
+  .sim-scene--galaxy .galaxy-map-status{right:10px;bottom:calc(36vh + 20px);max-width:calc(100% - 20px);font-size:9px}
   .sim-scene--galaxy .galaxy-inspector{left:10px;bottom:10px;width:min(285px,calc(100% - 20px));max-height:36vh;padding:11px}
 }
+@media(min-width:681px) and (max-width:760px){.sim-scene--galaxy .galaxy-map-status{right:10px;bottom:calc(47vh + 20px);max-width:calc(100% - 20px)}}
 @media(prefers-reduced-motion:reduce){.sim-switcher__views button{transition:none}}

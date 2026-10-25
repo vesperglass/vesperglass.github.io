@@ -18,7 +18,7 @@
 .galaxy-tool-button:hover,.galaxy-tool-button:focus-visible{border-color:#a5dce5;color:#fff;background:#1d3545}
 .galaxy-tool-button:focus-visible{outline:2px solid #94c9d8;outline-offset:2px}
 #galaxy-back{color:#f0d4a3;border-color:#bd986c75}
-.galaxy-map-status{align-self:start;margin:0;padding:9px 11px;border:1px solid #9bb8cc35;border-radius:9px;color:#d8e6ee;background:#07101bd9;box-shadow:0 8px 26px #0006;font:600 10px/1.2 var(--sans);backdrop-filter:blur(12px)}
+.galaxy-map-status{position:absolute;z-index:650;right:14px;bottom:94px;max-width:min(380px,calc(100% - 28px));margin:0;padding:9px 11px;border:1px solid #9bb8cc35;border-radius:9px;color:#d8e6ee;background:#07101bd9;box-shadow:0 8px 26px #0006;font:600 10px/1.2 var(--sans);backdrop-filter:blur(12px);pointer-events:none}
 .galaxy-inspector{display:flex;flex-direction:column;min-width:0;padding:20px;border:1px solid var(--line);border-radius:12px;color:var(--ink);background:var(--white);box-shadow:0 12px 32px #17231c0b}
 .galaxy-inspector__heading{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:1px 0 7px}
 .galaxy-inspector__eyebrow{margin:0;color:var(--sea-dark);font:750 8px/1.4 var(--sans);letter-spacing:.14em}
@@ -111,7 +111,8 @@ body:has(.galaxy-map-shell.is-fullscreen){overflow:hidden}
 .galaxy-workspace{display:block}
 .galaxy-map-shell{width:100%}
 .galaxy-inspector{position:absolute;z-index:650;left:14px;bottom:14px;width:min(290px,calc(100% - 28px));max-height:min(42vh,360px);overflow:auto;padding:15px;border-color:#b8c8ceaa;background:color-mix(in srgb,var(--white) 94%,transparent);backdrop-filter:blur(14px);box-shadow:0 14px 36px #0006}
-@media(max-width:680px){.galaxy-inspector{left:8px;bottom:8px;width:min(290px,calc(100% - 16px));max-height:38vh;padding:12px}.galaxy-inspector h2{font-size:21px}.galaxy-inspector__lead{margin-bottom:9px}.galaxy-fact{padding:6px 0}.galaxy-inspector__subhead{margin-top:10px}.galaxy-inspector__note{margin-top:7px;padding-top:7px;font-size:10px}}
+@media(max-width:760px){.galaxy-map-status{right:8px;bottom:calc(42vh + 20px);max-width:calc(100% - 16px)}}
+@media(max-width:680px){.galaxy-map-status{bottom:calc(38vh + 20px)}.galaxy-inspector{left:8px;bottom:8px;width:min(290px,calc(100% - 16px));max-height:38vh;padding:12px}.galaxy-inspector h2{font-size:21px}.galaxy-inspector__lead{margin-bottom:9px}.galaxy-fact{padding:6px 0}.galaxy-inspector__subhead{margin-top:10px}.galaxy-inspector__note{margin-top:7px;padding-top:7px;font-size:10px}}
 
 
 /* Homeward gate: a fixed portal at the galaxy origin. */
