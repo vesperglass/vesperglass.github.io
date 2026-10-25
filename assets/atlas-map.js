@@ -203,7 +203,7 @@
   const trainDockPoint = {
     // Berth outside the dock's long open edge instead of on its tiled deck.
     x: stationPlace.x + ((650 - stationArtwork.floorX) / stationArtwork.sourceWidth) * stationArtwork.width,
-    y: stationPlace.y + ((900 - stationArtwork.floorY) / stationArtwork.sourceHeight) * stationArtwork.height
+    y: stationPlace.y + ((1030 - stationArtwork.floorY) / stationArtwork.sourceHeight) * stationArtwork.height
   };
   const trainDockApproachPoint = { x: trainDockPoint.x - 54, y: trainDockPoint.y - 35 };
   const trainArrivalRoutePoints = [
