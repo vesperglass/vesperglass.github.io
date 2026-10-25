@@ -5,7 +5,7 @@
   const mapCard = container?.closest(".atlas-map-card");
   if (!container || !window.L) return;
 
-  const bounds = L.latLngBounds([[0, 0], [1024, 1536]]);
+  const bounds = L.latLngBounds([[-96, -40], [1024, 1600]]);
   const map = L.map(container, {
     crs: L.CRS.Simple,
     zoomControl: false,
@@ -59,8 +59,8 @@
     { id: "compass", floatDuration: 7.7, floatDelay: -2.8, x: 414, y: 717, name: "Compass Garden", glyph: "✳", route: "/principles/", section: "How we work", note: "A few steady habits for making useful things with care." },
     { id: "logbook", floatDuration: 8.6, floatDelay: -5.5, x: 1176, y: 190, name: "Observatory Logbook", glyph: "✎", route: "/field-notes/", section: "Field notes", note: "Short guides, observations, and details worth keeping." },
     { id: "archive", floatDuration: 6.9, floatDelay: -1.9, x: 175, y: 300, name: "Star Archive", glyph: "✧", route: "/research/", section: "Research & Essays", note: "Source-led explorations of the sky, objects, history, and ideas." },
-    { id: "portal", floatDuration: 9.2, floatDelay: -1.4, x: 130, y: 945, name: "The Vesperglass Gate", glyph: "◎", route: "/galaxy/", section: "Galaxy map", note: "A glowing gate carries the train out to distant stars." },
-    { id: "station", floatDuration: 7.8, floatDelay: -4.6, x: 1410, y: 945, name: "Vesperglass Train Station", glyph: "▤", route: "/galaxy/", section: "Galaxy map", note: "The train pauses here between trips through the galaxy." }
+    { id: "portal", floatDuration: 9.2, floatDelay: -1.4, x: 110, y: 970, name: "The Vesperglass Gate", glyph: "◎", route: "/galaxy/", section: "Galaxy map", note: "A glowing gate carries the train out to distant stars." },
+    { id: "station", floatDuration: 7.8, floatDelay: -4.6, x: 1430, y: 1000, name: "Vesperglass Train Station", glyph: "▤", route: "/galaxy/", section: "Galaxy map", note: "The train pauses here between trips through the galaxy." }
   ];
 
   const escapeHtml = (value) => {
@@ -113,8 +113,8 @@
     { id: "logbook", file: "atlas-island-observatory.png", width: 270, height: 270, sourceWidth: 1254, sourceHeight: 1254, floorX: 627, floorY: 900, alt: "Observatory Logbook, a glass tower with a copper dome and telescope on its own floating landing island." },
     { id: "compass", file: "atlas-island-garden.png", width: 390, height: 390, sourceWidth: 1254, sourceHeight: 1254, floorX: 627, floorY: 850, alt: "Compass Garden, a glass greenhouse and flowering compass garden on its own floating landing island." },
     { id: "foundry", file: "atlas-island-foundry.png", width: 370, height: 370, sourceWidth: 1254, sourceHeight: 1254, floorX: 627, floorY: 875, alt: "Tideglass Foundry, a glass-and-bronze foundry with a copper chimney and glowing furnace on its own floating landing island." },
-    { id: "portal", file: "atlas-island-gate.png", width: 190, height: 190, sourceWidth: 1254, sourceHeight: 1254, floorX: 627, floorY: 700, alt: "A luminous blue portal rises above its own glass-and-bronze floating island." },
-    { id: "station", file: "atlas-island-station.png", width: 190, height: 190, sourceWidth: 1254, sourceHeight: 1254, floorX: 627, floorY: 800, alt: "A separate glass-and-bronze floating train station with a covered platform and a single rail berth." }
+    { id: "portal", file: "atlas-island-gate.png", width: 280, height: 280, sourceWidth: 1254, sourceHeight: 1254, floorX: 627, floorY: 700, alt: "A luminous blue portal rises above its own glass-and-bronze floating island." },
+    { id: "station", file: "atlas-island-station.png", width: 280, height: 280, sourceWidth: 1254, sourceHeight: 1254, floorX: 627, floorY: 800, alt: "A separate glass-and-bronze floating train station with a covered platform and a single rail berth." }
   ];
   const islandOverlays = new Map();
   landmarkArtwork.forEach((artwork) => {
@@ -189,49 +189,52 @@
     zIndexOffset: 1200,
     opacity: 0.98
   }).addTo(map);
-  const trainEntryPoint = { x: 130, y: 945 };
-  const trainDockPoint = { x: 1410, y: 945 };
-  const trainRoutePoints = [
+  const portalPlace = placeById.get("portal");
+  const portalArtwork = landmarkArtwork.find((artwork) => artwork.id === "portal");
+  const portalCenterPoint = {
+    x: portalPlace.x + ((680 - portalArtwork.floorX) / portalArtwork.sourceWidth) * portalArtwork.width,
+    y: portalPlace.y + ((350 - portalArtwork.floorY) / portalArtwork.sourceHeight) * portalArtwork.height
+  };
+  const trainPortalPoint = { x: portalCenterPoint.x, y: portalCenterPoint.y + 25 };
+  const trainRunUpPoint = { x: 410, y: 940 };
+  const trainEntryPoint = trainPortalPoint;
+  const trainDockPoint = { x: 1430, y: 1000 };
+  const trainArrivalRoutePoints = [
     trainEntryPoint,
-    { x: 80, y: 920 },
-    { x: 65, y: 870 },
-    { x: 125, y: 840 },
-    { x: 280, y: 865 },
-    { x: 540, y: 880 },
-    { x: 800, y: 855 },
-    { x: 1080, y: 865 },
-    { x: 1320, y: 880 },
-    { x: 1460, y: 900 },
+    trainRunUpPoint,
+    { x: 620, y: 940 },
+    { x: 800, y: 950 },
+    { x: 1080, y: 960 },
+    { x: 1290, y: 980 },
+    { x: 1460, y: 920 },
     trainDockPoint
   ];
   const trainDepartureRoutePoints = [
     trainDockPoint,
-    { x: 1360, y: 990 },
-    { x: 1200, y: 1000 },
-    { x: 1000, y: 990 },
-    { x: 800, y: 950 },
-    { x: 600, y: 910 },
-    { x: 420, y: 880 },
-    { x: 260, y: 860 },
-    { x: 125, y: 840 },
-    { x: 65, y: 870 },
-    { x: 80, y: 920 },
-    trainEntryPoint
+    { x: 1400, y: 1040 },
+    { x: 1290, y: 1030 },
+    { x: 1100, y: 1000 },
+    { x: 850, y: 960 },
+    { x: 620, y: 940 },
+    trainRunUpPoint
   ];
+  const trainPortalTargetSpeed = 180;
   const trainPointToLatLng = (point) => [1024 - point.y, point.x];
   const trainIcon = L.divIcon({
     className: "atlas-train",
-    iconSize: [42, 42],
-    iconAnchor: [21, 34],
+    iconSize: [56, 56],
+    iconAnchor: [28, 46],
     html: '<span class="atlas-train__art" aria-hidden="true" style="--atlas-float-duration:7.8s;--atlas-float-delay:-4.6s;--atlas-float-distance:-4px"><span class="atlas-train__sprite"></span></span>'
   });
   let trainZoom = 0;
   let trainWorldPosition = map.project(trainPointToLatLng(trainEntryPoint), trainZoom);
   let trainHeading = 0;
+  let trainCurrentSpeed = 0;
   const trainMaxTurnRate = 0.72;
   let trainReferenceZoom = null;
   let trainFrame = 0;
   let trainTimer = 0;
+  let trainBurstTimer = 0;
   let trainPhase = "inside";
   const trainMarker = L.marker(trainPointToLatLng(trainEntryPoint), {
     icon: trainIcon,
@@ -240,14 +243,27 @@
     zIndexOffset: 80,
     opacity: 0
   }).addTo(map);
+  const portalBurstIcon = L.divIcon({
+    className: "atlas-portal-burst-marker",
+    iconSize: [280, 280],
+    iconAnchor: [140, 140],
+    html: '<span class="atlas-portal-burst-art" aria-hidden="true" style="--atlas-float-duration:' + portalPlace.floatDuration + 's;--atlas-float-delay:' + portalPlace.floatDelay + 's;--atlas-float-distance:-4px"><span class="atlas-portal-burst"><span class="atlas-portal-burst__ring atlas-portal-burst__ring--outer"></span><span class="atlas-portal-burst__ring atlas-portal-burst__ring--inner"></span><span class="atlas-portal-burst__flash"></span><span class="atlas-portal-burst__sparks"></span></span></span>'
+  });
+  const portalBurstMarker = L.marker(trainPointToLatLng(portalCenterPoint), {
+    icon: portalBurstIcon,
+    interactive: false,
+    keyboard: false,
+    zIndexOffset: 1500
+  }).addTo(map);
   const trainDirectionByOctant = [0, 1, 2, 3, 4, 7, 6, 5];
+  const trainSpriteCellSize = 56;
   const setTrainFacing = () => {
     const element = trainMarker.getElement();
     if (!element) return;
     const octant = ((Math.round(trainHeading / (Math.PI / 4)) % 8) + 8) % 8;
     const direction = trainDirectionByOctant[octant];
     const sprite = element.querySelector(".atlas-train__sprite");
-    if (sprite) sprite.style.backgroundPosition = (-(direction % 4) * 42) + "px " + (-Math.floor(direction / 4) * 42) + "px";
+    if (sprite) sprite.style.backgroundPosition = (-(direction % 4) * trainSpriteCellSize) + "px " + (-Math.floor(direction / 4) * trainSpriteCellSize) + "px";
   };
   const setTrainPosition = () => {
     trainMarker.setLatLng(map.unproject(trainWorldPosition, trainZoom));
@@ -326,6 +342,17 @@
     portal.classList.add("is-active");
     window.setTimeout(() => portal.classList.remove("is-active"), duration);
   };
+  const burstPortal = (direction) => {
+    const burst = portalBurstMarker.getElement()?.querySelector(".atlas-portal-burst");
+    if (burst) {
+      burst.classList.remove("is-bursting", "is-arrival", "is-departure");
+      void burst.offsetWidth;
+      burst.classList.add("is-bursting", `is-${direction}`);
+      window.setTimeout(() => burst.classList.remove("is-bursting", `is-${direction}`), 1450);
+    }
+    pulsePortal(1700);
+    playPortalSound(direction);
+  };
   const projectTrainPath = (points) => {
     const projected = points.map((point) => map.project(trainPointToLatLng(point), trainZoom));
     const samples = [];
@@ -375,6 +402,7 @@
   };
   const finishTrainAtStation = () => {
     trainPhase = "parked";
+    trainCurrentSpeed = 0;
     trainMarker.getElement()?.classList.remove("is-moving");
     trainWorldPosition = map.project(trainPointToLatLng(trainDockPoint), trainZoom);
     setTrainPosition();
@@ -382,21 +410,23 @@
   };
   const finishTrainAtPortal = () => {
     trainMarker.getElement()?.classList.remove("is-moving");
-    pulsePortal(1700);
-    playPortalSound("departure");
+    burstPortal("departure");
     trainMarker.setOpacity(0);
+    trainCurrentSpeed = 0;
     trainWorldPosition = map.project(trainPointToLatLng(trainEntryPoint), trainZoom);
     setTrainPosition();
     scheduleTrain("inside", 18000, startTrainArrival);
   };
-  const animateTrainAlong = (path, onComplete) => {
+  const animateTrainAlong = (path, onComplete, { profile = "smooth", targetSpeed = 0 } = {}) => {
     if (motionPreference.matches) return;
     const element = trainMarker.getElement();
     element?.classList.add("is-moving");
     trainMarker.setOpacity(1);
     const startedAt = performance.now();
     let previousFrameAt = startedAt;
-    const duration = 19000;
+    const duration = profile === "accelerate" || profile === "decelerate"
+      ? (2 * path.length / targetSpeed) * 1000
+      : 18000;
     const animate = (now) => {
       if (motionPreference.matches) {
         trainFrame = 0;
@@ -404,9 +434,20 @@
         return;
       }
       const progress = Math.min(1, (now - startedAt) / duration);
-      const eased = progress < 0.5 ? 4 * progress * progress * progress : 1 - Math.pow(-2 * progress + 2, 3) / 2;
-      const nextPosition = pointOnTrainPath(path, path.length * eased);
-      const aheadPosition = pointOnTrainPath(path, Math.min(path.length, path.length * eased + 1.5));
+      let distanceFraction;
+      if (profile === "accelerate") {
+        distanceFraction = progress * progress;
+        trainCurrentSpeed = targetSpeed * progress;
+      } else if (profile === "decelerate") {
+        distanceFraction = 2 * progress - progress * progress;
+        trainCurrentSpeed = targetSpeed * (1 - progress);
+      } else {
+        distanceFraction = progress < 0.5 ? 4 * progress * progress * progress : 1 - Math.pow(-2 * progress + 2, 3) / 2;
+        trainCurrentSpeed = (path.length * 6 * progress * (1 - progress)) / (duration / 1000);
+      }
+      const travelled = path.length * distanceFraction;
+      const nextPosition = pointOnTrainPath(path, travelled);
+      const aheadPosition = pointOnTrainPath(path, Math.min(path.length, travelled + 1.5));
       const desiredHeading = Math.atan2(aheadPosition.y - nextPosition.y, aheadPosition.x - nextPosition.x);
       const headingDifference = Math.atan2(Math.sin(desiredHeading - trainHeading), Math.cos(desiredHeading - trainHeading));
       const turnDt = Math.min(0.045, Math.max(0, (now - previousFrameAt) / 1000));
@@ -423,33 +464,79 @@
     };
     trainFrame = window.requestAnimationFrame(animate);
   };
+  const accelerateTrainIntoPortal = () => {
+    if (motionPreference.matches) return;
+    trainPhase = "portal-run";
+    const start = map.project(trainPointToLatLng(trainRunUpPoint), trainZoom);
+    const target = map.project(trainPointToLatLng(trainEntryPoint), trainZoom);
+    const dx = target.x - start.x;
+    const dy = target.y - start.y;
+    const distance = Math.hypot(dx, dy) || 1;
+    const startSpeed = Math.min(trainCurrentSpeed, trainPortalTargetSpeed - 1);
+    const acceleration = (trainPortalTargetSpeed * trainPortalTargetSpeed - startSpeed * startSpeed) / (2 * distance);
+    const startedAt = performance.now();
+    let previousFrameAt = startedAt;
+    trainMarker.getElement()?.classList.add("is-moving");
+    const animate = (now) => {
+      if (motionPreference.matches) {
+        trainFrame = 0;
+        finishTrainAtStation();
+        return;
+      }
+      const elapsed = Math.max(0, (now - startedAt) / 1000);
+      const travelled = Math.min(distance, startSpeed * elapsed + 0.5 * acceleration * elapsed * elapsed);
+      trainCurrentSpeed = Math.min(trainPortalTargetSpeed, startSpeed + acceleration * elapsed);
+      const desiredHeading = Math.atan2(dy, dx);
+      const headingDifference = Math.atan2(Math.sin(desiredHeading - trainHeading), Math.cos(desiredHeading - trainHeading));
+      const turnDt = Math.min(0.045, Math.max(0, (now - previousFrameAt) / 1000));
+      previousFrameAt = now;
+      trainHeading += clamp(headingDifference, -trainMaxTurnRate * turnDt, trainMaxTurnRate * turnDt);
+      trainWorldPosition = L.point(start.x + (dx / distance) * travelled, start.y + (dy / distance) * travelled);
+      setTrainPosition();
+      if (travelled < distance) {
+        trainFrame = window.requestAnimationFrame(animate);
+      } else {
+        trainFrame = 0;
+        trainCurrentSpeed = trainPortalTargetSpeed;
+        finishTrainAtPortal();
+      }
+    };
+    trainFrame = window.requestAnimationFrame(animate);
+  };
   function startTrainArrival() {
     if (motionPreference.matches) return;
     trainPhase = "arriving";
-    pulsePortal(1900);
-    playPortalSound("arrival");
+    burstPortal("arrival");
     const initialTrainPoint = pointOnTrainPath(trainArrivalPath, 0);
     const firstTrackPoint = pointOnTrainPath(trainArrivalPath, Math.min(trainArrivalPath.length, 1.5));
     trainHeading = Math.atan2(firstTrackPoint.y - initialTrainPoint.y, firstTrackPoint.x - initialTrainPoint.x);
-    trainMarker.setOpacity(1);
+    trainCurrentSpeed = trainPortalTargetSpeed;
+    trainMarker.setOpacity(0);
     trainWorldPosition = map.project(trainPointToLatLng(trainEntryPoint), trainZoom);
     setTrainPosition();
-    animateTrainAlong(trainArrivalPath, finishTrainAtStation);
+    trainBurstTimer = window.setTimeout(() => {
+      trainBurstTimer = 0;
+      if (motionPreference.matches || trainPhase !== "arriving") return;
+      animateTrainAlong(trainArrivalPath, finishTrainAtStation, { profile: "decelerate", targetSpeed: trainPortalTargetSpeed });
+    }, 260);
   }
   function startTrainDeparture() {
     if (motionPreference.matches) return;
     trainPhase = "departing";
-    animateTrainAlong(trainDeparturePath, finishTrainAtPortal);
+    animateTrainAlong(trainDeparturePath, accelerateTrainIntoPortal, { profile: "accelerate", targetSpeed: 125 });
   }
   const updateTrainMotion = () => {
     if (motionPreference.matches) {
       if (trainFrame) window.cancelAnimationFrame(trainFrame);
       if (trainTimer) window.clearTimeout(trainTimer);
+      if (trainBurstTimer) window.clearTimeout(trainBurstTimer);
       trainFrame = 0;
       trainTimer = 0;
+      trainBurstTimer = 0;
       trainPhase = "reduced";
       trainMarker.getElement()?.classList.remove("is-moving");
       trainMarker.setOpacity(1);
+      trainCurrentSpeed = 0;
       trainWorldPosition = map.project(trainPointToLatLng(trainDockPoint), trainZoom);
       setTrainPosition();
     } else if (trainPhase === "reduced") {
@@ -703,7 +790,7 @@
   courierZoom = map.getZoom();
   trainZoom = courierZoom;
   trainReferenceZoom = trainZoom;
-  trainArrivalPath = projectTrainPath(trainRoutePoints);
+  trainArrivalPath = projectTrainPath(trainArrivalRoutePoints);
   trainDeparturePath = projectTrainPath(trainDepartureRoutePoints);
   trainWorldPosition = map.project(trainPointToLatLng(trainEntryPoint), trainZoom);
   const trainDestination = map.project(trainPointToLatLng(trainDockPoint), trainZoom);
