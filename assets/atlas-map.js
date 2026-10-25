@@ -5,7 +5,7 @@
   const mapCard = container?.closest(".atlas-map-card");
   if (!container || !window.L) return;
 
-  const bounds = L.latLngBounds([[-112, -40], [1024, 1600]]);
+  const bounds = L.latLngBounds([[-280, -40], [1024, 1600]]);
   const map = L.map(container, {
     crs: L.CRS.Simple,
     zoomControl: false,
@@ -60,7 +60,7 @@
     { id: "logbook", floatDuration: 8.6, floatDelay: -5.5, x: 1176, y: 190, name: "Observatory Logbook", glyph: "✎", route: "/field-notes/", section: "Field notes", note: "Short guides, observations, and details worth keeping." },
     { id: "archive", floatDuration: 6.9, floatDelay: -1.9, x: 175, y: 300, name: "Star Archive", glyph: "✧", route: "/research/", section: "Research & Essays", note: "Source-led explorations of the sky, objects, history, and ideas." },
     { id: "portal", floatDuration: 9.2, floatDelay: -1.4, x: 110, y: 970, name: "The Vesperglass Gate", glyph: "◎", route: "/sim/#galaxy", section: "Galaxy map", note: "A glowing gate carries the train out to distant stars." },
-    { id: "station", floatDuration: 7.8, floatDelay: -4.6, x: 1390, y: 925, name: "Vesperglass Train Dock", glyph: "▤", route: "/sim/#galaxy", section: "Galaxy map", note: "The train pauses alongside the dock between trips through the galaxy." }
+    { id: "station", floatDuration: 7.8, floatDelay: -4.6, x: 1390, y: 985, name: "Vesperglass Train Dock", glyph: "▤", route: "/sim/#galaxy", section: "Galaxy map", note: "The train pauses alongside the dock between trips through the galaxy." }
   ];
 
   const escapeHtml = (value) => {
@@ -205,7 +205,10 @@
     x: stationPlace.x + ((650 - stationArtwork.floorX) / stationArtwork.sourceWidth) * stationArtwork.width,
     y: stationPlace.y + ((1030 - stationArtwork.floorY) / stationArtwork.sourceHeight) * stationArtwork.height
   };
+  // The invisible dock lane is straight through the berth. The train arrives
+  // and departs on the same southeast heading before the route bends away.
   const trainDockApproachPoint = { x: trainDockPoint.x - 54, y: trainDockPoint.y - 35 };
+  const trainDockExitPoint = { x: trainDockPoint.x + 54, y: trainDockPoint.y + 35 };
   const trainArrivalRoutePoints = [
     trainEntryPoint,
     trainRunUpPoint,
@@ -220,11 +223,13 @@
   ];
   const trainDepartureRoutePoints = [
     trainDockPoint,
-    trainDockApproachPoint,
-    { x: 1325, y: 974 },
-    { x: 1280, y: 950 },
+    trainDockExitPoint,
+    { x: trainDockExitPoint.x + 62, y: trainDockExitPoint.y + 4 },
+    { x: 1515, y: 1160 },
+    { x: 1535, y: 1080 },
+    { x: 1450, y: 1000 },
+    { x: 1320, y: 970 },
     { x: 1200, y: 970 },
-    { x: 1100, y: 980 },
     { x: 850, y: 960 },
     { x: 620, y: 940 },
     trainRunUpPoint
@@ -242,6 +247,8 @@
   let trainHeading = 0;
   let trainCurrentSpeed = 0;
   const trainMaxTurnRate = 0.72;
+  const trainMinTurnSpeed = 24;
+  const trainFullTurnSpeed = 92;
   let trainReferenceZoom = null;
   let trainFrame = 0;
   let trainTimer = 0;
@@ -463,7 +470,9 @@
       const headingDifference = Math.atan2(Math.sin(desiredHeading - trainHeading), Math.cos(desiredHeading - trainHeading));
       const turnDt = Math.min(0.045, Math.max(0, (now - previousFrameAt) / 1000));
       previousFrameAt = now;
-      trainHeading += clamp(headingDifference, -trainMaxTurnRate * turnDt, trainMaxTurnRate * turnDt);
+      const steering = clamp((trainCurrentSpeed - trainMinTurnSpeed) / (trainFullTurnSpeed - trainMinTurnSpeed), 0, 1);
+      const turnRate = trainMaxTurnRate * steering;
+      trainHeading += clamp(headingDifference, -turnRate * turnDt, turnRate * turnDt);
       trainWorldPosition = nextPosition;
       setTrainPosition();
       if (progress < 1) {
@@ -501,7 +510,9 @@
       const headingDifference = Math.atan2(Math.sin(desiredHeading - trainHeading), Math.cos(desiredHeading - trainHeading));
       const turnDt = Math.min(0.045, Math.max(0, (now - previousFrameAt) / 1000));
       previousFrameAt = now;
-      trainHeading += clamp(headingDifference, -trainMaxTurnRate * turnDt, trainMaxTurnRate * turnDt);
+      const steering = clamp((trainCurrentSpeed - trainMinTurnSpeed) / (trainFullTurnSpeed - trainMinTurnSpeed), 0, 1);
+      const turnRate = trainMaxTurnRate * steering;
+      trainHeading += clamp(headingDifference, -turnRate * turnDt, turnRate * turnDt);
       trainWorldPosition = L.point(start.x + (dx / distance) * travelled, start.y + (dy / distance) * travelled);
       setTrainPosition();
       if (travelled < distance) {
