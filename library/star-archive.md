@@ -10,14 +10,14 @@ permalink: /library/star-archive/
 
 <figure class="book-plate">
   <img src="{{ '/assets/library/places/archive-interior.webp' | relative_url }}" alt="A quiet circular archive lined with tall shelves of dark teal books, a reading table beneath a glass lamp and a small archivist." fetchpriority="high">
-  <figcaption><span>PLATE I</span> An imagined reading room arranged around a table for shared consultation.</figcaption>
+  <figcaption><span>PLATE I</span> A reading room arranged around a table for shared consultation.</figcaption>
 </figure>
 
 <div class="entry-byline"><span>SUBJECT &nbsp; MAPS · BOOKS · MEMORY</span><span>PLACE &nbsp; Vesperglass atlas</span></div>
 
 ## The place in the atlas
 
-Star Archive is a named destination in the Vesperglass atlas. Its name establishes a connection to stored knowledge about stars, though the specific books, maps and records it contains have not been cataloged in the setting.
+Star Archive is a destination in Vesperglass and a repository for knowledge of the stars. The surviving catalog does not enumerate its books, maps, or keepers.
 
 <figure class="specimen-plate place-plate">
   <img src="{{ '/assets/library/places/archive-cutaway.webp' | relative_url }}" alt="Axonometric cutaway of a circular archive with radial stacks, mezzanine balcony, central reading table and a domed skylight." loading="lazy">
@@ -26,28 +26,28 @@ Star Archive is a named destination in the Vesperglass atlas. Its name establish
 
 ## An architectural reading
 
-The circular arrangement in these plates is an interpretation: visitors can move from shelves to a central reading table without losing sight of the room’s overall shape. A skylight and chart cabinet give the archive a visual relationship to the sky, while keeping it distinct from the Observatory’s act of looking outward.
+The circular arrangement allows a reader to move from the shelves to a central table without losing sight of the room’s shape. A skylight and chart cabinet connect the archive to the sky, while distinguishing it from the Observatory’s work of looking outward. The exact plan is not recorded.
 
-<aside class="field-note"><span class="field-note-mark" aria-hidden="true">✳</span><p><strong>What is recorded</strong><br>Star Archive is an atlas destination. The collection, catalog and keepers have not yet been described as canon.</p></aside>
+<aside class="field-note"><span class="field-note-mark" aria-hidden="true">✳</span><p><strong>What is recorded</strong><br>Star Archive keeps knowledge of the sky. Its collection, catalog and keepers are not described in the surviving accounts.</p></aside>
 
 ## Proposed catalog card · *The Unfixed Meridian*
 
-This is an invented catalog example, not a chart known to exist in the setting and not a record from the Galaxy generator. Both the title and the imagined object are interpretation.
+The following catalog card is a proposed entry for a chart called *The Unfixed Meridian*. No surviving index confirms the title or identifies an associated star system.
 
 <dl class="folio-glossary">
   <div><dt>Proposed title</dt><dd><em>The Unfixed Meridian</em></dd></div>
-  <div><dt>Imagined scope</dt><dd>A teaching sheet for comparing broad bands of light across an otherwise unmarked sky. It names no star system, planet, coordinate, or route.</dd></div>
+  <div><dt>Proposed scope</dt><dd>A teaching sheet for comparing broad bands of light across an otherwise unmarked sky. It names no star system, planet, coordinate, or route.</dd></div>
   <div><dt>Suggested annotation</dt><dd>A keeper might note the date, instrument used, and what appeared steady or uncertain, then leave space for another observer's comparison. This is a proposed record-keeping convention, not established Archive procedure.</dd></div>
 </dl>
 
-As a reference idea, the card connects the Archive's imagined collection with the Observatory's interpretive logbook without claiming that either records observations from the current Galaxy view. [Read the Observatory folio →]({{ '/library/observatory/' | relative_url }})
+As a reference proposal, the card connects the Archive collection with the Observatory's logbook without assigning either record to a named star. [Read the Observatory folio →]({{ '/library/observatory/' | relative_url }})
 
 ## At a glance
 
 <dl class="folio-glossary">
   <div><dt>Atlas name</dt><dd>Star Archive</dd></div>
-  <div><dt>Established</dt><dd>Star Archive is an atlas destination. The collection, catalog and keepers have not yet been described as canon.</dd></div>
-  <div><dt>Plate note</dt><dd>The interiors, furnishings and architectural plans on this page are interpretive reconstructions. They are not measured plans of the atlas artwork.</dd></div>
+  <div><dt>Established</dt><dd>Star Archive keeps knowledge of the sky. Its collection, catalog and keepers are not described in the surviving accounts.</dd></div>
+  <div><dt>Plan note</dt><dd>The precise dimensions and room arrangement are not established by the surviving accounts.</dd></div>
 </dl>
 
 <blockquote>The sky passes; a record gives its patterns a place to remain.</blockquote>

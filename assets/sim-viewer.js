@@ -15,7 +15,7 @@
       if (button.dataset.simNavigate === view) button.setAttribute("aria-current", "page");
       else button.removeAttribute("aria-current");
     });
-    label.textContent = view === "galaxy" ? "EXPLORATION · PROCEDURAL GALAXY" : "HOME · THE ELSEWHERE ATLAS";
+    label.textContent = view === "galaxy" ? "THE GALAXY ATLAS" : "HOME · THE VESPERGLASS ATLAS";
     document.documentElement.dataset.simView = view;
     if (updateLocation) {
       const hash = view === "galaxy" ? "#galaxy" : "#vesperglass";

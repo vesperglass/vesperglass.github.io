@@ -10,14 +10,14 @@ permalink: /library/compass-garden/
 
 <figure class="book-plate">
   <img src="{{ '/assets/library/places/garden-interior.webp' | relative_url }}" alt="A keeper tends pale starflowers and luminous ferns in a glass conservatory around a compass rose set into dark stone." fetchpriority="high">
-  <figcaption><span>PLATE I</span> A garden interior imagined beneath curved panes of teal glass.</figcaption>
+  <figcaption><span>PLATE I</span> A garden interior beneath curved panes of teal glass.</figcaption>
 </figure>
 
 <div class="entry-byline"><span>SUBJECT &nbsp; GLASSHOUSE · PLANTING · ORIENTATION</span><span>PLACE &nbsp; Vesperglass atlas</span></div>
 
 ## The place in the atlas
 
-Compass Garden is a named platform in the Vesperglass atlas. The garden identity is established by its place and artwork; the species it might hold, how it is maintained, and whether anyone tends it are not specified.
+Compass Garden is a named glasshouse on one of Vesperglass's outer platforms. No surviving account lists its plants, says how they are maintained, or names its keepers.
 
 <figure class="specimen-plate place-plate">
   <img src="{{ '/assets/library/places/garden-plan.webp' | relative_url }}" alt="A top-down garden plan with radial planting beds, curved paths, central compass rose, water basin and workbench." loading="lazy">
@@ -26,16 +26,16 @@ Compass Garden is a named platform in the Vesperglass atlas. The garden identity
 
 ## An architectural reading
 
-The plate treats the compass as an organizing feature rather than a claim that the garden points toward a known destination. Radial beds and curved paths keep a clear route through the conservatory, while the glass enclosure suggests a protected growing place suspended in open space. The planting plan is a concept drawing.
+The compass rose marks the garden's central point of orientation, with beds and curved paths arranged around it. No survey identifies a bearing toward a particular destination or records the full planting plan.
 
-<aside class="field-note"><span class="field-note-mark" aria-hidden="true">✳</span><p><strong>What is recorded</strong><br>Compass Garden is an atlas destination. Its plants, keepers and role in any future gathering system remain undecided.</p></aside>
+<aside class="field-note"><span class="field-note-mark" aria-hidden="true">✳</span><p><strong>What is recorded</strong><br>Compass Garden is a glasshouse among the outer platforms. The surviving accounts do not name its plants or keepers.</p></aside>
 
 ## At a glance
 
 <dl class="folio-glossary">
-  <div><dt>Atlas name</dt><dd>Compass Garden</dd></div>
-  <div><dt>Established</dt><dd>Compass Garden is an atlas destination. Its plants, keepers and role in any future gathering system remain undecided.</dd></div>
-  <div><dt>Plate note</dt><dd>The interiors, furnishings and architectural plans on this page are interpretive reconstructions. They are not measured plans of the atlas artwork.</dd></div>
+  <div><dt>Place name</dt><dd>Compass Garden</dd></div>
+  <div><dt>Established</dt><dd>Compass Garden is a glasshouse among the outer platforms. The surviving accounts do not name its plants or keepers.</dd></div>
+  <div><dt>Plan note</dt><dd>The precise dimensions and room arrangement are not established by the surviving accounts.</dd></div>
 </dl>
 
 <blockquote>A living landmark for finding one’s bearings.</blockquote>

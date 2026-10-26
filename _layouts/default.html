@@ -52,15 +52,15 @@
 
   <link rel="stylesheet" href="{{ '/assets/leaflet/leaflet.css' | relative_url }}?v=1.9.4">
 
-  <link rel="stylesheet" href="{{ '/assets/galaxy-map.css' | relative_url }}?v=20261025-game-ui-16">
+  <link rel="stylesheet" href="{{ '/assets/galaxy-map.css' | relative_url }}?v=20261025-chart-ui-17">
 
   {% endif %}
 
   {% if page.sim_enabled %}
   <link rel="stylesheet" href="{{ '/assets/leaflet/leaflet.css' | relative_url }}?v=1.9.4">
   <link rel="stylesheet" href="{{ '/assets/atlas-map.css' | relative_url }}?v=20261025-encyclopedia-folios-1">
-  <link rel="stylesheet" href="{{ '/assets/galaxy-map.css' | relative_url }}?v=20261025-game-ui-16">
-  <link rel="stylesheet" href="{{ '/assets/sim-viewer.css' | relative_url }}?v=20261025-game-ui-9">
+  <link rel="stylesheet" href="{{ '/assets/galaxy-map.css' | relative_url }}?v=20261025-chart-ui-17">
+  <link rel="stylesheet" href="{{ '/assets/sim-viewer.css' | relative_url }}?v=20261025-chart-ui-10">
   {% endif %}
 
   <script defer src="{{ '/assets/site.js' | relative_url }}?v=20261025-encyclopedia-folios-1"></script>
@@ -77,14 +77,14 @@
 
   <script defer src="{{ '/assets/leaflet/leaflet.js' | relative_url }}?v=1.9.4"></script>
 
-  <script defer src="{{ '/assets/galaxy-map.js' | relative_url }}?v=20261025-game-ui-6"></script>
+  <script defer src="{{ '/assets/galaxy-map.js' | relative_url }}?v=20261025-chart-ui-7"></script>
 
   {% endif %}
 
   {% if page.sim_enabled %}
   <script defer src="{{ '/assets/leaflet/leaflet.js' | relative_url }}?v=1.9.4"></script>
   <script defer src="{{ '/assets/atlas-map.js' | relative_url }}?v=20261025-train-half-1"></script>
-  <script defer src="{{ '/assets/galaxy-map.js' | relative_url }}?v=20261025-game-ui-6"></script>
+  <script defer src="{{ '/assets/galaxy-map.js' | relative_url }}?v=20261025-chart-ui-7"></script>
   <script defer src="{{ '/assets/sim-viewer.js' | relative_url }}?v=20261025-viewer-1"></script>
   {% endif %}
 
@@ -239,7 +239,7 @@
       <nav class="side-nav">
         <div class="nav-label">EXPLORE</div>
         <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} class="active" aria-current="page"{% endif %}><span class="nav-icon">⌂</span>Vesperglass</a>
-        <a href="{{ '/sim/#galaxy' | relative_url }}"{% if page.url == '/sim/' or page.url == '/galaxy/' %} class="active" aria-current="page"{% endif %}><span class="nav-icon">✶</span>Galaxy map</a>
+        <a href="{{ '/explore/#galaxy' | relative_url }}"{% if page.url == '/explore/' or page.url == '/galaxy/' %} class="active" aria-current="page"{% endif %}><span class="nav-icon">✶</span>Galaxy map</a>
 
         <div class="nav-label nav-label-spaced">READ THE UNIVERSE</div>
         <a href="{{ '/universe/' | relative_url }}"{% if page.url == '/universe/' %} class="active" aria-current="page"{% endif %}><span class="nav-icon">✧</span>Universe Guide</a>
@@ -247,7 +247,7 @@
 
       </nav>
 
-      <div class="sidebar-bottom"><span class="status-dot"></span><span>A universe in progress<br><small>Maps, lore, and field records</small></span></div>
+      <div class="sidebar-bottom"><span class="status-dot"></span><span>A world still being charted<br><small>Maps, records, and field notes</small></span></div>
 
     </aside>
 
@@ -281,7 +281,7 @@
 
           <div class="article-body">{{ content }}</div>
 
-          <footer class="article-footer"><span>A living record of a universe still being charted.</span><a href="https://github.com/vesperglass/vesperglass.github.io/edit/main/{{ page.path }}">Suggest a lore edit <span aria-hidden="true">↗</span></a></footer>
+          <footer class="article-footer"><span>A living record of a universe still being charted.</span><a href="https://github.com/vesperglass/vesperglass.github.io/edit/main/{{ page.path }}">Suggest an entry edit <span aria-hidden="true">↗</span></a></footer>
 
         </article>
 

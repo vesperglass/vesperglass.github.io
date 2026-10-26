@@ -1,4 +1,4 @@
-/* One shared shell for the atlas and galaxy simulation views. */
+/* One shared shell for the Vesperglass and galaxy atlases. */
 .sim-page{overflow:hidden;background:#050914}
 .sim-page .site-shell{display:block;min-height:100dvh}
 .sim-page .main-column{min-height:100dvh}

@@ -17,25 +17,25 @@ permalink: /library/threshold-house/
 
 ## The place in the atlas
 
-Threshold House is one of the named floating platforms in the Vesperglass atlas. Its name suggests a place of arrival, waiting, or transition, but the atlas does not currently specify a formal purpose or identify anyone who lives there.
+Threshold House is one of Vesperglass's named floating platforms. Its name suggests a place of arrival, waiting, or transition, but surviving accounts do not describe its purpose or identify its inhabitants.
 
 <figure class="specimen-plate place-plate">
   <img src="{{ '/assets/library/places/threshold-plan.webp' | relative_url }}" alt="A top-down architectural plan and front elevation for a small threshold chamber with a central axis, bench and lamp niches." loading="lazy">
-  <figcaption><span>PLATE II</span> A proposed floor plan organized around one clear line of arrival and departure.</figcaption>
+  <figcaption><span>PLATE II</span> A reconstructed floor plan organized around one clear line of arrival and departure.</figcaption>
 </figure>
 
 ## An architectural reading
 
-This folio imagines the House as a quiet place to pause before crossing from one part of Vesperglass to another. A long bench leaves the central passage unobstructed, while lamps make the opening legible without turning it into a fortress. That reading is a design interpretation, not a recorded custom.
+Threshold House is a quiet place to pause before crossing from one part of Vesperglass to another. A long bench leaves the central passage unobstructed, while lamps mark the opening. No dated account confirms these furnishings or a custom associated with them.
 
-<aside class="field-note"><span class="field-note-mark" aria-hidden="true">✳</span><p><strong>What is recorded</strong><br>Threshold House is an atlas destination. Its exact use, inhabitants and interior layout remain open questions in the setting.</p></aside>
+<aside class="field-note"><span class="field-note-mark" aria-hidden="true">✳</span><p><strong>What is recorded</strong><br>Threshold House stands among Vesperglass's platforms. Its exact use, inhabitants, and interior layout are not described in the surviving accounts.</p></aside>
 
 ## At a glance
 
 <dl class="folio-glossary">
-  <div><dt>Atlas name</dt><dd>Threshold House</dd></div>
-  <div><dt>Established</dt><dd>Threshold House is an atlas destination. Its exact use, inhabitants and interior layout remain open questions in the setting.</dd></div>
-  <div><dt>Plate note</dt><dd>The interiors, furnishings and architectural plans on this page are interpretive reconstructions. They are not measured plans of the atlas artwork.</dd></div>
+  <div><dt>Place name</dt><dd>Threshold House</dd></div>
+  <div><dt>Established</dt><dd>Threshold House stands among Vesperglass's platforms. Its exact use, inhabitants, and interior layout are not described in the surviving accounts.</dd></div>
+  <div><dt>Plan note</dt><dd>The precise dimensions and room arrangement are not established by the surviving accounts.</dd></div>
 </dl>
 
 <blockquote>A doorway can be a room when the journey asks for a pause.</blockquote>

@@ -2,7 +2,7 @@
 layout: default
 title: Galaxy
 kicker: HOME IS THE WORKSHOP
-description: A seed-shaped universe to chart, inspect, and one day make your own.
+description: A chart of distant stars and the worlds in their systems.
 permalink: /galaxy/
 galaxy_enabled: true
 ---
@@ -10,9 +10,9 @@ galaxy_enabled: true
 <section class="galaxy-explorer" aria-labelledby="galaxy-explorer-title">
   <header class="galaxy-explorer__intro">
     <div>
-      <span class="galaxy-explorer__eyebrow">PROCEDURAL STAR CHART</span>
-      <h2 id="galaxy-explorer-title">A universe from a seed</h2>
-      <p>Each star system is generated from its coordinates and the galaxy seed. Change the seed to discover a different sky; select a star, then its planets, to read their starting conditions.</p>
+      <span class="galaxy-explorer__eyebrow">OUTER GALAXY · STAR CHART</span>
+      <h2 id="galaxy-explorer-title">The worlds beyond the Gate</h2>
+      <p>Each chart reference opens a consistent record of stars and planetary systems. Choose another reference to consult a different region; select a star, then its planets, to read their recorded conditions.</p>
     </div>
   </header>
 
@@ -21,11 +21,11 @@ galaxy_enabled: true
       <div class="galaxy-map-toolbar" aria-label="Galaxy map controls">
         <div class="galaxy-seed-tools">
           <div class="galaxy-seed-field">
-            <label for="galaxy-seed">Galaxy seed</label>
+            <label for="galaxy-seed">Chart reference</label>
             <input id="galaxy-seed" type="text" value="VESPERGLASS-01" maxlength="48" autocomplete="off" spellcheck="false">
           </div>
-          <button class="galaxy-tool-button" id="galaxy-generate" type="button">Set seed</button>
-          <button class="galaxy-tool-button" id="galaxy-new-seed" type="button">New seed</button>
+          <button class="galaxy-tool-button" id="galaxy-generate" type="button">Open chart</button>
+          <button class="galaxy-tool-button" id="galaxy-new-seed" type="button">Choose another chart</button>
           <button class="galaxy-fullscreen-button" id="galaxy-fullscreen" type="button" aria-label="Open galaxy map fullscreen" aria-pressed="false">⛶ Fullscreen</button>
         </div>
         {% include galaxy-map-key.html %}
@@ -33,10 +33,10 @@ galaxy_enabled: true
         <button class="galaxy-tool-button" id="galaxy-back" type="button" hidden>← Galaxy</button>
       </div>
       <p class="galaxy-map-status" id="galaxy-map-status" role="status" aria-live="polite">Charting nearby stars…</p>
-      <div id="vesperglass-galaxy" role="application" aria-label="Procedural galaxy map. Pan and zoom, then select a glowing star to inspect its planetary system."></div>
+      <div id="vesperglass-galaxy" role="application" aria-label="Galaxy chart. Pan and zoom, then select a star to inspect its planetary system."></div>
       <aside class="galaxy-inspector" id="galaxy-inspector" aria-live="polite" aria-label="Galaxy survey details"></aside>
     </div>
   </div>
 
-  <p class="galaxy-caption">This first chart is generated in your browser. The same seed and coordinates always produce the same system. Exploration changes are not saved yet.</p>
+  <p class="galaxy-caption">A chart reference identifies one arrangement of stars and planets. Survey selections remain with the chart currently open.</p>
 </section>

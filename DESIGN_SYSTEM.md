@@ -1,10 +1,19 @@
 # Vesperglass site consistency guide
 
-Use this guide when adding or changing a page, map destination, interface, or piece of universe lore. The goal is to make the site feel like one navigable place and to keep readers clear about what exists in the setting, what is interpretation, and what the simulation can do today.
+Use this guide when adding or changing a page, map destination, interface, or piece of universe lore. The goal is to make the site feel like one navigable place and to keep readers clear about what exists in the setting and what is interpretation.
+
+## Public-world framing
+
+- Write every published page as a reference to a real place and world. Treat Vesperglass, its people, materials, vessels, journeys, and surrounding worlds as real within the encyclopedia's account.
+- Do not describe Vesperglass or its universe as a game, simulation, fiction, fictional setting, or imagined world in published copy, navigation, captions, accessibility labels, page metadata, search summaries, or visitor-facing status notes.
+- Keep explanations of game or simulation implementation, planned mechanics, and the distinction between the authored world and the website in repository documentation that is explicitly excluded from the published Jekyll site.
+- Public pages may describe what a visitor can do with a map or chart in direct interface language (for example, open, select, inspect, pan, or zoom). Keep those controls separate from claims about how life or travel works in the world.
+- Within the encyclopedia, distinguish established accounts from interpretation or records of uncertain provenance using in-world editorial language. Do not use website implementation as evidence about the world.
+- Before publishing, search all visitor-facing source and generated output for game/simulation framing, including metadata, accessibility text, captions, search data, changelogs, and fallback pages. A public-facing exception requires a new explicit decision.
 
 ## Site structure
 
-- **Explore** is the shared Atlas/Galaxy viewer. The home page and `/sim/` are entry points to the same experience.
+- **Explore** is the shared Atlas/Galaxy map. The home page and `/explore/` are entry points to the same experience.
 - **Universe Guide** at `/universe/` introduces the setting and points into the atlas, Galaxy, and encyclopedia.
 - **Universe Library** at `/library/` is the illustrated reference collection. Individual entries live under `/library/<entry>/`.
 - Keep these surfaces connected with the shared navigation, search, atlas destinations, and contextual links. When a destination changes, update all of its entry points in the same change.

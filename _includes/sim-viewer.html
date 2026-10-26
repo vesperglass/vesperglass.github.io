@@ -1,5 +1,5 @@
-<section class="sim-viewer" aria-label="Vesperglass simulation viewer">
-  <nav class="sim-switcher sim-glass-panel" aria-label="Simulation views">
+<section class="sim-viewer" aria-label="Vesperglass atlas and galaxy charts">
+  <nav class="sim-switcher sim-glass-panel" aria-label="Atlas and galaxy views">
     <div class="sim-switcher__views">
       <button type="button" data-sim-navigate="vesperglass" aria-current="page"><span aria-hidden="true">⌂</span> Vesperglass</button>
       <button type="button" data-sim-navigate="galaxy"><span aria-hidden="true">✶</span> Galaxy</button>
@@ -19,19 +19,19 @@
         </div>
       </div>
       <div class="atlas-map-frame">
-        <div id="vesperglass-atlas" role="application" aria-label="Interactive fictional map of Vesperglass"><p id="atlas-map-fallback">The atlas is loading.</p></div>
+        <div id="vesperglass-atlas" role="application" aria-label="Interactive map of Vesperglass, its Gate, and surrounding platforms"><p id="atlas-map-fallback">The atlas is loading.</p></div>
       </div>
-      <div class="atlas-map-credit"><span>This floating workshop and its landmarks are imagined. No real-world geography.</span><span>Interactive map by <a href="https://leafletjs.com/" rel="noopener">Leaflet</a> · <a href="{{ '/assets/leaflet/LICENSE.txt' | relative_url }}">MIT license</a></span><span>Background: Vesperglass star field; stars only.</span></div>
+      <div class="atlas-map-credit"><span>Vesperglass, the Gate, and seven outer platforms.</span><span>Interactive atlas by <a href="https://leafletjs.com/" rel="noopener">Leaflet</a> · <a href="{{ '/assets/leaflet/LICENSE.txt' | relative_url }}">MIT license</a></span><span>Background: Vesperglass star field.</span></div>
     </div>
   </section>
 
-  <section class="sim-scene sim-scene--galaxy" data-sim-scene="galaxy" aria-label="Procedural galaxy map" hidden>
+  <section class="sim-scene sim-scene--galaxy" data-sim-scene="galaxy" aria-label="Galaxy chart" hidden>
     <div class="galaxy-map-shell">
       <div class="galaxy-map-toolbar" aria-label="Galaxy map controls">
         <div class="galaxy-seed-tools">
-          <div class="galaxy-seed-field"><label for="galaxy-seed">Galaxy seed</label><input id="galaxy-seed" type="text" value="VESPERGLASS-01" maxlength="48" autocomplete="off" spellcheck="false"></div>
-          <button class="galaxy-tool-button" id="galaxy-generate" type="button">Set seed</button>
-          <button class="galaxy-tool-button" id="galaxy-new-seed" type="button">New seed</button>
+          <div class="galaxy-seed-field"><label for="galaxy-seed">Chart reference</label><input id="galaxy-seed" type="text" value="VESPERGLASS-01" maxlength="48" autocomplete="off" spellcheck="false"></div>
+          <button class="galaxy-tool-button" id="galaxy-generate" type="button">Open chart</button>
+          <button class="galaxy-tool-button" id="galaxy-new-seed" type="button">Choose another chart</button>
           <button class="galaxy-fullscreen-button" id="galaxy-fullscreen" type="button" aria-label="Open galaxy map fullscreen" aria-pressed="false">⛶ Fullscreen</button>
         </div>
         {% include galaxy-map-key.html %}
@@ -39,7 +39,7 @@
         <button class="galaxy-tool-button" id="galaxy-back" type="button" hidden>← Galaxy</button>
       </div>
       <p class="galaxy-map-status" id="galaxy-map-status" role="status" aria-live="polite">Charting nearby stars…</p>
-      <div id="vesperglass-galaxy" role="application" aria-label="Procedural galaxy map. Pan and zoom, then select a glowing star to inspect its planetary system."></div>
+      <div id="vesperglass-galaxy" role="application" aria-label="Galaxy chart. Pan and zoom, then select a star to inspect its planetary system."></div>
       <aside class="galaxy-inspector sim-glass-panel" id="galaxy-inspector" aria-live="polite" aria-label="Galaxy survey details"></aside>
     </div>
   </section>

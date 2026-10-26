@@ -172,7 +172,7 @@
         heading.textContent = "SURVEY COMPLETE";
         const message = document.createElement("p");
         message.className = "galaxy-objective__text";
-        message.textContent = "You inspected a generated star system and one of its planets.";
+        message.textContent = "You examined a star system and one of its planets.";
         const replay = document.createElement("button");
         replay.type = "button";
         replay.className = "galaxy-objective__replay";
@@ -220,7 +220,7 @@
         message.className = "galaxy-objective__text";
         message.textContent = objectiveStep === 0
           ? "Select a glowing star to reveal its planets."
-          : "Select a planet to view its generated conditions.";
+          : "Select a planet to read its recorded conditions.";
         panel.append(top, title, message);
       }
     };
@@ -238,7 +238,7 @@
     eyebrow.textContent = eyebrowText;
     const mode = document.createElement("span");
     mode.className = "galaxy-inspector__mode";
-    mode.textContent = "GENERATED";
+    mode.textContent = "CHARTED";
     const title = document.createElement("h2");
     title.textContent = titleText;
     const summary = document.createElement("p");
@@ -319,11 +319,11 @@
     card.appendChild(facts);
     const identity = document.createElement("p");
     identity.className = "galaxy-inspector__identity";
-    identity.textContent = "Catalog " + star.id + " · Seed " + seed;
+    identity.textContent = "Catalog " + star.id + " · Chart " + seed;
     card.appendChild(identity);
     const note = document.createElement("p");
     note.className = "galaxy-inspector__note";
-    note.textContent = "Select a planet to inspect its generated starting conditions and resource signals.";
+    note.textContent = "Select a planet to read its recorded conditions and resource indications.";
     card.appendChild(note);
     appendRecentViews(card);
   };
@@ -355,27 +355,27 @@
     card.appendChild(deposits);
     const identity = document.createElement("p");
     identity.className = "galaxy-inspector__identity";
-    identity.textContent = "Catalog " + planet.id + " · Seed " + seed;
+    identity.textContent = "Catalog " + planet.id + " · Chart " + seed;
     card.appendChild(identity);
     const note = document.createElement("p");
     note.className = "galaxy-inspector__note";
-    note.textContent = "Generated estimates only. Resource signals are not collected materials.";
+    note.textContent = "Resource indications are estimates; they do not record a recovered sample.";
     card.appendChild(note);
     appendRecentViews(card);
   };
   const clearInspector = () => {
-    const card = createInspector("GALAXY SURVEY", "Choose a star", "Drag to pan, scroll or pinch to zoom, then select a star to inspect its planets. Use Center to return to Vesperglass. Systems are generated from the galaxy seed.");
+    const card = createInspector("GALAXY SURVEY", "Choose a star", "Drag to pan, scroll or pinch to zoom, then select a star to read its planets. Use Center to return to Vesperglass.");
     const seedLine = document.createElement("div");
     seedLine.className = "galaxy-inspector__seed";
     const label = document.createElement("span");
-    label.textContent = "GALAXY SEED";
+    label.textContent = "CHART REFERENCE";
     const value = document.createElement("strong");
     value.textContent = seed;
     seedLine.append(label, value);
     card.appendChild(seedLine);
     const note = document.createElement("p");
     note.className = "galaxy-inspector__note";
-    note.textContent = "Surveys are generated for this session and are not saved.";
+    note.textContent = "Survey selections are associated with the chart reference shown above.";
     card.appendChild(note);
     appendRecentViews(card);
   };
@@ -417,7 +417,7 @@
     });
     const portal = L.marker([0, 0], { icon: portalIcon, keyboard: true, title: "Portal to Vesperglass home", alt: "Portal to Vesperglass home", riseOnHover: true, zIndexOffset: 1500 }).addTo(portalLayer);
     portal.bindTooltip("Portal to Vesperglass", { direction: "top", offset: [0, -34], opacity: 0.96 });
-    portal.on("click", () => { window.location.href = "/sim/#vesperglass"; });
+    portal.on("click", () => { window.location.href = "/explore/#vesperglass"; });
     syncLayerVisibility();
     galaxyStarCount = count;
     updateGalaxyStatus();

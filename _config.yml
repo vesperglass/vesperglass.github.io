@@ -4,3 +4,20 @@ url: https://vesperglass.github.io
 baseurl: ""
 markdown: kramdown
 permalink: pretty
+exclude:
+  - .git
+  - .jekyll-cache/
+  - .sass-cache/
+  - Gemfile
+  - Gemfile.lock
+  - gemfiles/
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+  - DESIGN_SYSTEM.md
+  - ENCYCLOPEDIA_BACKLOG.md
+  - SIM_UI_BACKLOG.md
+  - PUBLIC_WORLD_FRAMING_AUDIT.md

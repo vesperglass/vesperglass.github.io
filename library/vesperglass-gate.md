@@ -10,14 +10,14 @@ permalink: /library/vesperglass-gate/
 
 <figure class="book-plate">
   <img src="{{ '/assets/library/places/gate-plate.webp' | relative_url }}" alt="A monumental freestanding ring of aged brass and teal glass glows with a starfield on its own floating platform." fetchpriority="high">
-  <figcaption><span>PLATE I</span> The Gate imagined as a freestanding instrument of passage on a detached island.</figcaption>
+  <figcaption><span>PLATE I</span> The Gate stands as a freestanding instrument of passage on its own platform.</figcaption>
 </figure>
 
 <div class="entry-byline"><span>SUBJECT &nbsp; PORTAL · TRANSIT · THE OUTER GALAXY</span><span>PLACE &nbsp; Detached Gate platform</span></div>
 
 ## The place in the atlas
 
-The Vesperglass Gate stands on its own platform, separate from the Train Dock. In the unified viewer, choosing the Gate opens the procedural Galaxy; in the setting’s lore, the train uses it to travel between worlds. The platform, the passage and the dock are distinct places.
+The Vesperglass Gate stands on its own platform, separate from the Train Dock. The train passes through it to travel between worlds. The platform, the passage and the dock are distinct places.
 
 <figure class="specimen-plate place-plate">
   <img src="{{ '/assets/library/places/gate-cutaway.webp' | relative_url }}" alt="A technical cutaway study of the Gate’s concentric ring, glass segments and foundation pylon." loading="lazy">
@@ -26,39 +26,39 @@ The Vesperglass Gate stands on its own platform, separate from the Train Dock. I
 
 ## An architectural reading
 
-The ring’s layered structure is an artistic interpretation, as is the idea that its glass segments help hold or tune the opening. The current viewer presents the Gate as a portal between views; it does not simulate the fuel cycle or a persistent expedition system.
+The ring's layered construction and the role of its glass segments remain uncertain. No account gives a complete engineering description of the Gate.
 
 ## Crossing record · an interpretive sequence
 
-This sequence arranges details already described in the Encyclopedia into a reference record. It is an interpretive summary, not a dated journey log; no destination, duration, schedule, or passenger list is established here.
+This interpretive sequence arranges details from accounts of the crossing. It is not a dated journey log; no destination, duration, schedule, or passenger list is established here.
 
 <dl class="folio-glossary">
-  <div><dt>Departure · Train Dock</dt><dd>The atlas animation shows the locomotive leave its alongside berth and move into free flight. It does not define a scheduled route or a persistent departure event.</dd></div>
-  <div><dt>Passage · Gate bloom</dt><dd>In the lore, the Gate gathers into a bright bloom around the train, briefly hiding it as the road takes shape.</dd></div>
-  <div><dt>Arrival · far side</dt><dd>The account describes the bloom opening outward again as the locomotive emerges, already carrying the light of its return journey. The destination and elapsed time remain unspecified.</dd></div>
+  <div><dt>Departure · Train Dock</dt><dd>The locomotive leaves its alongside berth and moves into open flight. No schedule or named departure is recorded.</dd></div>
+  <div><dt>Passage · Gate bloom</dt><dd>The Gate gathers into a bright bloom around the train, briefly hiding it as the road takes shape.</dd></div>
+  <div><dt>Arrival · far side</dt><dd>The bloom opens outward as the locomotive emerges, already carrying the light of its return journey. The destination and elapsed time remain unspecified.</dd></div>
 </dl>
 
-The atlas animation is a visual loop, while the crossing sequence belongs to the setting's lore and its interpretive presentation here. The current viewer does not run trips, track cargo, or persist arrivals.
+The sequence leaves the route beyond the Gate open. The accounts do not record cargo, a timetable, or the train's destination on any particular crossing.
 
-## Remembered at the threshold · imagined voices
+## Recollections at the threshold
 
-These two voices are invented for the Encyclopedia; they are not sourced testimony or dialogue from the viewer. They offer contrasting ways a crossing might be remembered while leaving the journey's details open.
+The following interpretive recollections give two different accounts of the moment before passage. Neither is a verified witness statement, and no names or dates accompany them.
 
 <dl class="folio-glossary">
-  <div><dt>A dock keeper · imagined</dt><dd>“I remember the hush before the bloom. The train had already gone quiet, though its lamps still showed.”</dd></div>
-  <div><dt>A returning traveler · imagined</dt><dd>“For me there was no hush. I remember the Gate singing, and only afterward did I notice how still I had been.”</dd></div>
+  <div><dt>A keeper's account</dt><dd>“I remember the hush before the bloom. The train had already gone quiet, though its lamps still showed.”</dd></div>
+  <div><dt>A traveler's account</dt><dd>“For me there was no hush. I remember the Gate singing, and only afterward did I notice how still I had been.”</dd></div>
 </dl>
 
-The recollections differ in emphasis, not in verifiable timing: neither establishes a sound, event, or passenger record for a particular crossing. Their disagreement is a literary device, not evidence about a generated Galaxy route.
+The recollections differ in emphasis, not in verifiable timing. Neither establishes a sound, event, or passenger record for a particular crossing.
 
-<aside class="field-note"><span class="field-note-mark" aria-hidden="true">✳</span><p><strong>What is recorded</strong><br>The Gate links Vesperglass to the Galaxy view and is the train’s passage in the lore. The illustrated mechanical construction is speculative.</p></aside>
+<aside class="field-note"><span class="field-note-mark" aria-hidden="true">✳</span><p><strong>What is recorded</strong><br>The Gate is the train’s passage from Vesperglass to distant worlds. Its mechanical construction is not fully described.</p></aside>
 
 ## At a glance
 
 <dl class="folio-glossary">
   <div><dt>Atlas name</dt><dd>The Vesperglass Gate</dd></div>
-  <div><dt>Established</dt><dd>The Gate links Vesperglass to the Galaxy view and is the train’s passage in the lore. The illustrated mechanical construction is speculative.</dd></div>
-  <div><dt>Plate note</dt><dd>The interiors, furnishings and architectural plans on this page are interpretive reconstructions. They are not measured plans of the atlas artwork.</dd></div>
+  <div><dt>Established</dt><dd>The Gate is the train’s passage from Vesperglass to distant worlds. Its mechanical construction is not fully described.</dd></div>
+  <div><dt>Plan note</dt><dd>The precise dimensions and construction details are not established by the surviving accounts.</dd></div>
 </dl>
 
 <blockquote>A road made of light, held open long enough for a train to cross.</blockquote>

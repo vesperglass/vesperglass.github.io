@@ -10,14 +10,14 @@ permalink: /library/workshop/
 
 <figure class="book-plate">
   <img src="{{ '/assets/library/places/workshop-interior.webp' | relative_url }}" alt="A pair of keepers share a worktable beneath the tall star-facing windows of a brass-and-glass workshop." fetchpriority="high">
-  <figcaption><span>PLATE I</span> An imagined interior study of the central workshop, its shared table set beneath a high star window.</figcaption>
+  <figcaption><span>PLATE I</span> A study of the central workshop, its shared table set beneath a high star window.</figcaption>
 </figure>
 
 <div class="entry-byline"><span>SUBJECT &nbsp; HOME · MAKING · GATHERING</span><span>PLACE &nbsp; Central Vesperglass</span></div>
 
 ## The place in the atlas
 
-The Vesperglass Workshop is the central platform and home at the heart of the atlas. It is the point from which the other floating places are understood: a place to return to, gather around, and prepare for the wider universe. The existing atlas establishes its central position and its workshop identity; it does not define a canonical interior plan or a roster of residents.
+The Vesperglass Workshop is the central platform and home at the heart of the archipelago. It is the point from which the other floating places are understood: a place to return to, gather around, and prepare for the wider universe. Maps place it at the center and accounts identify its workshop; no measured interior plan or resident list has been preserved.
 
 <figure class="specimen-plate place-plate">
   <img src="{{ '/assets/library/places/workshop-cutaway.webp' | relative_url }}" alt="Architectural cutaway and small floor plan of a double-height glass-and-brass workshop with gallery, tool alcoves and central table." loading="lazy">
@@ -26,28 +26,28 @@ The Vesperglass Workshop is the central platform and home at the heart of the at
 
 ## An architectural reading
 
-The shared table, upper gallery and tool alcoves shown here are architectural interpretations. They express a workshop that serves as home as much as a place of making, with a large window keeping the surrounding stars in view. The cutaway is a design proposal for the encyclopedia, not a measured plan of the atlas model.
+The shared table, upper gallery and tool alcoves shown here are architectural interpretations. They express a workshop that serves as home as much as a place of making, with a large window keeping the surrounding stars in view. No measured plan of the rooms has been preserved in the accounts consulted here.
 
 ## Before a departure · proposed customs
 
-The following small practices are interpretive suggestions for how keepers might prepare together. They are not established Vesperglass customs or steps required by the simulation.
+The following customs are recorded as possible practices for how keepers prepare together. Their standing across Vesperglass has not been established.
 
 <dl class="folio-glossary">
   <div><dt>Leave a place ready</dt><dd>At the shared workshop table, a departing keeper might put tools away and leave one clear space for whoever returns next.</dd></div>
-  <div><dt>Name the passage</dt><dd>At the <a href="{{ '/library/train-dock/' | relative_url }}">Train Dock</a>, two keepers might say the intended destination aloud before the locomotive departs through the Gate. This is a proposed gesture of mutual care, not a scheduled route check.</dd></div>
+  <div><dt>Name the passage</dt><dd>At the <a href="{{ '/library/train-dock/' | relative_url }}">Train Dock</a>, two keepers may say the intended destination aloud before the locomotive departs through the Gate. The custom is not attested in a dated account.</dd></div>
   <div><dt>Carry the open question</dt><dd>If a route detail is uncertain, a keeper might mark the question for later rather than fill it with a guess.</dd></div>
 </dl>
 
-These customs are offered as one possible reading of shared life around the Workshop and Dock. The atlas animation does not require or record them.
+These customs offer one reading of shared life around the Workshop and Dock. No surviving departure record confirms whether they were practiced on a particular crossing.
 
-<aside class="field-note"><span class="field-note-mark" aria-hidden="true">✳</span><p><strong>What is recorded</strong><br>The workshop is Vesperglass’s central home platform. The future expedition and crafting loop is a direction for the setting; gathering and crafting are not active simulation systems yet.</p></aside>
+<aside class="field-note"><span class="field-note-mark" aria-hidden="true">✳</span><p><strong>What is recorded</strong><br>The Workshop is Vesperglass’s central home platform. The surviving accounts do not describe how starshards are gathered or how Foundry work is organized.</p></aside>
 
 ## At a glance
 
 <dl class="folio-glossary">
   <div><dt>Atlas name</dt><dd>Vesperglass Workshop</dd></div>
-  <div><dt>Established</dt><dd>The workshop is Vesperglass’s central home platform. The future expedition and crafting loop is a direction for the setting; gathering and crafting are not active simulation systems yet.</dd></div>
-  <div><dt>Plate note</dt><dd>The interiors, furnishings and architectural plans on this page are interpretive reconstructions. They are not measured plans of the atlas artwork.</dd></div>
+  <div><dt>Established</dt><dd>The Workshop is Vesperglass’s central home platform. The surviving accounts do not describe how starshards are gathered or how Foundry work is organized.</dd></div>
+  <div><dt>Plan note</dt><dd>The exact room dimensions and arrangement are not established by the surviving accounts.</dd></div>
 </dl>
 
 <blockquote>A place to return to before setting out again.</blockquote>

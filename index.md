@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Vesperglass
-kicker: VESPERGLASS SIMULATION
-description: Explore the Vesperglass atlas and travel through the Gate into a procedural galaxy.
+kicker: VESPERGLASS ATLAS
+description: Explore Vesperglass, the Gate, and the distant star systems reached by its train.
 permalink: /
 sim_enabled: true
 ---

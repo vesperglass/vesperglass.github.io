@@ -10,17 +10,17 @@ permalink: /library/changelog/
 
 ## October 25, 2026
 
-Growth notes from this date record additions across the existing folios. Proposed material is labeled as interpretation; the entries keep it distinct from established lore and from behavior implemented in the viewer.
+These edition notes record additions to the existing folios. Where a record's source or status is uncertain, the folio says so and leaves unsupported details open.
 
 - **Library index** — Added a direct link to this dated Encyclopedia changelog.
 - **Starshards & the Gate Train** — Added three interpretive cabinet records: Blue seam, Split heart, and Quiet glass. [Read the folio →]({{ '/library/starshards/' | relative_url }})
-- **Observatory Logbook** — Added an imagined log excerpt that separates an observation from possible explanations and a follow-up check. It is not a reading from the Galaxy viewer. [Read the folio →]({{ '/library/observatory/' | relative_url }})
-- **Vesperglass Train Dock** — Added a Gate train dossier summarizing the lore and atlas animation while identifying engineering details that remain unspecified. [Read the folio →]({{ '/library/train-dock/' | relative_url }})
+- **Observatory Logbook** — Added a sample log leaf that separates an observation from possible explanations and a follow-up check; its provenance remains unverified. [Read the folio →]({{ '/library/observatory/' | relative_url }})
+- **Vesperglass Train Dock** — Added a Gate train dossier summarizing the recorded crossing and identifying engineering details that remain unspecified. [Read the folio →]({{ '/library/train-dock/' | relative_url }})
 - **The Vesperglass Gate** — Added an interpretive crossing sequence covering departure, passage, and arrival, with unspecified journey details left open. [Read the folio →]({{ '/library/vesperglass-gate/' | relative_url }})
-- **Vesperglass Workshop** — Added three proposed departure customs for the Workshop and Train Dock, labeled as optional interpretation rather than established practice or simulation steps. [Read the folio →]({{ '/library/workshop/' | relative_url }})
-- **Starshards & the Gate Train** — Added the interpretive Blue-Sill Basin field plate as an imagined landscape for possible starshard context, explicitly separate from generated Galaxy content. [Read the folio →]({{ '/library/starshards/' | relative_url }})
-- **The Vesperglass Gate** — Added two explicitly imagined, contrasting recollections of a crossing, without implying a dated journey or Galaxy viewer event. [Read the folio →]({{ '/library/vesperglass-gate/' | relative_url }})
-- **Star Archive** — Added the proposed *Unfixed Meridian* catalog card, with an explicitly imagined chart scope and annotation practice, separate from Galaxy-generated records. [Read the folio →]({{ '/library/star-archive/' | relative_url }})
-- **World Relationship Index** — Added a source-linked reference index that distinguishes setting lore, atlas navigation, and visual presentation while stating what each relationship does not establish. [Read the index →]({{ '/library/relationships/' | relative_url }})
+- **Vesperglass Workshop** — Added three customs associated with departure preparations, with their standing left open pending further accounts. [Read the folio →]({{ '/library/workshop/' | relative_url }})
+- **Starshards & the Gate Train** — Added the Blue-Sill Basin field account, noting that its location and possible starshard deposits are unverified. [Read the folio →]({{ '/library/starshards/' | relative_url }})
+- **The Vesperglass Gate** — Added two contrasting recollections of a crossing without assigning them to a dated journey. [Read the folio →]({{ '/library/vesperglass-gate/' | relative_url }})
+- **Star Archive** — Added a catalog card for *The Unfixed Meridian*, with its scope and annotation practice recorded as a proposal. [Read the folio →]({{ '/library/star-archive/' | relative_url }})
+- **World Relationship Index** — Added a reference index to recorded connections among places, materials, vessels, and journeys. [Read the index →]({{ '/library/relationships/' | relative_url }})
 
 <p class="folio-return"><a href="{{ '/library/' | relative_url }}">← Return to the Universe Library</a></p>
