@@ -52,6 +52,10 @@ permalink: /library/
     <span class="library-card-art"><img src="{{ '/assets/library/places/dock-plate.webp' | relative_url }}" alt="The space train hovering alongside the straight open edge of its dock." loading="lazy"></span>
     <span class="library-entry-copy"><span class="library-entry-number">ENTRY 009 &nbsp;·&nbsp; BERTH &amp; DEPARTURE</span><strong>Vesperglass Train Dock</strong><span>A clear landing apron and alongside berth for the Gate train.</span><span class="library-read">Read the entry <span aria-hidden="true">↗</span></span></span>
   </a>
+  <a class="library-entry-card" href="{{ '/library/relationships/' | relative_url }}">
+    <span class="library-card-art"><img src="{{ '/assets/library/gate-train-plate.webp' | relative_url }}" alt="The Gate train crossing a luminous portal, linking the Encyclopedia's lore about stardust and passage." loading="lazy"></span>
+    <span class="library-entry-copy"><span class="library-entry-number">REFERENCE INSERT &nbsp;·&nbsp; CONNECTIONS</span><strong>World Relationship Index</strong><span>How documented lore, atlas navigation, and visual presentation connect across the folios.</span><span class="library-read">Read the index <span aria-hidden="true">↗</span></span></span>
+  </a>
 </div>
 
 <p><a href="{{ '/library/changelog/' | relative_url }}">Read the Encyclopedia changelog →</a></p>

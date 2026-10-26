@@ -21,5 +21,6 @@ Growth notes from this date record additions across the existing folios. Propose
 - **Starshards & the Gate Train** — Added the interpretive Blue-Sill Basin field plate as an imagined landscape for possible starshard context, explicitly separate from generated Galaxy content. [Read the folio →]({{ '/library/starshards/' | relative_url }})
 - **The Vesperglass Gate** — Added two explicitly imagined, contrasting recollections of a crossing, without implying a dated journey or Galaxy viewer event. [Read the folio →]({{ '/library/vesperglass-gate/' | relative_url }})
 - **Star Archive** — Added the proposed *Unfixed Meridian* catalog card, with an explicitly imagined chart scope and annotation practice, separate from Galaxy-generated records. [Read the folio →]({{ '/library/star-archive/' | relative_url }})
+- **World Relationship Index** — Added a source-linked reference index that distinguishes setting lore, atlas navigation, and visual presentation while stating what each relationship does not establish. [Read the index →]({{ '/library/relationships/' | relative_url }})
 
 <p class="folio-return"><a href="{{ '/library/' | relative_url }}">← Return to the Universe Library</a></p>

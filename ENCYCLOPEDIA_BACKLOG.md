@@ -29,6 +29,7 @@ Working tracker for new reference forms and encyclopedia additions. Keep it in s
 | Seasonal light calendars | A compact record of how keepers might name recurring changes in daylight or starlight | Present as an imagined cultural reference, not a real-time cycle or simulation mechanic |
 | Instrument care notes | Brief annotations about how an imagined keeper might protect or inspect a reconstructed instrument | Label the equipment and routine as interpretation; do not imply an implemented maintenance system |
 | Catalog status ribbons | Compact provenance labels that tell readers what an archival example is, what it covers, and what remains unknown | Make the record's proposed or reconstructed status visible; never imply it came from Galaxy output |
+| Relationship evidence tables | A cross-folio index that groups documented connections by lore, viewer navigation, or visual presentation | Cite the relevant folios and state the limit of each connection; do not turn editorial links into routes |
 
 ## Backlog
 
@@ -42,6 +43,7 @@ Working tracker for new reference forms and encyclopedia additions. Keep it in s
 - [x] **Write a stellar-body field plate** — Add the invented Blue-Sill Basin landscape as an illustrative setting for possible starshard context, explicitly separate from generated Galaxy content. Completed 2026-10-25 in `library/starshards.md`.
 - [x] **Add an oral-history fragment** — Add two attributed, imagined recollections of the Gate crossing that differ in emphasis and explicitly establish no dated trip, passenger record, or Galaxy event. Completed 2026-10-25 in `library/vesperglass-gate.md`.
 - [x] **Create an Archive catalog card for a proposed sky chart** — Add the invented *Unfixed Meridian* chart with a limited imagined scope and annotation suggestion, explicitly not an existing record or Galaxy-generated chart. Completed 2026-10-25 in `library/star-archive.md`.
+- [x] **Build a world relationship index for Workshop, Foundry, Gate, and Train Dock** — Add a standalone linked reference page that classifies documented setting, navigation, and animation relationships while stating what they do not establish. Completed 2026-10-25 in `library/relationships.md`; linked from `library.md`.
 
 ### Open
 
@@ -51,13 +53,14 @@ Working tracker for new reference forms and encyclopedia additions. Keep it in s
 - [ ] **Draft a Compass Garden seasonal light calendar** — Propose three keeper names for changing light across the garden and explain the imagined observances; keep it clearly interpretive and separate from any live time or growth simulation.
 - [ ] **Write an interpretive care note for the Observatory's proposed star lens** — Describe an imagined dust-cover and cloth practice for the reconstructed instrument, and state that neither the specific lens nor a maintenance system is established or implemented.
 - [ ] **Add a status ribbon to the Observatory sample log** — Label its invented note, established atlas destination, and relationship to Galaxy viewer data in a compact provenance key; do not imply a real observation or a new viewer feature.
+- [ ] **Add a Gate travel terms crosswalk** — Link “starwell,” “Gate bloom,” and the Train Dock's “hidden guide path” to their folios, labeling each as lore or visual presentation and avoiding claims of a live travel mechanic.
 
-## Four-hour work cycle
+## Hourly substantial work cycle
 
 On each run:
 
 1. Review this file and the current Encyclopedia pages for recent additions, duplicate ideas, and the next useful open item.
 2. Brainstorm at least one candidate content type or refinement and record worthwhile ideas in the table above.
-3. Choose one open backlog item, implement it in the Encyclopedia, and mark it complete here with the page path and date. If evidence or scope blocks implementation, record the blocker and choose another item.
+3. Choose one open backlog item and deliver a substantial, coherent contribution with meaningful reference value, such as a well-developed folio section or new folio. A brief paragraph, minor wording change, or backlog-only edit does not qualify. If evidence or scope blocks substantial treatment, choose another item rather than pad content or invent canon. Mark completion with the page path and date.
 4. Add at least one new, specific backlog item that grows a different part of the setting; do not add duplicates or claim deferred simulation features exist.
 5. Update `library/changelog.md` with a concise dated entry linking to the changed folio. Commit the cycle's files and push to `origin/main`, staging only files changed for this cycle; the site's GitHub Pages workflow publishes pushes. Do not send email or messages.
