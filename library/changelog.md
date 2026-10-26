@@ -35,5 +35,6 @@ These edition notes record additions to the existing folios. Where a record's so
 - **Threshold House** — Added three proposed room-sound readings tied to the reconstructed arch, bench, and threshold, with conversation context and unknowns preserved. [Read the folio →]({{ '/library/threshold-house/' | relative_url }})
 - **Compass Garden** — Added a key to the proposed garden plan, separating depicted features from unrecorded scale, bearing, planting, and use. [Read the folio →]({{ '/library/compass-garden/' | relative_url }})
 - **Star Archive** — Added a proposed margin-mark legend and sample annotation for *The Unfixed Meridian*, with repeated, uncertain, and unverified notes kept distinct. [Read the folio →]({{ '/library/star-archive/' | relative_url }})
+- **Words of Passage** — Added an English-language pronunciation aid for Vesperglass, Tideglass, and starwell, with syllable breaks and stress marked as provisional. [Read the cross-reference →]({{ '/library/words-of-passage/' | relative_url }})
 
 <p class="folio-return"><a href="{{ '/library/' | relative_url }}">← Return to the Universe Library</a></p>

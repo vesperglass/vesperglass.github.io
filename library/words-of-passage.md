@@ -27,4 +27,18 @@ For the material and its place in the locomotive, see [Starshards & the Gate Tra
 
 <aside class="field-note"><span class="field-note-mark" aria-hidden="true">✳</span><p><strong>Reading note</strong><br>Terms marked “account” come from the recorded descriptions of travel. “Atlas view” identifies what the Train Dock scene shows; it does not add a physical construction or route to the surviving accounts.</p></aside>
 
+## Reader pronunciation key · English-language cues
+
+No surviving account records how Vesperglass travelers pronounce these terms. The cues below are a practical guide for reading the printed names aloud in English; capital letters show the suggested emphasis, not a local or canonical pronunciation.
+
+| Term | Suggested syllables | Reader cue | Use in the folios |
+| --- | --- | --- | --- |
+| **Vesperglass** | ves · per · glass | **VES**-per-glass | The place-name Vesperglass. |
+| **Tideglass** | tide · glass | **TIDE**-glass | The name in Tideglass Foundry. |
+| **starwell** | star · well | **STAR**-well | The locomotive's sealed chamber. |
+
+The word breaks follow familiar English parts: *Vesper* with *glass*, *tide* with *glass*, and *star* with *well*. Keeping the first part audible helps distinguish the place-name from the Foundry name and the train chamber, even when the terms appear close together in a sentence. The suggested stress gives a steady reading across the glossary; it does not settle how speakers in Vesperglass sound, or how readers of other English dialects should shape each vowel.
+
+For a short practice, say the three labels in sequence—**VES**-per-glass, **TIDE**-glass, **STAR**-well—then return to the definitions above. The spellings and referents are recorded in the folios; the syllable breaks and emphasis here remain an editorial aid.
+
 <p class="folio-return"><a href="{{ '/library/' | relative_url }}">← Return to the Universe Library</a><a href="{{ '/' | relative_url }}">View the Vesperglass atlas ↗</a></p>
