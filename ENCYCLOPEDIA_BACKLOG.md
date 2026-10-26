@@ -25,12 +25,13 @@ Working tracker for new reference forms and encyclopedia additions. Keep it in s
 | Archive catalog cards | A single chart, instrument note, or record with provenance and a short annotation | Identify each card as a proposal unless the site establishes the record as canon |
 | Materials handling labels | Small notes about how objects are packed, stored, or moved between places | Mark handling methods as interpretive unless directly established in a folio |
 | World relationship indexes | A compact cross-reference showing established links among places, materials, vessels, and journeys | Show only documented relationships; do not imply a physical route or system where none is established |
-| Keeper phrasebook slips | Short greetings or recurring expressions that make everyday interactions legible | Attribute phrases to imagined speakers or traditions and label them as interpretation until adopted |
+| Keeper phrasebook slips | Greetings with brief context and optional replies, making everyday interactions legible | Mark wording as proposed when no account records it; present use and replies as choices, not binding custom |
 | Seasonal light calendars | A compact record of how keepers might name recurring changes in daylight or starlight | Present as an imagined cultural reference, not a real-time cycle or simulation mechanic |
 | Instrument care notes | Brief annotations about how an imagined keeper might protect or inspect a reconstructed instrument | Label the equipment and routine as interpretation; do not imply an implemented maintenance system |
 | Catalog status ribbons | Compact provenance labels that tell readers what an archival example is, what it covers, and what remains unknown | Make the record's proposed or reconstructed status visible; never imply it came from Galaxy output |
 | Relationship evidence tables | A cross-folio index that groups documented connections by lore, viewer navigation, or visual presentation | Cite the relevant folios and state the limit of each connection; do not turn editorial links into routes |
 | Comparative observation strips | A concise record pairing a visible cue with a comparison and an unresolved question | Label examples as proposed records and leave dates, causes, and provenance unknown unless established in an account |
+| Room sound notes | Descriptive accounts of how a reconstructed room might carry voices, footsteps, or silence | Keep each sound explicitly proposed; do not imply an audio recording or a visitor-facing sound feature |
 
 ## Backlog
 
@@ -46,15 +47,16 @@ Working tracker for new reference forms and encyclopedia additions. Keep it in s
 - [x] **Create an Archive catalog card for a proposed sky chart** — Add the invented *Unfixed Meridian* chart with a limited imagined scope and annotation suggestion, explicitly not an existing record or Galaxy-generated chart. Completed 2026-10-25 in `library/star-archive.md`.
 - [x] **Build a world relationship index for Workshop, Foundry, Gate, and Train Dock** — Add a standalone linked reference page that classifies documented setting, navigation, and animation relationships while stating what they do not establish. Completed 2026-10-25 in `library/relationships.md`; linked from `library.md`.
 - [x] **Draft a Compass Garden seasonal light calendar** — Add three proposed light markers and an imagined comparison strip, state that no calendar or cycle is established, and link the entry to the Observatory and Star Archive. Completed 2026-10-25 in `library/compass-garden.md`.
+- [x] **Add a Threshold House phrasebook slip** — Develop three proposed arrival greetings with context and optional replies, note that no local dialogue or etiquette is recorded, and link to related Gate and Workshop accounts. Completed 2026-10-26 in `library/threshold-house.md`.
 
 ### Open
 
 - [ ] **Draft an interpretive handling label for a starshard case** — Add a short proposed Foundry cabinet label about packing and moving a sample in its dark-glass case, linking the material entry to Tideglass Foundry without presenting a new procedure as canon.
-- [ ] **Add a Threshold House phrasebook slip** — Record three imagined arrival greetings with brief notes on when a keeper might use each, labeling the phrases as interpretation rather than established dialogue.
 - [ ] **Write an interpretive care note for the Observatory's proposed star lens** — Describe an imagined dust-cover and cloth practice for the reconstructed instrument, and state that neither the specific lens nor a maintenance system is established or implemented.
 - [ ] **Add a status ribbon to the Observatory sample log** — Label its invented note, established atlas destination, and relationship to Galaxy viewer data in a compact provenance key; do not imply a real observation or a new viewer feature.
 - [ ] **Add a Gate travel terms crosswalk** — Link “starwell,” “Gate bloom,” and the Train Dock's “hidden guide path” to their folios, labeling each as lore or visual presentation and avoiding claims of a live travel mechanic.
 - [ ] **Add a paired-observation strip to the Observatory sample log** — Show how a second imagined note could compare with the first while leaving the cause open; label both as editorial examples, not Galaxy observations or stored viewer history.
+- [ ] **Write a Threshold House room-sound note** — Describe three proposed acoustic details for the reconstructed chamber and explain how they might affect a conversation; state that no account records these sounds and that no audio feature is implied.
 
 ## Hourly substantial work cycle
 

@@ -24,4 +24,8 @@ These edition notes record additions to the existing folios. Where a record's so
 - **World Relationship Index** — Added a reference index to recorded connections among places, materials, vessels, and journeys. [Read the index →]({{ '/library/relationships/' | relative_url }})
 - **Compass Garden** — Added three proposed light markers and an imagined comparison strip, explicitly leaving season names, dates, duration, and a recurring cycle unestablished. [Read the folio →]({{ '/library/compass-garden/' | relative_url }})
 
+## October 26, 2026
+
+- **Threshold House** — Added three proposed arrival greetings with optional replies and context, leaving local speech and etiquette unestablished. [Read the folio →]({{ '/library/threshold-house/' | relative_url }})
+
 <p class="folio-return"><a href="{{ '/library/' | relative_url }}">← Return to the Universe Library</a></p>

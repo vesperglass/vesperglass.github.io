@@ -30,6 +30,20 @@ Threshold House is a quiet place to pause before crossing from one part of Vespe
 
 <aside class="field-note"><span class="field-note-mark" aria-hidden="true">✳</span><p><strong>What is recorded</strong><br>Threshold House stands among Vesperglass's platforms. Its exact use, inhabitants, and interior layout are not described in the surviving accounts.</p></aside>
 
+## Phrasebook slip · words for arriving
+
+No surviving account records the speech of Threshold House or names a keeper who welcomes arrivals. The three lines below are proposed language for the still-open threshold: examples of how someone might offer rest or conversation without asking for a traveler's destination. They are not quotations or established etiquette.
+
+| Proposed greeting | A moment it might suit | Possible reply |
+| --- | --- | --- |
+| **“You are here; that is enough for now.”** | Someone has arrived but is not ready to recount the journey. The greeting acknowledges their presence without asking for an explanation. | **“Give me a little quiet, then.”** |
+| **“Would you like a question, or a quiet?”** | The pause has begun to open into conversation, but the arriving person may still choose not to tell their story. | **“A quiet first; the question can wait.”** |
+| **“Shall we leave the crossing unnamed?”** | Two people have different memories of a passage, or neither can say where the road led. The words leave room for uncertainty instead of settling a version. | **“For tonight, let it remain open.”** |
+
+### How the slips are meant to work
+
+These lines offer three kinds of welcome: recognition, choice, and room for an unresolved account. The suggested replies are alternatives, not required responses; silence would work just as well. No surviving account establishes the phrases as local custom or assigns a route, time, or history to a particular arrival. They pair with the Gate folio's accounts of an unnamed crossing and the Workshop's proposed practice of carrying an open question forward, while adding no new facts about either place. [Read the Gate crossing record →]({{ '/library/vesperglass-gate/' | relative_url }}) · [Read the Workshop customs →]({{ '/library/workshop/' | relative_url }})
+
 ## At a glance
 
 <dl class="folio-glossary">
