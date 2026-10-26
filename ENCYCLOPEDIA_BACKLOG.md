@@ -34,6 +34,7 @@ Working tracker for new reference forms and encyclopedia additions. Keep it in s
 | Room sound notes | Descriptive accounts of how a reconstructed room might carry voices, footsteps, or silence | Keep each sound explicitly proposed; do not imply an audio recording or a visitor-facing sound feature |
 | Reader pronunciation keys | A practical guide to saying unfamiliar place, vessel, or material names | Label readings as editorial aids when no account preserves local speech; do not assert a canonical pronunciation |
 | Evidence-to-field matrices | A compact table for each proposed artifact that maps every catalog field to its supporting account and names the remaining unknowns | Treat the matrix as editorial apparatus, not an in-world form; keep unsupported fields blank and link the source folio |
+| Journey docket cards | A compact departure-to-arrival record that separates a crossing's described sequence from absent route metadata | Label the docket as proposed unless a dated crossing record exists; leave passenger, destination, schedule, and duration unknown rather than implying a travel log or live route system |
 
 ## Backlog
 
@@ -56,12 +57,13 @@ Working tracker for new reference forms and encyclopedia additions. Keep it in s
 ### Open
 
 - [x] **Draft an interpretive handling label for a starshard case** — Add a proposed receiving-label example and evidence matrix that separate the account's padded, dark-glass transit case from unrecorded receipt, inspection, and cabinet details; link to Tideglass Foundry without introducing a handling procedure. Completed 2026-10-26 in `library/starshards.md`.
-- [ ] **Write an interpretive care note for the Observatory's proposed star lens** — Describe an imagined dust-cover and cloth practice for the reconstructed instrument, and state that neither the specific lens nor a maintenance system is established or implemented.
+- [x] **Write an interpretive care note for the Observatory's proposed star lens** — Develop a reconstructed care card and evidence table that distinguish the pictured telescope from unrecorded lens specifications, cleaning practice, and keeper responsibilities; link the note to related Archive material without implying a maintenance system. Completed 2026-10-26 in `library/observatory.md`.
 - [ ] **Add a status ribbon to the Observatory sample log** — Label its invented note, established atlas destination, and relationship to Galaxy viewer data in a compact provenance key; do not imply a real observation or a new viewer feature.
 - [ ] **Write a Threshold House room-sound note** — Describe three proposed acoustic details for the reconstructed chamber and explain how they might affect a conversation; state that no account records these sounds and that no audio feature is implied.
 - [ ] **Add a reader pronunciation key for Vesperglass travel terms** — Offer provisional reader-friendly pronunciations for “Vesperglass,” “Tideglass,” and “starwell,” clearly noting that the surviving accounts do not preserve local pronunciations.
 - [ ] **Add a margin-mark legend for the proposed Unfixed Meridian chart** — Define editorial marks for a repeated sighting, an uncertain reading, and an unverified place; state that the legend accompanies the proposed chart and is not transcribed from a surviving record.
 - [ ] **Add an evidence-to-field matrix to the Unfixed Meridian chart card** — Map its proposed title, scope, marks, and provenance fields to what the Star Archive account actually records; keep absent maker, date, and route information explicitly unknown and avoid implying the chart is a surviving artifact.
+- [ ] **Draft a proposed Train Dock journey docket** — Arrange an unnamed Gate crossing into departure, bloom, and arrival fields, then leave date, passengers, destination, schedule, and duration blank; distinguish the proposed record from the crossing account and from any live route behavior.
 
 ## Hourly substantial work cycle
 

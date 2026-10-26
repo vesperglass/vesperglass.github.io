@@ -50,6 +50,25 @@ These two leaves are an editorial comparison, not authenticated Observatory entr
 
 The note records what the observer thinks they saw, what should be checked next, and which explanation remains uncertain. Its language and procedure are proposals, not established Observatory practice.
 
+## Proposed instrument care note · the star lens
+
+The Observatory plates show a brass telescope, but the surviving accounts do not name a particular lens, describe its mounting, or record how an instrument is maintained. The following care note is an editorial reconstruction for the pictured star lens. It is not a keeper's instruction, a record of actual work, or evidence of an Observatory maintenance system.
+
+### Reconstructed care card
+
+<aside class="field-note"><span class="field-note-mark" aria-hidden="true">✳</span><p><strong>Proposed card · star lens · no instrument record identified</strong><br><strong>Before observation:</strong> In this proposed scene, a dust cover is lifted from the lens and set aside. Its material, fit, and storage place are unspecified.<br><strong>Cloth:</strong> A clean cloth is imagined beside the instrument and used for the cover's exterior only; the proposal does not depict it touching the glass. No account records this use.<br><strong>After observation:</strong> The cover may be returned in an illustrative sequence. No keeper, date, inspection, or maintenance event is recorded.<br><strong>Record status:</strong> proposed equipment and practice, reconstructed from the Observatory imagery.</p></aside>
+
+The card deliberately separates a possible accessory from an actual act. A dust cover makes the lens legible as an instrument with a period of rest between observations; the cloth's proposed use is restricted to the cover so the imagined scene does not turn into unsupported glass-cleaning advice. Neither gives us grounds to claim that keepers polish the glass, use a particular material, or follow a routine.
+
+| Detail | Source status | What the detail can support |
+| --- | --- | --- |
+| Observatory as a place of observation and record | Established in the folio account | A context for the telescope and logbook. |
+| Brass telescope in the place plate | Shown in the Observatory plate | A visible form; not a technical specification. |
+| Dust cover and star lens care card | Proposed interpretation | An optional way to imagine the instrument at rest. |
+| Cloth, cleaning method, schedule, and responsible keeper | Cloth's cover-only role is proposed; all actual use and other details are unrecorded | No claim about actual materials, maintenance practice, or assigned work. |
+
+The comparison with the logbook is useful: the proposed observation leaves explicitly preserve what the observer could not determine, while this care card preserves what the instrument account does not say. Both are editorial aids, not a technical manual or evidence of a recorded Observatory practice. The [Star Archive's proposed *Unfixed Meridian* catalog card]({{ '/library/star-archive/' | relative_url }}) offers a separate example of keeping an instrument-linked record distinct from a confirmed object or observation.
+
 <aside class="field-note"><span class="field-note-mark" aria-hidden="true">✳</span><p><strong>What is recorded</strong><br>The Observatory is a place of observation and record. The logbook's surviving entries do not identify the stars discussed in this leaf.</p></aside>
 
 ## At a glance
