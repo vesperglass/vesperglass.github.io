@@ -30,6 +30,22 @@ The compass rose marks the garden's central point of orientation, with beds and 
 
 <aside class="field-note"><span class="field-note-mark" aria-hidden="true">✳</span><p><strong>What is recorded</strong><br>Compass Garden is a glasshouse among the outer platforms. The surviving accounts do not name its plants or keepers.</p></aside>
 
+### Plan key · reading Plate II
+
+Plate II is a proposed plan study, not a measured survey. The key below names what the drawing shows and keeps its arrangement separate from facts about the glasshouse.
+
+| Mark in the plate | What is depicted | What the drawing does not establish |
+| --- | --- | --- |
+| Central compass rose | A central reference around which the beds are arranged. | North, a bearing to another platform, or an orientation used for navigation. |
+| Radial planting beds | Several beds opening outward from the central mark. | Plant species, bed dimensions, planting order, or a keeper's routine. |
+| Curved paths | Walkways bending between the beds and around the center. | Required routes, access rules, or the measured width of a path. |
+| Basin | A water basin included in the proposed layout. | Its water source, depth, material, or use. |
+| Workbench | A work surface placed near the garden beds. | Its tools, assigned task, or whether it belongs to the established interior. |
+
+Read from the rose outward, the plate offers a simple way to compare the center, beds, and paths before noticing the basin and workbench. That is a reading order for the illustration, not an account of how anyone moves through the garden. The established description remains narrower: Compass Garden is a named glasshouse, while the plan's full arrangement, scale, bearing, plants, and work remain unrecorded.
+
+The proposed light calendar below uses the compass rose as a reference in its sample cues. This key clarifies that those cues belong to the proposed plan study; they do not assign the garden an absolute direction or a recurring celestial schedule.
+
 ## A proposed light calendar · three garden readings
 
 No surviving account gives Compass Garden a calendar, names a season, or describes a cycle of changing light. The following three markers are an interpretive vocabulary for a keeper's notes, composed for this folio. They do not establish dates, duration, a source star, or a recurring celestial pattern.
