@@ -18,5 +18,6 @@ Growth notes from this date record additions across the existing folios. Propose
 - **Vesperglass Train Dock** — Added a Gate train dossier summarizing the lore and atlas animation while identifying engineering details that remain unspecified. [Read the folio →]({{ '/library/train-dock/' | relative_url }})
 - **The Vesperglass Gate** — Added an interpretive crossing sequence covering departure, passage, and arrival, with unspecified journey details left open. [Read the folio →]({{ '/library/vesperglass-gate/' | relative_url }})
 - **Vesperglass Workshop** — Added three proposed departure customs for the Workshop and Train Dock, labeled as optional interpretation rather than established practice or simulation steps. [Read the folio →]({{ '/library/workshop/' | relative_url }})
+- **Starshards & the Gate Train** — Added the interpretive Blue-Sill Basin field plate as an imagined landscape for possible starshard context, explicitly separate from generated Galaxy content. [Read the folio →]({{ '/library/starshards/' | relative_url }})
 
 <p class="folio-return"><a href="{{ '/library/' | relative_url }}">← Return to the Universe Library</a></p>
