@@ -54,4 +54,6 @@ permalink: /library/
   </a>
 </div>
 
+<p><a href="{{ '/library/changelog/' | relative_url }}">Read the Encyclopedia changelog →</a></p>
+
 <div class="library-colophon"><span class="colophon-mark" aria-hidden="true">✳</span><p><strong>On the making of this book</strong><br>The atlas establishes the places and their names. Interior scenes, inhabitants shown for scale, furnishings, and architectural plans are generated artistic reconstructions unless an entry identifies them as established lore. The Galaxy and train route remain a browser experience; gathering, refining, and persistent expeditions are not yet implemented.</p></div>
