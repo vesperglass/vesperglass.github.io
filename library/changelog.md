@@ -22,5 +22,6 @@ These edition notes record additions to the existing folios. Where a record's so
 - **The Vesperglass Gate** — Added two contrasting recollections of a crossing without assigning them to a dated journey. [Read the folio →]({{ '/library/vesperglass-gate/' | relative_url }})
 - **Star Archive** — Added a catalog card for *The Unfixed Meridian*, with its scope and annotation practice recorded as a proposal. [Read the folio →]({{ '/library/star-archive/' | relative_url }})
 - **World Relationship Index** — Added a reference index to recorded connections among places, materials, vessels, and journeys. [Read the index →]({{ '/library/relationships/' | relative_url }})
+- **Compass Garden** — Added three proposed light markers and an imagined comparison strip, explicitly leaving season names, dates, duration, and a recurring cycle unestablished. [Read the folio →]({{ '/library/compass-garden/' | relative_url }})
 
 <p class="folio-return"><a href="{{ '/library/' | relative_url }}">← Return to the Universe Library</a></p>

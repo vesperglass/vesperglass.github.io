@@ -30,6 +30,26 @@ The compass rose marks the garden's central point of orientation, with beds and 
 
 <aside class="field-note"><span class="field-note-mark" aria-hidden="true">✳</span><p><strong>What is recorded</strong><br>Compass Garden is a glasshouse among the outer platforms. The surviving accounts do not name its plants or keepers.</p></aside>
 
+## A proposed light calendar · three garden readings
+
+No surviving account gives Compass Garden a calendar, names a season, or describes a cycle of changing light. The following three markers are an interpretive vocabulary for a keeper's notes, composed for this folio. They do not establish dates, duration, a source star, or a recurring celestial pattern.
+
+| Proposed marker | Light cue a keeper might record | Possible note beside the garden plan |
+| --- | --- | --- |
+| **First Reach** | A narrow line of star-facing light touches one of the outer marks around the compass rose. | Draw the edge of the light on a blank plan and leave its direction unassigned. |
+| **Open Span** | The line extends across the rose, making its center and the nearest planting beds visible together. | Compare the shadow at the center with the earlier mark; note any difference without assigning a cause. |
+| **Quiet Edge** | The line no longer crosses the center mark, though the glasshouse remains lit. | Keep the previous mark for comparison and leave space for another observer to disagree. |
+
+These are reading prompts, not a sequence of guaranteed seasons. A keeper might encounter them in another order, fail to observe one, or choose different names. The proposed entries describe where light appears in relation to the garden's compass rose; they do not claim that its plants respond on a schedule.
+
+### An imagined comparison strip
+
+An entry might pair the chosen marker with the visible cue and one open question:
+
+> **Open Span** · The light crossed the center mark. The shadow's source and the time until its edge moved remain unassigned.
+
+This sample is invented, with no date or observed event attached. Its form echoes the interpretive log example in the Observatory folio, which separates a visible cue from a possible explanation. It is not an established keeper's practice or a cataloged Archive record. [Compare the Observatory logbook →]({{ '/library/observatory/' | relative_url }}) · [Visit the Star Archive →]({{ '/library/star-archive/' | relative_url }})
+
 ## At a glance
 
 <dl class="folio-glossary">

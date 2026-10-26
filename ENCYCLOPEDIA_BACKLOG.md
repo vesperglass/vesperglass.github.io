@@ -30,6 +30,7 @@ Working tracker for new reference forms and encyclopedia additions. Keep it in s
 | Instrument care notes | Brief annotations about how an imagined keeper might protect or inspect a reconstructed instrument | Label the equipment and routine as interpretation; do not imply an implemented maintenance system |
 | Catalog status ribbons | Compact provenance labels that tell readers what an archival example is, what it covers, and what remains unknown | Make the record's proposed or reconstructed status visible; never imply it came from Galaxy output |
 | Relationship evidence tables | A cross-folio index that groups documented connections by lore, viewer navigation, or visual presentation | Cite the relevant folios and state the limit of each connection; do not turn editorial links into routes |
+| Comparative observation strips | A concise record pairing a visible cue with a comparison and an unresolved question | Label examples as proposed records and leave dates, causes, and provenance unknown unless established in an account |
 
 ## Backlog
 
@@ -44,16 +45,16 @@ Working tracker for new reference forms and encyclopedia additions. Keep it in s
 - [x] **Add an oral-history fragment** — Add two attributed, imagined recollections of the Gate crossing that differ in emphasis and explicitly establish no dated trip, passenger record, or Galaxy event. Completed 2026-10-25 in `library/vesperglass-gate.md`.
 - [x] **Create an Archive catalog card for a proposed sky chart** — Add the invented *Unfixed Meridian* chart with a limited imagined scope and annotation suggestion, explicitly not an existing record or Galaxy-generated chart. Completed 2026-10-25 in `library/star-archive.md`.
 - [x] **Build a world relationship index for Workshop, Foundry, Gate, and Train Dock** — Add a standalone linked reference page that classifies documented setting, navigation, and animation relationships while stating what they do not establish. Completed 2026-10-25 in `library/relationships.md`; linked from `library.md`.
+- [x] **Draft a Compass Garden seasonal light calendar** — Add three proposed light markers and an imagined comparison strip, state that no calendar or cycle is established, and link the entry to the Observatory and Star Archive. Completed 2026-10-25 in `library/compass-garden.md`.
 
 ### Open
 
 - [ ] **Draft an interpretive handling label for a starshard case** — Add a short proposed Foundry cabinet label about packing and moving a sample in its dark-glass case, linking the material entry to Tideglass Foundry without presenting a new procedure as canon.
-- [ ] **Build a world relationship index for Workshop, Foundry, Gate, and Train Dock** — Cross-reference only links already described in the folios and identify whether each is lore, atlas navigation, or visual presentation rather than implying a connected physical route.
 - [ ] **Add a Threshold House phrasebook slip** — Record three imagined arrival greetings with brief notes on when a keeper might use each, labeling the phrases as interpretation rather than established dialogue.
-- [ ] **Draft a Compass Garden seasonal light calendar** — Propose three keeper names for changing light across the garden and explain the imagined observances; keep it clearly interpretive and separate from any live time or growth simulation.
 - [ ] **Write an interpretive care note for the Observatory's proposed star lens** — Describe an imagined dust-cover and cloth practice for the reconstructed instrument, and state that neither the specific lens nor a maintenance system is established or implemented.
 - [ ] **Add a status ribbon to the Observatory sample log** — Label its invented note, established atlas destination, and relationship to Galaxy viewer data in a compact provenance key; do not imply a real observation or a new viewer feature.
 - [ ] **Add a Gate travel terms crosswalk** — Link “starwell,” “Gate bloom,” and the Train Dock's “hidden guide path” to their folios, labeling each as lore or visual presentation and avoiding claims of a live travel mechanic.
+- [ ] **Add a paired-observation strip to the Observatory sample log** — Show how a second imagined note could compare with the first while leaving the cause open; label both as editorial examples, not Galaxy observations or stored viewer history.
 
 ## Hourly substantial work cycle
 
