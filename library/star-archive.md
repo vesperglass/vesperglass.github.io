@@ -42,6 +42,26 @@ The following catalog card is a proposed entry for a chart called *The Unfixed M
 
 As a reference proposal, the card connects the Archive collection with the Observatory's logbook without assigning either record to a named star. [Read the Observatory folio →]({{ '/library/observatory/' | relative_url }})
 
+### Proposed margin-mark legend · *The Unfixed Meridian*
+
+The chart card above suggests leaving room for later annotations. This key proposes three marks for that margin, each describing the status of a note rather than locating a body in the sky. The surviving accounts do not supply these symbols; they are editorial proposals for the named chart, whose existence and title also remain unconfirmed.
+
+| Proposed mark | Reading | Limit of the mark |
+| --- | --- | --- |
+| **↻ · returned to** | A reader has set down a second look beside an earlier note. | It does not establish that the same observer, instrument, or conditions were used. |
+| **? · uncertain reading** | The writer cannot decide between two readings of a feature. | It does not resolve the feature or identify its cause. |
+| **□ · place unverified** | A place-name has been retained without a confirmed position. | It does not mark coordinates, a route, or a confirmed destination. |
+
+#### Sample margin · proposed
+
+> **↻** pale band noted again; comparison not dated · **?** edge may belong to the band or an adjacent mark · **□** place-name retained; position unverified
+
+This sample is composed to demonstrate the key, not transcribed from a chart or an observer's notebook. It assigns no new name or destination. The marks preserve a distinction among recurrence, uncertainty, and missing location; they do not turn the three notes into a sighting record.
+
+Use the return mark only to point back to earlier wording, not to claim a repeated event. Keep a question mark attached to the unresolved phrase, not to a presumed object. Use the open square to flag a name whose place remains unknown, never as a map pin. This keeps the chart's possible annotations legible without assigning a sky position or travel route.
+
+The [Observatory sample leaves]({{ '/library/observatory/' | relative_url }}) also leave the subject and position open, but their prose comparison is separate from this proposed chart notation. Neither record identifies a point on the Galaxy map.
+
 ## At a glance
 
 <dl class="folio-glossary">
