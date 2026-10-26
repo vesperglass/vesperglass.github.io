@@ -50,6 +50,22 @@ These two leaves are an editorial comparison, not authenticated Observatory entr
 
 The note records what the observer thinks they saw, what should be checked next, and which explanation remains uncertain. Its language and procedure are proposals, not established Observatory practice.
 
+### Status ribbon · reading the sample leaves
+
+The comparison is easier to use when its several kinds of certainty stay visible. This proposed ribbon is an editorial key for the two sample leaves; it is not a mark copied from an Observatory register.
+
+| Status | Application to this folio | What it does not establish |
+| --- | --- | --- |
+| **PLACE · named** | Observatory Logbook is a named destination among Vesperglass's outer platforms. | The exact room arrangement, its keeper, or a particular observing session. |
+| **LEAVES · proposed** | The blue-field note and its second-watch comparison are examples written for this folio. | Authenticated entries, dates, authors, or a preserved logbook. |
+| **OBJECT · unnamed** | Both leaves describe a point near a blue field's rim. | A named star, planet, or other body. |
+| **POSITION · unassigned** | The wording gives a relative position within the imagined view. | Coordinates or a fixed mark that another reader can identify. |
+| **GALAXY MAP · unmatched** | No point in the separate Galaxy map is identified by either leaf. | That a displayed point corresponds to the described light or that a map feature was observed at the Observatory. |
+
+Read together, the ribbon separates a real place-name from a proposed document and from the absent identity of the thing described. The first two leaves can be compared as writing: one says the color held through three turns, while the follow-up proposes a paler appearance and notes that the sighting changed. Without a date, coordinates, or an identified object, neither leaf can confirm a change in the sky. The status key leaves that question open instead of turning the map, the prose, or their resemblance into proof.
+
+The proposed light readings in [Compass Garden]({{ '/library/compass-garden/' | relative_url }}) use a similar discipline: they locate a described cue in relation to a garden marker but do not supply a date or celestial cause. Each record keeps its own subject and uncertainty; neither one names an Observatory target.
+
 ## Proposed instrument care note · the star lens
 
 The Observatory plates show a brass telescope, but the surviving accounts do not name a particular lens, describe its mounting, or record how an instrument is maintained. The following care note is an editorial reconstruction for the pictured star lens. It is not a keeper's instruction, a record of actual work, or evidence of an Observatory maintenance system.

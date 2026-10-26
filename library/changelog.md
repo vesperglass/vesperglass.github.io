@@ -31,5 +31,6 @@ These edition notes record additions to the existing folios. Where a record's so
 - **Observatory Logbook** — Added a proposed second watch beside the blue-field sample, with a comparison of what agrees, differs, and remains unknown. [Read the folio →]({{ '/library/observatory/' | relative_url }})
 - **Starshards & the Gate Train** — Added a proposed receiving label and evidence table that separate the recorded padded, dark-glass transit case from unrecorded receipt and inspection details. [Read the folio →]({{ '/library/starshards/' | relative_url }})
 - **Observatory Logbook** — Added a reconstructed star-lens care card and evidence table, keeping the pictured telescope distinct from unrecorded maintenance practices. [Read the folio →]({{ '/library/observatory/' | relative_url }})
+- **Observatory Logbook** — Added a proposed status ribbon for the sample leaves, distinguishing the named place from their unverified provenance and unmatched map subject. [Read the folio →]({{ '/library/observatory/' | relative_url }})
 
 <p class="folio-return"><a href="{{ '/library/' | relative_url }}">← Return to the Universe Library</a></p>
