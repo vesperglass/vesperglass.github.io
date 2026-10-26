@@ -28,6 +28,7 @@ Working tracker for new reference forms and encyclopedia additions. Keep it in s
 | Keeper phrasebook slips | Short greetings or recurring expressions that make everyday interactions legible | Attribute phrases to imagined speakers or traditions and label them as interpretation until adopted |
 | Seasonal light calendars | A compact record of how keepers might name recurring changes in daylight or starlight | Present as an imagined cultural reference, not a real-time cycle or simulation mechanic |
 | Instrument care notes | Brief annotations about how an imagined keeper might protect or inspect a reconstructed instrument | Label the equipment and routine as interpretation; do not imply an implemented maintenance system |
+| Catalog status ribbons | Compact provenance labels that tell readers what an archival example is, what it covers, and what remains unknown | Make the record's proposed or reconstructed status visible; never imply it came from Galaxy output |
 
 ## Backlog
 
@@ -40,16 +41,16 @@ Working tracker for new reference forms and encyclopedia additions. Keep it in s
 - [x] **Add keeper customs for departure preparation** — Add three proposed Workshop and Train Dock practices, clearly labeling them as optional interpretation rather than established customs or simulation steps. Completed 2026-10-25 in `library/workshop.md`.
 - [x] **Write a stellar-body field plate** — Add the invented Blue-Sill Basin landscape as an illustrative setting for possible starshard context, explicitly separate from generated Galaxy content. Completed 2026-10-25 in `library/starshards.md`.
 - [x] **Add an oral-history fragment** — Add two attributed, imagined recollections of the Gate crossing that differ in emphasis and explicitly establish no dated trip, passenger record, or Galaxy event. Completed 2026-10-25 in `library/vesperglass-gate.md`.
+- [x] **Create an Archive catalog card for a proposed sky chart** — Add the invented *Unfixed Meridian* chart with a limited imagined scope and annotation suggestion, explicitly not an existing record or Galaxy-generated chart. Completed 2026-10-25 in `library/star-archive.md`.
 
 ### Open
 
-- [ ] **Add an oral-history fragment** — Use two attributed, imagined voices to show how knowledge about the Gate may be remembered differently.
-- [ ] **Create an Archive catalog card for a proposed sky chart** — Describe the chart's imagined title, scope, and annotation practice while making clear it is not a record from the current Galaxy generator.
 - [ ] **Draft an interpretive handling label for a starshard case** — Add a short proposed Foundry cabinet label about packing and moving a sample in its dark-glass case, linking the material entry to Tideglass Foundry without presenting a new procedure as canon.
 - [ ] **Build a world relationship index for Workshop, Foundry, Gate, and Train Dock** — Cross-reference only links already described in the folios and identify whether each is lore, atlas navigation, or visual presentation rather than implying a connected physical route.
 - [ ] **Add a Threshold House phrasebook slip** — Record three imagined arrival greetings with brief notes on when a keeper might use each, labeling the phrases as interpretation rather than established dialogue.
 - [ ] **Draft a Compass Garden seasonal light calendar** — Propose three keeper names for changing light across the garden and explain the imagined observances; keep it clearly interpretive and separate from any live time or growth simulation.
 - [ ] **Write an interpretive care note for the Observatory's proposed star lens** — Describe an imagined dust-cover and cloth practice for the reconstructed instrument, and state that neither the specific lens nor a maintenance system is established or implemented.
+- [ ] **Add a status ribbon to the Observatory sample log** — Label its invented note, established atlas destination, and relationship to Galaxy viewer data in a compact provenance key; do not imply a real observation or a new viewer feature.
 
 ## Four-hour work cycle
 

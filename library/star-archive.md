@@ -30,6 +30,18 @@ The circular arrangement in these plates is an interpretation: visitors can move
 
 <aside class="field-note"><span class="field-note-mark" aria-hidden="true">✳</span><p><strong>What is recorded</strong><br>Star Archive is an atlas destination. The collection, catalog and keepers have not yet been described as canon.</p></aside>
 
+## Proposed catalog card · *The Unfixed Meridian*
+
+This is an invented catalog example, not a chart known to exist in the setting and not a record from the Galaxy generator. Both the title and the imagined object are interpretation.
+
+<dl class="folio-glossary">
+  <div><dt>Proposed title</dt><dd><em>The Unfixed Meridian</em></dd></div>
+  <div><dt>Imagined scope</dt><dd>A teaching sheet for comparing broad bands of light across an otherwise unmarked sky. It names no star system, planet, coordinate, or route.</dd></div>
+  <div><dt>Suggested annotation</dt><dd>A keeper might note the date, instrument used, and what appeared steady or uncertain, then leave space for another observer's comparison. This is a proposed record-keeping convention, not established Archive procedure.</dd></div>
+</dl>
+
+As a reference idea, the card connects the Archive's imagined collection with the Observatory's interpretive logbook without claiming that either records observations from the current Galaxy view. [Read the Observatory folio →]({{ '/library/observatory/' | relative_url }})
+
 ## At a glance
 
 <dl class="folio-glossary">
