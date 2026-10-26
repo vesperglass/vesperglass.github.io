@@ -29,5 +29,6 @@ These edition notes record additions to the existing folios. Where a record's so
 - **Threshold House** — Added three proposed arrival greetings with optional replies and context, leaving local speech and etiquette unestablished. [Read the folio →]({{ '/library/threshold-house/' | relative_url }})
 - **Words of Passage** — Added a linked glossary distinguishing account terms for stardust, starwell, and Gate bloom from the guide path shown at the Train Dock. [Read the cross-reference →]({{ '/library/words-of-passage/' | relative_url }})
 - **Observatory Logbook** — Added a proposed second watch beside the blue-field sample, with a comparison of what agrees, differs, and remains unknown. [Read the folio →]({{ '/library/observatory/' | relative_url }})
+- **Starshards & the Gate Train** — Added a proposed receiving label and evidence table that separate the recorded padded, dark-glass transit case from unrecorded receipt and inspection details. [Read the folio →]({{ '/library/starshards/' | relative_url }})
 
 <p class="folio-return"><a href="{{ '/library/' | relative_url }}">← Return to the Universe Library</a></p>

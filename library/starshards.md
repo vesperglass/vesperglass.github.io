@@ -44,6 +44,27 @@ These proposed cabinet notes group three forms by their visible traits. The surv
   <div><dt>Quiet glass</dt><dd>A dark, low-glimmer shard whose light appears only when turned. Its cabinet note would record the angle and conditions of observation before assigning any meaning to its color.</dd></div>
 </dl>
 
+### Case record · proposed receiving label
+
+Starshards are said to travel intact in padded, dark-glass cases. The account gives no opening, inspection, or storage procedure. The label below is a proposed catalog example: its fields organize what is known and leave the rest visibly blank rather than turning an editorial choice into a Foundry rule.
+
+<aside class="field-note"><span class="field-note-mark" aria-hidden="true">✳</span><p><strong>Proposed receiving label · specimen designation withheld</strong><br><strong>Material:</strong> starshard, as named in the account.<br><strong>Arrival case:</strong> padded, dark glass; described as the means of bringing the shard home.<br><strong>Case condition on receipt:</strong> not recorded.<br><strong>Contents examined:</strong> not recorded.<br><strong>Origin, date, and receiver:</strong> not recorded.<br><strong>Catalog note:</strong> retain the account’s wording; do not assign a cabinet form or origin from the case description alone.</p></aside>
+
+#### Reading the label
+
+The first two fields summarize the account’s stated material and transit. They establish that the shard is carried intact in a padded, dark-glass case; they do not tell us how the case is opened, whether it is sealed, how it is oriented, or what happens at receipt. The remaining fields are proposed blanks for a cataloguer to preserve those absences. They are not evidence that a particular case arrived, that a receiver inspected it, or that the Foundry uses this form.
+
+| Label field | What the account supports | What remains open |
+| --- | --- | --- |
+| Material | The fragments are called starshards. | A particular fragment’s form, hue, or classification. |
+| Transit case | Padded, dark glass; the shard is brought home intact. | Construction, closure, dimensions, and any handling instructions. |
+| Receipt | No receiving event is described. | Date, origin, case condition, contents examination, and receiver. |
+| Cabinet placement | The folio offers proposed cabinet notes as examples. | Whether a real specimen was catalogued or placed in a cabinet. |
+
+This distinction matters because the three cabinet forms above—*Blue seam*, *Split heart*, and *Quiet glass*—are proposed interpretive notes, not a classification recorded by the Foundry. A label can refer to one only when its proposed status stays attached. The case description by itself does not establish that any of those examples was carried, received, or examined.
+
+For the wider material account, see [Tideglass Foundry]({{ '/library/tideglass-foundry/' | relative_url }}), where the recorded sequence is cleaning, grinding between mirrored plates, sifting, and tempering. That process begins after the starshard reaches Vesperglass; neither folio supplies a procedure for opening or moving its transit case.
+
 ### Field plate · the Blue-Sill Basin
 
 The Blue-Sill Basin field account describes a shallow depression where a dark ridge crosses a pale mineral shelf. No surviving survey identifies its coordinates or confirms a starshard deposit there. The place name and terrain description are preserved as an interpretive account.
