@@ -9,7 +9,7 @@
     { title: "Threshold House", url: "/library/threshold-house/", summary: "A quiet place at the edge of arrival and passage.", terms: "threshold house arrival passage shelter" },
     { title: "Tideglass Foundry", url: "/library/tideglass-foundry/", summary: "The making of stardust from starshards and the tools of the Foundry.", terms: "tideglass foundry starshards stardust refining craft mill" },
     { title: "Compass Garden", url: "/library/compass-garden/", summary: "A conservatory and a proposed planting plan for the garden platform.", terms: "compass garden conservatory plants glasshouse planting" },
-    { title: "Observatory Logbook", url: "/library/observatory/", summary: "Instruments, observations, and records of the sky.", terms: "observatory logbook instruments orrery telescope charts" },
+    { title: "Observatory Logbook", url: "/library/observatory/", summary: "Instruments, observations, comparisons, and records of the sky.", terms: "observatory logbook instruments orrery telescope charts comparison follow-up color sighting tube" },
     { title: "Star Archive", url: "/library/star-archive/", summary: "A reference room for the knowledge of the sky, with an interpretive cutaway.", terms: "star archive books maps memory library" },
     { title: "The Vesperglass Gate", url: "/library/vesperglass-gate/", summary: "The detached portal platform and its passage into the Galaxy.", terms: "vesperglass gate portal transit galaxy ring" },
     { title: "Vesperglass Train Dock", url: "/library/train-dock/", summary: "A clear landing apron and alongside berth for the Gate train.", terms: "train dock berth station locomotive platform train" },

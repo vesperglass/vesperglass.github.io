@@ -30,7 +30,7 @@ Working tracker for new reference forms and encyclopedia additions. Keep it in s
 | Instrument care notes | Brief annotations about how an imagined keeper might protect or inspect a reconstructed instrument | Label the equipment and routine as interpretation; do not imply an implemented maintenance system |
 | Catalog status ribbons | Compact provenance labels that tell readers what an archival example is, what it covers, and what remains unknown | Make the record's proposed or reconstructed status visible; never imply it came from Galaxy output |
 | Relationship evidence tables | A cross-folio index that groups documented connections by lore, viewer navigation, or visual presentation | Cite the relevant folios and state the limit of each connection; do not turn editorial links into routes |
-| Comparative observation strips | A concise record pairing a visible cue with a comparison and an unresolved question | Label examples as proposed records and leave dates, causes, and provenance unknown unless established in an account |
+| Comparative observation strips | A paired record that identifies agreement, difference, and the question left open between two readings | Mark proposed leaves and absent dates, causes, or provenance; don't promote a comparison into a finding |
 | Room sound notes | Descriptive accounts of how a reconstructed room might carry voices, footsteps, or silence | Keep each sound explicitly proposed; do not imply an audio recording or a visitor-facing sound feature |
 | Reader pronunciation keys | A practical guide to saying unfamiliar place, vessel, or material names | Label readings as editorial aids when no account preserves local speech; do not assert a canonical pronunciation |
 
@@ -50,15 +50,16 @@ Working tracker for new reference forms and encyclopedia additions. Keep it in s
 - [x] **Draft a Compass Garden seasonal light calendar** — Add three proposed light markers and an imagined comparison strip, state that no calendar or cycle is established, and link the entry to the Observatory and Star Archive. Completed 2026-10-25 in `library/compass-garden.md`.
 - [x] **Add a Threshold House phrasebook slip** — Develop three proposed arrival greetings with context and optional replies, note that no local dialogue or etiquette is recorded, and link to related Gate and Workshop accounts. Completed 2026-10-26 in `library/threshold-house.md`.
 - [x] **Add a Gate travel terms crosswalk** — Define stardust, starwell, Gate bloom, and the Train Dock guide path by source, then distinguish the travel accounts from the atlas view. Completed 2026-10-26 in `library/words-of-passage.md`; linked from `library.md` and site search.
+- [x] **Add a paired-observation strip to the Observatory sample log** — Set a proposed second leaf beside the blue-field note and distinguish what agrees, what differs, and what remains unknown. Completed 2026-10-26 in `library/observatory.md`; Observatory search terms updated.
 
 ### Open
 
 - [ ] **Draft an interpretive handling label for a starshard case** — Add a short proposed Foundry cabinet label about packing and moving a sample in its dark-glass case, linking the material entry to Tideglass Foundry without presenting a new procedure as canon.
 - [ ] **Write an interpretive care note for the Observatory's proposed star lens** — Describe an imagined dust-cover and cloth practice for the reconstructed instrument, and state that neither the specific lens nor a maintenance system is established or implemented.
 - [ ] **Add a status ribbon to the Observatory sample log** — Label its invented note, established atlas destination, and relationship to Galaxy viewer data in a compact provenance key; do not imply a real observation or a new viewer feature.
-- [ ] **Add a paired-observation strip to the Observatory sample log** — Show how a second imagined note could compare with the first while leaving the cause open; label both as editorial examples, not Galaxy observations or stored viewer history.
 - [ ] **Write a Threshold House room-sound note** — Describe three proposed acoustic details for the reconstructed chamber and explain how they might affect a conversation; state that no account records these sounds and that no audio feature is implied.
 - [ ] **Add a reader pronunciation key for Vesperglass travel terms** — Offer provisional reader-friendly pronunciations for “Vesperglass,” “Tideglass,” and “starwell,” clearly noting that the surviving accounts do not preserve local pronunciations.
+- [ ] **Add a margin-mark legend for the proposed Unfixed Meridian chart** — Define editorial marks for a repeated sighting, an uncertain reading, and an unverified place; state that the legend accompanies the proposed chart and is not transcribed from a surviving record.
 
 ## Hourly substantial work cycle
 
