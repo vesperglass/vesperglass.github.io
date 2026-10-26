@@ -44,6 +44,22 @@ No surviving account records the speech of Threshold House or names a keeper who
 
 These lines offer three kinds of welcome: recognition, choice, and room for an unresolved account. The suggested replies are alternatives, not required responses; silence would work just as well. No surviving account establishes the phrases as local custom or assigns a route, time, or history to a particular arrival. They pair with the Gate folio's accounts of an unnamed crossing and the Workshop's proposed practice of carrying an open question forward, while adding no new facts about either place. [Read the Gate crossing record →]({{ '/library/vesperglass-gate/' | relative_url }}) · [Read the Workshop customs →]({{ '/library/workshop/' | relative_url }})
 
+## Room-sound note · proposed readings
+
+No surviving account describes how Threshold House sounds. The chamber, bench, lamp niches, and open glass arch belong to a reconstructed interior, so the following acoustic readings are proposals attached to that arrangement. They are written to help readers picture a conversation, not transcribed testimony or evidence of a particular arrival.
+
+| Place in the proposed room | Possible sound | How it might shape a conversation | What remains unknown |
+| --- | --- | --- | --- |
+| Beneath the tall glass arch | A short phrase might return as a faint second impression from above. | A greeting could feel shared with someone standing farther inside, while its last words remain briefly suspended. | Whether the arch reflects a voice, and its height, curvature, and material. |
+| Beside the long bench | A quiet answer might seem close and contained against the side of the chamber. | The bench offers a pause for an arrival who wants to speak softly or wait before answering. | The wall surfaces, distance from the arch, and whether anyone uses the bench. |
+| Across the open threshold | A few footfalls might be easier to notice than speech. | The moment of entering could become clear without requiring a greeting or explanation. | The floor material, any echo, and whether a crossing was underway. |
+
+These are three readings of the same reconstructed space, not a catalogue of established sounds. Each one begins with a visible feature in the plan or interior plate and asks what a listener might notice there. The effects are deliberately tentative: a faint return from the arch does not prove a vaulted ceiling, a contained answer does not establish soft furnishings, and a distinct footfall does not identify the floor.
+
+The note pairs naturally with the proposed arrival phrases above. A short greeting at the arch, a quiet reply by the bench, or silence at the threshold are optional scenes, not etiquette or requirements. The Gate folio preserves two contrasting recollections about hush and singing at passage, but those accounts do not verify these chamber sounds or locate them in Threshold House. [Read the Gate crossing record →]({{ '/library/vesperglass-gate/' | relative_url }})
+
+No acoustic recording or dated description accompanies the chamber. These lines do not identify a visitor, keeper, crossing, or sound source, and they establish no sound practice for the house.
+
 ## At a glance
 
 <dl class="folio-glossary">
