@@ -56,6 +56,10 @@ permalink: /library/
     <span class="library-card-art"><img src="{{ '/assets/library/gate-train-plate.webp' | relative_url }}" alt="The Gate train crossing a luminous portal with stardust in its starwell." loading="lazy"></span>
     <span class="library-entry-copy"><span class="library-entry-number">REFERENCE INSERT &nbsp;·&nbsp; CONNECTIONS</span><strong>World Relationship Index</strong><span>Recorded connections among places, materials, vessels, and journeys.</span><span class="library-read">Read the index <span aria-hidden="true">↗</span></span></span>
   </a>
+  <a class="library-entry-card" href="{{ '/library/words-of-passage/' | relative_url }}">
+    <span class="library-card-art"><img src="{{ '/assets/library/gate-train-plate.webp' | relative_url }}" alt="A brass-and-glass locomotive crosses the bright Vesperglass Gate." loading="lazy"></span>
+    <span class="library-entry-copy"><span class="library-entry-number">REFERENCE INSERT &nbsp;·&nbsp; VOCABULARY</span><strong>Words of Passage</strong><span>How stardust, the starwell, Gate bloom, and the Train Dock's guide path are described.</span><span class="library-read">Read the cross-reference <span aria-hidden="true">↗</span></span></span>
+  </a>
 </div>
 
 <p><a href="{{ '/library/changelog/' | relative_url }}">Read the Encyclopedia changelog →</a></p>
