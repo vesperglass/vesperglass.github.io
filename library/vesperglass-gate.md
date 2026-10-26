@@ -40,6 +40,17 @@ This sequence arranges details already described in the Encyclopedia into a refe
 
 The atlas animation is a visual loop, while the crossing sequence belongs to the setting's lore and its interpretive presentation here. The current viewer does not run trips, track cargo, or persist arrivals.
 
+## Remembered at the threshold · imagined voices
+
+These two voices are invented for the Encyclopedia; they are not sourced testimony or dialogue from the viewer. They offer contrasting ways a crossing might be remembered while leaving the journey's details open.
+
+<dl class="folio-glossary">
+  <div><dt>A dock keeper · imagined</dt><dd>“I remember the hush before the bloom. The train had already gone quiet, though its lamps still showed.”</dd></div>
+  <div><dt>A returning traveler · imagined</dt><dd>“For me there was no hush. I remember the Gate singing, and only afterward did I notice how still I had been.”</dd></div>
+</dl>
+
+The recollections differ in emphasis, not in verifiable timing: neither establishes a sound, event, or passenger record for a particular crossing. Their disagreement is a literary device, not evidence about a generated Galaxy route.
+
 <aside class="field-note"><span class="field-note-mark" aria-hidden="true">✳</span><p><strong>What is recorded</strong><br>The Gate links Vesperglass to the Galaxy view and is the train’s passage in the lore. The illustrated mechanical construction is speculative.</p></aside>
 
 ## At a glance

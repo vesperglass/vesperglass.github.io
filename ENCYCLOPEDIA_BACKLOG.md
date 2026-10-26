@@ -27,6 +27,7 @@ Working tracker for new reference forms and encyclopedia additions. Keep it in s
 | World relationship indexes | A compact cross-reference showing established links among places, materials, vessels, and journeys | Show only documented relationships; do not imply a physical route or system where none is established |
 | Keeper phrasebook slips | Short greetings or recurring expressions that make everyday interactions legible | Attribute phrases to imagined speakers or traditions and label them as interpretation until adopted |
 | Seasonal light calendars | A compact record of how keepers might name recurring changes in daylight or starlight | Present as an imagined cultural reference, not a real-time cycle or simulation mechanic |
+| Instrument care notes | Brief annotations about how an imagined keeper might protect or inspect a reconstructed instrument | Label the equipment and routine as interpretation; do not imply an implemented maintenance system |
 
 ## Backlog
 
@@ -38,16 +39,17 @@ Working tracker for new reference forms and encyclopedia additions. Keep it in s
 - [x] **Create a route folio for a Gate crossing** — Arrange the described departure, Gate bloom, and arrival as an interpretive sequence; leave date, destination, duration, schedule, and passenger details unspecified and separate lore from the atlas animation. Completed 2026-10-25 in `library/vesperglass-gate.md`.
 - [x] **Add keeper customs for departure preparation** — Add three proposed Workshop and Train Dock practices, clearly labeling them as optional interpretation rather than established customs or simulation steps. Completed 2026-10-25 in `library/workshop.md`.
 - [x] **Write a stellar-body field plate** — Add the invented Blue-Sill Basin landscape as an illustrative setting for possible starshard context, explicitly separate from generated Galaxy content. Completed 2026-10-25 in `library/starshards.md`.
+- [x] **Add an oral-history fragment** — Add two attributed, imagined recollections of the Gate crossing that differ in emphasis and explicitly establish no dated trip, passenger record, or Galaxy event. Completed 2026-10-25 in `library/vesperglass-gate.md`.
 
 ### Open
 
-- [ ] **Write a stellar-body field plate** — Offer one illustrative landscape and possible starshard context without presenting it as generated Galaxy content.
 - [ ] **Add an oral-history fragment** — Use two attributed, imagined voices to show how knowledge about the Gate may be remembered differently.
 - [ ] **Create an Archive catalog card for a proposed sky chart** — Describe the chart's imagined title, scope, and annotation practice while making clear it is not a record from the current Galaxy generator.
 - [ ] **Draft an interpretive handling label for a starshard case** — Add a short proposed Foundry cabinet label about packing and moving a sample in its dark-glass case, linking the material entry to Tideglass Foundry without presenting a new procedure as canon.
 - [ ] **Build a world relationship index for Workshop, Foundry, Gate, and Train Dock** — Cross-reference only links already described in the folios and identify whether each is lore, atlas navigation, or visual presentation rather than implying a connected physical route.
 - [ ] **Add a Threshold House phrasebook slip** — Record three imagined arrival greetings with brief notes on when a keeper might use each, labeling the phrases as interpretation rather than established dialogue.
 - [ ] **Draft a Compass Garden seasonal light calendar** — Propose three keeper names for changing light across the garden and explain the imagined observances; keep it clearly interpretive and separate from any live time or growth simulation.
+- [ ] **Write an interpretive care note for the Observatory's proposed star lens** — Describe an imagined dust-cover and cloth practice for the reconstructed instrument, and state that neither the specific lens nor a maintenance system is established or implemented.
 
 ## Four-hour work cycle
 
