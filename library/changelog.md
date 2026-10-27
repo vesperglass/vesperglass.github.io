@@ -41,6 +41,8 @@ These edition notes record additions to the existing folios. Where a record's so
 
 ## October 27, 2026
 
+- **The Vesperglass Gate** — Added an aperture profile that separates the pictured ring and proposed cutaway from the account's Gate bloom, keeping materials, mechanism, and the approach from the Train Dock unassigned. [Read the folio →]({{ '/library/vesperglass-gate/' | relative_url }})
+
 - **Tideglass Foundry** — Added a process-to-plate key that maps the recorded preparation sequence to Plate II’s reconstructed tools, including the operation with no pictured instrument and the limits of each proposed match. [Read the folio →]({{ '/library/tideglass-foundry/' | relative_url }})
 - **Vesperglass Postal Service** — Added a blank envelope-face schematic with proposed sender, addressee, and Gate-stamp positions, explicitly leaving postal standards and delivery destinations unrecorded. [Read the folio →]({{ '/library/postal-service/' | relative_url }})
 - **Vesperglass Postal Service** — Expanded Plate I to four proposed architectural stamps and added a cancellation-mark register with source boundaries for each motif. [Read the folio →]({{ '/library/postal-service/' | relative_url }})

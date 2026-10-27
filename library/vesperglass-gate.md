@@ -28,6 +28,30 @@ The Vesperglass Gate stands on its own platform, separate from the Train Dock. T
 
 The ring's layered construction and the role of its glass segments remain uncertain. No account gives a complete engineering description of the Gate.
 
+### Aperture profile · pictured structure and passage account
+
+“Aperture” here names the opening visible at the center of the pictured ring. It is a useful way to compare the Gate's architectural depiction with its role in the crossing account, but it does not name a moving part or explain how passage occurs. Plate II is explicitly a proposed construction study; its cutaway is a way to ask questions of the image, not a recovered engineering drawing.
+
+| Subject | What the account or plate shows | What that evidence does not establish |
+| --- | --- | --- |
+| **Place** | The Vesperglass Gate stands on its own platform, separate from the Train Dock; the locomotive passes through the Gate between worlds. | The distance between platforms, a connecting track, approach path, or fixed geographic relation. |
+| **Outer ring** | Plate I depicts a monumental freestanding ring, while Plate II proposes layered bands and a base. | Measured diameter, true material, weight, maker, structural load, or whether the proposed layers exist in the described world. |
+| **Central opening** | Both plates leave a visible opening at the ring's center. The crossing account calls the Gate the passage. | Whether the opening is empty space, an image plane, a field, or a separate structure; no account explains its physical composition. |
+| **Glass segments** | The proposed cutaway draws teal glass between brass-colored bands. | Whether those segments are structural, luminous, protective, or present in a documented Gate construction. |
+| **Bloom** | In the crossing account, a bright bloom gathers around the train and briefly hides it as the road takes shape; at arrival, the bloom opens outward again. | That the metal ring itself opens, rotates, or changes shape, or that the pictured glass causes the bloom. |
+| **Train's relation** | The locomotive passes through the Gate; the separate Dock is its alongside berth before departure. | The full sequence between leaving the Dock and meeting the Gate, or an operating procedure for either structure. |
+
+Read this as two kinds of evidence kept in view together: the plates offer a stable architectural image, while the passage account describes a luminous event around the train. The account does not turn the proposed cutaway into a mechanism, and the illustrations do not supply missing measurements. The [Train Dock folio]({{ '/library/train-dock/' | relative_url }}) describes the separate berth; [Words of Passage]({{ '/library/words-of-passage/' | relative_url }}) distinguishes the account's Gate bloom from a guide path read at the Dock.
+
+#### Questions the profile leaves open
+
+- Does the pictured ring simply frame the passage, or does some unrecorded structure lie within it?
+- Are the teal segments meant as glass, light, or an illustrative material choice? The account does not decide.
+- Does the Gate's visible shape remain the same before, during, and after a crossing? No comparative account records its appearance across those moments.
+- How does the train approach the Gate from its separate berth? The available descriptions do not provide a route or docking-to-Gate procedure.
+
+These are catalog questions, not proposed answers. Until another account supplies evidence, the aperture remains a visible feature of the plates and the bloom remains a described feature of passage.
+
 ## Crossing record · an interpretive sequence
 
 This interpretive sequence arranges details from accounts of the crossing. It is not a dated journey log; no destination, duration, schedule, or passenger list is established here.

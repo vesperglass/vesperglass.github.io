@@ -46,7 +46,7 @@ permalink: /library/
   </a>
   <a class="library-entry-card" href="{{ '/library/vesperglass-gate/' | relative_url }}">
     <span class="library-card-art"><img src="{{ '/assets/library/places/gate-plate.webp' | relative_url }}" alt="The freestanding Vesperglass Gate glowing against the starfield." loading="lazy"></span>
-    <span class="library-entry-copy"><span class="library-entry-number">ENTRY 008 &nbsp;·&nbsp; PORTAL &amp; TRANSIT</span><strong>The Vesperglass Gate</strong><span>The detached portal platform and its passage into the Galaxy.</span><span class="library-read">Read the entry <span aria-hidden="true">↗</span></span></span>
+    <span class="library-entry-copy"><span class="library-entry-number">ENTRY 008 &nbsp;·&nbsp; PORTAL &amp; TRANSIT</span><strong>The Vesperglass Gate</strong><span>The detached portal platform, its pictured aperture, and the bloom described in crossing accounts.</span><span class="library-read">Read the entry <span aria-hidden="true">↗</span></span></span>
   </a>
   <a class="library-entry-card" href="{{ '/library/train-dock/' | relative_url }}">
     <span class="library-card-art"><img src="{{ '/assets/library/places/dock-plate.webp' | relative_url }}" alt="The space train hovering alongside the straight open edge of its dock." loading="lazy"></span>
