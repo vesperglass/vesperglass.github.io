@@ -41,6 +41,8 @@ These edition notes record additions to the existing folios. Where a record's so
 
 ## October 27, 2026
 
+- **Vesperglass Train Dock** — Added a proposed journey docket with departure, bloom, and emergence fields, a deliberately blank record header, and a source-horizon table separating the Dock, Gate, and train accounts. [Read the folio →]({{ '/library/train-dock/' | relative_url }})
+
 - **Star Archive** — Added a source-to-field matrix for *The Unfixed Meridian* and a companion comparison that keeps the Archive catalog proposal distinct from the Observatory's sample leaves. [Read the folio →]({{ '/library/star-archive/' | relative_url }})
 
 - **The Vesperglass Gate** — Added an aperture profile that separates the pictured ring and proposed cutaway from the account's Gate bloom, keeping materials, mechanism, and the approach from the Train Dock unassigned. [Read the folio →]({{ '/library/vesperglass-gate/' | relative_url }})

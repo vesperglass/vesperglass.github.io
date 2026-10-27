@@ -41,6 +41,39 @@ This compact dossier gathers details from accounts of the train and its berth. I
 
 Details beyond the brass-and-glass design and the described fuel relationship remain open in the surviving accounts.
 
+## Proposed journey docket · three account fields
+
+The docket below is a proposed way to arrange three stages already described in separate passages: leaving the alongside berth, passing through the Gate bloom, and emerging on its far side. It is not a recovered travel record or a report of a particular crossing. No date, passenger, destination, schedule, or duration accompanies the sequence, so those fields remain deliberately blank.
+
+| Docket field | Proposed entry | Source in the Encyclopedia | What is still unrecorded |
+| --- | --- | --- | --- |
+| **Departure** | The locomotive leaves its alongside berth and moves into open flight. | This page's account of the Train Dock. | Date, time, named departure, destination, and the route from the Dock to the Gate. |
+| **Passage** | A bright bloom gathers around the train, briefly hiding it as the road takes shape. | [The Vesperglass Gate]({{ '/library/vesperglass-gate/' | relative_url }}). | A particular crossing, the place beyond it, elapsed time, and a mechanical description of the bloom. |
+| **Emergence** | The bloom opens outward as the train appears on the far side, carrying the light of its return journey. | The Gate crossing account. | A named arrival, a matched destination, a calendar date, and whether any two described passages belong to the same trip. |
+
+### Blank record header · proposed form
+
+| Field | Entry | Status |
+| --- | --- | --- |
+| Crossing date / watch | — | Not supplied by the accounts. |
+| Train or service identifier | — | No service number or train register is recorded. |
+| Passenger names | — | No passenger list is attached to a crossing. |
+| Origin / destination | Vesperglass → unassigned far side | Vesperglass is the established point of departure; no particular destination is named. |
+| Departure and arrival times | — | No schedule or elapsed duration is given. |
+| Cargo / return load | — | The crossing description does not identify a cargo manifest. |
+
+The arrows are a reading order for the account, not a mapped route. In particular, the Dock's guide path describes the train aligning with its berth; the [Words of Passage cross-reference]({{ '/library/words-of-passage/' | relative_url }}) keeps that atlas-view term separate from the Gate bloom in the crossing account. Neither establishes a track or a route between the two platforms.
+
+### Source horizon · what each folio can verify
+
+| Reference | It can support in this proposed docket | It cannot corroborate on its own |
+| --- | --- | --- |
+| **Vesperglass Train Dock** | The train has an alongside berth and departs back into open flight. | That the train next travels by a particular path to the Gate or reaches a named destination. |
+| **The Vesperglass Gate** | The bloom gathers around the train, conceals it briefly, then opens as the train emerges. | That this passage is the immediate continuation of a specific Dock departure or has a recorded duration. |
+| **Starshards & the Gate Train** | The locomotive carries stardust in its sealed starwell for a crossing. | The amount used on this trip, its passengers, cargo, or crossing number. |
+
+The three sources can organize a useful reference sequence while leaving the event identity unresolved. Until a dated account connects those stages, the proposed docket remains a blank comparison form rather than an itinerary or evidence of a scheduled service.
+
 <aside class="field-note"><span class="field-note-mark" aria-hidden="true">✳</span><p><strong>What is recorded</strong><br>The Train Dock and Gate stand on separate platforms. The train berths alongside the station and follows a guide path during docking and departure.</p></aside>
 
 ## At a glance

@@ -50,7 +50,7 @@ permalink: /library/
   </a>
   <a class="library-entry-card" href="{{ '/library/train-dock/' | relative_url }}">
     <span class="library-card-art"><img src="{{ '/assets/library/places/dock-plate.webp' | relative_url }}" alt="The space train hovering alongside the straight open edge of its dock." loading="lazy"></span>
-    <span class="library-entry-copy"><span class="library-entry-number">ENTRY 009 &nbsp;·&nbsp; BERTH &amp; DEPARTURE</span><strong>Vesperglass Train Dock</strong><span>A clear landing apron and alongside berth for the Gate train.</span><span class="library-read">Read the entry <span aria-hidden="true">↗</span></span></span>
+    <span class="library-entry-copy"><span class="library-entry-number">ENTRY 009 &nbsp;·&nbsp; BERTH &amp; DEPARTURE</span><strong>Vesperglass Train Dock</strong><span>A clear landing apron, alongside berth, and source-aware docket for an unnamed Gate crossing.</span><span class="library-read">Read the entry <span aria-hidden="true">↗</span></span></span>
   </a>
   <a class="library-entry-card" href="{{ '/library/postal-service/' | relative_url }}">
     <span class="library-card-art"><img src="{{ '/assets/library/postal-stamp-collection.png' | relative_url }}" alt="Four proposed Vesperglass postage stamps depict the Gate, Observatory, Compass Garden, and Tideglass Foundry." loading="lazy"></span>

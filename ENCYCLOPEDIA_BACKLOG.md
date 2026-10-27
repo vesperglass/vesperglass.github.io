@@ -47,6 +47,7 @@ Working tracker for new reference forms and encyclopedia additions. Keep it in s
 | Evidence-lineage strips | A compact path from a visual motif to its named source folio and the inference made for a new artifact | Cite the named source and label the motif as a proposal; state the limit of the relationship in the same row |
 | Threshold and aperture profiles | A source-aware comparison of a pictured threshold's stable form and the event described around it | Keep image evidence, account language, and unanswered architectural questions distinct; do not infer moving parts or a crossing mechanism |
 | Repository-to-observation boundaries | A comparison of a named record-keeping place with a nearby observation account that states whether any specific record is shared | Keep thematic relevance separate from common authorship, date, instrument, catalog ownership, or matching map subject |
+| Cross-record corroboration notes | A source-horizon table showing which stage or claim each neighboring account supports and which link between records remains unproven | Compare scope and provenance, not just matching vocabulary; do not merge undated accounts into one event |
 
 ## Backlog
 
@@ -81,16 +82,17 @@ Working tracker for new reference forms and encyclopedia additions. Keep it in s
 - [x] **Audit reference-insert main plates** — Give Words of Passage and the World Relationship Index distinct subject-specific Plate I graphics and use the same unique artwork on their library cards instead of the reused Gate-train image. Completed 2026-10-27 in `library/words-of-passage.md`, `library/relationships.md`, and `library.md`.
 - [x] **Write a Vesperglass Gate aperture profile** — Compare the pictured ring and proposed cutaway with the recorded bloom passage and the separate Train Dock berth; identify what each source supports and leave dimensions, materials, mechanism, and approach route open. Completed 2026-10-27 in `library/vesperglass-gate.md`.
 - [x] **Add an evidence-to-field matrix for *The Unfixed Meridian*** — Trace its proposed title, scope, marks, maker, date, and location fields to the Star Archive account; pair it with an Archive/Observatory source-boundary table that keeps their proposed records distinct. Completed 2026-10-27 in `library/star-archive.md`.
+- [x] **Draft a proposed Train Dock journey docket** — Arrange berth departure, Gate bloom, and emergence into a proposed form with a blank record header and a source-horizon comparison; leave dates, passengers, destination, route, cargo, and duration unassigned. Completed 2026-10-27 in `library/train-dock.md`.
 
 ### Open
 
-- [ ] **Draft a proposed Train Dock journey docket** — Arrange an unnamed Gate crossing into departure, bloom, and arrival fields, then leave date, passengers, destination, schedule, and duration blank; distinguish the proposed record from the crossing account and from any live route behavior.
 - [ ] **Add a visual inventory for Observatory Plate II** — Name the depicted orrery, sighting tube, star compass, and journal; distinguish image details from inferred function and leave maker, construction, and use by any named observer unknown.
 - [ ] **Add a pictured-flora key to Compass Garden Plate I** — Identify the pale starflowers and luminous ferns as visual descriptions in the plate, not as catalogued species; leave their names, origin, biology, and care unestablished.
 - [ ] **Add an interpretive cancellation-mark register to the Postal Service folio** — Propose Gate, Workshop, and Foundry postmark motifs and show how a mark could identify an image without asserting dispatch date, origin, destination, or a route; keep the register separate from evidence of real mail use.
 - [ ] **Create a two-state Dock alignment key** — Compare the described alongside berth with the atlas's illustrated approach path, separating position from movement and leaving offset, orientation, track, and docking procedure unknown; keep it distinct from the Gate crossing sequence.
 - [ ] **Add a depicted-object inventory for Vesperglass Workshop Plate II** — Identify the worktable, blueprints, cabinet vessels, and wall tools as features of the proposed cutaway; connect only the Workshop's established role as central home and preparation place, and leave object names, materials, owners, and making procedures unrecorded.
 - [ ] **Add a shelf-content boundary card to Star Archive Plate II** — Inventory the visible radial shelves, central reading table, and chart cabinet as features of the proposed cutaway, then list collection titles, catalog structure, access practice, and shelf assignment as unknown rather than filling the room with invented books.
+- [ ] **Compare the Gate crossing account with its two proposed recollections** — Mark the sequence details shared by the interpretive keeper and traveler voices, set their silence/singing difference beside the account's bloom description, and state that no dated witness or authenticated sound record is identified.
 
 ## Hourly substantial work cycle
 
