@@ -53,15 +53,15 @@ permalink: /library/
     <span class="library-entry-copy"><span class="library-entry-number">ENTRY 009 &nbsp;·&nbsp; BERTH &amp; DEPARTURE</span><strong>Vesperglass Train Dock</strong><span>A clear landing apron and alongside berth for the Gate train.</span><span class="library-read">Read the entry <span aria-hidden="true">↗</span></span></span>
   </a>
   <a class="library-entry-card" href="{{ '/library/postal-service/' | relative_url }}">
-    <span class="library-card-art"><img src="{{ '/assets/library/postal-service-plate.png' | relative_url }}" alt="Three proposed Vesperglass postage stamps and a circular Gate-ring seal on an archival sheet." loading="lazy"></span>
-    <span class="library-entry-copy"><span class="library-entry-number">ENTRY 010 &nbsp;·&nbsp; CORRESPONDENCE &amp; POSTAL MARKS</span><strong>Vesperglass Postal Service</strong><span>A proposed postal service, architectural seal, stamp issue, and blank envelope-face layout.</span><span class="library-read">Read the entry <span aria-hidden="true">↗</span></span></span>
+    <span class="library-card-art"><img src="{{ '/assets/library/postal-stamp-collection.png' | relative_url }}" alt="Four proposed Vesperglass postage stamps depict the Gate, Observatory, Compass Garden, and Tideglass Foundry." loading="lazy"></span>
+    <span class="library-entry-copy"><span class="library-entry-number">ENTRY 010 &nbsp;·&nbsp; CORRESPONDENCE &amp; POSTAL MARKS</span><strong>Vesperglass Postal Service</strong><span>A proposed postal service, four architectural stamp designs, cancellation-mark study, and blank envelope-face layout.</span><span class="library-read">Read the entry <span aria-hidden="true">↗</span></span></span>
   </a>
   <a class="library-entry-card" href="{{ '/library/relationships/' | relative_url }}">
-    <span class="library-card-art"><img src="{{ '/assets/library/gate-train-plate.webp' | relative_url }}" alt="The Gate train crossing a luminous portal with stardust in its starwell." loading="lazy"></span>
+    <span class="library-card-art"><img src="{{ '/assets/library/relationships-plate.svg' | relative_url }}" alt="A diagram of recorded links among Vesperglass places, materials, and the Gate train." loading="lazy"></span>
     <span class="library-entry-copy"><span class="library-entry-number">REFERENCE INSERT &nbsp;·&nbsp; CONNECTIONS</span><strong>World Relationship Index</strong><span>Recorded connections among places, materials, vessels, and journeys.</span><span class="library-read">Read the index <span aria-hidden="true">↗</span></span></span>
   </a>
   <a class="library-entry-card" href="{{ '/library/words-of-passage/' | relative_url }}">
-    <span class="library-card-art"><img src="{{ '/assets/library/gate-train-plate.webp' | relative_url }}" alt="A brass-and-glass locomotive crosses the bright Vesperglass Gate." loading="lazy"></span>
+    <span class="library-card-art"><img src="{{ '/assets/library/words-passage-plate.svg' | relative_url }}" alt="Four glossary cards distinguish recorded travel terms from one term read from the Train Dock atlas view." loading="lazy"></span>
     <span class="library-entry-copy"><span class="library-entry-number">REFERENCE INSERT &nbsp;·&nbsp; VOCABULARY</span><strong>Words of Passage</strong><span>How stardust, the starwell, Gate bloom, and the Train Dock's guide path are described.</span><span class="library-read">Read the cross-reference <span aria-hidden="true">↗</span></span></span>
   </a>
 </div>

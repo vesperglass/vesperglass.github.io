@@ -43,5 +43,7 @@ These edition notes record additions to the existing folios. Where a record's so
 
 - **Tideglass Foundry** — Added a process-to-plate key that maps the recorded preparation sequence to Plate II’s reconstructed tools, including the operation with no pictured instrument and the limits of each proposed match. [Read the folio →]({{ '/library/tideglass-foundry/' | relative_url }})
 - **Vesperglass Postal Service** — Added a blank envelope-face schematic with proposed sender, addressee, and Gate-stamp positions, explicitly leaving postal standards and delivery destinations unrecorded. [Read the folio →]({{ '/library/postal-service/' | relative_url }})
+- **Vesperglass Postal Service** — Expanded Plate I to four proposed architectural stamps and added a cancellation-mark register with source boundaries for each motif. [Read the folio →]({{ '/library/postal-service/' | relative_url }})
+- **Words of Passage and World Relationship Index** — Added distinct subject-specific Plate I illustrations to both reference inserts and replaced their reused library-card art. [Read the cross-reference →]({{ '/library/words-of-passage/' | relative_url }}) · [Read the index →]({{ '/library/relationships/' | relative_url }})
 
 <p class="folio-return"><a href="{{ '/library/' | relative_url }}">← Return to the Universe Library</a></p>

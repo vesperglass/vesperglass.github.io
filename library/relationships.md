@@ -8,6 +8,11 @@ permalink: /library/relationships/
 
 <nav class="folio-back" aria-label="Back to the Universe Library"><a href="{{ '/library/' | relative_url }}">← Universe Library</a><span>REFERENCE INSERT &nbsp;·&nbsp; RELATIONSHIPS</span></nav>
 
+<figure class="book-plate">
+  <img src="{{ '/assets/library/relationships-plate.svg' | relative_url }}" alt="A six-card Vesperglass relationship diagram links named places, materials, and the Gate train with recorded connections; a legend distinguishes cross-references from assigned routes or coordinates." fetchpriority="high">
+  <figcaption><span>PLATE I</span> A subject-specific reading key for the recorded connections indexed here; linework does not describe geography.</figcaption>
+</figure>
+
 ## Connections, with their limits
 
 This index gathers relationships recorded across the Encyclopedia. It follows the movement of starshards, the places that shape a crossing, and the limits of what the surviving accounts tell us.

@@ -2,15 +2,15 @@
 layout: default
 title: Vesperglass Postal Service
 kicker: VOLUME I · ENTRY 010
-description: A proposed postal service, an architectural seal, and a first interpretive stamp issue for Vesperglass.
+description: A proposed postal service, a four-design architectural stamp issue, and an interpretive cancellation-mark register.
 permalink: /library/postal-service/
 ---
 
 <nav class="folio-back" aria-label="Back to the Universe Library"><a href="{{ '/library/' | relative_url }}">← Universe Library</a><span>FIELD EDITION &nbsp;·&nbsp; FOLIO 010</span></nav>
 
 <figure class="book-plate">
-  <img src="{{ '/assets/library/postal-service-plate.png' | relative_url }}" alt="An archival sheet of three proposed Vesperglass postage stamps depicts the Gate, the Workshop window, and mirrored Foundry plates beside a circular brass seal." fetchpriority="high">
-  <figcaption><span>PLATE I</span> A proposed first stamp issue and Gate-ring seal, composed from architectural motifs shown elsewhere in the Encyclopedia.</figcaption>
+  <img src="{{ '/assets/library/postal-stamp-collection.png' | relative_url }}" alt="Four proposed Vesperglass postage stamps show the Gate arch, Observatory dome and telescope, Compass Garden glasshouse with a starflower, and Tideglass Foundry furnace window in engraved brass and teal on parchment perforations." fetchpriority="high">
+  <figcaption><span>PLATE I</span> A proposed four-design stamp sheet drawn from named Vesperglass architecture; the selection and artwork are interpretive.</figcaption>
 </figure>
 
 <div class="entry-byline"><span>SUBJECT &nbsp; CORRESPONDENCE · POSTAL MARKS</span><span>PLACE &nbsp; Vesperglass · proposal</span></div>
@@ -19,11 +19,11 @@ permalink: /library/postal-service/
 
 This folio introduces the **Vesperglass Postal Service** as a proposed setting detail. The accounts consulted for this Encyclopedia do not record a postal office, a named postal keeper, or an established system for carrying correspondence. The seal and stamp designs below are new interpretive proposals, not transcribed artifacts.
 
-The visual language draws on places already named in the record: the freestanding ring of the [Vesperglass Gate]({{ '/library/vesperglass-gate/' | relative_url }}), the star-facing windows of the [Workshop]({{ '/library/workshop/' | relative_url }}), and the mirrored plates of [Tideglass Foundry]({{ '/library/tideglass-foundry/' | relative_url }}). These references provide motifs, not evidence that those places once issued stamps or housed a mail room.
+The visual language draws on four places already named in the record: the freestanding ring of the [Vesperglass Gate]({{ '/library/vesperglass-gate/' | relative_url }}), the star-facing dome and telescope of the [Observatory Logbook]({{ '/library/observatory/' | relative_url }}), the glasshouse of the [Compass Garden]({{ '/library/compass-garden/' | relative_url }}), and the round furnace window of [Tideglass Foundry]({{ '/library/tideglass-foundry/' | relative_url }}). These references provide motifs, not evidence that those places once issued stamps or housed a mail room.
 
-## Proposed first issue · three architectural motifs
+## Proposed first issue · four architectural motifs
 
-The pictured sheet brings three possible designs together. Their short titles are editorial labels for this proposed issue; no denomination, printing date, issue quantity, or order of release is established.
+The pictured sheet gathers four possible designs around landmarks already named in the Encyclopedia. Their titles are editorial labels for this proposed issue; no denomination, printing date, issue quantity, or order of release is established. The sheet is a fresh illustration for this folio, not a facsimile of a record.
 
 <figure class="specimen-plate">
   <img src="{{ '/assets/library/postal-gate-stamp.png' | relative_url }}" alt="A single proposed Vesperglass postage stamp with a perforated parchment edge and an engraved brass-and-teal image of the Gate beneath a small star." loading="lazy">
@@ -31,10 +31,13 @@ The pictured sheet brings three possible designs together. Their short titles ar
 </figure>
 
 <dl class="folio-glossary">
-  <div><dt>Gate · passage motif</dt><dd>The first stamp places the Gate's concentric ring within a perforated border. It refers to a named landmark; it does not certify a crossing or identify a destination.</dd></div>
-  <div><dt>Workshop · home motif</dt><dd>The second stamp shows a tall window and floating platform, recalling the Workshop as Vesperglass's central home. The image does not establish an address system or a keeper's residence.</dd></div>
-  <div><dt>Foundry · mirrored-plate motif</dt><dd>The third stamp pairs mirrored surfaces around a starshard-like light. It recalls the recorded preparation of stardust at Tideglass Foundry without assigning a price or claiming that the image records a production batch.</dd></div>
+  <div><dt>Gate · passage motif</dt><dd>The pointed arch and bright opening refer to the Gate as the train's passage between worlds. The image does not certify a crossing or identify an origin or destination.</dd></div>
+  <div><dt>Observatory · instrument motif</dt><dd>The dome and telescope refer to the named Observatory Logbook. The pictured instrument is an illustration, not a record of a particular observing session or its equipment.</dd></div>
+  <div><dt>Compass Garden · glasshouse motif</dt><dd>The conservatory and starflower refer to the Garden folio's pictured architecture. The flower is a visual design choice, not a catalogued species or botanical finding.</dd></div>
+  <div><dt>Tideglass Foundry · furnace motif</dt><dd>The round furnace window recalls the Foundry's recorded preparation of starshards into stardust. It does not depict a documented vessel, batch, or production mark.</dd></div>
 </dl>
+
+The motif-to-source relationship is editorial rather than postal: the Gate, [Observatory Logbook]({{ '/library/observatory/' | relative_url }}), [Compass Garden]({{ '/library/compass-garden/' | relative_url }}), and [Tideglass Foundry]({{ '/library/tideglass-foundry/' | relative_url }}) are the subjects named by the designs. A stamp picture cannot show that correspondence was carried to, from, or between those places.
 
 ## Proposed envelope face · a blank layout
 
@@ -70,9 +73,31 @@ The schematic below explores how the proposed Gate stamp might sit beside separa
 
 The arrangement does not imply that mail is sent to or through the Gate. A place shown on a stamp is a visual reference, not an origin or destination. The [Vesperglass Train Dock]({{ '/library/train-dock/' | relative_url }}) and [Gate]({{ '/library/vesperglass-gate/' | relative_url }}) folios describe the train's berth and crossing; neither records a postal route.
 
+## Proposed cancellation-mark register · motifs without itinerary
+
+A postmark-like overprint can be pictured as an ornamental countermark on the four-design sheet. The following register proposes three line motifs and the stamp images they might accompany. It does not transcribe a surviving cancellation or document a letter that passed through a postal office.
+
+| Proposed mark | Visual reading | Could accompany | What the mark cannot establish |
+| --- | --- | --- | --- |
+| **Open Gate ring** | Two incomplete circles crossed by a short star-ray, echoing the Gate's open center. | The Gate arch stamp, as a repeated architectural motif. | That a letter entered the Gate, crossed it, or was posted at the Gate. |
+| **Window lattice** | Three fine vertical strokes crossed by a shallow arch, recalling a framed Workshop or Observatory window. | The Observatory dome stamp; the architectural resemblance is deliberately broad. | A counter, sender address, office, observer, or place of posting. |
+| **Tempered arc** | A pair of offset curves around an unfilled center, suggesting a reflected light rather than a filled emblem. | The Foundry furnace stamp, as a visual echo of its round opening. | A processing stage, production batch, date, fee, or Foundry dispatch. |
+
+### Reading the overprint
+
+The proposed mark is an image layered across a stamp design. Its circular form can create the familiar impression of a cancellation, but no account establishes that Vesperglass uses cancellations, what ink or tool would make one, or whether a mark would be applied once or more than once. The register therefore treats the linework as a design study only.
+
+| Evidence layer | What this folio can say | What remains open |
+| --- | --- | --- |
+| Named architecture | The Gate, Observatory Logbook, Compass Garden, and Tideglass Foundry are named elsewhere in the Encyclopedia. | Whether any place houses a postal service or produces correspondence. |
+| Visible motif | The four stamp images depict an arch, dome and telescope, glasshouse and flower, and furnace window. | Whether a keeper would recognize or select these motifs. |
+| Proposed overprint | Three imagined marks can be paired with related images for a coherent visual issue. | Actual use, date, place, sender, addressee, route, destination, and delivery. |
+
+This boundary matters because the [Train Dock]({{ '/library/train-dock/' | relative_url }}) and [Gate crossing account]({{ '/library/vesperglass-gate/' | relative_url }}) describe travel by the locomotive, while the [Words of Passage]({{ '/library/words-of-passage/' | relative_url }}) cross-reference distinguishes those travel terms from the atlas's guide path. No cancellation motif converts a visual reference to one of those places into evidence of mail travel.
+
 ## Proposed seal · the open ring
 
-The circular seal beside the sheet repeats the Gate's ring and sets a small star above it. Its open center leaves the field visible rather than enclosing a destination. This is a graphic reading of the Gate image, not an official device preserved in an account. No ink, wax, embossing method, custodian, or authorization practice is recorded.
+The separate circular seal study repeats the Gate's ring and sets a small star above it. Its open center leaves the field visible rather than enclosing a destination. This is a graphic reading of the Gate image, not an official device preserved in an account. No ink, wax, embossing method, custodian, or authorization practice is recorded.
 
 ## What a stamp would and would not record
 
@@ -80,8 +105,9 @@ A stamp can mark a piece of correspondence within the proposal, while its archit
 
 | Proposed element | Reference behind the image | Still unrecorded |
 | --- | --- | --- |
-| Gate stamp and circular seal | The Gate is named as the train's passage; the folio depicts a ring on its own platform. | Whether a seal or stamp existed, and how it was applied. |
-| Workshop stamp | The Workshop is Vesperglass's central home platform. | Any postal counter, address, resident list, or mail collection practice. |
+| Gate-arch stamp and separate seal study | The Gate is named as the train's passage; its plate depicts a ring on a detached platform. | Whether a seal or stamp existed, and how either was applied. |
+| Observatory stamp | The Observatory Logbook is a named place of observation and record. | Whether an office, telescope, session, or postmark was associated with it. |
+| Compass Garden stamp | Compass Garden is named among the outer platforms and shown as a glasshouse in its folio plate. | Any postal connection, named flower species, stamp value, or issue date. |
 | Foundry stamp | Starshards are cleaned, ground, sifted, and tempered into stardust at Tideglass Foundry. | A postal connection to the Foundry, stamp value, or issue date. |
 | Postal service | No postal institution is established by the consulted accounts. | Its keepers, routes, schedules, rates, and delivery practices. |
 

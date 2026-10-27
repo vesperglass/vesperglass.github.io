@@ -1,0 +1,15 @@
+VESPERGLASS POSTAL SERVICE · GATE ROUTE OFFICE
+
+{{eyebrow}}
+{{headline}}
+
+{{body}}
+
+Proposed stamp artwork: {{stamp_alt}}. The mark is a design study, not proof of an established postal practice.
+
+{{footer_note}}
+
+In good passage,
+{{sender_name}} · Vesperglass Postal Service
+
+SEALED AT THE GATE · CARRIED BY STARLIGHT

@@ -44,6 +44,7 @@ Working tracker for new reference forms and encyclopedia additions. Keep it in s
 | Cancellation-mark registers | A small key to proposed postmarks that distinguishes a design motif from the date, place, or route of an actual dispatch | Keep each mark interpretive unless a stamped letter or postal account supplies provenance; do not infer a route from a Gate or place image |
 | Mailpiece face layouts | A labeled front-of-envelope study showing how a proposed stamp and address fields could share a page | Mark the layout as an editorial schematic; leave names, addresses, destinations, routes, and delivery practices unestablished |
 | Berth-state comparison cards | A two-state reading of a vessel's approach and alongside position relative to a platform | Separate described berth relationships from the atlas's path or animation; leave spacing, orientation, track, and docking procedure unrecorded |
+| Evidence-lineage strips | A compact path from a visual motif to its named source folio and the inference made for a new artifact | Cite the named source and label the motif as a proposal; state the limit of the relationship in the same row |
 
 ## Backlog
 
@@ -74,6 +75,8 @@ Working tracker for new reference forms and encyclopedia additions. Keep it in s
 - [x] **Add a reading key for the Compass Garden plan plate** — Identify the pictured compass rose, radial beds, curved paths, basin, and workbench as features of the proposed plan; distinguish them from the established glasshouse name and leave scale, bearing, planting, and use unconfirmed. Completed 2026-10-26 in `library/compass-garden.md`.
 - [x] **Add a process-to-plate key for Tideglass Foundry** — Map the recorded cleaning, grinding, sifting, and tempering sequence against Plate II, including an explicit “not shown” entry for cleaning and boundaries around the reconstructed tool matches. Completed 2026-10-27 in `library/tideglass-foundry.md`.
 - [x] **Add a proposed envelope-face layout to the Postal Service folio** — Draw a blank correspondence face with the proposed Gate stamp and clearly marked sender and addressee fields; leave all names, addresses, destinations, routes, and delivery practices unestablished. Completed 2026-10-27 in `library/postal-service.md`.
+- [x] **Create the Postal Service's four-design stamp issue and cancellation register** — Replace the reused three-design sheet with a subject-specific Gate, Observatory, Compass Garden, and Foundry stamp plate; develop proposed cancellation motifs and an evidence table that separates each architectural reference from unrecorded postal use. Completed 2026-10-27 in `library/postal-service.md` and `assets/library/postal-stamp-collection.png`.
+- [x] **Audit reference-insert main plates** — Give Words of Passage and the World Relationship Index distinct subject-specific Plate I graphics and use the same unique artwork on their library cards instead of the reused Gate-train image. Completed 2026-10-27 in `library/words-of-passage.md`, `library/relationships.md`, and `library.md`.
 
 ### Open
 
@@ -83,6 +86,7 @@ Working tracker for new reference forms and encyclopedia additions. Keep it in s
 - [ ] **Add a pictured-flora key to Compass Garden Plate I** — Identify the pale starflowers and luminous ferns as visual descriptions in the plate, not as catalogued species; leave their names, origin, biology, and care unestablished.
 - [ ] **Add an interpretive cancellation-mark register to the Postal Service folio** — Propose Gate, Workshop, and Foundry postmark motifs and show how a mark could identify an image without asserting dispatch date, origin, destination, or a route; keep the register separate from evidence of real mail use.
 - [ ] **Create a two-state Dock alignment key** — Compare the described alongside berth with the atlas's illustrated approach path, separating position from movement and leaving offset, orientation, track, and docking procedure unknown; keep it distinct from the Gate crossing sequence.
+- [ ] **Write a Vesperglass Gate aperture profile** — Compare the Gate's pictured ring and platform separation with the recorded bloom passage; identify visible architectural details and list absent dimensions, materials, maker, and construction without proposing a new operating mechanism.
 
 ## Hourly substantial work cycle
 

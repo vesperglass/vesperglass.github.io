@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Words of Passage: four terms gathered from accounts and atlas views</title>
+  <desc id="desc">Four parchment glossary cards—stardust, starwell, Gate bloom, and guide path—sit around a small open ring. A dividing rule separates travel-account terms from the guide path read from the Train Dock atlas animation.</desc>
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#17313d"/><stop offset="1" stop-color="#07131e"/></linearGradient>
+    <linearGradient id="leaf" x2="0" y2="1"><stop stop-color="#f8f1df"/><stop offset="1" stop-color="#ded1b6"/></linearGradient>
+  </defs>
+  <rect width="1200" height="760" rx="24" fill="url(#sky)"/>
+  <rect x="48" y="44" width="1104" height="672" rx="4" fill="none" stroke="#9b8059" stroke-width="2"/>
+  <text x="78" y="98" fill="#d9c59d" font-family="Georgia,serif" font-size="20" letter-spacing="5">REFERENCE PLATE · TERMS OF PASSAGE</text>
+  <text x="78" y="143" fill="#f3ecdd" font-family="Georgia,serif" font-size="38">Four terms, two kinds of record</text>
+  <circle cx="600" cy="380" r="72" fill="none" stroke="#be9b65" stroke-width="4"/>
+  <circle cx="600" cy="380" r="54" fill="none" stroke="#8bd5ce" stroke-width="1.5"/>
+  <path d="M600 308v-28m0 200v-28M528 380h-28m200 0h-28" stroke="#be9b65" stroke-width="3"/>
+  <path d="M585 380l15-22 15 22-15 22z" fill="#8bd5ce"/>
+  <g font-family="Georgia,serif" text-anchor="middle">
+    <g><rect x="110" y="205" width="350" height="118" rx="10" fill="url(#leaf)"/><text x="285" y="252" fill="#18323a" font-size="26">Stardust</text><text x="285" y="287" fill="#55716e" font-family="Arial,sans-serif" font-size="13" letter-spacing="2">ACCOUNT · MATERIAL</text></g>
+    <g><rect x="740" y="205" width="350" height="118" rx="10" fill="url(#leaf)"/><text x="915" y="252" fill="#18323a" font-size="26">Starwell</text><text x="915" y="287" fill="#55716e" font-family="Arial,sans-serif" font-size="13" letter-spacing="2">ACCOUNT · VESSEL</text></g>
+    <g><rect x="110" y="435" width="350" height="118" rx="10" fill="url(#leaf)"/><text x="285" y="482" fill="#18323a" font-size="26">Gate bloom</text><text x="285" y="517" fill="#55716e" font-family="Arial,sans-serif" font-size="13" letter-spacing="2">ACCOUNT · PASSAGE</text></g>
+    <g><rect x="740" y="435" width="350" height="118" rx="10" fill="url(#leaf)"/><text x="915" y="482" fill="#18323a" font-size="26">Guide path</text><text x="915" y="517" fill="#55716e" font-family="Arial,sans-serif" font-size="13" letter-spacing="2">ATLAS VIEW · DOCK</text></g>
+  </g>
+  <path d="M160 610h880" stroke="#735c3f"/>
+  <text x="600" y="655" fill="#cbb98f" font-family="Arial,sans-serif" font-size="15" letter-spacing="2" text-anchor="middle">ACCOUNT TERMS ≠ A COMPLETE OPERATING SEQUENCE</text>
+</svg>

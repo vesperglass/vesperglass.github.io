@@ -8,6 +8,11 @@ permalink: /library/words-of-passage/
 
 <nav class="folio-back" aria-label="Back to the Universe Library"><a href="{{ '/library/' | relative_url }}">← Universe Library</a><span>REFERENCE INSERT &nbsp;·&nbsp; TERMS OF PASSAGE</span></nav>
 
+<figure class="book-plate">
+  <img src="{{ '/assets/library/words-passage-plate.svg' | relative_url }}" alt="Four glossary cards name stardust, starwell, Gate bloom, and guide path around an open ring; the labels distinguish travel-account terms from the guide path read from the Train Dock atlas view." fetchpriority="high">
+  <figcaption><span>PLATE I</span> Four terms gathered from two kinds of record, without turning them into a complete operating sequence.</figcaption>
+</figure>
+
 ## Terms used in accounts and atlas views
 
 Several terms describe different parts of a train's passage. Some belong to the accounts of travel; one names a path suggested by the train's movement at its berth. This cross-reference gathers them without making the terms into an operating sequence or adding a route between the Gate and the Train Dock.
