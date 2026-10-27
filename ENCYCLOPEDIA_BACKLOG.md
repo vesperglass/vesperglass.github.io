@@ -43,6 +43,7 @@ Working tracker for new reference forms and encyclopedia additions. Keep it in s
 | Postal issue plates | An illustrated first stamp issue and related seal assembled from named Vesperglass architecture | Label the service and designs as proposals until an account establishes a postal institution; do not imply routes, rates, or delivery behavior |
 | Cancellation-mark registers | A small key to proposed postmarks that distinguishes a design motif from the date, place, or route of an actual dispatch | Keep each mark interpretive unless a stamped letter or postal account supplies provenance; do not infer a route from a Gate or place image |
 | Mailpiece face layouts | A labeled front-of-envelope study showing how a proposed stamp and address fields could share a page | Mark the layout as an editorial schematic; leave names, addresses, destinations, routes, and delivery practices unestablished |
+| Berth-state comparison cards | A two-state reading of a vessel's approach and alongside position relative to a platform | Separate described berth relationships from the atlas's path or animation; leave spacing, orientation, track, and docking procedure unrecorded |
 
 ## Backlog
 
@@ -72,6 +73,7 @@ Working tracker for new reference forms and encyclopedia additions. Keep it in s
 - [x] **Add a margin-mark legend for the proposed Unfixed Meridian chart** — Define three proposed marks for a returned-to note, uncertain reading, and unverified place; include a sample margin and state that neither key nor chart is transcribed from a surviving record. Completed 2026-10-26 in `library/star-archive.md`.
 - [x] **Add a reading key for the Compass Garden plan plate** — Identify the pictured compass rose, radial beds, curved paths, basin, and workbench as features of the proposed plan; distinguish them from the established glasshouse name and leave scale, bearing, planting, and use unconfirmed. Completed 2026-10-26 in `library/compass-garden.md`.
 - [x] **Add a process-to-plate key for Tideglass Foundry** — Map the recorded cleaning, grinding, sifting, and tempering sequence against Plate II, including an explicit “not shown” entry for cleaning and boundaries around the reconstructed tool matches. Completed 2026-10-27 in `library/tideglass-foundry.md`.
+- [x] **Add a proposed envelope-face layout to the Postal Service folio** — Draw a blank correspondence face with the proposed Gate stamp and clearly marked sender and addressee fields; leave all names, addresses, destinations, routes, and delivery practices unestablished. Completed 2026-10-27 in `library/postal-service.md`.
 
 ### Open
 
@@ -80,7 +82,7 @@ Working tracker for new reference forms and encyclopedia additions. Keep it in s
 - [ ] **Add a visual inventory for Observatory Plate II** — Name the depicted orrery, sighting tube, star compass, and journal; distinguish image details from inferred function and leave maker, construction, and use by any named observer unknown.
 - [ ] **Add a pictured-flora key to Compass Garden Plate I** — Identify the pale starflowers and luminous ferns as visual descriptions in the plate, not as catalogued species; leave their names, origin, biology, and care unestablished.
 - [ ] **Add an interpretive cancellation-mark register to the Postal Service folio** — Propose Gate, Workshop, and Foundry postmark motifs and show how a mark could identify an image without asserting dispatch date, origin, destination, or a route; keep the register separate from evidence of real mail use.
-- [ ] **Add a proposed envelope-face layout to the Postal Service folio** — Draw a blank correspondence face with the proposed Gate stamp and clearly marked sender and addressee fields; leave all names, addresses, destinations, routes, and delivery practices unestablished.
+- [ ] **Create a two-state Dock alignment key** — Compare the described alongside berth with the atlas's illustrated approach path, separating position from movement and leaving offset, orientation, track, and docking procedure unknown; keep it distinct from the Gate crossing sequence.
 
 ## Hourly substantial work cycle
 

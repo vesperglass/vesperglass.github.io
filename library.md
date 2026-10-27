@@ -54,7 +54,7 @@ permalink: /library/
   </a>
   <a class="library-entry-card" href="{{ '/library/postal-service/' | relative_url }}">
     <span class="library-card-art"><img src="{{ '/assets/library/postal-service-plate.png' | relative_url }}" alt="Three proposed Vesperglass postage stamps and a circular Gate-ring seal on an archival sheet." loading="lazy"></span>
-    <span class="library-entry-copy"><span class="library-entry-number">ENTRY 010 &nbsp;·&nbsp; CORRESPONDENCE &amp; POSTAL MARKS</span><strong>Vesperglass Postal Service</strong><span>A proposed postal service, architectural seal, and first interpretive stamp issue.</span><span class="library-read">Read the entry <span aria-hidden="true">↗</span></span></span>
+    <span class="library-entry-copy"><span class="library-entry-number">ENTRY 010 &nbsp;·&nbsp; CORRESPONDENCE &amp; POSTAL MARKS</span><strong>Vesperglass Postal Service</strong><span>A proposed postal service, architectural seal, stamp issue, and blank envelope-face layout.</span><span class="library-read">Read the entry <span aria-hidden="true">↗</span></span></span>
   </a>
   <a class="library-entry-card" href="{{ '/library/relationships/' | relative_url }}">
     <span class="library-card-art"><img src="{{ '/assets/library/gate-train-plate.webp' | relative_url }}" alt="The Gate train crossing a luminous portal with stardust in its starwell." loading="lazy"></span>
