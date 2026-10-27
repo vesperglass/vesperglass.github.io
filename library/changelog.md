@@ -41,6 +41,8 @@ These edition notes record additions to the existing folios. Where a record's so
 
 ## October 27, 2026
 
+- **Star Archive** — Added a source-to-field matrix for *The Unfixed Meridian* and a companion comparison that keeps the Archive catalog proposal distinct from the Observatory's sample leaves. [Read the folio →]({{ '/library/star-archive/' | relative_url }})
+
 - **The Vesperglass Gate** — Added an aperture profile that separates the pictured ring and proposed cutaway from the account's Gate bloom, keeping materials, mechanism, and the approach from the Train Dock unassigned. [Read the folio →]({{ '/library/vesperglass-gate/' | relative_url }})
 
 - **Tideglass Foundry** — Added a process-to-plate key that maps the recorded preparation sequence to Plate II’s reconstructed tools, including the operation with no pictured instrument and the limits of each proposed match. [Read the folio →]({{ '/library/tideglass-foundry/' | relative_url }})

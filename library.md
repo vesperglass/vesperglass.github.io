@@ -42,7 +42,7 @@ permalink: /library/
   </a>
   <a class="library-entry-card" href="{{ '/library/star-archive/' | relative_url }}">
     <span class="library-card-art"><img src="{{ '/assets/library/places/archive-interior.webp' | relative_url }}" alt="A circular Star Archive with a central reading table." loading="lazy"></span>
-    <span class="library-entry-copy"><span class="library-entry-number">ENTRY 007 &nbsp;·&nbsp; MAPS &amp; MEMORY</span><strong>Star Archive</strong><span>A reference room for the knowledge of the sky, its charts, and its keepers.</span><span class="library-read">Read the entry <span aria-hidden="true">↗</span></span></span>
+    <span class="library-entry-copy"><span class="library-entry-number">ENTRY 007 &nbsp;·&nbsp; MAPS &amp; MEMORY</span><strong>Star Archive</strong><span>A reference room for the knowledge of the sky, with a source-boundary matrix for a proposed chart.</span><span class="library-read">Read the entry <span aria-hidden="true">↗</span></span></span>
   </a>
   <a class="library-entry-card" href="{{ '/library/vesperglass-gate/' | relative_url }}">
     <span class="library-card-art"><img src="{{ '/assets/library/places/gate-plate.webp' | relative_url }}" alt="The freestanding Vesperglass Gate glowing against the starfield." loading="lazy"></span>

@@ -62,6 +62,35 @@ Use the return mark only to point back to earlier wording, not to claim a repeat
 
 The [Observatory sample leaves]({{ '/library/observatory/' | relative_url }}) also leave the subject and position open, but their prose comparison is separate from this proposed chart notation. Neither record identifies a point on the Galaxy map.
 
+### Evidence-to-field matrix · *The Unfixed Meridian*
+
+This matrix checks each proposed catalog field against the Star Archive account and the chart description above. A field is not evidence merely because the sample card has room for it. When the account supplies no value, the entry stays blank rather than borrowing detail from another folio or from the separate Galaxy map.
+
+| Catalog field | Proposed entry | Evidence available here | Status and limit |
+| --- | --- | --- | --- |
+| **Title** | *The Unfixed Meridian* | The title appears in this folio's proposed catalog card only. | Interpretive label; no surviving index confirms a chart with this name. |
+| **Collection** | Star Archive | The Archive is named as a repository for knowledge of the stars. | The place-name is established; no collection inventory lists this chart among its holdings. |
+| **Scope** | Compare broad bands of light across an otherwise unmarked sky. | No surviving chart or account describes this scope. | Proposed use; it does not identify a star system, planet, coordinate, or route. |
+| **Margin marks** | Returned-to, uncertain reading, and place unverified. | The symbols and definitions are created for this proposal. | Editorial notation only; not transcribed marks or an Archive convention. |
+| **Suggested annotation fields** | Date, instrument, and a note about what seemed steady or uncertain. | The Observatory folio is a place of observation and record, but its sample leaves are themselves proposals. | Optional imagined catalog design; no keeper procedure or completed observation is established. |
+| **Maker / compiler** | Unassigned. | No maker, compiler, or contributing observer is named. | Unknown; do not infer that an Observatory keeper prepared it. |
+| **Date** | Unassigned. | No date accompanies the proposed chart or its sample margin. | Unknown; it cannot be placed before or after the Observatory leaves. |
+| **Coordinates / route** | None entered. | No coordinate, place position, or route is attached to the title. | Unlocated; do not match it to a point on the Galaxy map. |
+
+The matrix makes the card useful as a draft structure without turning that structure into an artifact record. In particular, **Collection** names the Archive as a possible setting for the proposal; it does not authenticate the chart's presence there. The empty maker and date fields are part of the record's current state, not missing values to be completed by guesswork.
+
+#### Archive card and Observatory leaf · a source boundary
+
+The two folios concern related work—keeping and revisiting knowledge of the sky—but they do not describe one shared document. This comparison keeps that editorial link from becoming an unsupported provenance claim.
+
+| Reference | Established subject | Proposed record | What cannot be inferred between them |
+| --- | --- | --- | --- |
+| Star Archive | A named destination that keeps knowledge of the stars. | The catalog card, its title, scope, margin key, and proposed fields. | That this chart exists in the Archive, is held in its stacks, or was written by an Archive keeper. |
+| Observatory Logbook | A named place of observation and record. | The blue-field sample leaves and their second-watch comparison. | That either sample was made with *The Unfixed Meridian*, names its subject, or shares an author, date, instrument, or coordinate. |
+| Galaxy map | A separate chart available for visitor inspection. | No map point is assigned by this folio. | That a visible map marker corresponds to the chart's unlocated bands or the Observatory's unnamed point. |
+
+The [Observatory Logbook]({{ '/library/observatory/' | relative_url }}) offers a nearby example of how uncertainty can remain visible in a proposed observation. Its sample leaf and this chart card may be read together as reference designs, but neither verifies the other's subject or provenance. The [World Relationship Index]({{ '/library/relationships/' | relative_url }}) likewise records cross-folio links as reading aids, not routes or proof of shared records.
+
 ## At a glance
 
 <dl class="folio-glossary">
