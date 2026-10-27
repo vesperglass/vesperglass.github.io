@@ -79,6 +79,17 @@ Raw starshards travel first to the **Tideglass Foundry** at Vesperglass. There, 
 
 The finished material is **stardust**. In a sealed vessel it looks almost still. Tip the vessel and a slow aurora passes through it, as if each grain were trying to remember a direction.
 
+### Material state card · sealed and tipped
+
+This proposed comparison card keeps the account's two descriptions beside one another. It is a reading aid for the language of the folio, not a test result or a vessel-handling instruction.
+
+| Reading in the account | Described appearance | What the description does not establish |
+| --- | --- | --- |
+| Vessel sealed | The stardust looks almost still. | Its quantity, packing, exact vessel construction, or whether “still” describes anything beyond its appearance. |
+| Vessel tipped | A slow aurora passes through the dust. | How far or quickly the vessel moves, how long the light lasts, or what causes the effect. |
+
+The contrast is a change in what the observer sees: near-stillness in the sealed vessel, then a slow aurora when it is tipped. “Aurora” is the account's image for the passing light, not a measured motion or explanation of its cause. No material, dimensions, closure design, or method of handling the vessel is recorded here. The [Tideglass Foundry folio]({{ '/library/tideglass-foundry/' | relative_url }}) describes how stardust is made; the [Words of Passage]({{ '/library/words-of-passage/' | relative_url }}) cross-reference distinguishes the material from the starwell that carries it.
+
 <figure class="fuel-diagram" aria-labelledby="fuel-diagram-caption">
   <svg viewBox="0 0 900 260" role="img" aria-labelledby="fuel-title fuel-desc" xmlns="http://www.w3.org/2000/svg">
     <title id="fuel-title">The starshard-to-stardust fuel cycle</title>

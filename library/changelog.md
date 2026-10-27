@@ -36,5 +36,7 @@ These edition notes record additions to the existing folios. Where a record's so
 - **Compass Garden** — Added a key to the proposed garden plan, separating depicted features from unrecorded scale, bearing, planting, and use. [Read the folio →]({{ '/library/compass-garden/' | relative_url }})
 - **Star Archive** — Added a proposed margin-mark legend and sample annotation for *The Unfixed Meridian*, with repeated, uncertain, and unverified notes kept distinct. [Read the folio →]({{ '/library/star-archive/' | relative_url }})
 - **Words of Passage** — Added an English-language pronunciation aid for Vesperglass, Tideglass, and starwell, with syllable breaks and stress marked as provisional. [Read the cross-reference →]({{ '/library/words-of-passage/' | relative_url }})
+- **Starshards & the Gate Train** — Added a proposed material-state card comparing the account's sealed-vessel stillness with the slow aurora seen when tipped, while leaving construction, amount, and cause unspecified. [Read the folio →]({{ '/library/starshards/' | relative_url }})
+- **Vesperglass Postal Service** — Added a proposed postal-service folio with an architectural seal and three interpretive stamp designs, clearly separated from any established office or delivery route. [Read the folio →]({{ '/library/postal-service/' | relative_url }})
 
 <p class="folio-return"><a href="{{ '/library/' | relative_url }}">← Return to the Universe Library</a></p>

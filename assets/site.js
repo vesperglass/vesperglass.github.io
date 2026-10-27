@@ -4,7 +4,7 @@
     { title: "Galaxy Chart", url: "/explore/#galaxy", summary: "Consult the stars and read about the planets in their systems.", terms: "galaxy stars planets systems exploration survey worlds map" },
     { title: "Universe Guide", url: "/universe/", summary: "A guide to known space, materials, vessels, and the train's passage through the Gate.", terms: "universe guide atlas galaxy worlds systems starshards stardust train expeditions" },
     { title: "Universe Encyclopedia", url: "/library/", summary: "An illustrated reference to the places, materials, and journeys of Vesperglass.", terms: "library encyclopedia atlas universe reference book" },
-    { title: "Starshards & the Gate Train", url: "/library/starshards/", summary: "How starshards become stardust, and how the Gate train carries it between worlds.", terms: "starshard stardust fuel train portal gate tideglass foundry galaxy resource" },
+    { title: "Starshards & the Gate Train", url: "/library/starshards/", summary: "How starshards become stardust, including the sealed-vessel and tipped-vessel descriptions, and how the Gate train carries it between worlds.", terms: "starshard stardust sealed vessel tipped aurora fuel train portal gate tideglass foundry galaxy resource" },
     { title: "Vesperglass Workshop", url: "/library/workshop/", summary: "The central home platform and a place to prepare for the wider universe.", terms: "workshop home making gathering table tools" },
     { title: "Threshold House", url: "/library/threshold-house/", summary: "A quiet place at the edge of arrival and passage.", terms: "threshold house arrival passage shelter" },
     { title: "Tideglass Foundry", url: "/library/tideglass-foundry/", summary: "The making of stardust from starshards and the tools of the Foundry.", terms: "tideglass foundry starshards stardust refining craft mill" },
@@ -13,6 +13,7 @@
     { title: "Star Archive", url: "/library/star-archive/", summary: "A reference room for the knowledge of the sky, with a proposed chart and margin-mark legend.", terms: "star archive books maps memory library Unfixed Meridian annotations uncertain reading unverified place" },
     { title: "The Vesperglass Gate", url: "/library/vesperglass-gate/", summary: "The detached portal platform and its passage into the Galaxy.", terms: "vesperglass gate portal transit galaxy ring" },
     { title: "Vesperglass Train Dock", url: "/library/train-dock/", summary: "A clear landing apron and alongside berth for the Gate train.", terms: "train dock berth station locomotive platform train" },
+    { title: "Vesperglass Postal Service", url: "/library/postal-service/", summary: "A proposed postal service, architectural seal, and first interpretive stamp issue.", terms: "postal service post postage stamp seal mail correspondence letter Gate Workshop Tideglass Foundry" },
     { title: "Words of Passage", url: "/library/words-of-passage/", summary: "A reference to stardust, the starwell, Gate bloom, the Train Dock guide path, and reader pronunciation cues.", terms: "stardust starwell gate bloom guide path passage train dock pronunciation how to say stress syllables Vesperglass Tideglass" }
   ];
   const dialog = document.getElementById("search-dialog");

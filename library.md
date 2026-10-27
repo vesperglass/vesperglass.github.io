@@ -52,6 +52,10 @@ permalink: /library/
     <span class="library-card-art"><img src="{{ '/assets/library/places/dock-plate.webp' | relative_url }}" alt="The space train hovering alongside the straight open edge of its dock." loading="lazy"></span>
     <span class="library-entry-copy"><span class="library-entry-number">ENTRY 009 &nbsp;·&nbsp; BERTH &amp; DEPARTURE</span><strong>Vesperglass Train Dock</strong><span>A clear landing apron and alongside berth for the Gate train.</span><span class="library-read">Read the entry <span aria-hidden="true">↗</span></span></span>
   </a>
+  <a class="library-entry-card" href="{{ '/library/postal-service/' | relative_url }}">
+    <span class="library-card-art"><img src="{{ '/assets/library/postal-service-plate.png' | relative_url }}" alt="Three proposed Vesperglass postage stamps and a circular Gate-ring seal on an archival sheet." loading="lazy"></span>
+    <span class="library-entry-copy"><span class="library-entry-number">ENTRY 010 &nbsp;·&nbsp; CORRESPONDENCE &amp; POSTAL MARKS</span><strong>Vesperglass Postal Service</strong><span>A proposed postal service, architectural seal, and first interpretive stamp issue.</span><span class="library-read">Read the entry <span aria-hidden="true">↗</span></span></span>
+  </a>
   <a class="library-entry-card" href="{{ '/library/relationships/' | relative_url }}">
     <span class="library-card-art"><img src="{{ '/assets/library/gate-train-plate.webp' | relative_url }}" alt="The Gate train crossing a luminous portal with stardust in its starwell." loading="lazy"></span>
     <span class="library-entry-copy"><span class="library-entry-number">REFERENCE INSERT &nbsp;·&nbsp; CONNECTIONS</span><strong>World Relationship Index</strong><span>Recorded connections among places, materials, vessels, and journeys.</span><span class="library-read">Read the index <span aria-hidden="true">↗</span></span></span>
