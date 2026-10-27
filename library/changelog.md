@@ -41,6 +41,8 @@ These edition notes record additions to the existing folios. Where a record's so
 
 ## October 27, 2026
 
+- **Compass Garden** — Added an image-to-account key for its pale star-shaped blooms, fern-like fronds, tending figure, and compass rose, keeping species, cultivation, and the source of the plants' light unassigned. [Read the folio →]({{ '/library/compass-garden/' | relative_url }})
+
 - **Vesperglass Train Dock** — Added a proposed journey docket with departure, bloom, and emergence fields, a deliberately blank record header, and a source-horizon table separating the Dock, Gate, and train accounts. [Read the folio →]({{ '/library/train-dock/' | relative_url }})
 
 - **Star Archive** — Added a source-to-field matrix for *The Unfixed Meridian* and a companion comparison that keeps the Archive catalog proposal distinct from the Observatory's sample leaves. [Read the folio →]({{ '/library/star-archive/' | relative_url }})

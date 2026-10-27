@@ -46,6 +46,20 @@ Read from the rose outward, the plate offers a simple way to compare the center,
 
 The proposed light calendar below uses the compass rose as a reference in its sample cues. This key clarifies that those cues belong to the proposed plan study; they do not assign the garden an absolute direction or a recurring celestial schedule.
 
+### Pictured flora key · Plate I
+
+Plate I depicts several pale, star-shaped blooms and broad, divided fronds around the glasshouse beds. The words **starflower** and **fern** below are short visual labels for those forms, not names taken from a plant catalogue. The surviving account names Compass Garden as a glasshouse but lists no species, planting record, keeper, or care practice.
+
+| Visual label | Where and how it appears | What the plate supports | What remains unknown |
+| --- | --- | --- | --- |
+| **Pale starflowers** · descriptive label | Clusters of small, light-colored, star-shaped blooms fill low beds beside the central compass and the pictured keeper. | The illustration includes pale flowers with a radial form. | A species name, number of petals, origin, season, scent, growth habit, or any relationship to the compass. |
+| **Luminous ferns** · visual analogy | Tall, divided fronds arch from the beds and catch a warm green-gold light near the glasshouse edges. | The plate shows fern-like foliage and a bright appearance. | Botanical identity, whether the light comes from the plants, lamps, or glass, and whether any glow is a property of a living plant. |
+| **Mixed planting** · plate arrangement | Flowers and fronds appear together in raised-looking beds and around vessels. | The artwork groups several forms within one interior. | A measured bed plan, species grouping, planting order, soil, vessel use, or cultivation method. |
+| **Keeper figure** · depicted scene | A person kneels beside a bed and reaches toward the pale blooms. | The image includes a tending gesture. | The person's name or role, whether this depicts a real event, and any established gardening custom or procedure. |
+| **Compass rose** · named visual feature | A large rose occupies the floor at the center of the scene. | The image composes the glasshouse around a central orientation motif. | North, a bearing to another platform, or a link between the rose and any plant's placement or behavior. |
+
+This is a reading key to an illustration, not a botanical inventory. The Plate II plan key above describes beds and paths without assigning plants to them; this flora key does not fill that plan with named species. Likewise, the proposed light markers below describe visible cues but do not establish that the plants change, bloom, or shine on a recurring schedule. The [Observatory Logbook]({{ '/library/observatory/' | relative_url }}) provides a separate example of keeping a proposed observation distinct from its possible cause.
+
 ## A proposed light calendar · three garden readings
 
 No surviving account gives Compass Garden a calendar, names a season, or describes a cycle of changing light. The following three markers are an interpretive vocabulary for a keeper's notes, composed for this folio. They do not establish dates, duration, a source star, or a recurring celestial pattern.
