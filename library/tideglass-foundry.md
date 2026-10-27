@@ -28,6 +28,21 @@ Tideglass Foundry is the Vesperglass platform where starshards are prepared. The
 
 The room and instruments on these plates expand that process into an architectural scene. The mill is small and deliberate: the work depends on reading a shard’s internal planes and preserving a clean, even powder. The source account names the mirrored plates and sifting, but does not record the room's dimensions or the mill's maker.
 
+## Process-to-plate key · interpretive assignments
+
+The account gives a sequence of work; Plate II gives a reconstructed set of tools. This key places them side by side so that a pictured instrument is not mistaken for a tool named in the account. The order in the first column follows the account; the proposed matches in the third column are readings of the illustration.
+
+| Stage in the account | What the account records | What Plate II depicts | Boundary of the match |
+| --- | --- | --- | --- |
+| Cleaning | Starshards are cleaned of their host stone before grinding. | No cleaning instrument is identified on Plate II. | The account names the operation but supplies no tool, technique, or measure of completion. |
+| Grinding | Shards are ground between mirrored plates. | A small hand-cranked mirrored mill. | Mirrored plates are named; the mill, crank, dimensions, and arrangement are reconstructed. |
+| Sifting | The ground material is sifted until it is a fine, even powder. | A glass sifting tray. | Sifting is recorded; the tray's material, mesh, and form come from the plate, not a specified account. |
+| Tempering | The dust is exposed to the Gate's low, singing resonance until scattered glints settle into one quiet color. | A brass-framed vessel shown closed. | Resonance and the settling appearance are recorded. The vessel, its closure, and any device that carries the sound are not specified. |
+
+The correspondence is therefore uneven by design: cleaning has no pictured counterpart, while the later operations have possible visual counterparts. The [Starshards & the Gate Train folio]({{ '/library/starshards/' | relative_url }}) describes the material's signs and the finished stardust; [Words of Passage]({{ '/library/words-of-passage/' | relative_url }}) distinguishes that material from the sealed starwell that carries it. Neither supplies missing Foundry equipment details.
+
+This is an editorial key, not a recipe or a record of an observed work shift. The accounts provide no quantities, grinding pressure or speed, sieve opening, duration, temperature, resonance instrument, or measured yield. The plate cannot fill those fields.
+
 <aside class="field-note"><span class="field-note-mark" aria-hidden="true">✳</span><p><strong>What is recorded</strong><br>Starshards become stardust at Vesperglass, and the train carries stardust through the Gate. The Foundry’s exact room plan and tool dimensions remain unrecorded.</p></aside>
 
 ## At a glance

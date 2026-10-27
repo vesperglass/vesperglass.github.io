@@ -39,4 +39,8 @@ These edition notes record additions to the existing folios. Where a record's so
 - **Starshards & the Gate Train** — Added a proposed material-state card comparing the account's sealed-vessel stillness with the slow aurora seen when tipped, while leaving construction, amount, and cause unspecified. [Read the folio →]({{ '/library/starshards/' | relative_url }})
 - **Vesperglass Postal Service** — Added a proposed postal-service folio with an architectural seal and three interpretive stamp designs, clearly separated from any established office or delivery route. [Read the folio →]({{ '/library/postal-service/' | relative_url }})
 
+## October 27, 2026
+
+- **Tideglass Foundry** — Added a process-to-plate key that maps the recorded preparation sequence to Plate II’s reconstructed tools, including the operation with no pictured instrument and the limits of each proposed match. [Read the folio →]({{ '/library/tideglass-foundry/' | relative_url }})
+
 <p class="folio-return"><a href="{{ '/library/' | relative_url }}">← Return to the Universe Library</a></p>
