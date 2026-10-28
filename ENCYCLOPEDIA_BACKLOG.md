@@ -55,7 +55,7 @@ Working tracker for new reference forms and encyclopedia additions. Keep it in s
 | Shelf-content boundary cards | A compact key that describes shelves and reading spaces shown in a proposed room plate without assigning titles, collections, or catalog order | Do not claim that a proposed record is depicted, held, or indexed unless the image or an account identifies it |
 | Recollection concordance tables | A side-by-side reading of an established event account and proposed personal recollections, tracking shared sequence context and conflicting sensory detail | Keep each voice interpretive unless identified by a source; don't treat narrative overlap as witness corroboration or resolve disagreements by inventing a fact |
 | Cross-plate concordance tables | A feature-by-feature comparison of two proposed views, noting shared motifs and one-view details | Treat repetition as illustration continuity, not independent confirmation; leave scale, bearing, material, and real-world use unverified |
-| Cross-subject motif boundary cards | A comparison of similar visual symbols appearing in different place illustrations, with each motif's local role and any unknown relationship kept separate | Similar appearance does not establish shared meaning, authorship, bearing, or a common instrument |
+| Cross-subject motif boundary cards | A comparison of similar visual symbols appearing in different place illustrations, recording each motif's local role and whether it is a plan mark, depicted object, or established account term | Similar appearance does not establish shared meaning, authorship, bearing, or a common instrument; keep each image's source status visible |
 
 ## Backlog
 
@@ -100,6 +100,7 @@ Working tracker for new reference forms and encyclopedia additions. Keep it in s
 - [x] **Compare the train's starwell account with its pictured chamber** — Separate the sealed-glass fuel chamber and measured-thread account from the exterior train view and schematic Figure I; note that the starwell interior and its loading mechanism are not shown. Completed 2026-10-28 in `library/starshards.md`.
 - [x] **Concord the two Threshold House plates** — Compare the central open arch, side bench, lamp niches, and emphasized axis across the interior and plan; distinguish recurring illustration choices from one-view details and leave dimensions, bearing, material, and use unconfirmed. Completed 2026-10-28 in `library/threshold-house.md`.
 - [x] **Add a place-and-structure noun crosswalk to Words of Passage** — Distinguish the archipelago's platforms, the Train Dock's alongside berth, and the Gate as a named platform and passage; leave common construction, exact location, and any route between platforms unassigned. Completed 2026-10-28 in `library/words-of-passage.md`.
+- [x] **Compare the Garden plan's compass rose with the Observatory's star compass** — Describe each mark in its own proposed plate context, distinguish a plan center from a pictured instrument, and leave shared maker, bearing, use, and relationship between the places unestablished. Completed 2026-10-28 in `library/compass-garden.md`.
 
 ### Open
 
@@ -108,7 +109,7 @@ Working tracker for new reference forms and encyclopedia additions. Keep it in s
 - [ ] **Add a terminology note for “mirrored plates” and “quiet color”** — Pair the Foundry's named grinding surface and tempering result with the exact account language; state what those phrases describe while leaving plate construction, color measurement, and resonance mechanism unspecified.
 - [ ] **Compare the Workshop's proposed “Name the passage” custom with the Train Dock docket** — Set its imagined spoken destination beside the docket's blank origin/destination fields, and state that neither source verifies a keeper custom, named journey, passenger, or realized route.
 - [ ] **Add a centrality and map-placement note to the Vesperglass Workshop folio** — Compare the account's description of the Workshop as the archipelago's central home with its central placement in the atlas view; keep narrative role distinct from map projection, measured distances, platform adjacency, or a fixed travel route.
-- [ ] **Compare the Garden plan's compass rose with the Observatory's star compass** — Describe each motif in its own Plate II/plan context, then state that the shared directional shape proves no common maker, bearing, measuring practice, or link between the two places.
+- [ ] **Trace the proposed Gate postage mark to its architectural source** — Compare the Postal Service's Gate-stamp motif with the Gate folio's ring image; identify the visual elements carried into the design while leaving any actual office, postal adoption, cancellation, or dispatch unestablished.
 
 ## Hourly substantial work cycle
 

@@ -46,6 +46,24 @@ Read from the rose outward, the plate offers a simple way to compare the center,
 
 The proposed light calendar below uses the compass rose as a reference in its sample cues. This key clarifies that those cues belong to the proposed plan study; they do not assign the garden an absolute direction or a recurring celestial schedule.
 
+### Compass motifs · plan rose and Observatory instrument
+
+The Garden plan and the Observatory still life both use a star-shaped directional motif, but they depict different things in different contexts. This comparison keeps a fixed mark in a proposed room plan separate from an object described as a star compass in a proposed instrument plate.
+
+| Source | Depicted form | Local role in its illustration | What the resemblance does not establish |
+| --- | --- | --- | --- |
+| **Compass Garden · Plate II** | A large pointed rose sits at the center of the proposed plan, with straight lines extending toward the plan's edges and beds arranged around it. | It acts as a graphic center for reading the plan; no bearing is assigned. | A surveyed north, a navigational instrument, a route to another platform, or a link to the Observatory. |
+| **Observatory Logbook · Plate II** | A round marked object with a ring and needle-like pointer lies in the foreground of a proposed instrument still life. | Its shape invites the descriptive label **star compass** and a cautious reading as a directional or positional reference. | Its calibration, actual use, relation to the sighting tube, or resemblance to the Garden's floor mark as anything more than a visual motif. |
+
+| Comparison point | Reading across the two plates | Boundary |
+| --- | --- | --- |
+| **Shape** | Both images include pointed, star-like marks. | Similar geometry does not establish a shared symbol system, maker, or intended meaning. |
+| **Position** | The rose anchors the Garden plan; the instrument rests among other objects in the Observatory still life. | Those placements do not imply the compass was copied from the Garden or used to lay it out. |
+| **Orientation** | The Garden's axes organize the proposed drawing; the instrument's pointer is visible on its dial. | Neither folio identifies a true bearing, matching alignment, or measurement practice. |
+| **Source status** | Compass Garden is an established named glasshouse; the plan and still life are proposed illustrations. | No account describes a relationship between the two places, a shared artifact, or keepers carrying an instrument between them. |
+
+Read the two motifs at their own scale: one helps a reader follow a proposed layout, while the other is an object pictured with Observatory instruments. The comparison records a resemblance visible in the plates, not evidence that either compass directs travel or that the places share a design history. See the [Observatory inventory]({{ '/library/observatory/' | relative_url }}) for the star compass's image boundary and the [World Relationship Index]({{ '/library/relationships/' | relative_url }}) for documented connections among the named places.
+
 ### Pictured flora key · Plate I
 
 Plate I depicts several pale, star-shaped blooms and broad, divided fronds around the glasshouse beds. The words **starflower** and **fern** below are short visual labels for those forms, not names taken from a plant catalogue. The surviving account names Compass Garden as a glasshouse but lists no species, planting record, keeper, or care practice.

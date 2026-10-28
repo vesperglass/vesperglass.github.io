@@ -34,7 +34,7 @@ permalink: /library/
   </a>
   <a class="library-entry-card" href="{{ '/library/compass-garden/' | relative_url }}">
     <span class="library-card-art"><img src="{{ '/assets/library/places/garden-interior.webp' | relative_url }}" alt="A glasshouse garden arranged around a compass rose." loading="lazy"></span>
-    <span class="library-entry-copy"><span class="library-entry-number">ENTRY 005 &nbsp;·&nbsp; GLASSHOUSE &amp; PLANTING</span><strong>Compass Garden</strong><span>A glasshouse with a proposed plan and visual key to the flowers and ferns shown in its plate.</span><span class="library-read">Read the entry <span aria-hidden="true">↗</span></span></span>
+    <span class="library-entry-copy"><span class="library-entry-number">ENTRY 005 &nbsp;·&nbsp; GLASSHOUSE &amp; PLANTING</span><strong>Compass Garden</strong><span>A glasshouse with a proposed plan, pictured-flora key, and source-aware compass motif comparison.</span><span class="library-read">Read the entry <span aria-hidden="true">↗</span></span></span>
   </a>
   <a class="library-entry-card" href="{{ '/library/observatory/' | relative_url }}">
     <span class="library-card-art"><img src="{{ '/assets/library/places/observatory-interior.webp' | relative_url }}" alt="An observer at work beneath the Observatory's star-facing dome." loading="lazy"></span>
