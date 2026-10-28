@@ -9,7 +9,7 @@ permalink: /library/postal-service/
 <nav class="folio-back" aria-label="Back to the Universe Library"><a href="{{ '/library/' | relative_url }}">← Universe Library</a><span>FIELD EDITION &nbsp;·&nbsp; FOLIO 010</span></nav>
 
 <figure class="book-plate">
-  <img src="{{ '/assets/library/postal-stamp-collection.png' | relative_url }}" alt="Four proposed Vesperglass postage stamps show the Gate arch, Observatory dome and telescope, Compass Garden glasshouse with a starflower, and Tideglass Foundry furnace window in engraved brass and teal on parchment perforations." fetchpriority="high">
+  <img src="{{ '/assets/library/postal-stamp-collection.png' | relative_url }}" alt="Four proposed Vesperglass postage stamps show the Gate arch, Observatory dome and telescope, Compass Garden glasshouse with a starflower, and a furnace-like glowing circle for Tideglass Foundry, all in engraved brass and teal on parchment perforations." fetchpriority="high">
   <figcaption><span>PLATE I</span> A proposed four-design stamp sheet drawn from named Vesperglass architecture; the selection and artwork are interpretive.</figcaption>
 </figure>
 
@@ -19,7 +19,7 @@ permalink: /library/postal-service/
 
 This folio introduces the **Vesperglass Postal Service** as a proposed setting detail. The accounts consulted for this Encyclopedia do not record a postal office, a named postal keeper, or an established system for carrying correspondence. The seal and stamp designs below are new interpretive proposals, not transcribed artifacts.
 
-The visual language draws on four places already named in the record: the freestanding ring of the [Vesperglass Gate]({{ '/library/vesperglass-gate/' | relative_url }}), the star-facing dome and telescope of the [Observatory Logbook]({{ '/library/observatory/' | relative_url }}), the glasshouse of the [Compass Garden]({{ '/library/compass-garden/' | relative_url }}), and the round furnace window of [Tideglass Foundry]({{ '/library/tideglass-foundry/' | relative_url }}). These references provide motifs, not evidence that those places once issued stamps or housed a mail room.
+The visual language draws on four places already named in the record: the freestanding ring of the [Vesperglass Gate]({{ '/library/vesperglass-gate/' | relative_url }}), the star-facing dome and telescope of the [Observatory Logbook]({{ '/library/observatory/' | relative_url }}), the glasshouse of the [Compass Garden]({{ '/library/compass-garden/' | relative_url }}), and the furnace-like roundel associated with [Tideglass Foundry]({{ '/library/tideglass-foundry/' | relative_url }}). These are proposed visual motifs, not evidence that those places once issued stamps or housed a mail room.
 
 ## Proposed first issue · four architectural motifs
 
@@ -34,7 +34,7 @@ The pictured sheet gathers four possible designs around landmarks already named 
   <div><dt>Gate · passage motif</dt><dd>The pointed arch and bright opening refer to the Gate as the train's passage between worlds. The image does not certify a crossing or identify an origin or destination.</dd></div>
   <div><dt>Observatory · instrument motif</dt><dd>The dome and telescope refer to the named Observatory Logbook. The pictured instrument is an illustration, not a record of a particular observing session or its equipment.</dd></div>
   <div><dt>Compass Garden · glasshouse motif</dt><dd>The conservatory and starflower refer to the Garden folio's pictured architecture. The flower is a visual design choice, not a catalogued species or botanical finding.</dd></div>
-  <div><dt>Tideglass Foundry · furnace motif</dt><dd>The round furnace window recalls the Foundry's recorded preparation of starshards into stardust. It does not depict a documented vessel, batch, or production mark.</dd></div>
+  <div><dt>Tideglass Foundry · proposed roundel</dt><dd>The bright circular emblem is read as furnace-like in this stamp design and associated with the Foundry's preparation of starshards into stardust. Neither source plate nor the account identifies it as a real furnace window or a documented process instrument.</dd></div>
 </dl>
 
 The motif-to-source relationship is editorial rather than postal: the Gate, [Observatory Logbook]({{ '/library/observatory/' | relative_url }}), [Compass Garden]({{ '/library/compass-garden/' | relative_url }}), and [Tideglass Foundry]({{ '/library/tideglass-foundry/' | relative_url }}) are the subjects named by the designs. A stamp picture cannot show that correspondence was carried to, from, or between those places.
@@ -60,6 +60,21 @@ The single-stamp study adapts features of the Gate illustration into a compact p
 | **Stamp proposal** | The proposed image borrows and simplifies some visual details while adding a border, base, and reflection. | That the added details are Gate architecture or that a real postal design used them. |
 
 The stamp's clearest lineage is therefore graphic: ring, palette, and a simplified crown echo the Gate plate, while its lower base and postal frame belong to the proposal. The [Gate folio]({{ '/library/vesperglass-gate/' | relative_url }}) keeps the pictured architecture distinct from the bloom described in the crossing account; [Words of Passage]({{ '/library/words-of-passage/' | relative_url }}) distinguishes the Gate passage from a place or route. Neither connection turns this stamp study into a record of correspondence.
+
+### Foundry stamp · motif and source comparison
+
+The Foundry stamp needs a more careful source label than its issue caption suggests. Plate I depicts a luminous circular feature framed by brass-colored machinery; Plate II shows a mirrored mill, a sifting tray, and a closed vessel reconstructed from the preparation account. The postal design turns a bright round opening into a furnace-like emblem. That is a coherent graphic choice, but neither Foundry plate identifies the round feature in the stamp as a particular piece of architecture.
+
+| Question | Proposed Foundry stamp | Tideglass Foundry Plate I | Tideglass Foundry Plate II and account | Editorial boundary |
+| --- | --- | --- | --- | --- |
+| **What is the central form?** | A round, bright center sits within a heavy brass-colored frame; the stamp reads it as a furnace motif. | The plate shows a working interior with a large mirrored mill, vessels, and processing equipment. | Plate II reconstructs a mill, sifting tray, and tempering vessel; the account names cleaning, grinding between mirrored plates, sifting, and tempering. | The stamp's round emblem is not an identified Foundry window or furnace in either plate or the process account. |
+| **What carries the image?** | A dark blue field, engraved-looking gold frame, stars, and perforated parchment edge create the stamp's postal style. | The interior is a full workshop scene, with daylight at the windows and machinery across the room. | The tool plate isolates reconstructed equipment against a plain paper ground. | The miniature frame and night-sky field are design additions, not recorded Foundry finishes or postal stock. |
+| **Which process does it name?** | The image suggests heat or a glowing aperture. | The plate depicts starshard preparation as a workshop scene, but does not label a specific pictured glow as a process stage. | The account says dust is tempered in the Gate's low resonance until its scattered glints settle into one quiet color. | The stamp does not document a furnace, temperature, heating step, or an alternative to the recorded resonance. |
+| **What is the strongest supported connection?** | Its caption associates the round emblem with Tideglass Foundry. | The Foundry is the named place where starshards are prepared. | The written sequence connects the Foundry's work to stardust used by the train. | The place association is editorial; the stamp is not evidence of a workshop seal, maker, production batch, or postal issue. |
+
+The distinction is useful because the stamp's warm central glow can easily be read as a literal process illustration. The Foundry account, however, describes a sequence and the settled appearance of the material, not a furnace architecture or heat source. The [Foundry folio]({{ '/library/tideglass-foundry/' | relative_url }}) keeps the reconstructed tools beside the operations they may illustrate; [Starshards & the Gate Train]({{ '/library/starshards/' | relative_url }}) follows the material into the train without filling in a missing Foundry mechanism.
+
+**Source status:** the Foundry name and preparation sequence are established in their folio. The workshop and tool images are illustrative reconstructions. The stamp is a proposed design whose furnace-like reading belongs to the postal artwork; no account establishes that feature as a real Foundry window, furnace, or mark.
 
 ## Proposed envelope face · a blank layout
 
@@ -103,7 +118,7 @@ A postmark-like overprint can be pictured as an ornamental countermark on the fo
 | --- | --- | --- | --- |
 | **Open Gate ring** | Two incomplete circles crossed by a short star-ray, echoing the Gate's open center. | The Gate arch stamp, as a repeated architectural motif. | That a letter entered the Gate, crossed it, or was posted at the Gate. |
 | **Window lattice** | Three fine vertical strokes crossed by a shallow arch, recalling a framed Workshop or Observatory window. | The Observatory dome stamp; the architectural resemblance is deliberately broad. | A counter, sender address, office, observer, or place of posting. |
-| **Tempered arc** | A pair of offset curves around an unfilled center, suggesting a reflected light rather than a filled emblem. | The Foundry furnace stamp, as a visual echo of its round opening. | A processing stage, production batch, date, fee, or Foundry dispatch. |
+| **Tempered arc** | A pair of offset curves around an unfilled center, suggesting a reflected light rather than a filled emblem. | The Foundry roundel stamp, as a visual echo of its proposed circular motif. | A processing stage, production batch, date, fee, or Foundry dispatch. |
 
 ### Reading the overprint
 
