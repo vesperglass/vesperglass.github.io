@@ -28,6 +28,28 @@ Threshold House is one of Vesperglass's named floating platforms. Its name sugge
 
 Threshold House is a quiet place to pause before crossing from one part of Vesperglass to another. A long bench leaves the central passage unobstructed, while lamps mark the opening. No dated account confirms these furnishings or a custom associated with them.
 
+### Plate concordance · interior and plan
+
+Plate I presents an interpretive interior; Plate II presents a reconstructed plan and front elevation. Reading them together helps distinguish recurring visual choices from details that appear in only one proposal. The pair is not a measured architectural record, and repetition between the images does not independently confirm that a feature belongs to Threshold House as described in surviving accounts.
+
+| Feature | Plate I · interior view | Plate II · plan and elevation | Concordance and limit |
+| --- | --- | --- | --- |
+| **Open arch** | A tall, glass-framed opening occupies the center of the view and looks toward the stars. | The front elevation centers a layered arch over a clear opening; the plan leaves an open path through the room. | Both place an opening at the visual center. They do not establish that the drawings show the same doorway, its dimensions, or what lies beyond it. |
+| **Long bench** | A cushioned bench runs along the left foreground wall. | A narrow bench is drawn along one side wall in the plan. | A side-positioned place to sit recurs, but the viewpoints cannot establish its exact wall, length, material, or use. |
+| **Lamp niches** | Several lit recesses line the wall beside the bench. | Recesses with lamps are drawn on both sides of the plan; the elevation adds hanging lights. | Both proposals use light near the passage. Their number and arrangement differ, and no account records a lighting scheme. |
+| **Central axis** | The open arch and the floor's circular pattern draw the eye forward. | A straight central path runs through the plan, marked by a star-like floor motif. | Each image emphasizes a central line, but the decorative marks do not provide a true bearing, scale, or surveyed orientation. |
+| **Additional details** | A keeper, cases, planted pots, and broad views of stars and neighboring platforms appear. | The plan adds side alcoves, a stepped outer approach, and geometric marks. | These elements are not consistently paired across views; none establishes residents, room function, access route, or a customary arrival. |
+
+#### What the pair can and cannot support
+
+| Source layer | Supported reading | Not established |
+| --- | --- | --- |
+| **Established account** | Threshold House is a named platform among Vesperglass's places. | Its purpose, inhabitants, internal plan, or relationship to any particular crossing. |
+| **Two proposed plates** | The illustrations share a central opening, a side bench, lighting near the opening, and an emphasized center line. | That they are surveyed views of one structure, agree in orientation, or record its actual furnishings. |
+| **Interpretation** | A reader may imagine a place organized around a pause and a passage. | An arrival ritual, resident welcome, measured route, or required stop. |
+
+The concordance supports continuity in the visual design, not a verified floor plan. The proposed greetings and sound notes later in this folio can be read against these pictured positions, but they remain optional interpretations. The [Vesperglass Gate folio]({{ '/library/vesperglass-gate/' | relative_url }}) records a separate crossing platform and does not confirm that Threshold House is a station on its route.
+
 <aside class="field-note"><span class="field-note-mark" aria-hidden="true">✳</span><p><strong>What is recorded</strong><br>Threshold House stands among Vesperglass's platforms. Its exact use, inhabitants, and interior layout are not described in the surviving accounts.</p></aside>
 
 ## Phrasebook slip · words for arriving

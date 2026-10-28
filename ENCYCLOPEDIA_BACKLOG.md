@@ -21,7 +21,7 @@ Working tracker for new reference forms and encyclopedia additions. Keep it in s
 | Place customs and daily practices | How keepers use shared spaces, prepare for departures, or preserve records | Mark customs as proposals until adopted as established lore; present them as optional social practices, not required simulation steps |
 | Stellar body field plates | A survey of a kind of remote world, its landscape, and possible materials | Use as illustrative worldbuilding, not as a claim about generated Galaxy data |
 | Oral histories and remembered sayings | Conflicting recollections, local phrases, and knowledge passed between keepers | Attribute each voice to an imagined source and retain uncertainty |
-| Glossary crosswalks | Linked terms that compare related material, vessel, place, and travel language | Identify whether each term comes from an account or atlas view, and state what it does not establish |
+| Glossary crosswalks | Linked terms that compare material, vessel, place, and travel language, including distinctions between a named place and a structure or role | Identify the source for each term and state what it does not establish; don't let shared nouns imply a route or common construction |
 | Archive catalog cards | A single chart, instrument note, or record with provenance and a short annotation | Identify each card as a proposal unless the site establishes the record as canon |
 | Materials handling labels | Small notes about how objects are packed, stored, or moved between places | Mark handling methods as interpretive unless directly established in a folio |
 | World relationship indexes | A compact cross-reference showing established links among places, materials, vessels, and journeys | Show only documented relationships; do not imply a physical route or system where none is established |
@@ -54,6 +54,7 @@ Working tracker for new reference forms and encyclopedia additions. Keep it in s
 | Process-to-use handoff cards | A concise cross-folio bridge between a recorded material-making process and its separately described use | Keep the adjacent stages distinct; leave transport, quantity, timing, and loading procedure open unless a source records them |
 | Shelf-content boundary cards | A compact key that describes shelves and reading spaces shown in a proposed room plate without assigning titles, collections, or catalog order | Do not claim that a proposed record is depicted, held, or indexed unless the image or an account identifies it |
 | Recollection concordance tables | A side-by-side reading of an established event account and proposed personal recollections, tracking shared sequence context and conflicting sensory detail | Keep each voice interpretive unless identified by a source; don't treat narrative overlap as witness corroboration or resolve disagreements by inventing a fact |
+| Cross-plate concordance tables | A feature-by-feature comparison of two proposed views, noting shared motifs and one-view details | Treat repetition as illustration continuity, not independent confirmation; leave scale, bearing, material, and real-world use unverified |
 
 ## Backlog
 
@@ -96,15 +97,16 @@ Working tracker for new reference forms and encyclopedia additions. Keep it in s
 - [x] **Add a shelf-content boundary card to Star Archive Plate II** — Describe its radial shelves, central reading table, chart cabinet, and upper gallery, while leaving titles, catalog structure, access practice, and the proposed Unfixed Meridian's shelf assignment unconfirmed. Completed 2026-10-28 in `library/star-archive.md`.
 - [x] **Compare the Gate crossing account with its two proposed recollections** — Set the bloom sequence beside the keeper's hush and traveler's song; distinguish their different sensory focus and keep both voices undated, unidentified, and uncorroborated. Completed 2026-10-28 in `library/vesperglass-gate.md`.
 - [x] **Compare the train's starwell account with its pictured chamber** — Separate the sealed-glass fuel chamber and measured-thread account from the exterior train view and schematic Figure I; note that the starwell interior and its loading mechanism are not shown. Completed 2026-10-28 in `library/starshards.md`.
+- [x] **Concord the two Threshold House plates** — Compare the central open arch, side bench, lamp niches, and emphasized axis across the interior and plan; distinguish recurring illustration choices from one-view details and leave dimensions, bearing, material, and use unconfirmed. Completed 2026-10-28 in `library/threshold-house.md`.
 
 ### Open
 
-- [ ] **Concord the two Threshold House plates** — Compare the open arch, long bench, lamp niches, and central axis across the interior illustration and proposed plan; mark features shown in only one image and leave dimensions, bearing, material, and established use open.
 - [ ] **Compare the starshard transit case with the train's sealed starwell** — Set the padded dark-glass case described for transport beside the starwell named as the train's stardust vessel; trace each claim to `library/starshards.md` and leave dimensions, transfer practice, capacity, and whether the vessels are related unspecified.
 - [ ] **Bridge the Foundry's tempering account to the train's starwell use** — Compare the recorded step that settles stardust's glints with the train account's measured thread and travel pulse; keep the source passages distinct and leave amount, transfer, timing, and any loading method unrecorded.
 - [ ] **Add a terminology note for “mirrored plates” and “quiet color”** — Pair the Foundry's named grinding surface and tempering result with the exact account language; state what those phrases describe while leaving plate construction, color measurement, and resonance mechanism unspecified.
 - [ ] **Compare the Workshop's proposed “Name the passage” custom with the Train Dock docket** — Set its imagined spoken destination beside the docket's blank origin/destination fields, and state that neither source verifies a keeper custom, named journey, passenger, or realized route.
 - [ ] **Add a centrality and map-placement note to the Vesperglass Workshop folio** — Compare the account's description of the Workshop as the archipelago's central home with its central placement in the atlas view; keep narrative role distinct from map projection, measured distances, platform adjacency, or a fixed travel route.
+- [ ] **Add a place-and-structure noun crosswalk to Words of Passage** — Distinguish the archipelago's floating platforms, the Train Dock's alongside berth, and the Gate as a named place and passage; cite the relevant folios and leave common construction, exact location, and any route between platforms unassigned.
 
 ## Hourly substantial work cycle
 

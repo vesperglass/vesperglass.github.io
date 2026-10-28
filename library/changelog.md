@@ -62,5 +62,6 @@ These edition notes record additions to the existing folios. Where a record's so
 - **Star Archive** — Added a shelf-content boundary card for Plate II, identifying the depicted room arrangement without inventing collection titles or assigning the proposed *Unfixed Meridian* to a shelf. [Read the folio →]({{ '/library/star-archive/' | relative_url }})
 - **The Vesperglass Gate** — Added a concordance comparing the bloom account with two proposed recollections, retaining their conflicting hush and song without treating either as corroborated testimony. [Read the folio →]({{ '/library/vesperglass-gate/' | relative_url }})
 - **Starshards & the Gate Train** — Compared the account's sealed-glass starwell with the exterior locomotive image and schematic fuel diagram, making the unseen chamber interior and unspecified loading mechanism explicit. [Read the folio →]({{ '/library/starshards/' | relative_url }})
+- **Threshold House** — Added a concordance of the proposed interior and plan, distinguishing shared visual motifs from one-view details and leaving the room's actual orientation, dimensions, and use unknown. [Read the folio →]({{ '/library/threshold-house/' | relative_url }})
 
 <p class="folio-return"><a href="{{ '/library/' | relative_url }}">← Return to the Universe Library</a></p>
