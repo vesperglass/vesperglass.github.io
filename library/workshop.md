@@ -28,6 +28,26 @@ The Vesperglass Workshop is the central platform and home at the heart of the ar
 
 The shared table, upper gallery and tool alcoves shown here are architectural interpretations. They express a workshop that serves as home as much as a place of making, with a large window keeping the surrounding stars in view. No measured plan of the rooms has been preserved in the accounts consulted here.
 
+### Plate II · depicted-object inventory
+
+Plate II is a proposed cutaway, not a survey of the Workshop's contents. This inventory names visible groups so a reader can find them in the illustration; the labels do not establish a permanent collection, ownership, or a record of work performed there.
+
+| Visible group | What the cutaway shows | Cautious reading | What remains unknown |
+| --- | --- | --- | --- |
+| **Central worktable** | A long table stands at the center, with stools and small objects arranged along its surface. | Its shared placement suits the Workshop's established role as a central home and preparation place. | Whether the objects are tools, what they are called, who uses them, or how many people gather there. |
+| **Blueprint sheets** | Several pale sheets with line drawings lie on a side table and near the central work area. | They can be read as plans or sketches in the proposed scene. | What they depict, whether they are architectural plans, their authors, and whether any design was built. |
+| **Cabinet vessels** | Shelves and cupboards contain small glass and ceramic-looking vessels in varied shapes. | Their display suggests stored objects in the illustration. | Their materials, contents, names, provenance, relation to starshards or stardust, and whether they belong to the Workshop. |
+| **Wall tools** | Narrow objects hang in rows in recessed wall alcoves beside the tables. | Their placement makes them legible as a group of hand tools. | Their purpose, construction, maker, maintenance, and whether they are used for any process named in another folio. |
+
+| Evidence layer | What is supported | What it cannot establish |
+| --- | --- | --- |
+| **Established place account** | The Vesperglass Workshop is the central home platform and a place to gather and prepare. | A measured interior plan, named residents, a tool inventory, or an organized production system. |
+| **Plate II depiction** | A central table, sheets, vessels, and wall-mounted objects appear in the proposed cutaway. | That these objects coexist in an actual room, are made of the materials they resemble, or have labels and owners. |
+| **Interpretive reading** | The arrangement can help a reader imagine a shared work and living space. | A specific craft, gathering method, or keeper's daily routine. |
+| **Related process account** | [Tideglass Foundry]({{ '/library/tideglass-foundry/' | relative_url }}) records cleaning, grinding, sifting, and tempering starshards into stardust. | That any vessel, sheet, or wall tool pictured here is used at the Foundry or in those steps. |
+
+The inventory deliberately stops before assigning the objects to the workshop customs below. Those customs are proposed practices, while this plate is proposed architecture; together they are not evidence of an established routine. The Workshop's role as a place to gather and prepare remains the account's useful context, not proof of the illustrated room's exact contents.
+
 ## Before a departure · proposed customs
 
 The following customs are recorded as possible practices for how keepers prepare together. Their standing across Vesperglass has not been established.

@@ -58,5 +58,6 @@ These edition notes record additions to the existing folios. Where a record's so
 
 - **Observatory Logbook** — Added a Plate II instrument inventory distinguishing visible forms from cautious readings, established place lore, and unknown provenance or specifications; linked its record-keeping subject to the Star Archive without claiming a shared artifact. [Read the folio →]({{ '/library/observatory/' | relative_url }})
 - **Vesperglass Train Dock** — Added a two-state alignment key comparing the written approach and alongside berth with the proposed plan, while leaving scale, rails, docking method, and any Dock-to-Gate route unestablished. [Read the folio →]({{ '/library/train-dock/' | relative_url }})
+- **Vesperglass Workshop** — Added a source-aware inventory of Plate II's central table, blueprint sheets, cabinet vessels, and wall tools, separating depicted objects from established place lore and unrecorded use. [Read the folio →]({{ '/library/workshop/' | relative_url }})
 
 <p class="folio-return"><a href="{{ '/library/' | relative_url }}">← Return to the Universe Library</a></p>
