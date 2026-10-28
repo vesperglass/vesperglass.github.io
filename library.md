@@ -62,7 +62,7 @@ permalink: /library/
   </a>
   <a class="library-entry-card" href="{{ '/library/words-of-passage/' | relative_url }}">
     <span class="library-card-art"><img src="{{ '/assets/library/words-passage-plate.svg' | relative_url }}" alt="Four glossary cards distinguish recorded travel terms from one term read from the Train Dock atlas view." loading="lazy"></span>
-    <span class="library-entry-copy"><span class="library-entry-number">REFERENCE INSERT &nbsp;·&nbsp; VOCABULARY</span><strong>Words of Passage</strong><span>How stardust, the starwell, Gate bloom, and the Train Dock's guide path are described.</span><span class="library-read">Read the cross-reference <span aria-hidden="true">↗</span></span></span>
+    <span class="library-entry-copy"><span class="library-entry-number">REFERENCE INSERT &nbsp;·&nbsp; VOCABULARY</span><strong>Words of Passage</strong><span>Travel terms, the difference between a platform and a berth, and reader pronunciation cues.</span><span class="library-read">Read the cross-reference <span aria-hidden="true">↗</span></span></span>
   </a>
 </div>
 
