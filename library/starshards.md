@@ -132,6 +132,30 @@ Plate I shows the locomotive from outside as it passes through the Gate's bloom.
 
 The shared phrase **glass heart** connects the account's chamber with the locomotive's fuel role, but it should not be used to infer that the circular light at the engine's front is an exposed or transparent starwell. The plate offers no interior view against which to check that reading. The [Train Dock folio]({{ '/library/train-dock/' | relative_url }}) describes the locomotive's berth and departure, while [Words of Passage]({{ '/library/words-of-passage/' | relative_url }}) defines *starwell* as the sealed chamber; neither supplies the missing construction view.
 
+### Container roles · case, sealed vessel, and starwell
+
+Several vessels appear along the starshard-to-stardust account, but their similar glass descriptions do not make them one object. The transit case carries raw starshards home; a later passage describes finished stardust at rest in a sealed vessel; and the train's fuel chamber is separately named the **starwell**. Keeping these records side by side makes the material sequence readable without supplying a missing container handoff.
+
+| Account reference | Contents and stated role | Construction or state actually described | Place in the sequence | Relationship left open |
+| --- | --- | --- | --- | --- |
+| **Transit case** | Holds starshards intact while they are brought home. | Padded, dark glass; no closure or interior arrangement is described. | Before Foundry preparation. | Whether it is opened at the Foundry, reused, or carries anything after arrival. |
+| **Sealed vessel** | Contains finished stardust, which looks almost still when sealed and shows a slow aurora when tipped. | Sealed; its material and design are not specified in that passage. | After the powder is made; the observation describes its appearance. | Whether this is a storage vessel, a sample vessel, or the train's starwell. |
+| **Starwell** | The locomotive's fuel chamber carries stardust; a measured thread feeds into its glass heart and gathers into a travel pulse. | Described as sealed glass. The chamber interior is not shown in Plate I. | In the train's crossing account. | Whether its glass is dark, what part receives the measured thread, or which vessel holds the dust beforehand. |
+
+#### What the accounts connect
+
+The material path is supported at a broad level: starshards arrive intact, are prepared at the [Tideglass Foundry]({{ '/library/tideglass-foundry/' | relative_url }}), and become stardust used by the train's starwell. The account names the transformation and the fuel role. It does not identify the containers as a continuous set of vessels, say that a transit case becomes a storage vessel, or describe pouring, packing, loading, or receipt.
+
+| Secure connection | Source detail | Limit |
+| --- | --- | --- |
+| **Shard → Foundry work** | Raw starshards are brought home intact; the Foundry account records cleaning, grinding, sifting, and tempering. | No receiving moment or transfer from case to work surface is recorded. |
+| **Foundry work → stardust** | The prepared powder is named stardust after tempering. | No quantity, yield, packaging, or interval between stages is given. |
+| **Stardust → train crossing** | The train uses a measured thread of stardust in its starwell to form a pulse. | No loading scene, feeder design, timing, or link to the sealed-vessel observation is specified. |
+
+The distinction is especially important for the dark-glass case and the starwell: both mention glass, but only the starwell is called the train's fuel chamber, and only the case is described as padded and used to carry intact starshards home. The [Train Dock folio]({{ '/library/train-dock/' | relative_url }}) records the locomotive's berth and departure, not a materials-loading procedure; [Words of Passage]({{ '/library/words-of-passage/' | relative_url }}) defines the name *starwell* without adding a second vessel to its account.
+
+**Record boundary:** the three names above track distinct descriptions in the accounts. Treating the sealed vessel and starwell as the same object, or assigning one case to both raw shards and finished dust, would go beyond what is recorded.
+
 <aside class="field-note"><span class="field-note-mark" aria-hidden="true">✳</span><p><strong>A note from the keepers</strong><br>The bloom is a passage taking shape, not an explosion. The train is never consumed by the light; it is briefly hidden by the road it has made.</p></aside>
 
 ## At a glance

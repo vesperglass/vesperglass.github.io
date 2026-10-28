@@ -67,5 +67,6 @@ These edition notes record additions to the existing folios. Where a record's so
 - **Compass Garden** — Compared the plan's central compass rose with the Observatory's pictured star compass, distinguishing a layout mark from a proposed instrument and leaving their shared provenance or use unestablished. [Read the folio →]({{ '/library/compass-garden/' | relative_url }})
 - **Vesperglass Postal Service** — Added a source card tracing the proposed Gate stamp's ring, palette, and crown motif to the Gate plate while distinguishing graphic additions from postal evidence. [Read the folio →]({{ '/library/postal-service/' | relative_url }})
 - **Vesperglass Postal Service** — Compared the Foundry stamp's furnace-like circle with both Foundry plates and its process account, identifying it as a postal-art interpretation rather than a recorded window or heat step. [Read the folio →]({{ '/library/postal-service/' | relative_url }})
+- **Starshards & the Gate Train** — Added a container-role comparison for the padded transit case, unnamed sealed stardust vessel, and train's starwell, tracing the material sequence while leaving container identity and transfer practices unresolved. [Read the folio →]({{ '/library/starshards/' | relative_url }})
 
 <p class="folio-return"><a href="{{ '/library/' | relative_url }}">← Return to the Universe Library</a></p>
