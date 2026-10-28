@@ -65,5 +65,6 @@ These edition notes record additions to the existing folios. Where a record's so
 - **Threshold House** — Added a concordance of the proposed interior and plan, distinguishing shared visual motifs from one-view details and leaving the room's actual orientation, dimensions, and use unknown. [Read the folio →]({{ '/library/threshold-house/' | relative_url }})
 - **Words of Passage** — Added a place-and-structure crosswalk distinguishing floating platforms, the Train Dock's alongside berth, and the Gate as both named platform and passage, without inferring a connecting route. [Read the cross-reference →]({{ '/library/words-of-passage/' | relative_url }})
 - **Compass Garden** — Compared the plan's central compass rose with the Observatory's pictured star compass, distinguishing a layout mark from a proposed instrument and leaving their shared provenance or use unestablished. [Read the folio →]({{ '/library/compass-garden/' | relative_url }})
+- **Vesperglass Postal Service** — Added a source card tracing the proposed Gate stamp's ring, palette, and crown motif to the Gate plate while distinguishing graphic additions from postal evidence. [Read the folio →]({{ '/library/postal-service/' | relative_url }})
 
 <p class="folio-return"><a href="{{ '/library/' | relative_url }}">← Return to the Universe Library</a></p>

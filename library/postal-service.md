@@ -39,6 +39,28 @@ The pictured sheet gathers four possible designs around landmarks already named 
 
 The motif-to-source relationship is editorial rather than postal: the Gate, [Observatory Logbook]({{ '/library/observatory/' | relative_url }}), [Compass Garden]({{ '/library/compass-garden/' | relative_url }}), and [Tideglass Foundry]({{ '/library/tideglass-foundry/' | relative_url }}) are the subjects named by the designs. A stamp picture cannot show that correspondence was carried to, from, or between those places.
 
+### Gate stamp · motif source record
+
+The single-stamp study adapts features of the Gate illustration into a compact postal image. This record traces visible correspondences and identifies what the design changes; it does not authenticate a stamp, a postal service, or the Gate's construction.
+
+| Design element | Gate plate reference | Treatment in the proposed stamp | What the comparison does not establish |
+| --- | --- | --- | --- |
+| **Open ring** | Gate Plate I depicts a large circular structure with a visible center. | The ring becomes the central emblem, simplified to fit within the stamp frame. | A measured ring profile, mechanism, or a physical stamp made at the Gate. |
+| **Teal and brass bands** | The illustration renders the Gate in teal glass and aged-brass tones. | The same palette defines the stamp's ring and surrounding border. | Confirmed construction materials; the Gate folio notes that its materials remain uncertain. |
+| **Top ornament** | The Gate image includes a narrow, star-like ornament above its crown. | The stamp reduces this to one detached star above the ring. | A shared symbol, navigational meaning, or official Gate emblem. |
+| **Steps and reflective foreground** | The Gate image shows a raised approach across its platform; the account does not describe stairs or water. | The stamp adds a symmetrical stair-like base and a teal reflective strip. | That these details belong to the Gate platform, form an approach, or appear in any established view of the place. |
+| **Parchment border** | No postal frame appears in the Gate account or plate. | Perforations and a double-line frame identify the image as a proposed stamp design. | Postal dimensions, printing method, issue date, denomination, or actual use. |
+
+#### Source boundary
+
+| Layer | What is supported | What remains unestablished |
+| --- | --- | --- |
+| **Named place and passage** | The Vesperglass Gate is a separate platform and the train's passage between worlds. | An office, stamp issue, postal keeper, dispatch, or mail route. |
+| **Gate illustration** | A freestanding ring, teal-and-brass appearance, star-like crown detail, and raised platform are visible in Plate I. | Whether those visual choices specify true materials or measured architecture. |
+| **Stamp proposal** | The proposed image borrows and simplifies some visual details while adding a border, base, and reflection. | That the added details are Gate architecture or that a real postal design used them. |
+
+The stamp's clearest lineage is therefore graphic: ring, palette, and a simplified crown echo the Gate plate, while its lower base and postal frame belong to the proposal. The [Gate folio]({{ '/library/vesperglass-gate/' | relative_url }}) keeps the pictured architecture distinct from the bloom described in the crossing account; [Words of Passage]({{ '/library/words-of-passage/' | relative_url }}) distinguishes the Gate passage from a place or route. Neither connection turns this stamp study into a record of correspondence.
+
 ## Proposed envelope face · a blank layout
 
 The schematic below explores how the proposed Gate stamp might sit beside separate sender and addressee fields. It is an editorial layout, not a surviving envelope or a standard form. The fields remain empty because the consulted accounts provide no personal names, postal addresses, or delivery destinations.
