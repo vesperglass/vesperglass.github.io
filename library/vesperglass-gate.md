@@ -75,6 +75,21 @@ The following interpretive recollections give two different accounts of the mome
 
 The recollections differ in emphasis, not in verifiable timing. Neither establishes a sound, event, or passenger record for a particular crossing.
 
+### Recollection concordance · account and voices
+
+Set beside the crossing description, the two voices can be compared for where their attention falls. The underlying account describes the Gate bloom and the train's passage; the keeper and traveler passages are interpretive recollections written for this folio. Their overlap is a shared threshold setting, not corroboration by two identified witnesses.
+
+| Question | Crossing account | Keeper recollection | Traveler recollection | What the comparison establishes |
+| --- | --- | --- | --- | --- |
+| **Where in the sequence?** | The bloom gathers around the train, briefly hides it, then opens at emergence. | Remembers a hush before the bloom. | Remembers the Gate singing, then notices personal stillness. | All three are arranged around a passage, but no date or particular journey joins them. |
+| **What is heard?** | The account describes light and concealment; it does not record a sound. | The train has gone quiet, though its lamps still show. | The Gate is remembered as singing. | Quiet and song conflict in the interpretive voices; neither is confirmed as an acoustic property of the Gate or train. |
+| **Who is still?** | No observer's posture or feeling is described. | The keeper notices the train's quiet. | The traveler notices being still only afterward. | The passages place attention differently; they do not identify a person or establish a shared viewpoint. |
+| **What follows?** | The train emerges on the far side, carrying the light of its return journey. | No arrival is described in this recollection. | No arrival is described in this recollection. | The voices do not complete, date, or identify the crossing sequence. |
+
+The stable point belongs to the crossing account: a bright bloom forms around the train and the road takes shape. The voices add two incompatible sensory readings before that moment. Because they are explicitly proposed recollections, the difference should remain visible rather than be resolved into a single “true” sound. Neither passage is a transcript, and neither supports a sound recording, named traveler, or specific destination.
+
+The [Train Dock docket]({{ '/library/train-dock/' | relative_url }}) arranges departure, bloom, and emergence as a proposed sequence but does not connect it to either voice. The [Observatory sample leaves]({{ '/library/observatory/' | relative_url }}) likewise preserve differing readings without identifying a celestial subject; that is a separate comparison, not evidence about this crossing.
+
 <aside class="field-note"><span class="field-note-mark" aria-hidden="true">✳</span><p><strong>What is recorded</strong><br>The Gate is the train’s passage from Vesperglass to distant worlds. Its mechanical construction is not fully described.</p></aside>
 
 ## At a glance

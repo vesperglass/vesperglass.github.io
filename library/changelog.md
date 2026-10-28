@@ -60,5 +60,6 @@ These edition notes record additions to the existing folios. Where a record's so
 - **Vesperglass Train Dock** — Added a two-state alignment key comparing the written approach and alongside berth with the proposed plan, while leaving scale, rails, docking method, and any Dock-to-Gate route unestablished. [Read the folio →]({{ '/library/train-dock/' | relative_url }})
 - **Vesperglass Workshop** — Added a source-aware inventory of Plate II's central table, blueprint sheets, cabinet vessels, and wall tools, separating depicted objects from established place lore and unrecorded use. [Read the folio →]({{ '/library/workshop/' | relative_url }})
 - **Star Archive** — Added a shelf-content boundary card for Plate II, identifying the depicted room arrangement without inventing collection titles or assigning the proposed *Unfixed Meridian* to a shelf. [Read the folio →]({{ '/library/star-archive/' | relative_url }})
+- **The Vesperglass Gate** — Added a concordance comparing the bloom account with two proposed recollections, retaining their conflicting hush and song without treating either as corroborated testimony. [Read the folio →]({{ '/library/vesperglass-gate/' | relative_url }})
 
 <p class="folio-return"><a href="{{ '/library/' | relative_url }}">← Return to the Universe Library</a></p>

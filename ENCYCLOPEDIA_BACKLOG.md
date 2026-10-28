@@ -53,6 +53,7 @@ Working tracker for new reference forms and encyclopedia additions. Keep it in s
 | Cutaway object boundary cards | A structured inventory of a proposed room illustration that maps pictured objects to cautious readings and explicitly unrecorded names, uses, and ownership | Treat the cutaway as an editorial proposal; don't infer an established collection, practice, or production process from proximity |
 | Process-to-use handoff cards | A concise cross-folio bridge between a recorded material-making process and its separately described use | Keep the adjacent stages distinct; leave transport, quantity, timing, and loading procedure open unless a source records them |
 | Shelf-content boundary cards | A compact key that describes shelves and reading spaces shown in a proposed room plate without assigning titles, collections, or catalog order | Do not claim that a proposed record is depicted, held, or indexed unless the image or an account identifies it |
+| Recollection concordance tables | A side-by-side reading of an established event account and proposed personal recollections, tracking shared sequence context and conflicting sensory detail | Keep each voice interpretive unless identified by a source; don't treat narrative overlap as witness corroboration or resolve disagreements by inventing a fact |
 
 ## Backlog
 
@@ -93,15 +94,16 @@ Working tracker for new reference forms and encyclopedia additions. Keep it in s
 - [x] **Create a two-state Dock alignment key** — Compare the described broad approach, guide-path alignment, alongside berth, and departure with the proposed Dock plan; leave scale, bearing, rails, stopping point, and any route to the Gate unestablished. Completed 2026-10-28 in `library/train-dock.md`.
 - [x] **Add a depicted-object inventory for Vesperglass Workshop Plate II** — Identify the central worktable, blueprint sheets, cabinet vessels, and wall tools in the proposed cutaway; relate only the Workshop's established central-home role and leave object names, materials, owners, and processes unknown. Completed 2026-10-28 in `library/workshop.md`.
 - [x] **Add a shelf-content boundary card to Star Archive Plate II** — Describe its radial shelves, central reading table, chart cabinet, and upper gallery, while leaving titles, catalog structure, access practice, and the proposed Unfixed Meridian's shelf assignment unconfirmed. Completed 2026-10-28 in `library/star-archive.md`.
+- [x] **Compare the Gate crossing account with its two proposed recollections** — Set the bloom sequence beside the keeper's hush and traveler's song; distinguish their different sensory focus and keep both voices undated, unidentified, and uncorroborated. Completed 2026-10-28 in `library/vesperglass-gate.md`.
 
 ### Open
 
-- [ ] **Compare the Gate crossing account with its two proposed recollections** — Mark the sequence details shared by the interpretive keeper and traveler voices, set their silence/singing difference beside the account's bloom description, and state that no dated witness or authenticated sound record is identified.
 - [ ] **Concord the two Threshold House plates** — Compare the open arch, long bench, lamp niches, and central axis across the interior illustration and proposed plan; mark features shown in only one image and leave dimensions, bearing, material, and established use open.
 - [ ] **Compare the train's starwell account with its pictured chamber** — Pair the account's sealed starwell glass with the vessel illustration's visible chamber cues; distinguish written sensory detail from depicted form and leave glass composition, chamber dimensions, starshard placement, and their exact correspondence unknown.
 - [ ] **Compare the starshard transit case with the train's sealed starwell** — Set the padded dark-glass case described for transport beside the starwell named as the train's stardust vessel; trace each claim to `library/starshards.md` and leave dimensions, transfer practice, capacity, and whether the vessels are related unspecified.
 - [ ] **Bridge the Foundry's tempering account to the train's starwell use** — Compare the recorded step that settles stardust's glints with the train account's measured thread and travel pulse; keep the source passages distinct and leave amount, transfer, timing, and any loading method unrecorded.
 - [ ] **Add a terminology note for “mirrored plates” and “quiet color”** — Pair the Foundry's named grinding surface and tempering result with the exact account language; state what those phrases describe while leaving plate construction, color measurement, and resonance mechanism unspecified.
+- [ ] **Compare the Workshop's proposed “Name the passage” custom with the Train Dock docket** — Set its imagined spoken destination beside the docket's blank origin/destination fields, and state that neither source verifies a keeper custom, named journey, passenger, or realized route.
 
 ## Hourly substantial work cycle
 
