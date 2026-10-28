@@ -49,6 +49,7 @@ Working tracker for new reference forms and encyclopedia additions. Keep it in s
 | Repository-to-observation boundaries | A comparison of a named record-keeping place with a nearby observation account that states whether any specific record is shared | Keep thematic relevance separate from common authorship, date, instrument, catalog ownership, or matching map subject |
 | Cross-record corroboration notes | A source-horizon table showing which stage or claim each neighboring account supports and which link between records remains unproven | Compare scope and provenance, not just matching vocabulary; do not merge undated accounts into one event |
 | Image-to-account accession notes | A keyed reading that pairs a visible image detail with the nearest written account and the inference boundary | Call visual labels descriptive, not canonical names; do not turn an illustration into a botanical, material, or keeper's record |
+| Instrument plate inventories | A structured visual key for a place plate that pairs each pictured instrument with a cautious reading and the unanswered provenance or specification questions | Treat names as descriptive labels; keep depicted arrangement separate from an established collection, procedure, or implemented tool |
 
 ## Backlog
 
@@ -85,16 +86,16 @@ Working tracker for new reference forms and encyclopedia additions. Keep it in s
 - [x] **Add an evidence-to-field matrix for *The Unfixed Meridian*** — Trace its proposed title, scope, marks, maker, date, and location fields to the Star Archive account; pair it with an Archive/Observatory source-boundary table that keeps their proposed records distinct. Completed 2026-10-27 in `library/star-archive.md`.
 - [x] **Draft a proposed Train Dock journey docket** — Arrange berth departure, Gate bloom, and emergence into a proposed form with a blank record header and a source-horizon comparison; leave dates, passengers, destination, route, cargo, and duration unassigned. Completed 2026-10-27 in `library/train-dock.md`.
 - [x] **Add a pictured-flora key to Compass Garden Plate I** — Describe the star-shaped pale blooms, luminous fern-like fronds, mixed beds, keeper figure, and compass rose as image details; keep plant names, biology, glow source, cultivation, and practice unestablished. Completed 2026-10-27 in `library/compass-garden.md`.
+- [x] **Add a visual inventory for Observatory Plate II** — Identify the pictured orrery, sighting tube, star compass, and closed journal; separate each cautious reading from image evidence, established Observatory lore, and unrecorded provenance or specifications. Completed 2026-10-28 in `library/observatory.md`.
 
 ### Open
 
-- [ ] **Add a visual inventory for Observatory Plate II** — Name the depicted orrery, sighting tube, star compass, and journal; distinguish image details from inferred function and leave maker, construction, and use by any named observer unknown.
-- [ ] **Add an interpretive cancellation-mark register to the Postal Service folio** — Propose Gate, Workshop, and Foundry postmark motifs and show how a mark could identify an image without asserting dispatch date, origin, destination, or a route; keep the register separate from evidence of real mail use.
 - [ ] **Create a two-state Dock alignment key** — Compare the described alongside berth with the atlas's illustrated approach path, separating position from movement and leaving offset, orientation, track, and docking procedure unknown; keep it distinct from the Gate crossing sequence.
 - [ ] **Add a depicted-object inventory for Vesperglass Workshop Plate II** — Identify the worktable, blueprints, cabinet vessels, and wall tools as features of the proposed cutaway; connect only the Workshop's established role as central home and preparation place, and leave object names, materials, owners, and making procedures unrecorded.
 - [ ] **Add a shelf-content boundary card to Star Archive Plate II** — Inventory the visible radial shelves, central reading table, and chart cabinet as features of the proposed cutaway, then list collection titles, catalog structure, access practice, and shelf assignment as unknown rather than filling the room with invented books.
 - [ ] **Compare the Gate crossing account with its two proposed recollections** — Mark the sequence details shared by the interpretive keeper and traveler voices, set their silence/singing difference beside the account's bloom description, and state that no dated witness or authenticated sound record is identified.
 - [ ] **Concord the two Threshold House plates** — Compare the open arch, long bench, lamp niches, and central axis across the interior illustration and proposed plan; mark features shown in only one image and leave dimensions, bearing, material, and established use open.
+- [ ] **Compare the train's starwell account with its pictured chamber** — Pair the account's sealed starwell glass with the vessel illustration's visible chamber cues; distinguish written sensory detail from depicted form and leave glass composition, chamber dimensions, starshard placement, and their exact correspondence unknown.
 
 ## Hourly substantial work cycle
 

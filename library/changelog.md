@@ -54,4 +54,8 @@ These edition notes record additions to the existing folios. Where a record's so
 - **Vesperglass Postal Service** — Expanded Plate I to four proposed architectural stamps and added a cancellation-mark register with source boundaries for each motif. [Read the folio →]({{ '/library/postal-service/' | relative_url }})
 - **Words of Passage and World Relationship Index** — Added distinct subject-specific Plate I illustrations to both reference inserts and replaced their reused library-card art. [Read the cross-reference →]({{ '/library/words-of-passage/' | relative_url }}) · [Read the index →]({{ '/library/relationships/' | relative_url }})
 
+## October 28, 2026
+
+- **Observatory Logbook** — Added a Plate II instrument inventory distinguishing visible forms from cautious readings, established place lore, and unknown provenance or specifications; linked its record-keeping subject to the Star Archive without claiming a shared artifact. [Read the folio →]({{ '/library/observatory/' | relative_url }})
+
 <p class="folio-return"><a href="{{ '/library/' | relative_url }}">← Return to the Universe Library</a></p>

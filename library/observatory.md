@@ -28,6 +28,28 @@ Observatory Logbook is the named observatory among Vesperglass's outer platforms
 
 The room places instruments and written notes side by side. The orrery offers a way to compare positions, while the logbook keeps observations in a form that can be revisited. Its architectural details and exact measurements are not preserved in the accounts consulted here.
 
+### Plate II · pictured instrument inventory
+
+Plate II is a proposed still life, not an inventory copied from the Observatory or a surviving keeper's account. The names below identify the visible forms for reference; they do not establish an instrument collection, a working arrangement, or a particular observer's practice.
+
+| Visible form | What the plate shows | Cautious reading | Still unrecorded |
+| --- | --- | --- | --- |
+| **Orrery** | A central dark sphere surrounded by smaller spheres on brass-colored arms, above a marked circular base. | Its nested arrangement suggests a model of celestial relations. | Which bodies it represents, whether its arms move, its scale, maker, date, and any calibration. |
+| **Sighting tube** | A long brass-colored tube on a pivoting support, aimed across the still life. | Its shape suggests an instrument for directing a view. | Magnification, lenses, mounting method, target, measurements, and whether the pictured tube belongs to the named Observatory. |
+| **Star compass** | A round, marked instrument with a ring and needle-like pointer rests near the foreground. | The dial suggests a directional or positional reference. | Its markings' meaning, what it is aligned to, its accuracy, and whether it was used with the tube or orrery. |
+| **Observation journal** | A closed, dark-bound volume with a clasp and star-shaped fitting lies beside the instruments. | Its form can be read alongside the Observatory's established association with records. | Whether it contains observations, who wrote it, its title, date, contents, and whether it is a logbook at all. |
+
+The image groups these objects in one composition, but proximity is not evidence of a shared procedure. In particular, the compass is not shown aligned to the tube, and the closed volume supplies no readable entry. The established name **Observatory Logbook** supports a place associated with observation and record; it does not authenticate any object in this proposed plate.
+
+| Evidence layer | Supported here | Boundary |
+| --- | --- | --- |
+| **Established account** | A named Observatory associated with observing and keeping a record. | No surviving account consulted for this folio names an orrery, tube, compass, journal, keeper, or session. |
+| **Plate depiction** | Four recognizable forms appear together: an orrery, sighting tube, star compass, and closed volume. | The plate is illustrative and does not document provenance, actual co-location, or technical specifications. |
+| **Interpretation** | Their forms invite questions about modeling, sighting, orientation, and note keeping. | Those readings are tentative descriptions, not confirmed functions or an Observatory operating method. |
+| **Implemented visitor behavior** | The separate Galaxy map can be inspected as a site interface. | No Observatory instrument is connected to that map, and the image does not identify a map point or live observing system. |
+
+The [Star Archive]({{ '/library/star-archive/' | relative_url }}) is a related place for knowledge of the sky, but its proposed chart is not identified with this closed journal. The two entries may be read together as distinct reference subjects—one looking and recording, the other keeping knowledge—without assigning them a common instrument, document, keeper, or catalog.
+
 ## A leaf from the logbook
 
 This interpretive entry separates a recorded observation from a possible explanation and a follow-up check. Its provenance is unverified, so it should not be used as a dated measurement of a named star.
