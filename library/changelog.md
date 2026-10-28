@@ -57,5 +57,6 @@ These edition notes record additions to the existing folios. Where a record's so
 ## October 28, 2026
 
 - **Observatory Logbook** — Added a Plate II instrument inventory distinguishing visible forms from cautious readings, established place lore, and unknown provenance or specifications; linked its record-keeping subject to the Star Archive without claiming a shared artifact. [Read the folio →]({{ '/library/observatory/' | relative_url }})
+- **Vesperglass Train Dock** — Added a two-state alignment key comparing the written approach and alongside berth with the proposed plan, while leaving scale, rails, docking method, and any Dock-to-Gate route unestablished. [Read the folio →]({{ '/library/train-dock/' | relative_url }})
 
 <p class="folio-return"><a href="{{ '/library/' | relative_url }}">← Return to the Universe Library</a></p>

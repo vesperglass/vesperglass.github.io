@@ -28,6 +28,21 @@ Vesperglass Train Dock is a platform separate from the Vesperglass Gate. It give
 
 The plates show a straight open edge and an alongside berth, with no tracks. The approach and departure path is understood from the train's movement; the Dock itself has no recorded rails.
 
+### Berth and approach · a two-state alignment key
+
+The Train Dock description and Plate II show related but different parts of the arrival: the account names an alongside berth and a guide path, while the plan depicts a broad curve meeting a straight platform edge. This key compares the arrival approach with the settled berth without treating the plan as a measured survey or turning the linework into a record of rails.
+
+| State | Written account | Plate II | Reading boundary |
+| --- | --- | --- | --- |
+| **Approach** | The locomotive approaches in a broad curve. | A curved apron reaches from the upper left toward the station's long side. | The bend is visible in the proposed plan, but no dimensions, scale, or compass bearing are supplied. |
+| **Alignment** | The train aligns with a guide path before moving alongside the berth. | The curve straightens where it meets the long platform edge. | This supports a visual comparison of curve-to-straight shape; it does not identify a track, rail, docking mark, or steering method. |
+| **Alongside berth** | The locomotive rests parallel to the station edge, leaving the platform clear. | The plan and elevation place the train outside the long edge, with the deck above it. | The relative placement is clear in the illustration; offset, exact orientation, attachment, and a fixed stopping point remain unknown. |
+| **Departure** | The train leaves by the same passage and returns to open flight. | The plan shows the route geometry but supplies no numbered sequence or destination. | It does not connect the Dock to the Gate by a recorded route or establish how long departure takes. |
+
+The useful agreement is limited: both descriptions make the berth a position alongside the platform, reached after a curved approach and alignment. The drawings add a readable spatial arrangement, not measured coordinates. Their paired lines are part of the proposed illustration; they do not establish physical rails, despite the rail-like appearance a plan mark may suggest.
+
+The [Gate crossing account]({{ '/library/vesperglass-gate/' | relative_url }}) describes a later passage through a separate platform's bloom. This key does not extend the Dock's approach curve to the Gate, identify the departure's heading, or join the berth sequence to a particular crossing. The [Words of Passage cross-reference]({{ '/library/words-of-passage/' | relative_url }}) likewise keeps the Dock's guide path distinct from the Gate bloom.
+
 ## Vessel dossier · the Gate train
 
 This compact dossier gathers details from accounts of the train and its berth. It is a reference summary, not a measured engineering plan.
