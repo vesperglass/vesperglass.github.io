@@ -10,7 +10,7 @@ permalink: /library/starshards/
 
 <figure class="book-plate book-plate-gate">
   <img src="{{ '/assets/library/gate-train-plate.webp' | relative_url }}" alt="A brass-and-glass locomotive travels through a bright circular portal, with starshards glittering in its wake." fetchpriority="high">
-  <figcaption><span>PLATE I</span> The Gate train in transit. The luminous bloom marks the instant the Vesperglass Gate yields a passage.</figcaption>
+  <figcaption><span>PLATE I</span> The Gate train in transit. The luminous bloom marks the instant the Vesperglass Gate yields a passage; this exterior view does not show the starwell's interior.</figcaption>
 </figure>
 
 <div class="entry-byline"><span>SUBJECT &nbsp; Mineral fuel · Portal transit</span><span>PLACE &nbsp; Tideglass Foundry · The Vesperglass Gate</span></div>
@@ -116,6 +116,21 @@ The contrast is a change in what the observer sees: near-stillness in the sealed
 The train's fuel chamber is called the **starwell**. It does not burn stardust as an ordinary furnace burns coal. Instead, the locomotive feeds a measured thread of dust into its glass heart. The grains answer one another, gathering into a single pulse that lets the train lean against distance and find the Gate's far side.
 
 That is why the train is more than a vehicle. It is a moving instrument tuned to the Gate: brass for its frame, dark glass for its heart, and stardust for the note that opens a road. When a train leaves at speed, the portal gathers around it in a bright, expanding bloom. On arrival the bloom opens outward again, and the locomotive emerges already carrying the light of its return journey.
+
+### Starwell · account and image boundary
+
+The account names the train's fuel chamber the **starwell** and describes it as sealed glass. It says the locomotive feeds a measured thread of stardust into its glass heart, where the grains gather into a pulse for crossing. These are account details about a role and an effect, not a mechanical cross-section.
+
+Plate I shows the locomotive from outside as it passes through the Gate's bloom. A bright circular feature is visible at the front of the engine, but the image does not expose a chamber interior, show stardust, or label that feature as the starwell. Figure I arranges the material sequence as a reference diagram; its small train symbol is schematic and adds no construction detail.
+
+| Question | Account | Plate I / Figure I | Boundary |
+| --- | --- | --- | --- |
+| **What is named?** | A sealed glass fuel chamber called the starwell. | The train exterior and a schematic train symbol are pictured. | No image label identifies a specific visible part as the starwell. |
+| **What does it carry?** | Stardust is carried for a Gate crossing. | The exterior image shows the train in transit, amid the Gate bloom and scattered star-like fragments. | The image does not establish where the material sits or whether any pictured fragments are inside the locomotive. |
+| **What happens to the material?** | A measured thread is fed into the glass heart; the grains gather into a pulse. | No loading action or internal movement is shown. | The account provides no chamber dimensions, feed mechanism, quantity, timing, or technical diagram. |
+| **What is the chamber made from?** | The starwell is described as sealed glass; the train's heart is described as dark glass. | Plate I is a luminous exterior scene rather than a material sample or cutaway. | The exact glass, wall structure, closure, and relationship between visible light and chamber material remain unspecified. |
+
+The shared phrase **glass heart** connects the account's chamber with the locomotive's fuel role, but it should not be used to infer that the circular light at the engine's front is an exposed or transparent starwell. The plate offers no interior view against which to check that reading. The [Train Dock folio]({{ '/library/train-dock/' | relative_url }}) describes the locomotive's berth and departure, while [Words of Passage]({{ '/library/words-of-passage/' | relative_url }}) defines *starwell* as the sealed chamber; neither supplies the missing construction view.
 
 <aside class="field-note"><span class="field-note-mark" aria-hidden="true">✳</span><p><strong>A note from the keepers</strong><br>The bloom is a passage taking shape, not an explosion. The train is never consumed by the light; it is briefly hidden by the road it has made.</p></aside>
 
