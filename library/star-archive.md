@@ -30,6 +30,28 @@ The circular arrangement allows a reader to move from the shelves to a central t
 
 <aside class="field-note"><span class="field-note-mark" aria-hidden="true">✳</span><p><strong>What is recorded</strong><br>Star Archive keeps knowledge of the sky. Its collection, catalog and keepers are not described in the surviving accounts.</p></aside>
 
+### Plate II · shelf-content boundary card
+
+The proposed cutaway shows a circular room organized around a central reading table. Its shelves hold book-like volumes, but the surviving account names no title, catalog, or collection. This boundary card records the plate's visible arrangement while leaving the Archive's actual holdings open.
+
+| Visible feature | What the cutaway depicts | Safe descriptive label | Unrecorded detail |
+| --- | --- | --- | --- |
+| **Radial shelves** | Tall bookcases follow the room's curved outer wall and upper gallery. | Shelves holding book-like volumes. | Titles, subject divisions, call numbers, ownership, language, and whether every volume concerns the sky. |
+| **Central reading table** | A round table stands in the center with open books and individual reading places. | Shared reading surface shown in the illustration. | Whether readers use it, how consultation works, and whether the open pages are charts, books, or working notes. |
+| **Chart cabinet** | A bank of shallow drawers stands beside the lower shelves; a separate chart rests on a sloped stand. | Drawer cabinet and displayed chart in the proposed room. | Drawer contents, indexing method, relation between the cabinet and the displayed chart, and any catalog sequence. |
+| **Upper gallery** | A second level of shelves and a balcony overlooks the central room. | Upper shelf level in the cutaway. | Access rules, which materials belong there, and whether the depicted gallery exists in the named Archive. |
+
+#### Catalog status · no shelf assignment
+
+| Record question | What this folio can say | Status |
+| --- | --- | --- |
+| Does the Archive keep knowledge of the sky? | Yes; that is the established description of the named place. | **Established place account** |
+| Does the cutaway depict shelves and a central table? | Yes; those features appear in the proposed architectural illustration. | **Image description** |
+| Is *The Unfixed Meridian* among the pictured volumes or cabinet charts? | The plate has no readable title or identifying label that connects it to that proposed chart. | **Unassigned** |
+| Are there subject sections, shelf numbers, or access rules? | No surviving catalog or account gives those details. | **Unknown** |
+
+The proposed *Unfixed Meridian* card below remains a separate editorial example. Its placement in this folio does not mean that the chart exists, belongs to the Archive, appears in this room, or has a shelf number. The [Observatory Logbook]({{ '/library/observatory/' | relative_url }}) likewise describes a place of observation and record, but no shared author, chart, instrument, or copy is established between the two entries.
+
 ## Proposed catalog card · *The Unfixed Meridian*
 
 The following catalog card is a proposed entry for a chart called *The Unfixed Meridian*. No surviving index confirms the title or identifies an associated star system.
