@@ -62,6 +62,19 @@ No surviving account records the speech of Threshold House or names a keeper who
 | **“Would you like a question, or a quiet?”** | The pause has begun to open into conversation, but the arriving person may still choose not to tell their story. | **“A quiet first; the question can wait.”** |
 | **“Shall we leave the crossing unnamed?”** | Two people have different memories of a passage, or neither can say where the road led. The words leave room for uncertainty instead of settling a version. | **“For tonight, let it remain open.”** |
 
+### Place name and event name · what remains named
+
+The proposed line asks whether two people should leave a crossing unnamed. The [Vesperglass Gate]({{ '/library/vesperglass-gate/' | relative_url }}) has an established name in the Encyclopedia and is also the passage described in crossing accounts. These uses answer different questions: *Gate* identifies a place and its role; *a crossing* can refer to one event whose date, destination, and travelers are not supplied.
+
+| Scope | Phrasebook slip | Gate and travel record | Boundary of the comparison |
+| --- | --- | --- | --- |
+| **Subject** | “The crossing” is the passage or event the imagined speakers remember differently. | The Vesperglass Gate is a named platform and the passage between worlds. | The general place-name does not identify the particular event the speakers might have in mind. |
+| **Naming** | Leaving a crossing unnamed is a proposed conversational choice in an imagined exchange. | “Vesperglass Gate” remains the recorded place-name; [Words of Passage]({{ '/library/words-of-passage/' | relative_url }}) distinguishes that name from the passage role. | Choosing not to name an event does not rename the Gate or establish a local rule against saying its name. |
+| **Identity** | The line gives no speaker, date, or itinerary. | The Gate account describes how passage occurs, but does not attach the scene to a named traveler or dated journey. | Neither text identifies one shared crossing, witness, passenger, or destination. |
+| **Purpose** | The suggested reply—“For tonight, let it remain open”—leaves room for unresolved memories. | The travel terms describe the Gate's role, not a duty to narrate a passage. | The private tone of the proposed exchange is not evidence of an official record, hidden route, or required silence. |
+
+The distinction lets a reader keep both ideas in view without forcing them together: the Gate can be named while a particular crossing remains unidentified. This is a reading aid for the phrasebook, not a correction to the Gate account or a new account of traveler etiquette. The [Train Dock docket]({{ '/library/train-dock/' | relative_url }}) likewise leaves event-specific fields blank; it does not connect the proposed conversation to a recorded departure.
+
 ### How the slips are meant to work
 
 These lines offer three kinds of welcome: recognition, choice, and room for an unresolved account. The suggested replies are alternatives, not required responses; silence would work just as well. No surviving account establishes the phrases as local custom or assigns a route, time, or history to a particular arrival. They pair with the Gate folio's accounts of an unnamed crossing and the Workshop's proposed practice of carrying an open question forward, while adding no new facts about either place. [Read the Gate crossing record →]({{ '/library/vesperglass-gate/' | relative_url }}) · [Read the Workshop customs →]({{ '/library/workshop/' | relative_url }})

@@ -26,7 +26,7 @@ permalink: /library/
   </a>
   <a class="library-entry-card" href="{{ '/library/threshold-house/' | relative_url }}">
     <span class="library-card-art"><img src="{{ '/assets/library/places/threshold-interior.webp' | relative_url }}" alt="A lantern-lit threshold chamber opening onto the stars." loading="lazy"></span>
-    <span class="library-entry-copy"><span class="library-entry-number">ENTRY 003 &nbsp;·&nbsp; ARRIVAL &amp; PASSAGE</span><strong>Threshold House</strong><span>A named platform with a concordance of its proposed interior view and plan.</span><span class="library-read">Read the entry <span aria-hidden="true">↗</span></span></span>
+    <span class="library-entry-copy"><span class="library-entry-number">ENTRY 003 &nbsp;·&nbsp; ARRIVAL &amp; PASSAGE</span><strong>Threshold House</strong><span>A named platform with a concordance of its proposed interior and plan, arrival phrases, and a note distinguishing the Gate's name from an unnamed crossing.</span><span class="library-read">Read the entry <span aria-hidden="true">↗</span></span></span>
   </a>
   <a class="library-entry-card" href="{{ '/library/tideglass-foundry/' | relative_url }}">
     <span class="library-card-art"><img src="{{ '/assets/library/places/foundry-interior.webp' | relative_url }}" alt="Starshards being carefully processed inside Tideglass Foundry." loading="lazy"></span>

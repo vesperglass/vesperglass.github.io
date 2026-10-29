@@ -74,5 +74,6 @@ These edition notes record additions to the existing folios. Where a record's so
 - **Compass Garden** — Compared its proposed glass conservatory with the Observatory's proposed dome, distinguishing each pictured architecture from the places' narrower established roles and leaving shared construction unassigned. [Read the folio →]({{ '/library/compass-garden/' | relative_url }})
 - **Observatory Logbook** — Compared its imagined second-watch leaf with the proposed sighting-tube illustration, keeping their shared wording from implying a specific tool match or authenticated observation. [Read the folio →]({{ '/library/observatory/' | relative_url }})
 - **Vesperglass Workshop** — Compared its proposed spoken-destination custom with the Train Dock's blank docket, distinguishing optional speech from an unattested record or journey. [Read the folio →]({{ '/library/workshop/' | relative_url }})
+- **Threshold House** — Compared a proposed choice to leave one crossing unnamed with the Gate's established place-name, keeping conversational scope distinct from event identity. [Read the folio →]({{ '/library/threshold-house/' | relative_url }})
 
 <p class="folio-return"><a href="{{ '/library/' | relative_url }}">← Return to the Universe Library</a></p>
