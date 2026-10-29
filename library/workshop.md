@@ -60,6 +60,24 @@ The following customs are recorded as possible practices for how keepers prepare
 
 These customs offer one reading of shared life around the Workshop and Dock. No surviving departure record confirms whether they were practiced on a particular crossing.
 
+### Custom beside record · a spoken destination and a blank docket
+
+The proposed **“Name the passage”** custom imagines two keepers saying an intended destination aloud before departure. The [Train Dock docket]({{ '/library/train-dock/' | relative_url }}) is a separate editorial form: it arranges the departure, Gate bloom, and emergence described across accounts, while leaving an actual crossing's destination and passenger names unrecorded. Read together, the two proposals raise a useful question about speech and records without supplying evidence that either belonged to a particular journey.
+
+| Point of comparison | Proposed Workshop custom | Proposed Train Dock docket | What the pairing can—and cannot—show |
+| --- | --- | --- | --- |
+| **Destination** | Two keepers may speak the intended destination. The custom does not name one. | The blank header leaves the destination unassigned; its example reads “Vesperglass → unassigned far side.” | Spoken intent could be imagined beside a destination field, but neither source provides a named far side or a completed entry. |
+| **Place and moment** | The imagined exchange happens at the Train Dock before the locomotive departs. | The docket begins with departure from the alongside berth, then sets out the Gate bloom and emergence as separate fields. | The texts share a proposed departure context. They do not establish where keepers stood, whether the phrase was spoken, or that the three docket stages were one event. |
+| **People** | The custom describes “two keepers” without names or roles beyond that scene. | The passenger-name field remains blank; no witness or crew list is supplied. | The imagined pair cannot be identified with passengers or witnesses on any crossing. |
+| **Record** | The custom is spoken and has no written form in its description. | The docket is a proposed form with empty fields, not a recovered register. | The comparison does not show that speech was transcribed, that a docket was kept, or that either proposal reflects a standing practice. |
+| **Route** | The intended passage is left unspecified. | The Dock docket does not record a route from the berth to the Gate or a particular destination beyond it. | Neither proposal establishes a fixed route, timetable, or completed journey. |
+
+#### Reading the gap
+
+The custom offers a moment of shared intention; the docket offers a way to leave event details blank rather than guess. Their resemblance is editorial: both make room for a destination, but the custom supplies no name and the docket supplies no actual itinerary. In particular, “say the destination aloud” is not evidence that keepers used a register, and an empty docket field is not evidence that a keeper withheld an answer.
+
+The established account supports the Workshop as Vesperglass's central home and preparation place, and the Train Dock account describes the locomotive's berth and departure. The spoken exchange and the docket format remain proposed additions. The [Words of Passage cross-reference]({{ '/library/words-of-passage/' | relative_url }}) also distinguishes the Dock's guide path from the Gate's passage; neither phrase identifies where a named destination would lie. This comparison records no named keeper, passenger, date, route, or implemented travel record.
+
 <aside class="field-note"><span class="field-note-mark" aria-hidden="true">✳</span><p><strong>What is recorded</strong><br>The Workshop is Vesperglass’s central home platform. The surviving accounts do not describe how starshards are gathered or how Foundry work is organized.</p></aside>
 
 ## At a glance
