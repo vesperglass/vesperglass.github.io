@@ -71,6 +71,7 @@ These edition notes record additions to the existing folios. Where a record's so
 
 ## October 29, 2026
 
+- **Vesperglass Postal Service** — Compared the Observatory stamp's crescent and star field with the source plate, keeping celestial identity, phase, and any dated observation unresolved. [Read the folio →]({{ '/library/postal-service/' | relative_url }})
 - **Vesperglass Postal Service** — Compared the four-stamp sheet's shared night-blue, teal, brass-gold, and parchment palette with each source plate, keeping graphic continuity distinct from architectural material or a printing standard. [Read the folio →]({{ '/library/postal-service/' | relative_url }})
 - **Vesperglass Postal Service** — Added an issue-neutral index for the four proposed stamp panels, linking each position to its subject folio without implying sequence, denomination, or postal assignment. [Read the folio →]({{ '/library/postal-service/' | relative_url }})
 - **Vesperglass Postal Service** — Added a motif trace comparing the proposed Compass Garden stamp flower with the Garden plate's descriptive starflower forms, keeping botanical identity and postal use unestablished. [Read the folio →]({{ '/library/postal-service/' | relative_url }})

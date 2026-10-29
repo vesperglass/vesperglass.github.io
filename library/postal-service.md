@@ -51,6 +51,19 @@ The proposed sheet gives four different place motifs a common night-blue, teal, 
 
 The common treatment belongs to the proposed stamp suite: dark star fields, gold linework, and pale perforated borders create visual unity, while the four images retain different source subjects and accents. The [Gate comparison](#gate-stamp--motif-source-record) and [Foundry comparison](#foundry-stamp--motif-and-source-comparison) explain two of those motif transfers; the [Garden trace](#compass-garden-stamp--floral-motif-trace) follows the isolated flower. Taken together, they document design choices only. The surviving place descriptions and plates do not set a common architectural palette, confirm the illustrated materials, or record a postal printer or stock.
 
+### Observatory stamp · crescent and sky field
+
+The upper-right design places a large crescent behind the Observatory's dome and telescope, surrounded by a dense field of small stars. [Observatory Plate I]({{ '/library/observatory/' | relative_url }}) also opens onto a star-filled sky and depicts distant, round celestial forms through the dome. The shared subject makes a visual comparison useful, but neither illustration names a specific body or connects the stamp's crescent to an observation in the Observatory Logbook.
+
+| Feature | Observatory · Plate I | Proposed stamp · upper-right design | What the pairing leaves open |
+| --- | --- | --- | --- |
+| **Sky setting** | Stars and a bright, cloud-like light form appear beyond the dome and telescope. | A dense star field fills the stamp behind the Observatory building. | No constellation, star group, coordinate, chart, or exact correspondence between the two star patterns is identified. |
+| **Round celestial forms** | Partially lit, round bodies appear through the open dome. | One large crescent is set behind the dome as a clear decorative shape. | The source image does not identify the bodies as moons or planets, and the stamp does not establish that its crescent depicts either one. |
+| **Observing instruments** | A large telescope is pictured beneath the star-facing dome. | The stamp retains the dome and long telescope as its principal architectural and instrument motif. | No dated observing session, target, instrument record, or observer's interpretation accompanies the design. |
+| **Graphic additions** | The source scene is an architectural interior opening onto the sky. | A broad blue field, gold stars, crescent, circular framing, and perforated border organize the miniature image. | Those choices are part of the proposed stamp composition; they do not describe an established Observatory ceiling, sky chart, or postal convention. |
+
+The stamp's crescent can be read as a design accent that heightens the sky-facing character of the Observatory image. It should not be captioned as a particular moon, phase, or sighting: the pictured round bodies have no names, and the folio's surviving record supplies no date or celestial log entry for them. The strongest link remains the architectural motif of dome and telescope. The [Observatory instrument inventory]({{ '/library/observatory/' | relative_url }}) likewise labels pictured instruments cautiously and records no particular observing session.
+
 <figure class="specimen-plate">
   <img src="{{ '/assets/library/postal-gate-stamp.png' | relative_url }}" alt="A single proposed Vesperglass postage stamp with a perforated parchment edge and an engraved brass-and-teal image of the Gate beneath a small star." loading="lazy">
   <figcaption><span>STAMP STUDY</span> A Gate-ring design prepared as a reusable postal mark; its border and image are proposed, not historical.</figcaption>
