@@ -19,6 +19,19 @@ permalink: /library/workshop/
 
 The Vesperglass Workshop is the central platform and home at the heart of the archipelago. It is the point from which the other floating places are understood: a place to return to, gather around, and prepare for the wider universe. Maps place it at the center and accounts identify its workshop; no measured interior plan or resident list has been preserved.
 
+### Centrality in the account and in the Atlas
+
+The Workshop is called central in two related but distinct senses. The place account gives it a central role: home at the heart of the archipelago, a point of return and gathering. The Atlas also presents the Workshop near the center of its floating-place composition. The second reading describes how the map arranges its landmarks; it should not be used as a measurement of the archipelago.
+
+| Evidence layer | What it supports | What it does not establish |
+| --- | --- | --- |
+| **Place account** | The Workshop is Vesperglass's central home platform and a place from which the other floating places are understood. | A geometric center, surveyed boundary, exact distance to another platform, or required order of travel. |
+| **Atlas composition** | The Workshop appears centrally among the floating-place landmarks in the visitor's map view. | A scale bar, projection, cardinal bearing, coordinate system, or evidence that the archipelago has been measured. |
+| **Atlas pin and landmark** | The Atlas names the Workshop and presents its landmark as a navigable point in the view. | That the pin is a surveyed address, that the depicted island spacing is to scale, or that visual proximity means adjacency. |
+| **Reading both together** | The map's prominent placement is consistent with the account's central-home role. | Independent confirmation of a physical center, a direct route between named places, or a journey time. |
+
+This distinction lets the map serve as a useful orientation without turning its composition into a chart of measured geography. In this folio, **central home** names an established place role; **central placement** describes the Atlas view. Neither statement supplies a direction, distance, scale, or route between the Workshop and another platform. The [Universe Guide]({{ '/universe/' | relative_url }}) introduces the archipelago and its landmarks, while the [World Relationship Index]({{ '/library/relationships/' | relative_url }}) catalogs documented links by source rather than treating their arrangement as a route map.
+
 <figure class="specimen-plate place-plate">
   <img src="{{ '/assets/library/places/workshop-cutaway.webp' | relative_url }}" alt="Architectural cutaway and small floor plan of a double-height glass-and-brass workshop with gallery, tool alcoves and central table." loading="lazy">
   <figcaption><span>PLATE II</span> A proposed cutaway arrangement: communal table, tool walls, gallery and stair.</figcaption>
