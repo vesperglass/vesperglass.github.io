@@ -38,7 +38,7 @@ permalink: /library/
   </a>
   <a class="library-entry-card" href="{{ '/library/observatory/' | relative_url }}">
     <span class="library-card-art"><img src="{{ '/assets/library/places/observatory-interior.webp' | relative_url }}" alt="An observer at work beneath the Observatory's star-facing dome." loading="lazy"></span>
-    <span class="library-entry-copy"><span class="library-entry-number">ENTRY 006 &nbsp;·&nbsp; OBSERVATION &amp; RECORDS</span><strong>Observatory Logbook</strong><span>Instruments, observations, and the practice of keeping a record of the sky.</span><span class="library-read">Read the entry <span aria-hidden="true">↗</span></span></span>
+    <span class="library-entry-copy"><span class="library-entry-number">ENTRY 006 &nbsp;·&nbsp; OBSERVATION &amp; RECORDS</span><strong>Observatory Logbook</strong><span>A source-aware record with an instrument inventory and comparison of the proposed second watch with the pictured sighting tube.</span><span class="library-read">Read the entry <span aria-hidden="true">↗</span></span></span>
   </a>
   <a class="library-entry-card" href="{{ '/library/star-archive/' | relative_url }}">
     <span class="library-card-art"><img src="{{ '/assets/library/places/archive-interior.webp' | relative_url }}" alt="A circular Star Archive with a central reading table." loading="lazy"></span>

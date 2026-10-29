@@ -12,6 +12,8 @@ STAMP_CHOICES = (
     ("https://vesperglass.github.io/assets/library/postal-stamp-foundry.png", "A proposed architectural stamp depicting the Tideglass Foundry furnace window"),
 )
 TEMPLATE_ID = "vesperglass-postal-dispatch-v1"
+POSTMARK_URL = "https://vesperglass.github.io/assets/library/postmark-overprint.png"
+POSTMARK_ALT = "A proposed sea-glass cancellation mark reading Vesperglass and Sealed at the Gate, with a double-ring seal crossed by three curved lines"
 RENDERER = Path("C:/Users/spinn/Documents/Codex/2026-10-17/i-x20/outputs/render_email.py")
 
 
@@ -23,6 +25,8 @@ def render(input_path: Path, output_prefix: Path) -> None:
     stamp_url, stamp_alt = secrets.choice(STAMP_CHOICES)
     values["stamp_url"] = stamp_url
     values["stamp_alt"] = stamp_alt
+    values["postmark_url"] = POSTMARK_URL
+    values["postmark_alt"] = POSTMARK_ALT
     spec = importlib.util.spec_from_file_location("orion_email_renderer", RENDERER)
     if not spec or not spec.loader:
         raise RuntimeError(f"Cannot load the configured email renderer: {RENDERER}")

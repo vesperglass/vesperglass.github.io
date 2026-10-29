@@ -88,6 +88,22 @@ Read together, the ribbon separates a real place-name from a proposed document a
 
 The proposed light readings in [Compass Garden]({{ '/library/compass-garden/' | relative_url }}) use a similar discipline: they locate a described cue in relation to a garden marker but do not supply a date or celestial cause. Each record keeps its own subject and uncertainty; neither one names an Observatory target.
 
+### The second watch and the pictured sighting tube
+
+Both the proposed leaf and Plate II use the phrase **sighting tube**, but the shared label does not identify the same instrument in each source. The leaf is an invented example; Plate II is an illustrative still life whose tube receives a cautious visual name. This comparison checks what can be read across them without turning a sample sentence into the provenance or operating record for the pictured object.
+
+| Point of comparison | Proposed second watch | Plate II · sighting tube | What the pairing can and cannot say |
+| --- | --- | --- | --- |
+| **Name** | The sample says the observer turned a sighting tube. | The inventory calls a long brass-colored form on a pivoting support a sighting tube by descriptive resemblance. | Matching vocabulary makes the comparison legible; it does not establish that the leaf refers to the pictured object. |
+| **Movement** | The imagined observer returns the tube to a mark and turns an eyepiece. | The still life shows the tube resting on its support, aimed across the composition. | The plate depicts a position, not an adjustment in progress; it does not confirm the movements described by the sample. |
+| **Optics** | The leaf mentions an eyepiece while leaving the apparent change in color unresolved. | No lens, eyepiece, magnification, or internal optical arrangement is identified in the illustration. | The sample does not supply specifications for the pictured tube, and the illustration does not verify its optical details. |
+| **Possible drift** | The first sample suggests the instrument may be drifting; the second keeps that as one possible explanation. | The plate gives no calibration mark, scale, or measurement against which drift could be assessed. | Neither source demonstrates drift or rules it out; it remains a question within the invented note. |
+| **Observed point** | A point near the rim of an unnamed blue field is described without a date or coordinates. | The tube is aimed outward, but no target is identified. | The images do not match the sample to a star, planet, map point, or particular Observatory session. |
+
+The comparison therefore has a narrow use: it lets a reader notice how a record might name an instrument while keeping that name distinct from a specific pictured object. The Plate II inventory above records what the still life actually shows; the [Star Archive]({{ '/library/star-archive/' | relative_url }}) treats a separate proposed chart and is not identified with the blue-field sample. No surviving account joins the sample leaf, this tube, and that chart into one observation.
+
+**Source status:** the Observatory's name and association with looking and keeping a record are established. The leaves, instrument still life, and descriptive tube label are interpretive; their similar wording does not establish authorship, a tool match, or a historical observation.
+
 ## Proposed instrument care note · the star lens
 
 The Observatory plates show a brass telescope, but the surviving accounts do not name a particular lens, describe its mounting, or record how an instrument is maintained. The following care note is an editorial reconstruction for the pictured star lens. It is not a keeper's instruction, a record of actual work, or evidence of an Observatory maintenance system.

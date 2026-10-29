@@ -72,5 +72,6 @@ These edition notes record additions to the existing folios. Where a record's so
 ## October 29, 2026
 
 - **Compass Garden** — Compared its proposed glass conservatory with the Observatory's proposed dome, distinguishing each pictured architecture from the places' narrower established roles and leaving shared construction unassigned. [Read the folio →]({{ '/library/compass-garden/' | relative_url }})
+- **Observatory Logbook** — Compared its imagined second-watch leaf with the proposed sighting-tube illustration, keeping their shared wording from implying a specific tool match or authenticated observation. [Read the folio →]({{ '/library/observatory/' | relative_url }})
 
 <p class="folio-return"><a href="{{ '/library/' | relative_url }}">← Return to the Universe Library</a></p>

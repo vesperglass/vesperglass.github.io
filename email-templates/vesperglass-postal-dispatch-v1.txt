@@ -6,6 +6,7 @@ VESPERGLASS POSTAL SERVICE · GATE ROUTE OFFICE
 {{body}}
 
 Proposed stamp artwork: {{stamp_alt}}. The mark is a design study, not proof of an established postal practice.
+Proposed postmark image: {{postmark_alt}}. It overlaps the stamp as a visual cancellation study, not proof of a recorded dispatch or postmark practice.
 
 {{footer_note}}
 
