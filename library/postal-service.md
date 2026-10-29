@@ -120,6 +120,31 @@ A postmark-like overprint can be pictured as an ornamental countermark on the fo
 | **Window lattice** | Three fine vertical strokes crossed by a shallow arch, recalling a framed Workshop or Observatory window. | The Observatory dome stamp; the architectural resemblance is deliberately broad. | A counter, sender address, office, observer, or place of posting. |
 | **Tempered arc** | A pair of offset curves around an unfilled center, suggesting a reflected light rather than a filled emblem. | The Foundry roundel stamp, as a visual echo of its proposed circular motif. | A processing stage, production batch, date, fee, or Foundry dispatch. |
 
+### Composite overprint study · “Sealed at the Gate”
+
+The three register motifs above are separate design ideas. This proposed overprint study combines a double ring, a small star, the words **“VESPERGLASS”** and **“SEALED AT THE GATE,”** and four strokes extending beyond the ring. It is a composed graphic for comparison with the Gate's architecture, not an image recovered from a letter.
+
+<figure class="specimen-plate">
+  <img src="{{ '/assets/library/postmark-overprint.png' | relative_url }}" alt="A proposed sea-glass postmark: a double circular ring encloses the words Vesperglass and Sealed at the Gate with a small four-point star, while four horizontal cancellation strokes extend to the right.">
+  <figcaption><span>MARK STUDY</span> A proposed composite overprint pairing a Gate-like ring with lettering and cancellation strokes; no dated or posted letter is recorded.</figcaption>
+</figure>
+
+| Graphic element | Relationship to the record | What it does not establish |
+| --- | --- | --- |
+| **Double ring** | It recalls the circular outline of the [Gate's pictured ring]({{ '/library/vesperglass-gate/' | relative_url }}), reduced to a small enclosing mark. | That the overprint is a measured drawing, an official device, or a technical description of the Gate. |
+| **Four-point star** | A star sits inside the circle as a visual accent; the Gate folio's Plate I places a separate ornament above its ring. | That the two stars share an established emblematic meaning, maker, or history. |
+| **“VESPERGLASS”** | The lettering supplies a name within the proposed graphic. | A sender, postal authority, address, date, or place where any letter was posted. |
+| **“SEALED AT THE GATE”** | The phrase invites a reading of the mark as a cancellation or seal associated with the Gate. | That a letter was sealed, canceled, carried through the Gate, or posted on its platform. |
+| **Horizontal strokes** | Four lines extend from the ring to suggest the motion of a cancellation overprint. | A real cancellation tool, ink, direction of travel, or proof that the strokes crossed a stamp on a letter. |
+
+The strongest source connection is visual: Plate I depicts a ring at the named Gate, and the overprint borrows that simple circular form. The words and strokes belong to the proposed graphic. The Gate's recorded role as a passage between worlds does not say that correspondence passes through it; “at the Gate” could be read in several ways, and no account selects one. The [Words of Passage]({{ '/library/words-of-passage/' | relative_url }}) keeps the Gate's place-name and passage role distinct from the Train Dock's guide path, but it supplies no postal route.
+
+| Evidence layer | Supported reading | Still unrecorded |
+| --- | --- | --- |
+| **Established place** | The Vesperglass Gate is a separate platform and the train's passage between worlds. | A postal office, letter, cancellation, or dispatch at the Gate. |
+| **Gate illustration** | Plate I depicts a freestanding ring with a star-like ornament above it. | Measured dimensions, true materials, or an official sign for the Gate. |
+| **Interpretive overprint** | The proposed mark combines a ring, star, place-name, sealing phrase, and cancellation-like strokes. | Date, sender, addressee, posting place, route, destination, and evidence that the mark was ever applied. |
+
 ### Reading the overprint
 
 The proposed mark is an image layered across a stamp design. Its circular form can create the familiar impression of a cancellation, but no account establishes that Vesperglass uses cancellations, what ink or tool would make one, or whether a mark would be applied once or more than once. The register therefore treats the linework as a design study only.
