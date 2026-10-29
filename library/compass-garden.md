@@ -64,6 +64,23 @@ The Garden plan and the Observatory still life both use a star-shaped directiona
 
 Read the two motifs at their own scale: one helps a reader follow a proposed layout, while the other is an object pictured with Observatory instruments. The comparison records a resemblance visible in the plates, not evidence that either compass directs travel or that the places share a design history. See the [Observatory inventory]({{ '/library/observatory/' | relative_url }}) for the star compass's image boundary and the [World Relationship Index]({{ '/library/relationships/' | relative_url }}) for documented connections among the named places.
 
+### Glass architecture · conservatory and dome
+
+Plate I gives Compass Garden and Observatory Logbook a related visual vocabulary: both images place a glass structure beneath an open view of the sky. The resemblance is architectural illustration, not a record of a shared building method. The Garden is established as a glasshouse; the Observatory is established by name and role as a place of observation and record. The particular rooms, supports, and panes compared here belong to proposed plates.
+
+| Comparison point | Compass Garden · Plate I | Observatory Logbook · Plate I | Source boundary |
+| --- | --- | --- | --- |
+| **Overhead form** | Curved teal panes span repeated arch-like bays above the garden floor. | A high, segmented dome rises over the telescope and desk. | The plates show different proposed roof forms; neither account gives a measured roof, pane shape, or construction plan. |
+| **View through the glass** | The bright conservatory opens onto the floating archipelago beyond its planted interior. | A dark star field fills the dome above the instruments, with distant terrain visible through the lower windows. | These are image compositions, not reports of the places at a particular hour or weather state. |
+| **Interior emphasis** | Beds, a central floor rose, a kneeling figure, and reflective paving draw the eye toward the garden interior. | A large telescope, writing desk, books, and smaller instruments focus attention on looking and record keeping. | Objects and gestures in either image do not establish a named keeper, routine, collection, or operating procedure. |
+| **Established place role** | Compass Garden is a glasshouse among Vesperglass's outer platforms. | Observatory Logbook is a named observatory associated with looking and keeping a record. | The surviving descriptions do not say that the places share an architect, material source, glass specification, or design history. |
+
+#### A cautious reading of the shared form
+
+The Garden's repeated arches make its roof read as a long, transparent enclosure around beds and paths. The Observatory's more concentrated dome reads as a canopy over instruments directed toward the sky. This contrast is a useful way to read the pictures: one plate organizes attention around a glasshouse interior, the other around an observing room. It does not establish that glass is used for the same purpose in both places, that either structure opens or moves, or that the pictures record their actual architecture.
+
+For the Garden's recorded place description and plan boundary, see the Plan key above. The [Observatory folio]({{ '/library/observatory/' | relative_url }}) distinguishes its established record-keeping role from the instruments and room arrangement pictured in its plates. Neither source connects the two structures beyond this visual comparison.
+
 ### Pictured flora key · Plate I
 
 Plate I depicts several pale, star-shaped blooms and broad, divided fronds around the glasshouse beds. The words **starflower** and **fern** below are short visual labels for those forms, not names taken from a plant catalogue. The surviving account names Compass Garden as a glasshouse but lists no species, planting record, keeper, or care practice.

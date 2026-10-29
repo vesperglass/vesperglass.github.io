@@ -69,4 +69,8 @@ These edition notes record additions to the existing folios. Where a record's so
 - **Vesperglass Postal Service** — Compared the Foundry stamp's furnace-like circle with both Foundry plates and its process account, identifying it as a postal-art interpretation rather than a recorded window or heat step. [Read the folio →]({{ '/library/postal-service/' | relative_url }})
 - **Starshards & the Gate Train** — Added a container-role comparison for the padded transit case, unnamed sealed stardust vessel, and train's starwell, tracing the material sequence while leaving container identity and transfer practices unresolved. [Read the folio →]({{ '/library/starshards/' | relative_url }})
 
+## October 29, 2026
+
+- **Compass Garden** — Compared its proposed glass conservatory with the Observatory's proposed dome, distinguishing each pictured architecture from the places' narrower established roles and leaving shared construction unassigned. [Read the folio →]({{ '/library/compass-garden/' | relative_url }})
+
 <p class="folio-return"><a href="{{ '/library/' | relative_url }}">← Return to the Universe Library</a></p>
