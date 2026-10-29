@@ -38,6 +38,19 @@ The four panels can be located by their positions on Plate I. This index helps d
 
 The index records a subject for each panel, not four separate postal records. All four remain proposed designs arranged together for visual comparison. Their positions can be named without implying a first-to-last sequence, shared maker, local postal offices, or correspondence among the four places.
 
+### Shared palette · color lineage across four source plates
+
+The proposed sheet gives four different place motifs a common night-blue, teal, brass-gold, and parchment treatment. Comparing the sheet with its source plates shows both continuity and simplification: color helps hold the designs together as one graphic set, while each motif keeps its own local emphasis. These are readings of the illustrations, not confirmed material specifications for the places.
+
+| Design and source | Color emphasis in the source plate | Treatment on the proposed sheet | What color does not establish |
+| --- | --- | --- | --- |
+| **Gate** · [Gate folio]({{ '/library/vesperglass-gate/' | relative_url }}) | Plate I depicts a teal-and-aged-brass ring against the stars. | The stamp retains a teal opening and warm gold bands, then adds a dark field and pale perforated edge. | The Gate's actual material, a postal color standard, or that its glass and metal have measured hues matching the artwork. |
+| **Observatory** · [Observatory Logbook]({{ '/library/observatory/' | relative_url }}) | Plate I places a brass-colored telescope beneath a glass dome open to the stars. | The stamp pairs the dome and telescope with the same night-blue field, etched-looking gold, and parchment border used across the sheet. | A uniform finish for the Observatory, a recorded instrument color, or an actual view made at a particular hour. |
+| **Compass Garden** · [Garden folio]({{ '/library/compass-garden/' | relative_url }}) | Plate I shows curved teal panes, pale star-shaped blooms, and luminous fern-like forms. | The stamp keeps the teal glasshouse and lifts one pale flower into a larger badge-like emblem. | A plant's natural color, named species, a shared botanical palette, or a Garden-issued stamp. |
+| **Tideglass Foundry** · [Foundry folio]({{ '/library/tideglass-foundry/' | relative_url }}) | Plate I depicts a proposed workshop with vessels and softly glowing starshard dust; Plate II presents reconstructed tools. | The stamp intensifies its roundel to a warm gold center against the repeated dark-blue and brass frame. | A real furnace, the dust's measured color, the Foundry's architectural finish, or a printing recipe. |
+
+The common treatment belongs to the proposed stamp suite: dark star fields, gold linework, and pale perforated borders create visual unity, while the four images retain different source subjects and accents. The [Gate comparison](#gate-stamp--motif-source-record) and [Foundry comparison](#foundry-stamp--motif-and-source-comparison) explain two of those motif transfers; the [Garden trace](#compass-garden-stamp--floral-motif-trace) follows the isolated flower. Taken together, they document design choices only. The surviving place descriptions and plates do not set a common architectural palette, confirm the illustrated materials, or record a postal printer or stock.
+
 <figure class="specimen-plate">
   <img src="{{ '/assets/library/postal-gate-stamp.png' | relative_url }}" alt="A single proposed Vesperglass postage stamp with a perforated parchment edge and an engraved brass-and-teal image of the Gate beneath a small star." loading="lazy">
   <figcaption><span>STAMP STUDY</span> A Gate-ring design prepared as a reusable postal mark; its border and image are proposed, not historical.</figcaption>
