@@ -77,5 +77,6 @@ These edition notes record additions to the existing folios. Where a record's so
 - **Threshold House** — Compared a proposed choice to leave one crossing unnamed with the Gate's established place-name, keeping conversational scope distinct from event identity. [Read the folio →]({{ '/library/threshold-house/' | relative_url }})
 - **Vesperglass Postal Service** — Added a composite “Sealed at the Gate” overprint study, tracing its proposed graphic elements to the Gate plate while leaving postal use and route unestablished. [Read the folio →]({{ '/library/postal-service/' | relative_url }})
 - **Vesperglass Postal Service** — Applied the proposed Gate overprint across the blank envelope schematic's stamp position, retaining empty address fields and leaving any posting or delivery unrecorded. [Read the folio →]({{ '/library/postal-service/' | relative_url }})
+- **Tideglass Foundry** — Connected the recorded tempering result to the train's separately described starwell use, distinguishing quiet color from pulse and leaving batch transfer and loading unrecorded. [Read the folio →]({{ '/library/tideglass-foundry/' | relative_url }})
 
 <p class="folio-return"><a href="{{ '/library/' | relative_url }}">← Return to the Universe Library</a></p>

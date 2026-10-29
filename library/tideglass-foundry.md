@@ -43,6 +43,20 @@ The correspondence is therefore uneven by design: cleaning has no pictured count
 
 This is an editorial key, not a recipe or a record of an observed work shift. The accounts provide no quantities, grinding pressure or speed, sieve opening, duration, temperature, resonance instrument, or measured yield. The plate cannot fill those fields.
 
+### Process-to-use handoff · tempered dust and the starwell pulse
+
+The Foundry account follows starshards through cleaning, grinding, sifting, and tempering. A separate passage in [Starshards & the Gate Train]({{ '/library/starshards/' | relative_url }}) describes how the finished stardust serves the locomotive. Read together, the accounts connect the material made at Tideglass Foundry with the train's fuel role; they do not describe a particular batch being transferred or loaded.
+
+| Account stage | Recorded description | Supported connection | Still unrecorded |
+| --- | --- | --- | --- |
+| **Tempering at Tideglass Foundry** | The dust meets the Gate's low, singing resonance until its scattered glints settle into one quiet color. | This is the final named Foundry operation; the prepared powder is called stardust. | The source of the resonance, its duration or strength, and any measurable color standard. |
+| **Stardust as train fuel** | The locomotive feeds a measured thread of stardust into its sealed glass heart; the grains gather into a single pulse. | The train account assigns the prepared material a use in the starwell. | The amount in a measured thread, feed rate, chamber dimensions, or the pulse's duration. |
+| **Preparation-to-use link** | The Foundry account says stardust is prepared for the train's starwell, and the train account describes stardust within that chamber. | The named material and its broad purpose connect the two accounts. | Whether both descriptions concern one batch, how it reaches the train, who carries it, or when loading takes place. |
+
+The two descriptions mark different stages. **Quiet color** names the settled appearance after tempering; **pulse** names the response described when grains gather in the starwell. The accounts do not say that the color causes the pulse, that the Gate's low resonance is the mechanism inside the chamber, or that tempering continues during a crossing. Those would join separate descriptions with a process the records do not give.
+
+The handoff therefore ends at a useful boundary: the Foundry makes stardust for the train, and the locomotive uses a measured thread in its starwell. No transfer vessel, loading action, quantity, schedule, responsible keeper, or specific crossing is recorded. [Words of Passage]({{ '/library/words-of-passage/' | relative_url }}) defines *stardust* and *starwell* without adding those missing steps.
+
 <aside class="field-note"><span class="field-note-mark" aria-hidden="true">✳</span><p><strong>What is recorded</strong><br>Starshards become stardust at Vesperglass, and the train carries stardust through the Gate. The Foundry’s exact room plan and tool dimensions remain unrecorded.</p></aside>
 
 ## At a glance
