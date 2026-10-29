@@ -71,6 +71,7 @@ These edition notes record additions to the existing folios. Where a record's so
 
 ## October 29, 2026
 
+- **Vesperglass Postal Service** — Added a motif trace comparing the proposed Compass Garden stamp flower with the Garden plate's descriptive starflower forms, keeping botanical identity and postal use unestablished. [Read the folio →]({{ '/library/postal-service/' | relative_url }})
 - **Vesperglass Workshop** — Added a centrality concordance separating the account's central-home role from its placement in the Atlas view, with map scale, distances, bearings, and routes left unestablished. [Read the folio →]({{ '/library/workshop/' | relative_url }})
 - **Starshards & the Gate Train** — Compared the starwell's internal stardust pulse with the Gate's outward bloom, retaining their broad crossing context while leaving sequence, causation, and mechanism unresolved. [Read the folio →]({{ '/library/starshards/' | relative_url }})
 - **Compass Garden** — Compared its proposed glass conservatory with the Observatory's proposed dome, distinguishing each pictured architecture from the places' narrower established roles and leaving shared construction unassigned. [Read the folio →]({{ '/library/compass-garden/' | relative_url }})

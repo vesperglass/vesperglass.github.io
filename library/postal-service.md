@@ -76,6 +76,19 @@ The distinction is useful because the stamp's warm central glow can easily be re
 
 **Source status:** the Foundry name and preparation sequence are established in their folio. The workshop and tool images are illustrative reconstructions. The stamp is a proposed design whose furnace-like reading belongs to the postal artwork; no account establishes that feature as a real Foundry window, furnace, or mark.
 
+### Compass Garden stamp · floral motif trace
+
+The lower-left design on the proposed four-stamp sheet pairs a glasshouse with one enlarged, pale, star-shaped flower held above its roofline. The [Compass Garden Plate I key]({{ '/library/compass-garden/' | relative_url }}) uses *starflower* only as a descriptive label for clusters of small, pale, radial blooms shown among the beds. Comparing the two images makes the stamp's borrowing legible while keeping the small emblem from becoming a named plant or a specimen record.
+
+| Feature | Compass Garden · Plate I | Proposed stamp · lower-left design | Boundary of the comparison |
+| --- | --- | --- | --- |
+| **Flower form** | Several small pale star-shaped blooms appear in clusters near the beds and pictured keeper. | One pale, stylized flower is enlarged above the conservatory roof. | The resemblance supports a visual reference, not a species identification, petal count, or claim that one flower was copied from an observed specimen. |
+| **Setting** | The blooms sit within a glasshouse scene that also includes fern-like fronds, beds, a keeper figure, and the floor's compass rose. | The stamp reduces the scene to a frontal glasshouse beneath the single floral emblem. | The stamp omits the pictured keeper, planting beds, ferns, and compass rose; it does not document the Garden's actual arrangement. |
+| **Graphic treatment** | The plate presents flowers as part of a larger interior composition. | The stamp isolates the bloom as a centered, badge-like mark and places it over the roof. | This hierarchy belongs to the proposed postal artwork; no account assigns a heraldic, navigational, or official meaning to the flower. |
+| **Name and provenance** | *Starflower* is explicitly a visual label; no plant catalogue or keeper's planting record is known. | The design is described as a flower motif for Compass Garden. | The flower has no established botanical name, maker, origin, issue date, or documented relationship to any postal authority. |
+
+The strongest supported link is therefore a borrowing between illustrations: a proposed stamp turns one element of the Garden plate into a compact emblem. It does not show a flower taken from a bed, prove that keepers cultivate or recognize a species called “starflower,” or establish that the Garden issued or received mail. The stamp sheet and its postal framing remain proposals, as stated in the first-issue section above; the Garden folio separately leaves its pictured flora unnamed.
+
 ## Proposed envelope face · a blank layout
 
 The schematic below explores how the proposed Gate stamp might sit beside separate sender and addressee fields. It is an editorial layout, not a surviving envelope or a standard form. The fields remain empty because the consulted accounts provide no personal names, postal addresses, or delivery destinations.

@@ -34,7 +34,7 @@ permalink: /library/
   </a>
   <a class="library-entry-card" href="{{ '/library/compass-garden/' | relative_url }}">
     <span class="library-card-art"><img src="{{ '/assets/library/places/garden-interior.webp' | relative_url }}" alt="A glasshouse garden arranged around a compass rose." loading="lazy"></span>
-    <span class="library-entry-copy"><span class="library-entry-number">ENTRY 005 &nbsp;·&nbsp; GLASSHOUSE &amp; PLANTING</span><strong>Compass Garden</strong><span>A glasshouse folio with a proposed plan, pictured-flora key, and source-aware comparisons with the Observatory.</span><span class="library-read">Read the entry <span aria-hidden="true">↗</span></span></span>
+    <span class="library-entry-copy"><span class="library-entry-number">ENTRY 005 &nbsp;·&nbsp; GLASSHOUSE &amp; PLANTING</span><strong>Compass Garden</strong><span>A glasshouse folio with a proposed plan, pictured-flora key, and source-aware comparisons with the Observatory and a proposed Garden stamp motif.</span><span class="library-read">Read the entry <span aria-hidden="true">↗</span></span></span>
   </a>
   <a class="library-entry-card" href="{{ '/library/observatory/' | relative_url }}">
     <span class="library-card-art"><img src="{{ '/assets/library/places/observatory-interior.webp' | relative_url }}" alt="An observer at work beneath the Observatory's star-facing dome." loading="lazy"></span>
@@ -54,7 +54,7 @@ permalink: /library/
   </a>
   <a class="library-entry-card" href="{{ '/library/postal-service/' | relative_url }}">
     <span class="library-card-art"><img src="{{ '/assets/library/postal-stamp-collection.png' | relative_url }}" alt="Four proposed Vesperglass postage stamps depict the Gate, Observatory, Compass Garden, and Tideglass Foundry." loading="lazy"></span>
-    <span class="library-entry-copy"><span class="library-entry-number">ENTRY 010 &nbsp;·&nbsp; CORRESPONDENCE &amp; POSTAL MARKS</span><strong>Vesperglass Postal Service</strong><span>Four proposed stamps, a composite “Sealed at the Gate” overprint, and a blank envelope layout showing the proposed mark crossing the stamp.</span><span class="library-read">Read the entry <span aria-hidden="true">↗</span></span></span>
+    <span class="library-entry-copy"><span class="library-entry-number">ENTRY 010 &nbsp;·&nbsp; CORRESPONDENCE &amp; POSTAL MARKS</span><strong>Vesperglass Postal Service</strong><span>Four proposed stamps, with source comparisons for the Gate, Foundry, and Garden motifs, plus an overprint and blank envelope layout.</span><span class="library-read">Read the entry <span aria-hidden="true">↗</span></span></span>
   </a>
   <a class="library-entry-card" href="{{ '/library/relationships/' | relative_url }}">
     <span class="library-card-art"><img src="{{ '/assets/library/relationships-plate.svg' | relative_url }}" alt="A diagram of recorded links among Vesperglass places, materials, and the Gate train." loading="lazy"></span>
