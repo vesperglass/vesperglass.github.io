@@ -83,7 +83,7 @@ The schematic below explores how the proposed Gate stamp might sit beside separa
 <figure class="fuel-diagram mailpiece-diagram" aria-labelledby="mailpiece-caption">
   <svg viewBox="0 0 900 430" role="img" aria-labelledby="mailpiece-title mailpiece-desc" xmlns="http://www.w3.org/2000/svg">
     <title id="mailpiece-title">Proposed Vesperglass envelope-face layout</title>
-    <desc id="mailpiece-desc">A blank envelope diagram places an empty sender field at upper left, three empty addressee lines below, and the proposed Gate-ring stamp at upper right. It contains no name, address, destination, route, or postmark.</desc>
+    <desc id="mailpiece-desc">A proposed blank envelope face has empty sender and addressee fields. At upper right, lettering on a sea-glass double-ring postmark crosses the proposed Gate stamp and extends beyond its edge. The mark is a graphic, not sender or route information; no date or destination is shown.</desc>
     <rect x="48" y="35" width="804" height="360" rx="14" fill="#f6f2e8" stroke="#bd8c5f" stroke-width="3"/>
     <path d="M70 58h760v310H70z" fill="none" stroke="#d6cbb7" stroke-width="1"/>
     <g fill="#467a74" font-family="Georgia,serif" font-size="20">
@@ -95,10 +95,11 @@ The schematic below explores how the proposed Gate stamp might sit beside separa
       <rect x="666" y="78" width="130" height="156" rx="4" fill="none" stroke="#bd8c5f" stroke-dasharray="5 5"/>
     </g>
     <image href="{{ '/assets/library/postal-gate-stamp.png' | relative_url }}" x="685" y="86" width="92" height="120" preserveAspectRatio="xMidYMid meet"/>
+    <image href="{{ '/assets/library/postmark-overprint.png' | relative_url }}" x="656" y="127" width="190" height="59" preserveAspectRatio="xMidYMid meet"/>
     <text x="731" y="258" fill="#8a6746" font-family="Arial,sans-serif" font-size="12" letter-spacing="1.4" text-anchor="middle">STAMP POSITION</text>
-    <text x="100" y="355" fill="#858b86" font-family="Arial,sans-serif" font-size="12" letter-spacing="1.2">FIELD POSITIONS ARE PROPOSED · NO POSTMARK SHOWN</text>
+    <text x="100" y="355" fill="#858b86" font-family="Arial,sans-serif" font-size="12" letter-spacing="1.2">PROPOSED FIELDS · OVERPRINT PLACEMENT STUDY</text>
   </svg>
-  <figcaption id="mailpiece-caption"><span>FIGURE I</span> A blank correspondence face with a proposed Gate stamp position; spacing and field names are editorial choices.</figcaption>
+  <figcaption id="mailpiece-caption"><span>FIGURE I</span> A blank correspondence face with the proposed “Sealed at the Gate” mark crossing the Gate stamp; fields and overprint placement are editorial choices.</figcaption>
 </figure>
 
 | Layout element | Purpose in this proposal | What remains unestablished |
@@ -106,9 +107,10 @@ The schematic below explores how the proposed Gate stamp might sit beside separa
 | Sender field | Leaves room for a return name or mark if a future account calls for one. | Whether return details are used, and the format or placement of any sender address. |
 | Addressee field | Reserves a blank area for an intended recipient. | A named recipient, address convention, destination, or postal zone. |
 | Stamp position | Gives the proposed Gate-ring design a place on the face. | A required position, denomination, date, or evidence that the stamp was affixed to mail. |
+| Overprint study | Places the proposed double-ring “Sealed at the Gate” mark across the stamp and beyond its edge. | That a postmark was applied, that its lines canceled a real stamp, or that its words specify a posting place or route. |
 | Envelope outline | Makes relative spacing legible in the editorial schematic. | Envelope material, dimensions, orientation, closure, and any standard format. |
 
-The arrangement does not imply that mail is sent to or through the Gate. A place shown on a stamp is a visual reference, not an origin or destination. The [Vesperglass Train Dock]({{ '/library/train-dock/' | relative_url }}) and [Gate]({{ '/library/vesperglass-gate/' | relative_url }}) folios describe the train's berth and crossing; neither records a postal route.
+The overlay applies the proposed design in a blank layout, so readers can see its scale relative to the Gate stamp and address fields. It is not a specimen of a posted letter. A place shown on a stamp or named by the mark is a visual reference, not an origin or destination. The [composite overprint study](#composite-overprint-study) describes the mark's elements; the [Vesperglass Train Dock]({{ '/library/train-dock/' | relative_url }}) and [Gate]({{ '/library/vesperglass-gate/' | relative_url }}) folios describe the train's berth and crossing, but neither records a postal route.
 
 ## Proposed cancellation-mark register · motifs without itinerary
 
@@ -120,7 +122,7 @@ A postmark-like overprint can be pictured as an ornamental countermark on the fo
 | **Window lattice** | Three fine vertical strokes crossed by a shallow arch, recalling a framed Workshop or Observatory window. | The Observatory dome stamp; the architectural resemblance is deliberately broad. | A counter, sender address, office, observer, or place of posting. |
 | **Tempered arc** | A pair of offset curves around an unfilled center, suggesting a reflected light rather than a filled emblem. | The Foundry roundel stamp, as a visual echo of its proposed circular motif. | A processing stage, production batch, date, fee, or Foundry dispatch. |
 
-### Composite overprint study · “Sealed at the Gate”
+<h3 id="composite-overprint-study">Composite overprint study · “Sealed at the Gate”</h3>
 
 The three register motifs above are separate design ideas. This proposed overprint study combines a double ring, a small star, the words **“VESPERGLASS”** and **“SEALED AT THE GATE,”** and four strokes extending beyond the ring. It is a composed graphic for comparison with the Gate's architecture, not an image recovered from a letter.
 
