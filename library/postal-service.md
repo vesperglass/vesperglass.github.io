@@ -25,6 +25,19 @@ The visual language draws on four places already named in the record: the freest
 
 The pictured sheet gathers four possible designs around landmarks already named in the Encyclopedia. Their titles are editorial labels for this proposed issue; no denomination, printing date, issue quantity, or order of release is established. The sheet is a fresh illustration for this folio, not a facsimile of a record.
 
+### Sheet position index · arrangement without sequence
+
+The four panels can be located by their positions on Plate I. This index helps distinguish the designs and follow each one back to its subject folio. Position is only a description of the artwork's layout: it does not assign an issue order, denomination, printing date, or postal function to any design.
+
+| Sheet position | Depicted subject | Source folio | What the link supports—and what it does not |
+| --- | --- | --- | --- |
+| **Upper left** | The Gate's pointed ring and bright opening, set within a star field. | [The Vesperglass Gate]({{ '/library/vesperglass-gate/' | relative_url }}) | The design recalls the pictured Gate; it does not document a stamp issued at the Gate or a letter passing through it. |
+| **Upper right** | A domed pavilion and long telescope. | [Observatory Logbook]({{ '/library/observatory/' | relative_url }}) | The image uses the named Observatory as its subject; it does not depict a dated observation or identify the telescope as a recorded instrument. |
+| **Lower left** | A glasshouse beneath an enlarged pale star-shaped flower. | [Compass Garden]({{ '/library/compass-garden/' | relative_url }}) | The motif echoes the Garden illustration and its descriptive starflower label; it does not identify a plant species or prove a Garden postal issue. |
+| **Lower right** | A bright circular roundel framed by brass-colored architecture. | [Tideglass Foundry]({{ '/library/tideglass-foundry/' | relative_url }}) | The design associates its furnace-like emblem with the Foundry; neither the plate nor the process account identifies a furnace window or tool of that form. |
+
+The index records a subject for each panel, not four separate postal records. All four remain proposed designs arranged together for visual comparison. Their positions can be named without implying a first-to-last sequence, shared maker, local postal offices, or correspondence among the four places.
+
 <figure class="specimen-plate">
   <img src="{{ '/assets/library/postal-gate-stamp.png' | relative_url }}" alt="A single proposed Vesperglass postage stamp with a perforated parchment edge and an engraved brass-and-teal image of the Gate beneath a small star." loading="lazy">
   <figcaption><span>STAMP STUDY</span> A Gate-ring design prepared as a reusable postal mark; its border and image are proposed, not historical.</figcaption>
