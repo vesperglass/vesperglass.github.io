@@ -71,6 +71,7 @@ These edition notes record additions to the existing folios. Where a record's so
 
 ## October 29, 2026
 
+- **Starshards & the Gate Train** — Compared the starwell's internal stardust pulse with the Gate's outward bloom, retaining their broad crossing context while leaving sequence, causation, and mechanism unresolved. [Read the folio →]({{ '/library/starshards/' | relative_url }})
 - **Compass Garden** — Compared its proposed glass conservatory with the Observatory's proposed dome, distinguishing each pictured architecture from the places' narrower established roles and leaving shared construction unassigned. [Read the folio →]({{ '/library/compass-garden/' | relative_url }})
 - **Observatory Logbook** — Compared its imagined second-watch leaf with the proposed sighting-tube illustration, keeping their shared wording from implying a specific tool match or authenticated observation. [Read the folio →]({{ '/library/observatory/' | relative_url }})
 - **Vesperglass Workshop** — Compared its proposed spoken-destination custom with the Train Dock's blank docket, distinguishing optional speech from an unattested record or journey. [Read the folio →]({{ '/library/workshop/' | relative_url }})

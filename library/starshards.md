@@ -132,6 +132,21 @@ Plate I shows the locomotive from outside as it passes through the Gate's bloom.
 
 The shared phrase **glass heart** connects the account's chamber with the locomotive's fuel role, but it should not be used to infer that the circular light at the engine's front is an exposed or transparent starwell. The plate offers no interior view against which to check that reading. The [Train Dock folio]({{ '/library/train-dock/' | relative_url }}) describes the locomotive's berth and departure, while [Words of Passage]({{ '/library/words-of-passage/' | relative_url }}) defines *starwell* as the sealed chamber; neither supplies the missing construction view.
 
+### Inner pulse and outward bloom · two described scales
+
+The crossing account moves from stardust gathering in the starwell to the Gate's bright bloom around the train. These descriptions belong to the same broad account of passage, but they name different things at different scales: a response attributed to grains in a sealed chamber, and light that surrounds and briefly conceals the locomotive as a road takes shape. Their neighboring place in the prose does not establish that one is the visible form of the other.
+
+| Comparison point | Starwell · inside the locomotive | Gate · around the locomotive | What remains open |
+| --- | --- | --- | --- |
+| **Where is the event placed?** | In the train's sealed glass fuel chamber, its glass heart. | Around the train as the Gate passage takes shape. | No cross-section or view identifies an interior part with the surrounding bloom. |
+| **What is described?** | A measured thread of stardust feeds into the heart; grains gather into a pulse that lets the train lean against distance and find the far side. | A bright, expanding bloom gathers around the train, briefly hides it, and opens outward at emergence. | The account does not say that the pulse looks like rings, emits the bloom, or is seen outside the train. |
+| **How are they related?** | The pulse is assigned a crossing role in the train account. | The bloom marks the road taking shape and the train's emergence. | Their shared crossing context is stated; a direct causal link, exact order, duration, or synchronization is not. |
+| **What can the plates verify?** | Plate I does not show the starwell interior or feeding of dust. | Plate I presents the train amid luminous Gate imagery, not a technical account of the event. | Neither plate supplies a mechanism, energy path, or diagram joining chamber and Gate. |
+
+The [Vesperglass Gate folio]({{ '/library/vesperglass-gate/' | relative_url }}) records the bloom in its own passage terms: it gathers around the locomotive, conceals it briefly, and opens as the train appears on the far side. Read alongside the starwell account, that is a useful comparison of inner response and outer passage imagery, not evidence that the two lights are one process. The account leaves unanswered whether the pulse precedes the bloom, whether the Gate answers it, or whether “pulse” is visible at all.
+
+**Comparison boundary:** “pulse” belongs to the description of stardust gathering in the starwell; “bloom” belongs to the description of light around the train. This folio keeps their distinct locations and stated roles visible and does not supply the missing connection.
+
 ### Container roles · case, sealed vessel, and starwell
 
 Several vessels appear along the starshard-to-stardust account, but their similar glass descriptions do not make them one object. The transit case carries raw starshards home; a later passage describes finished stardust at rest in a sealed vessel; and the train's fuel chamber is separately named the **starwell**. Keeping these records side by side makes the material sequence readable without supplying a missing container handoff.

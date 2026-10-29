@@ -18,7 +18,7 @@ permalink: /library/
 <div class="library-entry-grid">
   <a class="library-entry-card" href="{{ '/library/starshards/' | relative_url }}">
     <span class="library-card-art"><img src="{{ '/assets/library/gate-train-plate.webp' | relative_url }}" alt="A brass space train crosses the luminous Vesperglass Gate." loading="lazy"></span>
-    <span class="library-entry-copy"><span class="library-entry-number">ENTRY 001 &nbsp;·&nbsp; MATERIALS &amp; TRANSIT</span><strong>Starshards &amp; the Gate Train</strong><span>Three shard specimens, the Foundry process, and a source-aware comparison of the transit case, stardust vessel, and train's starwell.</span><span class="library-read">Read the entry <span aria-hidden="true">↗</span></span></span>
+    <span class="library-entry-copy"><span class="library-entry-number">ENTRY 001 &nbsp;·&nbsp; MATERIALS &amp; TRANSIT</span><strong>Starshards &amp; the Gate Train</strong><span>Three shard specimens, the Foundry process, and source-aware comparisons of the vessels and the starwell pulse beside the Gate bloom.</span><span class="library-read">Read the entry <span aria-hidden="true">↗</span></span></span>
   </a>
   <a class="library-entry-card" href="{{ '/library/workshop/' | relative_url }}">
     <span class="library-card-art"><img src="{{ '/assets/library/places/workshop-interior.webp' | relative_url }}" alt="The shared worktable inside the central Vesperglass Workshop." loading="lazy"></span>
