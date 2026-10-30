@@ -50,6 +50,28 @@ Plate I presents an interpretive interior; Plate II presents a reconstructed pla
 
 The concordance supports continuity in the visual design, not a verified floor plan. The proposed greetings and sound notes later in this folio can be read against these pictured positions, but they remain optional interpretations. The [Vesperglass Gate folio]({{ '/library/vesperglass-gate/' | relative_url }}) records a separate crossing platform and does not confirm that Threshold House is a station on its route.
 
+### Framed opening and freestanding aperture · a place-role comparison
+
+The central opening in Threshold House's proposed interior can resemble the aperture pictured at the Vesperglass Gate. The resemblance is useful to notice, but the two sources describe different things: Threshold House is an established place-name whose purpose is not recorded, while the Gate has an established passage role. This comparison keeps the room illustration and the crossing account side by side without joining them into a shared structure or route.
+
+| Question | Threshold House | Vesperglass Gate | What remains unestablished |
+| --- | --- | --- | --- |
+| **What is named?** | An established floating platform. Its purpose and inhabitants are not given in the surviving account. | A detached platform and the passage through which the train travels between worlds. | No account identifies Threshold House as the Gate, a Gate annex, a station, or a stop on a crossing. |
+| **Where is the opening?** | The proposed interior places a tall framed arch within a chamber; the proposed plan leaves a central path through the room. | The proposed Plate I depicts a freestanding ring on its own platform, with the train passing through the Gate in the account. | The drawings do not establish shared placement, orientation, scale, approach, or physical connection. |
+| **How is its form shown?** | The plates suggest a layered, glass-framed arch integrated with the room's elevation and interior view. | Plate I shows a monumental ring; the proposed cutaway adds bands, glass-like segments, and a base. | These are illustration choices, not verified materials, measurements, builders, or common construction. |
+| **What does passage mean here?** | The name and central line invite a reading of arrival or pause, but the House's use is not described. | The crossing account states that the train passes through the Gate as a bright bloom gathers and later opens outward. | No source assigns travel function to the House's arch or connects it to the Gate's bloom. |
+| **Does the opening change?** | The proposed plates show a stable architectural opening; no account describes an event at it. | The account describes the bloom around the train, briefly hiding it; it does not say that the pictured ring opens or moves. | Neither the resemblance nor the bloom establishes a shared mechanism, moving parts, or a material cause. |
+
+The source boundary is therefore asymmetric. The House's arch is a proposed room feature attached to a named but undescribed place; the Gate's aperture is pictured architecture attached to an account of passage. A common “threshold” reading can help a visitor compare the illustrations, but it cannot establish common authorship, function, or engineering. The Gate's account supplies no bearing from the House, and neither folio records a route between their platforms.
+
+| Evidence layer | Supports | Does not support |
+| --- | --- | --- |
+| **Established place accounts** | Threshold House is named among the platforms; the Gate stands apart from the Train Dock and serves passage between worlds. | A relationship between the two platforms, a shared doorway, or any sequence in which a traveler enters the House before the Gate. |
+| **Proposed plates** | A framed room opening and a freestanding ring can be compared as distinct visual forms. | Actual material, scale, orientation, construction, or proof that either drawing is a technical plan. |
+| **Interpretive reading** | Both images can prompt a reader to think about thresholds and transition. | That the House is a Gate station, that its arch conducts travel, or that either opening causes the luminous bloom. |
+
+For the Gate's own account of the bloom and the limits of its cutaway, see the [Gate aperture profile]({{ '/library/vesperglass-gate/' | relative_url }}). That folio now links back here for the comparison; the cross-reference is editorial navigation, not a world route.
+
 <aside class="field-note"><span class="field-note-mark" aria-hidden="true">✳</span><p><strong>What is recorded</strong><br>Threshold House stands among Vesperglass's platforms. Its exact use, inhabitants, and interior layout are not described in the surviving accounts.</p></aside>
 
 ## Phrasebook slip · words for arriving

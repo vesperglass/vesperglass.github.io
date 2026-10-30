@@ -43,6 +43,8 @@ The ring's layered construction and the role of its glass segments remain uncert
 
 Read this as two kinds of evidence kept in view together: the plates offer a stable architectural image, while the passage account describes a luminous event around the train. The account does not turn the proposed cutaway into a mechanism, and the illustrations do not supply missing measurements. The [Train Dock folio]({{ '/library/train-dock/' | relative_url }}) describes the separate berth; [Words of Passage]({{ '/library/words-of-passage/' | relative_url }}) distinguishes the account's Gate bloom from a guide path read at the Dock.
 
+The similar language of openings can invite comparison with the framed arch proposed for [Threshold House]({{ '/library/threshold-house/#framed-opening-and-freestanding-aperture--a-place-role-comparison' | relative_url }}). There, the arch belongs to an interpretive room; here, the freestanding ring is associated with the Gate's established passage role. The link records a reader's comparison, not a connection between the places, a shared construction, or a route.
+
 #### Questions the profile leaves open
 
 - Does the pictured ring simply frame the passage, or does some unrecorded structure lie within it?
