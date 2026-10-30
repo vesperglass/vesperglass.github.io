@@ -41,6 +41,8 @@ Plate II is a proposed still life, not an inventory copied from the Observatory 
 
 The image groups these objects in one composition, but proximity is not evidence of a shared procedure. In particular, the compass is not shown aligned to the tube, and the closed volume supplies no readable entry. The established name **Observatory Logbook** supports a place associated with observation and record; it does not authenticate any object in this proposed plate.
 
+The [Workshop's Plate II comparison]({{ '/library/workshop/#wall-alcove-and-instrument-still-life--context-without-identity' | relative_url }}) sets its proposed wall-tool group beside this still life. The objects' different arrangements make their contexts easier to compare, but no account connects the Workshop tools with these instruments or records shared ownership, maker, or use.
+
 The proposed [Observatory stamp comparison]({{ '/library/postal-service/' | relative_url }}) follows the dome and telescope into a separate graphic, where the instrument is enlarged and set diagonally. That comparison does not identify the still-life tube above as the same object or establish a postal issue or observing session.
 
 The stamp also changes the instrument's apparent scale: Plate I places the large telescope among a seated observer, desk, and broad room, while the proposed miniature removes those cues and lets the tube dominate its panel. This is a compositional difference, not evidence about the instrument's actual size. The [scale comparison]({{ '/library/postal-service/#relative-scale--instrument-within-room-and-stamp' | relative_url }}) records what each image makes prominent and leaves dimensions and optics unassigned.

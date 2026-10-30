@@ -61,6 +61,22 @@ Plate II is a proposed cutaway, not a survey of the Workshop's contents. This in
 
 The inventory deliberately stops before assigning the objects to the workshop customs below. Those customs are proposed practices, while this plate is proposed architecture; together they are not evidence of an established routine. The Workshop's role as a place to gather and prepare remains the account's useful context, not proof of the illustrated room's exact contents.
 
+### Wall alcove and instrument still life · context without identity
+
+The Workshop's proposed cutaway places a row of narrow objects upright in recessed wall alcoves and labels the group cautiously as **wall tools**. The Observatory's proposed Plate II sets a different group on a still-life surface: an orrery, a tube on a pivoting support, a marked circular instrument, and a closed volume. The two images invite a comparison of forms, but their arrangement and context are not the same.
+
+| Comparison point | Workshop · Plate II | Observatory · Plate II | What the comparison supports—and leaves open |
+| --- | --- | --- | --- |
+| **Long, narrow forms** | Several slim objects hang in a row in wall recesses. Their tips and exact shapes are not resolved well enough to assign names. | One long tube rests on a pivoting support and is described cautiously as a sighting tube. | Both plates contain elongated forms, but the images do not identify any Workshop tool as the Observatory tube. |
+| **Arrangement** | The objects are grouped vertically along a wall, near tables and storage. | The instruments are separated on a broad surface for viewing as a still life. | The contrast records how each proposal presents its objects; it does not show a shared kit, a working setup, or a transfer between places. |
+| **Other pictured forms** | Sheets, vessels, tables, and alcove storage share the cutaway's workroom context. | Spherical forms on arms, a marked dial, and a closed book accompany the tube. | The context differs in each image; similarity of brass-colored finish or slender outlines does not establish common use or material. |
+| **Place role** | The Workshop is established as Vesperglass's central home and a place to gather and prepare. | Observatory Logbook is established by name and association with looking and keeping a record. | Those roles give the drawings different settings, but neither account records these pictured objects or connects the places' equipment. |
+| **Provenance and use** | The cutaway is a proposed architectural illustration; the “tool” label is descriptive. | The still life is a proposed illustration; the instrument names are cautious visual readings. | No source names a maker, owner, tool set, maintenance routine, or shared working practice. |
+
+This comparison helps separate an **object label** from an **object relationship**. Calling the wall group tools and the tube a sighting tube makes the artwork easier to discuss; it does not place them in one system. The Observatory's described role cannot supply a purpose for the Workshop's unnamed objects, and the Workshop's role as a place to prepare cannot prove that any pictured tool was used there.
+
+For the source-local inventories, see the [Observatory's Plate II key]({{ '/library/observatory/#plate-ii--pictured-instrument-inventory' | relative_url }}) and this folio's [Workshop Plate II inventory](#plate-ii--depicted-object-inventory). Both distinguish what the plates show from unrecorded ownership, materials, and use.
+
 ## Before a departure · proposed customs
 
 The following customs are recorded as possible practices for how keepers prepare together. Their standing across Vesperglass has not been established.
