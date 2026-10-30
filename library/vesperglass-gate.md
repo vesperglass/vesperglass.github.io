@@ -66,6 +66,8 @@ This interpretive sequence arranges details from accounts of the crossing. It is
 
 The sequence leaves the route beyond the Gate open. The accounts do not record cargo, a timetable, or the train's destination on any particular crossing.
 
+The crossing account's phrase about the light of the train's return journey is compared with the [Train Dock docket's blank return-load field]({{ '/library/train-dock/' | relative_url }}). The wording describes the train at emergence; the docket field asks about cargo. The two sources do not identify the light as a load or tie the sequence to a dated trip.
+
 ## Recollections at the threshold
 
 The following interpretive recollections give two different accounts of the moment before passage. Neither is a verified witness statement, and no names or dates accompany them.

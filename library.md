@@ -46,11 +46,11 @@ permalink: /library/
   </a>
   <a class="library-entry-card" href="{{ '/library/vesperglass-gate/' | relative_url }}">
     <span class="library-card-art"><img src="{{ '/assets/library/places/gate-plate.webp' | relative_url }}" alt="The freestanding Vesperglass Gate glowing against the starfield." loading="lazy"></span>
-    <span class="library-entry-copy"><span class="library-entry-number">ENTRY 008 &nbsp;·&nbsp; PORTAL &amp; TRANSIT</span><strong>The Vesperglass Gate</strong><span>The detached passage platform, pictured aperture, crossing account, proposed recollections, and comparison with Threshold House's room arch.</span><span class="library-read">Read the entry <span aria-hidden="true">↗</span></span></span>
+    <span class="library-entry-copy"><span class="library-entry-number">ENTRY 008 &nbsp;·&nbsp; PORTAL &amp; TRANSIT</span><strong>The Vesperglass Gate</strong><span>The detached passage platform, pictured aperture, crossing account, proposed recollections, and comparisons with Threshold House and the Train Dock docket.</span><span class="library-read">Read the entry <span aria-hidden="true">↗</span></span></span>
   </a>
   <a class="library-entry-card" href="{{ '/library/train-dock/' | relative_url }}">
     <span class="library-card-art"><img src="{{ '/assets/library/places/dock-plate.webp' | relative_url }}" alt="The space train hovering alongside the straight open edge of its dock." loading="lazy"></span>
-    <span class="library-entry-copy"><span class="library-entry-number">ENTRY 009 &nbsp;·&nbsp; BERTH &amp; DEPARTURE</span><strong>Vesperglass Train Dock</strong><span>A clear landing apron, approach-to-berth alignment key, and source-aware docket for an unnamed Gate crossing.</span><span class="library-read">Read the entry <span aria-hidden="true">↗</span></span></span>
+    <span class="library-entry-copy"><span class="library-entry-number">ENTRY 009 &nbsp;·&nbsp; BERTH &amp; DEPARTURE</span><strong>Vesperglass Train Dock</strong><span>A clear landing apron, approach-to-berth alignment key, and source-aware journey docket comparing the Gate's return-light phrase with an unfilled cargo field.</span><span class="library-read">Read the entry <span aria-hidden="true">↗</span></span></span>
   </a>
   <a class="library-entry-card" href="{{ '/library/postal-service/' | relative_url }}">
     <span class="library-card-art"><img src="{{ '/assets/library/postal-stamp-collection.png' | relative_url }}" alt="Four proposed Vesperglass postage stamps depict the Gate, Observatory, Compass Garden, and Tideglass Foundry." loading="lazy"></span>

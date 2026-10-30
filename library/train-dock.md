@@ -79,6 +79,28 @@ The docket below is a proposed way to arrange three stages already described in 
 
 The arrows are a reading order for the account, not a mapped route. In particular, the Dock's guide path describes the train aligning with its berth; the [Words of Passage cross-reference]({{ '/library/words-of-passage/' | relative_url }}) keeps that atlas-view term separate from the Gate bloom in the crossing account. Neither establishes a track or a route between the two platforms.
 
+### Return light and the blank return-load field
+
+At emergence, the Gate account says the locomotive carries “the light of its return journey.” The proposed Train Dock docket leaves **Cargo / return load** blank. These entries answer different questions: one is a descriptive phrase attached to the arriving train; the other is an intentionally unfilled record field for cargo. The blank does not contradict the phrase, and the phrase does not fill the cargo field.
+
+| Reading point | Gate crossing account | Proposed Train Dock docket | Boundary |
+| --- | --- | --- | --- |
+| **What is being described?** | Light associated in the wording with the train's return journey as it emerges. | A blank field reserved for cargo or a return load. | “Light” is not identified as cargo, a shipment, or a measured quantity. |
+| **When does it appear?** | The phrase belongs to the account's arrival description, after the bloom opens outward. | The field is part of a proposed header for a crossing record. | The wording does not record a loading or unloading moment, nor does the blank mark when a load would be checked. |
+| **What does “return” identify?** | It explicitly names a return journey as part of the descriptive phrase. | No return destination, matched departure, or trip identity is entered. | The account does not supply a route, date, prior crossing, or evidence that this passage matches a particular departure from the Dock. |
+| **What can the docket hold?** | The account describes light but provides no cargo inventory. | The field remains empty because no manifest is supplied. | The empty field is an editorial acknowledgment of absent cargo information, not evidence that the train carries nothing. |
+| **Can the two records be joined?** | The Gate account describes emergence at the far side. | The proposed docket arranges departure, passage, and emergence as an interpretive sequence. | Their shared sequence context does not establish that they refer to the same dated event or a documented round trip. |
+
+The useful distinction is between **description** and **inventory**. The phrase can be retained as the account's image for emergence without converting its “light” into a parcel, fuel quantity, or manifest entry. Likewise, the blank field stays blank without erasing the phrase or deciding what “return journey” means beyond the words supplied. [The Vesperglass Gate folio]({{ '/library/vesperglass-gate/' | relative_url }}) keeps the emergence phrase with the crossing account; [Starshards & the Gate Train]({{ '/library/starshards/' | relative_url }}) separately describes the starwell's stardust and does not identify that material as the return light.
+
+| Evidence layer | Supports | Does not establish |
+| --- | --- | --- |
+| **Gate account** | The train emerges with the light of its return journey. | A specific cargo, origin beyond Vesperglass, destination, or manifest. |
+| **Starwell account** | The train carries stardust in a sealed glass chamber for a crossing. | That stardust is the light named at emergence or that it is a return load. |
+| **Proposed docket** | A comparison form may leave cargo information visibly blank. | A completed record, a particular crossing, absence of cargo, or a route history. |
+
+This note reads a phrase beside a blank field; it does not add a cargo tradition, return schedule, or implemented inventory system.
+
 ### Source horizon · what each folio can verify
 
 | Reference | It can support in this proposed docket | It cannot corroborate on its own |
