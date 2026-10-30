@@ -12,6 +12,7 @@ These edition notes record additions to the existing folios. Where a record's so
 
 ## October 30, 2026
 
+- **Vesperglass Postal Service and Star Archive** — Distinguished the stamp's decorative corner stars from the proposed *Unfixed Meridian* margin symbols, identifying their separate compositional and annotation roles and leaving shared source or pattern unassigned. [Read the comparison →]({{ '/library/postal-service/#observatory-stamp--decorative-stars-and-chart-margin-marks' | relative_url }}) · [Read the chart legend →]({{ '/library/star-archive/' | relative_url }})
 - **Threshold House** — Audited the imagined room-sound note against its interior and plan plates, distinguishing pictured listening locations from unverified acoustic effects, materials, and dimensions. [Read the folio →]({{ '/library/threshold-house/' | relative_url }})
 - **Vesperglass Postal Service** — Compared the stamp's corner-star framing and fine scatter with the Observatory plate's wide sky field, keeping pattern identity, chart source, and observation unassigned. [Read the folio →]({{ '/library/postal-service/' | relative_url }})
 

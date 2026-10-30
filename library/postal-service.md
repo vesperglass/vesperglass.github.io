@@ -86,6 +86,21 @@ The clearest continuity is atmospheric: both images place the Observatory agains
 
 This comparison should therefore be indexed as a **visual field**, not a star chart. It helps a reader find and describe the design without assigning identities to individual points or turning ornamental stars into navigation data.
 
+### Observatory stamp · decorative stars and chart margin marks
+
+The four large gold stars in the proposed Observatory stamp frame its miniature architecture. The proposed margin key for *The Unfixed Meridian* uses three different signs—**↻**, **?**, and **□**—to qualify written notes. Their marks can be compared because both are small symbols associated with sky material, but they perform different editorial jobs: one composes an image; the other labels the status of a proposed annotation.
+
+| Comparison point | Observatory stamp · upper-right panel | Proposed *Unfixed Meridian* margin | What the pairing establishes |
+| --- | --- | --- | --- |
+| **Visible marks** | Four prominent gold star forms sit near the panel corners, amid finer decorative scatter. | A return arrow, question mark, and open square precede sample phrases in a proposed margin. | The forms and positions can be described in their respective illustrations and examples. |
+| **Role in the composition** | Corner stars help frame the dome, telescope, crescent, and field as a compact stamp image. | The marks qualify neighboring phrases as revisited, uncertain, or unlocated. | The stamp's marks are decorative framing; the chart key's marks are proposed reading-status labels. |
+| **Relation to a sky subject** | No individual star, grouping, coordinate, or target is identified. | The key says it does not locate a body; even the sample's “pale band” remains unnamed and unplaced. | Neither design supplies a usable star position or identifies the same sky feature. |
+| **Record status** | The Postal Service and its stamp sheet are interpretive design proposals. | The chart, title, notation, and sample margin are proposed; none is confirmed by a surviving catalog. | The comparison is between two editorial proposals, not a historical stamp and an authenticated chart. |
+
+The distinction matters for indexing. A reader may use “corner stars” to locate the stamp's graphic framing, but should not treat those shapes as the chart's **↻** return mark or as a constellation key. Conversely, the chart's question mark is attached to uncertain wording, not to a star in the stamp. Neither side confirms the other's origin, notation, or source.
+
+The [Star Archive margin legend]({{ '/library/star-archive/' | relative_url }}) defines each proposed mark within its own sample. This comparison leaves their relationship to the [Observatory Plate I sky]({{ '/library/observatory/' | relative_url }}) open as well: no date, orientation, target, author, or shared chart is supplied by the matching subject of stars.
+
 <figure class="specimen-plate">
   <img src="{{ '/assets/library/postal-gate-stamp.png' | relative_url }}" alt="A single proposed Vesperglass postage stamp with a perforated parchment edge and an engraved brass-and-teal image of the Gate beneath a small star." loading="lazy">
   <figcaption><span>STAMP STUDY</span> A Gate-ring design prepared as a reusable postal mark; its border and image are proposed, not historical.</figcaption>

@@ -84,6 +84,8 @@ Use the return mark only to point back to earlier wording, not to claim a repeat
 
 The [Observatory sample leaves]({{ '/library/observatory/' | relative_url }}) also leave the subject and position open, but their prose comparison is separate from this proposed chart notation. Neither record identifies a point on the Galaxy map.
 
+The margin marks are not the same as the decorative corner stars on the proposed Observatory stamp. The [Postal Service comparison]({{ '/library/postal-service/#observatory-stamp--decorative-stars-and-chart-margin-marks' | relative_url }}) keeps image framing distinct from notation about a proposed record's status; it does not establish a shared chart, author, or star pattern.
+
 ### Evidence-to-field matrix · *The Unfixed Meridian*
 
 This matrix checks each proposed catalog field against the Star Archive account and the chart description above. A field is not evidence merely because the sample card has room for it. When the account supplies no value, the entry stays blank rather than borrowing detail from another folio or from the separate Galaxy map.

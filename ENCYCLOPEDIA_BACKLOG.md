@@ -69,6 +69,7 @@ Working tracker for new reference forms and encyclopedia additions. Keep it in s
 | Cross-subject motif boundary cards | A comparison of similar visual symbols appearing in different place illustrations, recording each motif's local role and whether it is a plan mark, depicted object, or established account term | Similar appearance does not establish shared meaning, authorship, bearing, or a common instrument; keep each image's source status visible |
 | Scale-loss ledgers | A source-linked inventory of which features remain legible, are simplified, or disappear when a proposed plate is reduced to a stamp, badge, or other compact graphic | Treat the smaller design as an editorial rendering; do not infer an original reproduction instruction, maker, issue, or production process |
 | Cross-modal cue provenance audits | A table that pairs a depicted place feature with an imagined sound or other sensory reading, then states exactly which part comes from the image and which is interpretation | An illustration cannot verify acoustics, texture, temperature, or other unpictured experience; avoid converting a plausible reading into a physical property |
+| Motif-to-notation boundary keys | A comparison of decorative marks in an illustration with symbols assigned a reading function in a proposed record | Similar small shapes do not establish a shared visual language, code, author, or source; preserve each mark's local role and status |
 
 ## Backlog
 
@@ -132,6 +133,7 @@ Working tracker for new reference forms and encyclopedia additions. Keep it in s
 - [x] **Compare the Observatory stamp's crescent-and-star background with the Observatory plate's sky** — Set the stamp's decorative crescent beside the star-facing dome and partially lit round bodies in the proposed source plate; leave celestial identity, phase, observation date, and logbook record unassigned. Completed 2026-10-29 in `library/postal-service.md`.
 - [x] **Compare the Observatory stamp's starfield arrangement with the Observatory Plate I sky** — Contrast the source plate's broad, fine star field and bright cloud-like region with the stamp's corner stars and crescent-framed scatter; leave pattern identity, orientation, chart source, and observation date unassigned. Completed 2026-10-30 in `library/postal-service.md`.
 - [x] **Audit the proposed Threshold House sound note against its two plates** — Map the imagined arch, bench, threshold, and lamp readings to visible features in the interior and plan, stating where the images stop supporting acoustic claims. Completed 2026-10-30 in `library/threshold-house.md`.
+- [x] **Compare the Observatory stamp's decorative stars with the proposed Unfixed Meridian margin marks** — Distinguish the stamp's four-point framing from the chart's proposed return, uncertainty, and unverified-place annotations; leave shared pattern, orientation, authorship, and source unassigned. Completed 2026-10-30 in `library/postal-service.md` and `library/star-archive.md`.
 
 ### Open
 
@@ -142,6 +144,7 @@ Working tracker for new reference forms and encyclopedia additions. Keep it in s
 - [ ] **Compare the Gate account's “light of its return journey” with the Train Dock docket's blank return-load field** — Distinguish a descriptive phrase carried by the emerging locomotive from the docket's unfilled cargo field; leave cargo, itinerary, and any recorded return trip unestablished.
 - [ ] **Compare the proposed Threshold House sound note with its two architectural plates** — Check whether its imagined arch, bench, and lamp-niche acoustics rely on features visible in both the interior and plan; keep sound qualities interpretive and leave room dimensions, materials, occupancy, and any established acoustic practice unknown.
 - [ ] **Compare the Observatory stamp's corner stars with the proposed Unfixed Meridian margin marks** — Set the stamp's four decorative corner stars beside the chart's proposed notation key; distinguish image framing from record annotation and leave any shared pattern, orientation, authorship, or chart source unassigned.
+- [ ] **Compare the Unfixed Meridian sample's “pale band noted again” with the Observatory's blue-field note** — Trace each phrase to its own proposed record and distinguish a repeated descriptive cue from a shared target or observation; leave date, coordinates, instrument, author, and celestial identity unassigned.
 
 ## Hourly substantial work cycle
 
