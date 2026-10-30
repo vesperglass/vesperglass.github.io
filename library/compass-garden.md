@@ -9,8 +9,8 @@ permalink: /library/compass-garden/
 <nav class="folio-back" aria-label="Back to the Universe Library"><a href="{{ '/library/' | relative_url }}">← Universe Library</a><span>FIELD EDITION &nbsp;·&nbsp; FOLIO 005</span></nav>
 
 <figure class="book-plate">
-  <img src="{{ '/assets/library/places/garden-interior.webp' | relative_url }}" alt="A keeper tends pale starflowers and luminous ferns in a glass conservatory around a compass rose set into dark stone." fetchpriority="high">
-  <figcaption><span>PLATE I</span> A garden interior beneath curved panes of teal glass.</figcaption>
+  <img src="{{ '/assets/library/places/garden-interior.webp' | relative_url }}" alt="A kneeling figure reaches toward pale blooms in a bed of fern-like foliage beside a large central compass rose in a glass conservatory." fetchpriority="high">
+  <figcaption><span>PLATE I</span> An interpretive garden interior; the pictured reach is not an account of an established care practice.</figcaption>
 </figure>
 
 <div class="entry-byline"><span>SUBJECT &nbsp; GLASSHOUSE · PLANTING · ORIENTATION</span><span>PLACE &nbsp; Vesperglass atlas</span></div>
@@ -92,6 +92,20 @@ Plate I depicts several pale, star-shaped blooms and broad, divided fronds aroun
 | **Mixed planting** · plate arrangement | Flowers and fronds appear together in raised-looking beds and around vessels. | The artwork groups several forms within one interior. | A measured bed plan, species grouping, planting order, soil, vessel use, or cultivation method. |
 | **Keeper figure** · depicted scene | A person kneels beside a bed and reaches toward the pale blooms. | The image includes a tending gesture. | The person's name or role, whether this depicts a real event, and any established gardening custom or procedure. |
 | **Compass rose** · named visual feature | A large rose occupies the floor at the center of the scene. | The image composes the glasshouse around a central orientation motif. | North, a bearing to another platform, or a link between the rose and any plant's placement or behavior. |
+
+### The keeper's hand · visible reach and interpretive label
+
+The flora key calls the figure's pose a **tending gesture**, but that label goes a step beyond the image. Plate I is an interpretive illustration: it shows a kneeling person beside a bed, with one arm extended toward foliage and pale blooms. The hand appears close to the plants; the artwork does not make contact, a particular task, or a person's identity certain.
+
+| Reading layer | What is visible or written | What it can support | What remains unestablished |
+| --- | --- | --- | --- |
+| **Position** | The figure kneels beside a bed along the left side of the pictured interior. | A person is composed close to one planted area. | Their name, role, residence, or reason for being there. |
+| **Hand and reach** | One arm extends into the foliage; the hand is near the pale flowers. | The composition directs attention from the figure toward the bed. | Whether the hand touches a bloom or leaf, holds something, or makes a specific movement. |
+| **Action label** | The flora key describes the pose as a “tending gesture.” | “Tending” offers a concise interpretive reading of the posture. | That any plant care, watering, pruning, harvesting, or other task is occurring. |
+| **Tools and materials** | No distinct implement is clearly visible in the hand or at the point of reach. | The image supplies no clearly identifiable tool as part of this gesture. | A tool, container, water source, plant material, or completed action. |
+| **Place and practice** | Beds and named glasshouse context surround the figure. | The scene places the pose within the proposed Garden interior. | An established keeper, garden staff, cultivation method, custom, or actual event at Compass Garden. |
+
+The safest wording stays close to the picture: **a kneeling figure reaches toward the bed**. “Tending” can remain as an interpretation that helps readers understand the composition, provided it is not used as evidence of a care routine. The surviving place account names Compass Garden as a glasshouse but names no keepers, plants, or maintenance practice. The [Plan key](#plan-key--reading-plate-ii) likewise leaves planting order and use open; it cannot supply the action that Plate I leaves uncertain.
 
 This is a reading key to an illustration, not a botanical inventory. The Plate II plan key above describes beds and paths without assigning plants to them; this flora key does not fill that plan with named species. Likewise, the proposed light markers below describe visible cues but do not establish that the plants change, bloom, or shine on a recurring schedule. The [Observatory Logbook]({{ '/library/observatory/' | relative_url }}) provides a separate example of keeping a proposed observation distinct from its possible cause.
 
