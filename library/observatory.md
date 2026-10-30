@@ -94,6 +94,22 @@ The proposed light readings in [Compass Garden]({{ '/library/compass-garden/' | 
 
 The [Star Archive's proposed phrase concordance]({{ '/library/star-archive/' | relative_url }}) sets its sample's “pale band noted again” beside this blue-field point. The wording echoes a return to an earlier note, but does not identify a common feature, event, author, or observation.
 
+### Text-to-plate boundary · “rim of the blue field”
+
+The sample leaf places an unnamed point “at the rim of the blue field.” Plate I supplies a visually suggestive setting: a broad blue star field shows through the segmented dome, and the large central instrument also presents a round, star-filled opening. But the plate is an interpretive interior illustration, not a diagram of the sample's view. It provides more than one possible visual echo and no marker that identifies the phrase's intended referent.
+
+| Phrase in the proposed leaf | Visible feature in Plate I | Possible visual echo | What the pairing cannot establish |
+| --- | --- | --- | --- |
+| **“blue field”** | Blue, star-filled areas appear across the dome and within the large circular instrument. | Either broad background or circular field could prompt the wording. | Which area the writer means, whether either represents an eyepiece view, or whether the leaf describes a feature pictured here. |
+| **“rim”** | Curved dome ribs divide the overhead view; the central instrument has its own circular boundary. | Both offer visible edges that might be described as a rim. | A specific boundary, direction, angular position, or coordinate within the view. |
+| **“one point held its color”** | Many stars and brighter patches appear across the scene. | The image gives a general field of points and light. | A singled-out object, its color across multiple turns, or any change over time; the illustration cannot show the sample's comparison. |
+| **“sighting tube” and “three turns”** | A large telescope stands in the room, while the illustration shows no marked sightline to an identified point. | The instrument gives the room an observational context. | That this telescope, its visible round opening, or any depicted object corresponds to the sample's tube or target. |
+| **Position for a second watch** | No coordinate grid, labeled star chart, dated annotation, or marked point appears in the scene. | The desk and logbook suggest a place where notes could be kept. | A recoverable position or a later observer's ability to return to the same point. |
+
+The useful connection is atmospheric and compositional: both the sample and Plate I bring attention to a blue field, an edge, and a point of light. The image cannot confirm the proposed note, and the note cannot label a particular feature in the image. Because the leaf has no date, coordinates, or identified observer, assigning its “rim” to the dome or the telescope would turn resemblance into provenance.
+
+The distinction also keeps the instrument images separate. Plate I depicts a large room telescope; [Plate II's inventory]({{ '/library/observatory/#plate-ii--pictured-instrument-inventory' | relative_url }}) labels an isolated tube as a sighting tube by visual resemblance. Neither plate authenticates the sample or identifies an object observed through it. The [Star Archive's proposed phrase concordance]({{ '/library/star-archive/' | relative_url }}) compares a different undated note and supplies no missing identification for this one.
+
 ### The second watch and the pictured sighting tube
 
 Both the proposed leaf and Plate II use the phrase **sighting tube**, but the shared label does not identify the same instrument in each source. The leaf is an invented example; Plate II is an illustrative still life whose tube receives a cautious visual name. This comparison checks what can be read across them without turning a sample sentence into the provenance or operating record for the pictured object.
