@@ -132,6 +132,8 @@ Plate I shows the locomotive from outside as it passes through the Gate's bloom.
 
 The shared phrase **glass heart** connects the account's chamber with the locomotive's fuel role, but it should not be used to infer that the circular light at the engine's front is an exposed or transparent starwell. The plate offers no interior view against which to check that reading. The [Train Dock folio]({{ '/library/train-dock/' | relative_url }}) describes the locomotive's berth and departure, while [Words of Passage]({{ '/library/words-of-passage/' | relative_url }}) defines *starwell* as the sealed chamber; neither supplies the missing construction view.
 
+The [Postal Service folio]({{ '/library/postal-service/' | relative_url }}) compares the starwell's account-described sealed state with the phrase “SEALED AT THE GATE” in a separate proposed overprint. The shared word does not identify the chamber as a letter seal, a postal device, or part of a mail route.
+
 ### Inner pulse and outward bloom · two described scales
 
 The crossing account moves from stardust gathering in the starwell to the Gate's bright bloom around the train. These descriptions belong to the same broad account of passage, but they name different things at different scales: a response attributed to grains in a sealed chamber, and light that surrounds and briefly conceals the locomotive as a road takes shape. Their neighboring place in the prose does not establish that one is the visible form of the other.

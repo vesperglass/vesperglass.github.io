@@ -268,6 +268,28 @@ The proposed mark is an image layered across a stamp design. Its circular form c
 
 This boundary matters because the [Train Dock]({{ '/library/train-dock/' | relative_url }}) and [Gate crossing account]({{ '/library/vesperglass-gate/' | relative_url }}) describe travel by the locomotive, while the [Words of Passage]({{ '/library/words-of-passage/' | relative_url }}) cross-reference distinguishes those travel terms from the atlas's guide path. No cancellation motif converts a visual reference to one of those places into evidence of mail travel.
 
+### “Sealed at the Gate” and the sealed starwell · same word, separate records
+
+The proposed overprint's phrase **“SEALED AT THE GATE”** shares a word with the account's description of the train's sealed-glass starwell. The overlap invites a useful language comparison, but the two appearances do not name the same object or action. In this folio the phrase is lettering in a proposed graphic; in the starwell account, *sealed* describes the chamber that carries stardust. No surviving account connects the stamp proposal to that chamber or records a letter passing through the Gate.
+
+| Question | Proposed Gate overprint | Train's starwell account | What the shared word does not establish |
+| --- | --- | --- | --- |
+| **What is being described?** | A ringed graphic bearing the words “VESPERGLASS” and “SEALED AT THE GATE.” | A fuel chamber called the starwell, described as sealed glass. | That the overprint depicts the starwell or refers to a physical chamber. |
+| **What does “sealed” attach to?** | It is part of a proposed phrase whose wording invites, but does not settle, a postal reading. | It describes the chamber that holds stardust as part of the train's fuel account. | A common sealing substance, closure, technique, or authority. |
+| **Where does the Gate appear?** | In the words and in a circular motif that visually recalls the Gate's ring. | The starwell is aboard the train; the Gate is the passage the locomotive uses between worlds. | That the phrase identifies a dispatch point, route, destination, or event at the Gate. |
+| **What action is recorded?** | None. The overprint is an interpretive design study, not a mark copied from a posted letter. | The account describes a sealed chamber and stardust feeding into its glass heart. | That a letter was prepared, closed, canceled, carried, or transported. |
+| **What records are absent?** | No dated letter, sender, addressee, postal office, or dispatch is identified. | No chamber cross-section, closure design, or detailed loading procedure is supplied. | Any shared author, maker, material, time, handling practice, or institutional role. |
+
+The adjective therefore has different work in each source. The overprint uses a short, emphatic line that can sound like a postal cancellation or seal; the starwell passage uses *sealed* to characterize the train's fuel chamber. That resemblance is a reader's prompt to compare wording, not evidence that mail uses the Gate or that the starwell closes a letter. The [Starshards & the Gate Train folio]({{ '/library/starshards/' | relative_url }}) keeps the chamber's stated role alongside the separate, unspecified closure details.
+
+| Evidence layer | Supported | Still unestablished |
+| --- | --- | --- |
+| **Established account** | Stardust is carried in the train's sealed-glass starwell; the Vesperglass Gate is the passage between worlds. | A postal service, a Gate dispatch, an envelope, or a link between the chamber and any correspondence. |
+| **Proposed overprint** | The graphic combines the phrase, a Gate-like double ring, a star, and cancellation-like strokes. | That the phrase was used, that the mark was applied, or that “at” denotes where a letter was sealed or posted. |
+| **Language comparison** | The word *sealed* occurs in both descriptions with different local subjects. | Shared meaning beyond that word, shared process, or a common artifact. |
+
+This comparison adds no postal practice or train procedure. It preserves the overprint as proposed artwork and the starwell as an account-described vessel, with the exact meaning of the graphic phrase open.
+
 ## Proposed seal · the open ring
 
 The separate circular seal study repeats the Gate's ring and sets a small star above it. Its open center leaves the field visible rather than enclosing a destination. This is a graphic reading of the Gate image, not an official device preserved in an account. No ink, wax, embossing method, custodian, or authorization practice is recorded.
