@@ -250,6 +250,21 @@ The three register motifs above are separate design ideas. This proposed overpri
 
 The strongest source connection is visual: Plate I depicts a ring at the named Gate, and the overprint borrows that simple circular form. The words and strokes belong to the proposed graphic. The Gate's recorded role as a passage between worlds does not say that correspondence passes through it; “at the Gate” could be read in several ways, and no account selects one. The [Words of Passage]({{ '/library/words-of-passage/' | relative_url }}) keeps the Gate's place-name and passage role distinct from the Train Dock's guide path, but it supplies no postal route.
 
+### Cancellation lines and the Gate bloom · graphic versus crossing event
+
+The proposed overprint places **four horizontal cancellation-like strokes** beyond its double ring. In the Gate account, a bright bloom instead gathers around the locomotive, briefly conceals it as the road takes shape, and opens outward again at emergence. The resemblance is limited to motion suggested by marks and light: the overprint lines are a graphic addition to an imagined postal design, while the bloom belongs to the described crossing.
+
+| Reading point | Proposed overprint | Gate crossing account | What remains separate |
+| --- | --- | --- | --- |
+| **Form** | Four straight, parallel lines extend from the ring. | A bright bloom gathers around and briefly hides the train. | The account does not describe straight strokes, and the graphic does not depict the bloom's luminous envelope. |
+| **Direction or change** | The lines are arranged to suggest a cancellation moving across an image. | The bloom gathers, obscures, then opens outward as the train emerges. | The graphic gives no verified direction of travel; the account supplies no stamped, repeated, or line-like marks. |
+| **Subject** | A proposed overprint layered across a proposed stamp. | A train crossing through the Gate between worlds. | No letter, postmark, cancellation, or postal event appears in the crossing account. |
+| **Source status** | An editorial design proposal, not a found mark or used postal artifact. | An established description of the Gate's passage role and bloom. | Their juxtaposition does not make the overprint an illustration, record, or symbol of a particular crossing. |
+
+The comparison is useful because cancellation strokes can suggest that a real dispatch has been processed, while the Gate bloom can suggest a passage taking place. Neither suggestion supplies evidence for the other. The crossing account does not establish an office, a letter carried through the Gate, or a mark used to authorize passage. Conversely, the overprint's four lines do not record a train's movement, reproduce the bloom, or identify an origin, destination, or date.
+
+The lines should therefore remain labeled **cancellation-like**: their role is part of the proposed graphic language, not proof of an implemented postal practice. The Gate's bloom remains a described event whose mechanism and physical relation to the pictured ring are unspecified. See [the Gate's aperture profile and crossing record]({{ '/library/vesperglass-gate/' | relative_url }}) for the source account; the [Train Dock docket]({{ '/library/train-dock/' | relative_url }}) also leaves any postal route or event-specific itinerary unrecorded.
+
 | Evidence layer | Supported reading | Still unrecorded |
 | --- | --- | --- |
 | **Established place** | The Vesperglass Gate is a separate platform and the train's passage between worlds. | A postal office, letter, cancellation, or dispatch at the Gate. |
