@@ -95,6 +95,8 @@ Plate I depicts several pale, star-shaped blooms and broad, divided fronds aroun
 
 This is a reading key to an illustration, not a botanical inventory. The Plate II plan key above describes beds and paths without assigning plants to them; this flora key does not fill that plan with named species. Likewise, the proposed light markers below describe visible cues but do not establish that the plants change, bloom, or shine on a recurring schedule. The [Observatory Logbook]({{ '/library/observatory/' | relative_url }}) provides a separate example of keeping a proposed observation distinct from its possible cause.
 
+The [Threshold House flora comparison]({{ '/library/threshold-house/' | relative_url }}) sets this bed-centered composition beside a separate proposed interior with greenery in containers. It preserves *starflower* and *fern* as Garden-specific visual labels and does not identify the House plants as the same forms or specimens.
+
 ## A proposed light calendar · three garden readings
 
 No surviving account gives Compass Garden a calendar, names a season, or describes a cycle of changing light. The following three markers are an interpretive vocabulary for a keeper's notes, composed for this folio. They do not establish dates, duration, a source star, or a recurring celestial pattern.

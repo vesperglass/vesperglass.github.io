@@ -72,6 +72,28 @@ The source boundary is therefore asymmetric. The House's arch is a proposed room
 
 For the Gate's own account of the bloom and the limits of its cutaway, see the [Gate aperture profile]({{ '/library/vesperglass-gate/' | relative_url }}). That folio now links back here for the comparison; the cross-reference is editorial navigation, not a world route.
 
+### Potted greenery and garden beds · flora across two proposed plates
+
+Threshold House Plate I places leafy, tree-like greenery in containers around a sheltered interior; the Compass Garden plate gives pale star-shaped blooms and divided fronds a place among broad beds. The comparison helps distinguish how the two illustrations use plant-like forms in their compositions. Neither place account provides a species list, planting record, or care practice, and the repeated forms do not identify shared specimens.
+
+| Visual question | Threshold House · Plate I | Compass Garden · Plate I | What the comparison can and cannot support |
+| --- | --- | --- | --- |
+| **Where are the plants placed?** | Tree-like greenery appears in containers along the room's edges, near the bench and open arch. | Dense planting fills beds around the central floor rose and along the glasshouse paths. | The plates depict different arrangements; they do not establish a shared planting plan, pot type, or transfer of plants between places. |
+| **What forms are visible?** | Taller branches and small leafy crowns frame the open room; individual flowers are not clearly distinguished. | Pale star-shaped blooms and broad divided fronds are visually prominent among the beds. | “Tree-like greenery,” “starflower,” and “fern-like frond” are descriptive readings, not botanical identifications or names from an account. |
+| **How does the architecture frame them?** | Plants remain secondary to the bench, lamps, and large opening toward the stars. | Beds, curved glass bays, and a compass rose organize the scene around the planting. | Composition suggests different visual emphasis, not a confirmed household or horticultural role for either place. |
+| **Is a keeper tending them?** | A standing figure is visible elsewhere in the room; the plate does not clearly show that person tending a plant. | A kneeling figure reaches toward the blooms in the proposed garden scene. | The gesture is visible in the Garden illustration only; neither image identifies the figure, proves a real event, or records an established gardening custom. |
+| **What accounts for the light?** | Warm lamps illuminate the room and the potted greenery. | Bright sky, glass, and lamps illuminate the beds and fronds. | The images do not establish a plant's own glow, a light-response, a growth cycle, or a particular lamp source. |
+
+The strongest difference is compositional: the House uses a few containers as part of a furnished interior, while the Garden makes extensive beds and the central compass rose the main arrangement. This does not prove that one is a domestic room and the other a working conservatory beyond the Garden's established glasshouse description. It also does not establish that the same plants grow in both places. In the [Compass Garden flora key]({{ '/library/compass-garden/#pictured-flora-key--plate-i' | relative_url }}), *starflower* and *fern* remain visual labels; this comparison keeps the House's less distinct greenery similarly unnamed.
+
+| Evidence layer | Supported reading | Still unknown |
+| --- | --- | --- |
+| **Established accounts** | Threshold House is a named platform; Compass Garden is named as a glasshouse. | Either place's plant inventory, species, ownership, cultivation, or care. |
+| **Proposed plates** | The House illustration shows greenery in containers; the Garden illustration shows flower-like and fern-like forms in planted beds and a tending gesture. | Whether the images depict actual specimens, the plants' biology, and whether any figure or arrangement records established practice. |
+| **Interpretive comparison** | The two compositions give plants different visual roles: room-side accents at the House and a central garden arrangement. | A shared source, transfer, household use, planting rule, season, or recurring plant behavior. |
+
+The [Compass Garden folio]({{ '/library/compass-garden/' | relative_url }}) links back to this comparison. The cross-reference connects two illustrated subjects for readers; it does not establish a botanical relationship or movement between platforms.
+
 <aside class="field-note"><span class="field-note-mark" aria-hidden="true">✳</span><p><strong>What is recorded</strong><br>Threshold House stands among Vesperglass's platforms. Its exact use, inhabitants, and interior layout are not described in the surviving accounts.</p></aside>
 
 ## Phrasebook slip · words for arriving

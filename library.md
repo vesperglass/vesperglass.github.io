@@ -26,7 +26,7 @@ permalink: /library/
   </a>
   <a class="library-entry-card" href="{{ '/library/threshold-house/' | relative_url }}">
     <span class="library-card-art"><img src="{{ '/assets/library/places/threshold-interior.webp' | relative_url }}" alt="A lantern-lit threshold chamber opening onto the stars." loading="lazy"></span>
-    <span class="library-entry-copy"><span class="library-entry-number">ENTRY 003 &nbsp;·&nbsp; ARRIVAL &amp; PASSAGE</span><strong>Threshold House</strong><span>A named platform with proposed interior and plan readings, arrival phrases, sound-note audit, and a source-aware comparison with the Gate's separate aperture.</span><span class="library-read">Read the entry <span aria-hidden="true">↗</span></span></span>
+    <span class="library-entry-copy"><span class="library-entry-number">ENTRY 003 &nbsp;·&nbsp; ARRIVAL &amp; PASSAGE</span><strong>Threshold House</strong><span>A named platform with proposed interior and plan readings, arrival phrases, sound-note audit, and comparisons with the Gate aperture and Compass Garden flora.</span><span class="library-read">Read the entry <span aria-hidden="true">↗</span></span></span>
   </a>
   <a class="library-entry-card" href="{{ '/library/tideglass-foundry/' | relative_url }}">
     <span class="library-card-art"><img src="{{ '/assets/library/places/foundry-interior.webp' | relative_url }}" alt="Starshards being carefully processed inside Tideglass Foundry." loading="lazy"></span>
@@ -34,7 +34,7 @@ permalink: /library/
   </a>
   <a class="library-entry-card" href="{{ '/library/compass-garden/' | relative_url }}">
     <span class="library-card-art"><img src="{{ '/assets/library/places/garden-interior.webp' | relative_url }}" alt="A glasshouse garden arranged around a compass rose." loading="lazy"></span>
-    <span class="library-entry-copy"><span class="library-entry-number">ENTRY 005 &nbsp;·&nbsp; GLASSHOUSE &amp; PLANTING</span><strong>Compass Garden</strong><span>A glasshouse folio with a proposed plan, pictured-flora key, and source-aware comparisons with the Observatory and a proposed Garden stamp motif.</span><span class="library-read">Read the entry <span aria-hidden="true">↗</span></span></span>
+    <span class="library-entry-copy"><span class="library-entry-number">ENTRY 005 &nbsp;·&nbsp; GLASSHOUSE &amp; PLANTING</span><strong>Compass Garden</strong><span>A glasshouse folio with a proposed plan, pictured-flora key, and comparisons with the Observatory, a proposed stamp motif, and Threshold House's container greenery.</span><span class="library-read">Read the entry <span aria-hidden="true">↗</span></span></span>
   </a>
   <a class="library-entry-card" href="{{ '/library/observatory/' | relative_url }}">
     <span class="library-card-art"><img src="{{ '/assets/library/places/observatory-interior.webp' | relative_url }}" alt="An observer at work beneath the Observatory's star-facing dome." loading="lazy"></span>
