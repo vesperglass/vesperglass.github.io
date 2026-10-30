@@ -38,7 +38,7 @@ permalink: /library/
   </a>
   <a class="library-entry-card" href="{{ '/library/observatory/' | relative_url }}">
     <span class="library-card-art"><img src="{{ '/assets/library/places/observatory-interior.webp' | relative_url }}" alt="An observer at work beneath the Observatory's star-facing dome." loading="lazy"></span>
-    <span class="library-entry-copy"><span class="library-entry-number">ENTRY 006 &nbsp;·&nbsp; OBSERVATION &amp; RECORDS</span><strong>Observatory Logbook</strong><span>A source-aware record with an instrument inventory and comparison of the proposed second watch with the pictured sighting tube.</span><span class="library-read">Read the entry <span aria-hidden="true">↗</span></span></span>
+    <span class="library-entry-copy"><span class="library-entry-number">ENTRY 006 &nbsp;·&nbsp; OBSERVATION &amp; RECORDS</span><strong>Observatory Logbook</strong><span>A source-aware record with a pictured instrument inventory, proposed second-watch comparison, and a link tracing the dome and telescope into a stamp design.</span><span class="library-read">Read the entry <span aria-hidden="true">↗</span></span></span>
   </a>
   <a class="library-entry-card" href="{{ '/library/star-archive/' | relative_url }}">
     <span class="library-card-art"><img src="{{ '/assets/library/places/archive-interior.webp' | relative_url }}" alt="A circular Star Archive with a central reading table." loading="lazy"></span>
@@ -54,7 +54,7 @@ permalink: /library/
   </a>
   <a class="library-entry-card" href="{{ '/library/postal-service/' | relative_url }}">
     <span class="library-card-art"><img src="{{ '/assets/library/postal-stamp-collection.png' | relative_url }}" alt="Four proposed Vesperglass postage stamps depict the Gate, Observatory, Compass Garden, and Tideglass Foundry." loading="lazy"></span>
-    <span class="library-entry-copy"><span class="library-entry-number">ENTRY 010 &nbsp;·&nbsp; CORRESPONDENCE &amp; POSTAL MARKS</span><strong>Vesperglass Postal Service</strong><span>Four proposed stamps with source-linked position, palette, motif, Observatory sky, and decorative-star versus chart-mark comparisons, plus an overprint and blank envelope layout.</span><span class="library-read">Read the entry <span aria-hidden="true">↗</span></span></span>
+    <span class="library-entry-copy"><span class="library-entry-number">ENTRY 010 &nbsp;·&nbsp; CORRESPONDENCE &amp; POSTAL MARKS</span><strong>Vesperglass Postal Service</strong><span>Four proposed stamps with source-linked position, palette, Observatory instrument and sky comparisons, and decorative-star versus chart-mark notes, plus an overprint and blank envelope layout.</span><span class="library-read">Read the entry <span aria-hidden="true">↗</span></span></span>
   </a>
   <a class="library-entry-card" href="{{ '/library/relationships/' | relative_url }}">
     <span class="library-card-art"><img src="{{ '/assets/library/relationships-plate.svg' | relative_url }}" alt="A diagram of recorded links among Vesperglass places, materials, and the Gate train." loading="lazy"></span>

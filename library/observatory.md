@@ -41,6 +41,8 @@ Plate II is a proposed still life, not an inventory copied from the Observatory 
 
 The image groups these objects in one composition, but proximity is not evidence of a shared procedure. In particular, the compass is not shown aligned to the tube, and the closed volume supplies no readable entry. The established name **Observatory Logbook** supports a place associated with observation and record; it does not authenticate any object in this proposed plate.
 
+The proposed [Observatory stamp comparison]({{ '/library/postal-service/' | relative_url }}) follows the dome and telescope into a separate graphic, where the instrument is enlarged and set diagonally. That comparison does not identify the still-life tube above as the same object or establish a postal issue or observing session.
+
 | Evidence layer | Supported here | Boundary |
 | --- | --- | --- |
 | **Established account** | A named Observatory associated with observing and keeping a record. | No surviving account consulted for this folio names an orrery, tube, compass, journal, keeper, or session. |
