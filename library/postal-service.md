@@ -38,6 +38,21 @@ The four panels can be located by their positions on Plate I. This index helps d
 
 The index records a subject for each panel, not four separate postal records. All four remain proposed designs arranged together for visual comparison. Their positions can be named without implying a first-to-last sequence, shared maker, local postal offices, or correspondence among the four places.
 
+### Border concordance · four panels, one proposed frame language
+
+Each panel on Plate I repeats a scalloped parchment perimeter, a dark blue inner field, and a fine gold-toned rectangular frame. Small star-like corner ornaments recur around the four different place motifs. The repeated treatment makes the separate designs read as one proposed family, while the interior illustrations remain specific to the Gate, Observatory, Compass Garden, and Tideglass Foundry.
+
+| Panel | Repeated edge and frame | Variation within the frame | What this supports—and what it does not |
+| --- | --- | --- | --- |
+| **Upper left · Gate** | Scalloped parchment edge, dark inner border, narrow gold line, and corner stars. | The pointed ring and bright opening dominate the image; the surrounding star field is comparatively open. | A shared visual template for the proposed suite, not a Gate-issued stamp or a recorded postal form. |
+| **Upper right · Observatory** | The same parchment silhouette and layered dark-and-gold frame recur. | The dome and diagonal telescope occupy much of the field, with a crescent and dense stars behind them. | A motif-specific composition within a common frame, not an identified observation or printing specification. |
+| **Lower left · Compass Garden** | Its scalloped perimeter and inset frame follow the other panels' pattern. | The glasshouse, pale flower emblem, and darker side bodies shape a more botanical center. | The same design language can contain another place motif; the border does not identify a Garden postal office or species. |
+| **Lower right · Tideglass Foundry** | The repeated edge and blue-and-gold frame hold the roundel within the same sheet arrangement. | A bright central circle and heavier brass-colored machinery give this panel the warmest interior emphasis. | The frame visually unifies the proposal, but does not establish a stamp issue or a Foundry process image. |
+
+The strongest concordance lies at the perimeter: the scallop, pale margin, inset frame, and corner ornament repeat, while color and subject imagery vary inside. The gaps separating the four panels belong to the sheet's composition; they are not part of any one stamp's edge. In particular, the scalloped silhouette is an illustration that suggests a perforated stamp, not evidence of holes, a die, a cutting method, or a standard size.
+
+This is a comparison of artwork, not proof that the four designs were printed together or issued as a set. No account gives the Postal Service an established history, production method, denomination, or rules for perforation. The proposed frames may be read as a consistent design choice; any practical postal meaning remains open.
+
 ### Shared palette · color lineage across four source plates
 
 The proposed sheet gives four different place motifs a common night-blue, teal, brass-gold, and parchment treatment. Comparing the sheet with its source plates shows both continuity and simplification: color helps hold the designs together as one graphic set, while each motif keeps its own local emphasis. These are readings of the illustrations, not confirmed material specifications for the places.
