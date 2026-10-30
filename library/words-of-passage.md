@@ -45,6 +45,22 @@ The wording moves between a place and its role: **the Gate** can mean the named 
 
 <aside class="field-note"><span class="field-note-mark" aria-hidden="true">✳</span><p><strong>Reading note</strong><br>Terms marked “account” come from the recorded descriptions of travel. “Atlas view” identifies what the Train Dock scene shows; it does not add a physical construction or route to the surviving accounts.</p></aside>
 
+### One word, two passages · Dock departure and Gate crossing
+
+The Train Dock account says the locomotive departs “through the same passage” after using the described approach and guide path. In that sentence, *same* refers back to the passage associated with Dock approach, berth alignment, and departure. The Gate account uses *passage* for the train's crossing between worlds: a bloom gathers around the locomotive, briefly conceals it, then opens at emergence. The shared noun makes the descriptions comparable, but does not make their referents identical.
+
+| Source phrase | Local subject | What “passage” does here | Boundary to preserve |
+| --- | --- | --- | --- |
+| **“through the same passage”** | The Train Dock's approach, guide-path alignment, alongside berth, and departure. | Refers back to the Dock movement description: departure retraces the passage used in approaching and berthing. | It does not name rails, a permanent track, a Gate connection, or a measured heading. |
+| **“passage between worlds”** | The Vesperglass Gate and the locomotive's crossing. | Names the crossing role described for the Gate; the bloom is the account's visible event around the train. | It does not identify the Dock's approach as the interworld passage or specify the physical mechanism. |
+| **Relation between the accounts** | Two descriptions associated with one train, but with different immediate subjects. | Allows readers to place local docking movement beside interworld crossing language. | Neither account says the two passages are the same route, continuous structure, or successive stages of one recorded trip. |
+
+The Dock plate may invite a reader to imagine a continuous route because its curved approach meets a straight berth line. The Gate plate, by contrast, depicts a separate platform and ring. Those pictures supply useful spatial context, but do not bridge the accounts. The Dock folio explicitly leaves the route from its berth to the Gate open; the Gate folio likewise records no approach path from the Dock. The phrases therefore remain source-local even when read together.
+
+This distinction is lexical and evidentiary, not a claim that the train follows two unrelated journeys. A future account might connect a particular departure to a crossing, but neither current description identifies an event, route, interval, track, or transition between them. Until then, *same passage* is a Dock reference and *passage between worlds* is the Gate's role.
+
+See [the Train Dock's approach and berth key]({{ '/library/train-dock/#berth-and-approach--a-two-state-alignment-key' | relative_url }}) for the Dock-local movement, and [the Gate crossing account]({{ '/library/vesperglass-gate/#crossing-record--an-interpretive-sequence' | relative_url }}) for the bloom and emergence language.
+
 ## Reader pronunciation key · English-language cues
 
 No surviving account records how Vesperglass travelers pronounce these terms. The cues below are a practical guide for reading the printed names aloud in English; capital letters show the suggested emphasis, not a local or canonical pronunciation.
