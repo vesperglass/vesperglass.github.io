@@ -43,6 +43,8 @@ The image groups these objects in one composition, but proximity is not evidence
 
 The proposed [Observatory stamp comparison]({{ '/library/postal-service/' | relative_url }}) follows the dome and telescope into a separate graphic, where the instrument is enlarged and set diagonally. That comparison does not identify the still-life tube above as the same object or establish a postal issue or observing session.
 
+The stamp also changes the instrument's apparent scale: Plate I places the large telescope among a seated observer, desk, and broad room, while the proposed miniature removes those cues and lets the tube dominate its panel. This is a compositional difference, not evidence about the instrument's actual size. The [scale comparison]({{ '/library/postal-service/#relative-scale--instrument-within-room-and-stamp' | relative_url }}) records what each image makes prominent and leaves dimensions and optics unassigned.
+
 | Evidence layer | Supported here | Boundary |
 | --- | --- | --- |
 | **Established account** | A named Observatory associated with observing and keeping a record. | No surviving account consulted for this folio names an orrery, tube, compass, journal, keeper, or session. |

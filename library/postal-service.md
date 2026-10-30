@@ -64,6 +64,21 @@ The upper-right stamp panel places a long telescope diagonally across a compact 
 
 The stamp's clearest source link is descriptive: a dome and long telescope recall the Observatory imagery. At stamp scale, the instrument becomes more prominent than the people and working room in Plate I. Its diagonal placement is an editorial choice, not evidence that a keeper aimed it toward the crescent or any of the small stars. The neighboring [Observatory source folio]({{ '/library/observatory/' | relative_url }}) likewise leaves the tube's optics, mounting, target, and ownership open; its Plate II inventory makes clear that the still-life tube is only a cautious visual label.
 
+#### Relative scale · instrument within room and stamp
+
+The two images give the telescope different visual weight. In the Observatory's proposed Plate I, its broad mount and tube occupy the room's center, but the seated observer, dome, desk, floor, and surrounding instruments establish a larger setting around it. In the proposed stamp, the diagonal tube fills much of a compact panel and competes only with the dome, crescent, and decorative sky. This contrast describes composition at two image scales, not a change in the telescope itself.
+
+| Comparison anchor | Observatory · Plate I | Proposed stamp · upper-right panel | What the comparison supports—and leaves open |
+| --- | --- | --- | --- |
+| **Observer** | A seated figure works at the desk to the telescope's right; the person is visibly smaller than the central instrument and room. | No observer appears; the telescope becomes the main foreground subject. | The stamp removes the human scale cue. It does not establish that the instrument is larger, or that an observer is absent from the Observatory. |
+| **Room and dome** | The dome, windows, floor, and distant view surround the telescope, showing it as one element in an expansive interior. | A small dome sits immediately behind the diagonal tube inside a tight border. | The stamp compresses architecture into a recognizable emblem; it supplies no architectural or instrument measurements. |
+| **Relative prominence** | The telescope is visually dominant, balanced by the room's breadth and clustered instruments. | The long tube spans much of the stamp panel and directs the eye across the small composition. | Graphic prominence is increased by framing and simplification, not proof of a more powerful instrument or different focal length. |
+| **What is omitted** | The view includes a desk, papers, other instruments, an observer, and the open sky. | Most working-room context disappears so the dome and tube read quickly at stamp size. | Omission is an editorial selection; it does not show that these elements were absent from the named place or from any actual stamp. |
+
+The relative-size reading depends on each image's own scale cues. The seated figure and furniture make the room illustration relational; the stamp replaces those cues with a border and miniature architectural motif. Neither image provides a common ruler, so pixel or panel proportions cannot be converted into an instrument's true length, height, focal length, or distance from the observer. This is also why the stamp's prominence should not be read as a technical specification or a postal readability rule.
+
+The folio's account establishes the Observatory as a named place associated with observing and keeping a record, but it does not name a particular telescope. Plate II separately shows a tube described cautiously as a **sighting tube**, and the stamp's enlarged telescope cannot establish that it depicts either proposed instrument. See the [Observatory's instrument inventory]({{ '/library/observatory/#plate-ii--pictured-instrument-inventory' | relative_url }}) for that distinction.
+
 | Record layer | Supported reading | Still unknown |
 | --- | --- | --- |
 | **Established place-name** | Observatory Logbook is associated with observation and record. | A particular instrument, observer, session, maker, or instrument inventory. |
