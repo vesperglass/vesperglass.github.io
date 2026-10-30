@@ -221,6 +221,19 @@ The schematic below explores how the proposed Gate stamp might sit beside separa
 
 The overlay applies the proposed design in a blank layout, so readers can see its scale relative to the Gate stamp and address fields. It is not a specimen of a posted letter. A place shown on a stamp or named by the mark is a visual reference, not an origin or destination. The [composite overprint study](#composite-overprint-study) describes the mark's elements; the [Vesperglass Train Dock]({{ '/library/train-dock/' | relative_url }}) and [Gate]({{ '/library/vesperglass-gate/' | relative_url }}) folios describe the train's berth and crossing, but neither records a postal route.
 
+### Envelope mock-up · overlap and visual legibility
+
+At the scale shown in Figure I, the proposed overprint crosses the Gate stamp's central opening and lower ring, then extends beyond the stamp's right edge. Its circular seal also overlaps the ring's left side. This is a visible consequence of the mock-up's chosen placement, not a record of how a real stamp would be canceled. The mark makes its own lettering and ring prominent while partially veiling the architecture used as the stamp's subject.
+
+| Area of the proposed stamp | What remains visible in the overlay | What the overlap changes | What cannot be inferred |
+| --- | --- | --- | --- |
+| **Central opening** | Portions above and below the horizontal strokes remain visible. | The parallel lines cross the open center, dividing its uninterrupted field. | Whether a postal design was expected to preserve an aperture unobstructed, or whether this would be considered legible. |
+| **Lower ring and steps** | The outer ring and lower approach remain identifiable around the lower strokes. | The crossing strokes run over parts of the ring and the steps, interrupting their contours. | That the proposed cancellation accurately represents a device, strike, or processed item. |
+| **Upper ornament** | The star above the Gate ring remains visible in the stamp's upper area. | The overprint's seal and lines occupy much of the stamp's middle, leaving the ornament comparatively clear. | That the star has a postal meaning or that its position is an established convention. |
+| **Stamp boundary** | The stamp's paper edge remains visible around most of the composition. | The overprint crosses that boundary and continues to the right on the envelope face. | That the mark was actually applied across both stamp and envelope, or that such placement proves cancellation. |
+
+The composition balances two readings: the Gate remains recognizable through its ring, star, and platform, while the seal and four lines read as a separate graphic laid on top. The overprint's reach beyond the stamp helps make that distinction visible, but the simulated overlap is only a design choice in this proposed face. The account and plates for the [Vesperglass Gate]({{ '/library/vesperglass-gate/' | relative_url }}) establish a named passage platform and a crossing bloom; they do not describe a stamp, cancellation, postage standard, or postal handling practice. The mock-up therefore supports an editorial observation about visibility, not a judgment against an undocumented standard or evidence of an actual letter.
+
 ## Proposed cancellation-mark register · motifs without itinerary
 
 A postmark-like overprint can be pictured as an ornamental countermark on the four-design sheet. The following register proposes three line motifs and the stamp images they might accompany. It does not transcribe a surviving cancellation or document a letter that passed through a postal office.
