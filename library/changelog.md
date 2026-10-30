@@ -85,4 +85,8 @@ These edition notes record additions to the existing folios. Where a record's so
 - **Vesperglass Postal Service** — Applied the proposed Gate overprint across the blank envelope schematic's stamp position, retaining empty address fields and leaving any posting or delivery unrecorded. [Read the folio →]({{ '/library/postal-service/' | relative_url }})
 - **Tideglass Foundry** — Connected the recorded tempering result to the train's separately described starwell use, distinguishing quiet color from pulse and leaving batch transfer and loading unrecorded. [Read the folio →]({{ '/library/tideglass-foundry/' | relative_url }})
 
+## October 30, 2026
+
+- **Vesperglass Postal Service** — Compared the stamp's corner-star framing and fine scatter with the Observatory plate's wide sky field, keeping pattern identity, chart source, and observation unassigned. [Read the folio →]({{ '/library/postal-service/' | relative_url }})
+
 <p class="folio-return"><a href="{{ '/library/' | relative_url }}">← Return to the Universe Library</a></p>

@@ -64,6 +64,28 @@ The upper-right design places a large crescent behind the Observatory's dome and
 
 The stamp's crescent can be read as a design accent that heightens the sky-facing character of the Observatory image. It should not be captioned as a particular moon, phase, or sighting: the pictured round bodies have no names, and the folio's surviving record supplies no date or celestial log entry for them. The strongest link remains the architectural motif of dome and telescope. The [Observatory instrument inventory]({{ '/library/observatory/' | relative_url }}) likewise labels pictured instruments cautiously and records no particular observing session.
 
+### Observatory stamp · starfield arrangement
+
+The crescent comparison concerns the largest celestial accent; this second reading checks the smaller marks around it. In the stamp sheet, the Observatory panel places four conspicuous gold star forms near the corners of its dark field, with many finer points between them. Observatory Plate I instead gives the sky a continuous, dense field behind the dome, with a bright cloud-like region at the upper right. This is a comparison of visible composition, not a test against a chart or an authenticated view.
+
+| Visual question | Observatory · Plate I | Proposed stamp · upper-right panel | Reading boundary |
+| --- | --- | --- | --- |
+| **Where does the eye land first?** | The large telescope and its circular frame occupy the foreground; the bright cloud-like sky region sits beyond the dome at upper right. | The dome and telescope remain central, while the crescent and four large gold star forms draw the eye to the field's edges. | Neither image establishes a named target or a compositional convention used by Observatory keepers. |
+| **How are small points distributed?** | Fine points spread across much of the open sky and remain visible through the dome. | Fine points fill the dark blue panel around the building and larger corner stars. | No shared grouping, coordinate, or exact repeated star pattern is identified. |
+| **Is there a dominant cluster?** | A bright, cloud-like concentration is visible toward the upper-right sky; its nature is not identified in the account. | The field is organized by the crescent and the four large corner marks; no bright cloud-like concentration is singled out. | A similar “upper-right” position does not prove the stamp copied that feature; the forms and emphasis differ. |
+| **What changes at stamp scale?** | The image is a wide room view in which the sky, instruments, architecture, and observer coexist. | A compact framed vignette reduces the Observatory to dome, telescope, crescent, and decorative stars. | Simplification is a design reading only; no original working chart, printing instruction, or issue record is available for comparison. |
+
+The clearest continuity is atmospheric: both images place the Observatory against a richly marked night sky. The visible arrangements differ in hierarchy and treatment. Plate I's fine field and bright cloud-like region belong to the room illustration; the stamp's corner stars and crescent form a deliberate graphic frame. Their shared subject does not establish a matched constellation, a reused observation, or an orientation shared by the two images. The Observatory folio's proposed log leaves name no fixed star pattern, and the [Star Archive's proposed *Unfixed Meridian*]({{ '/library/star-archive/' | relative_url }}) is a separate editorial chart, not evidence for this stamp's background.
+
+| Record layer | What can be said | What remains unassigned |
+| --- | --- | --- |
+| **Established place-name** | Observatory Logbook is a named place associated with observation and record. | A specific keeper, sitting, observation date, or postal connection. |
+| **Plate I** | The proposed source image shows a wide star-filled sky and a bright cloud-like region through the dome. | The feature's identity, coordinates, season, and whether it records an observation. |
+| **Stamp design** | The proposed upper-right panel uses fine star scatter, four prominent corner stars, and a crescent around the dome and telescope. | A constellation name, chart source, astronomical orientation, or historical issue. |
+| **Comparison** | Both images use a night-sky field, but distribute emphasis differently. | Exact star-to-star correspondence, copying direction, or shared authorship. |
+
+This comparison should therefore be indexed as a **visual field**, not a star chart. It helps a reader find and describe the design without assigning identities to individual points or turning ornamental stars into navigation data.
+
 <figure class="specimen-plate">
   <img src="{{ '/assets/library/postal-gate-stamp.png' | relative_url }}" alt="A single proposed Vesperglass postage stamp with a perforated parchment edge and an engraved brass-and-teal image of the Gate beneath a small star." loading="lazy">
   <figcaption><span>STAMP STUDY</span> A Gate-ring design prepared as a reusable postal mark; its border and image are proposed, not historical.</figcaption>
