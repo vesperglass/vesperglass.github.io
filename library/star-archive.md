@@ -84,6 +84,29 @@ Use the return mark only to point back to earlier wording, not to claim a repeat
 
 The [Observatory sample leaves]({{ '/library/observatory/' | relative_url }}) also leave the subject and position open, but their prose comparison is separate from this proposed chart notation. Neither record identifies a point on the Galaxy map.
 
+### Phrase concordance · “pale band” and “blue-field point”
+
+The proposed margin sample says **“pale band noted again”** beside the return mark. The Observatory's invented sample describes **“one point”** near the rim of a blue field and says its color held through three turns of a sighting tube. Both texts invite a second look at a light-colored feature, but their wording points to different forms and comes from separate editorial examples. This concordance records the echo without joining the notes into one observation.
+
+| Reading dimension | *The Unfixed Meridian* · proposed margin | Observatory Logbook · proposed sample leaves | What the comparison can and cannot say |
+| --- | --- | --- | --- |
+| **Feature described** | A “pale band” is mentioned, with no shape, extent, or location beyond the sample phrase. | A “point” sits near the rim of an otherwise unnamed blue field. | A band and a point are not interchangeable descriptions; neither wording names a star or other body. |
+| **Return language** | **↻** accompanies “noted again,” referring to an earlier note within the imagined chart sample. | The first leaf records three turns; the proposed second leaf revisits the point after the tube returns to a mark. | Both signal recurrence in their own prose, but there is no shared return protocol or confirmed repeated event. |
+| **Color** | “Pale” modifies the band, without a prior color reading or comparison. | The first leaf says the point held its color; the second proposes that it seemed paler. | The color terms are not measurements and do not show that the two phrases refer to one changing feature. |
+| **Instrument** | The margin sample names no instrument. | The prose mentions a sighting tube and eyepiece, but does not identify the pictured Observatory tube as its source. | The Observatory text's instrument wording cannot be transferred to the chart proposal. |
+| **Position and time** | No date, coordinate, orientation, observer, or fixed sky region accompanies the margin sample. | “Near the rim” is a relative phrase; the leaves have no date or fixed coordinates. | Their unlocated positions cannot be aligned with each other or a point on the Galaxy map. |
+| **Record status** | The chart title, margin key, and sample are editorial proposals; no surviving catalog confirms them. | The leaves are invented examples, not authenticated entries in the named logbook. | Similar language is a reading prompt, not independent evidence or common provenance. |
+
+The phrase **“noted again”** should be read narrowly: it signals that the proposed margin writer is referring back to earlier wording. It does not establish how much time passed, whether another observer saw the same thing, or whether the feature persisted. The Observatory sample is similarly open: its return to a mark is part of an imagined account, not evidence of a calibrated instrument or a confirmed celestial change.
+
+| Provenance layer | Established | Proposed | Still unknown |
+| --- | --- | --- | --- |
+| **Places** | Star Archive keeps knowledge of the sky; Observatory Logbook is a named place of observation and record. | The proposed chart and sample log leaves are associated editorially with those topics. | Whether either record exists in either place or shares a keeper, collection, or session. |
+| **Descriptions** | No consulted established record names a pale band or the point in the blue field. | Each sample supplies its own phrase and a different descriptive context. | Whether either phrase reflects an observed feature, and the identity or location of any referent. |
+| **Cross-reference** | The folios link as reference subjects. | This concordance places their phrases side by side for comparison. | Common authorship, date, instrument, chart, coordinates, celestial body, or event. |
+
+The [Observatory's second-watch comparison]({{ '/library/observatory/' | relative_url }}) should therefore remain its own two-leaf reading. This Archive concordance adds a phrase-level cross-reference, not a third witness or a correction to either proposal. A reader may notice that both examples preserve uncertainty; the records still do not identify the same object.
+
 The margin marks are not the same as the decorative corner stars on the proposed Observatory stamp. The [Postal Service comparison]({{ '/library/postal-service/#observatory-stamp--decorative-stars-and-chart-margin-marks' | relative_url }}) keeps image framing distinct from notation about a proposed record's status; it does not establish a shared chart, author, or star pattern.
 
 ### Evidence-to-field matrix · *The Unfixed Meridian*

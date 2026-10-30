@@ -88,6 +88,8 @@ Read together, the ribbon separates a real place-name from a proposed document a
 
 The proposed light readings in [Compass Garden]({{ '/library/compass-garden/' | relative_url }}) use a similar discipline: they locate a described cue in relation to a garden marker but do not supply a date or celestial cause. Each record keeps its own subject and uncertainty; neither one names an Observatory target.
 
+The [Star Archive's proposed phrase concordance]({{ '/library/star-archive/' | relative_url }}) sets its sample's “pale band noted again” beside this blue-field point. The wording echoes a return to an earlier note, but does not identify a common feature, event, author, or observation.
+
 ### The second watch and the pictured sighting tube
 
 Both the proposed leaf and Plate II use the phrase **sighting tube**, but the shared label does not identify the same instrument in each source. The leaf is an invented example; Plate II is an illustrative still life whose tube receives a cautious visual name. This comparison checks what can be read across them without turning a sample sentence into the provenance or operating record for the pictured object.
