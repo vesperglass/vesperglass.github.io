@@ -30,7 +30,7 @@ permalink: /library/
   </a>
   <a class="library-entry-card" href="{{ '/library/tideglass-foundry/' | relative_url }}">
     <span class="library-card-art"><img src="{{ '/assets/library/places/foundry-interior.webp' | relative_url }}" alt="Starshards being carefully processed inside Tideglass Foundry." loading="lazy"></span>
-    <span class="library-entry-copy"><span class="library-entry-number">ENTRY 004 &nbsp;·&nbsp; STARSHARDS &amp; CRAFT</span><strong>Tideglass Foundry</strong><span>The recorded making of stardust, reconstructed tools, and a source-aware bridge from tempering to its separate starwell use.</span><span class="library-read">Read the entry <span aria-hidden="true">↗</span></span></span>
+    <span class="library-entry-copy"><span class="library-entry-number">ENTRY 004 &nbsp;·&nbsp; STARSHARDS &amp; CRAFT</span><strong>Tideglass Foundry</strong><span>The recorded making of stardust, reconstructed tools, a terminology note on mirrored plates and quiet color, and a source-aware bridge to the starwell.</span><span class="library-read">Read the entry <span aria-hidden="true">↗</span></span></span>
   </a>
   <a class="library-entry-card" href="{{ '/library/compass-garden/' | relative_url }}">
     <span class="library-card-art"><img src="{{ '/assets/library/places/garden-interior.webp' | relative_url }}" alt="A glasshouse garden arranged around a compass rose." loading="lazy"></span>

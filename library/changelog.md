@@ -12,6 +12,7 @@ These edition notes record additions to the existing folios. Where a record's so
 
 ## October 30, 2026
 
+- **Tideglass Foundry** — Added a phrase-level terminology note for “mirrored plates,” “fine, even powder,” “low, singing resonance,” and “quiet color,” separating recorded sequence language from unrecorded specifications and mechanism. [Read the folio →]({{ '/library/tideglass-foundry/' | relative_url }})
 - **Star Archive and Observatory Logbook** — Compared the proposed Archive sample's “pale band noted again” with the Observatory's blue-field point, keeping their similar return language distinct from a shared celestial subject, observation, or provenance. [Read the Archive comparison →]({{ '/library/star-archive/' | relative_url }}) · [Read the Observatory note →]({{ '/library/observatory/' | relative_url }})
 - **Vesperglass Postal Service and Star Archive** — Distinguished the stamp's decorative corner stars from the proposed *Unfixed Meridian* margin symbols, identifying their separate compositional and annotation roles and leaving shared source or pattern unassigned. [Read the comparison →]({{ '/library/postal-service/#observatory-stamp--decorative-stars-and-chart-margin-marks' | relative_url }}) · [Read the chart legend →]({{ '/library/star-archive/' | relative_url }})
 - **Threshold House** — Audited the imagined room-sound note against its interior and plan plates, distinguishing pictured listening locations from unverified acoustic effects, materials, and dimensions. [Read the folio →]({{ '/library/threshold-house/' | relative_url }})

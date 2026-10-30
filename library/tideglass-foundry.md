@@ -57,6 +57,22 @@ The two descriptions mark different stages. **Quiet color** names the settled ap
 
 The handoff therefore ends at a useful boundary: the Foundry makes stardust for the train, and the locomotive uses a measured thread in its starwell. No transfer vessel, loading action, quantity, schedule, responsible keeper, or specific crossing is recorded. [Words of Passage]({{ '/library/words-of-passage/' | relative_url }}) defines *stardust* and *starwell* without adding those missing steps.
 
+### Terminology note · “mirrored plates” and “quiet color”
+
+The recorded process uses concise, sensory wording for both a named tool surface and the appearance after tempering. This note reads those phrases against the [Starshards & the Gate Train account]({{ '/library/starshards/' | relative_url }}), where the full sequence is stated, and the [Words of Passage crosswalk]({{ '/library/words-of-passage/' | relative_url }}), which distinguishes stardust from the train's starwell and passage terms. These are readings of account language, not additional production instructions.
+
+| Account phrase | What the account says | Safe reading | What the wording does not specify |
+| --- | --- | --- | --- |
+| **“mirrored plates”** | Starshards are ground between mirrored plates. | A plural pair of surfaces is named as the grinding context. | Their material, polish, shape, size, mounting, pressure, motion, maker, or whether “mirrored” refers to reflectivity in a technical sense. |
+| **“fine, even powder”** | Sifting continues until this is the described powder state. | The phrase gives a qualitative result for the sifted material. | Grain-size range, distribution, sieve mesh, mass, yield, or a numeric completion test. |
+| **“low, singing resonance”** | The dust is exposed to the Gate's resonance during tempering. | “Low” and “singing” describe the account's character of the resonance. | Frequency, loudness, source, instrument, distance, duration, or a measured acoustic condition. |
+| **“scattered glints”** | Before the described settling, the dust's glints are scattered. | The account describes an appearance associated with the material before the final color phrase. | A count of glints, particle behavior, emitted light, energy, or a physical explanation for the change. |
+| **“one quiet color”** | The scattered glints settle into this described result. | “Quiet” qualifies the visual phrase; it is not itself a color value or a claim that sound stops. | Hue, brightness, calibration, persistence, causal mechanism, or a link to the later starwell pulse. |
+
+Read together, the terms move from a named grinding relation, through a qualitative powder and resonance description, to a visual result. The language supports a verbal account of sequence and appearance. It does not provide the measurements or equipment details needed to reproduce the process, and the reconstructed mill and vessel on Plate II cannot supply those omissions.
+
+The distinction also matters when the material reaches the train. The Foundry account ends with stardust whose glints settle into “one quiet color”; the separate train account describes a measured thread gathering into a pulse inside the starwell. A shared material links the passages, but the color phrase does not explain, cause, or predict the pulse. No transfer event or continuous tempering process connects the two descriptions.
+
 <aside class="field-note"><span class="field-note-mark" aria-hidden="true">✳</span><p><strong>What is recorded</strong><br>Starshards become stardust at Vesperglass, and the train carries stardust through the Gate. The Foundry’s exact room plan and tool dimensions remain unrecorded.</p></aside>
 
 ## At a glance

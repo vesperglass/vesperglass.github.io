@@ -21,7 +21,7 @@ Working tracker for new reference forms and encyclopedia additions. Keep it in s
 | Place customs and daily practices | How keepers use shared spaces, prepare for departures, or preserve records | Mark customs as proposals until adopted as established lore; present them as optional social practices, not required simulation steps |
 | Stellar body field plates | A survey of a kind of remote world, its landscape, and possible materials | Use as illustrative worldbuilding, not as a claim about generated Galaxy data |
 | Oral histories and remembered sayings | Conflicting recollections, local phrases, and knowledge passed between keepers | Attribute each voice to an imagined source and retain uncertainty |
-| Glossary crosswalks | Linked terms that compare material, vessel, place, and travel language, including distinctions between a named place and a structure or role | Identify the source for each term and state what it does not establish; don't let shared nouns imply a route or common construction |
+| Glossary crosswalks | Linked terms that compare material, vessel, place, travel, and sensory wording, including distinctions between a named place and a structure or role | Quote the source-local phrase and separate its descriptive scope from unrecorded measurements or mechanism; don't let shared nouns imply a route or common construction |
 | Archive catalog cards | A single chart, instrument note, or record with provenance and a short annotation | Identify each card as a proposal unless the site establishes the record as canon |
 | Materials handling labels | Small notes about how objects are packed, stored, or moved between places | Mark handling methods as interpretive unless directly established in a folio |
 | World relationship indexes | A compact cross-reference showing established links among places, materials, vessels, and journeys | Show only documented relationships; do not imply a physical route or system where none is established |
@@ -138,7 +138,7 @@ Working tracker for new reference forms and encyclopedia additions. Keep it in s
 
 ### Open
 
-- [ ] **Add a terminology note for “mirrored plates” and “quiet color”** — Pair the Foundry's named grinding surface and tempering result with the exact account language; state what those phrases describe while leaving plate construction, color measurement, and resonance mechanism unspecified.
+- [x] **Add a terminology note for “mirrored plates” and “quiet color”** — Pair the Foundry's named grinding surface and tempering result with the exact account language; state what those phrases describe while leaving plate construction, color measurement, and resonance mechanism unspecified. Completed 2026-10-30 in `library/tideglass-foundry.md`.
 - [ ] **Compare the Observatory stamp's telescope motif with its source plates** — Trace the stamp's telescope and dome forms to the Observatory illustrations; distinguish pictured instrument details from stamp-scale embellishments, and leave a postal issue, instrument maker, and observing session unestablished.
 - [ ] **Compare Threshold House's framed opening with the Vesperglass Gate aperture** — Read the House's proposed arch beside the Gate's pictured freestanding ring; distinguish a room feature from the named passage and leave shared construction, travel function, bearing, and connection unestablished.
 - [ ] **Compare “SEALED AT THE GATE” with the train's sealed starwell** — Distinguish the proposed postmark lettering from the starwell's account-described closure; leave any shared material, sealing method, authority, or postal transit unestablished.
@@ -146,6 +146,7 @@ Working tracker for new reference forms and encyclopedia additions. Keep it in s
 - [ ] **Compare the proposed Threshold House sound note with its two architectural plates** — Check whether its imagined arch, bench, and lamp-niche acoustics rely on features visible in both the interior and plan; keep sound qualities interpretive and leave room dimensions, materials, occupancy, and any established acoustic practice unknown.
 - [ ] **Compare the Observatory stamp's corner stars with the proposed Unfixed Meridian margin marks** — Set the stamp's four decorative corner stars beside the chart's proposed notation key; distinguish image framing from record annotation and leave any shared pattern, orientation, authorship, or chart source unassigned.
 - [ ] **Add a pictured-flora key for the plants in Threshold House Plate I** — Describe the potted greenery visible in the proposed chamber image and compare its role in the composition with Compass Garden's separately pictured flora; leave species, shared specimens, cultivation, ownership, and any household plant custom unassigned.
+- [ ] **Compare the Gate overprint's three crossing strokes with the described Gate bloom** — Set the proposed cancellation curves beside the Gate account and its bloom illustration; distinguish a graphic cancellation-like mark from the outward light around the train, leaving shared design source, event, mechanism, postal office, and route unestablished.
 
 ## Hourly substantial work cycle
 
