@@ -95,6 +95,20 @@ The note pairs naturally with the proposed arrival phrases above. A short greeti
 
 No acoustic recording or dated description accompanies the chamber. These lines do not identify a visitor, keeper, crossing, or sound source, and they establish no sound practice for the house.
 
+### Room-sound note · plate support audit
+
+The sound note above attaches imagined listening to features in two proposed plates. This audit checks the visual footing of each scene and marks where an illustration stops supporting an acoustic claim. It is a source-reading aid: the images do not measure sound, and the surviving account does not describe the interior.
+
+| Proposed listening point | Visible support across the plates | What the prose adds | Boundary of the inference |
+| --- | --- | --- | --- |
+| **Beneath the arch** | Plate I centers a tall open arch; Plate II shows a layered arch in elevation and leaves the passage open in plan. | A phrase might seem to return faintly from above. | Neither view specifies height, curvature, enclosure, surface, or measured reverberation; the return is an imagined effect, not a predicted property. |
+| **Beside the bench** | Both plates place a long seat along a side of the chamber, though their viewpoints do not establish the same wall or dimensions. | A reply might feel close and contained. | The images do not identify upholstery, wall finish, distance, a listener, or any sound-absorbing material. |
+| **Across the threshold** | Each plate emphasizes a central open passage; Plate I looks outward, while Plate II draws a clear line through the room. | Footfalls might be noticed before speech. | Neither illustration shows someone walking or identifies a floor material; no actual footfall or acoustic transmission is recorded. |
+| **Lamp niches** | Recessed lights appear beside the opening in both proposals, with the elevation adding hanging lights. | The earlier note assigns no separate sound to the lamps. | Depicted illumination does not imply a hum, mechanism, fuel, or sound source. |
+| **Details that do not align** | Plate I includes a keeper, cases, plants, and a wide outward view; Plate II adds side alcoves and an approach. | The sound note describes only arch, bench, and threshold. | Neither differing detail establishes occupancy, a customary route, or a particular acoustic condition; the note's omissions should not be filled by treating either proposal as a measured room. |
+
+The audit narrows the note's useful claim. The plates provide **locations for an imagined listener**—an opening, a side seat, and a clear centerline—but they do not provide the material or dimensional evidence needed to predict how the room would sound. The lamp row makes the same distinction in another register: light is depicted; a noise or mechanism is not. The Gate folio's separate recollections of hush and song concern a crossing account, not this chamber, so they cannot corroborate the proposed effects. This leaves the sound note readable as an optional scene attached to the illustrations, not a recovered property of Threshold House.
+
 ## At a glance
 
 <dl class="folio-glossary">

@@ -68,6 +68,7 @@ Working tracker for new reference forms and encyclopedia additions. Keep it in s
 | Place-role architecture comparisons | A paired reading of how distinct named place roles are represented by proposed interior architecture | Separate established place descriptions from image-only forms; shared glass, arches, or rooflines do not establish a common builder, method, material specification, or design history |
 | Cross-subject motif boundary cards | A comparison of similar visual symbols appearing in different place illustrations, recording each motif's local role and whether it is a plan mark, depicted object, or established account term | Similar appearance does not establish shared meaning, authorship, bearing, or a common instrument; keep each image's source status visible |
 | Scale-loss ledgers | A source-linked inventory of which features remain legible, are simplified, or disappear when a proposed plate is reduced to a stamp, badge, or other compact graphic | Treat the smaller design as an editorial rendering; do not infer an original reproduction instruction, maker, issue, or production process |
+| Cross-modal cue provenance audits | A table that pairs a depicted place feature with an imagined sound or other sensory reading, then states exactly which part comes from the image and which is interpretation | An illustration cannot verify acoustics, texture, temperature, or other unpictured experience; avoid converting a plausible reading into a physical property |
 
 ## Backlog
 
@@ -130,6 +131,7 @@ Working tracker for new reference forms and encyclopedia additions. Keep it in s
 - [x] **Compare the shared teal-and-brass stamp palette with the four source plates** — Trace the proposed sheet's blue-green, brass-gold, and parchment color scheme against the separate place illustrations; distinguish visual continuity from material evidence, true architectural colors, and any recorded printing standard. Completed 2026-10-29 in `library/postal-service.md`.
 - [x] **Compare the Observatory stamp's crescent-and-star background with the Observatory plate's sky** — Set the stamp's decorative crescent beside the star-facing dome and partially lit round bodies in the proposed source plate; leave celestial identity, phase, observation date, and logbook record unassigned. Completed 2026-10-29 in `library/postal-service.md`.
 - [x] **Compare the Observatory stamp's starfield arrangement with the Observatory Plate I sky** — Contrast the source plate's broad, fine star field and bright cloud-like region with the stamp's corner stars and crescent-framed scatter; leave pattern identity, orientation, chart source, and observation date unassigned. Completed 2026-10-30 in `library/postal-service.md`.
+- [x] **Audit the proposed Threshold House sound note against its two plates** — Map the imagined arch, bench, threshold, and lamp readings to visible features in the interior and plan, stating where the images stop supporting acoustic claims. Completed 2026-10-30 in `library/threshold-house.md`.
 
 ### Open
 
@@ -139,6 +141,7 @@ Working tracker for new reference forms and encyclopedia additions. Keep it in s
 - [ ] **Compare “SEALED AT THE GATE” with the train's sealed starwell** — Distinguish the proposed postmark lettering from the starwell's account-described closure; leave any shared material, sealing method, authority, or postal transit unestablished.
 - [ ] **Compare the Gate account's “light of its return journey” with the Train Dock docket's blank return-load field** — Distinguish a descriptive phrase carried by the emerging locomotive from the docket's unfilled cargo field; leave cargo, itinerary, and any recorded return trip unestablished.
 - [ ] **Compare the proposed Threshold House sound note with its two architectural plates** — Check whether its imagined arch, bench, and lamp-niche acoustics rely on features visible in both the interior and plan; keep sound qualities interpretive and leave room dimensions, materials, occupancy, and any established acoustic practice unknown.
+- [ ] **Compare the Observatory stamp's corner stars with the proposed Unfixed Meridian margin marks** — Set the stamp's four decorative corner stars beside the chart's proposed notation key; distinguish image framing from record annotation and leave any shared pattern, orientation, authorship, or chart source unassigned.
 
 ## Hourly substantial work cycle
 
