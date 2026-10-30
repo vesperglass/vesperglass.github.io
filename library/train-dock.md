@@ -77,6 +77,8 @@ The docket below is a proposed way to arrange three stages already described in 
 | Departure and arrival times | — | No schedule or elapsed duration is given. |
 | Cargo / return load | — | The crossing description does not identify a cargo manifest. |
 
+The docket's **destination** is a journey endpoint, not an addressee. The blank envelope field in the [Postal Service proposal]({{ '/library/postal-service/#addressee-and-destination--envelope-field-versus-journey-endpoint' | relative_url }}) asks who might receive correspondence; it does not name the far side where the train emerges. Neither proposed record supplies the missing value in the other, and no account connects a letter or recipient to this crossing.
+
 The arrows are a reading order for the account, not a mapped route. In particular, the Dock's guide path describes the train aligning with its berth; the [Words of Passage cross-reference]({{ '/library/words-of-passage/' | relative_url }}) keeps that atlas-view term separate from the Gate bloom in the crossing account. Neither establishes a track or a route between the two platforms.
 
 ### Return light and the blank return-load field

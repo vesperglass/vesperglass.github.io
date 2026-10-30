@@ -50,11 +50,11 @@ permalink: /library/
   </a>
   <a class="library-entry-card" href="{{ '/library/train-dock/' | relative_url }}">
     <span class="library-card-art"><img src="{{ '/assets/library/places/dock-plate.webp' | relative_url }}" alt="The space train hovering alongside the straight open edge of its dock." loading="lazy"></span>
-    <span class="library-entry-copy"><span class="library-entry-number">ENTRY 009 &nbsp;·&nbsp; BERTH &amp; DEPARTURE</span><strong>Vesperglass Train Dock</strong><span>A clear landing apron, approach-to-berth alignment key, and source-aware journey docket comparing the Gate's return-light phrase with an unfilled cargo field.</span><span class="library-read">Read the entry <span aria-hidden="true">↗</span></span></span>
+    <span class="library-entry-copy"><span class="library-entry-number">ENTRY 009 &nbsp;·&nbsp; BERTH &amp; DEPARTURE</span><strong>Vesperglass Train Dock</strong><span>A clear landing apron, alongside berth, and source-aware journey docket distinguishing an unnamed far side from the Postal Service's blank recipient field.</span><span class="library-read">Read the entry <span aria-hidden="true">↗</span></span></span>
   </a>
   <a class="library-entry-card" href="{{ '/library/postal-service/' | relative_url }}">
     <span class="library-card-art"><img src="{{ '/assets/library/postal-stamp-collection.png' | relative_url }}" alt="Four proposed Vesperglass postage stamps depict the Gate, Observatory, Compass Garden, and Tideglass Foundry." loading="lazy"></span>
-    <span class="library-entry-copy"><span class="library-entry-number">ENTRY 010 &nbsp;·&nbsp; CORRESPONDENCE &amp; POSTAL MARKS</span><strong>Vesperglass Postal Service</strong><span>Four proposed stamps with source-linked motif studies, plus overprint comparisons and an envelope mock-up overlap audit.</span><span class="library-read">Read the entry <span aria-hidden="true">↗</span></span></span>
+    <span class="library-entry-copy"><span class="library-entry-number">ENTRY 010 &nbsp;·&nbsp; CORRESPONDENCE &amp; POSTAL MARKS</span><strong>Vesperglass Postal Service</strong><span>Four proposed stamps with source-linked motif studies, overprint comparisons, and an envelope face cross-referenced with the Train Dock journey docket.</span><span class="library-read">Read the entry <span aria-hidden="true">↗</span></span></span>
   </a>
   <a class="library-entry-card" href="{{ '/library/relationships/' | relative_url }}">
     <span class="library-card-art"><img src="{{ '/assets/library/relationships-plate.svg' | relative_url }}" alt="A diagram of recorded links among Vesperglass places, materials, and the Gate train." loading="lazy"></span>

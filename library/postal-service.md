@@ -236,6 +236,20 @@ The schematic below explores how the proposed Gate stamp might sit beside separa
 
 The overlay applies the proposed design in a blank layout, so readers can see its scale relative to the Gate stamp and address fields. It is not a specimen of a posted letter. A place shown on a stamp or named by the mark is a visual reference, not an origin or destination. The [composite overprint study](#composite-overprint-study) describes the mark's elements; the [Vesperglass Train Dock]({{ '/library/train-dock/' | relative_url }}) and [Gate]({{ '/library/vesperglass-gate/' | relative_url }}) folios describe the train's berth and crossing, but neither records a postal route.
 
+### Addressee and destination · envelope field versus journey endpoint
+
+The blank envelope reserves a place for an addressee; the proposed Train Dock docket has an **Origin / destination** field for a crossing. Both concern an endpoint in ordinary reading, but they ask different questions. An addressee is a recipient to whom correspondence might be directed. A destination in the docket would identify where the train emerges. The crossing account leaves that far side unnamed, while the envelope contains no recipient or address.
+
+| Record | Field or phrase | What it asks | What is supplied | What remains open |
+| --- | --- | --- | --- | --- |
+| **Proposed envelope face** | Addressee field | Who is meant to receive a piece of correspondence, and where it is addressed. | An empty ruled area in an editorial layout. | A person's name, address format, place, delivery convention, and whether a postal service exists. |
+| **Proposed Train Dock docket** | Origin / destination | From where a crossing departs and where the train emerges. | Vesperglass as the described point of departure; the far side remains unassigned. | A named world, platform, route, schedule, or match to any intended letter recipient. |
+| **Gate crossing account** | “Far side” | The train's emergence after passage through the Gate. | A described crossing and return light, without a named destination. | Whether any correspondence travels with the train or is meant for anyone there. |
+
+The fields should not be completed by borrowing from one another. A blank addressee is not evidence that the letter is meant for the train's next world; an unassigned far side is not a postal address waiting to be filled. Their shared appearance in two proposed record forms makes a useful comparison, but does not establish that either form is in use or that the forms belong to one journey.
+
+The distinction also keeps three source layers visible: the envelope face and docket are editorial proposals; the Gate account supplies the crossing and unnamed far side; no consulted account describes correspondence, a recipient, or mail carried aboard the locomotive. See the [Train Dock's proposed docket]({{ '/library/train-dock/#blank-record-header--proposed-form' | relative_url }}) for the journey field and the [Gate crossing record]({{ '/library/vesperglass-gate/#crossing-record--an-interpretive-sequence' | relative_url }}) for the described emergence.
+
 ### Envelope mock-up · overlap and visual legibility
 
 At the scale shown in Figure I, the proposed overprint crosses the Gate stamp's central opening and lower ring, then extends beyond the stamp's right edge. Its circular seal also overlaps the ring's left side. This is a visible consequence of the mock-up's chosen placement, not a record of how a real stamp would be canceled. The mark makes its own lettering and ring prominent while partially veiling the architecture used as the stamp's subject.
