@@ -12,6 +12,8 @@ These edition notes record additions to the existing folios. Where a record's so
 
 ## October 31, 2026
 
+- **Star Archive** — Added a three-view comparison of its Atlas destination illustration, interior Plate I, and proposed cutaway Plate II, separating visible motifs from the limited written account; included a generated study labeled as interpretation. [Read the comparison →]({{ '/library/star-archive/#atlas-picture-and-folio-plates--three-views-no-measured-match' | relative_url }})
+
 - **Image Gallery and Vesperglass Atlas** — Separated the eight active named-island pictures into an **Atlas place illustrations** kind, distinct from active map layers and editorial status; left unused landmark/orbital variants unclassified and added a generated role study. [Browse the Atlas imagery note →]({{ '/library/gallery/#atlas-imagery--place-illustration-and-map-layers' | relative_url }})
 
 - **Image Gallery** — Added a primary asset-kind filter for folio plates and illustrations, map layers, diagrams, sprites, and other artwork, with site-role labels distinct from editorial status and topic tags. [Browse the gallery →]({{ '/library/gallery/#asset-kind-filters' | relative_url }})

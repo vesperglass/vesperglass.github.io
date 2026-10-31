@@ -176,6 +176,34 @@ The words *interpretation*, *editorial diagram*, and *unclassified source status
 
 The separation matters even when an image portrays a record. A gallery tag follows the **image**, not the status of every object pictured within it. The proposed catalog fields follow the **imagined chart**, not the file that illustrates it. Thus, labeling an image *interpretation* does not settle whether a named place is established; leaving the chart's maker *unknown* does not make the site's image source unclassified. The [gallery's Atlas status note]({{ '/library/gallery/#atlas-imagery--place-illustration-and-map-layers' | relative_url }}) shows the same rule for a named place picture and the background layers around it.
 
+### Atlas picture and folio plates · three views, no measured match
+
+The Atlas associates a floating-island illustration with Star Archive; this is a visual entry point for visitors. The folio's Plate I depicts a circular reading room, while Plate II is explicitly a proposed cutaway. Their related glass, circular, and starry details invite comparison, but resemblance across pictures cannot establish that they record one surveyed building. The named place's established description remains narrower: Star Archive keeps knowledge of the sky. Its actual exterior, dimensions, floor plan, collection, and keepers are not enumerated in the surviving account.
+
+<figure class="specimen-plate">
+  <img src="{{ '/assets/library/star-archive-three-view-scope.png' | relative_url }}" alt="A generated triptych juxtaposes a small floating glass pavilion, a circular book-lined reading room, and an axonometric radial-shelf cutaway, each in its own frame." loading="lazy">
+  <figcaption><span>FIGURE III · INTERPRETIVE VIEW-COMPARISON STUDY</span> This generated synthesis restages three visual scopes associated with Star Archive. Its repeated circular forms and shared palette are editorial choices, not evidence that the Atlas image, Plate I, and proposed Plate II correspond in geometry or depict a measured structure.</figcaption>
+</figure>
+
+| View | What the picture visibly offers | What can be stated about its status | What it cannot establish |
+| --- | --- | --- | --- |
+| **Atlas illustration** · `atlas-island-archive.png` | A floating circular platform supports a glass-and-bronze, many-windowed pavilion with a prominent spherical ornament above the roof. | The current Atlas associates this illustration with the named Star Archive destination. Its appearance is interpretive artwork. | The Archive's actual island outline, architecture, dimensions, orientation, or the orb's name, function, or presence in an established account. |
+| **Plate I** · `archive-interior.webp` | A circular room lined with dark teal books; a reading table sits beneath a glass lamp, with a small figure among the shelves. | The image caption describes a reading room arranged around a table for shared consultation. The written account establishes only the place's sky-knowledge role. | That this exact room exists, that the figure is an archivist, or that the depicted books and instruments are Archive holdings. |
+| **Plate II** · `archive-cutaway.webp` | A proposed axonometric cutaway shows radial stacks, an upper gallery, a central table, and a domed skylight. | It is an editorial architectural proposal, not a surviving plan or measured survey. | Actual floor area, access, the room's construction, or a confirmed correspondence with either of the other pictures. |
+
+#### Motif-by-motif reading
+
+| Comparison | Visible echo | Evidence boundary |
+| --- | --- | --- |
+| **Circular organization** | The Atlas platform and proposed cutaway both favor a round footprint; Plate I curves shelves around its room. | The likeness belongs to the illustrations. No account fixes the Archive's exterior outline or joins the pictured shelf wall to the cutaway's radial plan. |
+| **Glass above or around the reading space** | The Atlas pavilion has a glazed dome; Plate I includes a glass lamp and tall windows; Plate II proposes a domed skylight. | These are distinct pictured elements. Shared glass does not establish one roof, a light source, or a building specification. |
+| **Knowledge and the night sky** | Books, star-patterned decoration, and night views appear in the proposed plates. | Only the Archive's role as a repository for knowledge of the sky is established. No surviving inventory confirms these volumes, charts, decoration, or a particular celestial subject. |
+| **People and use** | A small person appears in Plate I; the other views show no identifiable person. | The figure's identity, residence, occupation, and activity are not established; absence from the other views is not evidence that the place is unstaffed. |
+
+The useful result is a separation of scale and claim: the Atlas picture helps visitors recognize a named destination; Plate I offers an imagined room view; Plate II makes one possible interior arrangement legible. The three images can share an editorial vocabulary without serving as independent witnesses to the same architecture. For now, the floating platform, dome, radial arrangement, and room fittings remain visual proposals wherever the written account does not name them.
+
+The image records are searchable in the [Encyclopedia Image Gallery]({{ '/library/gallery/' | relative_url }}); its **Atlas place illustrations** kind describes the Atlas files' website role, while **interpretation** marks their editorial status. Neither label verifies the proposed building forms. The [Universe Library]({{ '/library/' | relative_url }}) links this folio with other named places, but those editorial cross-references likewise do not describe a physical route or shared construction.
+
 ## At a glance
 
 <dl class="folio-glossary">
