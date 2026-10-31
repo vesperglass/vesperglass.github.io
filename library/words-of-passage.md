@@ -2,7 +2,7 @@
 layout: default
 title: Words of Passage
 kicker: THE VESPERGLASS ENCYCLOPEDIA · REFERENCE INSERT
-description: A cross-reference to the starwell, Gate bloom, stardust, and the Train Dock's guide path.
+description: A cross-reference to travel terms, the Dock's drawn approach line, and the Gate's interworld passage account.
 permalink: /library/words-of-passage/
 ---
 
@@ -60,6 +60,26 @@ The Dock plate may invite a reader to imagine a continuous route because its cur
 This distinction is lexical and evidentiary, not a claim that the train follows two unrelated journeys. A future account might connect a particular departure to a crossing, but neither current description identifies an event, route, interval, track, or transition between them. Until then, *same passage* is a Dock reference and *passage between worlds* is the Gate's role.
 
 See [the Train Dock's approach and berth key]({{ '/library/train-dock/#berth-and-approach--a-two-state-alignment-key' | relative_url }}) for the Dock-local movement, and [the Gate crossing account]({{ '/library/vesperglass-gate/#crossing-record--an-interpretive-sequence' | relative_url }}) for the bloom and emergence language.
+
+#### The Dock plan's line and the Gate crossing · drawing beside wording
+
+The [Train Dock's Plate II]({{ '/library/train-dock/#berth-and-approach--a-two-state-alignment-key' | relative_url }}) turns the approach into a visible curve that straightens beside the berth. The Dock account calls the departure “through the same passage,” referring back to that local approach and berth movement. The Gate account uses *passage* for a different scale of event: a crossing between worlds, accompanied by the bloom. The plan line can help readers picture the Dock description, but it does not draw the train's interworld course.
+
+<figure class="specimen-plate">
+  <img src="{{ '/assets/library/words-passage-comparison.png' | relative_url }}" alt="An interpretive two-panel comparison: at left, a curved approach line straightens alongside a floating Train Dock with a small locomotive; at right, a separate platform holds a luminous ring around a train. A broad dark gap separates the panels, with no connector between the Dock and Gate." loading="lazy">
+  <figcaption><span>FIGURE II · INTERPRETIVE COMPARISON</span> The generated plate places the Dock's proposed approach drawing beside the Gate's described bloom. Its brass-and-glass architecture and spatial arrangement are reconstructions; the open gap deliberately adds no Dock-to-Gate line or route.</figcaption>
+</figure>
+
+| Evidence layer | What it says or depicts | Proper scope | What remains unestablished |
+| --- | --- | --- | --- |
+| **Dock plan line** | A broad curve reaches the long berth edge and straightens alongside it. | A proposed plan view of local approach and alignment at Vesperglass Train Dock. | A measured track, rail, bearing, permanent guide structure, or line continuing toward the Gate. |
+| **“Through the same passage”** | The Dock account describes departure by the passage used in approaching and berthing. | A textual reference back to the Dock's own movement. | A second destination, a crossing between worlds, or a connection to the Gate platform. |
+| **“Passage between worlds”** | The Gate account describes the train crossing between worlds as a bright bloom gathers, conceals it briefly, and opens at emergence. | The Gate's interworld role and the event described around that crossing. | The Dock's curved approach as its route, or the plan's line as a depiction of the bloom's mechanism. |
+| **The two records together** | One concerns berth movement at the Dock; the other concerns passage at the separate Gate. | A useful vocabulary comparison for readers following the train accounts. | That both accounts record the same dated trip, one continuous route, a time interval, or the physical transition between platforms. |
+
+The two phrases can describe movements made by the same train without naming one continuous passage. In the Dock phrase, *same* points back to its earlier approach; the Gate phrase names a crossing between worlds. In the plan, a line gives the local Dock movement a readable shape; in the Gate account, the bloom supplies an event description rather than a drawn path. Neither source fills the gap between them.
+
+The proposed comparison image is not additional route evidence. Its two panels are deliberately unconnected, and the drawing's line remains inside the Dock scene. The [Train Dock folio]({{ '/library/train-dock/' | relative_url }}) leaves the route from berth to Gate unspecified; [the Gate folio]({{ '/library/vesperglass-gate/' | relative_url }}) describes the crossing but no approach from the Dock. The labels therefore keep the plan, the Dock's return movement, and the Gate's interworld account distinct.
 
 ## Reader pronunciation key · English-language cues
 

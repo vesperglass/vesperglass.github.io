@@ -12,6 +12,8 @@ These edition notes record additions to the existing folios. Where a record's so
 
 ## October 31, 2026
 
+- **Words of Passage** — Compared the Dock's proposed approach line and “same passage” wording with the Gate's interworld crossing account; added a generated diagram-like illustration that keeps the records unconnected. [Read the comparison →]({{ '/library/words-of-passage/#the-dock-plans-line-and-the-gate-crossing--drawing-beside-wording' | relative_url }})
+
 - **Image gallery** — Added per-asset editorial-status labels and searchable status tags for known interpretive illustrations, editorial diagrams, and unclassified assets; included a generated Observatory interpretation as a labeled example. [Browse the gallery →]({{ '/library/gallery/' | relative_url }})
 
 - **Vesperglass Postal Service** — Added a blank-field legend separating sender, recipient, and pictured-place roles, with a generated interpretive envelope study and explicit source limits. [Read the field legend →]({{ '/library/postal-service/#blank-address-field-legend--sender-recipient-and-pictured-place' | relative_url }})
