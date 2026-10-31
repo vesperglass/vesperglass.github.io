@@ -38,7 +38,7 @@
     if (path.includes("sprite")) return "Sprites";
     if (activeAtlasPlaceArtwork.has(filename)) return "Atlas place illustrations";
     if (path.includes("/leaflet/") || filename === "atlas-deep-starfield.svg" || /^atlas-orbit-stars-/.test(filename)) return "Maps and map layers";
-    if (/(?:plan|cutaway|comparison|overprint|asset-kinds|motifs|relationships-plate|boundary)/.test(filename) || (path.includes("/library/") && filename.endsWith("-plate.svg"))) return "Diagrams";
+    if (/(?:plan|cutaway|comparison|overprint|asset-kinds|motifs|relationships-plate|boundary|cue-key)/.test(filename) || (path.includes("/library/") && filename.endsWith("-plate.svg"))) return "Diagrams";
     if (path.includes("/library/") || filename.includes("-plate.")) return "Folio plates and illustrations";
     return "Other site artwork";
   };

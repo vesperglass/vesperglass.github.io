@@ -183,6 +183,24 @@ The note pairs naturally with the proposed arrival phrases above. A short greeti
 
 No acoustic recording or dated description accompanies the chamber. These lines do not identify a visitor, keeper, crossing, or sound source, and they establish no sound practice for the house.
 
+### Reading key · pictured position and proposed sensation
+
+The comparison below separates the place where a listener is imagined from the sensation assigned to that place. The first column can be checked against the two illustrations; the second is language supplied by the proposed note. The third names the kind of account that would be needed before a reader could treat the sound as an observation rather than a scene.
+
+<figure class="specimen-plate">
+  <img src="{{ '/assets/library/threshold-sound-cue-key.png' | relative_url }}" alt="A generated comparison plate pairs an open arched chamber view with a top-down room drawing; fine brass lines connect the depicted arch, side bench, and central passage as an editorial reading key." loading="lazy">
+  <figcaption><span>INTERPRETATION · COMPARISON KEY</span> The generated lines connect features selected for this reading; they do not certify that the illustrations show the same room. No sound, material, dimension, or acoustic response is recorded by the plate.</figcaption>
+</figure>
+
+| Pictured position | What the proposed note asks a reader to imagine | What evidence would be needed to describe it as an observation |
+| --- | --- | --- |
+| **Under the arch** | A phrase seems to return briefly from above. | An account of the arch's enclosure and surfaces, together with a description of a voice heard there; neither plate supplies a height or a listening record. |
+| **Beside the bench** | A reply feels close and contained. | A source describing the room's wall finish, seat, distances, and a speaker's position; the images do not establish those conditions or even that the views share a layout. |
+| **Across the open line** | Footsteps might register before speech. | A described passage and floor surface, plus an account of footsteps under those conditions; neither illustration records movement or a crossing. |
+| **Near a lit recess** | No separate sound is assigned. | A source identifying a sound-producing device or event. Light in a picture alone does not supply one. |
+
+This distinction keeps the note useful without turning an illustration into an instrument. The plates offer three locations for a reader's attention, not a basis for predicting how a voice or step would carry. Until a dated account describes the surfaces, dimensions, occupancy, and listening conditions, the acoustic phrases remain optional interpretation. The [Gate's crossing recollections]({{ '/library/vesperglass-gate/' | relative_url }}) concern a separate passage; their mention of hush or song does not serve as a room measurement or corroborating sound report for Threshold House.
+
 ### Room-sound note · plate support audit
 
 The sound note above attaches imagined listening to features in two proposed plates. This audit checks the visual footing of each scene and marks where an illustration stops supporting an acoustic claim. It is a source-reading aid: the images do not measure sound, and the surviving account does not describe the interior.

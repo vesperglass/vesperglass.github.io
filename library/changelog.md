@@ -12,6 +12,8 @@ These edition notes record additions to the existing folios. Where a record's so
 
 ## October 31, 2026
 
+- **Threshold House** — Added an interpretive visual cue key and evidence-needed register for the proposed room-sound note, separating the pictured arch, bench, and open passage from any measured or established acoustic quality. [Read the sound-note audit →]({{ '/library/threshold-house/#reading-key--pictured-position-and-proposed-sensation' | relative_url }})
+
 - **Vesperglass Postal Service** — Audited the star-and-dot flourishes beside the blank sender and addressee fields, distinguishing them from address notation, compass marks, and the separate stamp overprint; added a generated interpretive detail study. [Read the ornament note →]({{ '/library/postal-service/#envelope-star-ornaments--margin-decoration-without-address-meaning' | relative_url }})
 
 - **Star Archive** — Added a three-view comparison of its Atlas destination illustration, interior Plate I, and proposed cutaway Plate II, separating visible motifs from the limited written account; included a generated study labeled as interpretation. [Read the comparison →]({{ '/library/star-archive/#atlas-picture-and-folio-plates--three-views-no-measured-match' | relative_url }})
