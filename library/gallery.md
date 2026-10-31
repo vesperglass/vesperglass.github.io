@@ -116,6 +116,26 @@ Each clouded field card now names its panel within its own three-by-three set an
 
 The <a href="{{ '/library/star-archive/' | relative_url }}">Star Archive</a> is described as keeping knowledge of the sky, and the <a href="{{ '/library/observatory/' | relative_url }}">Observatory Logbook</a> as a place of observation and record. Neither account names the lights in these field studies or connects them with a chart or recorded observation. The <a href="{{ '/explore/' | relative_url }}">current Atlas view</a> and the named places it frames should therefore remain distinct from the unassigned clouded panels. The comparison records what the studies look like and how they are presently related to the Atlas; it leaves their provenance and subject open.
 
+<h4 id="clouded-field-palette-comparison">Palette comparison · visible color, no physical reading</h4>
+
+The two groups can be compared by the colors and contrasts visible in their panels. Study A often places deep blue around a teal plume, with violet accents appearing at some edges or lower reaches. Study B more frequently gives cyan and turquoise a bright central or crossing emphasis; blue remains prominent, while violet recurs beside some bright points and dark channels. These are broad readings of the illustrations, not measurements of every panel. The representative samples above are examples rather than a complete inventory.
+
+<figure class="specimen-plate">
+  <img src="{{ '/assets/library/atlas-clouded-field-palette-study.png' | relative_url }}" alt="An interpretive comparison of two separate cloudlike fields: the left emphasizes deep blue, teal, and violet, while the right has brighter cyan and turquoise amid blue and violet." loading="lazy">
+  <figcaption><span>INTERPRETATION · PALETTE COMPARISON</span> This generated plate abstracts a broad color contrast between the two clouded field studies. It is not a reproduction, color sample, or measurement of either group; the paired panels do not establish a common subject, chronology, or source.</figcaption>
+</figure>
+
+| Reading point | Clouded field study A | Clouded field study B | Limit of the comparison |
+| --- | --- | --- | --- |
+| **Most noticeable emphasis** | Deep blue surrounds or borders many teal-lit forms. | Cyan and turquoise often carry a brighter emphasis within the blue field. | “Emphasis” describes visual prominence, not greater energy or intensity in a measured sense. |
+| **Secondary hues** | Violet appears in some clouds and along darker margins. | Violet appears beside blue forms and, in one panel, around a warm-looking bright point. | A hue in an illustration does not identify material, temperature, or a particular source of light. |
+| **Dark areas** | Open dark channels interrupt several blue and teal forms. | Dark channels also separate some brighter cyan, blue, and violet shapes. | A similar contrast pattern does not establish the same physical structure or subject. |
+| **Point-like lights** | Small points are comparatively sparse in the representative view. | Several panels show many small points among the clouds. | Their number or appearance does not identify stars, a distance, a field density, or a coordinate system. |
+
+The safe conclusion is limited but useful: the pictures share a blue-and-teal family, while their visible emphasis differs, with A tending toward deep blue and B often showing brighter cyan or turquoise. The descriptions support an illustrated color comparison only. They cannot support a spectral reading, temperature, chemical composition, distance, celestial classification, or a claim that B is a later version of A.
+
+This boundary matters because the <a href="{{ '/library/star-archive/' | relative_url }}">Star Archive</a> is established as a repository of sky knowledge and the <a href="{{ '/library/observatory/' | relative_url }}">Observatory Logbook</a> as a place of observation and record, but neither account names these clouds or links either group to an observation. The Atlas also uses a separate dark field behind named-place views; a shared blue palette alone does not connect those background lights with either clouded group.
+
 <section class="image-collections" aria-labelledby="image-collections-heading">
   <div class="gallery-tag-heading"><h2 id="image-collections-heading">Arranged illustration series</h2><span class="collection-intro">Six related views in each series</span></div>
   <div class="collection-cards">

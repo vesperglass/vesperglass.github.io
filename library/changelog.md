@@ -12,6 +12,8 @@ These edition notes record additions to the existing folios. Where a record's so
 
 ## October 31, 2026
 
+- **Atlas field illustrations** — Compared the visible color emphasis of the two unassigned clouded field studies and added a generated interpretive plate; palette remains description only, with physical properties, celestial identity, chronology, and lineage unknown. [Read the palette comparison →]({{ '/library/gallery/#clouded-field-palette-comparison' | relative_url }})
+
 - **Atlas field illustrations** — Added card-level descriptions for all eighteen panels in two clouded studies, with an interpretive key separating panel position from celestial location. Their origins and relationship remain unassigned. [Read the panel-description key →]({{ '/library/gallery/#clouded-field-panel-descriptions' | relative_url }})
 
 - **Atlas field illustrations** — Compared two unassigned clouded field studies with the dark field and sparse lights behind current Atlas place views; described the visible differences while leaving chronology, celestial identity, and image lineage unknown. Added a generated interpretation and kept gallery tags focused on subjects and source status. [Read the field-family comparison →]({{ '/library/gallery/#orbital-field-families' | relative_url }})
