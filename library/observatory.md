@@ -173,4 +173,8 @@ The comparison with the logbook is useful: the proposed observation leaves expli
 
 <blockquote>Looking is only the first part; the record lets another traveler look again.</blockquote>
 
+### The star compass and the Workshop banner · different evidence classes
+
+The star compass is a pictured round instrument; the Workshop's star-like banner ornament is a pictured architectural detail. Both appear only in proposed artwork, not in an account that gives their names, makers, or shared history. The Workshop comparison treats the apparent resemblance as a question for readers, not as evidence that one design derives from the other. Its [paired reading and generated comparative plate]({{ '/library/workshop/#the-banner-and-the-star-compass--motif-is-not-provenance' | relative_url }}) describe the visual difference and list the unanswered provenance questions.
+
 <p class="folio-return"><a href="{{ '/library/' | relative_url }}">← Return to the Universe Library</a><a href="{{ '/' | relative_url }}">Visit the Vesperglass atlas ↗</a></p>

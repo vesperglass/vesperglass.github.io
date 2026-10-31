@@ -134,4 +134,22 @@ The established account supports the Workshop as Vesperglass's central home and 
 
 <blockquote>A place to return to before setting out again.</blockquote>
 
+### The banner and the star compass · motif is not provenance
+
+The Workshop cutaway depicts a star-like ornament on a vertical banner. In the Observatory's separate Plate II, a round marked instrument is cautiously identified as a star compass. Their shared star vocabulary makes comparison tempting, but the evidence is unlike: one is a flat architectural decoration in a proposed room; the other is a dial and pointer in a proposed instrument still life. The established place accounts do not name either object or connect the two places through it.
+
+<figure class="specimen-plate place-plate">
+  <img src="{{ '/assets/library/workshop-observatory-motifs.png' | relative_url }}" alt="An interpretive paired illustration separates a star-like stitched mark on a Workshop banner from a round Observatory compass with a needle and scale." loading="lazy">
+  <figcaption><span>COMPARATIVE PLATE</span> A generated interpretive study of two unlike forms; it is not additional source evidence and does not assign shared provenance.</figcaption>
+</figure>
+
+| Reading point | Workshop · Plate II | Observatory · Plate II | Limit of the comparison |
+| --- | --- | --- | --- |
+| **Visible form** | A star-like ornament appears on a hanging banner within the proposed cutaway. | A round marked instrument with a needle-like pointer is shown in the proposed still life. | One is a decorative mark on cloth; the other is a depicted instrument. The proposed artwork cannot establish how either was made. |
+| **Local context** | The banner is part of an imagined interior for the central home and preparation place. | The instrument sits beside an orrery, sighting tube, and closed volume in an imagined Observatory scene. | Placement explains how each illustration frames its subject; it does not document an actual room arrangement or common collection. |
+| **Possible reading** | The ornament can be read as a visual accent within a shared room. | The dial and pointer suggest a directional or positional reference, as the Observatory inventory already cautions. | These are different kinds of interpretation. Neither proves that the banner is a compass, that the compass copies the banner, or that the mark gives a bearing. |
+| **Unrecorded** | The banner's maker, name, purpose, and relation to any keeper custom are not recorded. | The compass's maker, markings, accuracy, and use are not recorded. | No common symbol system, maker, meaning, calibration, route, or connection between the places is established. |
+
+This note compares depictions, not an exchange between locations. For the instrument's pictured details and limits, see the [Observatory's Plate II inventory]({{ '/library/observatory/#plate-ii--pictured-instrument-inventory' | relative_url }}). The generated plate above is an editorial illustration made for this comparison; the two source plates remain the evidence being described.
+
 <p class="folio-return"><a href="{{ '/library/' | relative_url }}">← Return to the Universe Library</a><a href="{{ '/' | relative_url }}">Visit the Vesperglass atlas ↗</a></p>

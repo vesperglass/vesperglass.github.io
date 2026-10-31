@@ -243,7 +243,9 @@
 
         <div class="nav-label nav-label-spaced">READ THE UNIVERSE</div>
         <a href="{{ '/universe/' | relative_url }}"{% if page.url == '/universe/' %} class="active" aria-current="page"{% endif %}><span class="nav-icon">✧</span>Universe Guide</a>
-        <a href="{{ '/library/' | relative_url }}"{% if page.url contains '/library/' %} class="active" aria-current="page"{% endif %}><span class="nav-icon">▤</span>Encyclopedia</a>
+        <a href="{{ '/library/' | relative_url }}"{% if page.url == '/library/' %} class="active" aria-current="page"{% endif %}><span class="nav-icon">▤</span>Encyclopedia</a>
+        <a href="{{ '/library/gallery/' | relative_url }}"{% if page.url == '/library/gallery/' %} class="active" aria-current="page"{% endif %}><span class="nav-icon">▧</span>Image gallery</a>
+        <a href="{{ '/library/changelog/' | relative_url }}"{% if page.url == '/library/changelog/' %} class="active" aria-current="page"{% endif %}><span class="nav-icon">◷</span>Changelog</a>
 
       </nav>
 

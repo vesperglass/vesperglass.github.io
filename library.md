@@ -66,6 +66,6 @@ permalink: /library/
   </a>
 </div>
 
-<p><a href="{{ '/library/changelog/' | relative_url }}">Read the Encyclopedia changelog →</a></p>
+<p><a href="{{ '/library/gallery/' | relative_url }}">Browse the tagged image gallery →</a> &nbsp;·&nbsp; <a href="{{ '/library/changelog/' | relative_url }}">Read the Encyclopedia changelog →</a></p>
 
 <div class="library-colophon"><span class="colophon-mark" aria-hidden="true">✳</span><p><strong>On the limits of the record</strong><br>Each folio distinguishes recorded accounts from interpretation. Room plans, inventories, and the names of individual observers are not established where the surviving accounts do not say. Unknown details remain open for later records.</p></div>
