@@ -12,6 +12,8 @@ These edition notes record additions to the existing folios. Where a record's so
 
 ## October 31, 2026
 
+- **Image gallery** — Added per-asset editorial-status labels and searchable status tags for known interpretive illustrations, editorial diagrams, and unclassified assets; included a generated Observatory interpretation as a labeled example. [Browse the gallery →]({{ '/library/gallery/' | relative_url }})
+
 - **Vesperglass Postal Service** — Added a blank-field legend separating sender, recipient, and pictured-place roles, with a generated interpretive envelope study and explicit source limits. [Read the field legend →]({{ '/library/postal-service/#blank-address-field-legend--sender-recipient-and-pictured-place' | relative_url }})
 
 - **Vesperglass Collections** — Added a dedicated collections index to the main navigation and launched **Gate Bloom Studies**, six coordinated sci-fi interpretations of the Gate's described bloom, numbered `VG-GATEBLOOM-001/006` through `VG-GATEBLOOM-006/006`. The new plates appear in the searchable gallery and are described as editorial artwork rather than recovered lore. [Browse collections →]({{ '/collections/' | relative_url }}) · [Open Gate Bloom Studies →]({{ '/library/collections/gate-bloom/' | relative_url }})

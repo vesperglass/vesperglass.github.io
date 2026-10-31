@@ -22,7 +22,7 @@
   const humanize = value => value.replace(/[._-]+/g, " ").replace(/\b\w/g, letter => letter.toUpperCase()).trim();
   const classify = image => {
     const path = image.path.toLowerCase();
-    const tags = new Set([image.extension === "svg" ? "vector" : "raster", image.extension]);
+    const tags = new Set([image.extension === "svg" ? "vector" : "raster", image.extension, image.status || "unclassified source status"]);
     if (path.includes("/library/")) tags.add("encyclopedia");
     if (path.includes("/library/places/")) tags.add("place folio");
     if (path.includes("atlas") || path.includes("orbit-field") || path.includes("orbit-stars")) tags.add("atlas");
@@ -71,7 +71,7 @@
     const query = search.value.trim().toLowerCase();
     const available = availableImages();
     const visible = available.filter(image => {
-      const matchesQuery = !query || `${image.name} ${image.path} ${image.tags.join(" ")} ${image.collectible?.serial || ""} ${image.collectible?.collection || ""}`.toLowerCase().includes(query);
+      const matchesQuery = !query || `${image.name} ${image.path} ${image.status || ""} ${image.tags.join(" ")} ${image.collectible?.serial || ""} ${image.collectible?.collection || ""}`.toLowerCase().includes(query);
       const matchesTags = [...selected].every(tag => image.tags.includes(tag));
       return matchesQuery && matchesTags;
     });
@@ -103,6 +103,9 @@
       }
       const meta = document.createElement("p");
       meta.textContent = `${image.extension.toUpperCase()} · ${image.path}`;
+      const status = document.createElement("p");
+      status.className = "gallery-card-status";
+      status.textContent = `Editorial status · ${image.status || "unclassified source status"}`;
       const chipList = document.createElement("div");
       chipList.className = "gallery-card-tags";
       image.tags.slice(0, 6).forEach(tag => {
@@ -116,7 +119,7 @@
       });
       card.append(link, title);
       if (serial) card.append(serial);
-      card.append(meta, chipList);
+      card.append(meta, status, chipList);
       grid.append(card);
     });
   };

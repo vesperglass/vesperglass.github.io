@@ -1,0 +1,47 @@
+interpretation:
+  - assets/library/gallery-interpretation-example.png
+  - assets/library/gate-train-plate.webp
+  - assets/library/postal-envelope-fields.png
+  - assets/library/postal-gate-stamp.png
+  - assets/library/postal-service-plate.png
+  - assets/library/postal-stamp-collection.png
+  - assets/library/postal-stamp-foundry.png
+  - assets/library/postal-stamp-garden.png
+  - assets/library/postal-stamp-gate.png
+  - assets/library/postal-stamp-observatory.png
+  - assets/library/postmark-overprint.png
+  - assets/library/starshard-specimens.webp
+  - assets/library/threshold-lighting-comparison.png
+  - assets/library/workshop-observatory-motifs.png
+  - assets/library/places/archive-cutaway.webp
+  - assets/library/places/archive-interior.webp
+  - assets/library/places/dock-plan.webp
+  - assets/library/places/dock-plate.webp
+  - assets/library/places/foundry-interior.webp
+  - assets/library/places/foundry-tools.webp
+  - assets/library/places/garden-interior.webp
+  - assets/library/places/garden-plan.webp
+  - assets/library/places/gate-cutaway.webp
+  - assets/library/places/gate-plate.webp
+  - assets/library/places/observatory-interior.webp
+  - assets/library/places/observatory-tools.webp
+  - assets/library/places/threshold-interior.webp
+  - assets/library/places/threshold-plan.webp
+  - assets/library/places/workshop-cutaway.webp
+  - assets/library/places/workshop-interior.webp
+  - assets/collections/gate-bloom-001-first-light.png
+  - assets/collections/gate-bloom-002-radial-unfurl.png
+  - assets/collections/gate-bloom-003-prismatic-lattice.png
+  - assets/collections/gate-bloom-004-full-radiance.png
+  - assets/collections/gate-bloom-005-layered-refraction.png
+  - assets/collections/gate-bloom-006-afterglow.png
+  - assets/collections/tools-001-dividers.png
+  - assets/collections/tools-002-marking-gauge.png
+  - assets/collections/tools-003-smoothing-plane.png
+  - assets/collections/tools-004-mallet.png
+  - assets/collections/tools-005-plumb-bob.png
+  - assets/collections/tools-006-hand-drill.png
+
+editorial_diagram:
+  - assets/library/relationships-plate.svg
+  - assets/library/words-passage-plate.svg

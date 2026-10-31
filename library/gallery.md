@@ -13,7 +13,12 @@ wide: true
 
 ## Browse the image record
 
-This gallery indexes image files shipped with the site, including encyclopedia plates, map artwork, diagrams, and sprite sheets. Its names and tags describe website assets for retrieval; they are not an in-world catalogue or evidence of an object's provenance. Use the search field for words in a filename or topic tag, or select several tags to narrow the grid.
+This gallery indexes image files shipped with the site, including encyclopedia plates, map artwork, diagrams, and sprite sheets. Names and topic tags describe website assets, not an in-world catalogue. Each card also carries an **editorial status**: *interpretation* marks artwork known to be generated or reconstructed; *editorial diagram* marks a site-made reference graphic; *unclassified source status* means this index has not verified its evidentiary status. Those labels are separate from an asset's kind, and none proves an object's history or provenance. Search by filename, topic, or status, or select several tags to narrow the grid.
+
+<figure class="specimen-plate">
+  <img src="{{ '/assets/library/gallery-interpretation-example.png' | relative_url }}" alt="Interpretive illustration of the Observatory beneath a glass dome, with a long brass-and-dark-glass sighting tube, a parchment logbook, warm lamps, and a blue starfield." loading="lazy">
+  <figcaption><span>INTERPRETATION · EXAMPLE ASSET</span> A generated study draws on the Observatory's established name and its accounts of watching and keeping a record. The dome, instrument design, room fittings, and arrangement here are artistic reconstruction, not documentation of a particular room, instrument, target, or observing session. Compare the <a href="{{ '/library/observatory/' | relative_url }}">Observatory Logbook</a>.</figcaption>
+</figure>
 
 <section class="image-collections" aria-labelledby="image-collections-heading">
   <div class="gallery-tag-heading"><h2 id="image-collections-heading">Vesperglass collectible image series</h2><span class="collection-intro">Six coordinated plates in each set</span></div>
@@ -51,8 +56,11 @@ This gallery indexes image files shipped with the site, including encyclopedia p
 {%- assign gallery_svg = site.static_files | where_exp: "asset", "asset.extname == '.svg'" -%}
 {%- assign gallery_avif = site.static_files | where_exp: "asset", "asset.extname == '.avif'" -%}
 {%- assign gallery_images = gallery_images | concat: gallery_jpg | concat: gallery_jpeg | concat: gallery_webp | concat: gallery_gif | concat: gallery_svg | concat: gallery_avif -%}
-{%- for asset in gallery_images -%}
-  {"path":{{ asset.path | relative_url | jsonify }},"name":{{ asset.name | split: "." | first | replace: "-", " " | jsonify }},"extension":{{ asset.extname | remove_first: "." | jsonify }}}{% unless forloop.last %},{% endunless %}
+  {%- for asset in gallery_images -%}
+  {%- assign asset_key = asset.path | remove_first: '/' -%}
+  {%- assign editorial_status = 'unclassified source status' -%}
+  {%- if site.data.image_status.interpretation contains asset_key -%}{%- assign editorial_status = 'interpretation' -%}{%- elsif site.data.image_status.editorial_diagram contains asset_key -%}{%- assign editorial_status = 'editorial diagram' -%}{%- endif -%}
+  {"path":{{ asset.path | relative_url | jsonify }},"name":{{ asset.name | split: "." | first | replace: "-", " " | jsonify }},"extension":{{ asset.extname | remove_first: "." | jsonify }},"status":{{ editorial_status | jsonify }}}{% unless forloop.last %},{% endunless %}
 {%- endfor -%}
 ]
 </script>
