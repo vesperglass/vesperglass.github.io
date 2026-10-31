@@ -136,6 +136,19 @@ Plate I places a standing figure at the chamber's left wall, turned toward a row
 
 The key editorial distinction is **co-presence versus attribution**: placing a figure beside proposed dialogue does not make the figure its speaker. The lines remain unattributed examples, and the pictured gesture remains a visual detail. The [phrasebook slip](#phrasebook-slip--words-for-arriving) supplies the wording; the [place account](#the-place-in-the-atlas) records only Threshold House as a named platform and leaves its inhabitants and purpose undescribed. No arrival scene or welcome custom is established by combining them.
 
+### Cases beside the bench · belongings without a traveler record
+
+Plate I also places two box-like cases on the floor beside the long bench, with a folded textile draped across the seat. Their position can make the proposed arrival phrases feel close at hand: one line acknowledges someone who has arrived but is not ready to recount a journey. Yet the illustration does not identify the cases as luggage or show who brought them. A pictured object and a proposed greeting can be read together without becoming evidence of one arrival.
+
+| Evidence layer | What appears | Cautious reading | What remains unestablished |
+| --- | --- | --- | --- |
+| **Cases** | Two dark, box-like objects sit on the floor near the bench's left end. | Their shape and placement make “cases” a useful visual label. | Whether they are travel cases, what they contain, whether they are open or closed, and who owns or placed them. |
+| **Textile** | A folded or draped cloth rests over part of the bench. | The image includes a soft-looking item next to the cases. | Whether it is clothing, a blanket, a covering for an object, or associated with either case. |
+| **Phrasebook scene** | The first proposed exchange is for someone who has arrived and may not wish to recount a journey. | The wording offers one possible context in which a reader might notice the cases. | That the depicted objects belong to a speaker, listener, traveler, or person addressed by the lines. |
+| **Place account** | Threshold House is named among Vesperglass's platforms. | The name and proposed furnishings invite a reading about pause or arrival. | A traveler, arrival event, lodging role, luggage practice, or established waiting custom at the House. |
+
+The safe distinction is between **objects placed near a bench** and **belongings assigned to a person**. Neither a matching location nor a phrase about arrival supplies ownership or provenance. The [phrasebook slip](#phrasebook-slip--words-for-arriving) remains proposed and unattributed; the [place account](#the-place-in-the-atlas) remains the only source for the established name and says nothing about travelers or lodging. These cases therefore enrich the illustration's composition without completing an itinerary or household history.
+
 ## Room-sound note · proposed readings
 
 No surviving account describes how Threshold House sounds. The chamber, bench, lamp niches, and open glass arch belong to a reconstructed interior, so the following acoustic readings are proposals attached to that arrangement. They are written to help readers picture a conversation, not transcribed testimony or evidence of a particular arrival.
