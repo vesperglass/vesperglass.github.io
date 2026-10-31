@@ -277,6 +277,25 @@ The distinction between **sender** and **addressee** is relational: one names th
 
 Accordingly, the blank values are intentional source boundaries rather than missing examples to infer. The [Train Dock docket]({{ '/library/train-dock/#blank-record-header--proposed-form' | relative_url }}) asks where a train might emerge; the addressee zone asks who might receive correspondence. Their adjacency on a page does not make a recipient the train's destination. Likewise, the [Gate folio]({{ '/library/vesperglass-gate/' | relative_url }}) supports the place reference but not a postal connection. These diagrams and labels remain editorial proposals; no postal operation is implemented or asserted here.
 
+### Envelope star ornaments · margin decoration without address meaning
+
+Figure II places a small four-point star beside each of the two blank writing zones. The upper-left sender / return area has three horizontal rules, with its star-and-dot flourish at their left; the lower addressee area has four rules, with a similar flourish beside them. In both cases the marks sit outside the writing lines. The image gives them no label or stated postal function, so the safest description is **decorative star ornaments in the margins**.
+
+<figure class="specimen-plate">
+  <img src="{{ '/assets/library/postal-envelope-star-fields.png' | relative_url }}" alt="A generated two-panel parchment study shows small four-point star flourishes beside, but separate from, a three-rule blank field and a four-rule blank field." loading="lazy">
+  <figcaption><span>FIGURE III · INTERPRETIVE DETAIL STUDY</span> This generated close study isolates two decorative marks from the empty writing rules. It is not a recovered address form; the star shape supplies no compass direction, route, sender, recipient, or postal notation.</figcaption>
+</figure>
+
+| Location in Figure II | Visible relationship to the blank field | What can be read safely | What remains unsupported |
+| --- | --- | --- | --- |
+| **Sender / return zone** | A four-point star sits at the top of a fine vertical flourish just left of the three writing rules. Small dots continue below it. | A repeated ornamental mark has been placed in the margin beside an empty sender / return field. | A return-address symbol, sender's initial, direction, routing instruction, or expected way to complete the field. |
+| **Addressee zone** | A similar star-and-dot flourish appears beside the larger block of four blank rules. It is separate from the lines themselves. | The generated layout repeats the decorative treatment beside a second empty writing area. | A recipient code, postal zone, destination marker, address punctuation, or standard form notation. |
+| **Stamp and overprint** | The stamp occupies the upper-right of the envelope. Its proposed ring and cancellation-like strokes cross the stamp image; neither margin star joins those strokes. | The illustration gives the stamp / overprint a distinct graphic area from the two writing zones. | That any stroke canceled a real stamp, that either star belongs to the overprint, or that the layout records a dispatched letter. |
+
+The two stars' placement near address lines does not turn them into address marks. Their four-point shape can resemble a compass rose, but neither star has a north indicator, bearing, linked route, or textual key. The empty rules remain empty. Likewise, the place-name and Gate imagery in the proposed stamp do not identify a sender's location or an addressee's destination. The earlier [address-field legend](#blank-address-field-legend--sender-recipient-and-pictured-place) keeps people-fields distinct from pictured places; this detail note adds no value to either field.
+
+There is a separate proposed notation key in the [Star Archive folio]({{ '/library/star-archive/#proposed-margin-mark-legend--the-unfixed-meridian' | relative_url }}): its return, uncertainty, and unverified-place symbols are explicitly assigned editorial meanings for an imagined chart margin. That key does not label the envelope stars, and similar graphic vocabulary is not evidence of a shared code or author. The envelope marks remain unassigned decorative additions to a generated layout.
+
 ### Addressee and destination · envelope field versus journey endpoint
 
 The blank envelope reserves a place for an addressee; the proposed Train Dock docket has an **Origin / destination** field for a crossing. Both concern an endpoint in ordinary reading, but they ask different questions. An addressee is a recipient to whom correspondence might be directed. A destination in the docket would identify where the train emerges. The crossing account leaves that far side unnamed, while the envelope contains no recipient or address.
