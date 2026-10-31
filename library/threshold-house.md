@@ -9,7 +9,7 @@ permalink: /library/threshold-house/
 <nav class="folio-back" aria-label="Back to the Universe Library"><a href="{{ '/library/' | relative_url }}">← Universe Library</a><span>FIELD EDITION &nbsp;·&nbsp; FOLIO 003</span></nav>
 
 <figure class="book-plate">
-  <img src="{{ '/assets/library/places/threshold-interior.webp' | relative_url }}" alt="An open, lantern-lit threshold chamber with a long bench and tall glass arch looking out into the stars." fetchpriority="high">
+  <img src="{{ '/assets/library/places/threshold-interior.webp' | relative_url }}" alt="A standing figure faces lit wall recesses beside a long bench in a lantern-lit chamber, with cases on the floor and a tall glass arch opening onto the stars." fetchpriority="high">
   <figcaption><span>PLATE I</span> An interpretive interior: a sheltered pause beside a passage open to the night sky.</figcaption>
 </figure>
 
@@ -122,6 +122,19 @@ The distinction lets a reader keep both ideas in view without forcing them toget
 ### How the slips are meant to work
 
 These lines offer three kinds of welcome: recognition, choice, and room for an unresolved account. The suggested replies are alternatives, not required responses; silence would work just as well. No surviving account establishes the phrases as local custom or assigns a route, time, or history to a particular arrival. They pair with the Gate folio's accounts of an unnamed crossing and the Workshop's proposed practice of carrying an open question forward, while adding no new facts about either place. [Read the Gate crossing record →]({{ '/library/vesperglass-gate/' | relative_url }}) · [Read the Workshop customs →]({{ '/library/workshop/' | relative_url }})
+
+### The standing figure and the phrasebook · pose is not speech
+
+Plate I places a standing figure at the chamber's left wall, turned toward a row of lit recesses beside the bench. One arm is raised near the shelving. The figure's face is not clearly visible, and the image does not show them addressing the open arch or another person. The phrasebook above is a proposed set of arrival lines with no speaker assigned. Read together, the illustration and wording can suggest a social scene, but neither identifies this figure as the speaker or listener.
+
+| Evidence layer | What it presents | Safe connection | What remains unestablished |
+| --- | --- | --- | --- |
+| **Plate I · position** | A person stands beside the left wall's recessed shelves and lamps, near the long bench. | The figure is situated within the proposed chamber, among features named in the room reading. | Their identity, residence, occupation, or reason for standing there. |
+| **Plate I · gesture and attention** | One arm is raised near the recesses; the figure is turned toward the wall rather than clearly toward the central opening. | The pose draws attention to the lit shelving and its immediate surroundings. | Whether the figure touches a lamp, selects an object, speaks, listens, or responds to an arrival. |
+| **Phrasebook · wording** | Three proposed exchanges offer recognition, a choice between a question and quiet, and the option to leave a crossing unnamed. | The lines provide possible language for an imagined encounter near a threshold. | Who says them, to whom, when, or whether anyone at Threshold House uses such words. |
+| **Combined reading** | A person appears in the same proposed room where greeting lines are printed. | A reader may imagine a keeper or visitor speaking within the scene. | That the depicted person participates in the exchange, welcomes an arrival, or belongs to an established household or custom. |
+
+The key editorial distinction is **co-presence versus attribution**: placing a figure beside proposed dialogue does not make the figure its speaker. The lines remain unattributed examples, and the pictured gesture remains a visual detail. The [phrasebook slip](#phrasebook-slip--words-for-arriving) supplies the wording; the [place account](#the-place-in-the-atlas) records only Threshold House as a named platform and leaves its inhabitants and purpose undescribed. No arrival scene or welcome custom is established by combining them.
 
 ## Room-sound note · proposed readings
 
