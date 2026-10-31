@@ -12,6 +12,8 @@ These edition notes record additions to the existing folios. Where a record's so
 
 ## October 31, 2026
 
+- **Image Gallery and Vesperglass Atlas** — Separated the eight active named-island pictures into an **Atlas place illustrations** kind, distinct from active map layers and editorial status; left unused landmark/orbital variants unclassified and added a generated role study. [Browse the Atlas imagery note →]({{ '/library/gallery/#atlas-imagery--place-illustration-and-map-layers' | relative_url }})
+
 - **Image Gallery** — Added a primary asset-kind filter for folio plates and illustrations, map layers, diagrams, sprites, and other artwork, with site-role labels distinct from editorial status and topic tags. [Browse the gallery →]({{ '/library/gallery/#asset-kind-filters' | relative_url }})
 
 - **Star Archive** — Clarified that “Meridian” is only an interpretive chart title, not evidence for a line, coordinate system, bearing, or navigation method; added a generated title-versus-feature study. [Read the note →]({{ '/library/star-archive/#title-word-and-map-feature-boundary--meridian' | relative_url }})

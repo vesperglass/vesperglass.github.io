@@ -20,12 +20,23 @@
   const selected = new Set();
   let selectedKind = "";
   const collectibleByPath = new Map();
+  const activeAtlasPlaceArtwork = new Set([
+    "atlas-island-archive.png",
+    "atlas-island-threshold.png",
+    "atlas-island-workshop.png",
+    "atlas-island-observatory.png",
+    "atlas-island-garden.png",
+    "atlas-island-foundry.png",
+    "atlas-island-gate.png",
+    "atlas-island-space-dock.png"
+  ]);
   collections.forEach(collection => collection.items.forEach(item => collectibleByPath.set(item.image, { serial: item.serial, collection: collection.title })));
   const humanize = value => value.replace(/[._-]+/g, " ").replace(/\b\w/g, letter => letter.toUpperCase()).trim();
   const kindFor = image => {
     const path = image.path.toLowerCase();
     const filename = path.split("/").pop();
     if (path.includes("sprite")) return "Sprites";
+    if (activeAtlasPlaceArtwork.has(filename)) return "Atlas place illustrations";
     if (path.includes("/leaflet/") || filename === "atlas-deep-starfield.svg" || /^atlas-orbit-stars-/.test(filename)) return "Maps and map layers";
     if (/(?:plan|cutaway|comparison|overprint|asset-kinds|motifs|relationships-plate|boundary)/.test(filename) || (path.includes("/library/") && filename.endsWith("-plate.svg"))) return "Diagrams";
     if (path.includes("/library/") || filename.includes("-plate.")) return "Folio plates and illustrations";
