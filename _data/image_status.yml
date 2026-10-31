@@ -1,5 +1,6 @@
 interpretation:
   - assets/library/gallery-interpretation-example.png
+  - assets/library/gallery-atlas-interpretation-example.png
   - assets/library/gate-train-plate.webp
   - assets/library/postal-envelope-fields.png
   - assets/library/postal-gate-stamp.png
@@ -30,6 +31,14 @@ interpretation:
   - assets/library/places/threshold-plan.webp
   - assets/library/places/workshop-cutaway.webp
   - assets/library/places/workshop-interior.webp
+  - assets/atlas-island-archive.png
+  - assets/atlas-island-threshold.png
+  - assets/atlas-island-workshop.png
+  - assets/atlas-island-observatory.png
+  - assets/atlas-island-garden.png
+  - assets/atlas-island-foundry.png
+  - assets/atlas-island-gate.png
+  - assets/atlas-island-space-dock.png
   - assets/collections/gate-bloom-001-first-light.png
   - assets/collections/gate-bloom-002-radial-unfurl.png
   - assets/collections/gate-bloom-003-prismatic-lattice.png
@@ -46,3 +55,15 @@ interpretation:
 editorial_diagram:
   - assets/library/relationships-plate.svg
   - assets/library/words-passage-plate.svg
+
+map_interface:
+  - assets/atlas-deep-starfield.svg
+  - assets/atlas-orbit-stars-r1c1.svg
+  - assets/atlas-orbit-stars-r1c2.svg
+  - assets/atlas-orbit-stars-r1c3.svg
+  - assets/atlas-orbit-stars-r2c1.svg
+  - assets/atlas-orbit-stars-r2c2.svg
+  - assets/atlas-orbit-stars-r2c3.svg
+  - assets/atlas-orbit-stars-r3c1.svg
+  - assets/atlas-orbit-stars-r3c2.svg
+  - assets/atlas-orbit-stars-r3c3.svg

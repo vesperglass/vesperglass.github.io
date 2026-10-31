@@ -13,12 +13,29 @@ wide: true
 
 ## Browse the image record
 
-This gallery indexes image files shipped with the site, including encyclopedia plates, map artwork, diagrams, and sprite sheets. Names and topic tags describe website assets, not an in-world catalogue. Each card also carries an **editorial status**: *interpretation* marks artwork known to be generated or reconstructed; *editorial diagram* marks a site-made reference graphic; *unclassified source status* means this index has not verified its evidentiary status. Those labels are separate from an asset's kind, and none proves an object's history or provenance. Search by filename, topic, or status, or select several tags to narrow the grid.
+This gallery indexes image files shipped with the site, including encyclopedia plates, map artwork, diagrams, and sprite sheets. Names and topic tags describe website assets, not an in-world catalogue. Each card also carries an **editorial status**: *interpretation* marks artwork known to be generated or reconstructed; *editorial diagram* marks a site-made reference graphic; *map interface layer* marks a background image used in the Atlas view; *unclassified source status* means this index has not verified its evidentiary status. Those labels are separate from an asset's kind, and none proves an object's history or provenance. Search by filename, topic, or status, or select several tags to narrow the grid.
 
 <figure class="specimen-plate">
   <img src="{{ '/assets/library/gallery-interpretation-example.png' | relative_url }}" alt="Interpretive illustration of the Observatory beneath a glass dome, with a long brass-and-dark-glass sighting tube, a parchment logbook, warm lamps, and a blue starfield." loading="lazy">
   <figcaption><span>INTERPRETATION · EXAMPLE ASSET</span> A generated study draws on the Observatory's established name and its accounts of watching and keeping a record. The dome, instrument design, room fittings, and arrangement here are artistic reconstruction, not documentation of a particular room, instrument, target, or observing session. Compare the <a href="{{ '/library/observatory/' | relative_url }}">Observatory Logbook</a>.</figcaption>
 </figure>
+
+### Atlas imagery · place illustration and map layers
+
+Some Atlas files sit at named place markers; others form the starfield behind the map. Those roles call for different labels. The floating-island illustrations are tagged as **interpretation**: they give the named places a coherent visual appearance, but their invented landforms, buildings, and decorative details are not a survey of a platform's true shape. The starfield tile and deep background are tagged as **map interface layer** because they are used to compose the Atlas view; the tiny stars are not an astronomical chart or evidence for named bodies.
+
+<figure class="specimen-plate">
+  <img src="{{ '/assets/library/gallery-atlas-interpretation-example.png' | relative_url }}" alt="An interpretive comparison shows a glass-and-bronze pavilion on an illustrated floating island beside a separate blank locator card with one brass dot." loading="lazy">
+  <figcaption><span>INTERPRETATION · ATLAS EXAMPLE</span> This generated example pairs a freely composed place illustration with a separate, unmeasured locator mark. Neither panel records a Vesperglass platform's actual landform, architecture, bearing, scale, or coordinates.</figcaption>
+</figure>
+
+| Asset group | Status in this gallery | What the status supports | What it does not establish |
+| --- | --- | --- | --- |
+| **Named floating-island pictures** (`atlas-island-*.png`) | Interpretation | Art associates an illustrated island scene with a named Atlas place. | Platform dimensions, orientation, surveyed outline, true building plan, or precise coordinates. |
+| **Deep starfield and tiled star drift** (`atlas-deep-starfield.svg`, `atlas-orbit-stars-*.svg`) | Map interface layer | These files provide the Atlas view's dark background and repeating points of light. | Named stars, celestial measurements, a verified sky chart, or a travel route. |
+| **Other orbital-field and landmark variants** | Unclassified source status | Their filenames make them searchable as Atlas-related files. | Their origin, whether they belong to an earlier map study, or whether they document a named place or celestial field. |
+
+The status review is deliberately selective. The active place pictures have a visible role in the Atlas, and their filenames and accessible descriptions name their subjects. Other orbital-field and landmark files appear in the gallery, but the consulted Atlas view and current folios do not assign them a clear source or active role; they remain **unclassified** rather than being silently promoted to map evidence. The <a href="{{ '/explore/' | relative_url }}">Vesperglass Atlas</a> connects visitors with named locations; the <a href="{{ '/library/vesperglass-gate/' | relative_url }}">Gate folio</a> and <a href="{{ '/library/train-dock/' | relative_url }}">Train Dock folio</a> keep their accounts separate from the artwork used to picture them.
 
 <section class="image-collections" aria-labelledby="image-collections-heading">
   <div class="gallery-tag-heading"><h2 id="image-collections-heading">Vesperglass collectible image series</h2><span class="collection-intro">Six coordinated plates in each set</span></div>
@@ -59,7 +76,7 @@ This gallery indexes image files shipped with the site, including encyclopedia p
   {%- for asset in gallery_images -%}
   {%- assign asset_key = asset.path | remove_first: '/' -%}
   {%- assign editorial_status = 'unclassified source status' -%}
-  {%- if site.data.image_status.interpretation contains asset_key -%}{%- assign editorial_status = 'interpretation' -%}{%- elsif site.data.image_status.editorial_diagram contains asset_key -%}{%- assign editorial_status = 'editorial diagram' -%}{%- endif -%}
+  {%- if site.data.image_status.interpretation contains asset_key -%}{%- assign editorial_status = 'interpretation' -%}{%- elsif site.data.image_status.editorial_diagram contains asset_key -%}{%- assign editorial_status = 'editorial diagram' -%}{%- elsif site.data.image_status.map_interface contains asset_key -%}{%- assign editorial_status = 'map interface layer' -%}{%- endif -%}
   {"path":{{ asset.path | relative_url | jsonify }},"name":{{ asset.name | split: "." | first | replace: "-", " " | jsonify }},"extension":{{ asset.extname | remove_first: "." | jsonify }},"status":{{ editorial_status | jsonify }}}{% unless forloop.last %},{% endunless %}
 {%- endfor -%}
 ]
