@@ -12,6 +12,8 @@ These edition notes record additions to the existing folios. Where a record's so
 
 ## October 31, 2026
 
+- **Atlas destination views and illustrated register** — Added linked, source-bounded descriptions for eight named place illustrations and a companion Observatory interpretation, separating visible motifs from measured place accounts. [Browse the Atlas destination register →]({{ '/library/gallery/#atlas-destination-views--eight-named-places' | relative_url }})
+
 - **Threshold House** — Added an interpretive visual cue key and evidence-needed register for the proposed room-sound note, separating the pictured arch, bench, and open passage from any measured or established acoustic quality. [Read the sound-note audit →]({{ '/library/threshold-house/#reading-key--pictured-position-and-proposed-sensation' | relative_url }})
 
 - **Vesperglass Postal Service** — Audited the star-and-dot flourishes beside the blank sender and addressee fields, distinguishing them from address notation, compass marks, and the separate stamp overprint; added a generated interpretive detail study. [Read the ornament note →]({{ '/library/postal-service/#envelope-star-ornaments--margin-decoration-without-address-meaning' | relative_url }})

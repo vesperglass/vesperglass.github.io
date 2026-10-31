@@ -35,20 +35,20 @@
   const kindFor = image => {
     const path = image.path.toLowerCase();
     const filename = path.split("/").pop();
-    if (path.includes("sprite")) return "Sprites";
+    if (path.includes("sprite")) return "Figure studies";
     if (activeAtlasPlaceArtwork.has(filename)) return "Atlas place illustrations";
-    if (path.includes("/leaflet/") || filename === "atlas-deep-starfield.svg" || /^atlas-orbit-stars-/.test(filename)) return "Maps and map layers";
-    if (/(?:plan|cutaway|comparison|overprint|asset-kinds|motifs|relationships-plate|boundary|cue-key)/.test(filename) || (path.includes("/library/") && filename.endsWith("-plate.svg"))) return "Diagrams";
-    if (path.includes("/library/") || filename.includes("-plate.")) return "Folio plates and illustrations";
-    return "Other site artwork";
+    if (path.includes("/leaflet/") || filename === "atlas-deep-starfield.svg" || /^atlas-orbit-stars-/.test(filename)) return "Atlas background fields";
+    if (/(?:plan|cutaway|comparison|overprint|asset-kinds|motifs|relationships-plate|boundary|cue-key)/.test(filename) || (path.includes("/library/") && filename.endsWith("-plate.svg"))) return "Plans and diagrams";
+    if (path.includes("/library/") || filename.includes("-plate.")) return "Folio illustrations";
+    return "Other illustrations";
   };
   const classify = image => {
     const path = image.path.toLowerCase();
-    const tags = new Set([image.extension === "svg" ? "vector" : "raster", image.extension, image.status || "unclassified source status", image.assetKind.toLowerCase()]);
+    const tags = new Set([image.extension === "svg" ? "vector" : "raster", image.extension, image.status || "source unassigned", image.assetKind.toLowerCase()]);
     if (path.includes("/library/")) tags.add("encyclopedia");
     if (path.includes("/library/places/")) tags.add("place folio");
     if (path.includes("atlas") || path.includes("orbit-field") || path.includes("orbit-stars")) tags.add("atlas");
-    if (path.includes("orbit-field") || path.includes("orbit-stars")) tags.add("map layer");
+    if (path.includes("orbit-field") || path.includes("orbit-stars")) tags.add("Atlas field");
     if (path.includes("sprite")) tags.add("sprite");
     if (path.includes("path-")) tags.add("route map");
     if (path.includes("postal") || path.includes("stamp")) tags.add("postal service");
@@ -121,8 +121,8 @@
     const hiddenArchiveCount = images.length - images.filter(image => !image.isArchive).length;
     const selectedKindSummary = selectedKind ? ` · ${selectedKind}` : "";
     count.textContent = showArchive.checked
-      ? `${visible.length} of ${images.length} images shown${selectedKindSummary}`
-      : `${visible.length} of ${available.length} images shown${selectedKindSummary} · ${hiddenArchiveCount} Archive images hidden by default`;
+      ? `${visible.length} of ${images.length} illustrated views shown${selectedKindSummary}`
+      : `${visible.length} of ${available.length} illustrated views shown${selectedKindSummary} · ${hiddenArchiveCount} Star Archive views set aside`;
     grid.replaceChildren();
     visible.forEach(image => {
       const card = document.createElement("article");
@@ -132,27 +132,28 @@
       link.href = image.path;
       link.target = "_blank";
       link.rel = "noopener";
-      link.setAttribute("aria-label", `Open image file: ${humanize(image.name)} (${image.extension})`);
+      const titleText = image.atlasTitle || humanize(image.name);
+      link.setAttribute("aria-label", `Open full view: ${titleText}`);
       const img = document.createElement("img");
       img.src = image.path;
-      img.alt = `Site image asset: ${humanize(image.name)}.`;
+      img.alt = image.alt || `Illustration listed as ${titleText}.`;
       img.loading = "lazy";
       link.append(img);
       const title = document.createElement("h3");
-      title.textContent = humanize(image.name);
+      title.textContent = titleText;
       const serial = image.collectible ? document.createElement("p") : null;
       if (serial) {
         serial.className = "gallery-card-serial";
         serial.textContent = `${image.collectible.serial} · ${image.collectible.collection}`;
       }
       const meta = document.createElement("p");
-      meta.textContent = `${image.extension.toUpperCase()} · ${image.path}`;
+      meta.textContent = image.atlasTitle ? "Named Atlas destination" : "Illustrated record";
       const kind = document.createElement("p");
       kind.className = "gallery-card-kind";
-      kind.textContent = `Asset kind · ${image.assetKind}`;
+      kind.textContent = `Plate kind · ${image.assetKind}`;
       const status = document.createElement("p");
       status.className = "gallery-card-status";
-      status.textContent = `Editorial status · ${image.status || "unclassified source status"}`;
+      status.textContent = `Reading status · ${image.status || "source unassigned"}`;
       const chipList = document.createElement("div");
       chipList.className = "gallery-card-tags";
       image.tags.slice(0, 6).forEach(tag => {
@@ -167,6 +168,13 @@
       card.append(link, title);
       if (serial) card.append(serial);
       card.append(meta, kind, status, chipList);
+      if (image.folioUrl) {
+        const folioLink = document.createElement("a");
+        folioLink.className = "gallery-card-folio";
+        folioLink.href = image.folioUrl;
+        folioLink.textContent = `Read the ${titleText} account →`;
+        card.append(folioLink);
+      }
       grid.append(card);
     });
   };

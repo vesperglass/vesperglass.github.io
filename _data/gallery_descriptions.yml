@@ -1,0 +1,36 @@
+atlas-island-archive.png:
+  title: Star Archive
+  alt: "Interpretive Atlas view of Star Archive: a circular, many-windowed reading hall with a broad ring terrace and glazed dome topped by a brass instrument."
+  folio_url: /library/star-archive/
+atlas-island-threshold.png:
+  title: Threshold House
+  alt: "Interpretive Atlas view of Threshold House: a gabled pale-stone house with an attached glass conservatory and a ring of lamp posts."
+  folio_url: /library/threshold-house/
+atlas-island-workshop.png:
+  title: Vesperglass Workshop
+  alt: "Interpretive Atlas view of Vesperglass Workshop: a broad glazed-roof hall with copper pipes, a furnace glow, and a paved forecourt."
+  folio_url: /library/workshop/
+atlas-island-observatory.png:
+  title: Observatory Logbook
+  alt: "Interpretive Atlas view of the Observatory: a slender, many-windowed tower beneath a split copper dome, with a telescope projecting outward."
+  folio_url: /library/observatory/
+atlas-island-garden.png:
+  title: Compass Garden
+  alt: "Interpretive Atlas view of Compass Garden: a domed glasshouse surrounded by flower beds, climbing vines, and a broad compass rose."
+  folio_url: /library/compass-garden/
+atlas-island-foundry.png:
+  title: Tideglass Foundry
+  alt: "Interpretive Atlas view of Tideglass Foundry: a glazed industrial hall with a tall chimney, copper pipes, and a bright furnace visible within."
+  folio_url: /library/tideglass-foundry/
+atlas-island-gate.png:
+  title: The Vesperglass Gate
+  alt: "Interpretive Atlas view of the Vesperglass Gate: a luminous blue aperture held in a tall ring at the end of an open platform."
+  folio_url: /library/vesperglass-gate/
+atlas-island-space-dock.png:
+  title: Vesperglass Train Dock
+  alt: "Interpretive Atlas view of the Train Dock: a long, straight platform lined with lamps, planters, and a covered passage."
+  folio_url: /library/train-dock/
+atlas-observatory-interpretive-view.png:
+  title: Observatory · companion interpretation
+  alt: "Interpretive view of a tall glazed Observatory tower with a split copper dome and outward-facing telescope, set against cloud and distant mountains."
+  folio_url: /library/observatory/
