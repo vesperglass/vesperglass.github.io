@@ -44,6 +44,19 @@ Plate II is a proposed plan study, not a measured survey. The key below names wh
 
 Read from the rose outward, the plate offers a simple way to compare the center, beds, and paths before noticing the basin and workbench. That is a reading order for the illustration, not an account of how anyone moves through the garden. The established description remains narrower: Compass Garden is a named glasshouse, while the plan's full arrangement, scale, bearing, plants, and work remain unrecorded.
 
+### Basin and workbench · plan objects against the interior view
+
+Plate II adds two clear features that Plate I does not plainly repeat: a round basin at the right side of the plan and a workbench near the lower edge. The interior view contains many vessels, raised-looking beds, lamps, and reflective paving, but it does not identify a bounded water basin or a work surface with tools. The comparison checks for possible counterparts without turning visual similarity into proof that the plates show the same room or objects.
+
+| Plan feature | What Plate II depicts | Nearest possible cue in Plate I | What the pairing can and cannot support |
+| --- | --- | --- | --- |
+| **Basin** | A circular, blue-green enclosure at the right, with pale flower-like forms on its surface. | Reflective floor tiles and several small vessels sit among the beds; no clearly bounded pool with floating blooms is identifiable. | Water is an image-based reading of the plan's blue surface. The interior offers no certain matching pool, and neither plate establishes a water source, depth, material, or use. |
+| **Workbench** | A rectangular table holds small pots, implements, and plant-like material in the lower-right corner. | Vessels and planters appear throughout the interior, but no clearly equipped worktable or matching arrangement is visible. | The plan proposes a work surface as part of its layout; the interior does not confirm it or identify the pictured vessels as tools or supplies. |
+| **Relative placement** | Both features lie toward the outer part of the drawing, away from the central rose. | The interior's vessels and lamps occupy several beds and edges rather than one clearly marked work zone. | The compositions distribute small objects differently. They do not establish a shared corner, room orientation, or precise correspondence between positions. |
+| **Activity** | The workbench and basin invite a practical reading beside planted beds. | A kneeling figure reaches toward flowers, while the image supplies no certain tool or container in the hand. | The combined images may suggest gardening to a reader, but they do not record watering, potting, harvesting, or a keeper's routine. |
+
+This is an **object-counterpart register**, not an inventory of established Garden equipment. The strongest visual overlap is the presence of vessels and planted forms in both proposals; that is too general to identify a specific pot, tool, basin, or piece of furniture across the views. The [plan key](#plan-key--reading-plate-ii) keeps the basin's source, depth, and use open, while the [keeper's hand note](#the-keepers-hand--visible-reach-and-interpretive-label) separates a pictured reach from a care task. Compass Garden remains established as a glasshouse; its surviving description does not mention water features, workbenches, tools, or maintenance practice.
+
 The proposed light calendar below uses the compass rose as a reference in its sample cues. This key clarifies that those cues belong to the proposed plan study; they do not assign the garden an absolute direction or a recurring celestial schedule.
 
 ### Centerline and curved paths · interior view against plan

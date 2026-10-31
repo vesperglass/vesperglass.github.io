@@ -12,6 +12,7 @@ These edition notes record additions to the existing folios. Where a record's so
 
 ## October 31, 2026
 
+- **Compass Garden** — Compared the plan's proposed basin and workbench with the interior plate, distinguishing general vessel and planting cues from any confirmed shared object, equipment, or care practice. [Read the object comparison →]({{ '/library/compass-garden/#basin-and-workbench--plan-objects-against-the-interior-view' | relative_url }})
 - **Compass Garden** — Compared the interior's apparent rose-to-arch sightline with the plan's radial center and curved paths, keeping composition distinct from surveyed orientation, measured layout, and any required route. [Read the cross-view comparison →]({{ '/library/compass-garden/#centerline-and-curved-paths--interior-view-against-plan' | relative_url }})
 
 ## October 30, 2026
