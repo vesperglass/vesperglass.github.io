@@ -12,6 +12,8 @@ These edition notes record additions to the existing folios. Where a record's so
 
 ## October 31, 2026
 
+- **Star Archive and Image Gallery** — Added a cross-ledger comparison separating a website image's editorial-status tag from source, title, date, and shelf fields on the proposed *Unfixed Meridian* card. [Read the status comparison →]({{ '/library/star-archive/#editorial-status-and-catalog-status--different-ledgers' | relative_url }})
+
 - **Image gallery and Vesperglass Atlas** — Reviewed place illustrations and starfield layers against the current Atlas view, distinguishing interpreted island artwork from map interface layers and leaving unverified orbital and landmark variants unclassified. Added a generated illustration to make the boundary visible. [Browse the Atlas imagery note →]({{ '/library/gallery/#atlas-imagery--place-illustration-and-map-layers' | relative_url }})
 
 - **Words of Passage** — Compared the Dock's proposed approach line and “same passage” wording with the Gate's interworld crossing account; added a generated diagram-like illustration that keeps the records unconnected. [Read the comparison →]({{ '/library/words-of-passage/#the-dock-plans-line-and-the-gate-crossing--drawing-beside-wording' | relative_url }})

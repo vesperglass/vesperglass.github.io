@@ -138,6 +138,24 @@ The two folios concern related work—keeping and revisiting knowledge of the sk
 
 The [Observatory Logbook]({{ '/library/observatory/' | relative_url }}) offers a nearby example of how uncertainty can remain visible in a proposed observation. Its sample leaf and this chart card may be read together as reference designs, but neither verifies the other's subject or provenance. The [World Relationship Index]({{ '/library/relationships/' | relative_url }}) likewise records cross-folio links as reading aids, not routes or proof of shared records.
 
+### Editorial status and catalog status · different ledgers
+
+The words *interpretation*, *editorial diagram*, and *unclassified source status* appear in the site's [Image Gallery]({{ '/library/gallery/' | relative_url }}). They describe how a **website image file** is presented and what the gallery has verified about that asset. The labels in this folio—*established place account*, *image description*, *unassigned*, and *unknown*—answer different questions about **the proposed chart and its relation to the Star Archive**. Similar-looking status language does not join the two ledgers.
+
+<figure class="specimen-plate">
+  <img src="{{ '/assets/library/archive-gallery-status-comparison.png' | relative_url }}" alt="An interpretive side-by-side illustration shows a blank parchment chart catalog card with a small star image and empty fields, apart from a dark teal image card bearing an Observatory thumbnail and an empty status ribbon." loading="lazy">
+  <figcaption><span>FIGURE I · INTERPRETIVE COMPARISON</span> The generated image uses two separate card designs to contrast proposed catalog fields with a website image label. Neither card is a recovered Star Archive form, a real gallery screenshot, or evidence that *The Unfixed Meridian* exists.</figcaption>
+</figure>
+
+| Label | What it classifies | Example on these pages | What it cannot authenticate |
+| --- | --- | --- | --- |
+| **Interpretation** · Gallery | A website image known to be generated or reconstructed. | The generated card comparison above, and the proposed image plates in this folio. | The presence of a chart in the Archive, the identity of pictured stars, or the provenance of an illustrated object. |
+| **Editorial diagram** · Gallery | A site-made reference graphic rather than a reconstructed scene. | A glossary or relationship diagram. | A catalog convention, Archive instrument, or recovered chart notation. |
+| **Unclassified source status** · Gallery | The index has not reviewed the source status of that image asset. | An orbital-field file that has no verified role in the current Atlas account. | That an object or record depicted in that asset is itself unknown, absent, or unverified in the setting. |
+| **Unassigned / unknown** · proposed Archive card | A field or relationship in the imagined chart entry has no supported value. | *The Unfixed Meridian* has no confirmed maker, date, coordinate, or shelf assignment. | Whether its illustration was generated, which website tag it carries, or whether such a chart is held by the Archive. |
+
+The separation matters even when an image portrays a record. A gallery tag follows the **image**, not the status of every object pictured within it. The proposed catalog fields follow the **imagined chart**, not the file that illustrates it. Thus, labeling an image *interpretation* does not settle whether a named place is established; leaving the chart's maker *unknown* does not make the site's image source unclassified. The [gallery's Atlas status note]({{ '/library/gallery/#atlas-imagery--place-illustration-and-map-layers' | relative_url }}) shows the same rule for a named place picture and the background layers around it.
+
 ## At a glance
 
 <dl class="folio-glossary">
