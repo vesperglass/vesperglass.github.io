@@ -12,6 +12,10 @@ These edition notes record additions to the existing folios. Where a record's so
 
 ## October 31, 2026
 
+- **Vesperglass Collections** — Added a dedicated collections index to the main navigation and launched **Gate Bloom Studies**, six coordinated sci-fi interpretations of the Gate's described bloom, numbered `VG-GATEBLOOM-001/006` through `VG-GATEBLOOM-006/006`. The new plates appear in the searchable gallery and are described as editorial artwork rather than recovered lore. [Browse collections →]({{ '/collections/' | relative_url }}) · [Open Gate Bloom Studies →]({{ '/library/collections/gate-bloom/' | relative_url }})
+
+- **Image gallery** — Archive image assets are hidden by default, with a control to include them. Recast the first six-image collectible series as an interpretive set inspired by the Vesperglass Workshop's unnamed wall-tool group, numbered `VG-WORKSHOP-001/006` through `VG-WORKSHOP-006/006`. [Open the Workshop Tools collection →]({{ '/library/collections/tools/' | relative_url }})
+
 - **Threshold House** — Added a generated, clearly interpretive comparison of shelf lanterns in the interior plate and a suspended light in the reconstructed elevation, separating their positions from any shared fixture or lighting practice. [Read the Threshold House folio →]({{ '/library/threshold-house/#shelf-lanterns-and-hanging-lights--placement-without-a-shared-system' | relative_url }})
 
 - **Vesperglass Workshop and Observatory Logbook** — Added a source-bounded comparison of the Workshop banner ornament and the Observatory's pictured star compass, with a generated interpretive plate that keeps their contexts and unknown provenance distinct. Added a build-populated, searchable multi-tag image gallery and linked it and this changelog in the left navigation. [Read the Workshop comparison →]({{ '/library/workshop/#the-banner-and-the-star-compass--motif-is-not-provenance' | relative_url }}) · [Browse the image gallery →]({{ '/library/gallery/' | relative_url }})

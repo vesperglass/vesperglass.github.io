@@ -23,6 +23,7 @@ Use this guide when adding or changing a page, map destination, interface, or pi
 - Keep the existing quiet glass-and-bronze mood: deep night backgrounds, warm paper surfaces, muted sea-glass greens, and restrained brass or gold accents.
 - Use the shared CSS custom properties and typography in `assets/site.css`. Add a new token there when a value needs to be reused; avoid repeating one-off colors and spacing values across pages.
 - Use the shared page shell and components from `_layouts/default.html` and `assets/site.css`. Add page-specific styles only for a genuinely distinct feature, and keep them scoped to that feature.
+- Every collectible image series must be specifically related to Vesperglass through its subject, place, or established world details. Treat generated designs and their serials as editorial interpretation unless a source establishes the depicted objects; do not present a website collection as a recovered in-world inventory.
 - Keep map and simulation controls readable over artwork, visible in both themes, and positioned as part of the map experience.
 - Treat generated images as part of the same world: use coherent materials, lighting, scale, and palette. Vary image composition when an entry needs multiple plates (for example, an interior view plus a plan or cutaway).
 

@@ -245,6 +245,7 @@
         <a href="{{ '/universe/' | relative_url }}"{% if page.url == '/universe/' %} class="active" aria-current="page"{% endif %}><span class="nav-icon">✧</span>Universe Guide</a>
         <a href="{{ '/library/' | relative_url }}"{% if page.url == '/library/' %} class="active" aria-current="page"{% endif %}><span class="nav-icon">▤</span>Encyclopedia</a>
         <a href="{{ '/library/gallery/' | relative_url }}"{% if page.url == '/library/gallery/' %} class="active" aria-current="page"{% endif %}><span class="nav-icon">▧</span>Image gallery</a>
+        <a href="{{ '/collections/' | relative_url }}"{% if page.url == '/collections/' or page.url contains '/library/collections/' %} class="active" aria-current="page"{% endif %}><span class="nav-icon">✧</span>Collections</a>
         <a href="{{ '/library/changelog/' | relative_url }}"{% if page.url == '/library/changelog/' %} class="active" aria-current="page"{% endif %}><span class="nav-icon">◷</span>Changelog</a>
 
       </nav>

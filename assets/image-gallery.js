@@ -5,14 +5,20 @@
   const search = document.getElementById("gallery-search");
   const count = document.getElementById("gallery-count");
   const clear = document.getElementById("gallery-clear");
-  if (!dataNode || !grid || !tagsNode || !search || !count || !clear) return;
+  const showArchive = document.getElementById("gallery-show-archive");
+  const collectionNode = document.getElementById("gallery-collection-data");
+  if (!dataNode || !grid || !tagsNode || !search || !count || !clear || !showArchive) return;
 
-  let images;
+  let images, collections;
   try { images = JSON.parse(dataNode.textContent); }
   catch { count.textContent = "The image record could not be read."; return; }
+  try { collections = collectionNode ? JSON.parse(collectionNode.textContent) : []; }
+  catch { collections = []; }
 
   const ignored = new Set(["assets", "image", "images", "plate", "v", "v2", "6144", "square", "superres", "sharp"]);
   const selected = new Set();
+  const collectibleByPath = new Map();
+  collections.forEach(collection => collection.items.forEach(item => collectibleByPath.set(item.image, { serial: item.serial, collection: collection.title })));
   const humanize = value => value.replace(/[._-]+/g, " ").replace(/\b\w/g, letter => letter.toUpperCase()).trim();
   const classify = image => {
     const path = image.path.toLowerCase();
@@ -24,11 +30,18 @@
     if (path.includes("sprite")) tags.add("sprite");
     if (path.includes("path-")) tags.add("route map");
     if (path.includes("postal") || path.includes("stamp")) tags.add("postal service");
+    if (path.includes("/collections/")) tags.add("collectible series");
     const tokens = `${image.name} ${path.split("/").slice(-2).join(" ")}`.toLowerCase().match(/[a-z]{3,}/g) || [];
     tokens.forEach(token => { if (!ignored.has(token)) tags.add(token); });
     return [...tags].sort((a, b) => a.localeCompare(b));
   };
-  images = images.map(image => ({ ...image, tags: classify(image) }));
+  images = images.map(image => ({
+    ...image,
+    isArchive: image.path.toLowerCase().includes("archive"),
+    collectible: collectibleByPath.get(image.path),
+    tags: classify(image)
+  }));
+  const availableImages = () => images.filter(image => showArchive.checked || !image.isArchive);
 
   const renderTags = () => {
     tagsNode.replaceChildren();
@@ -39,7 +52,7 @@
     all.setAttribute("aria-pressed", String(selected.size === 0));
     all.addEventListener("click", () => { selected.clear(); renderTags(); renderImages(); });
     tagsNode.append(all);
-    const unique = [...new Set(images.flatMap(image => image.tags))].sort((a, b) => a.localeCompare(b));
+    const unique = [...new Set(availableImages().flatMap(image => image.tags))].sort((a, b) => a.localeCompare(b));
     unique.forEach(tag => {
       const button = document.createElement("button");
       button.type = "button";
@@ -56,12 +69,16 @@
 
   const renderImages = () => {
     const query = search.value.trim().toLowerCase();
-    const visible = images.filter(image => {
-      const matchesQuery = !query || `${image.name} ${image.path} ${image.tags.join(" ")}`.toLowerCase().includes(query);
+    const available = availableImages();
+    const visible = available.filter(image => {
+      const matchesQuery = !query || `${image.name} ${image.path} ${image.tags.join(" ")} ${image.collectible?.serial || ""} ${image.collectible?.collection || ""}`.toLowerCase().includes(query);
       const matchesTags = [...selected].every(tag => image.tags.includes(tag));
       return matchesQuery && matchesTags;
     });
-    count.textContent = `${visible.length} of ${images.length} images shown`;
+    const hiddenArchiveCount = images.length - images.filter(image => !image.isArchive).length;
+    count.textContent = showArchive.checked
+      ? `${visible.length} of ${images.length} images shown`
+      : `${visible.length} of ${available.length} images shown · ${hiddenArchiveCount} Archive images hidden by default`;
     grid.replaceChildren();
     visible.forEach(image => {
       const card = document.createElement("article");
@@ -79,6 +96,11 @@
       link.append(img);
       const title = document.createElement("h3");
       title.textContent = humanize(image.name);
+      const serial = image.collectible ? document.createElement("p") : null;
+      if (serial) {
+        serial.className = "gallery-card-serial";
+        serial.textContent = `${image.collectible.serial} · ${image.collectible.collection}`;
+      }
       const meta = document.createElement("p");
       meta.textContent = `${image.extension.toUpperCase()} · ${image.path}`;
       const chipList = document.createElement("div");
@@ -92,12 +114,15 @@
         chip.addEventListener("click", () => { selected.add(tag); renderTags(); renderImages(); });
         chipList.append(chip);
       });
-      card.append(link, title, meta, chipList);
+      card.append(link, title);
+      if (serial) card.append(serial);
+      card.append(meta, chipList);
       grid.append(card);
     });
   };
 
   search.addEventListener("input", renderImages);
+  showArchive.addEventListener("change", () => { renderTags(); renderImages(); });
   clear.addEventListener("click", () => { selected.clear(); search.value = ""; renderTags(); renderImages(); search.focus(); });
   renderTags();
   renderImages();

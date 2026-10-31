@@ -1,0 +1,94 @@
+[
+  {
+    "slug": "tools",
+    "title": "Vesperglass Workshop Tools",
+    "code": "WORKSHOP",
+    "number": "01",
+    "url": "/library/collections/tools/",
+    "description": "Six interpretive still lifes inspired by the unnamed wall-tool group in the proposed Vesperglass Workshop cutaway. Their names and serials identify this website set, not a source inventory.",
+    "items": [
+      {
+        "image": "/assets/collections/tools-001-dividers.png",
+        "serial": "VG-WORKSHOP-001/006",
+        "name": "Drafting dividers",
+        "alt": "An interpretive still life of brass drawing dividers on a pale worktable before brass-framed star-facing windows, evoking the Vesperglass Workshop."
+      },
+      {
+        "image": "/assets/collections/tools-002-marking-gauge.png",
+        "serial": "VG-WORKSHOP-002/006",
+        "name": "Marking gauge",
+        "alt": "An interpretive still life of a hardwood marking gauge with brass fittings on a pale worktable before the Vesperglass Workshop's star-facing windows."
+      },
+      {
+        "image": "/assets/collections/tools-003-smoothing-plane.png",
+        "serial": "VG-WORKSHOP-003/006",
+        "name": "Smoothing plane",
+        "alt": "An interpretive still life of a wooden smoothing plane with iron and brass details on a pale worktable before the Vesperglass Workshop's star-facing windows."
+      },
+      {
+        "image": "/assets/collections/tools-004-mallet.png",
+        "serial": "VG-WORKSHOP-004/006",
+        "name": "Joiner's mallet",
+        "alt": "An interpretive still life of a bronze-headed, walnut-handled mallet on a pale worktable before brass-framed star-facing windows, evoking the Vesperglass Workshop."
+      },
+      {
+        "image": "/assets/collections/tools-005-plumb-bob.png",
+        "serial": "VG-WORKSHOP-005/006",
+        "name": "Plumb bob",
+        "alt": "An interpretive still life of a polished brass plumb bob on a pale worktable before the Vesperglass Workshop's tall star-facing windows."
+      },
+      {
+        "image": "/assets/collections/tools-006-hand-drill.png",
+        "serial": "VG-WORKSHOP-006/006",
+        "name": "Hand drill",
+        "alt": "An interpretive still life of a hand drill with hardwood crank and aged brass fittings on a pale worktable before the Vesperglass Workshop's star-facing windows."
+      }
+    ]
+  },
+  {
+    "slug": "gate-bloom",
+    "title": "Gate Bloom Studies",
+    "code": "GATEBLOOM",
+    "number": "02",
+    "url": "/library/collections/gate-bloom/",
+    "description": "Six interpretive sci-fi studies inspired by the Vesperglass Gate account's described bloom. Their sequence and visual details are artistic interpretations, not additional world facts.",
+    "items": [
+      {
+        "image": "/assets/collections/gate-bloom-001-first-light.png",
+        "serial": "VG-GATEBLOOM-001/006",
+        "name": "First Light",
+        "alt": "Interpretive sci-fi artwork of delicate turquoise and pale-gold filaments first appearing in the dark glass aperture of the Vesperglass Gate."
+      },
+      {
+        "image": "/assets/collections/gate-bloom-002-radial-unfurl.png",
+        "serial": "VG-GATEBLOOM-002/006",
+        "name": "Radial Unfurl",
+        "alt": "Interpretive sci-fi artwork of fine luminous strands opening radially from the Vesperglass Gate center."
+      },
+      {
+        "image": "/assets/collections/gate-bloom-003-prismatic-lattice.png",
+        "serial": "VG-GATEBLOOM-003/006",
+        "name": "Prismatic Lattice",
+        "alt": "Interpretive sci-fi artwork of an intricate teal and gold lattice of light crossing the Vesperglass Gate aperture."
+      },
+      {
+        "image": "/assets/collections/gate-bloom-004-full-radiance.png",
+        "serial": "VG-GATEBLOOM-004/006",
+        "name": "Full Radiance",
+        "alt": "Interpretive sci-fi artwork of the Vesperglass Gate at full bloom, surrounded by precise luminous radial strands."
+      },
+      {
+        "image": "/assets/collections/gate-bloom-005-layered-refraction.png",
+        "serial": "VG-GATEBLOOM-005/006",
+        "name": "Layered Refraction",
+        "alt": "Interpretive sci-fi artwork of translucent veils of teal and pale-gold light refracting through the Vesperglass Gate."
+      },
+      {
+        "image": "/assets/collections/gate-bloom-006-afterglow.png",
+        "serial": "VG-GATEBLOOM-006/006",
+        "name": "Afterglow",
+        "alt": "Interpretive sci-fi artwork of the Vesperglass Gate as luminous filaments fade into a quiet halo and sparse stars."
+      }
+    ]
+  }
+]
