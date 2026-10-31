@@ -61,6 +61,19 @@ Plate II is a proposed cutaway, not a survey of the Workshop's contents. This in
 
 The inventory deliberately stops before assigning the objects to the workshop customs below. Those customs are proposed practices, while this plate is proposed architecture; together they are not evidence of an established routine. The Workshop's role as a place to gather and prepare remains the account's useful context, not proof of the illustrated room's exact contents.
 
+### Two placements · are the drawn sheets one set?
+
+Plate II places line-drawn sheets in more than one part of the cutaway: a sheet appears on a side table, while other pale sheets are shown near the central work area. Their separation is clear enough to describe, but the small marks do not reveal a subject, title, or order. The layout may invite a reader to imagine work spread across the room; it does not establish that the drawings belong together or record one continuing task.
+
+| Depicted group | Position in the cutaway | What can be read from the image | What remains unknown |
+| --- | --- | --- | --- |
+| **Side-table sheet** | On a smaller work surface set apart from the central table. | A pale, marked sheet is visible among other small objects. | Its subject, whether its marks are a plan, its author, date, or relationship to the central table. |
+| **Sheets near the central work area** | Close to the large shared table and surrounding stools. | More pale sheets appear among the items arranged around the room's main work surface. | Whether they repeat the side-table drawing, form a single set, or were used by any of the pictured keepers. |
+| **Spatial relationship** | The groups occupy separate surfaces within one proposed cutaway. | The illustration places papers in both a side area and the central room. | Whether they were moved between tables, whether one group depends on the other, or whether the arrangement depicts a real room at one moment. |
+| **Established context** | The Vesperglass Workshop is the central home platform and a place to gather and prepare. | That role gives the depicted work area a setting readers can relate to. | A documented project, drafting practice, shared authorship, or a record that any design was built. |
+
+The drawings should therefore remain **two placements**, not one recovered dossier. Their position lets a reader compare how the proposed room distributes paper, while their linework is too indistinct to establish subject or continuity. This is distinct from the [closed journal in the Observatory still life]({{ '/library/observatory/#closed-journal-and-loose-sheets--form-before-document-function' | relative_url }}): that folio contrasts a bound volume with loose sheets across separate images; this note asks only whether the Workshop's own depicted groups can be linked. Neither comparison supplies the absent author, title, date, or contents.
+
 ### Wall alcove and instrument still life · context without identity
 
 The Workshop's proposed cutaway places a row of narrow objects upright in recessed wall alcoves and labels the group cautiously as **wall tools**. The Observatory's proposed Plate II sets a different group on a still-life surface: an orrery, a tube on a pivoting support, a marked circular instrument, and a closed volume. The two images invite a comparison of forms, but their arrangement and context are not the same.

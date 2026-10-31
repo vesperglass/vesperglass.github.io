@@ -22,7 +22,7 @@ permalink: /library/
   </a>
   <a class="library-entry-card" href="{{ '/library/workshop/' | relative_url }}">
     <span class="library-card-art"><img src="{{ '/assets/library/places/workshop-interior.webp' | relative_url }}" alt="The shared worktable inside the central Vesperglass Workshop." loading="lazy"></span>
-    <span class="library-entry-copy"><span class="library-entry-number">ENTRY 002 &nbsp;·&nbsp; HOME &amp; MAKING</span><strong>Vesperglass Workshop</strong><span>The central home platform, with a proposed cutaway inventory and comparisons linking its sheets and wall tools to the Observatory.</span><span class="library-read">Read the entry <span aria-hidden="true">↗</span></span></span>
+    <span class="library-entry-copy"><span class="library-entry-number">ENTRY 002 &nbsp;·&nbsp; HOME &amp; MAKING</span><strong>Vesperglass Workshop</strong><span>The central home platform, with a proposed cutaway inventory and comparisons of its sheets, wall tools, and banner motif.</span><span class="library-read">Read the entry <span aria-hidden="true">↗</span></span></span>
   </a>
   <a class="library-entry-card" href="{{ '/library/threshold-house/' | relative_url }}">
     <span class="library-card-art"><img src="{{ '/assets/library/places/threshold-interior.webp' | relative_url }}" alt="A lantern-lit threshold chamber opening onto the stars." loading="lazy"></span>
