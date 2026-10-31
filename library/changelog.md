@@ -12,6 +12,8 @@ These edition notes record additions to the existing folios. Where a record's so
 
 ## October 31, 2026
 
+- **Star Archive** — Clarified that “Meridian” is only an interpretive chart title, not evidence for a line, coordinate system, bearing, or navigation method; added a generated title-versus-feature study. [Read the note →]({{ '/library/star-archive/#title-word-and-map-feature-boundary--meridian' | relative_url }})
+
 - **Star Archive and Image Gallery** — Added a cross-ledger comparison separating a website image's editorial-status tag from source, title, date, and shelf fields on the proposed *Unfixed Meridian* card. [Read the status comparison →]({{ '/library/star-archive/#editorial-status-and-catalog-status--different-ledgers' | relative_url }})
 
 - **Image gallery and Vesperglass Atlas** — Reviewed place illustrations and starfield layers against the current Atlas view, distinguishing interpreted island artwork from map interface layers and leaving unverified orbital and landmark variants unclassified. Added a generated illustration to make the boundary visible. [Browse the Atlas imagery note →]({{ '/library/gallery/#atlas-imagery--place-illustration-and-map-layers' | relative_url }})

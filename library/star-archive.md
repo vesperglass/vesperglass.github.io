@@ -64,6 +64,26 @@ The following catalog card is a proposed entry for a chart called *The Unfixed M
 
 As a reference proposal, the card connects the Archive collection with the Observatory's logbook without assigning either record to a named star. [Read the Observatory folio →]({{ '/library/observatory/' | relative_url }})
 
+### Title word and map-feature boundary · “Meridian”
+
+*Meridian* is part of the proposed title written on this page. It is not a transcribed label from an Archive catalog, and no surviving account establishes that a chart with this title exists. The card's proposed scope is only a teaching sheet for comparing broad bands of light across an otherwise unmarked sky. The title alone does not tell us whether “Meridian” is a technical term, a metaphor, or simply a name chosen for the editorial example.
+
+<figure class="specimen-plate">
+  <img src="{{ '/assets/library/star-archive-meridian-title-boundary-v2.png' | relative_url }}" alt="An interpretive archive still life places a closed blank-cover folio at left and a separate open sheet with sparse, unconnected points of light at right; no map lines or coordinates join them." loading="lazy">
+  <figcaption><span>FIGURE II · INTERPRETIVE STUDY</span> This generated illustration separates an unnamed folio cover from a sparse, unmarked star sheet. It is not a recovered chart or cover, and the title does not establish the sheet's subject, a meridian line, coordinates, a bearing, or a navigational use.</figcaption>
+</figure>
+
+| Question | What the written proposal supports | What remains open |
+| --- | --- | --- |
+| **Where does the word appear?** | In the proposed title *The Unfixed Meridian*, supplied by this folio. | Whether an Archive catalog, cover, or chart ever bears that name. |
+| **What is shown on the sheet?** | The proposal describes broad bands of light across an otherwise unmarked sky. | Their shapes, positions, celestial identity, or relation to any particular sky. |
+| **Is a meridian drawn or used?** | No line, grid, coordinate, bearing, or method is specified in the proposed card or margin sample. | Whether the title has a technical meaning, refers to an unpictured feature, or serves only as a descriptive name. |
+| **Could it guide travel or observation?** | The Observatory link is a reading aid between two proposed records. | A navigation role, an instrument, an observing procedure, or a shared subject with the Observatory's blue-field sample. |
+
+Read the title as a name whose meaning is unresolved. A familiar technical-sounding word cannot supply missing evidence about the chart's contents: a named meridian would require some source for its placement or use, and neither is present here. Likewise, *unfixed* does not tell us what might be fixed, by whom, or against which reference. Those details remain unassigned rather than silently filled in from the word's ordinary associations.
+
+This distinction also keeps neighboring sections in scope. The proposed **□ · place unverified** mark records that a place-name lacks a confirmed position; it does not stand for a meridian or coordinate system. The [Observatory Logbook]({{ '/library/observatory/' | relative_url }}) describes a place of watching and keeping notes, but it does not identify this chart, supply its title, or establish a shared celestial referent. Both entries remain proposed examples, not implemented navigation or observation behavior.
+
 ### Proposed margin-mark legend · *The Unfixed Meridian*
 
 The chart card above suggests leaving room for later annotations. This key proposes three marks for that margin, each describing the status of a note rather than locating a body in the sky. The surviving accounts do not supply these symbols; they are editorial proposals for the named chart, whose existence and title also remain unconfirmed.
