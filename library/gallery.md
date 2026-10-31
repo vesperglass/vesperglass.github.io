@@ -136,6 +136,27 @@ The safe conclusion is limited but useful: the pictures share a blue-and-teal fa
 
 This boundary matters because the <a href="{{ '/library/star-archive/' | relative_url }}">Star Archive</a> is established as a repository of sky knowledge and the <a href="{{ '/library/observatory/' | relative_url }}">Observatory Logbook</a> as a place of observation and record, but neither account names these clouds or links either group to an observation. The Atlas also uses a separate dark field behind named-place views; a shared blue palette alone does not connect those background lights with either clouded group.
 
+<h4 id="clouded-field-channel-comparison">Dark openings and channels · recurrence without a common feature</h4>
+
+Several panels show dark space interrupting or dividing the brighter cloud forms. The word **channel** is useful where the image description names a narrow or broad dark interval bounded by cloud; **opening** better fits a dark central area with cloud around it. Both are visual labels for composition, not names for a celestial structure. The rows and columns below refer only to positions within each separately arranged illustration.
+
+<figure class="specimen-plate">
+  <img src="{{ '/assets/library/atlas-clouded-field-channel-study.png' | relative_url }}" alt="Two separate interpretive cloud fields show dark negative space: a winding opening among blue-teal forms at left and a broad gap dividing cyan-blue forms at right." loading="lazy">
+  <figcaption><span>INTERPRETATION · DARK-SPACE DETAIL</span> This generated comparison emphasizes negative space as a compositional feature. It does not reproduce any tile or assert that the two gaps are one object, a measured structure, or related observations.</figcaption>
+</figure>
+
+| Example panel | What is visible in its description | Useful visual term | What recurrence does not establish |
+| --- | --- | --- | --- |
+| **Study A · middle left** | An open dark center edged by blue, teal, and violet cloud. | **Opening** — a dark area surrounded or edged by luminous forms. | A hole, boundary, center point, or object in the sky. |
+| **Study A · center** | A dark central channel lies beneath broken blue-teal cloud, with violet at the lower edge. | **Channel** — an elongated interval between or beneath cloud forms. | A path, flow, current, or direction through a celestial body. |
+| **Study A · lower right** | A dark central channel separates blue and violet cloud; teal light appears at the right. | **Channel** — the visual division named in the card description. | A continuation of the center panel's gap, since the cells are separate pictures. |
+| **Study B · middle left** | Bright turquoise cloud follows the left side beside a dark center and scattered lights. | **Opening** — a dark central area beside a brighter cloud mass. | A matching structure to Study A's opening or a shared field. |
+| **Study B · lower right** | Blue and teal cloud are divided by a broad dark channel, with violet light at the right. | **Broad channel** — a wider dark interval visibly separating bright forms. | Scale, distance, depth, a physical division, or image ancestry. |
+
+The comparison distinguishes three readable arrangements: an opening edged by cloud, a narrower interruption beneath or between forms, and a broad interval that divides a panel's brighter regions. The descriptions help a reader find those motifs among the eighteen images. Similar placement within two different grids is not evidence that a gap continues across panels; each cell is an individual image, and its neighbors are not established as adjoining views.
+
+The named <a href="{{ '/library/star-archive/' | relative_url }}">Star Archive</a> keeps knowledge of the sky, while the <a href="{{ '/library/observatory/' | relative_url }}">Observatory Logbook</a> is associated with observation and record. Neither folio names a dark channel, identifies these illustrations as its records, or supplies an account connecting the groups. The Atlas's separate background star field likewise does not label these openings. Their identity, cause, scale, location, and relation remain unknown.
+
 <section class="image-collections" aria-labelledby="image-collections-heading">
   <div class="gallery-tag-heading"><h2 id="image-collections-heading">Arranged illustration series</h2><span class="collection-intro">Six related views in each series</span></div>
   <div class="collection-cards">
