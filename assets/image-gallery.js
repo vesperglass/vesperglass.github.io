@@ -2,12 +2,13 @@
   const dataNode = document.getElementById("gallery-image-data");
   const grid = document.getElementById("gallery-grid");
   const tagsNode = document.getElementById("gallery-tags");
+  const kindsNode = document.getElementById("gallery-kinds");
   const search = document.getElementById("gallery-search");
   const count = document.getElementById("gallery-count");
   const clear = document.getElementById("gallery-clear");
   const showArchive = document.getElementById("gallery-show-archive");
   const collectionNode = document.getElementById("gallery-collection-data");
-  if (!dataNode || !grid || !tagsNode || !search || !count || !clear || !showArchive) return;
+  if (!dataNode || !grid || !tagsNode || !kindsNode || !search || !count || !clear || !showArchive) return;
 
   let images, collections;
   try { images = JSON.parse(dataNode.textContent); }
@@ -17,12 +18,22 @@
 
   const ignored = new Set(["assets", "image", "images", "plate", "v", "v2", "6144", "square", "superres", "sharp"]);
   const selected = new Set();
+  let selectedKind = "";
   const collectibleByPath = new Map();
   collections.forEach(collection => collection.items.forEach(item => collectibleByPath.set(item.image, { serial: item.serial, collection: collection.title })));
   const humanize = value => value.replace(/[._-]+/g, " ").replace(/\b\w/g, letter => letter.toUpperCase()).trim();
+  const kindFor = image => {
+    const path = image.path.toLowerCase();
+    const filename = path.split("/").pop();
+    if (path.includes("sprite")) return "Sprites";
+    if (path.includes("/leaflet/") || filename === "atlas-deep-starfield.svg" || /^atlas-orbit-stars-/.test(filename)) return "Maps and map layers";
+    if (/(?:plan|cutaway|comparison|overprint|asset-kinds|motifs|relationships-plate|boundary)/.test(filename) || (path.includes("/library/") && filename.endsWith("-plate.svg"))) return "Diagrams";
+    if (path.includes("/library/") || filename.includes("-plate.")) return "Folio plates and illustrations";
+    return "Other site artwork";
+  };
   const classify = image => {
     const path = image.path.toLowerCase();
-    const tags = new Set([image.extension === "svg" ? "vector" : "raster", image.extension, image.status || "unclassified source status"]);
+    const tags = new Set([image.extension === "svg" ? "vector" : "raster", image.extension, image.status || "unclassified source status", image.assetKind.toLowerCase()]);
     if (path.includes("/library/")) tags.add("encyclopedia");
     if (path.includes("/library/places/")) tags.add("place folio");
     if (path.includes("atlas") || path.includes("orbit-field") || path.includes("orbit-stars")) tags.add("atlas");
@@ -38,10 +49,30 @@
   images = images.map(image => ({
     ...image,
     isArchive: image.path.toLowerCase().includes("archive"),
+    assetKind: kindFor(image),
     collectible: collectibleByPath.get(image.path),
-    tags: classify(image)
-  }));
+  })).map(image => ({ ...image, tags: classify(image) }));
   const availableImages = () => images.filter(image => showArchive.checked || !image.isArchive);
+
+  const renderKinds = () => {
+    kindsNode.replaceChildren();
+    const addKindButton = (label, value) => {
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className = "gallery-tag";
+      button.textContent = label;
+      button.setAttribute("aria-pressed", String(selectedKind === value));
+      button.addEventListener("click", () => {
+        selectedKind = value;
+        renderKinds();
+        renderImages();
+      });
+      kindsNode.append(button);
+    };
+    addKindButton("All asset kinds", "");
+    const unique = [...new Set(availableImages().map(image => image.assetKind))].sort((a, b) => a.localeCompare(b));
+    unique.forEach(kind => addKindButton(kind, kind));
+  };
 
   const renderTags = () => {
     tagsNode.replaceChildren();
@@ -71,14 +102,16 @@
     const query = search.value.trim().toLowerCase();
     const available = availableImages();
     const visible = available.filter(image => {
-      const matchesQuery = !query || `${image.name} ${image.path} ${image.status || ""} ${image.tags.join(" ")} ${image.collectible?.serial || ""} ${image.collectible?.collection || ""}`.toLowerCase().includes(query);
+      const matchesQuery = !query || `${image.name} ${image.path} ${image.assetKind} ${image.status || ""} ${image.tags.join(" ")} ${image.collectible?.serial || ""} ${image.collectible?.collection || ""}`.toLowerCase().includes(query);
       const matchesTags = [...selected].every(tag => image.tags.includes(tag));
-      return matchesQuery && matchesTags;
+      const matchesKind = !selectedKind || image.assetKind === selectedKind;
+      return matchesQuery && matchesTags && matchesKind;
     });
     const hiddenArchiveCount = images.length - images.filter(image => !image.isArchive).length;
+    const selectedKindSummary = selectedKind ? ` · ${selectedKind}` : "";
     count.textContent = showArchive.checked
-      ? `${visible.length} of ${images.length} images shown`
-      : `${visible.length} of ${available.length} images shown · ${hiddenArchiveCount} Archive images hidden by default`;
+      ? `${visible.length} of ${images.length} images shown${selectedKindSummary}`
+      : `${visible.length} of ${available.length} images shown${selectedKindSummary} · ${hiddenArchiveCount} Archive images hidden by default`;
     grid.replaceChildren();
     visible.forEach(image => {
       const card = document.createElement("article");
@@ -103,6 +136,9 @@
       }
       const meta = document.createElement("p");
       meta.textContent = `${image.extension.toUpperCase()} · ${image.path}`;
+      const kind = document.createElement("p");
+      kind.className = "gallery-card-kind";
+      kind.textContent = `Asset kind · ${image.assetKind}`;
       const status = document.createElement("p");
       status.className = "gallery-card-status";
       status.textContent = `Editorial status · ${image.status || "unclassified source status"}`;
@@ -119,14 +155,20 @@
       });
       card.append(link, title);
       if (serial) card.append(serial);
-      card.append(meta, status, chipList);
+      card.append(meta, kind, status, chipList);
       grid.append(card);
     });
   };
 
   search.addEventListener("input", renderImages);
-  showArchive.addEventListener("change", () => { renderTags(); renderImages(); });
-  clear.addEventListener("click", () => { selected.clear(); search.value = ""; renderTags(); renderImages(); search.focus(); });
+  showArchive.addEventListener("change", () => {
+    if (!showArchive.checked && !availableImages().some(image => image.assetKind === selectedKind)) selectedKind = "";
+    renderKinds();
+    renderTags();
+    renderImages();
+  });
+  clear.addEventListener("click", () => { selected.clear(); selectedKind = ""; search.value = ""; renderKinds(); renderTags(); renderImages(); search.focus(); });
+  renderKinds();
   renderTags();
   renderImages();
 })();
