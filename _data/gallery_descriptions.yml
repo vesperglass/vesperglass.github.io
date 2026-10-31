@@ -39,3 +39,62 @@ atlas-orbit-field-family-study.png:
   alt: "Interpretive three-panel study contrasting a turbulent teal cloud, a brighter blue cloud band, and a separate dark field with sparse lights."
   folio_url: /library/gallery/#orbital-field-families
   folio_link_label: Read the field-family comparison →
+atlas-orbit-field-r1c1.webp:
+  title: Clouded field A · upper left panel
+  alt: "Dark blue cloud crossed by a brighter teal plume near the middle; upper-left panel of a nine-panel image set, not a sky position."
+atlas-orbit-field-r1c2.webp:
+  title: Clouded field A · upper middle panel
+  alt: "A horizontal sweep of teal light beneath a deep blue upper field, with scattered points; upper-middle panel, not a sky position."
+atlas-orbit-field-r1c3.webp:
+  title: Clouded field A · upper right panel
+  alt: "Mostly dark blue field with a violet cloud at the upper right and faint teal wisps; upper-right panel, not a sky position."
+atlas-orbit-field-r2c1.webp:
+  title: Clouded field A · middle left panel
+  alt: "Dark open center edged by blue, teal, and violet cloud with sparse lights; middle-left panel, not a sky position."
+atlas-orbit-field-r2c2.webp:
+  title: Clouded field A · center panel
+  alt: "Dark central channel beneath broken blue-teal cloud and subtle violet at the lower edge; center panel, not a sky position."
+atlas-orbit-field-r2c3.webp:
+  title: Clouded field A · middle right panel
+  alt: "Blue cloud crossing a dark field with a purple glow at the right edge; middle-right panel, not a sky position."
+atlas-orbit-field-r3c1.webp:
+  title: Clouded field A · lower left panel
+  alt: "Teal and blue cloud brightening toward the upper right above a darker lower field; lower-left panel, not a sky position."
+atlas-orbit-field-r3c2.webp:
+  title: Clouded field A · lower middle panel
+  alt: "Blue-green cloud mass along the upper edge over a dark center and a few points of light; lower-middle panel, not a sky position."
+atlas-orbit-field-r3c3.webp:
+  title: Clouded field A · lower right panel
+  alt: "A dark central channel between blue and violet cloud, with teal light at the right; lower-right panel, not a sky position."
+atlas-orbit-field-v2-r1c1.png:
+  title: Clouded field B · upper left panel
+  alt: "Soft cyan-blue cloud rising through the left side of a dark field with fine lights; upper-left panel of a separate nine-panel set, not a sky position."
+atlas-orbit-field-v2-r1c2.png:
+  title: Clouded field B · upper middle panel
+  alt: "Fine blue cloud wisps form a loose crossing amid numerous small lights; upper-middle panel, not a sky position."
+atlas-orbit-field-v2-r1c3.png:
+  title: Clouded field B · upper right panel
+  alt: "Teal and blue cloud arms cross a dark field around a bright point; upper-right panel, not a sky position."
+atlas-orbit-field-v2-r2c1.png:
+  title: Clouded field B · middle left panel
+  alt: "Bright turquoise cloud follows the left side beside a dark center and scattered lights; middle-left panel, not a sky position."
+atlas-orbit-field-v2-r2c2.png:
+  title: Clouded field B · center panel
+  alt: "Cyan and violet cloud strands radiate around a warm bright point near the center; center panel, not a sky position."
+atlas-orbit-field-v2-r2c3.png:
+  title: Clouded field B · middle right panel
+  alt: "A blue-violet cloud band crosses the dark field from left to right, brightening at its right edge; middle-right panel, not a sky position."
+atlas-orbit-field-v2-r3c1.png:
+  title: Clouded field B · lower left panel
+  alt: "A turquoise glow fills the left side while violet-blue cloud gathers at the upper right; lower-left panel, not a sky position."
+atlas-orbit-field-v2-r3c2.png:
+  title: Clouded field B · lower middle panel
+  alt: "A sweeping teal-blue cloud crosses a dark field with many small points of light; lower-middle panel, not a sky position."
+atlas-orbit-field-v2-r3c3.png:
+  title: Clouded field B · lower right panel
+  alt: "Blue and teal cloud divided by a broad dark channel with violet light at the right; lower-right panel, not a sky position."
+atlas-clouded-field-panel-key.png:
+  title: Nine-panel field arrangement · interpretation
+  alt: "A brass-edged three-by-three study of distinct blue and teal cloudlike lights, shown as a panel arrangement without celestial labels."
+  folio_url: /library/gallery/#clouded-field-panel-descriptions
+  folio_link_label: Read the panel descriptions →

@@ -109,7 +109,7 @@
     const query = search.value.trim().toLowerCase();
     const available = availableImages();
     const visible = available.filter(image => {
-      const matchesQuery = !query || `${image.name} ${image.path} ${image.assetKind} ${image.status || ""} ${image.tags.join(" ")} ${image.collectible?.serial || ""} ${image.collectible?.collection || ""}`.toLowerCase().includes(query);
+      const matchesQuery = !query || `${image.name} ${image.atlasTitle || ""} ${image.alt || ""} ${image.path} ${image.assetKind} ${image.status || ""} ${image.tags.join(" ")} ${image.collectible?.serial || ""} ${image.collectible?.collection || ""}`.toLowerCase().includes(query);
       const matchesTags = [...selected].every(tag => image.tags.includes(tag));
       const matchesKind = !selectedKind || image.assetKind === selectedKind;
       return matchesQuery && matchesTags && matchesKind;
@@ -144,6 +144,11 @@
       }
       const meta = document.createElement("p");
       meta.textContent = image.atlasTitle ? "Named Atlas destination" : "Illustrated record";
+      const description = image.alt ? document.createElement("p") : null;
+      if (description) {
+        description.className = "gallery-card-description";
+        description.textContent = image.alt;
+      }
       const kind = document.createElement("p");
       kind.className = "gallery-card-kind";
       kind.textContent = `Plate kind · ${image.assetKind}`;
@@ -162,13 +167,14 @@
         chipList.append(chip);
       });
       card.append(link, title);
+      if (description) card.append(description);
       if (serial) card.append(serial);
       card.append(meta, kind, status, chipList);
       if (image.folioUrl) {
         const folioLink = document.createElement("a");
         folioLink.className = "gallery-card-folio";
         folioLink.href = image.folioUrl;
-        folioLink.textContent = image.folioLinkLabel || `Read the ${titleText} account →`;
+        folioLink.textContent = image.folioLinkLabel || (titleText.startsWith("Clouded field") ? "Read the field-study key →" : `Read the ${titleText} account →`);
         card.append(folioLink);
       }
       grid.append(card);

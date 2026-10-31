@@ -71,7 +71,7 @@ The descriptions on each image card repeat these visible features for readers us
 
 Plate kind and reading status answer different questions: an Atlas destination view is both a place illustration and an interpretation. Older orbital and landmark drawings remain source-unassigned because no account or current Atlas view identifies their subject. The <a href="{{ '/explore/' | relative_url }}">Vesperglass Atlas</a> lets readers consult named locations; the <a href="{{ '/library/vesperglass-gate/' | relative_url }}">Gate account</a> and <a href="{{ '/library/train-dock/' | relative_url }}">Train Dock account</a> preserve the written descriptions that accompany two of those views.
 
-<h3 id="orbital-field-families">Orbital-field tile families · resemblance without lineage</h3>
+<h3 id="orbital-field-families">Clouded field studies · resemblance without lineage</h3>
 
 Two nine-panel field studies show clouded reaches of blue and teal light. Each is arranged as a three-by-three set, with a row-and-column key distinguishing its panels. A representative panel from each study shows a different arrangement and density of luminous cloud and small points. These are descriptions of the pictured samples; the labels do not establish which study came first, whether one revises the other, or how the remaining panels meet at their edges.
 
@@ -96,6 +96,22 @@ The current Atlas presents a dark star field with a sparse layer of isolated lig
 <figure class="specimen-plate">
   <img src="{{ '/assets/library/atlas-orbit-field-family-study.png' | relative_url }}" alt="An interpretive three-panel study contrasts a turbulent teal cloud, a brighter blue cloud band, and a separate dark field with sparse lights." loading="lazy">
   <figcaption><span>INTERPRETATION · FIELD-APPEARANCE STUDY</span> This generated comparison recasts broad visual differences in the samples beside a separate sparse field. It is not a reproduction of any registered tile, a sequence of skies, or evidence of image lineage, observation, coordinates, or a mapped route.</figcaption>
+</figure>
+
+<h4 id="clouded-field-panel-descriptions">Panel descriptions · position labels identify the image only</h4>
+
+Each clouded field card now names its panel within its own three-by-three set and describes the visible contrast that distinguishes it: a brighter plume, a dark channel, a violet patch, or a scatter of small lights. **Upper left**, **center**, and similar labels refer to the panel's place in that arrangement. They are not a bearing, celestial coordinate, viewing direction, or match between the two separately unassigned studies.
+
+| Card wording | Meaning within a pictured set | It does not mean |
+| --- | --- | --- |
+| **Upper / middle / lower** | First, second, or third row in the displayed three-row arrangement. | Height above a horizon, latitude, declination, or an ordered observation. |
+| **Left / middle / right** | First, second, or third panel across that row. | East, center of a sky, west, or a direction of travel. |
+| **Center panel** | The cell in the second row and second column. | A central star, target, map point, or source for the surrounding panels. |
+| **A / B field study** | An editorial distinction between two unassigned groups of clouded illustrations. | Earlier and later versions, related skies, or evidence that one study revises the other. |
+
+<figure class="specimen-plate">
+  <img src="{{ '/assets/library/atlas-clouded-field-panel-key.png' | relative_url }}" alt="An interpretive three-by-three arrangement of nine separate blue and teal cloudlike light panels, each with a different pattern." loading="lazy">
+  <figcaption><span>INTERPRETATION · PANEL-ARRANGEMENT KEY</span> This generated plate makes the reading order visible; its nine patterns do not reproduce the two field studies. The grid labels only a page arrangement and supplies no celestial positions, orientation, scale, or relationship between panels.</figcaption>
 </figure>
 
 The <a href="{{ '/library/star-archive/' | relative_url }}">Star Archive</a> is described as keeping knowledge of the sky, and the <a href="{{ '/library/observatory/' | relative_url }}">Observatory Logbook</a> as a place of observation and record. Neither account names the lights in these field studies or connects them with a chart or recorded observation. The <a href="{{ '/explore/' | relative_url }}">current Atlas view</a> and the named places it frames should therefore remain distinct from the unassigned clouded panels. The comparison records what the studies look like and how they are presently related to the Atlas; it leaves their provenance and subject open.
@@ -144,7 +160,7 @@ The <a href="{{ '/library/star-archive/' | relative_url }}">Star Archive</a> is 
   {%- if site.data.image_status.interpretation contains asset_key -%}{%- assign editorial_status = 'interpretation' -%}{%- elsif site.data.image_status.editorial_diagram contains asset_key -%}{%- assign editorial_status = 'editorial diagram' -%}{%- elsif site.data.image_status.map_interface contains asset_key -%}{%- assign editorial_status = 'Atlas background' -%}{%- endif -%}
   {%- assign atlas_description = site.data.gallery_descriptions[asset.name] -%}
   {%- assign atlas_url = '' -%}
-  {%- if atlas_description -%}{%- assign atlas_url = atlas_description.folio_url | relative_url -%}{%- endif -%}
+  {%- if atlas_description -%}{%- if atlas_description.folio_url -%}{%- assign atlas_url = atlas_description.folio_url | relative_url -%}{%- elsif atlas_description.title contains 'Clouded field' -%}{%- assign atlas_url = '/library/gallery/#clouded-field-panel-descriptions' | relative_url -%}{%- endif -%}{%- endif -%}
   {"path":{{ asset.path | relative_url | jsonify }},"name":{{ asset.name | split: "." | first | replace: "-", " " | jsonify }},"extension":{{ asset.extname | remove_first: "." | jsonify }},"status":{{ editorial_status | jsonify }},"atlasTitle":{{ atlas_description.title | default: '' | jsonify }},"alt":{{ atlas_description.alt | default: '' | jsonify }},"folioUrl":{{ atlas_url | jsonify }},"folioLinkLabel":{{ atlas_description.folio_link_label | default: '' | jsonify }}}{% unless forloop.last %},{% endunless %}
 {%- endfor -%}
 ]
