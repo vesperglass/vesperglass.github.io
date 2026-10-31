@@ -10,6 +10,10 @@ permalink: /library/changelog/
 
 These edition notes record additions to the existing folios. Where a record's source or status is uncertain, the folio says so and leaves unsupported details open.
 
+## October 31, 2026
+
+- **Compass Garden** — Compared the interior's apparent rose-to-arch sightline with the plan's radial center and curved paths, keeping composition distinct from surveyed orientation, measured layout, and any required route. [Read the cross-view comparison →]({{ '/library/compass-garden/#centerline-and-curved-paths--interior-view-against-plan' | relative_url }})
+
 ## October 30, 2026
 
 - **Compass Garden** — Audited the pictured keeper's reach against the flora key's “tending” label, distinguishing visible pose from unverified touch, care, identity, or gardening practice. [Read the gesture audit →]({{ '/library/compass-garden/#the-keepers-hand--visible-reach-and-interpretive-label' | relative_url }})

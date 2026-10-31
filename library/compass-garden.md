@@ -46,6 +46,20 @@ Read from the rose outward, the plate offers a simple way to compare the center,
 
 The proposed light calendar below uses the compass rose as a reference in its sample cues. This key clarifies that those cues belong to the proposed plan study; they do not assign the garden an absolute direction or a recurring celestial schedule.
 
+### Centerline and curved paths · interior view against plan
+
+Plate I and Plate II both make the compass rose a visual center, but they organize the space in different ways. The interior view draws the eye along the floor rose toward a distant framed opening; the plan places a rose at the hub of straight radial lines and curved paths that loop between beds. This comparison records how each illustration guides a reader's eye. It does not establish a measured correspondence between the pictures or a route used by anyone in the glasshouse.
+
+| Reading point | Plate I · interior view | Plate II · plan study | What the pair supports—and leaves open |
+| --- | --- | --- | --- |
+| **Central mark** | The large floor rose occupies the foreground and aligns visually with the glasshouse's distant central arch. | A smaller rose sits at the center of a plan, where straight lines extend toward the outer edges. | Both images use a central motif to organize attention. The pictures do not show that the motif has the same dimensions, construction, or measured position in a single surveyed structure. |
+| **Movement of the eye** | The long view narrows toward the far opening, with planting beds and repeated arches framing the center. | Curved paths bend around radial beds and meet a more direct cross through the central rose. | One image gives a strong forward view; the other distinguishes a direct axis from looping paths. Neither establishes a required walking sequence or access rule. |
+| **Planting beside the center** | Beds border the floor rose and fill side areas, while the central tiled line remains visually clear. | Wedge-shaped beds alternate with curved walkways around the hub. | The illustrations both reserve a legible center, but they do not establish bed boundaries, plant placement, or path widths as matching features. |
+| **Openings and edges** | A framed opening is prominent at the far end; the panoramic scene also shows glasshouse bays opening visually onto the surrounding platforms. | The drawn enclosure has openings centered at opposite ends, with paths reaching the plan's perimeter. | The views suggest openings at central positions in each composition. Their relationship, orientation, and access beyond the glasshouse remain unrecorded. |
+| **Orientation** | The floor rose appears to point toward the distant arch in perspective. | The plan's straight arms point to its drawn edges; no directional labels identify north or a destination. | Alignment within either picture is a compositional cue, not a bearing between platforms or a surveyed direction. |
+
+The useful distinction is between a **sightline** and a **path layout**. Plate I offers a perspective in which the rose and far arch appear aligned; Plate II offers a top-down arrangement in which curved paths branch around beds and cross a radial center. A visitor can compare those cues without assuming that the perspective camera stands at one end of the plan, that the pictured openings correspond, or that the plan provides dimensions. The [plan key](#plan-key--reading-plate-ii) names the curved paths as features of the drawing, while the [architecture reading](#an-architectural-reading) keeps the interior a proposal. Compass Garden's established description remains a named glasshouse; no account supplies a surveyed layout, bearing, measured access, or movement practice.
+
 ### Compass motifs · plan rose and Observatory instrument
 
 The Garden plan and the Observatory still life both use a star-shaped directional motif, but they depict different things in different contexts. This comparison keeps a fixed mark in a proposed room plan separate from an object described as a star compass in a proposed instrument plate.
