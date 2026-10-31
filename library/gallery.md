@@ -27,7 +27,14 @@ This gallery indexes image files shipped with the site, including encyclopedia p
 
 <script type="application/json" id="gallery-image-data">
 [
-{%- assign gallery_images = site.static_files | where_exp: "asset", "asset.extname == '.png' or asset.extname == '.jpg' or asset.extname == '.jpeg' or asset.extname == '.webp' or asset.extname == '.gif' or asset.extname == '.svg' or asset.extname == '.avif'" -%}
+{%- assign gallery_images = site.static_files | where_exp: "asset", "asset.extname == '.png'" -%}
+{%- assign gallery_jpg = site.static_files | where_exp: "asset", "asset.extname == '.jpg'" -%}
+{%- assign gallery_jpeg = site.static_files | where_exp: "asset", "asset.extname == '.jpeg'" -%}
+{%- assign gallery_webp = site.static_files | where_exp: "asset", "asset.extname == '.webp'" -%}
+{%- assign gallery_gif = site.static_files | where_exp: "asset", "asset.extname == '.gif'" -%}
+{%- assign gallery_svg = site.static_files | where_exp: "asset", "asset.extname == '.svg'" -%}
+{%- assign gallery_avif = site.static_files | where_exp: "asset", "asset.extname == '.avif'" -%}
+{%- assign gallery_images = gallery_images | concat: gallery_jpg | concat: gallery_jpeg | concat: gallery_webp | concat: gallery_gif | concat: gallery_svg | concat: gallery_avif -%}
 {%- for asset in gallery_images -%}
   {"path":{{ asset.path | relative_url | jsonify }},"name":{{ asset.name | split: "." | first | replace: "-", " " | jsonify }},"extension":{{ asset.extname | remove_first: "." | jsonify }}}{% unless forloop.last %},{% endunless %}
 {%- endfor -%}
