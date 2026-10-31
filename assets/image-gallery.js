@@ -16,7 +16,7 @@
   try { collections = collectionNode ? JSON.parse(collectionNode.textContent) : []; }
   catch { collections = []; }
 
-  const ignored = new Set(["assets", "image", "images", "plate", "v", "v2", "6144", "square", "superres", "sharp"]);
+  const ignored = new Set(["assets", "library", "image", "images", "plate", "v", "v2", "png", "jpg", "jpeg", "webp", "svg", "gif", "avif", "raster", "vector", "sprite", "sprites", "6144", "square", "superres", "sharp"]);
   const selected = new Set();
   let selectedKind = "";
   const collectibleByPath = new Map();
@@ -44,15 +44,11 @@
   };
   const classify = image => {
     const path = image.path.toLowerCase();
-    const tags = new Set([image.extension === "svg" ? "vector" : "raster", image.extension, image.status || "source unassigned", image.assetKind.toLowerCase()]);
-    if (path.includes("/library/")) tags.add("encyclopedia");
-    if (path.includes("/library/places/")) tags.add("place folio");
+    const tags = new Set([image.status || "source unassigned", image.assetKind.toLowerCase()]);
     if (path.includes("atlas") || path.includes("orbit-field") || path.includes("orbit-stars")) tags.add("atlas");
     if (path.includes("orbit-field") || path.includes("orbit-stars")) tags.add("Atlas field");
-    if (path.includes("sprite")) tags.add("sprite");
     if (path.includes("path-")) tags.add("route map");
     if (path.includes("postal") || path.includes("stamp")) tags.add("postal service");
-    if (path.includes("/collections/")) tags.add("collectible series");
     const tokens = `${image.name} ${path.split("/").slice(-2).join(" ")}`.toLowerCase().match(/[a-z]{3,}/g) || [];
     tokens.forEach(token => { if (!ignored.has(token)) tags.add(token); });
     return [...tags].sort((a, b) => a.localeCompare(b));
@@ -172,7 +168,7 @@
         const folioLink = document.createElement("a");
         folioLink.className = "gallery-card-folio";
         folioLink.href = image.folioUrl;
-        folioLink.textContent = `Read the ${titleText} account →`;
+        folioLink.textContent = image.folioLinkLabel || `Read the ${titleText} account →`;
         card.append(folioLink);
       }
       grid.append(card);

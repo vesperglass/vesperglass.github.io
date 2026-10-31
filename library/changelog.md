@@ -12,6 +12,8 @@ These edition notes record additions to the existing folios. Where a record's so
 
 ## October 31, 2026
 
+- **Atlas field illustrations** — Compared two unassigned clouded field studies with the dark field and sparse lights behind current Atlas place views; described the visible differences while leaving chronology, celestial identity, and image lineage unknown. Added a generated interpretation and kept gallery tags focused on subjects and source status. [Read the field-family comparison →]({{ '/library/gallery/#orbital-field-families' | relative_url }})
+
 - **Atlas destination views and illustrated register** — Added linked, source-bounded descriptions for eight named place illustrations and a companion Observatory interpretation, separating visible motifs from measured place accounts. [Browse the Atlas destination register →]({{ '/library/gallery/#atlas-destination-views--eight-named-places' | relative_url }})
 
 - **Threshold House** — Added an interpretive visual cue key and evidence-needed register for the proposed room-sound note, separating the pictured arch, bench, and open passage from any measured or established acoustic quality. [Read the sound-note audit →]({{ '/library/threshold-house/#reading-key--pictured-position-and-proposed-sensation' | relative_url }})

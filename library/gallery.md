@@ -71,6 +71,35 @@ The descriptions on each image card repeat these visible features for readers us
 
 Plate kind and reading status answer different questions: an Atlas destination view is both a place illustration and an interpretation. Older orbital and landmark drawings remain source-unassigned because no account or current Atlas view identifies their subject. The <a href="{{ '/explore/' | relative_url }}">Vesperglass Atlas</a> lets readers consult named locations; the <a href="{{ '/library/vesperglass-gate/' | relative_url }}">Gate account</a> and <a href="{{ '/library/train-dock/' | relative_url }}">Train Dock account</a> preserve the written descriptions that accompany two of those views.
 
+<h3 id="orbital-field-families">Orbital-field tile families · resemblance without lineage</h3>
+
+Two nine-panel field studies show clouded reaches of blue and teal light. Each is arranged as a three-by-three set, with a row-and-column key distinguishing its panels. A representative panel from each study shows a different arrangement and density of luminous cloud and small points. These are descriptions of the pictured samples; the labels do not establish which study came first, whether one revises the other, or how the remaining panels meet at their edges.
+
+The current Atlas presents a dark star field with a sparse layer of isolated lights behind its named-place views. The clouded studies are shown separately from that current background. This difference in visible role is useful for distinguishing the views, but it does not prove that either study once served as an earlier Atlas background. Nor does a row-and-column key make a panel a measured sky position: no coordinate key, celestial names, scale, or record of observation accompanies these studies.
+
+| Reading question | Clouded field study A | Clouded field study B | Current Atlas background |
+| --- | --- | --- | --- |
+| **What is visible?** | A representative square shows turbulent teal cloud, dark channels, and scattered small lights. | A representative square shows brighter cyan-blue cloud bands and more numerous scattered lights. | A dark field and a separate layer of sparse points frame the named-place views. |
+| **What role is established?** | It is an image group in the register; no current Atlas use is identified. | It is a separately named image group; no current Atlas use is identified. | The dark field and sparse light overlay appear behind the current Atlas views. |
+| **What remains unknown?** | Date, author, source, intended display, and relationship to the other clouded study. | Date, author, source, intended display, and whether the study is related to the first. | The identity of the lights, any correspondence to the clouded studies, and whether the background depicts a particular sky. |
+
+<figure class="specimen-plate">
+  <img src="{{ '/assets/atlas-orbit-field-r1c1.webp' | relative_url }}" alt="A square image tile with turbulent blue-teal cloud, dark channels, and a few points of light." loading="lazy">
+  <figcaption><span>ILLUSTRATED SAMPLE · CLOUDED FIELD STUDY A</span> A representative panel from the first clouded study. Its visible texture does not identify a body, place, observation, or relation to the second study.</figcaption>
+</figure>
+
+<figure class="specimen-plate">
+  <img src="{{ '/assets/atlas-orbit-field-v2-r1c1.png' | relative_url }}" alt="A square image tile with a brighter turquoise-blue cloud band, darker channels, and more scattered lights." loading="lazy">
+  <figcaption><span>ILLUSTRATED SAMPLE · CLOUDED FIELD STUDY B</span> A representative panel from the second clouded study. The more luminous appearance is visible in this sample only; it does not establish a revision history or a different celestial subject.</figcaption>
+</figure>
+
+<figure class="specimen-plate">
+  <img src="{{ '/assets/library/atlas-orbit-field-family-study.png' | relative_url }}" alt="An interpretive three-panel study contrasts a turbulent teal cloud, a brighter blue cloud band, and a separate dark field with sparse lights." loading="lazy">
+  <figcaption><span>INTERPRETATION · FIELD-APPEARANCE STUDY</span> This generated comparison recasts broad visual differences in the samples beside a separate sparse field. It is not a reproduction of any registered tile, a sequence of skies, or evidence of image lineage, observation, coordinates, or a mapped route.</figcaption>
+</figure>
+
+The <a href="{{ '/library/star-archive/' | relative_url }}">Star Archive</a> is described as keeping knowledge of the sky, and the <a href="{{ '/library/observatory/' | relative_url }}">Observatory Logbook</a> as a place of observation and record. Neither account names the lights in these field studies or connects them with a chart or recorded observation. The <a href="{{ '/explore/' | relative_url }}">current Atlas view</a> and the named places it frames should therefore remain distinct from the unassigned clouded panels. The comparison records what the studies look like and how they are presently related to the Atlas; it leaves their provenance and subject open.
+
 <section class="image-collections" aria-labelledby="image-collections-heading">
   <div class="gallery-tag-heading"><h2 id="image-collections-heading">Arranged illustration series</h2><span class="collection-intro">Six related views in each series</span></div>
   <div class="collection-cards">
@@ -116,7 +145,7 @@ Plate kind and reading status answer different questions: an Atlas destination v
   {%- assign atlas_description = site.data.gallery_descriptions[asset.name] -%}
   {%- assign atlas_url = '' -%}
   {%- if atlas_description -%}{%- assign atlas_url = atlas_description.folio_url | relative_url -%}{%- endif -%}
-  {"path":{{ asset.path | relative_url | jsonify }},"name":{{ asset.name | split: "." | first | replace: "-", " " | jsonify }},"extension":{{ asset.extname | remove_first: "." | jsonify }},"status":{{ editorial_status | jsonify }},"atlasTitle":{{ atlas_description.title | default: '' | jsonify }},"alt":{{ atlas_description.alt | default: '' | jsonify }},"folioUrl":{{ atlas_url | jsonify }}}{% unless forloop.last %},{% endunless %}
+  {"path":{{ asset.path | relative_url | jsonify }},"name":{{ asset.name | split: "." | first | replace: "-", " " | jsonify }},"extension":{{ asset.extname | remove_first: "." | jsonify }},"status":{{ editorial_status | jsonify }},"atlasTitle":{{ atlas_description.title | default: '' | jsonify }},"alt":{{ atlas_description.alt | default: '' | jsonify }},"folioUrl":{{ atlas_url | jsonify }},"folioLinkLabel":{{ atlas_description.folio_link_label | default: '' | jsonify }}}{% unless forloop.last %},{% endunless %}
 {%- endfor -%}
 ]
 </script>
