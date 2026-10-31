@@ -251,6 +251,32 @@ The schematic below explores how the proposed Gate stamp might sit beside separa
 
 The overlay applies the proposed design in a blank layout, so readers can see its scale relative to the Gate stamp and address fields. It is not a specimen of a posted letter. A place shown on a stamp or named by the mark is a visual reference, not an origin or destination. The [composite overprint study](#composite-overprint-study) describes the mark's elements; the [Vesperglass Train Dock]({{ '/library/train-dock/' | relative_url }}) and [Gate]({{ '/library/vesperglass-gate/' | relative_url }}) folios describe the train's berth and crossing, but neither records a postal route.
 
+### Blank address-field legend · sender, recipient, and pictured place
+
+The envelope face sets three kinds of information near one another: blank spaces for people, and a small stamp or overprint that names or depicts a place. This legend makes those roles explicit before any example is filled in. Its labels explain the editorial mock-up; they do not define a Vesperglass postal standard.
+
+<figure class="specimen-plate">
+  <img src="{{ '/assets/library/postal-envelope-fields.png' | relative_url }}" alt="Interpretive blank envelope study on a dark teal glass desk: three empty sender lines at upper left, four addressee lines below, and a proposed Gate-ring stamp crossed by fine cancellation-like strokes at upper right; small star marks decorate both writing zones." loading="lazy">
+  <figcaption><span>FIGURE II · INTERPRETIVE LAYOUT STUDY</span> A generated envelope rendering separates a small return field from the larger recipient field. Its star marks, paper treatment, Gate image, and cancellation-like strokes are design interpretation, not evidence of an issued form or used correspondence.</figcaption>
+</figure>
+
+| Zone in the proposal | Question the field could answer | What belongs there in this study | What it does not establish |
+| --- | --- | --- | --- |
+| **Sender / return field** | Who is writing, or where correspondence might be returned? | Nothing; the upper-left rules are left blank. | A named sender, return address, local writing custom, or guarantee that return details are used. |
+| **Addressee field** | To whom is the letter directed, and what address might identify them? | Nothing; the larger ruled area remains empty. | A recipient, address syntax, destination world, delivery zone, or mail route. |
+| **Stamp image** | Which place or motif does the proposed graphic depict? | The proposal uses the Gate ring as a visual subject. | That the pictured Gate is the letter's origin, addressee, destination, or point of dispatch. |
+| **Overprint** | What words and shapes have been added to the proposed graphic? | A ring and cancellation-like strokes appear over the stamp in the existing schematic. | A date, office, applied cancellation, accepted postal practice, or travel event. |
+
+The distinction between **sender** and **addressee** is relational: one names the party from whom a piece might come; the other, the party for whom it might be intended. A place-name printed inside the stamp's artwork answers neither question by itself. In particular, “VESPERGLASS” and “SEALED AT THE GATE” are proposed graphic lettering, not completed sender, recipient, or address entries. No name, place, or route is supplied by the generated study.
+
+| Source layer | Can support | Cannot supply |
+| --- | --- | --- |
+| **Gate account and plate** | A named place and passage role; the plate's pictured ring and platform. | A postal counter, the writer's location, a recipient, or mail passing through the Gate. |
+| **Train Dock account** | A berth and described train movement; a proposed docket can leave its endpoint unassigned. | An envelope address, a correspondence destination, or a route connecting the dock to a recipient. |
+| **Postal designs and envelope layouts** | A visual study that sets empty people-fields beside place imagery. | An operating service, approved field order, required address format, rate, delivery convention, or dispatched letter. |
+
+Accordingly, the blank values are intentional source boundaries rather than missing examples to infer. The [Train Dock docket]({{ '/library/train-dock/#blank-record-header--proposed-form' | relative_url }}) asks where a train might emerge; the addressee zone asks who might receive correspondence. Their adjacency on a page does not make a recipient the train's destination. Likewise, the [Gate folio]({{ '/library/vesperglass-gate/' | relative_url }}) supports the place reference but not a postal connection. These diagrams and labels remain editorial proposals; no postal operation is implemented or asserted here.
+
 ### Addressee and destination · envelope field versus journey endpoint
 
 The blank envelope reserves a place for an addressee; the proposed Train Dock docket has an **Origin / destination** field for a crossing. Both concern an endpoint in ordinary reading, but they ask different questions. An addressee is a recipient to whom correspondence might be directed. A destination in the docket would identify where the train emerges. The crossing account leaves that far side unnamed, while the envelope contains no recipient or address.
