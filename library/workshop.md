@@ -77,6 +77,8 @@ This comparison helps separate an **object label** from an **object relationship
 
 For the source-local inventories, see the [Observatory's Plate II key]({{ '/library/observatory/#plate-ii--pictured-instrument-inventory' | relative_url }}) and this folio's [Workshop Plate II inventory](#plate-ii--depicted-object-inventory). Both distinguish what the plates show from unrecorded ownership, materials, and use.
 
+The Observatory folio also compares its closed, clasped volume with the loose sheets pictured here, distinguishing a possible record from possible plans without claiming shared authorship, contents, or movement between places. [Read the document-form comparison →]({{ '/library/observatory/#closed-journal-and-loose-sheets--form-before-document-function' | relative_url }})
+
 ## Before a departure · proposed customs
 
 The following customs are recorded as possible practices for how keepers prepare together. Their standing across Vesperglass has not been established.

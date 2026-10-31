@@ -22,7 +22,7 @@ permalink: /library/
   </a>
   <a class="library-entry-card" href="{{ '/library/workshop/' | relative_url }}">
     <span class="library-card-art"><img src="{{ '/assets/library/places/workshop-interior.webp' | relative_url }}" alt="The shared worktable inside the central Vesperglass Workshop." loading="lazy"></span>
-    <span class="library-entry-copy"><span class="library-entry-number">ENTRY 002 &nbsp;·&nbsp; HOME &amp; MAKING</span><strong>Vesperglass Workshop</strong><span>The central home platform, with a proposed cutaway inventory and a comparison of its pictured wall tools with the Observatory's instrument still life.</span><span class="library-read">Read the entry <span aria-hidden="true">↗</span></span></span>
+    <span class="library-entry-copy"><span class="library-entry-number">ENTRY 002 &nbsp;·&nbsp; HOME &amp; MAKING</span><strong>Vesperglass Workshop</strong><span>The central home platform, with a proposed cutaway inventory and comparisons linking its sheets and wall tools to the Observatory.</span><span class="library-read">Read the entry <span aria-hidden="true">↗</span></span></span>
   </a>
   <a class="library-entry-card" href="{{ '/library/threshold-house/' | relative_url }}">
     <span class="library-card-art"><img src="{{ '/assets/library/places/threshold-interior.webp' | relative_url }}" alt="A lantern-lit threshold chamber opening onto the stars." loading="lazy"></span>
@@ -38,7 +38,7 @@ permalink: /library/
   </a>
   <a class="library-entry-card" href="{{ '/library/observatory/' | relative_url }}">
     <span class="library-card-art"><img src="{{ '/assets/library/places/observatory-interior.webp' | relative_url }}" alt="An observer at work beneath the Observatory's star-facing dome." loading="lazy"></span>
-    <span class="library-entry-copy"><span class="library-entry-number">ENTRY 006 &nbsp;·&nbsp; OBSERVATION &amp; RECORDS</span><strong>Observatory Logbook</strong><span>A source-aware record with a pictured instrument inventory, proposed second watch, and cross-reference to the Workshop's wall-tool group.</span><span class="library-read">Read the entry <span aria-hidden="true">↗</span></span></span>
+    <span class="library-entry-copy"><span class="library-entry-number">ENTRY 006 &nbsp;·&nbsp; OBSERVATION &amp; RECORDS</span><strong>Observatory Logbook</strong><span>A source-aware record with a pictured instrument inventory, proposed second watch, and a comparison between its closed journal and the Workshop's loose sheets.</span><span class="library-read">Read the entry <span aria-hidden="true">↗</span></span></span>
   </a>
   <a class="library-entry-card" href="{{ '/library/star-archive/' | relative_url }}">
     <span class="library-card-art"><img src="{{ '/assets/library/places/archive-interior.webp' | relative_url }}" alt="A circular Star Archive with a central reading table." loading="lazy"></span>
