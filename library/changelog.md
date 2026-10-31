@@ -12,6 +12,8 @@ These edition notes record additions to the existing folios. Where a record's so
 
 ## October 31, 2026
 
+- **Threshold House** — Added a generated, clearly interpretive comparison of shelf lanterns in the interior plate and a suspended light in the reconstructed elevation, separating their positions from any shared fixture or lighting practice. [Read the Threshold House folio →]({{ '/library/threshold-house/#shelf-lanterns-and-hanging-lights--placement-without-a-shared-system' | relative_url }})
+
 - **Vesperglass Workshop and Observatory Logbook** — Added a source-bounded comparison of the Workshop banner ornament and the Observatory's pictured star compass, with a generated interpretive plate that keeps their contexts and unknown provenance distinct. Added a build-populated, searchable multi-tag image gallery and linked it and this changelog in the left navigation. [Read the Workshop comparison →]({{ '/library/workshop/#the-banner-and-the-star-compass--motif-is-not-provenance' | relative_url }}) · [Browse the image gallery →]({{ '/library/gallery/' | relative_url }})
 
 - **Vesperglass Workshop** — Compared the line-drawn sheets at the side table and central work area, keeping separate placements distinct from one set, shared plan, or continuing task. [Read the sheet-placement note →]({{ '/library/workshop/#two-placements--are-the-drawn-sheets-one-set' | relative_url }})

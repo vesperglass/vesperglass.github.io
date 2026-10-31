@@ -50,6 +50,24 @@ Plate I presents an interpretive interior; Plate II presents a reconstructed pla
 
 The concordance supports continuity in the visual design, not a verified floor plan. The proposed greetings and sound notes later in this folio can be read against these pictured positions, but they remain optional interpretations. The [Vesperglass Gate folio]({{ '/library/vesperglass-gate/' | relative_url }}) records a separate crossing platform and does not confirm that Threshold House is a station on its route.
 
+### Shelf lanterns and hanging lights · placement without a shared system
+
+The two proposed views both use warm light near the open threshold, but they place it differently. Plate I shows several small lantern forms resting in shallow wall niches and on projecting shelves along the chamber. Plate II's elevation adds a pendant suspended above the centered arch; its plan places lamp marks at selected recesses from a top-down viewpoint. Reading the fixtures by support and viewpoint keeps a repeated lighting motif from becoming an invented installation plan.
+
+<figure class="specimen-plate place-plate">
+  <img src="{{ '/assets/library/threshold-lighting-comparison.png' | relative_url }}" alt="A generated paired study contrasts lanterns resting on wall shelves in a chamber view with one pendant hanging over an architectural arch." loading="lazy">
+  <figcaption><span>COMPARATIVE PLATE</span> Generated interpretive views of shelf-held and suspended lights; they clarify a visual contrast and add no architectural evidence.</figcaption>
+</figure>
+
+| Reading point | Plate I · interior | Plate II · plan and elevation | What the views leave open |
+| --- | --- | --- | --- |
+| **Support** | Small lanterns appear on ledges within recessed wall bays. | One fixture hangs from above the central arch in the elevation; the plan uses lamp marks beside the passage. | Whether any pictured lamps are the same fixture, or whether the plan symbols specify a hanging, shelf, or wall-mounted design. |
+| **Position** | Several points of light are distributed beside the bench and along the chamber wall. | A central pendant is prominent in elevation, while the plan's lights occupy positions around the room's edges. | A measured count, exact spacing, orientation, or one-to-one correspondence between viewpoints. |
+| **Repeated cue** | The interior's recesses make warm light part of its side-wall composition. | The elevation and plan also place light near the opening and around the chamber. | A deliberate lighting scheme, continuous circuit, fuel source, or established practice of lighting a passage. |
+| **Source boundary** | The interior is an interpretive image, not an observed record of the fixtures. | The plan and elevation are reconstructed proposals, not construction drawings. | The fixtures' materials, makers, operation, maintenance, and relation to any actual Threshold House remain unrecorded. |
+
+The comparison supports only a compositional observation: both proposals distribute light near the opening, while the elevation adds a suspended form absent from the interior's shelf-and-niche arrangement. It does not reconcile the drawings into one room or turn their differences into evidence of a staged lighting sequence. The [plate concordance above](#plate-concordance--interior-and-plan) records the larger cross-view limits; the present key isolates the lights.
+
 ### Framed opening and freestanding aperture · a place-role comparison
 
 The central opening in Threshold House's proposed interior can resemble the aperture pictured at the Vesperglass Gate. The resemblance is useful to notice, but the two sources describe different things: Threshold House is an established place-name whose purpose is not recorded, while the Gate has an established passage role. This comparison keeps the room illustration and the crossing account side by side without joining them into a shared structure or route.
