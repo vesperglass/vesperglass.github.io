@@ -148,6 +148,31 @@ The table counts one `opacity` attribute per circle element. In rendering, a low
 
 The <a href="{{ '/library/star-archive/' | relative_url }}">Star Archive</a> and <a href="{{ '/library/observatory/' | relative_url }}">Observatory Logbook</a> give readers established context for sky knowledge and record-keeping, but neither connects these opacity settings with an observation or physical object. This key records only how the background files are authored and what their transparency values permit a renderer to show.
 
+<h4 id="atlas-background-tile-radii">Circle sizes · shared minima, close typical values</h4>
+
+Each tile contains many SVG circles whose `r` attribute sets the radius in the file's coordinate units. Across the nine files, the smallest radius is **0.45** everywhere; the largest ranges only from **3.39 to 3.60**. The median radius stays close to **1.00**, from **0.97 to 1.02**. This makes the asset family's size vocabulary fairly consistent even though individual marks vary.
+
+<figure class="specimen-plate">
+  <img src="{{ '/assets/library/atlas-background-tile-radius-study.png' | relative_url }}" alt="An interpretive three-by-three matrix of varied pale circles, with very small marks and a few much larger circles in each cell." loading="lazy">
+  <figcaption><span>INTERPRETATION · CIRCLE-SIZE RANGE</span> The generated plate makes the size hierarchy easy to compare by deliberately enlarging the circles. It is not at the SVGs' scale, does not match their radius ratios, and does not reproduce any tile's point pattern or sky position.</figcaption>
+</figure>
+
+| Tile (row, column) | Circle marks | Radius range (SVG units) | Median radius | Mean radius | Largest radius |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| **1 (1, 1)** | 1,003 | 0.45–3.52 | 1.01 | 1.107 | 3.52 |
+| **2 (1, 2)** | 1,023 | 0.45–3.60 | 1.01 | 1.099 | 3.60 |
+| **3 (1, 3)** | 1,025 | 0.45–3.59 | 0.98 | 1.078 | 3.59 |
+| **4 (2, 1)** | 1,025 | 0.45–3.53 | 0.99 | 1.081 | 3.53 |
+| **5 (2, 2)** | 1,004 | 0.45–3.59 | 1.01 | 1.107 | 3.59 |
+| **6 (2, 3)** | 990 | 0.45–3.39 | 1.02 | 1.097 | 3.39 |
+| **7 (3, 1)** | 972 | 0.45–3.55 | 0.97 | 1.073 | 3.55 |
+| **8 (3, 2)** | 1,008 | 0.45–3.58 | 0.98 | 1.093 | 3.58 |
+| **9 (3, 3)** | 974 | 0.45–3.60 | 0.99 | 1.065 | 3.60 |
+
+For a circle with the same fill and opacity, geometric area grows with the square of its radius: a mark at the largest radius is roughly thirteen times the area of a mark near the overall median of **1.00**. That relation helps explain why a few larger marks carry more visible area even though the radius itself remains a small fraction of a tile's 1,024-unit width. It is only a comparison of SVG geometry. Fill color, per-mark opacity, background compositing, and later display scaling all affect what a visitor sees.
+
+The gallery's **tile 1–9** order still names image slots, not locations. Radius does not identify a physical body's size, distance, magnitude, importance, or relation to another mark. The <a href="{{ '/library/star-archive/' | relative_url }}">Star Archive</a> and <a href="{{ '/library/observatory/' | relative_url }}">Observatory Logbook</a> are relevant established references for sky knowledge and observation, but neither folio associates a mark's apparent size with a recorded object or measurement.
+
 <h3 id="orbital-field-families">Clouded field studies · resemblance without lineage</h3>
 
 Two nine-panel field studies show clouded reaches of blue and teal light. Each is arranged as a three-by-three set, with a row-and-column key distinguishing its panels. A representative panel from each study shows a different arrangement and density of luminous cloud and small points. These are descriptions of the pictured samples; the labels do not establish which study came first, whether one revises the other, or how the remaining panels meet at their edges.
