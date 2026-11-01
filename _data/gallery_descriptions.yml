@@ -183,3 +183,10 @@ atlas-background-tile-hue-study.png:
   gallery_tags: [Atlas background, color comparison, SVG fill values]
   folio_url: /library/gallery/#atlas-background-tile-hues
   folio_link_label: Read the hue comparison →
+atlas-background-tile-opacity-study.png:
+  title: Atlas background tile opacity · interpretive comparison
+  alt: "A generated three-by-three matrix of colored dots with increasing apparent opacity from upper to lower rows, used as an abstract guide to the background tiles' transparency values; it does not reproduce their marks or per-file alpha data."
+  gallery_role: Interpretive comparison plate
+  gallery_tags: [Atlas background, opacity range, transparency]
+  folio_url: /library/gallery/#atlas-background-tile-opacity
+  folio_link_label: Read the opacity comparison →

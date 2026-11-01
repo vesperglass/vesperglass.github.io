@@ -123,6 +123,31 @@ No tile has a single-color majority: the most frequent value accounts for only a
 
 Row and column continue to identify only the gallery's file order. The <a href="{{ '/library/star-archive/' | relative_url }}">Star Archive</a> and <a href="{{ '/library/observatory/' | relative_url }}">Observatory Logbook</a> provide relevant established subjects for sky knowledge and observation, but neither identifies a mark in these background tiles. The counts belong to image files; they are not an observation catalog or a chart key.
 
+<h4 id="atlas-background-tile-opacity">Transparency · shared range, small distribution shifts</h4>
+
+Each point in these transparent SVGs has its own stored `opacity` value. All nine tiles use the same minimum, **0.20**, and maximum, **0.96**. Their medians fall between **0.57 and 0.60**, and their means between **0.575 and 0.593**. The comparison shows a shared range with only small differences in the distribution of alpha values; no tile has a unique low or high endpoint.
+
+<figure class="specimen-plate">
+  <img src="{{ '/assets/library/atlas-background-tile-opacity-study.png' | relative_url }}" alt="An interpretive three-by-three matrix of colored dots, with faint examples in the upper row and progressively clearer examples below." loading="lazy">
+  <figcaption><span>INTERPRETATION · OPACITY RANGE</span> This generated plate demonstrates how varying transparency can change the appearance of otherwise similar marks. Its rows are a teaching gradient, not one-to-one samples of the nine tiles; it does not reproduce their alpha values, colors, or mark positions.</figcaption>
+</figure>
+
+| Tile (row, column) | Circle marks | Stored range | Median opacity | Mean opacity |
+| --- | ---: | ---: | ---: | ---: |
+| **1 (1, 1)** | 1,003 | 0.20–0.96 | 0.57 | 0.577 |
+| **2 (1, 2)** | 1,023 | 0.20–0.96 | 0.58 | 0.579 |
+| **3 (1, 3)** | 1,025 | 0.20–0.96 | 0.60 | 0.593 |
+| **4 (2, 1)** | 1,025 | 0.20–0.96 | 0.59 | 0.584 |
+| **5 (2, 2)** | 1,004 | 0.20–0.96 | 0.57 | 0.575 |
+| **6 (2, 3)** | 990 | 0.20–0.96 | 0.57 | 0.577 |
+| **7 (3, 1)** | 972 | 0.20–0.96 | 0.58 | 0.580 |
+| **8 (3, 2)** | 1,008 | 0.20–0.96 | 0.58 | 0.576 |
+| **9 (3, 3)** | 974 | 0.20–0.96 | 0.58 | 0.578 |
+
+The table counts one `opacity` attribute per circle element. In rendering, a lower alpha value makes that mark more transparent and a higher value makes it less transparent; the resulting appearance also depends on its fill color, radius, and the background behind the layer. The SVG values therefore describe image construction, not the actual brightness, distance, depth, or importance of any light. The files are still separate image tiles, and their array positions remain unrelated to sky direction or coordinates.
+
+The <a href="{{ '/library/star-archive/' | relative_url }}">Star Archive</a> and <a href="{{ '/library/observatory/' | relative_url }}">Observatory Logbook</a> give readers established context for sky knowledge and record-keeping, but neither connects these opacity settings with an observation or physical object. This key records only how the background files are authored and what their transparency values permit a renderer to show.
+
 <h3 id="orbital-field-families">Clouded field studies · resemblance without lineage</h3>
 
 Two nine-panel field studies show clouded reaches of blue and teal light. Each is arranged as a three-by-three set, with a row-and-column key distinguishing its panels. A representative panel from each study shows a different arrangement and density of luminous cloud and small points. These are descriptions of the pictured samples; the labels do not establish which study came first, whether one revises the other, or how the remaining panels meet at their edges.
