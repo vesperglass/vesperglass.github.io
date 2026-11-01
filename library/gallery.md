@@ -90,6 +90,39 @@ The titles and alt descriptions of the nine gallery cards use **tile 1–9** and
 
 The <a href="{{ '/library/star-archive/' | relative_url }}">Star Archive</a> keeps knowledge of the sky, and the <a href="{{ '/library/observatory/' | relative_url }}">Observatory Logbook</a> is associated with observation and record. Neither folio identifies the points in this background or links them to a chart. The gallery's **Atlas background fields** plate kind classifies these files by their role as images; it does not authenticate a celestial subject, route, scale, or map correspondence.
 
+<h4 id="atlas-background-tile-hues">Color accents · repeated fills, near-even counts</h4>
+
+The nine transparent SVG layers use the same five hexadecimal fill values for their point marks. The table gives each value a plain-language color name, then records the most frequent fill in each file. That narrow tally is useful for distinguishing the source assets and locating a tile whose most common accent varies. It is not a measurement of how bright the image appears: each point also has its own size and opacity, and the rendered background places these marks over other Atlas artwork.
+
+<figure class="specimen-plate">
+  <img src="{{ '/assets/library/atlas-background-tile-hue-study.png' | relative_url }}" alt="An interpretive three-by-three matrix of abstract luminous dots, showing pale blue, white, cyan, lilac, and warm ivory accents in different proportions." loading="lazy">
+  <figcaption><span>INTERPRETATION · HUE-ACCENT COMPARISON</span> This generated plate uses abstract dots to demonstrate the color vocabulary and nine-cell reading order. It does not reproduce the SVG fills or positions, encode fill counts, or depict nine sky regions; variations in dot size and glow are illustrative only.</figcaption>
+</figure>
+
+| SVG fill value | Plain color description | Marks across all nine files | Share of all fill marks |
+| --- | --- | ---: | ---: |
+| `#c9dcff` | Pale blue | 1,822 / 9,024 | 20.19% |
+| `#b5e3ff` | Cyan-blue | 1,827 / 9,024 | 20.25% |
+| `#ddd3ff` | Lilac | 1,809 / 9,024 | 20.05% |
+| `#edf3ff` | Soft white | 1,823 / 9,024 | 20.20% |
+| `#f4e1c5` | Warm ivory | 1,743 / 9,024 | 19.32% |
+
+| Tile (row, column) | Most frequent fill | Count in that tile | Share of its fill marks |
+| --- | --- | ---: | ---: |
+| **1 (1, 1)** | Pale blue `#c9dcff` | 213 / 1,003 | 21.2% |
+| **2 (1, 2)** | Soft white `#edf3ff` | 218 / 1,023 | 21.3% |
+| **3 (1, 3)** | Pale blue `#c9dcff` | 215 / 1,025 | 21.0% |
+| **4 (2, 1)** | Cyan-blue `#b5e3ff` | 222 / 1,025 | 21.7% |
+| **5 (2, 2)** | Pale blue `#c9dcff` | 215 / 1,004 | 21.4% |
+| **6 (2, 3)** | Cyan-blue `#b5e3ff` | 214 / 990 | 21.6% |
+| **7 (3, 1)** | Lilac `#ddd3ff` | 214 / 972 | 22.0% |
+| **8 (3, 2)** | Warm ivory `#f4e1c5` | 217 / 1,008 | 21.5% |
+| **9 (3, 3)** | Cyan-blue `#b5e3ff` | 206 / 974 | 21.1% |
+
+No tile has a single-color majority: the most frequent value accounts for only about one fifth of each file's fill marks. The same five colors recur throughout the set, while a modest change in frequency determines which one leads a particular tile. This is a comparison of the literal SVG `fill` attributes, counted once per point mark; it does not weight the mark by radius, opacity, screen blending, or visible area. A common color or a higher count therefore says nothing about a named light, temperature, distance, physical intensity, or shared position.
+
+Row and column continue to identify only the gallery's file order. The <a href="{{ '/library/star-archive/' | relative_url }}">Star Archive</a> and <a href="{{ '/library/observatory/' | relative_url }}">Observatory Logbook</a> provide relevant established subjects for sky knowledge and observation, but neither identifies a mark in these background tiles. The counts belong to image files; they are not an observation catalog or a chart key.
+
 <h3 id="orbital-field-families">Clouded field studies · resemblance without lineage</h3>
 
 Two nine-panel field studies show clouded reaches of blue and teal light. Each is arranged as a three-by-three set, with a row-and-column key distinguishing its panels. A representative panel from each study shows a different arrangement and density of luminous cloud and small points. These are descriptions of the pictured samples; the labels do not establish which study came first, whether one revises the other, or how the remaining panels meet at their edges.
