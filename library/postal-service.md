@@ -53,6 +53,25 @@ The strongest concordance lies at the perimeter: the scallop, pale margin, inset
 
 This is a comparison of artwork, not proof that the four designs were printed together or issued as a set. No account gives the Postal Service an established history, production method, denomination, or rules for perforation. The proposed frames may be read as a consistent design choice; any practical postal meaning remains open.
 
+<h4 id="scallop-gutter-and-outer-margin">Scallop, gutter, and outer margin · three separate boundaries</h4>
+
+The four-panel sheet makes three neighboring kinds of empty space easy to conflate. A stamp's **scalloped silhouette** encloses one design; a **gutter** lies between two designs; and the **outer margin** lies beyond the group. Figure IV separates these positions at larger scale. Its numbered callouts are editorial aids: they describe the generated diagram and do not assert that the proposal is a cut, perforated, or printable physical sheet.
+
+<figure class="specimen-plate">
+  <img src="{{ '/assets/library/postal-stamp-edge-gutter-study.png' | relative_url }}" alt="An interpretive diagram enlarges three boundaries from a four-panel stamp proposal: 1 marks the scalloped edge around one panel, 2 the dark gap between neighboring panels, and 3 the open margin beyond the group." loading="lazy">
+  <figcaption><span>FIGURE IV · INTERPRETIVE EDGE STUDY</span> The generated plate separates one design's scalloped outline from the inter-panel gutter and the open outside margin. Its numbered callouts are diagram marks, not marks on an issued sheet; the scallops do not document actual perforations or a means of separation.</figcaption>
+</figure>
+
+| Callout | Where to look | What the illustration supports | What remains unknown |
+| --- | --- | --- | --- |
+| **1 · Individual outline** | The pale scalloped contour that surrounds one dark-blue stamp panel. | Each design is presented as having its own repeated outer silhouette, separate from the gold inner frame. | Whether the contour represents perforations, a die-cut edge, an ornamental border only, or any production method. |
+| **2 · Inter-panel gutter** | The open dark strip between the edges of two neighboring panels. | The page leaves visible separation between adjacent designs; that gap is not one panel's scalloped contour. | Whether any physical sheet used this spacing, whether the designs were ever joined, or how a stamp might have been detached. |
+| **3 · Outer margin** | The open area beyond the outside edge of the four-panel arrangement. | The group is shown against surrounding space distinct from the internal gutters. | A sheet boundary, trim allowance, backing, or standard page size. |
+
+This distinction sharpens the earlier border concordance without adding a production story: repeated silhouettes belong to the panel artwork, while the gaps and surrounding field belong to the composition of the four-panel image. The [Observatory stamp comparison with the Unfixed Meridian margin marks](#observatory-stamp--decorative-stars-and-chart-margin-marks) concerns marks placed **inside** one design's field; it does not classify the spaces between or around the designs. The [Star Archive chart's proposed margin key]({{ '/library/star-archive/#proposed-margin-mark-legend--the-unfixed-meridian' | relative_url }}) is likewise an annotation proposal, not evidence for a postal-sheet margin convention.
+
+The comparison therefore has a narrow use: when describing this plate, call the scallop an illustrated edge, the gap a gutter, and the area beyond the group an outer margin. None establishes a physical sheet, perforation standard, cutting operation, or issued stamp set.
+
 ### Shared palette · color lineage across four source plates
 
 The proposed sheet gives four different place motifs a common night-blue, teal, brass-gold, and parchment treatment. Comparing the sheet with its source plates shows both continuity and simplification: color helps hold the designs together as one graphic set, while each motif keeps its own local emphasis. These are readings of the illustrations, not confirmed material specifications for the places.

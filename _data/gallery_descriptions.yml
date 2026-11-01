@@ -225,3 +225,10 @@ atlas-background-grid-parity-study.png:
   gallery_tags: [Atlas background, grid center, viewport geometry, odd and even arrays]
   folio_url: /library/gallery/#atlas-background-grid-parity
   folio_link_label: Read the grid-parity key →
+postal-stamp-edge-gutter-study.png:
+  title: Proposed stamp sheet · edge, gutter, and margin
+  alt: "A generated diagram enlarges a proposed scalloped stamp outline, the dark gutter between two panels, and the open margin beyond a four-panel design group; numbered callouts distinguish the three spaces without documenting a physical printing process."
+  gallery_role: Interpretive detail study
+  gallery_tags: [Postal Service, stamp border, panel gutter, page margin, visual boundary]
+  folio_url: /library/postal-service/#scallop-gutter-and-outer-margin
+  folio_link_label: Read the edge study →

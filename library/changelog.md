@@ -12,6 +12,8 @@ These edition notes record additions to the existing folios. Where a record's so
 
 ## November 1, 2026
 
+- **Postal Service** — Distinguished the proposed stamp sheet's individual scalloped outlines from its internal gutters and outer margin, with a generated interpretive edge study. [Read the edge study →]({{ '/library/postal-service/#scallop-gutter-and-outer-margin' | relative_url }})
+
 - **Atlas image gallery** — Distinguished the origin of the middle SVG tile from the geometric center of the 3×3 array, with an odd-versus-even grid comparison and a generated interpretive diagram. [Read the grid-parity key →]({{ '/library/gallery/#atlas-background-grid-parity' | relative_url }})
 
 - **Atlas image gallery** — Added a geometric reading of the nine-cell background mosaic around a central pivot, distinguishing cell identity from page-relative orientation; included a generated interpretive diagram. [Read the centered-turn key →]({{ '/library/gallery/#atlas-background-grid-turn' | relative_url }})
