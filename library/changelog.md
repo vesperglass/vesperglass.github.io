@@ -12,6 +12,8 @@ These edition notes record additions to the existing folios. Where a record's so
 
 ## November 1, 2026
 
+- **Atlas image gallery** — Added a geometric reading of the nine-cell background mosaic around a central pivot, distinguishing cell identity from page-relative orientation; included a generated interpretive diagram. [Read the centered-turn key →]({{ '/library/gallery/#atlas-background-grid-turn' | relative_url }})
+
 - **Atlas field illustrations** — Added three panel-level notes for point-like lights near clouded image borders, distinguishing visible placement from identity, clipping, or connection between panels; included a new interpretive detail plate. [Read the frame-margin notes →]({{ '/library/gallery/#clouded-field-margin-points' | relative_url }})
 
 - **Atlas image gallery** — Mapped the nine background SVG viewBox origins into a 3×3 file-space grid and recorded matching circle definitions that recur across neighboring tiles; their seam purpose remains unverified. [Read the viewBox key →]({{ '/library/gallery/#atlas-background-viewbox-grid' | relative_url }})

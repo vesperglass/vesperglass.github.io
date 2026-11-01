@@ -192,6 +192,25 @@ Across the nine SVG files, **24 circle definitions** have exact duplicates in a 
 
 The current Atlas presents the nine assets as a tiled background layer behind its named-place illustrations. The <a href="{{ '/library/star-archive/' | relative_url }}">Star Archive</a> and <a href="{{ '/library/observatory/' | relative_url }}">Observatory Logbook</a> describe established relationships to sky knowledge and observation, but neither identifies these file-space offsets with an astronomical chart. The viewBox matrix describes how the image files are divided and ordered, not what any point represents.
 
+<h4 id="atlas-background-grid-turn">A square mosaic turned · pivot, cells, and page orientation</h4>
+
+The viewBox table records how nine square windows form a larger square. A geometric turn changes how that mosaic sits against the page: the center can remain in place while the outer rows, columns, and corners change orientation. A marked cell makes the shift easy to follow without assigning it a direction in a sky.
+
+<figure class="specimen-plate">
+  <img src="{{ '/assets/library/atlas-background-grid-turn-study.png' | relative_url }}" alt="Three brass-outlined three-by-three square mosaics show the same marked cell at upper left, within a slightly turned grid, and at upper right after a quarter-turn around a central pivot." loading="lazy">
+  <figcaption><span>INTERPRETATION · CENTERED-TURN GEOMETRY</span> This generated plate illustrates a square array turning around its middle. Its cloudy panels and gold fleck are diagrammatic; the image is not an Atlas capture, a measured sky, or evidence of celestial motion.</figcaption>
+</figure>
+
+| Reading | What changes in the diagram | What remains fixed | Limit of the comparison |
+| --- | --- | --- | --- |
+| **Upright array** | Three rows and three columns align with the page edges; the gold fleck sits in the upper-left cell. | The mosaic's geometric center lies within its middle cell. | Row and column labels describe picture assembly, not a horizon or bearing. |
+| **Oblique turn** | Every cell shares the same new orientation, and the square corners extend beyond the upright footprint. | The pivot stays at the mosaic's center; the cells retain their equal square form. | The drawn pivot is not a fixed point in the sky or a rotation axis assigned by an account. |
+| **Quarter-turn** | The array again aligns with the page edges, while the marked cell now appears at upper right. | The same nine cells and their internal marks have turned together. | A changed page-relative position does not show an object moving between sky locations or panels. |
+
+The key distinction is between a **cell's identity inside the source arrangement** and its **position relative to the page**. Turning the whole grid changes the second while leaving the first intact: the marked tile remains the marked tile even when it appears in a different corner. If a rectangular viewing frame clips a turned square, that crop is a boundary of the picture, not proof that a cell continues beyond it.
+
+This drawing complements the <a href="{{ '/library/gallery/#atlas-background-viewbox-grid' | relative_url }}">viewBox-origin key</a>, which records file-space windows, and the <a href="{{ '/library/gallery/#clouded-field-panel-descriptions' | relative_url }}">panel-description key</a>, whose row and column words locate panels only within their displayed sets. The <a href="{{ '/library/star-archive/' | relative_url }}">Star Archive</a> and <a href="{{ '/library/observatory/' | relative_url }}">Observatory Logbook</a> are established places associated with sky knowledge and observation; neither connects this geometric illustration to a celestial coordinate, observed turn, or charted direction.
+
 <h3 id="orbital-field-families">Clouded field studies · resemblance without lineage</h3>
 
 Two nine-panel field studies show clouded reaches of blue and teal light. Each is arranged as a three-by-three set, with a row-and-column key distinguishing its panels. A representative panel from each study shows a different arrangement and density of luminous cloud and small points. These are descriptions of the pictured samples; the labels do not establish which study came first, whether one revises the other, or how the remaining panels meet at their edges.

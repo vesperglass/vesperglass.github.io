@@ -211,3 +211,10 @@ atlas-background-viewbox-grid.png:
   gallery_tags: [Atlas background, viewport grid, SVG viewBox, tile seams]
   folio_url: /library/gallery/#atlas-background-viewbox-grid
   folio_link_label: Read the viewBox key →
+atlas-background-grid-turn-study.png:
+  title: Atlas background grid · centered turn
+  alt: "Three brass-outlined square mosaics show a marked cell moving from upper left, through an oblique turn, to upper right after a quarter-turn around the grid center."
+  gallery_role: Interpretive diagram
+  gallery_tags: [Atlas background, square grid, centered turn, panel orientation]
+  folio_url: /library/gallery/#atlas-background-grid-turn
+  folio_link_label: Read the centered-turn key →
