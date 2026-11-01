@@ -12,6 +12,8 @@ These edition notes record additions to the existing folios. Where a record's so
 
 ## November 1, 2026
 
+- **Atlas image gallery** — Mapped the nine background SVG viewBox origins into a 3×3 file-space grid and recorded matching circle definitions that recur across neighboring tiles; their seam purpose remains unverified. [Read the viewBox key →]({{ '/library/gallery/#atlas-background-viewbox-grid' | relative_url }})
+
 - **Atlas image gallery** — Compared circle-radius ranges across all nine background tiles, with per-file counts and distribution summaries; clarified that SVG marker size is a rendering property, not a measure of a pictured body's scale. [Read the circle-size comparison →]({{ '/library/gallery/#atlas-background-tile-radii' | relative_url }})
 
 - **Atlas image gallery** — Compared the opacity attributes across all nine background tiles, recording each file's shared range and its median and mean values; clarified that alpha controls image transparency rather than a physical property. [Read the opacity comparison →]({{ '/library/gallery/#atlas-background-tile-opacity' | relative_url }})

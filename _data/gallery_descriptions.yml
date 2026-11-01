@@ -117,63 +117,63 @@ atlas-orbit-stars-r1c1.svg:
   title: Atlas background field · tile 1 (row 1, column 1)
   alt: "A transparent image layer scattered with small pale blue-white, lilac, and warm ivory points; tile 1 in the Atlas background field's nine-image arrangement, not a sky sector or plotted location."
   gallery_role: Atlas background tile
-  gallery_tags: [Atlas background, point lights, transparent layer, pale blue fill]
+  gallery_tags: [Atlas background, point lights, transparent layer, tiled viewport, pale blue fill]
   folio_url: /library/gallery/#atlas-background-starfield-tiles
   folio_link_label: Read the background-field key →
 atlas-orbit-stars-r1c2.svg:
   title: Atlas background field · tile 2 (row 1, column 2)
   alt: "A transparent image layer scattered with small pale blue-white and cyan points plus lilac accents; tile 2 in the Atlas background field's nine-image arrangement, not a sky sector or plotted location."
   gallery_role: Atlas background tile
-  gallery_tags: [Atlas background, point lights, transparent layer, soft white fill]
+  gallery_tags: [Atlas background, point lights, transparent layer, tiled viewport, soft white fill]
   folio_url: /library/gallery/#atlas-background-starfield-tiles
   folio_link_label: Read the background-field key →
 atlas-orbit-stars-r1c3.svg:
   title: Atlas background field · tile 3 (row 1, column 3)
   alt: "A transparent image layer scattered with small pale blue, white, cyan, and lilac points; tile 3 in the Atlas background field's nine-image arrangement, not a sky sector or plotted location."
   gallery_role: Atlas background tile
-  gallery_tags: [Atlas background, point lights, transparent layer, pale blue fill]
+  gallery_tags: [Atlas background, point lights, transparent layer, tiled viewport, pale blue fill]
   folio_url: /library/gallery/#atlas-background-starfield-tiles
   folio_link_label: Read the background-field key →
 atlas-orbit-stars-r2c1.svg:
   title: Atlas background field · tile 4 (row 2, column 1)
   alt: "A transparent image layer scattered with pale cyan-blue and white points, with lilac and warm ivory accents; tile 4 in the Atlas background field's nine-image arrangement, not a sky sector or plotted location."
   gallery_role: Atlas background tile
-  gallery_tags: [Atlas background, point lights, transparent layer, cyan blue fill]
+  gallery_tags: [Atlas background, point lights, transparent layer, tiled viewport, cyan blue fill]
   folio_url: /library/gallery/#atlas-background-starfield-tiles
   folio_link_label: Read the background-field key →
 atlas-orbit-stars-r2c2.svg:
   title: Atlas background field · tile 5 (row 2, column 2)
   alt: "A transparent image layer scattered with small pale blue, lilac, white, and warm ivory points; tile 5 in the Atlas background field's nine-image arrangement, not a sky sector or plotted location."
   gallery_role: Atlas background tile
-  gallery_tags: [Atlas background, point lights, transparent layer, pale blue fill]
+  gallery_tags: [Atlas background, point lights, transparent layer, tiled viewport, pale blue fill]
   folio_url: /library/gallery/#atlas-background-starfield-tiles
   folio_link_label: Read the background-field key →
 atlas-orbit-stars-r2c3.svg:
   title: Atlas background field · tile 6 (row 2, column 3)
   alt: "A transparent image layer scattered with pale blue and white points plus warm ivory and lilac accents; tile 6 in the Atlas background field's nine-image arrangement, not a sky sector or plotted location."
   gallery_role: Atlas background tile
-  gallery_tags: [Atlas background, point lights, transparent layer, cyan blue fill]
+  gallery_tags: [Atlas background, point lights, transparent layer, tiled viewport, cyan blue fill]
   folio_url: /library/gallery/#atlas-background-starfield-tiles
   folio_link_label: Read the background-field key →
 atlas-orbit-stars-r3c1.svg:
   title: Atlas background field · tile 7 (row 3, column 1)
   alt: "A transparent image layer scattered with lilac, pale blue, and white points with a few cyan accents; tile 7 in the Atlas background field's nine-image arrangement, not a sky sector or plotted location."
   gallery_role: Atlas background tile
-  gallery_tags: [Atlas background, point lights, transparent layer, lilac fill]
+  gallery_tags: [Atlas background, point lights, transparent layer, tiled viewport, lilac fill]
   folio_url: /library/gallery/#atlas-background-starfield-tiles
   folio_link_label: Read the background-field key →
 atlas-orbit-stars-r3c2.svg:
   title: Atlas background field · tile 8 (row 3, column 2)
   alt: "A transparent image layer scattered with warm ivory and pale cyan-blue points mixed with white and lilac; tile 8 in the Atlas background field's nine-image arrangement, not a sky sector or plotted location."
   gallery_role: Atlas background tile
-  gallery_tags: [Atlas background, point lights, transparent layer, warm ivory fill]
+  gallery_tags: [Atlas background, point lights, transparent layer, tiled viewport, warm ivory fill]
   folio_url: /library/gallery/#atlas-background-starfield-tiles
   folio_link_label: Read the background-field key →
 atlas-orbit-stars-r3c3.svg:
   title: Atlas background field · tile 9 (row 3, column 3)
   alt: "A transparent image layer scattered with small cyan-blue, white, and lilac points; tile 9 in the Atlas background field's nine-image arrangement, not a sky sector or plotted location."
   gallery_role: Atlas background tile
-  gallery_tags: [Atlas background, point lights, transparent layer, cyan blue fill]
+  gallery_tags: [Atlas background, point lights, transparent layer, tiled viewport, cyan blue fill]
   folio_url: /library/gallery/#atlas-background-starfield-tiles
   folio_link_label: Read the background-field key →
 atlas-background-tile-hue-study.png:
@@ -197,3 +197,10 @@ atlas-background-tile-radius-study.png:
   gallery_tags: [Atlas background, circle radius, SVG geometry]
   folio_url: /library/gallery/#atlas-background-tile-radii
   folio_link_label: Read the circle-size comparison →
+atlas-background-viewbox-grid.png:
+  title: Atlas background viewBox grid · interpretive diagram
+  alt: "A generated three-by-three diagram of separate square image viewports, with a few small dots touching tile seams to illustrate a file-grid arrangement; it is not a map or sky chart."
+  gallery_role: Interpretive diagram
+  gallery_tags: [Atlas background, viewport grid, SVG viewBox, tile seams]
+  folio_url: /library/gallery/#atlas-background-viewbox-grid
+  folio_link_label: Read the viewBox key →

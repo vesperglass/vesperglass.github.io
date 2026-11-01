@@ -173,6 +173,25 @@ For a circle with the same fill and opacity, geometric area grows with the squar
 
 The gallery's **tile 1–9** order still names image slots, not locations. Radius does not identify a physical body's size, distance, magnitude, importance, or relation to another mark. The <a href="{{ '/library/star-archive/' | relative_url }}">Star Archive</a> and <a href="{{ '/library/observatory/' | relative_url }}">Observatory Logbook</a> are relevant established references for sky knowledge and observation, but neither folio associates a mark's apparent size with a recorded object or measurement.
 
+<h4 id="atlas-background-viewbox-grid">Viewport offsets · a 3×3 file-space arrangement</h4>
+
+Each background tile is an SVG with a **1024 × 1024** viewBox. Its first two viewBox values set the file-space origin: x advances by 1,024 for each column and y advances by 1,024 for each row. The resulting nine windows occupy a 3,072 × 3,072 coordinate span when placed edge-to-edge. These are asset coordinates used to describe image cropping; they are not Atlas pin coordinates, compass bearings, or locations in a sky.
+
+| ViewBox row | File-space y-origin | Column 1 · x-origin 0 | Column 2 · x-origin 1,024 | Column 3 · x-origin 2,048 |
+| --- | ---: | --- | --- | --- |
+| **Row 1** | 0 | `atlas-orbit-stars-r1c1.svg` | `atlas-orbit-stars-r1c2.svg` | `atlas-orbit-stars-r1c3.svg` |
+| **Row 2** | 1,024 | `atlas-orbit-stars-r2c1.svg` | `atlas-orbit-stars-r2c2.svg` | `atlas-orbit-stars-r2c3.svg` |
+| **Row 3** | 2,048 | `atlas-orbit-stars-r3c1.svg` | `atlas-orbit-stars-r3c2.svg` | `atlas-orbit-stars-r3c3.svg` |
+
+<figure class="specimen-plate">
+  <img src="{{ '/assets/library/atlas-background-viewbox-grid.png' | relative_url }}" alt="An interpretive three-by-three grid of square image viewports with a few tiny colored dots touching neighboring seams." loading="lazy">
+  <figcaption><span>INTERPRETATION · VIEWPORT GRID</span> This generated diagram illustrates separate square image windows and the idea of seam overlap. It does not reproduce an SVG or its exact geometry, and its circles do not identify sky positions or places.</figcaption>
+</figure>
+
+Across the nine SVG files, **24 circle definitions** have exact duplicates in a neighboring tile: their center coordinates, radius, fill, and opacity match. In these pairs, a circle center lies close to a shared viewport boundary and is stored in both adjacent files. The duplicate definitions are consistent with a small overlap that can preserve marks near a tile edge, but no source note explains whether this is intentional or how the tiles were authored. Each viewBox clips its own image to its square window, so the duplicate records alone do not establish what a visitor sees at every seam after scaling and compositing.
+
+The current Atlas presents the nine assets as a tiled background layer behind its named-place illustrations. The <a href="{{ '/library/star-archive/' | relative_url }}">Star Archive</a> and <a href="{{ '/library/observatory/' | relative_url }}">Observatory Logbook</a> describe established relationships to sky knowledge and observation, but neither identifies these file-space offsets with an astronomical chart. The viewBox matrix describes how the image files are divided and ordered, not what any point represents.
+
 <h3 id="orbital-field-families">Clouded field studies · resemblance without lineage</h3>
 
 Two nine-panel field studies show clouded reaches of blue and teal light. Each is arranged as a three-by-three set, with a row-and-column key distinguishing its panels. A representative panel from each study shows a different arrangement and density of luminous cloud and small points. These are descriptions of the pictured samples; the labels do not establish which study came first, whether one revises the other, or how the remaining panels meet at their edges.
