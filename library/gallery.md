@@ -297,6 +297,25 @@ The distinction is between **meeting the frame**, which can be described, and **
 
 The <a href="{{ '/library/gallery/#clouded-field-panel-descriptions' | relative_url }}">panel-description key</a> identifies row and column as positions within a displayed set. The separate <a href="{{ '/library/gallery/#orbital-field-families' | relative_url }}">field-family comparison</a> leaves the two groups' lineage open. Neither key supplies an outside view, orientation, or celestial identity for any cropped cloud.
 
+<h4 id="clouded-field-margin-points">Small lights near the frame · position without identity</h4>
+
+A tiny light near a panel border invites a stronger reading than the image can support: it may look like a star at the edge of a larger field, or a point about to pass into the next panel. The register can record the visible relation more carefully. **Near the frame** describes placement within one picture; it does not mean the point is cut off, moving, or shared with a neighboring picture. Here, *point-like light* is a visual description, not an identification.
+
+<figure class="specimen-plate">
+  <img src="{{ '/assets/library/atlas-clouded-field-margin-points.png' | relative_url }}" alt="Three separately framed blue, teal, and violet cloud studies with small light points near the left, upper, and right borders; restrained brass callouts draw attention to their margins." loading="lazy">
+  <figcaption><span>INTERPRETATION · FRAME-MARGIN POINTS</span> The generated plate enlarges and relocates small points to demonstrate a positional description. It does not reproduce the selected panels or establish that a point continues beyond its frame.</figcaption>
+</figure>
+
+| Panel | Bounded position note | Nearby visible context | What the picture does not establish |
+| --- | --- | --- | --- |
+| **Clouded study A · upper middle** | Several pinpoints sit close to the top margin. | A dim blue-violet cloud lies below them against dark space. | Whether a light is clipped by the border, belongs to a larger body, or is connected to marks in another panel. |
+| **Clouded study B · upper right** | A small blue-white point appears near the upper-right margin. | Blue and teal cloud forms occupy the right side farther below. | A star identity, scale, distance, direction of travel, or relation to the cloud. |
+| **Clouded study B · middle right** | One pale blue point lies near the upper border, left of the panel's center. | The surrounding upper field is dark; a separate blue-violet band rises at the right. | That the point belongs to the band, marks a coordinate, or repeats a light in the adjacent panel. |
+
+The three notes keep **position** and **identity** in separate columns of thought. A point can be close to a border while remaining wholly visible; if a brighter mark touches the edge, that contact still records only what falls inside the frame. The panels are independent illustrations, so proximity between their borders does not make their lights neighbors in a larger scene. Nothing here establishes a measured sky location or a sequence of observed movement.
+
+For the full row-and-column descriptions, see the <a href="{{ '/library/gallery/#clouded-field-panel-descriptions' | relative_url }}">clouded-field panel key</a>. The <a href="{{ '/library/star-archive/' | relative_url }}">Star Archive</a> and <a href="{{ '/library/observatory/' | relative_url }}">Observatory Logbook</a> establish places for sky knowledge and observation; neither account identifies these panel lights or assigns them to an observation.
+
 <section class="image-collections" aria-labelledby="image-collections-heading">
   <div class="gallery-tag-heading"><h2 id="image-collections-heading">Arranged illustration series</h2><span class="collection-intro">Six related views in each series</span></div>
   <div class="collection-cards">

@@ -12,6 +12,8 @@ These edition notes record additions to the existing folios. Where a record's so
 
 ## November 1, 2026
 
+- **Atlas field illustrations** — Added three panel-level notes for point-like lights near clouded image borders, distinguishing visible placement from identity, clipping, or connection between panels; included a new interpretive detail plate. [Read the frame-margin notes →]({{ '/library/gallery/#clouded-field-margin-points' | relative_url }})
+
 - **Atlas image gallery** — Mapped the nine background SVG viewBox origins into a 3×3 file-space grid and recorded matching circle definitions that recur across neighboring tiles; their seam purpose remains unverified. [Read the viewBox key →]({{ '/library/gallery/#atlas-background-viewbox-grid' | relative_url }})
 
 - **Atlas image gallery** — Compared circle-radius ranges across all nine background tiles, with per-file counts and distribution summaries; clarified that SVG marker size is a rendering property, not a measure of a pictured body's scale. [Read the circle-size comparison →]({{ '/library/gallery/#atlas-background-tile-radii' | relative_url }})
