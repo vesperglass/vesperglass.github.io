@@ -44,12 +44,15 @@
   };
   const classify = image => {
     const path = image.path.toLowerCase();
-    const tags = new Set([image.status || "source unassigned", image.assetKind.toLowerCase()]);
+    const filename = path.split("/").pop();
+    const isAtlasBackgroundTile = /^atlas-orbit-stars-r\d+c\d+\.svg$/.test(filename);
+    const curatedTags = Array.isArray(image.galleryTags) ? image.galleryTags : [];
+    const tags = new Set([...curatedTags, image.status || "source unassigned", image.assetKind.toLowerCase()]);
     if (path.includes("atlas") || path.includes("orbit-field") || path.includes("orbit-stars")) tags.add("atlas");
-    if (path.includes("orbit-field") || path.includes("orbit-stars")) tags.add("Atlas field");
+    if (path.includes("orbit-field") || (path.includes("orbit-stars") && !isAtlasBackgroundTile)) tags.add("Atlas field");
     if (path.includes("path-")) tags.add("route map");
     if (path.includes("postal") || path.includes("stamp")) tags.add("postal service");
-    const tokens = `${image.name} ${path.split("/").slice(-2).join(" ")}`.toLowerCase().match(/[a-z]{3,}/g) || [];
+    const tokens = isAtlasBackgroundTile ? [] : (`${image.name} ${path.split("/").slice(-2).join(" ")}`.toLowerCase().match(/[a-z]{3,}/g) || []);
     tokens.forEach(token => { if (!ignored.has(token)) tags.add(token); });
     return [...tags].sort((a, b) => a.localeCompare(b));
   };
@@ -143,7 +146,7 @@
         serial.textContent = `${image.collectible.serial} · ${image.collectible.collection}`;
       }
       const meta = document.createElement("p");
-      meta.textContent = image.atlasTitle ? "Named Atlas destination" : "Illustrated record";
+      meta.textContent = image.galleryRole || (image.atlasTitle ? "Named Atlas destination" : "Illustrated record");
       const description = image.alt ? document.createElement("p") : null;
       if (description) {
         description.className = "gallery-card-description";

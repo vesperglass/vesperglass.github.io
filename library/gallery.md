@@ -71,6 +71,25 @@ The descriptions on each image card repeat these visible features for readers us
 
 Plate kind and reading status answer different questions: an Atlas destination view is both a place illustration and an interpretation. Older orbital and landmark drawings remain source-unassigned because no account or current Atlas view identifies their subject. The <a href="{{ '/explore/' | relative_url }}">Vesperglass Atlas</a> lets readers consult named locations; the <a href="{{ '/library/vesperglass-gate/' | relative_url }}">Gate account</a> and <a href="{{ '/library/train-dock/' | relative_url }}">Train Dock account</a> preserve the written descriptions that accompany two of those views.
 
+<h3 id="atlas-background-starfield-tiles">Atlas background field tiles · scattered light, no celestial key</h3>
+
+The Atlas's dark backdrop includes a layer of small, scattered points behind its named-place illustrations. The image gallery lists the nine component tiles separately so each asset can be found and described. Their row-and-column identifiers name a slot in the tile arrangement, not a direction or coordinate in the sky. The point marks have no labels or accompanying chart key.
+
+<figure class="specimen-plate">
+  <img src="{{ '/assets/library/atlas-background-field-tiles-study.png' | relative_url }}" alt="An interpretive three-by-three sheet of nine separate dark panels scattered with pale blue-white points and occasional quiet cyan, lilac, and ivory lights." loading="lazy">
+  <figcaption><span>INTERPRETATION · BACKGROUND-TILE ROLE</span> This generated plate illustrates the visual role of a tiled point-light layer; it is not one of the Atlas background assets and does not reproduce their point positions. The panels are an editorial comparison, not nine sky regions.</figcaption>
+</figure>
+
+| Gallery description | What it identifies | What it does not establish |
+| --- | --- | --- |
+| **Tile row and column** | The asset's place within the gallery's nine-part tile group. | North, south, east, west, a viewing direction, a celestial coordinate, or an ordered itinerary. |
+| **Scattered point lights** | Small pale points visible in the background layer. | Named stars, constellations, measured bodies, or a verified astronomical chart. |
+| **Atlas background field** | The image group's role behind named-place illustrations in the Atlas view. | That a particular point belongs to an island, place account, Gate route, or recorded observation. |
+
+The titles and alt descriptions of the nine gallery cards use **tile 1–9** and each file's row/column only to distinguish the image assets. They describe a repeated visual field of light points without assigning those points an identity. In the Atlas, the background sits apart from the named destination illustrations; that layering is a feature of the page's visual arrangement, not evidence that a place account refers to a mark in the field.
+
+The <a href="{{ '/library/star-archive/' | relative_url }}">Star Archive</a> keeps knowledge of the sky, and the <a href="{{ '/library/observatory/' | relative_url }}">Observatory Logbook</a> is associated with observation and record. Neither folio identifies the points in this background or links them to a chart. The gallery's **Atlas background fields** plate kind classifies these files by their role as images; it does not authenticate a celestial subject, route, scale, or map correspondence.
+
 <h3 id="orbital-field-families">Clouded field studies · resemblance without lineage</h3>
 
 Two nine-panel field studies show clouded reaches of blue and teal light. Each is arranged as a three-by-three set, with a row-and-column key distinguishing its panels. A representative panel from each study shows a different arrangement and density of luminous cloud and small points. These are descriptions of the pictured samples; the labels do not establish which study came first, whether one revises the other, or how the remaining panels meet at their edges.
@@ -221,7 +240,7 @@ The <a href="{{ '/library/gallery/#clouded-field-panel-descriptions' | relative_
   {%- assign atlas_description = site.data.gallery_descriptions[asset.name] -%}
   {%- assign atlas_url = '' -%}
   {%- if atlas_description -%}{%- if atlas_description.folio_url -%}{%- assign atlas_url = atlas_description.folio_url | relative_url -%}{%- elsif atlas_description.title contains 'Clouded field' -%}{%- assign atlas_url = '/library/gallery/#clouded-field-panel-descriptions' | relative_url -%}{%- endif -%}{%- endif -%}
-  {"path":{{ asset.path | relative_url | jsonify }},"name":{{ asset.name | split: "." | first | replace: "-", " " | jsonify }},"extension":{{ asset.extname | remove_first: "." | jsonify }},"status":{{ editorial_status | jsonify }},"atlasTitle":{{ atlas_description.title | default: '' | jsonify }},"alt":{{ atlas_description.alt | default: '' | jsonify }},"folioUrl":{{ atlas_url | jsonify }},"folioLinkLabel":{{ atlas_description.folio_link_label | default: '' | jsonify }}}{% unless forloop.last %},{% endunless %}
+  {"path":{{ asset.path | relative_url | jsonify }},"name":{{ asset.name | split: "." | first | replace: "-", " " | jsonify }},"extension":{{ asset.extname | remove_first: "." | jsonify }},"status":{{ editorial_status | jsonify }},"atlasTitle":{{ atlas_description.title | default: '' | jsonify }},"galleryRole":{{ atlas_description.gallery_role | default: '' | jsonify }},"galleryTags":{{ atlas_description.gallery_tags | jsonify }},"alt":{{ atlas_description.alt | default: '' | jsonify }},"folioUrl":{{ atlas_url | jsonify }},"folioLinkLabel":{{ atlas_description.folio_link_label | default: '' | jsonify }}}{% unless forloop.last %},{% endunless %}
 {%- endfor -%}
 ]
 </script>

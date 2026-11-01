@@ -12,6 +12,8 @@ These edition notes record additions to the existing folios. Where a record's so
 
 ## November 1, 2026
 
+- **Atlas image gallery** — Added titles and accessible descriptions for all nine background-field tiles, identifying their file-array position without treating it as a sky coordinate; added an interpretive tile-role plate and linked the cards to its reading key. [Read the field-tile key →]({{ '/library/gallery/#atlas-background-starfield-tiles' | relative_url }})
+
 - **Atlas field illustrations** — Added frame-edge notes for three clouded panels, distinguishing visible border contact from any claim that a form continues beyond its image; included a generated interpretive guide. [Read the frame-edge notes →]({{ '/library/gallery/#clouded-field-frame-edges' | relative_url }})
 
 ## October 31, 2026
