@@ -218,3 +218,10 @@ atlas-background-grid-turn-study.png:
   gallery_tags: [Atlas background, square grid, centered turn, panel orientation]
   folio_url: /library/gallery/#atlas-background-grid-turn
   folio_link_label: Read the centered-turn key →
+atlas-background-grid-parity-study.png:
+  title: Atlas background grid · odd and even centers
+  alt: "A three-by-three grid places its pivot in the center cell, while a four-by-four grid places its pivot at the intersection of the four middle cells."
+  gallery_role: Interpretive diagram
+  gallery_tags: [Atlas background, grid center, viewport geometry, odd and even arrays]
+  folio_url: /library/gallery/#atlas-background-grid-parity
+  folio_link_label: Read the grid-parity key →

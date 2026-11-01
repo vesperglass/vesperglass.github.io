@@ -211,6 +211,24 @@ The key distinction is between a **cell's identity inside the source arrangement
 
 This drawing complements the <a href="{{ '/library/gallery/#atlas-background-viewbox-grid' | relative_url }}">viewBox-origin key</a>, which records file-space windows, and the <a href="{{ '/library/gallery/#clouded-field-panel-descriptions' | relative_url }}">panel-description key</a>, whose row and column words locate panels only within their displayed sets. The <a href="{{ '/library/star-archive/' | relative_url }}">Star Archive</a> and <a href="{{ '/library/observatory/' | relative_url }}">Observatory Logbook</a> are established places associated with sky knowledge and observation; neither connects this geometric illustration to a celestial coordinate, observed turn, or charted direction.
 
+<h4 id="atlas-background-grid-parity">Odd and even arrays · where the center falls</h4>
+
+The 3×3 tile set has a single middle cell, but the middle cell's **origin** is not the mosaic's **center**. Each SVG viewBox is 1,024 units square. In the existing row-and-column arrangement, the middle file begins at (1,024, 1,024); the complete three-tile span on each axis is 3,072 units, putting the geometric pivot at (1,536, 1,536)—the center of that middle cell. The coordinate values describe the assembled image only.
+
+<figure class="specimen-plate">
+  <img src="{{ '/assets/library/atlas-background-grid-parity-study.png' | relative_url }}" alt="A brass-framed three-by-three grid highlights its middle cell and places a pivot dot at that cell's center; beside it, a four-by-four grid places its pivot dot where the four middle cells meet." loading="lazy">
+  <figcaption><span>INTERPRETATION · GRID PARITY</span> This generated comparison marks geometric centers for odd and even arrays. The central dots are added diagram aids; neither grid represents a sky coordinate, observed point, or additional feature in the source tiles.</figcaption>
+</figure>
+
+| Array | Center calculation in cell units | Where the pivot lies | Reading limit |
+| --- | --- | --- | --- |
+| **3 × 3** | Halfway across 3 cells is 1.5; halfway down is 1.5. | At the center of the one middle cell, row 2 / column 2. In the 1,024-unit SVG array, that point is (1,536, 1,536). | The middle tile is a file-array position, not a uniquely named star or target. |
+| **4 × 4** | Halfway across 4 cells is 2; halfway down is 2. | At the shared corner of the four middle cells. No one cell contains the pivot. | The comparison is geometric; it does not describe a second source set in this gallery. |
+
+This difference is a consequence of **parity**: an odd count leaves one central member; an even count splits the center between two rows and two columns. In the Atlas tile key, `r2c2` names the middle viewport by its upper-left origin, while (1,536, 1,536) identifies the center point of the full 3×3 composition. Keeping those statements separate prevents a file address from being read as a center marker.
+
+The <a href="{{ '/library/gallery/#atlas-background-grid-turn' | relative_url }}">centered-turn key</a> uses the same pivot to explain page-relative orientation, and the <a href="{{ '/library/gallery/#atlas-background-viewbox-grid' | relative_url }}">viewport table</a> records the nine source origins. Neither provides a geographic scale or celestial coordinate. The <a href="{{ '/library/star-archive/' | relative_url }}">Star Archive</a> and <a href="{{ '/library/observatory/' | relative_url }}">Observatory Logbook</a> remain the relevant established folios for sky knowledge and observation, but neither assigns a real-world referent to this grid.
+
 <h3 id="orbital-field-families">Clouded field studies · resemblance without lineage</h3>
 
 Two nine-panel field studies show clouded reaches of blue and teal light. Each is arranged as a three-by-three set, with a row-and-column key distinguishing its panels. A representative panel from each study shows a different arrangement and density of luminous cloud and small points. These are descriptions of the pictured samples; the labels do not establish which study came first, whether one revises the other, or how the remaining panels meet at their edges.
