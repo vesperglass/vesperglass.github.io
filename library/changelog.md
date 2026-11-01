@@ -10,6 +10,10 @@ permalink: /library/changelog/
 
 These edition notes record additions to the existing folios. Where a record's source or status is uncertain, the folio says so and leaves unsupported details open.
 
+## November 1, 2026
+
+- **Atlas field illustrations** — Added frame-edge notes for three clouded panels, distinguishing visible border contact from any claim that a form continues beyond its image; included a generated interpretive guide. [Read the frame-edge notes →]({{ '/library/gallery/#clouded-field-frame-edges' | relative_url }})
+
 ## October 31, 2026
 
 - **Atlas field illustrations** — Compared dark openings and channels in five selected panels across the two clouded studies, distinguishing visual recurrence from a shared structure or source; added a generated interpretive detail plate. [Read the channel comparison →]({{ '/library/gallery/#clouded-field-channel-comparison' | relative_url }})

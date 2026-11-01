@@ -157,6 +157,25 @@ The comparison distinguishes three readable arrangements: an opening edged by cl
 
 The named <a href="{{ '/library/star-archive/' | relative_url }}">Star Archive</a> keeps knowledge of the sky, while the <a href="{{ '/library/observatory/' | relative_url }}">Observatory Logbook</a> is associated with observation and record. Neither folio names a dark channel, identifies these illustrations as its records, or supplies an account connecting the groups. The Atlas's separate background star field likewise does not label these openings. Their identity, cause, scale, location, and relation remain unknown.
 
+<h4 id="clouded-field-frame-edges">Frame-edge notes · the picture boundary is not a seam</h4>
+
+A luminous form that meets a tile's border can look as though it continues beyond the crop. The image records only the portion inside its own frame. The neighboring cell in the gallery is a separate file, so its position beside another tile does not show that the two forms connect. The examples below identify visible edge contact in three selected panels; they do not reconstruct what might lie outside any picture.
+
+<figure class="specimen-plate">
+  <img src="{{ '/assets/library/atlas-clouded-field-edge-study.png' | relative_url }}" alt="An interpretive teaching plate of three separate framed cloud images: a teal plume reaches the left edge, a violet wisp meets the upper edge, and a cyan band reaches the right edge." loading="lazy">
+  <figcaption><span>INTERPRETATION · FRAME-EDGE READING</span> The generated examples make image-boundary contact easy to see; they do not reproduce registered tiles or assert continuation beyond a frame. The bronze borders separate three independent pictures rather than depicting a panorama.</figcaption>
+</figure>
+
+| Panel | Visible edge contact | Bounded description | What the frame cannot tell us |
+| --- | --- | --- | --- |
+| **Study A · middle right** | A blue cloud crosses the dark field, with a purple glow at the right edge. | Cloud crosses a dark area; purple light appears at the panel's right boundary. | Whether the cloud or glow continues beyond the crop, or where it would lead. |
+| **Study A · lower middle** | A blue-green cloud mass lies along the upper edge over a dark center and scattered points. | Cloud mass meets the top of the image. | Whether it is cut from a larger view or belongs to a broader continuous formation. |
+| **Study B · middle right** | A blue-violet band crosses from left to right and brightens at the right edge. | A band spans the pictured field and reaches its right boundary. | Whether the left and right edges connect to another tile or depict a single extended object. |
+
+The distinction is between **meeting the frame**, which can be described, and **continuing beyond it**, which cannot be observed from this file alone. Even a band touching opposite edges does not demonstrate a panorama or loop. Each panel has its own image boundary, and the three-by-three arrangement is an editorial reading aid, not a map of adjacent sky areas. For the same reason, a related-looking edge in another panel is not a confirmed continuation.
+
+The <a href="{{ '/library/gallery/#clouded-field-panel-descriptions' | relative_url }}">panel-description key</a> identifies row and column as positions within a displayed set. The separate <a href="{{ '/library/gallery/#orbital-field-families' | relative_url }}">field-family comparison</a> leaves the two groups' lineage open. Neither key supplies an outside view, orientation, or celestial identity for any cropped cloud.
+
 <section class="image-collections" aria-labelledby="image-collections-heading">
   <div class="gallery-tag-heading"><h2 id="image-collections-heading">Arranged illustration series</h2><span class="collection-intro">Six related views in each series</span></div>
   <div class="collection-cards">
